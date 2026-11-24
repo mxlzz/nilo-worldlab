@@ -1,0 +1,2211 @@
+{
+  "source": "mxlzz/Nilo_public",
+  "branch": "research/world-foundations-2026-11",
+  "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
+  "source_tree": "5b2f3f6839b13b0ff9bb252700d66bcfd959d575",
+  "count": 314,
+  "world_research": 254,
+  "historical_workflows": 60,
+  "files": [
+    {
+      "source": ".github/workflows/world-dryp2-static-audit.yml",
+      "destination": "inherited/.github/workflows/world-dryp2-static-audit.yml",
+      "git_blob_sha": "6664abb913f24d10e982ee6ffa76138cb8d90bd7",
+      "mode": "100644",
+      "size": 1434
+    },
+    {
+      "source": ".github/workflows/world-e1-bullet-cavity.yml",
+      "destination": "inherited/.github/workflows/world-e1-bullet-cavity.yml",
+      "git_blob_sha": "6a924f2eeeb588669b4aee2cfea0e77ca5bdefbb",
+      "mode": "100644",
+      "size": 1477
+    },
+    {
+      "source": ".github/workflows/world-e1-bullet-contact.yml",
+      "destination": "inherited/.github/workflows/world-e1-bullet-contact.yml",
+      "git_blob_sha": "683507f37977777273797ead91d8f3ab80aa6388",
+      "mode": "100644",
+      "size": 927
+    },
+    {
+      "source": ".github/workflows/world-e1-dual-material-heat.yml",
+      "destination": "inherited/.github/workflows/world-e1-dual-material-heat.yml",
+      "git_blob_sha": "5400aae0fbc89eef571cf5b39ec4609eee7762c4",
+      "mode": "100644",
+      "size": 874
+    },
+    {
+      "source": ".github/workflows/world-e1-dynamic-roi.yml",
+      "destination": "inherited/.github/workflows/world-e1-dynamic-roi.yml",
+      "git_blob_sha": "de8e15baf9ded51dfc94327640541d95fd542839",
+      "mode": "100644",
+      "size": 845
+    },
+    {
+      "source": ".github/workflows/world-e1-geotaichi-cpu.yml",
+      "destination": "inherited/.github/workflows/world-e1-geotaichi-cpu.yml",
+      "git_blob_sha": "cfa888bad34f14cc0f0d2309d7eb2d68e4143bca",
+      "mode": "100644",
+      "size": 2121
+    },
+    {
+      "source": ".github/workflows/world-e1-heat-fipy.yml",
+      "destination": "inherited/.github/workflows/world-e1-heat-fipy.yml",
+      "git_blob_sha": "0578f541126a60709e481f2bd8b1a91db6698688",
+      "mode": "100644",
+      "size": 868
+    },
+    {
+      "source": ".github/workflows/world-e1-material-state-fit.yml",
+      "destination": "inherited/.github/workflows/world-e1-material-state-fit.yml",
+      "git_blob_sha": "b129ba9f11698cbcbeafe193b9f227233d8f03a4",
+      "mode": "100644",
+      "size": 1279
+    },
+    {
+      "source": ".github/workflows/world-e1-mpm3d-settling.yml",
+      "destination": "inherited/.github/workflows/world-e1-mpm3d-settling.yml",
+      "git_blob_sha": "16482020b92e0f773f113b817c7812bb80e9d777",
+      "mode": "100644",
+      "size": 1788
+    },
+    {
+      "source": ".github/workflows/world-e1-mpm3d-upstream.yml",
+      "destination": "inherited/.github/workflows/world-e1-mpm3d-upstream.yml",
+      "git_blob_sha": "e5e9397bf4089b9db5e80749e209eab185472dec",
+      "mode": "100644",
+      "size": 2010
+    },
+    {
+      "source": ".github/workflows/world-e1-phase-enthalpy.yml",
+      "destination": "inherited/.github/workflows/world-e1-phase-enthalpy.yml",
+      "git_blob_sha": "090a626b71a06f3974c78451cd97d16b961c46cd",
+      "mode": "100644",
+      "size": 904
+    },
+    {
+      "source": ".github/workflows/world-e1-rigid-grains.yml",
+      "destination": "inherited/.github/workflows/world-e1-rigid-grains.yml",
+      "git_blob_sha": "2c51eefd94ebcce533657df3fc700a1808cf5b32",
+      "mode": "100644",
+      "size": 885
+    },
+    {
+      "source": ".github/workflows/world-e1-sediment-owner.yml",
+      "destination": "inherited/.github/workflows/world-e1-sediment-owner.yml",
+      "git_blob_sha": "4ec4167b3e79250cf5a784d923bc3d93dcb2913c",
+      "mode": "100644",
+      "size": 895
+    },
+    {
+      "source": ".github/workflows/world-e1-spatial-geometry.yml",
+      "destination": "inherited/.github/workflows/world-e1-spatial-geometry.yml",
+      "git_blob_sha": "c0ca772600bd69202798609d9fd0cd4015eed6bf",
+      "mode": "100644",
+      "size": 881
+    },
+    {
+      "source": ".github/workflows/world-e1-state-integrity.yml",
+      "destination": "inherited/.github/workflows/world-e1-state-integrity.yml",
+      "git_blob_sha": "b5bc2ec2f262f7abf81e81b8894ac9f96cad3843",
+      "mode": "100644",
+      "size": 1217
+    },
+    {
+      "source": ".github/workflows/world-e1-surface-volume-state.yml",
+      "destination": "inherited/.github/workflows/world-e1-surface-volume-state.yml",
+      "git_blob_sha": "7a6421acf50a71c47af8dcbea64464fb52848cb5",
+      "mode": "100644",
+      "size": 907
+    },
+    {
+      "source": ".github/workflows/world-e2-rigid-owner.yml",
+      "destination": "inherited/.github/workflows/world-e2-rigid-owner.yml",
+      "git_blob_sha": "b5896a95bfc765dd334ec789c32c30c4223cdde9",
+      "mode": "100644",
+      "size": 883
+    },
+    {
+      "source": ".github/workflows/world-e2-sediment-slope.yml",
+      "destination": "inherited/.github/workflows/world-e2-sediment-slope.yml",
+      "git_blob_sha": "e3b98f272bdc1fd160cafda2b4e72dc31e9ec2d0",
+      "mode": "100644",
+      "size": 878
+    },
+    {
+      "source": ".github/workflows/world-e3-deposit-pattern.yml",
+      "destination": "inherited/.github/workflows/world-e3-deposit-pattern.yml",
+      "git_blob_sha": "c9a0eb1eb404f8b40b7ec918335ba029a7364843",
+      "mode": "100644",
+      "size": 924
+    },
+    {
+      "source": ".github/workflows/world-e3-granular-late-settling.yml",
+      "destination": "inherited/.github/workflows/world-e3-granular-late-settling.yml",
+      "git_blob_sha": "0bf23ef1f3e4afbbd9e8e7c6fa614bdf75b7f4db",
+      "mode": "100644",
+      "size": 852
+    },
+    {
+      "source": ".github/workflows/world-e3-granular-mcmc-null.yml",
+      "destination": "inherited/.github/workflows/world-e3-granular-mcmc-null.yml",
+      "git_blob_sha": "9e4edc5f5d4a99a09f4aba293c7e125643b8e5fd",
+      "mode": "100644",
+      "size": 873
+    },
+    {
+      "source": ".github/workflows/world-e3-granular-pile.yml",
+      "destination": "inherited/.github/workflows/world-e3-granular-pile.yml",
+      "git_blob_sha": "1381827b9baaa307161762756bccc1de946878d5",
+      "mode": "100644",
+      "size": 900
+    },
+    {
+      "source": ".github/workflows/world-e3-granular-spatial-null.yml",
+      "destination": "inherited/.github/workflows/world-e3-granular-spatial-null.yml",
+      "git_blob_sha": "e95290e423c8da2934ece985fec3cbfa6299ec70",
+      "mode": "100644",
+      "size": 894
+    },
+    {
+      "source": ".github/workflows/world-e3-gravity-feed.yml",
+      "destination": "inherited/.github/workflows/world-e3-gravity-feed.yml",
+      "git_blob_sha": "e5a6811e3cfb652aa70a81ff4a156d703e86a223",
+      "mode": "100644",
+      "size": 862
+    },
+    {
+      "source": ".github/workflows/world-e3-pydeltarcm-screen.yml",
+      "destination": "inherited/.github/workflows/world-e3-pydeltarcm-screen.yml",
+      "git_blob_sha": "92e692713149247770a17cbcb76841f5e0af1168",
+      "mode": "100644",
+      "size": 1548
+    },
+    {
+      "source": ".github/workflows/world-e3-spinodal-epsilon.yml",
+      "destination": "inherited/.github/workflows/world-e3-spinodal-epsilon.yml",
+      "git_blob_sha": "743a1a141b951e00ad53c62892517d71fcfdf94c",
+      "mode": "100644",
+      "size": 856
+    },
+    {
+      "source": ".github/workflows/world-e3-spinodal-fipy.yml",
+      "destination": "inherited/.github/workflows/world-e3-spinodal-fipy.yml",
+      "git_blob_sha": "3b0a3650e8d68371be2f30b1f2a4cd63e740b809",
+      "mode": "100644",
+      "size": 921
+    },
+    {
+      "source": ".github/workflows/world-e3-spinodal-seeds.yml",
+      "destination": "inherited/.github/workflows/world-e3-spinodal-seeds.yml",
+      "git_blob_sha": "da881b8896ef4478e782225f30382802fd65a548",
+      "mode": "100644",
+      "size": 860
+    },
+    {
+      "source": ".github/workflows/world-e4-seeded-terrain-owner.yml",
+      "destination": "inherited/.github/workflows/world-e4-seeded-terrain-owner.yml",
+      "git_blob_sha": "d2aa4b1d221f811ca6b5778f922238aef050e1fe",
+      "mode": "100644",
+      "size": 7740
+    },
+    {
+      "source": ".github/workflows/world-e6-bullet-disk-restart.yml",
+      "destination": "inherited/.github/workflows/world-e6-bullet-disk-restart.yml",
+      "git_blob_sha": "0816e83000f21a66197ac4ce5d5063e9898c2e5b",
+      "mode": "100644",
+      "size": 1822
+    },
+    {
+      "source": ".github/workflows/world-e6-granular-midfeed-restart.yml",
+      "destination": "inherited/.github/workflows/world-e6-granular-midfeed-restart.yml",
+      "git_blob_sha": "233f58692647fe8a2cdc4def7b317b482d7927d0",
+      "mode": "100644",
+      "size": 1870
+    },
+    {
+      "source": ".github/workflows/world-e6-landlab-restart.yml",
+      "destination": "inherited/.github/workflows/world-e6-landlab-restart.yml",
+      "git_blob_sha": "2ff332af144c779ad50c0e02418e4da0bfacbf08",
+      "mode": "100644",
+      "size": 3393
+    },
+    {
+      "source": ".github/workflows/world-e7-granular-impact-function.yml",
+      "destination": "inherited/.github/workflows/world-e7-granular-impact-function.yml",
+      "git_blob_sha": "64d639bd0299d038749d5c35a9c511b8604279c2",
+      "mode": "100644",
+      "size": 915
+    },
+    {
+      "source": ".github/workflows/world-ecosystem-explorer-ui.yml",
+      "destination": "inherited/.github/workflows/world-ecosystem-explorer-ui.yml",
+      "git_blob_sha": "2602dfb1162705d908ba2e2c5d1da8239f5bd55e",
+      "mode": "100644",
+      "size": 860
+    },
+    {
+      "source": ".github/workflows/world-h37-sequential-restart-to-contact.yml",
+      "destination": "inherited/.github/workflows/world-h37-sequential-restart-to-contact.yml",
+      "git_blob_sha": "b4e35d93072aa7fed04111d73507a01fa47fe3d5",
+      "mode": "100644",
+      "size": 5006
+    },
+    {
+      "source": ".github/workflows/world-h38-mutable-heightfield.yml",
+      "destination": "inherited/.github/workflows/world-h38-mutable-heightfield.yml",
+      "git_blob_sha": "3994cfaabd9410c51147d8b0e943b50ffddb2433",
+      "mode": "100644",
+      "size": 715
+    },
+    {
+      "source": ".github/workflows/world-h39-contact-invalidation.yml",
+      "destination": "inherited/.github/workflows/world-h39-contact-invalidation.yml",
+      "git_blob_sha": "92d0ee3910b13fec9234827f292cabdc6ed43f03",
+      "mode": "100644",
+      "size": 759
+    },
+    {
+      "source": ".github/workflows/world-h40-live-body-soil-epochs.yml",
+      "destination": "inherited/.github/workflows/world-h40-live-body-soil-epochs.yml",
+      "git_blob_sha": "2a7de85a5444352ee11b4822cc5e985f88fe5f1e",
+      "mode": "100644",
+      "size": 3035
+    },
+    {
+      "source": ".github/workflows/world-h41-aggregate-transit.yml",
+      "destination": "inherited/.github/workflows/world-h41-aggregate-transit.yml",
+      "git_blob_sha": "d4f6d81694b02f6d62ffc804c42fe860285bc746",
+      "mode": "100644",
+      "size": 3154
+    },
+    {
+      "source": ".github/workflows/world-h42-directional-cover.yml",
+      "destination": "inherited/.github/workflows/world-h42-directional-cover.yml",
+      "git_blob_sha": "ecb789b866af20d9343aef549dbeccb43269971a",
+      "mode": "100644",
+      "size": 1140
+    },
+    {
+      "source": ".github/workflows/world-h42b-fresh-observer.yml",
+      "destination": "inherited/.github/workflows/world-h42b-fresh-observer.yml",
+      "git_blob_sha": "494bb42e209aba08837d7f93cce633c7e107eaa7",
+      "mode": "100644",
+      "size": 1135
+    },
+    {
+      "source": ".github/workflows/world-landlab-checkpoint-scaling.yml",
+      "destination": "inherited/.github/workflows/world-landlab-checkpoint-scaling.yml",
+      "git_blob_sha": "a5d4015386d0aacf87ddc0ed58ee7a7d9b5ca85b",
+      "mode": "100644",
+      "size": 1395
+    },
+    {
+      "source": ".github/workflows/world-landlab-eco-checkpoint.yml",
+      "destination": "inherited/.github/workflows/world-landlab-eco-checkpoint.yml",
+      "git_blob_sha": "fbb67dee70f41d07072061aaa87bf580e78a4574",
+      "mode": "100644",
+      "size": 1157
+    },
+    {
+      "source": ".github/workflows/world-landlab-mobile-soil.yml",
+      "destination": "inherited/.github/workflows/world-landlab-mobile-soil.yml",
+      "git_blob_sha": "fc5d46fe74316f1d09ba0b9654d3d0cd0077d067",
+      "mode": "100644",
+      "size": 1039
+    },
+    {
+      "source": ".github/workflows/world-landlab-radiation-return.yml",
+      "destination": "inherited/.github/workflows/world-landlab-radiation-return.yml",
+      "git_blob_sha": "7230ac2018b89bc42cd6ea06dfcfaeaf9c0da14c",
+      "mode": "100644",
+      "size": 1063
+    },
+    {
+      "source": ".github/workflows/world-landlab-shanhai-fit.yml",
+      "destination": "inherited/.github/workflows/world-landlab-shanhai-fit.yml",
+      "git_blob_sha": "93a644add7f20e578f165f242b9f37b6d5a12549",
+      "mode": "100644",
+      "size": 2769
+    },
+    {
+      "source": ".github/workflows/world-landlab-water-budget.yml",
+      "destination": "inherited/.github/workflows/world-landlab-water-budget.yml",
+      "git_blob_sha": "8c20d46644e4f579dce84b0e89db226183341c69",
+      "mode": "100644",
+      "size": 1270
+    },
+    {
+      "source": ".github/workflows/world-p0a-live-runner.yml",
+      "destination": "inherited/.github/workflows/world-p0a-live-runner.yml",
+      "git_blob_sha": "f7817de78b389b84cb1ae1093b3ec9249fe74b33",
+      "mode": "100644",
+      "size": 1533
+    },
+    {
+      "source": ".github/workflows/world-p0b-joint-restart.yml",
+      "destination": "inherited/.github/workflows/world-p0b-joint-restart.yml",
+      "git_blob_sha": "3d7df560deb5c63695e65bdf08a14fa276425763",
+      "mode": "100644",
+      "size": 2825
+    },
+    {
+      "source": ".github/workflows/world-p0b-soil-diagnosis.yml",
+      "destination": "inherited/.github/workflows/world-p0b-soil-diagnosis.yml",
+      "git_blob_sha": "1754b8b1672596f38721c4133458b0da122c9c9c",
+      "mode": "100644",
+      "size": 1861
+    },
+    {
+      "source": ".github/workflows/world-p0br-profile-restart.yml",
+      "destination": "inherited/.github/workflows/world-p0br-profile-restart.yml",
+      "git_blob_sha": "4d3913d95549f2120337ceb39c04be5d6ab7876a",
+      "mode": "100644",
+      "size": 3616
+    },
+    {
+      "source": ".github/workflows/world-p0c-extended-world.yml",
+      "destination": "inherited/.github/workflows/world-p0c-extended-world.yml",
+      "git_blob_sha": "bd19f0408d235e79a9dc1cc20d5c243f9120e462",
+      "mode": "100644",
+      "size": 3552
+    },
+    {
+      "source": ".github/workflows/world-p0d-granular-world.yml",
+      "destination": "inherited/.github/workflows/world-p0d-granular-world.yml",
+      "git_blob_sha": "05ec0e390145af1d7c33982fb90ad35fcb42cc4d",
+      "mode": "100644",
+      "size": 3710
+    },
+    {
+      "source": ".github/workflows/world-p1a-thermal-response.yml",
+      "destination": "inherited/.github/workflows/world-p1a-thermal-response.yml",
+      "git_blob_sha": "a8008e1b92f23258de2249512dac2e58a200c39a",
+      "mode": "100644",
+      "size": 1526
+    },
+    {
+      "source": ".github/workflows/world-p1ar-exact-sphere-rays.yml",
+      "destination": "inherited/.github/workflows/world-p1ar-exact-sphere-rays.yml",
+      "git_blob_sha": "6cb9eb6fcda7ed6b9578b5d8f527d46270373fcb",
+      "mode": "100644",
+      "size": 1611
+    },
+    {
+      "source": ".github/workflows/world-particle-life-organization.yml",
+      "destination": "inherited/.github/workflows/world-particle-life-organization.yml",
+      "git_blob_sha": "e4147b771cc0af49facd0d8df5a600d55dae6bb5",
+      "mode": "100644",
+      "size": 2160
+    },
+    {
+      "source": ".github/workflows/world-powdertoy-material-fit.yml",
+      "destination": "inherited/.github/workflows/world-powdertoy-material-fit.yml",
+      "git_blob_sha": "bcd34c2d23aaa45470de51105dc69346060f4868",
+      "mode": "100644",
+      "size": 1764
+    },
+    {
+      "source": ".github/workflows/world-research-tests.yml",
+      "destination": "inherited/.github/workflows/world-research-tests.yml",
+      "git_blob_sha": "549e7c88e59fb85a0e6d889d6eaa693596cb4382",
+      "mode": "100644",
+      "size": 582
+    },
+    {
+      "source": ".github/workflows/world-upstream-fit.yml",
+      "destination": "inherited/.github/workflows/world-upstream-fit.yml",
+      "git_blob_sha": "82f5ce62efc63713e05be00720936d6d3c2fa330",
+      "mode": "100644",
+      "size": 1787
+    },
+    {
+      "source": ".github/workflows/world-worldengine-landlab-bridge.yml",
+      "destination": "inherited/.github/workflows/world-worldengine-landlab-bridge.yml",
+      "git_blob_sha": "87677086ea032e6fa408a970120e872cc2190fd1",
+      "mode": "100644",
+      "size": 2070
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_1_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_1_2026-11-22.md",
+      "git_blob_sha": "7652ff8f46dc3794fd580587a31b32d2b417781f",
+      "mode": "100644",
+      "size": 5627
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_2_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_2_2026-11-22.md",
+      "git_blob_sha": "22612b1c1f6c09c4288becda853acc14eefba30d",
+      "mode": "100644",
+      "size": 4779
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_3_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_3_2026-11-22.md",
+      "git_blob_sha": "7acf54c210f1a5d620816cb363e6702b06dfde0f",
+      "mode": "100644",
+      "size": 7778
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_4_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_4_2026-11-22.md",
+      "git_blob_sha": "30c70998d7eb395ea1729eee378fe825b7b8fb18",
+      "mode": "100644",
+      "size": 5744
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_5_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_5_2026-11-22.md",
+      "git_blob_sha": "107b7022b86e15c600878116d2beee1b512aff51",
+      "mode": "100644",
+      "size": 6750
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_6_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_CIERRE_ETAPA_6_2026-11-22.md",
+      "git_blob_sha": "08320f1289c6f860a25c7424222dca1b5c1b478b",
+      "mode": "100644",
+      "size": 6818
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_ESTRATEGICA_PROTOTIPO_P0.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_ESTRATEGICA_PROTOTIPO_P0.md",
+      "git_blob_sha": "0cee5436c026728c94116363aee915db7d6d356f",
+      "mode": "100644",
+      "size": 6091
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_ETAPA_0_EXPERIMENTAL_2026-11-21.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_ETAPA_0_EXPERIMENTAL_2026-11-21.md",
+      "git_blob_sha": "8709b502b7b0120c8c87cde646afae1f06307462",
+      "mode": "100644",
+      "size": 15729
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_GATE_ETAPA_1_POST_H14_2026-11-22.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_GATE_ETAPA_1_POST_H14_2026-11-22.md",
+      "git_blob_sha": "786cc4a7e40f22aec277229b0df38a1ccb391cec",
+      "mode": "100644",
+      "size": 4924
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_POST_H37_GATE_CICLO_CONTINUO.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_POST_H37_GATE_CICLO_CONTINUO.md",
+      "git_blob_sha": "e43456eb1c0e0fc57f69f1558e88b1e816591b10",
+      "mode": "100644",
+      "size": 8442
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_REVISION_R1_2026-11-21.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_REVISION_R1_2026-11-21.md",
+      "git_blob_sha": "384f384505ad88a7c5e2cb7916793b173c504c34",
+      "mode": "100644",
+      "size": 3631
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_UNIDADES_Y_RELOJES_PRE_CICLO_INTEGRADO.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_UNIDADES_Y_RELOJES_PRE_CICLO_INTEGRADO.md",
+      "git_blob_sha": "c1b10db80684bc2e80a5c02c2e145c1b15e15f8b",
+      "mode": "100644",
+      "size": 6238
+    },
+    {
+      "source": "WORLD_RESEARCH/AUDITORIA_VALOR_ETAPA_7_POST_H36.md",
+      "destination": "inherited/WORLD_RESEARCH/AUDITORIA_VALOR_ETAPA_7_POST_H36.md",
+      "git_blob_sha": "25bb032651e53db901a9f25f179ddab0335e9f11",
+      "mode": "100644",
+      "size": 4657
+    },
+    {
+      "source": "WORLD_RESEARCH/BASES_Y_HOJA_DE_RUTA.md",
+      "destination": "inherited/WORLD_RESEARCH/BASES_Y_HOJA_DE_RUTA.md",
+      "git_blob_sha": "7cb8b7be4d1559ba07448d4494c91536bd3ccd54",
+      "mode": "100644",
+      "size": 61828
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0001_REUTILIZACION.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0001_REUTILIZACION.md",
+      "git_blob_sha": "7bcc23e9730d794dc0935782d2d46d9aca7315ed",
+      "mode": "100644",
+      "size": 11884
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0002_LANDLAB_PRIMERO.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0002_LANDLAB_PRIMERO.md",
+      "git_blob_sha": "eb398b87f700d60e0c0771fc9cabb47ad5dbaf35",
+      "mode": "100644",
+      "size": 5798
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0003_CIERRE_ETAPA_0_BASES_MODULARES.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0003_CIERRE_ETAPA_0_BASES_MODULARES.md",
+      "git_blob_sha": "77b028acbc4e4fc1acce3d0be5d2aff427bbc26d",
+      "mode": "100644",
+      "size": 9197
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0004_PROPIEDAD_INTEGRIDAD_ESTADO.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0004_PROPIEDAD_INTEGRIDAD_ESTADO.md",
+      "git_blob_sha": "997cfd9f6e584825af084651eb7b5a534bc7a687",
+      "mode": "100644",
+      "size": 5950
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0005_REPRESENTACION_ESPACIAL_HIBRIDA.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0005_REPRESENTACION_ESPACIAL_HIBRIDA.md",
+      "git_blob_sha": "97a9be4af9033c20abb150308064ffa380e5f9cb",
+      "mode": "100644",
+      "size": 7228
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0006_PROVEEDOR_CONTACTO_BULLET.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0006_PROVEEDOR_CONTACTO_BULLET.md",
+      "git_blob_sha": "f3454f4b6a506dbeb34833407876cf0bcb4e328b",
+      "mode": "100644",
+      "size": 7035
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0007_GATE_MPM_3D.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0007_GATE_MPM_3D.md",
+      "git_blob_sha": "fc3b0984ad5c0a66c408b344d5e12b864cbcbb58",
+      "mode": "100644",
+      "size": 4787
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0008_ENTALPIA_FASE_CAMBIO.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0008_ENTALPIA_FASE_CAMBIO.md",
+      "git_blob_sha": "2166fef07325dce5da1f5904675723c77cae0fbd",
+      "mode": "100644",
+      "size": 4847
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0009_GATE_ETAPA_1_MINIMO.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0009_GATE_ETAPA_1_MINIMO.md",
+      "git_blob_sha": "59f97081c4d3cbdfec34c86c34138b72779656c0",
+      "mode": "100644",
+      "size": 2283
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0010_E3_DEPOSICION_Y_CONTROLES_NULOS.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0010_E3_DEPOSICION_Y_CONTROLES_NULOS.md",
+      "git_blob_sha": "c6802ad205a938ad783d78b8c758ad3514693f6b",
+      "mode": "100644",
+      "size": 3356
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0011_H20_SCREENING_PYDELTARCM.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0011_H20_SCREENING_PYDELTARCM.md",
+      "git_blob_sha": "2d51f72482662834eeb2c302226681f73648d617",
+      "mode": "100644",
+      "size": 3046
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0012_CAHN_HILLIARD_E3.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0012_CAHN_HILLIARD_E3.md",
+      "git_blob_sha": "dfa4f3161ef236e7dec880e82812639647272ff7",
+      "mode": "100644",
+      "size": 3539
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0013_E3_MECANICA_GRANULAR_BULLET.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0013_E3_MECANICA_GRANULAR_BULLET.md",
+      "git_blob_sha": "7e7e860f53b9e42f4668f14e05227c9e28a0ae6c",
+      "mode": "100644",
+      "size": 4354
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0014_CIERRE_GATE_ETAPA_3.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0014_CIERRE_GATE_ETAPA_3.md",
+      "git_blob_sha": "35f237e5bcbc11859412706cbff1ca78ed4801e2",
+      "mode": "100644",
+      "size": 3287
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0015_SELECCION_GENERADOR_E4.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0015_SELECCION_GENERADOR_E4.md",
+      "git_blob_sha": "d3e2c0b8ed34dc0ed241f3d6abfff429e52a7ccb",
+      "mode": "100644",
+      "size": 4980
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0016_CIERRE_GATE_ETAPA_4.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0016_CIERRE_GATE_ETAPA_4.md",
+      "git_blob_sha": "7ca46f6a338ecdd242abe6f3a6b72327edc66bd0",
+      "mode": "100644",
+      "size": 2514
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0017_E5_ACOPLE_SUELO_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0017_E5_ACOPLE_SUELO_CONTACTO.md",
+      "git_blob_sha": "cb7f56cfc57d29d6b843015e11056151ba27762b",
+      "mode": "100644",
+      "size": 3222
+    },
+    {
+      "source": "WORLD_RESEARCH/DECISIONES/ADR-0018_E5_K_LOCAL_LANDLAB.md",
+      "destination": "inherited/WORLD_RESEARCH/DECISIONES/ADR-0018_E5_K_LOCAL_LANDLAB.md",
+      "git_blob_sha": "f893ea1700c84cfe19a6fe183af23dfc165b9c0b",
+      "mode": "100644",
+      "size": 2746
+    },
+    {
+      "source": "WORLD_RESEARCH/ENSAYO_01_MATERIA.md",
+      "destination": "inherited/WORLD_RESEARCH/ENSAYO_01_MATERIA.md",
+      "git_blob_sha": "98f00a43b621edf9964d62b729e07abe9c612daf",
+      "mode": "100644",
+      "size": 6944
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_10_PROTOCOLO_H14_ECO_CHECKPOINT.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_10_PROTOCOLO_H14_ECO_CHECKPOINT.md",
+      "git_blob_sha": "15ad941117ba18e61d30985dcc32f3035d7128bf",
+      "mode": "100644",
+      "size": 3312
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_10_RESULTADOS_H14_Y_AUDITORIA_ALINEACION.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_10_RESULTADOS_H14_Y_AUDITORIA_ALINEACION.md",
+      "git_blob_sha": "15eaa8fede9c85df8e176599087ca970b49c56b9",
+      "mode": "100644",
+      "size": 3329
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_4_PROTOCOLO_SEDIMENTO_FEEDBACK.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_4_PROTOCOLO_SEDIMENTO_FEEDBACK.md",
+      "git_blob_sha": "aa487ceeb65b330e761639d479b62fe165e1a688",
+      "mode": "100644",
+      "size": 12608
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_4_RESULTADOS_SEDIMENTO_Y_ECOLOGIA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_4_RESULTADOS_SEDIMENTO_Y_ECOLOGIA.md",
+      "git_blob_sha": "777d15bfd9e754da1506ec09330d27e63464a2c5",
+      "mode": "100644",
+      "size": 9439
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_5_CONTRATO_TIEMPO_Y_CONTINUIDAD.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_5_CONTRATO_TIEMPO_Y_CONTINUIDAD.md",
+      "git_blob_sha": "8b386edff49675a44242b12335fa05e79ff0fb20",
+      "mode": "100644",
+      "size": 4352
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_5_RESULTADOS_H9.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_5_RESULTADOS_H9.md",
+      "git_blob_sha": "77aa8afdfd4c924a2bd1798aee9aa88b32c4b050",
+      "mode": "100644",
+      "size": 3874
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_6_PROTOCOLO_RETORNO_RADIACION.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_6_PROTOCOLO_RETORNO_RADIACION.md",
+      "git_blob_sha": "c851eae55dfcda9f1c1e3c2e1c64885dccd4ef1f",
+      "mode": "100644",
+      "size": 9577
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_6_RESULTADOS_H10A.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_6_RESULTADOS_H10A.md",
+      "git_blob_sha": "8199b95a371a96d5c56e11c885fba25422485827",
+      "mode": "100644",
+      "size": 3023
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_6_RESULTADOS_H10B.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_6_RESULTADOS_H10B.md",
+      "git_blob_sha": "57faef6eaab8f990e2e27254befdd054ee9cbb4e",
+      "mode": "100644",
+      "size": 6048
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_7_PROTOCOLO_H11_AGUA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_7_PROTOCOLO_H11_AGUA.md",
+      "git_blob_sha": "d1b3c59f95a94058678f9792b305d76d5ac37da1",
+      "mode": "100644",
+      "size": 7558
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_7_RESULTADOS_H11A.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_7_RESULTADOS_H11A.md",
+      "git_blob_sha": "2db3b14a60ec94049e826cb47f3b81fe9b508060",
+      "mode": "100644",
+      "size": 4318
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_7_RESULTADOS_H11B.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_7_RESULTADOS_H11B.md",
+      "git_blob_sha": "8496abd40552e251cbae1f827f50423b557768bc",
+      "mode": "100644",
+      "size": 5244
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_8_DRYp_ALTERNATIVAS_Y_H11C_PLAN.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_8_DRYp_ALTERNATIVAS_Y_H11C_PLAN.md",
+      "git_blob_sha": "d3ea1e65f4281e31310231c75d59f2238b611a4a",
+      "mode": "100644",
+      "size": 12262
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_8_RESULTADOS_H11C.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_8_RESULTADOS_H11C.md",
+      "git_blob_sha": "d3df2bdf7d39daadcdbe6efa9a325f871b803f9a",
+      "mode": "100644",
+      "size": 4588
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_8_RESULTADOS_H12A_DRYp2.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_8_RESULTADOS_H12A_DRYp2.md",
+      "git_blob_sha": "57fce203b4d017d38b259d6b7f739efa9cd5eba1",
+      "mode": "100644",
+      "size": 3219
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_8_RESULTADOS_H12B_DRYp2.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_8_RESULTADOS_H12B_DRYp2.md",
+      "git_blob_sha": "2344c1eb5cdfbccc87c4f71233ab5c8d8ea241ea",
+      "mode": "100644",
+      "size": 3097
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_9_PROTOCOLO_H13_PERSISTENCIA_ESCALA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_9_PROTOCOLO_H13_PERSISTENCIA_ESCALA.md",
+      "git_blob_sha": "5d1ba34ab9dacc3f9a4102b0872df3912ee4ff45",
+      "mode": "100644",
+      "size": 4644
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_9_RESULTADOS_H13.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_9_RESULTADOS_H13.md",
+      "git_blob_sha": "6663f7934b37b679d3acaad612c659078b5518c9",
+      "mode": "100644",
+      "size": 3826
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_EVALUACION_INTERINA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_EVALUACION_INTERINA.md",
+      "git_blob_sha": "8c3e93cb2afa4e0bc73c27e12a53305aa0dd28df",
+      "mode": "100644",
+      "size": 10414
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H15_PROTOCOLO_POWDER_TOY.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H15_PROTOCOLO_POWDER_TOY.md",
+      "git_blob_sha": "59f7d8a854f8e38ef993f15a0ecce5c5a6a4a032",
+      "mode": "100644",
+      "size": 6037
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H15_RESULTADOS_POWDER_TOY.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H15_RESULTADOS_POWDER_TOY.md",
+      "git_blob_sha": "65fd39dc93ec8d85e0f2ae6a830727884a95a436",
+      "mode": "100644",
+      "size": 3893
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H16_BASELINE_FUNCIONAL_ECOSYSTEM_EXPLORER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H16_BASELINE_FUNCIONAL_ECOSYSTEM_EXPLORER.md",
+      "git_blob_sha": "78cf7eacace7a5cab347b5b6b7fed4a2ce19321c",
+      "mode": "100644",
+      "size": 4623
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H16_PROTOCOLO_ECOSYSTEM_EXPLORER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H16_PROTOCOLO_ECOSYSTEM_EXPLORER.md",
+      "git_blob_sha": "c79281cf35f2d1bfc17b982f6cdaacb77159e6a9",
+      "mode": "100644",
+      "size": 7405
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H16_RESULTADOS_ECOSYSTEM_EXPLORER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H16_RESULTADOS_ECOSYSTEM_EXPLORER.md",
+      "git_blob_sha": "33c761fbcd5211ab7e13d6690cff6c3f8ec6f08e",
+      "mode": "100644",
+      "size": 3738
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H17_PROTOCOLO_PARTICLE_LIFE.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H17_PROTOCOLO_PARTICLE_LIFE.md",
+      "git_blob_sha": "41593c390ec8e23e73c2fb0d1ee9964c95ab7579",
+      "mode": "100644",
+      "size": 3280
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_H17_RESULTADOS_PARTICLE_LIFE.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_H17_RESULTADOS_PARTICLE_LIFE.md",
+      "git_blob_sha": "61942f13e5aa6e5e9dd827c1b06735a17c828c5c",
+      "mode": "100644",
+      "size": 2952
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_PROTOCOLO_LANDLAB_SHANHAI.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_PROTOCOLO_LANDLAB_SHANHAI.md",
+      "git_blob_sha": "39e5d442a42ab56176657047872fd567ab4c4f8f",
+      "mode": "100644",
+      "size": 7168
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_0_RESULTADOS_LANDLAB_SHANHAI.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_0_RESULTADOS_LANDLAB_SHANHAI.md",
+      "git_blob_sha": "addf510397b6e06cb6f5cfdc10a042046eafc4ae",
+      "mode": "100644",
+      "size": 10137
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H10_PROTOCOLO_GRANOS_RIGIDOS.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H10_PROTOCOLO_GRANOS_RIGIDOS.md",
+      "git_blob_sha": "e50cc975c5f57812c19c3c3cbb2ab804c5a879e3",
+      "mode": "100644",
+      "size": 6992
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H10_RESULTADOS_GRANOS_RIGIDOS.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H10_RESULTADOS_GRANOS_RIGIDOS.md",
+      "git_blob_sha": "90dbc68e7ab061f4d50139dcb2a33523c0fbfcc3",
+      "mode": "100644",
+      "size": 5070
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H11_PROTOCOLO_MPM_3D.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H11_PROTOCOLO_MPM_3D.md",
+      "git_blob_sha": "0cfc1e2d9ed56f0ad306e7d40e0393ae9377b154",
+      "mode": "100644",
+      "size": 6152
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H11_RESULTADOS_MPM_3D.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H11_RESULTADOS_MPM_3D.md",
+      "git_blob_sha": "f904a1ef248c8783f951ed0518ef6da621bf0909",
+      "mode": "100644",
+      "size": 4370
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H12_PROTOCOLO_REPOSO_MPM.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H12_PROTOCOLO_REPOSO_MPM.md",
+      "git_blob_sha": "155dd7740ba8f494a43dfa9b3dab87ba4fd0210d",
+      "mode": "100644",
+      "size": 2856
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H12_RESULTADOS_REPOSO_MPM.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H12_RESULTADOS_REPOSO_MPM.md",
+      "git_blob_sha": "5db0276f5fb2dd221a7350257b1d30d0adf26124",
+      "mode": "100644",
+      "size": 4693
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H13A_PROTOCOLO_GEOTAICHI_CPU.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H13A_PROTOCOLO_GEOTAICHI_CPU.md",
+      "git_blob_sha": "130c2d90598f33f332512477c337413601feea7a",
+      "mode": "100644",
+      "size": 4122
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H13A_RESULTADOS_GEOTAICHI_CPU.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H13A_RESULTADOS_GEOTAICHI_CPU.md",
+      "git_blob_sha": "d4d20223dbd84d469ce1de63eddbe923b7063e40",
+      "mode": "100644",
+      "size": 3610
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H14_PROTOCOLO_ENERGIA_FIPY.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H14_PROTOCOLO_ENERGIA_FIPY.md",
+      "git_blob_sha": "50f79bd4eb2a5f5436c1c6b0f6ab0247f6bd936b",
+      "mode": "100644",
+      "size": 4772
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H14_RESULTADOS_ENERGIA_FIPY.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H14_RESULTADOS_ENERGIA_FIPY.md",
+      "git_blob_sha": "91cc3586aee54d830c3536f66a5338777a4338b8",
+      "mode": "100644",
+      "size": 3994
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H15_PROTOCOLO_FASE_ENTALPIA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H15_PROTOCOLO_FASE_ENTALPIA.md",
+      "git_blob_sha": "c65100ddf6a285bfd1000ecc40adfc70cbfa1dcd",
+      "mode": "100644",
+      "size": 6587
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H15_RESULTADOS_FASE_ENTALPIA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H15_RESULTADOS_FASE_ENTALPIA.md",
+      "git_blob_sha": "14227c9af4a02c3c5680e1c066a233e7960d710b",
+      "mode": "100644",
+      "size": 4377
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H16_PROTOCOLO_DOS_MATERIALES_CALOR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H16_PROTOCOLO_DOS_MATERIALES_CALOR.md",
+      "git_blob_sha": "85fd0bf4fe61d2f36529a08dba0d1770119d24b4",
+      "mode": "100644",
+      "size": 7309
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H16_RESULTADOS_DOS_MATERIALES.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H16_RESULTADOS_DOS_MATERIALES.md",
+      "git_blob_sha": "9cb3df6fc0c396a2a77df2dac71a20d049f3c883",
+      "mode": "100644",
+      "size": 4194
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H1_PROTOCOLO_ESTADO_MATERIA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H1_PROTOCOLO_ESTADO_MATERIA.md",
+      "git_blob_sha": "074f656c49c639622f09753971f841a7ae583e5d",
+      "mode": "100644",
+      "size": 4367
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H1_RESULTADOS_ESTADO_MATERIA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H1_RESULTADOS_ESTADO_MATERIA.md",
+      "git_blob_sha": "6b97598778f00cb82511d5a651f6d5c78a961e41",
+      "mode": "100644",
+      "size": 2867
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H2_PROTOCOLO_PROPIEDAD_ESTADO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H2_PROTOCOLO_PROPIEDAD_ESTADO.md",
+      "git_blob_sha": "48a0bc20624338bfa025cb27c703c3260c9348a9",
+      "mode": "100644",
+      "size": 6793
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H2_RESULTADOS_PROPIEDAD_ESTADO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H2_RESULTADOS_PROPIEDAD_ESTADO.md",
+      "git_blob_sha": "6f3febf1996d9964f3c3069225595919d03210d6",
+      "mode": "100644",
+      "size": 4039
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H3_PROTOCOLO_VALIDACION_COMMIT.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H3_PROTOCOLO_VALIDACION_COMMIT.md",
+      "git_blob_sha": "4364072fae09653a8255c46514f292ef9ab521dd",
+      "mode": "100644",
+      "size": 4417
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H3_RESULTADOS_VALIDACION_COMMIT.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H3_RESULTADOS_VALIDACION_COMMIT.md",
+      "git_blob_sha": "cbd08b271c13cdaae0b0bee1a5df141b4d623dee",
+      "mode": "100644",
+      "size": 4301
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H4_PROTOCOLO_REPRESENTACION_3D.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H4_PROTOCOLO_REPRESENTACION_3D.md",
+      "git_blob_sha": "e533a45704bda10945a685fbf33efc8b5f6bf7d8",
+      "mode": "100644",
+      "size": 7079
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H4_RESULTADOS_REPRESENTACION_3D.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H4_RESULTADOS_REPRESENTACION_3D.md",
+      "git_blob_sha": "592af06356efddcd4f11dab67256461f26c870d4",
+      "mode": "100644",
+      "size": 4260
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H5_PROTOCOLO_ACOPLAMIENTO_ESTADO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H5_PROTOCOLO_ACOPLAMIENTO_ESTADO.md",
+      "git_blob_sha": "8bd79646d01ebd04516c0b7a8400e8e210c0f4fa",
+      "mode": "100644",
+      "size": 5197
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H5_RESULTADOS_ACOPLAMIENTO_ESTADO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H5_RESULTADOS_ACOPLAMIENTO_ESTADO.md",
+      "git_blob_sha": "b64a9aeb2f6d672984aed80974f30d29533b534a",
+      "mode": "100644",
+      "size": 4102
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H6_PROTOCOLO_ROI_DINAMICA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H6_PROTOCOLO_ROI_DINAMICA.md",
+      "git_blob_sha": "658d77883de0bed01950ad1ac79fa7eeb7331055",
+      "mode": "100644",
+      "size": 4077
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H6_RESULTADOS_ROI_DINAMICA.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H6_RESULTADOS_ROI_DINAMICA.md",
+      "git_blob_sha": "8cd6112f9b522d60b4854f84fb739b7b0632f2f8",
+      "mode": "100644",
+      "size": 3177
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H7_PROTOCOLO_RIGID_CONTACT_BULLET.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H7_PROTOCOLO_RIGID_CONTACT_BULLET.md",
+      "git_blob_sha": "40207eb10a47bfb95332aa87a53176b222300fe5",
+      "mode": "100644",
+      "size": 7285
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H7_RESULTADOS_RIGID_CONTACT_BULLET.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H7_RESULTADOS_RIGID_CONTACT_BULLET.md",
+      "git_blob_sha": "6958669defd4debd73982f8becfc79e19f5ecae4",
+      "mode": "100644",
+      "size": 4075
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H8_PROTOCOLO_CAVIDAD_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H8_PROTOCOLO_CAVIDAD_CONTACTO.md",
+      "git_blob_sha": "f8a01b0fe80df7d910ee9b4ccdac88951d94b603",
+      "mode": "100644",
+      "size": 11739
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H8_RESULTADOS_CAVIDAD_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H8_RESULTADOS_CAVIDAD_CONTACTO.md",
+      "git_blob_sha": "1ca0165ced9eb012027638610a4ff1440ee9da11",
+      "mode": "100644",
+      "size": 6642
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H9_PROTOCOLO_SEDIMENTO_OWNER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H9_PROTOCOLO_SEDIMENTO_OWNER.md",
+      "git_blob_sha": "6a3f8db78a0c5e59a71e90f2b1dbbfa4216d2205",
+      "mode": "100644",
+      "size": 5100
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_1_H9_RESULTADOS_SEDIMENTO_OWNER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_1_H9_RESULTADOS_SEDIMENTO_OWNER.md",
+      "git_blob_sha": "fa9ed66b8c4b8787670a2e3faa4e7ea472768cb9",
+      "mode": "100644",
+      "size": 4160
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_2_H17_PROTOCOLO_GRAVEDAD_OWNER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_2_H17_PROTOCOLO_GRAVEDAD_OWNER.md",
+      "git_blob_sha": "186c09b1ac9751f4f93fbc70395c3122f54e309e",
+      "mode": "100644",
+      "size": 6112
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_2_H17_RESULTADOS_GRAVEDAD_OWNER.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_2_H17_RESULTADOS_GRAVEDAD_OWNER.md",
+      "git_blob_sha": "c7efb38cc7fcb6bdd259803aec4cf7db9fb4164c",
+      "mode": "100644",
+      "size": 3598
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_2_H18_PROTOCOLO_GRADIENTE_SEDIMENTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_2_H18_PROTOCOLO_GRADIENTE_SEDIMENTO.md",
+      "git_blob_sha": "2bdb56bc0d98731d874b7b72a8a1c1ffc70f8b86",
+      "mode": "100644",
+      "size": 4663
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_2_H18_RESULTADOS_GRADIENTE_SEDIMENTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_2_H18_RESULTADOS_GRADIENTE_SEDIMENTO.md",
+      "git_blob_sha": "517e8b69d990a2e114f7eacd314a2ad4f4a6da2a",
+      "mode": "100644",
+      "size": 3313
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H19_PROTOCOLO_DEPOSITO_CONEXO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H19_PROTOCOLO_DEPOSITO_CONEXO.md",
+      "git_blob_sha": "830144a7f1ca95ddf52477a326e29c98d0fc652a",
+      "mode": "100644",
+      "size": 5415
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H19_RESULTADOS_DEPOSITO_CONEXO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H19_RESULTADOS_DEPOSITO_CONEXO.md",
+      "git_blob_sha": "a2eb7341f055c8419caa4b554b1f3bf3777d3830",
+      "mode": "100644",
+      "size": 4093
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H20A_PROTOCOLO_PYDELTARCM.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H20A_PROTOCOLO_PYDELTARCM.md",
+      "git_blob_sha": "41d5aadb41f0f0a2eafb961e0b37916f20527f01",
+      "mode": "100644",
+      "size": 3644
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H20A_RESULTADOS_PYDELTARCM.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H20A_RESULTADOS_PYDELTARCM.md",
+      "git_blob_sha": "bd456c79156c918d0d720f65f428eb6b1b48d50b",
+      "mode": "100644",
+      "size": 4193
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H21_PROTOCOLO_CAHN_HILLIARD.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H21_PROTOCOLO_CAHN_HILLIARD.md",
+      "git_blob_sha": "b53b7292fc4908f1a9d57f09f9e1395927e27f79",
+      "mode": "100644",
+      "size": 5951
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H21_RESULTADOS_CAHN_HILLIARD.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H21_RESULTADOS_CAHN_HILLIARD.md",
+      "git_blob_sha": "d4c2e7c253ece80e4e196d85067a262266d595b3",
+      "mode": "100644",
+      "size": 4548
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H22_PROTOCOLO_ESCALA_INTERFAZ.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H22_PROTOCOLO_ESCALA_INTERFAZ.md",
+      "git_blob_sha": "fe585f1f7ad73518e4c6393c13c2ebf6f0b5ff28",
+      "mode": "100644",
+      "size": 3969
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H22_RESULTADOS_ESCALA_INTERFAZ.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H22_RESULTADOS_ESCALA_INTERFAZ.md",
+      "git_blob_sha": "24464653275366ff42851c1432240078d5fd0d2a",
+      "mode": "100644",
+      "size": 3980
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H23_PROTOCOLO_PERSISTENCIA_SEMILLAS.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H23_PROTOCOLO_PERSISTENCIA_SEMILLAS.md",
+      "git_blob_sha": "8b3991949df214d6e2b3ed8bc95a31a8eccfa1b1",
+      "mode": "100644",
+      "size": 5203
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H23_RESULTADOS_PERSISTENCIA_SEMILLAS.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H23_RESULTADOS_PERSISTENCIA_SEMILLAS.md",
+      "git_blob_sha": "95c863e505a39a9d2c57651d8ba027d2058195cd",
+      "mode": "100644",
+      "size": 4192
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H24_PROTOCOLO_PILA_GRANULAR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H24_PROTOCOLO_PILA_GRANULAR.md",
+      "git_blob_sha": "98bfa83f3d7dcfaf00bc02bb4372c39f71960507",
+      "mode": "100644",
+      "size": 7048
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H24_RESULTADOS_PILA_GRANULAR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H24_RESULTADOS_PILA_GRANULAR.md",
+      "git_blob_sha": "33fd3f8aa72d0c23c701cd7ced9146c2595651c1",
+      "mode": "100644",
+      "size": 4522
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H25_PROTOCOLO_ASENTAMIENTO_TARDIO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H25_PROTOCOLO_ASENTAMIENTO_TARDIO.md",
+      "git_blob_sha": "80307a696c8dbfb31ebb503cd0ab1e0190bae9bf",
+      "mode": "100644",
+      "size": 4860
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H25_RESULTADOS_ASENTAMIENTO_TARDIO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H25_RESULTADOS_ASENTAMIENTO_TARDIO.md",
+      "git_blob_sha": "7abcb7399499e461a46f4fd003125bbb53321f62",
+      "mode": "100644",
+      "size": 3642
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H26_PROTOCOLO_DEPOSITO_GRADUAL.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H26_PROTOCOLO_DEPOSITO_GRADUAL.md",
+      "git_blob_sha": "befe5189cb7c774334a805af2fbe09bfbec97106",
+      "mode": "100644",
+      "size": 6411
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H26_RESULTADOS_DEPOSITO_GRADUAL.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H26_RESULTADOS_DEPOSITO_GRADUAL.md",
+      "git_blob_sha": "d02137f26145b468ee64ed029d4caca9cb904b0a",
+      "mode": "100644",
+      "size": 5615
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H27_PROTOCOLO_NULO_GRANULAR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H27_PROTOCOLO_NULO_GRANULAR.md",
+      "git_blob_sha": "3776804219f39db2b491d29f61ce6ea7a99885d4",
+      "mode": "100644",
+      "size": 5906
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H27_RESULTADOS_NULO_GRANULAR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H27_RESULTADOS_NULO_GRANULAR.md",
+      "git_blob_sha": "6e415e001f99bcbad33817b6eab317b5b41d4473",
+      "mode": "100644",
+      "size": 4094
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H28_PROTOCOLO_NULO_MCMC.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H28_PROTOCOLO_NULO_MCMC.md",
+      "git_blob_sha": "3741b81936c78de4789aaa2d7bc6dec77c1be860",
+      "mode": "100644",
+      "size": 5820
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_3_H28_RESULTADOS_NULO_MCMC.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_3_H28_RESULTADOS_NULO_MCMC.md",
+      "git_blob_sha": "4b866537caff82b42296251832a2c20245381843",
+      "mode": "100644",
+      "size": 5381
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_4_H29_PROTOCOLO_SEMILLAS_TERRITORIO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_4_H29_PROTOCOLO_SEMILLAS_TERRITORIO.md",
+      "git_blob_sha": "8bc21390bfc678193bf7489314c82dd5adb7047a",
+      "mode": "100644",
+      "size": 8874
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_4_H29_RESULTADOS_SEMILLAS_TERRITORIO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_4_H29_RESULTADOS_SEMILLAS_TERRITORIO.md",
+      "git_blob_sha": "42b6dc46ade6c8e82d63c9dd15d9b2c7ab5e59f5",
+      "mode": "100644",
+      "size": 4735
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_4_H30_PROTOCOLO_CONTACTO_TERRENO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_4_H30_PROTOCOLO_CONTACTO_TERRENO.md",
+      "git_blob_sha": "e353ed5de1c9ffa8f8d2efd900f557bfc181e274",
+      "mode": "100644",
+      "size": 7310
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_4_H30_RESULTADOS_CONTACTO_TERRENO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_4_H30_RESULTADOS_CONTACTO_TERRENO.md",
+      "git_blob_sha": "c68a1dd0509ac24722541f6461110f6a515398da",
+      "mode": "100644",
+      "size": 4319
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_5_H31_PROTOCOLO_SUELO_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_5_H31_PROTOCOLO_SUELO_CONTACTO.md",
+      "git_blob_sha": "2e9942f0e1591d0ac07266a6417f92da6bb8fd70",
+      "mode": "100644",
+      "size": 11630
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_5_H31_RESULTADOS_SUELO_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_5_H31_RESULTADOS_SUELO_CONTACTO.md",
+      "git_blob_sha": "64c502c9131691a09cf7b38c9f429156d4787a17",
+      "mode": "100644",
+      "size": 6510
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_5_H32_INCIDENCIA_0_HASH_NETCDF.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_5_H32_INCIDENCIA_0_HASH_NETCDF.md",
+      "git_blob_sha": "99b81aba8ff22d677defe2fb8ed391e4862bc442",
+      "mode": "100644",
+      "size": 2196
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_5_H32_PROTOCOLO_K_LOCAL_AGUAS_ABAJO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_5_H32_PROTOCOLO_K_LOCAL_AGUAS_ABAJO.md",
+      "git_blob_sha": "31b34b5a3b3b2a5821eb66c6e6c3b86c8e79995f",
+      "mode": "100644",
+      "size": 7308
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_5_H32_RESULTADOS_K_LOCAL_AGUAS_ABAJO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_5_H32_RESULTADOS_K_LOCAL_AGUAS_ABAJO.md",
+      "git_blob_sha": "43bd86ec6d5226ebfd97d37eaf63c1dcf7eb01e2",
+      "mode": "100644",
+      "size": 5030
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H33_INCIDENCIA_0_JSON_NUMPY_BOOL.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H33_INCIDENCIA_0_JSON_NUMPY_BOOL.md",
+      "git_blob_sha": "f851293c44fdc7b804062999fa904dd58d83327c",
+      "mode": "100644",
+      "size": 1557
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H33_INCIDENCIA_1_JSON_NUMPY_BOOL.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H33_INCIDENCIA_1_JSON_NUMPY_BOOL.md",
+      "git_blob_sha": "e8a3c126fbe4c5efe386fcc205d093016798d72c",
+      "mode": "100644",
+      "size": 1475
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H33_PROTOCOLO_RESTART_LANDLAB.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H33_PROTOCOLO_RESTART_LANDLAB.md",
+      "git_blob_sha": "5ed37f82c6be4bcb9985fd4974acfa94f804c9c9",
+      "mode": "100644",
+      "size": 5656
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H33_RESULTADOS_RESTART_LANDLAB.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H33_RESULTADOS_RESTART_LANDLAB.md",
+      "git_blob_sha": "715c60a6214e20b47593db9ede05d58eb57537e0",
+      "mode": "100644",
+      "size": 4107
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H34_PROTOCOLO_CHECKPOINT_BULLET.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H34_PROTOCOLO_CHECKPOINT_BULLET.md",
+      "git_blob_sha": "38ffbde422c492c336bf11111c2601edc51552c4",
+      "mode": "100644",
+      "size": 5822
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H34_RESULTADOS_CHECKPOINT_BULLET.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H34_RESULTADOS_CHECKPOINT_BULLET.md",
+      "git_blob_sha": "1c049922999a87d7cfd94f5dacf3e7756307124f",
+      "mode": "100644",
+      "size": 3467
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H35_PROTOCOLO_RESTART_FUENTE_GRANULAR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H35_PROTOCOLO_RESTART_FUENTE_GRANULAR.md",
+      "git_blob_sha": "a34429e608b5fcd438040dc2dbfb9dcfd283b7ee",
+      "mode": "100644",
+      "size": 7867
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_6_H35_RESULTADOS_RESTART_FUENTE_GRANULAR.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_6_H35_RESULTADOS_RESTART_FUENTE_GRANULAR.md",
+      "git_blob_sha": "d8ead394450760a6f17dd6533ae6d0e6acfde5a3",
+      "mode": "100644",
+      "size": 4845
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_7_H36_PROTOCOLO_FUNCION_PILA_IMPACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_7_H36_PROTOCOLO_FUNCION_PILA_IMPACTO.md",
+      "git_blob_sha": "2e59e2f6ce414ed1d3f869b4c088355edba616a3",
+      "mode": "100644",
+      "size": 7018
+    },
+    {
+      "source": "WORLD_RESEARCH/ETAPA_7_H36_RESULTADOS_FUNCION_PILA_IMPACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/ETAPA_7_H36_RESULTADOS_FUNCION_PILA_IMPACTO.md",
+      "git_blob_sha": "0701246e4506e0e8cb8181f044470c6c77a3f132",
+      "mode": "100644",
+      "size": 5446
+    },
+    {
+      "source": "WORLD_RESEARCH/H37_PROTOCOLO_RESTART_CADENA_SUELO_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/H37_PROTOCOLO_RESTART_CADENA_SUELO_CONTACTO.md",
+      "git_blob_sha": "9daf0aa2e9d4b2df867111ed187857c6221325b1",
+      "mode": "100644",
+      "size": 5606
+    },
+    {
+      "source": "WORLD_RESEARCH/H37_RESULTADOS_RESTART_CADENA_SUELO_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/H37_RESULTADOS_RESTART_CADENA_SUELO_CONTACTO.md",
+      "git_blob_sha": "78b55d7f9211ae49fa0e5cd772b71c8cb5552be0",
+      "mode": "100644",
+      "size": 5097
+    },
+    {
+      "source": "WORLD_RESEARCH/H38_INCIDENCIA_0_YAML.md",
+      "destination": "inherited/WORLD_RESEARCH/H38_INCIDENCIA_0_YAML.md",
+      "git_blob_sha": "39d27902233ceb651486280cff7a3ed481eb813a",
+      "mode": "100644",
+      "size": 577
+    },
+    {
+      "source": "WORLD_RESEARCH/H38_INCIDENCIA_1_NETCDF_MODE.md",
+      "destination": "inherited/WORLD_RESEARCH/H38_INCIDENCIA_1_NETCDF_MODE.md",
+      "git_blob_sha": "10a95cd56b82250aadf858d0fc3213b018033857",
+      "mode": "100644",
+      "size": 891
+    },
+    {
+      "source": "WORLD_RESEARCH/H38_PROTOCOLO_TERRENO_MUTABLE_CUERPO_ACTIVO.md",
+      "destination": "inherited/WORLD_RESEARCH/H38_PROTOCOLO_TERRENO_MUTABLE_CUERPO_ACTIVO.md",
+      "git_blob_sha": "3e8f7e66ad289998b7e031ab49ae0b42c558b935",
+      "mode": "100644",
+      "size": 5294
+    },
+    {
+      "source": "WORLD_RESEARCH/H38_RESULTADOS_TERRENO_MUTABLE_CUERPO_ACTIVO.md",
+      "destination": "inherited/WORLD_RESEARCH/H38_RESULTADOS_TERRENO_MUTABLE_CUERPO_ACTIVO.md",
+      "git_blob_sha": "e85a24bb434b2304ed1b32ceae2c482a0f0a35ae",
+      "mode": "100644",
+      "size": 1763
+    },
+    {
+      "source": "WORLD_RESEARCH/H39_PROTOCOLO_INVALIDACION_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/H39_PROTOCOLO_INVALIDACION_CONTACTO.md",
+      "git_blob_sha": "15bb9491bb3a1964b52d5db33426c5adbe923b5c",
+      "mode": "100644",
+      "size": 3371
+    },
+    {
+      "source": "WORLD_RESEARCH/H39_RESULTADOS_INVALIDACION_CONTACTO.md",
+      "destination": "inherited/WORLD_RESEARCH/H39_RESULTADOS_INVALIDACION_CONTACTO.md",
+      "git_blob_sha": "55e373aadb62b3b8c59af8ab43f35eb363a7d5db",
+      "mode": "100644",
+      "size": 2126
+    },
+    {
+      "source": "WORLD_RESEARCH/H40_PROTOCOLO_EPOCAS_SUELO_CUERPO.md",
+      "destination": "inherited/WORLD_RESEARCH/H40_PROTOCOLO_EPOCAS_SUELO_CUERPO.md",
+      "git_blob_sha": "25bd9533916fa44afd1b0fc09d6a8fe9b7e0ae69",
+      "mode": "100644",
+      "size": 5376
+    },
+    {
+      "source": "WORLD_RESEARCH/H40_RESULTADOS_EPOCAS_SUELO_CUERPO.md",
+      "destination": "inherited/WORLD_RESEARCH/H40_RESULTADOS_EPOCAS_SUELO_CUERPO.md",
+      "git_blob_sha": "f74327ba1b1be5abd304812fca99640975025372",
+      "mode": "100644",
+      "size": 3287
+    },
+    {
+      "source": "WORLD_RESEARCH/H41_PROTOCOLO_TRANSITO_AGREGADO_SUELO_CAMBIANTE.md",
+      "destination": "inherited/WORLD_RESEARCH/H41_PROTOCOLO_TRANSITO_AGREGADO_SUELO_CAMBIANTE.md",
+      "git_blob_sha": "da690788ac534f425cde4d1800755eb4e1a931a9",
+      "mode": "100644",
+      "size": 6155
+    },
+    {
+      "source": "WORLD_RESEARCH/H41_RESULTADOS_TRANSITO_AGREGADO_SUELO_CAMBIANTE.md",
+      "destination": "inherited/WORLD_RESEARCH/H41_RESULTADOS_TRANSITO_AGREGADO_SUELO_CAMBIANTE.md",
+      "git_blob_sha": "c7b09eaaed0eab33703a1f2fe9c0d31163fc85ba",
+      "mode": "100644",
+      "size": 3635
+    },
+    {
+      "source": "WORLD_RESEARCH/H42_INCIDENCIA_OBSERVADOR.md",
+      "destination": "inherited/WORLD_RESEARCH/H42_INCIDENCIA_OBSERVADOR.md",
+      "git_blob_sha": "619411652f9c99dceb1e20eb0270bd3a9475a07a",
+      "mode": "100644",
+      "size": 2389
+    },
+    {
+      "source": "WORLD_RESEARCH/H42_PROTOCOLO_PROTECCION_DIRECCIONAL.md",
+      "destination": "inherited/WORLD_RESEARCH/H42_PROTOCOLO_PROTECCION_DIRECCIONAL.md",
+      "git_blob_sha": "d0cb49726d76cdd6dde6df3178d9b802d46db19f",
+      "mode": "100644",
+      "size": 5507
+    },
+    {
+      "source": "WORLD_RESEARCH/H42_RESULTADOS_PROTECCION_DIRECCIONAL.md",
+      "destination": "inherited/WORLD_RESEARCH/H42_RESULTADOS_PROTECCION_DIRECCIONAL.md",
+      "git_blob_sha": "67d395849d46632d82a3b2e1d10e11a95ae491ce",
+      "mode": "100644",
+      "size": 2732
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_A_PROTOCOLO_AVANCE_A_DEMANDA.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_A_PROTOCOLO_AVANCE_A_DEMANDA.md",
+      "git_blob_sha": "6e7f4b392477bcbb8f7507e9f9a75b4765a92734",
+      "mode": "100644",
+      "size": 4493
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_A_RESULTADOS_AVANCE_A_DEMANDA.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_A_RESULTADOS_AVANCE_A_DEMANDA.md",
+      "git_blob_sha": "d43ba82414ce361cdf84b093f9c7376f188183c3",
+      "mode": "100644",
+      "size": 1506
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_B_DIAGNOSTICO_Y_PROTOCOLO_PERFIL_REPRODUCIBLE.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_B_DIAGNOSTICO_Y_PROTOCOLO_PERFIL_REPRODUCIBLE.md",
+      "git_blob_sha": "df4dc068e2ad7c218494599e9217d3e611dd35a4",
+      "mode": "100644",
+      "size": 4205
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_B_PROTOCOLO_REANUDACION_CONJUNTA.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_B_PROTOCOLO_REANUDACION_CONJUNTA.md",
+      "git_blob_sha": "bd3d03ad79fd3523de182f0eaea8209eef26bade",
+      "mode": "100644",
+      "size": 4449
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_B_RESULTADO_INICIAL_E_INCIDENCIA.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_B_RESULTADO_INICIAL_E_INCIDENCIA.md",
+      "git_blob_sha": "5312f942f52c4a7b90874f767f9af647570a6122",
+      "mode": "100644",
+      "size": 3315
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_B_R_RESULTADOS_PERSISTENCIA_CONJUNTA.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_B_R_RESULTADOS_PERSISTENCIA_CONJUNTA.md",
+      "git_blob_sha": "938683557eab4f52628013f368da93a27570b5fd",
+      "mode": "100644",
+      "size": 1726
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_C_PROTOCOLO_HORIZONTE_EXTENDIDO.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_C_PROTOCOLO_HORIZONTE_EXTENDIDO.md",
+      "git_blob_sha": "292f01a988844c71b362e0c176fabade52c82c0f",
+      "mode": "100644",
+      "size": 3665
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_C_RESULTADOS_HORIZONTE_EXTENDIDO.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_C_RESULTADOS_HORIZONTE_EXTENDIDO.md",
+      "git_blob_sha": "71d413fe21873ee027fa688d6bc7abbbb16fd2a2",
+      "mode": "100644",
+      "size": 1731
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_D_PROTOCOLO_ORGANIZACION_PERSISTENTE.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_D_PROTOCOLO_ORGANIZACION_PERSISTENTE.md",
+      "git_blob_sha": "579dd888dcbfb4c92c759bbdb97dd2ebfae0d0f3",
+      "mode": "100644",
+      "size": 4017
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_D_RESULTADOS_ORGANIZACION_PERSISTENTE.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_D_RESULTADOS_ORGANIZACION_PERSISTENTE.md",
+      "git_blob_sha": "5117a076b14d0d4a993997b810239b221eb29c70",
+      "mode": "100644",
+      "size": 2880
+    },
+    {
+      "source": "WORLD_RESEARCH/P0_E_EVALUACION_INTEGRAL_Y_DECISION.md",
+      "destination": "inherited/WORLD_RESEARCH/P0_E_EVALUACION_INTEGRAL_Y_DECISION.md",
+      "git_blob_sha": "8ebd71dabd5c0b3eb042a1f1d9adff338cfee530",
+      "mode": "100644",
+      "size": 7102
+    },
+    {
+      "source": "WORLD_RESEARCH/P1_A_INCIDENCIA_INTERSECCION_RAYOS.md",
+      "destination": "inherited/WORLD_RESEARCH/P1_A_INCIDENCIA_INTERSECCION_RAYOS.md",
+      "git_blob_sha": "791cee46b8cb410612be5d2c6e4ab95c520b2d83",
+      "mode": "100644",
+      "size": 3010
+    },
+    {
+      "source": "WORLD_RESEARCH/P1_A_PROTOCOLO_RADIACION_TERMICA.md",
+      "destination": "inherited/WORLD_RESEARCH/P1_A_PROTOCOLO_RADIACION_TERMICA.md",
+      "git_blob_sha": "a171358528190fa2fe1dd0cc716cad8c05b93c23",
+      "mode": "100644",
+      "size": 4602
+    },
+    {
+      "source": "WORLD_RESEARCH/P1_PLAN_RETROACCION_AMBIENTAL.md",
+      "destination": "inherited/WORLD_RESEARCH/P1_PLAN_RETROACCION_AMBIENTAL.md",
+      "git_blob_sha": "730e1caf81af36b6cc4a45c98f87af2687c92416",
+      "mode": "100644",
+      "size": 4991
+    },
+    {
+      "source": "WORLD_RESEARCH/PROCEDIMIENTO_Y_AUDITORIA.md",
+      "destination": "inherited/WORLD_RESEARCH/PROCEDIMIENTO_Y_AUDITORIA.md",
+      "git_blob_sha": "08a18d8230febdf4d0b5e464743808172c75314a",
+      "mode": "100644",
+      "size": 26209
+    },
+    {
+      "source": "WORLD_RESEARCH/REVISION_COMPARATIVA_42_ALTERNATIVAS_2026-11-21.md",
+      "destination": "inherited/WORLD_RESEARCH/REVISION_COMPARATIVA_42_ALTERNATIVAS_2026-11-21.md",
+      "git_blob_sha": "fcdb1c886e73e05b7d29c2e8fececd1f3dcfb3be",
+      "mode": "100644",
+      "size": 38454
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/export_worldengine_height.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/export_worldengine_height.py",
+      "git_blob_sha": "47b63809fac47607ed5eb352356f22d008d61d70",
+      "mode": "100644",
+      "size": 1288
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/matter_v0.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/matter_v0.py",
+      "git_blob_sha": "758cbcc9f48928d6993c921cb48a727f4a7c8744",
+      "mode": "100644",
+      "size": 5315
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0a_landlab_worker.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0a_landlab_worker.py",
+      "git_blob_sha": "ef9f0a3e66b4cce811682203d9510850a93684e6",
+      "mode": "100644",
+      "size": 1629
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0a_world_runner.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0a_world_runner.py",
+      "git_blob_sha": "b5a49f942808fe0b5e9e804cc1664a13f49e8020",
+      "mode": "100644",
+      "size": 8353
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0b_diagnose_soil_restart.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0b_diagnose_soil_restart.py",
+      "git_blob_sha": "e6649cdddbf9419e4513149833d599a1b71decdb",
+      "mode": "100644",
+      "size": 6478
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0b_joint_restart.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0b_joint_restart.py",
+      "git_blob_sha": "3480d1d394a7d0cd3057b058fa8b0828f47a3707",
+      "mode": "100644",
+      "size": 13641
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0b_profile_restart.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0b_profile_restart.py",
+      "git_blob_sha": "f4d282da25d5979a077b21cb5e1073112f8a4614",
+      "mode": "100644",
+      "size": 6330
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0c_extended_world.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0c_extended_world.py",
+      "git_blob_sha": "00f0836b5a1f02d7e33447283f178b633a8be15f",
+      "mode": "100644",
+      "size": 15573
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0c_landlab_worker.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0c_landlab_worker.py",
+      "git_blob_sha": "189ad67a0b303af32f1349c039da0be108a5dd08",
+      "mode": "100644",
+      "size": 1751
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p0d_granular_world.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p0d_granular_world.py",
+      "git_blob_sha": "2db489e164d6ce80c703ee7a49421d89eff91803",
+      "mode": "100644",
+      "size": 16955
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p1a_thermal_response.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p1a_thermal_response.py",
+      "git_blob_sha": "fb4eab71911840d1ba40ab7572d6caa02ca1ae65",
+      "mode": "100644",
+      "size": 12248
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/p1ar_exact_sphere_rays.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/p1ar_exact_sphere_rays.py",
+      "git_blob_sha": "a573e7b603724ec76fc8432e6437b9eba0aa38b4",
+      "mode": "100644",
+      "size": 5261
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_dryp2_archive_static.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_dryp2_archive_static.py",
+      "git_blob_sha": "388197ac3cd4932b6541c789e9efe3ea4c878be8",
+      "mode": "100644",
+      "size": 4451
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_dryp2_dependencies_static.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_dryp2_dependencies_static.py",
+      "git_blob_sha": "c8c6228a60c848e32192ff439551cf701e2b32dc",
+      "mode": "100644",
+      "size": 2849
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_all_level_validation.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_all_level_validation.py",
+      "git_blob_sha": "509fff7f8e601d52190d137825acc6b0e0fa0c56",
+      "mode": "100644",
+      "size": 6983
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_bullet_cavity_owner.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_bullet_cavity_owner.py",
+      "git_blob_sha": "bf372b534a4196bd9d35e80fe5d19725a09770cd",
+      "mode": "100644",
+      "size": 15314
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_bullet_cavity_prepare.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_bullet_cavity_prepare.py",
+      "git_blob_sha": "a5f967aa9063611436cc5bdc392d8fdefc428d8b",
+      "mode": "100644",
+      "size": 3938
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_bullet_rigid_contact.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_bullet_rigid_contact.py",
+      "git_blob_sha": "9345699ad70cc2ee5dae0b23f08d0a0456f43893",
+      "mode": "100644",
+      "size": 11435
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_dynamic_roi_boundary.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_dynamic_roi_boundary.py",
+      "git_blob_sha": "19ee93ad36659a6f6ba93e0202f07eea61159639",
+      "mode": "100644",
+      "size": 9883
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h10_rigid_grains.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h10_rigid_grains.py",
+      "git_blob_sha": "3a28433e004d4ebb1dcd19b85ce5e29149842fca",
+      "mode": "100644",
+      "size": 10531
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h11_upstream_mpm3d.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h11_upstream_mpm3d.py",
+      "git_blob_sha": "de1b30eedd0c9e3ff1398a4a892e4b4b9119549d",
+      "mode": "100644",
+      "size": 9038
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h12_mpm_settling.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h12_mpm_settling.py",
+      "git_blob_sha": "0cf6c08c940dde7ca951a1485822850e0b1dad3b",
+      "mode": "100644",
+      "size": 6838
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h14_heat_fipy.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h14_heat_fipy.py",
+      "git_blob_sha": "a7420a939af7fc0a6ed4570945b3988e45ba8f4f",
+      "mode": "100644",
+      "size": 9040
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h15_phase_enthalpy.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h15_phase_enthalpy.py",
+      "git_blob_sha": "a45788b7ea6fd2ae239e1dd77811a400ad58710a",
+      "mode": "100644",
+      "size": 13429
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h16_dual_material_heat.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h16_dual_material_heat.py",
+      "git_blob_sha": "6dfaecb078c2caa9565b873b57e833fbb39f16fe",
+      "mode": "100644",
+      "size": 14752
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_h9_sediment_owner.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_h9_sediment_owner.py",
+      "git_blob_sha": "3239f70775b4319f1d467b9902a5c2578a25756f",
+      "mode": "100644",
+      "size": 11665
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_shared_state_views.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_shared_state_views.py",
+      "git_blob_sha": "85213d03465acc82eff1a74c4e1707f61a6235fe",
+      "mode": "100644",
+      "size": 9048
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_spatial_geometry.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_spatial_geometry.py",
+      "git_blob_sha": "8bd9c39780079b5c1b9977c6ea1c756170c81ca7",
+      "mode": "100644",
+      "size": 9752
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_state_representations.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_state_representations.py",
+      "git_blob_sha": "81b5906805cf9b5d1e279924d02f622267a74e52",
+      "mode": "100644",
+      "size": 7790
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e1_surface_volume_partition.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e1_surface_volume_partition.py",
+      "git_blob_sha": "c3439f866dabf4bd78c850a4819682a557e67f8d",
+      "mode": "100644",
+      "size": 12085
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e2_h17_rigid_owner.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e2_h17_rigid_owner.py",
+      "git_blob_sha": "bfd272e4eb3f49b79d1695b7fd78fd1267b05918",
+      "mode": "100644",
+      "size": 13644
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e2_h18_slope_ablation.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e2_h18_slope_ablation.py",
+      "git_blob_sha": "152afcdbdfe977464ef032ab65d3b8a58abaf50f",
+      "mode": "100644",
+      "size": 6768
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h19_deposit_pattern.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h19_deposit_pattern.py",
+      "git_blob_sha": "3df099c3a9a558c808d2a4d7c9f8134f5eff44e1",
+      "mode": "100644",
+      "size": 8043
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h20a_pydeltarcm_screen.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h20a_pydeltarcm_screen.py",
+      "git_blob_sha": "35a248a58671d9e5f21b41edd39cff87d0050f38",
+      "mode": "100644",
+      "size": 6640
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h21_spinodal_fipy.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h21_spinodal_fipy.py",
+      "git_blob_sha": "309f760685ded417d260dd44243904beab53273e",
+      "mode": "100644",
+      "size": 11905
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h22_spinodal_epsilon.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h22_spinodal_epsilon.py",
+      "git_blob_sha": "9bfe944d9b8937fb62c8c54b49084c44577625f2",
+      "mode": "100644",
+      "size": 4959
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h23_longrun_seeds.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h23_longrun_seeds.py",
+      "git_blob_sha": "751c34a73352d9d118ab75dbb9a797b176754a37",
+      "mode": "100644",
+      "size": 8024
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h24_granular_pile.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h24_granular_pile.py",
+      "git_blob_sha": "a52b6d3f8f073d9e0123381fc8c19a4608e4174e",
+      "mode": "100644",
+      "size": 14611
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h25_granular_settling.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h25_granular_settling.py",
+      "git_blob_sha": "16efdee892d88831e224226f6da0a874575ccd38",
+      "mode": "100644",
+      "size": 6421
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h26_gravity_feed.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h26_gravity_feed.py",
+      "git_blob_sha": "6bd12a7110368b6bdb5bd6cb840e89c8a57ddab5",
+      "mode": "100644",
+      "size": 10210
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h27_hardcore_spatial_null.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h27_hardcore_spatial_null.py",
+      "git_blob_sha": "b9626acaa1c040e51aefc9432751257cfb811af1",
+      "mode": "100644",
+      "size": 7501
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e3_h28_mcmc_spatial_null.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e3_h28_mcmc_spatial_null.py",
+      "git_blob_sha": "a39ab2acd950700926450cafa2150238692f69ad",
+      "mode": "100644",
+      "size": 8098
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e4_h29_generated_owner_landlab.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e4_h29_generated_owner_landlab.py",
+      "git_blob_sha": "fd2dda0454b0a751b2e32d98350ec2f93a6b8b46",
+      "mode": "100644",
+      "size": 14467
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e4_h29_worldengine_seeds.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e4_h29_worldengine_seeds.py",
+      "git_blob_sha": "7f3c23e5857b92242a00b64284b652e0693d624f",
+      "mode": "100644",
+      "size": 3120
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e4_h30_worldengine_bullet.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e4_h30_worldengine_bullet.py",
+      "git_blob_sha": "20c4e78ef9f71749baca787dcce3e2d30744ef80",
+      "mode": "100644",
+      "size": 15489
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h31_bullet_stage.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h31_bullet_stage.py",
+      "git_blob_sha": "8618fda5e09d81b076d0cd8600e0380b808e72a7",
+      "mode": "100644",
+      "size": 14913
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h31_landlab_stage.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h31_landlab_stage.py",
+      "git_blob_sha": "0a3e2511e5c775e5003ee013842ef347be6e816c",
+      "mode": "100644",
+      "size": 6739
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h31_owner_contract.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h31_owner_contract.py",
+      "git_blob_sha": "e0ff6e37c04112fc407c3a785db004929dad3bf8",
+      "mode": "100644",
+      "size": 9811
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h31_soil_contact_coupling.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h31_soil_contact_coupling.py",
+      "git_blob_sha": "8ca056d25eb13268405131e906a3e8029ceb61de",
+      "mode": "100644",
+      "size": 21130
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h32_local_bullet.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h32_local_bullet.py",
+      "git_blob_sha": "5ae93415b649e5ca41797e3066a70f51ae42fe04",
+      "mode": "100644",
+      "size": 12261
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h32_local_contract.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h32_local_contract.py",
+      "git_blob_sha": "950ee50c94c99cfc859caf63beb11328c3169061",
+      "mode": "100644",
+      "size": 4170
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e5_h32_local_landlab.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e5_h32_local_landlab.py",
+      "git_blob_sha": "f27bdd8527922fa4a1193ea6702bba839a77f976",
+      "mode": "100644",
+      "size": 12406
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e6_h33_resume_landlab.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e6_h33_resume_landlab.py",
+      "git_blob_sha": "331c27f72a53a2225cb74954c29fdb6ddd9fd079",
+      "mode": "100644",
+      "size": 14022
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e6_h34_bullet_disk_resume.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e6_h34_bullet_disk_resume.py",
+      "git_blob_sha": "cc841dbee777bd88b5de62ce49708fe71afff019",
+      "mode": "100644",
+      "size": 14097
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e6_h35_granular_midfeed_restart.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e6_h35_granular_midfeed_restart.py",
+      "git_blob_sha": "fbc9a52e8893851119e238caa56e4d3382c9a4da",
+      "mode": "100644",
+      "size": 24683
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_e7_h36_granular_impact_function.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_e7_h36_granular_impact_function.py",
+      "git_blob_sha": "b803f50377f964d55b79cd01faeec0065e9ae062",
+      "mode": "100644",
+      "size": 17965
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_ecosystem_explorer_browser.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_ecosystem_explorer_browser.py",
+      "git_blob_sha": "b080691fda2b3ad34bdbc3fae5c6d3d021b0261f",
+      "mode": "100644",
+      "size": 6001
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h37_extended_landlab_producer.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h37_extended_landlab_producer.py",
+      "git_blob_sha": "eccf1506ca92fbde78887095cbb7e9fdfd58b545",
+      "mode": "100644",
+      "size": 2727
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h37_sequential_bullet_contact.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h37_sequential_bullet_contact.py",
+      "git_blob_sha": "2c7458353b12a9b75d4b0f1b3f117d46b0e7d214",
+      "mode": "100644",
+      "size": 7778
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h37_sequential_landlab_resume.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h37_sequential_landlab_resume.py",
+      "git_blob_sha": "a07dac51a59b037724bcba0db47591f37ecf2ca6",
+      "mode": "100644",
+      "size": 3945
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h38_mutable_heightfield.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h38_mutable_heightfield.py",
+      "git_blob_sha": "d8a4f0b9beddb902797b3ead551c9f1a4a545862",
+      "mode": "100644",
+      "size": 10629
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h39_contact_invalidation.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h39_contact_invalidation.py",
+      "git_blob_sha": "d9491554e0677c979535b86ed716b7e5ee14e0f6",
+      "mode": "100644",
+      "size": 8026
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h40_live_body_soil_epochs.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h40_live_body_soil_epochs.py",
+      "git_blob_sha": "35b813310184eaa0b397775b15acb873e179518f",
+      "mode": "100644",
+      "size": 12917
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h40_soil_epochs.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h40_soil_epochs.py",
+      "git_blob_sha": "32890921971317680e82da9ed11836048a128c08",
+      "mode": "100644",
+      "size": 1185
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h41_aggregate_transit.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h41_aggregate_transit.py",
+      "git_blob_sha": "4f225af271f58c9df1a65255236322475bc8a3c6",
+      "mode": "100644",
+      "size": 13708
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h42_directional_cover.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h42_directional_cover.py",
+      "git_blob_sha": "0c89306917c25f52547ae9786c9f4b8e89b20fcf",
+      "mode": "100644",
+      "size": 8743
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_h42b_fresh_observer.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_h42b_fresh_observer.py",
+      "git_blob_sha": "de696a345f072dabc9fd487a4e6c65b0f7d2c9e9",
+      "mode": "100644",
+      "size": 1476
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_90day_loop.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_90day_loop.py",
+      "git_blob_sha": "18115d5bee9a340499fa3cb40da048cebf80c227",
+      "mode": "100644",
+      "size": 5995
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_90day_radiative_return.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_90day_radiative_return.py",
+      "git_blob_sha": "f77d96da75421bce4cb30309cee6f36e0c6c5473",
+      "mode": "100644",
+      "size": 9707
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_checkpoint_scale.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_checkpoint_scale.py",
+      "git_blob_sha": "499e848111ab772428a747d6d6cee42867884834",
+      "mode": "100644",
+      "size": 6812
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_eco_checkpoint.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_eco_checkpoint.py",
+      "git_blob_sha": "0ec6bd64539f0f78f1dfd04f205735106029a254",
+      "mode": "100644",
+      "size": 8578
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_kinwave_greenampt_budget.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_kinwave_greenampt_budget.py",
+      "git_blob_sha": "1459bdcdd94dfd0b18036031bc8003896cf75b0e",
+      "mode": "100644",
+      "size": 5242
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_mobile_soil_feedback.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_mobile_soil_feedback.py",
+      "git_blob_sha": "17324d318d9997b90286b0252ad154b8287a828d",
+      "mode": "100644",
+      "size": 5482
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_native_sediment_ecology.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_native_sediment_ecology.py",
+      "git_blob_sha": "5a2bf4ebd67fd8b250e820d8de74f8c8b54df380",
+      "mode": "100644",
+      "size": 5224
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_overland_water.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_overland_water.py",
+      "git_blob_sha": "2650cbd569eb0d79b1a4d96dcd1445434e31429d",
+      "mode": "100644",
+      "size": 3916
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_radiation_topography.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_radiation_topography.py",
+      "git_blob_sha": "cfed0b63783434fedeafb5cd56595e57de8adb7a",
+      "mode": "100644",
+      "size": 3895
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_sediment_budget.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_sediment_budget.py",
+      "git_blob_sha": "08467b5dd40c5a086fb4864e6d5f2500addc2ee2",
+      "mode": "100644",
+      "size": 6603
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_upstream.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_upstream.py",
+      "git_blob_sha": "4a189c483f9707050b97d959947dc786cd299de6",
+      "mode": "100644",
+      "size": 4387
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_landlab_vegetation_diffusion.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_landlab_vegetation_diffusion.py",
+      "git_blob_sha": "8d16d3a3ca3b604be1ce96a9b0b2488a8dfab3bd",
+      "mode": "100644",
+      "size": 5186
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_particle_life_ephemeral.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_particle_life_ephemeral.py",
+      "git_blob_sha": "88a7b2cd45502bbf403d3af706daaba9b598ea5c",
+      "mode": "100644",
+      "size": 4801
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_powdertoy_ephemeral_inject.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_powdertoy_ephemeral_inject.py",
+      "git_blob_sha": "924b980954b18793007b3f6481cc639868f6065e",
+      "mode": "100644",
+      "size": 4148
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_shanhai_upstream.test.ts",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_shanhai_upstream.test.ts",
+      "git_blob_sha": "4c1f00d658b6780fb6271b6d02bdf2dd46187bf8",
+      "mode": "100644",
+      "size": 3420
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_water_solver_normalized.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_water_solver_normalized.py",
+      "git_blob_sha": "f686c504f0f4d9511de86ad18d4e97347526e513",
+      "mode": "100644",
+      "size": 6863
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/probe_worldengine_to_landlab.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/probe_worldengine_to_landlab.py",
+      "git_blob_sha": "de76cd1c7dd96e6a7e22464a00bcc9f35f4eab18",
+      "mode": "100644",
+      "size": 4195
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/sandspiel_smoke.rs",
+      "destination": "inherited/WORLD_RESEARCH/experiments/sandspiel_smoke.rs",
+      "git_blob_sha": "b1e6e7d2aaeaa59c434120f391910635693db056",
+      "mode": "100644",
+      "size": 2773
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/test_matter_v0.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/test_matter_v0.py",
+      "git_blob_sha": "27dfc5ba154e260f54747d15e13156d88ec891e0",
+      "mode": "100644",
+      "size": 3684
+    },
+    {
+      "source": "WORLD_RESEARCH/experiments/test_worldengine_candidate.py",
+      "destination": "inherited/WORLD_RESEARCH/experiments/test_worldengine_candidate.py",
+      "git_blob_sha": "547b0e63f1e40abd95b84906b2da2d0582a5bb4f",
+      "mode": "100644",
+      "size": 1763
+    }
+  ],
+  "status": "all_selected_blobs_verified_locally",
+  "history": "Original DAG retained in source; not imported; historical workflows inactive under inherited/.github/workflows"
+}
