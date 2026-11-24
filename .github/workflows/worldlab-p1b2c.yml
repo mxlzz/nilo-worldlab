@@ -1,0 +1,34 @@
+name: WorldLab P1-B.2c thermal material snapshots
+on:
+  push:
+    branches: [main]
+    paths: [experiments/p1b2c_thermal_snapshots.py, experiments/p1b2b_transport_kernel.py, .github/workflows/worldlab-p1b2c.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  FIPY_SOLVERS: scipy
+  PYTHONPATH: inherited/WORLD_RESEARCH/experiments
+jobs:
+  thermal:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.18'
+      - run: |
+          python -m pip install --only-binary=:all: fipy==4.0.3 pybullet==3.2.7 numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1
+          python -m pip freeze
+          lscpu
+      - run: python experiments/p1b2c_thermal_snapshots.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p1b2c-results
+          path: p1b2c-output
+          retention-days: 30

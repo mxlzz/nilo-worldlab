@@ -21,3 +21,5 @@
 - P1-B.2b CI 45503529832 SUCCESS, gates vacíos, ocho casos 144 pasos, tracker max 4.191e-9 J/nodo, residual 2.3842e-7 J, propietario reducido. Archivo de evidencia pendiente antes de B.2c.
 
 - Archivo B.2b CI 45503722111 SUCCESS, ZIP/log/JSON/manifest verificados, blobs y tamaños releídos en b87b19cf. Workflow de archivo desactivado. B.2b cerrada en esquema reducido, GO B.2c.
+
+- P1-B.2c implementada según gates prerregistrados: kernel B.2b copiado literalmente y verificado al iniciar, cuatro propietarios P0-D, rayos exactos/FiPy, control/nulos, transporte de tres pasos archivados, remapeo y resolución, owner completo de snapshot. Sin repetir mecánica ni Landlab. CI pendiente; no declarar resultado hasta lectura.
