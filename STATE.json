@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
+  "status": "ready",
   "stage": "P1-B",
-  "current_task": "P1-B.2a",
-  "next_action": "Consultar CI 45502145469 de P1-B.2a antes de ejecutar nada nuevo; leer WORLD_EVAL_JSON, preservar resultados y NPZ o regeneración verificada, auditar gates. Si falla no avanzar B.2b. No relanzar automáticamente.",
-  "scientific_next": "P1-B.2a",
+  "current_task": "P1-B.2b",
+  "next_action": "Ejecutar B.2b del prerregistro: casos analíticos de transporte/remapeo, propietario único, energía exportada y contraste con ConcentrationTrackerForSpace usando flujos B.2a archivados. Si falla cualquier gate, auditar y no avanzar B.2c.",
+  "scientific_next": "P1-B.2b",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -14,7 +14,7 @@
     "P0": "complete_limited",
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
-    "P1_B": "B2a_ci_pending"
+    "P1_B": "B2a_passed_verified_archive"
   },
   "blockers": [],
   "evidence_refs": [
@@ -23,13 +23,15 @@
     "MIGRATION_MANIFEST.json",
     "evidence/ARTIFACT_MANIFEST.json",
     "evidence/LOG_MANIFEST.json",
-    "research/P1-B/P1-B.1_CONTRATO_Y_PRERREGISTRO.md"
+    "research/P1-B/P1-B.1_CONTRATO_Y_PRERREGISTRO.md",
+    "research/P1-B/P1-B.2a_RESULTADO.md",
+    "evidence/P1-B/B2a/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "41d52b3a00e16276c8f504d5d283292f8f22f2cb",
+  "last_confirmed_non_state_write": "bbacad3b1ff086b47da2ae1eb46860703d713b93",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -50,13 +52,7 @@
     "logs_commit": "98d2c3dc1570acb3da3f7ffc531fd34b81268bfb",
     "verification": "evidence/MIGRATION_VERIFICATION.md",
     "simulation": "documentary_pass",
-    "new_repo_experiment_execution": "not_tested"
+    "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24",
-  "active_run": {
-    "id": 45502145469,
-    "head_sha": "41d52b3a00e16276c8f504d5d283292f8f22f2cb",
-    "unit": "P1-B.2a",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45502145469"
-  }
+  "updated_at": "2026-11-24"
 }
