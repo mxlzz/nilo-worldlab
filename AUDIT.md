@@ -15,3 +15,5 @@ La migración no valida automáticamente la física. Verificar cobertura, hashes
 
 ## Cierre WL-M
 Ver [verificación](evidence/MIGRATION_VERIFICATION.md): 314/314 blobs heredados, 58/58 artefactos con digest, 487 ejecuciones inventariadas y 481 ZIP de logs. Seis fallos históricos sin jobs devuelven 404; se preservan metadatos y no bloquean P1-B.1. Simulación documental satisfactoria; no auditoría científica independiente. Siguiente tarea P1-B.1.
+## P1-B.1 — autoverificación documental
+Alineación: P1/E7, consecuencia ambiental atribuida a materia existente. Rechazada proyección gruesa como única solución espacial y lámina duplicada; propuesta partición fija de ROI con energía de columna completa. Flujos brutos nativos existen en fuente etiquetada Landlab 2.11.0; compatibilidad y balances no comprobados en ejecución. Conservación de entalpía no puede deducirse del delta masa. B.2a debe verificar campos, rutas, masas y export contra P0-D, sin modificar ley de erosión. Supuestos de mezcla/aislamiento y tiempos nominales declarados. GO documental únicamente, P1-B no aprobada; E7 abierta. Sin auditor independiente. Ver protocolo.
