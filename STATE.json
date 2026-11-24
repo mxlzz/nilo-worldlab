@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P1-B",
   "current_task": "P1-B.2c",
-  "next_action": "Ejecutar P1-B.2c según prerregistro: usar propietarios P0-D epoch0 y 1, campo térmico material con capacidad real derivada, rayos exactos, controles y nulos, remapeo/flujo sedimentario archivado, sensibilidad y replay, sin repetir mecánica. No avanzar P1-C si falla.",
+  "next_action": "Leer resultado CI 45504052684 de P1-B.2c y gates; archivar evidencia, auditar y solo si aprueba definir protocolo P1-C. No duplicar ejecución.",
   "scientific_next": "P1-B.2c",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -33,7 +33,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "de89d5b58b6302a915ac20ae24937b5bc85591e2",
+  "last_confirmed_non_state_write": "694fb7e7647f364f01860023be0d515a3327f266",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -56,5 +56,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24"
+  "updated_at": "2026-11-24",
+  "active_run": {
+    "id": 45504052684,
+    "unit": "P1-B.2c",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45504052684",
+    "sha": "694fb7e7647f364f01860023be0d515a3327f266"
+  }
 }
