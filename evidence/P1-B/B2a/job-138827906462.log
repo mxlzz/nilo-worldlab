@@ -1,0 +1,460 @@
+﻿2026-11-24T22:34:14.8188479Z Current runner version: '2.338.2'
+2026-11-24T22:34:14.8207503Z ##[group]Runner Image Provisioner
+2026-11-24T22:34:14.8208251Z Hosted Compute Agent
+2026-11-24T22:34:14.8208679Z Version: 20261111.635
+2026-11-24T22:34:14.8209152Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-24T22:34:14.8209700Z Build Date: 2026-11-11T01:49:01Z
+2026-11-24T22:34:14.8210191Z Worker ID: {adddb9c6-8568-4bc8-a776-dfba71d0c6c9}
+2026-11-24T22:34:14.8210730Z Region: us-west-2
+2026-11-24T22:34:14.8211129Z Cloud: AWS
+2026-11-24T22:34:14.8211519Z ##[endgroup]
+2026-11-24T22:34:14.8212420Z ##[group]Operating System
+2026-11-24T22:34:14.8212849Z Ubuntu
+2026-11-24T22:34:14.8213200Z 24.04.5
+2026-11-24T22:34:14.8213644Z LTS
+2026-11-24T22:34:14.8214021Z ##[endgroup]
+2026-11-24T22:34:14.8214706Z ##[group]Runner Image
+2026-11-24T22:34:14.8215150Z Image: ubuntu-24.04
+2026-11-24T22:34:14.8215566Z Version: 20261116.133.1
+2026-11-24T22:34:14.8216487Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-24T22:34:14.8217612Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+2026-11-24T22:34:14.8218381Z ##[endgroup]
+2026-11-24T22:34:14.8219152Z ##[group]GITHUB_TOKEN Permissions
+2026-11-24T22:34:14.8220751Z Contents: read
+2026-11-24T22:34:14.8221123Z Metadata: read
+2026-11-24T22:34:14.8221805Z ##[endgroup]
+2026-11-24T22:34:14.8223343Z Secret source: Actions
+2026-11-24T22:34:14.8224005Z Cache mode: write
+2026-11-24T22:34:14.8224797Z Prepare workflow directory
+2026-11-24T22:34:14.8495568Z Prepare all required actions
+2026-11-24T22:34:14.8532530Z Getting action download info
+2026-11-24T22:34:15.2362526Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-24T22:34:16.7664175Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-24T22:34:16.9048009Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-24T22:34:17.1545408Z Complete job name: verify
+2026-11-24T22:34:17.2269484Z ##[group]Run actions/checkout@v4
+2026-11-24T22:34:17.2270575Z with:
+2026-11-24T22:34:17.2271388Z   repository: mxlzz/nilo-worldlab
+2026-11-24T22:34:17.2277912Z   token: ***
+2026-11-24T22:34:17.2278710Z   ssh-strict: true
+2026-11-24T22:34:17.2279525Z   ssh-user: git
+2026-11-24T22:34:17.2280293Z   persist-credentials: true
+2026-11-24T22:34:17.2281163Z   clean: true
+2026-11-24T22:34:17.2281936Z   sparse-checkout-cone-mode: true
+2026-11-24T22:34:17.2282821Z   fetch-depth: 1
+2026-11-24T22:34:17.2283603Z   fetch-tags: false
+2026-11-24T22:34:17.2284506Z   show-progress: true
+2026-11-24T22:34:17.2285318Z   lfs: false
+2026-11-24T22:34:17.2286068Z   submodules: false
+2026-11-24T22:34:17.2286843Z   set-safe-directory: true
+2026-11-24T22:34:17.2287739Z   allow-unsafe-pr-checkout: false
+2026-11-24T22:34:17.2288801Z env:
+2026-11-24T22:34:17.2289696Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-24T22:34:17.2290863Z   OPENBLAS_NUM_THREADS: 1
+2026-11-24T22:34:17.2291766Z   OMP_NUM_THREADS: 1
+2026-11-24T22:34:17.2292536Z   MKL_NUM_THREADS: 1
+2026-11-24T22:34:17.2293418Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments
+2026-11-24T22:34:17.2294573Z ##[endgroup]
+2026-11-24T22:34:18.7876099Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-24T22:34:18.7877482Z ##[group]Getting Git version info
+2026-11-24T22:34:18.7877885Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-24T22:34:18.7878545Z [command]/usr/bin/git version
+2026-11-24T22:34:18.9354993Z git version 2.56.1
+2026-11-24T22:34:18.9371184Z ##[endgroup]
+2026-11-24T22:34:18.9382553Z Temporarily overriding HOME='/home/runner/work/_temp/1f4a2b61-c6a6-4d35-b597-f60c7c10ea6b' before making global git config changes
+2026-11-24T22:34:18.9383611Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-24T22:34:18.9387773Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-24T22:34:18.9846477Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-24T22:34:18.9849098Z ##[group]Initializing the repository
+2026-11-24T22:34:18.9852390Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-24T22:34:19.0658290Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-24T22:34:19.0658981Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-24T22:34:19.0659448Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-24T22:34:19.0659859Z hint: call:
+2026-11-24T22:34:19.0660106Z hint:
+2026-11-24T22:34:19.0660545Z hint: 	git config --global init.defaultBranch <name>
+2026-11-24T22:34:19.0660866Z hint:
+2026-11-24T22:34:19.0661182Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-24T22:34:19.0661683Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-24T22:34:19.0662141Z hint:
+2026-11-24T22:34:19.0662418Z hint: 	git branch -m <name>
+2026-11-24T22:34:19.0662743Z hint:
+2026-11-24T22:34:19.0663095Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-24T22:34:19.0669347Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-24T22:34:19.0679724Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-24T22:34:19.0740477Z ##[endgroup]
+2026-11-24T22:34:19.0741218Z ##[group]Disabling automatic garbage collection
+2026-11-24T22:34:19.0743781Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-24T22:34:19.0768869Z ##[endgroup]
+2026-11-24T22:34:19.0769376Z ##[group]Setting up auth
+2026-11-24T22:34:19.0773589Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-24T22:34:19.0803505Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-24T22:34:19.3007711Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-24T22:34:19.3035440Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-24T22:34:19.3190818Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-24T22:34:19.3215304Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-24T22:34:19.3370934Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-24T22:34:19.3398058Z ##[endgroup]
+2026-11-24T22:34:19.3410515Z ##[group]Fetching the repository
+2026-11-24T22:34:19.3411396Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +41d52b3a00e16276c8f504d5d283292f8f22f2cb:refs/remotes/origin/main
+2026-11-24T22:34:19.9446735Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-24T22:34:19.9447489Z  * [new ref]         41d52b3a00e16276c8f504d5d283292f8f22f2cb -> origin/main
+2026-11-24T22:34:19.9449704Z ##[endgroup]
+2026-11-24T22:34:19.9450209Z ##[group]Determining the checkout info
+2026-11-24T22:34:19.9472749Z ##[endgroup]
+2026-11-24T22:34:19.9473774Z [command]/usr/bin/git sparse-checkout disable
+2026-11-24T22:34:19.9531529Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-24T22:34:19.9557851Z ##[group]Checking out the ref
+2026-11-24T22:34:19.9561112Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-24T22:34:20.0147488Z Switched to a new branch 'main'
+2026-11-24T22:34:20.0155385Z branch 'main' set up to track 'origin/main'.
+2026-11-24T22:34:20.0161145Z ##[endgroup]
+2026-11-24T22:34:20.0198632Z [command]/usr/bin/git log -1 --format=%H
+2026-11-24T22:34:20.0217443Z 41d52b3a00e16276c8f504d5d283292f8f22f2cb
+2026-11-24T22:34:20.0415731Z ##[group]Run actions/setup-python@v5
+2026-11-24T22:34:20.0415998Z with:
+2026-11-24T22:34:20.0416260Z   python-version: 3.13.18
+2026-11-24T22:34:20.0416533Z   check-latest: false
+2026-11-24T22:34:20.0418232Z   token: ***
+2026-11-24T22:34:20.0418508Z   update-environment: true
+2026-11-24T22:34:20.0418772Z   allow-prereleases: false
+2026-11-24T22:34:20.0419036Z   freethreaded: false
+2026-11-24T22:34:20.0419246Z env:
+2026-11-24T22:34:20.0419542Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-24T22:34:20.0419848Z   OPENBLAS_NUM_THREADS: 1
+2026-11-24T22:34:20.0420082Z   OMP_NUM_THREADS: 1
+2026-11-24T22:34:20.0420319Z   MKL_NUM_THREADS: 1
+2026-11-24T22:34:20.0420567Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments
+2026-11-24T22:34:20.0420843Z ##[endgroup]
+2026-11-24T22:34:20.1455412Z ##[group]Installed versions
+2026-11-24T22:34:20.1832958Z (node:2171) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-24T22:34:20.1833865Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-24T22:34:20.1834696Z Successfully set up CPython (3.13.18)
+2026-11-24T22:34:20.1835380Z ##[endgroup]
+2026-11-24T22:34:20.1930971Z ##[group]Run python -m pip install --only-binary=:all: landlab==2.11.0 numpy==2.5.5 xarray==2026.9.0 scipy==1.18.1
+2026-11-24T22:34:20.1931660Z [36;1mpython -m pip install --only-binary=:all: landlab==2.11.0 numpy==2.5.5 xarray==2026.9.0 scipy==1.18.1[0m
+2026-11-24T22:34:20.1932113Z [36;1mpython -m pip freeze[0m
+2026-11-24T22:34:20.1932372Z [36;1mlscpu[0m
+2026-11-24T22:34:20.3661009Z shell: /usr/bin/bash -e {0}
+2026-11-24T22:34:20.3661532Z env:
+2026-11-24T22:34:20.3661823Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-24T22:34:20.3662157Z   OPENBLAS_NUM_THREADS: 1
+2026-11-24T22:34:20.3662426Z   OMP_NUM_THREADS: 1
+2026-11-24T22:34:20.3662651Z   MKL_NUM_THREADS: 1
+2026-11-24T22:34:20.3662954Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments
+2026-11-24T22:34:20.3663289Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:20.3663676Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-24T22:34:20.3664137Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:20.3664748Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:20.3665108Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:20.3665448Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-24T22:34:20.3665744Z ##[endgroup]
+2026-11-24T22:34:25.1890829Z Collecting landlab==2.11.0
+2026-11-24T22:34:25.2592276Z   Downloading landlab-2.11.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-11-24T22:34:25.4119879Z Collecting numpy==2.5.5
+2026-11-24T22:34:25.4209393Z   Downloading numpy-2.5.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-24T22:34:25.4417573Z Collecting xarray==2026.9.0
+2026-11-24T22:34:25.4502732Z   Downloading xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-24T22:34:25.5371681Z Collecting scipy==1.18.1
+2026-11-24T22:34:25.5460238Z   Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-24T22:34:25.6411917Z Collecting bmipy (from landlab==2.11.0)
+2026-11-24T22:34:25.6511627Z   Downloading bmipy-2.0.1-py3-none-any.whl.metadata (2.7 kB)
+2026-11-24T22:34:25.7403774Z Collecting matplotlib (from landlab==2.11.0)
+2026-11-24T22:34:25.7489247Z   Downloading matplotlib-3.11.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-11-24T22:34:25.8018089Z Collecting netcdf4 (from landlab==2.11.0)
+2026-11-24T22:34:25.8102081Z   Downloading netcdf4-1.7.5.1.post1-cp311-abi3-manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+2026-11-24T22:34:25.9021532Z Collecting py-richdem (from landlab==2.11.0)
+2026-11-24T22:34:25.9147080Z   Downloading py_richdem-2.2.0rc3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+2026-11-24T22:34:25.9449085Z Collecting pyyaml (from landlab==2.11.0)
+2026-11-24T22:34:25.9539278Z   Downloading pyyaml-6.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.3 kB)
+2026-11-24T22:34:25.9706861Z Collecting pyshp!=2.3.0 (from landlab==2.11.0)
+2026-11-24T22:34:25.9789575Z   Downloading pyshp-3.1.9-py3-none-any.whl.metadata (79 kB)
+2026-11-24T22:34:26.0663761Z Collecting requireit (from landlab==2.11.0)
+2026-11-24T22:34:26.0778045Z   Downloading requireit-0.12.0-py3-none-any.whl.metadata (15 kB)
+2026-11-24T22:34:26.0945678Z Collecting rich-click (from landlab==2.11.0)
+2026-11-24T22:34:26.1034091Z   Downloading rich_click-1.9.9-py3-none-any.whl.metadata (7.4 kB)
+2026-11-24T22:34:26.1365418Z Collecting statsmodels (from landlab==2.11.0)
+2026-11-24T22:34:26.1453634Z   Downloading statsmodels-0.15.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.6 kB)
+2026-11-24T22:34:26.2274808Z Collecting pandas (from landlab==2.11.0)
+2026-11-24T22:34:26.2383879Z   Downloading pandas-3.1.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-24T22:34:26.2585198Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-24T22:34:26.2694650Z   Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-24T22:34:26.2856817Z Collecting python-dateutil>=2.9.0 (from pandas->landlab==2.11.0)
+2026-11-24T22:34:26.2980956Z   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-24T22:34:26.3131999Z Collecting tzdata (from python-dateutil>=2.9.0->pandas->landlab==2.11.0)
+2026-11-24T22:34:26.3236888Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-24T22:34:26.3677333Z Collecting black (from bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.3788232Z   Downloading black-26.10.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (108 kB)
+2026-11-24T22:34:26.4005237Z Collecting click (from bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.4097420Z   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+2026-11-24T22:34:26.4618440Z Collecting jinja2 (from bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.5103130Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2026-11-24T22:34:26.5270017Z Collecting mypy-extensions>=0.4.3 (from black->bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.5363596Z   Downloading mypy_extensions-1.2.0-py3-none-any.whl.metadata (1.1 kB)
+2026-11-24T22:34:26.5505726Z Collecting pathspec>=1.0.0 (from black->bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.5589285Z   Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+2026-11-24T22:34:26.5792324Z Collecting platformdirs>=2 (from black->bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.5878549Z   Downloading platformdirs-4.14.8-py3-none-any.whl.metadata (5.7 kB)
+2026-11-24T22:34:26.6031957Z Collecting pytokens~=0.4.0 (from black->bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.6143579Z   Downloading pytokens-0.4.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-11-24T22:34:26.6551382Z Collecting MarkupSafe>=2.0 (from jinja2->bmipy->landlab==2.11.0)
+2026-11-24T22:34:26.6648793Z   Downloading markupsafe-3.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+2026-11-24T22:34:26.7069192Z Collecting contourpy>=1.0.1 (from matplotlib->landlab==2.11.0)
+2026-11-24T22:34:26.7153924Z   Downloading contourpy-1.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-11-24T22:34:26.7292278Z Collecting cycler>=0.10 (from matplotlib->landlab==2.11.0)
+2026-11-24T22:34:26.7375077Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-11-24T22:34:26.8365025Z Collecting fonttools>=4.28.2 (from matplotlib->landlab==2.11.0)
+2026-11-24T22:34:26.8451092Z   Downloading fonttools-4.68.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+2026-11-24T22:34:26.8959962Z Collecting kiwisolver>=1.3.1 (from matplotlib->landlab==2.11.0)
+2026-11-24T22:34:26.9045880Z   Downloading kiwisolver-1.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-11-24T22:34:27.0114628Z Collecting pillow>=9 (from matplotlib->landlab==2.11.0)
+2026-11-24T22:34:27.0207716Z   Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-11-24T22:34:27.0404029Z Collecting pyparsing>=3 (from matplotlib->landlab==2.11.0)
+2026-11-24T22:34:27.0489963Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-11-24T22:34:27.0853977Z Collecting cftime (from netcdf4->landlab==2.11.0)
+2026-11-24T22:34:27.0976521Z   Downloading cftime-1.6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.8 kB)
+2026-11-24T22:34:27.1143497Z Collecting certifi (from netcdf4->landlab==2.11.0)
+2026-11-24T22:34:27.1248745Z   Downloading certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+2026-11-24T22:34:27.1488222Z Collecting rich>=12 (from rich-click->landlab==2.11.0)
+2026-11-24T22:34:27.1580602Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-11-24T22:34:27.1735215Z Collecting markdown-it-py>=2.2.0 (from rich>=12->rich-click->landlab==2.11.0)
+2026-11-24T22:34:27.1839632Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+2026-11-24T22:34:27.2201802Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12->rich-click->landlab==2.11.0)
+2026-11-24T22:34:27.2296258Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-24T22:34:27.2421517Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12->rich-click->landlab==2.11.0)
+2026-11-24T22:34:27.2523135Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-11-24T22:34:27.2672048Z Collecting patsy>=0.5.6 (from statsmodels->landlab==2.11.0)
+2026-11-24T22:34:27.2759238Z   Downloading patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+2026-11-24T22:34:27.2896370Z Collecting formulaic>=1.1.0 (from statsmodels->landlab==2.11.0)
+2026-11-24T22:34:27.2981244Z   Downloading formulaic-1.2.2-py3-none-any.whl.metadata (7.0 kB)
+2026-11-24T22:34:27.3118108Z Collecting interface-meta>=1.2.0 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-24T22:34:27.3204805Z   Downloading interface_meta-2.0.1-py3-none-any.whl.metadata (6.4 kB)
+2026-11-24T22:34:27.3467027Z Collecting narwhals>=1.17 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-24T22:34:27.3559852Z   Downloading narwhals-2.29.0-py3-none-any.whl.metadata (15 kB)
+2026-11-24T22:34:27.3734717Z Collecting typing-extensions>=4.2.0 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-24T22:34:27.3825824Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-24T22:34:27.6003027Z Collecting wrapt>=1.17.0rc1 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-24T22:34:27.6092651Z   Downloading wrapt-2.6.0.dev1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+2026-11-24T22:34:27.6243565Z Downloading landlab-2.11.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (52.7 MB)
+2026-11-24T22:34:28.7415885Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.7/52.7 MB 47.1 MB/s  0:00:01
+2026-11-24T22:34:28.7509021Z Downloading numpy-2.5.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)
+2026-11-24T22:34:28.8175027Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 239.7 MB/s  0:00:00
+2026-11-24T22:34:28.8261000Z Downloading xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-24T22:34:28.8325060Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 247.3 MB/s  0:00:00
+2026-11-24T22:34:28.8410983Z Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-24T22:34:28.9885207Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 241.3 MB/s  0:00:00
+2026-11-24T22:34:28.9970123Z Downloading packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-24T22:34:29.0069386Z Downloading pandas-3.1.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.0 MB)
+2026-11-24T22:34:29.0583345Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 235.5 MB/s  0:00:00
+2026-11-24T22:34:29.0668936Z Downloading pyshp-3.1.9-py3-none-any.whl (75 kB)
+2026-11-24T22:34:29.0776562Z Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-24T22:34:29.0901580Z Downloading bmipy-2.0.1-py3-none-any.whl (8.4 kB)
+2026-11-24T22:34:29.0996807Z Downloading black-26.10.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (2.1 MB)
+2026-11-24T22:34:29.1109814Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 187.6 MB/s  0:00:00
+2026-11-24T22:34:29.1198371Z Downloading pytokens-0.4.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (268 kB)
+2026-11-24T22:34:29.1300975Z Downloading click-8.5.1-py3-none-any.whl (126 kB)
+2026-11-24T22:34:29.1418957Z Downloading mypy_extensions-1.2.0-py3-none-any.whl (5.1 kB)
+2026-11-24T22:34:29.1520836Z Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+2026-11-24T22:34:29.1620503Z Downloading platformdirs-4.14.8-py3-none-any.whl (94 kB)
+2026-11-24T22:34:29.1720288Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-11-24T22:34:29.1840423Z Downloading markupsafe-3.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (23 kB)
+2026-11-24T22:34:29.1935802Z Downloading matplotlib-3.11.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+2026-11-24T22:34:29.2349927Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 243.0 MB/s  0:00:00
+2026-11-24T22:34:29.2434178Z Downloading contourpy-1.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (384 kB)
+2026-11-24T22:34:29.2540828Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-11-24T22:34:29.2643379Z Downloading fonttools-4.68.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+2026-11-24T22:34:29.2876699Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 242.2 MB/s  0:00:00
+2026-11-24T22:34:29.2961920Z Downloading kiwisolver-1.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-11-24T22:34:29.3027243Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 248.1 MB/s  0:00:00
+2026-11-24T22:34:29.3119888Z Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-11-24T22:34:29.3424130Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 239.2 MB/s  0:00:00
+2026-11-24T22:34:29.3504363Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-11-24T22:34:29.3602519Z Downloading netcdf4-1.7.5.1.post1-cp311-abi3-manylinux_2_28_x86_64.whl (10.6 MB)
+2026-11-24T22:34:29.4096836Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 215.1 MB/s  0:00:00
+2026-11-24T22:34:29.4180942Z Downloading certifi-2026.11.20-py3-none-any.whl (127 kB)
+2026-11-24T22:34:29.4282551Z Downloading cftime-1.6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (1.7 MB)
+2026-11-24T22:34:29.4354802Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 259.9 MB/s  0:00:00
+2026-11-24T22:34:29.4455626Z Downloading py_richdem-2.2.0rc3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (768 kB)
+2026-11-24T22:34:29.4543389Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 768.1/768.1 kB 95.8 MB/s  0:00:00
+2026-11-24T22:34:29.4624565Z Downloading pyyaml-6.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (838 kB)
+2026-11-24T22:34:29.4667189Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 838.5/838.5 kB 210.0 MB/s  0:00:00
+2026-11-24T22:34:29.4767476Z Downloading requireit-0.12.0-py3-none-any.whl (11 kB)
+2026-11-24T22:34:29.4858870Z Downloading rich_click-1.9.9-py3-none-any.whl (71 kB)
+2026-11-24T22:34:29.4962158Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-11-24T22:34:29.5066192Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-24T22:34:29.5177428Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 113.0 MB/s  0:00:00
+2026-11-24T22:34:29.5258545Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+2026-11-24T22:34:29.5354613Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-11-24T22:34:29.5450557Z Downloading statsmodels-0.15.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (12.1 MB)
+2026-11-24T22:34:29.6314694Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 142.8 MB/s  0:00:00
+2026-11-24T22:34:29.6407593Z Downloading formulaic-1.2.2-py3-none-any.whl (118 kB)
+2026-11-24T22:34:29.6511052Z Downloading interface_meta-2.0.1-py3-none-any.whl (15 kB)
+2026-11-24T22:34:29.6639818Z Downloading narwhals-2.29.0-py3-none-any.whl (501 kB)
+2026-11-24T22:34:29.6757124Z Downloading patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+2026-11-24T22:34:29.6877353Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-24T22:34:29.6984641Z Downloading wrapt-2.6.0.dev1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (248 kB)
+2026-11-24T22:34:29.7107239Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-24T22:34:30.2164913Z Installing collected packages: wrapt, tzdata, typing-extensions, requireit, pyyaml, pytokens, pyshp, pyparsing, pygments, platformdirs, pillow, pathspec, packaging, numpy, narwhals, mypy-extensions, mdurl, MarkupSafe, kiwisolver, interface-meta, fonttools, cycler, click, certifi, scipy, python-dateutil, py-richdem, patsy, markdown-it-py, jinja2, contourpy, cftime, black, rich, pandas, netcdf4, matplotlib, bmipy, xarray, rich-click, formulaic, statsmodels, landlab
+2026-11-24T22:34:45.8737573Z 
+2026-11-24T22:34:45.8771947Z Successfully installed MarkupSafe-3.0.4 black-26.10.1 bmipy-2.0.1 certifi-2026.11.20 cftime-1.6.6.1 click-8.5.1 contourpy-1.4.0 cycler-0.12.1 fonttools-4.68.0 formulaic-1.2.2 interface-meta-2.0.1 jinja2-3.1.6 kiwisolver-1.5.1 landlab-2.11.0 markdown-it-py-4.3.0 matplotlib-3.11.2 mdurl-0.1.2 mypy-extensions-1.2.0 narwhals-2.29.0 netcdf4-1.7.5.1.post1 numpy-2.5.5 packaging-26.4 pandas-3.1.1 pathspec-1.1.1 patsy-1.0.3 pillow-13.0.0 platformdirs-4.14.8 py-richdem-2.2.0rc3 pygments-2.21.0 pyparsing-3.3.3 pyshp-3.1.9 python-dateutil-4.0.0 pytokens-0.4.1 pyyaml-6.0.4 requireit-0.12.0 rich-15.0.0 rich-click-1.9.9 scipy-1.18.1 statsmodels-0.15.0 typing-extensions-4.16.0 tzdata-2026.6 wrapt-2.6.0.dev1 xarray-2026.9.0
+2026-11-24T22:34:46.1503157Z black==26.10.1
+2026-11-24T22:34:46.1503698Z bmipy==2.0.1
+2026-11-24T22:34:46.1504170Z certifi==2026.11.20
+2026-11-24T22:34:46.1504690Z cftime==1.6.6.1
+2026-11-24T22:34:46.1504952Z click==8.5.1
+2026-11-24T22:34:46.1505205Z contourpy==1.4.0
+2026-11-24T22:34:46.1505467Z cycler==0.12.1
+2026-11-24T22:34:46.1505740Z fonttools==4.68.0
+2026-11-24T22:34:46.1506031Z formulaic==1.2.2
+2026-11-24T22:34:46.1506272Z interface_meta==2.0.1
+2026-11-24T22:34:46.1506516Z Jinja2==3.1.6
+2026-11-24T22:34:46.1506790Z kiwisolver==1.5.1
+2026-11-24T22:34:46.1507020Z landlab==2.11.0
+2026-11-24T22:34:46.1507242Z markdown-it-py==4.3.0
+2026-11-24T22:34:46.1507842Z MarkupSafe==3.0.4
+2026-11-24T22:34:46.1508068Z matplotlib==3.11.2
+2026-11-24T22:34:46.1508575Z mdurl==0.1.2
+2026-11-24T22:34:46.1508797Z mypy_extensions==1.2.0
+2026-11-24T22:34:46.1509047Z narwhals==2.29.0
+2026-11-24T22:34:46.1509262Z netCDF4==1.7.5.1.post1
+2026-11-24T22:34:46.1509500Z numpy==2.5.5
+2026-11-24T22:34:46.1509703Z packaging==26.4
+2026-11-24T22:34:46.1509926Z pandas==3.1.1
+2026-11-24T22:34:46.1510132Z pathspec==1.1.1
+2026-11-24T22:34:46.1510322Z patsy==1.0.3
+2026-11-24T22:34:46.1510561Z pillow==13.0.0
+2026-11-24T22:34:46.1510774Z platformdirs==4.14.8
+2026-11-24T22:34:46.1511003Z py-richdem==2.2.0rc3
+2026-11-24T22:34:46.1511250Z Pygments==2.21.0
+2026-11-24T22:34:46.1511443Z pyparsing==3.3.3
+2026-11-24T22:34:46.1511689Z pyshp==3.1.9
+2026-11-24T22:34:46.1512014Z python-dateutil==4.0.0
+2026-11-24T22:34:46.1512280Z pytokens==0.4.1
+2026-11-24T22:34:46.1512666Z PyYAML==6.0.4
+2026-11-24T22:34:46.1513002Z requireit==0.12.0
+2026-11-24T22:34:46.1513242Z rich==15.0.0
+2026-11-24T22:34:46.1513476Z rich-click==1.9.9
+2026-11-24T22:34:46.1513686Z scipy==1.18.1
+2026-11-24T22:34:46.1513910Z statsmodels==0.15.0
+2026-11-24T22:34:46.1514135Z typing_extensions==4.16.0
+2026-11-24T22:34:46.1514622Z tzdata==2026.6
+2026-11-24T22:34:46.1514834Z wrapt==2.6.0.dev1
+2026-11-24T22:34:46.1515032Z xarray==2026.9.0
+2026-11-24T22:34:46.1823914Z Architecture:                            x86_64
+2026-11-24T22:34:46.1825332Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-24T22:34:46.1825705Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-24T22:34:46.1826070Z Byte Order:                              Little Endian
+2026-11-24T22:34:46.1826415Z CPU(s):                                  4
+2026-11-24T22:34:46.1826706Z On-line CPU(s) list:                     0-3
+2026-11-24T22:34:46.1827013Z Vendor ID:                               GenuineIntel
+2026-11-24T22:34:46.1827376Z Model name:                              Intel(R) Xeon(R) 6975P-C
+2026-11-24T22:34:46.1827661Z CPU family:                              6
+2026-11-24T22:34:46.1827995Z Model:                                   173
+2026-11-24T22:34:46.1828275Z Thread(s) per core:                      2
+2026-11-24T22:34:46.1828554Z Core(s) per socket:                      2
+2026-11-24T22:34:46.1828811Z Socket(s):                               1
+2026-11-24T22:34:46.1829055Z Stepping:                                1
+2026-11-24T22:34:46.1829374Z BogoMIPS:                                5400.00
+2026-11-24T22:34:46.1831654Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq monitor vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 wbnoinvd ida arat vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq rdpid bus_lock_detect cldemote movdiri movdir64b md_clear serialize amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities
+2026-11-24T22:34:46.1834121Z Virtualization:                          VT-x
+2026-11-24T22:34:46.1834592Z Hypervisor vendor:                       KVM
+2026-11-24T22:34:46.1834881Z Virtualization type:                     full
+2026-11-24T22:34:46.1835211Z L1d cache:                               96 KiB (2 instances)
+2026-11-24T22:34:46.1835536Z L1i cache:                               128 KiB (2 instances)
+2026-11-24T22:34:46.1835863Z L2 cache:                                4 MiB (2 instances)
+2026-11-24T22:34:46.1836170Z L3 cache:                                480 MiB (1 instance)
+2026-11-24T22:34:46.1836441Z NUMA node(s):                            1
+2026-11-24T22:34:46.1836871Z NUMA node0 CPU(s):                       0-3
+2026-11-24T22:34:46.1837198Z Vulnerability Gather data sampling:      Not affected
+2026-11-24T22:34:46.1837521Z Vulnerability Ghostwrite:                Not affected
+2026-11-24T22:34:46.1837835Z Vulnerability Indirect target selection: Not affected
+2026-11-24T22:34:46.1838127Z Vulnerability Itlb multihit:             Not affected
+2026-11-24T22:34:46.1838466Z Vulnerability L1tf:                      Not affected
+2026-11-24T22:34:46.1838758Z Vulnerability Mds:                       Not affected
+2026-11-24T22:34:46.1839113Z Vulnerability Meltdown:                  Not affected
+2026-11-24T22:34:46.1839444Z Vulnerability Mmio stale data:           Not affected
+2026-11-24T22:34:46.1839752Z Vulnerability Old microcode:             Not affected
+2026-11-24T22:34:46.1840081Z Vulnerability Reg file data sampling:    Not affected
+2026-11-24T22:34:46.1840419Z Vulnerability Retbleed:                  Not affected
+2026-11-24T22:34:46.1840724Z Vulnerability Spec rstack overflow:      Not affected
+2026-11-24T22:34:46.1841121Z Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+2026-11-24T22:34:46.1841691Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-24T22:34:46.1842307Z Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS Not affected; BHI BHI_DIS_S
+2026-11-24T22:34:46.1842768Z Vulnerability Srbds:                     Not affected
+2026-11-24T22:34:46.1843059Z Vulnerability Tsa:                       Not affected
+2026-11-24T22:34:46.1843362Z Vulnerability Tsx async abort:           Not affected
+2026-11-24T22:34:46.1843675Z Vulnerability Vmscape:                   Not affected
+2026-11-24T22:34:46.1875679Z ##[group]Run python experiments/p1b2a_native_flux.py
+2026-11-24T22:34:46.1876051Z [36;1mpython experiments/p1b2a_native_flux.py[0m
+2026-11-24T22:34:46.1902409Z shell: /usr/bin/bash -e {0}
+2026-11-24T22:34:46.1902691Z env:
+2026-11-24T22:34:46.1903044Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-24T22:34:46.1903388Z   OPENBLAS_NUM_THREADS: 1
+2026-11-24T22:34:46.1903662Z   OMP_NUM_THREADS: 1
+2026-11-24T22:34:46.1903883Z   MKL_NUM_THREADS: 1
+2026-11-24T22:34:46.1904122Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments
+2026-11-24T22:34:46.1904613Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:46.1905041Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-24T22:34:46.1905459Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:46.1905797Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:46.1906248Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:46.1906591Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-24T22:34:46.1906888Z ##[endgroup]
+2026-11-24T22:34:51.8448718Z WORLD_EVAL_JSON {"cases": {"7321_0.0": {"epochs": [{"actual": "55a1bb7604a3292e94944dced7b324742145ec30b2473c7f1533e2bcc4e4fcf0", "epoch": 0, "exact": true, "expected": "55a1bb7604a3292e94944dced7b324742145ec30b2473c7f1533e2bcc4e4fcf0"}, {"actual": "aaeb17bce915227ba1b1fd5cbb6d4cf9aac2d9fd19340939c357c67e3786f97a", "epoch": 1, "exact": true, "expected": "aaeb17bce915227ba1b1fd5cbb6d4cf9aac2d9fd19340939c357c67e3786f97a"}, {"actual": "28d3aacfa5a3daf589964c91892e100cd133bfd85a1e2df2511e8717b9430760", "epoch": 2, "exact": true, "expected": "28d3aacfa5a3daf589964c91892e100cd133bfd85a1e2df2511e8717b9430760"}, {"actual": "a2d11343f676c7f46fa9d5a1aef0f5120d786da82f31b924f95cbb407b0f7f81", "epoch": 3, "exact": true, "expected": "a2d11343f676c7f46fa9d5a1aef0f5120d786da82f31b924f95cbb407b0f7f81"}, {"actual": "1cf130cbcd73113fe5a2c137c6bac20fdb0e83109ec914b1ac43b40d7a6b107d", "epoch": 4, "exact": true, "expected": "1cf130cbcd73113fe5a2c137c6bac20fdb0e83109ec914b1ac43b40d7a6b107d"}, {"actual": "962b79d16de85d35c663ebd9c3c78946ad90f84d64f27bb94806a9f44e9753ef", "epoch": 5, "exact": true, "expected": "962b79d16de85d35c663ebd9c3c78946ad90f84d64f27bb94806a9f44e9753ef"}, {"actual": "788a2e522a48aced61a0e32566e7533da649d210e48948e42393f2529b437164", "epoch": 6, "exact": true, "expected": "788a2e522a48aced61a0e32566e7533da649d210e48948e42393f2529b437164"}], "failed": [], "steps": [{"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 1}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 2}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 3}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 4}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 5}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 6}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 7}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 8}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 9}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 10}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 11}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 12}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 13}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 14}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 15}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 16}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 17}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 18}]}, "7321_0.1": {"epochs": [{"actual": "a48b11546d811974fc8d0609d73b902124405a50cc52af8ed61b297703fb2f86", "epoch": 0, "exact": true, "expected": "a48b11546d811974fc8d0609d73b902124405a50cc52af8ed61b297703fb2f86"}, {"actual": "2bd5d837f481fd229305303f64cef30c56a78a980b75e65be854e783efbb125f", "epoch": 1, "exact": true, "expected": "2bd5d837f481fd229305303f64cef30c56a78a980b75e65be854e783efbb125f"}, {"actual": "8aa35ccc8000f47bb35aaa0ab347c99ab25c38c584fd31238b907618be6f7b49", "epoch": 2, "exact": true, "expected": "8aa35ccc8000f47bb35aaa0ab347c99ab25c38c584fd31238b907618be6f7b49"}, {"actual": "905e33e5380f04a2936a0a2cdc8ffa7597e849dde36058264110ba119db76e2c", "epoch": 3, "exact": true, "expected": "905e33e5380f04a2936a0a2cdc8ffa7597e849dde36058264110ba119db76e2c"}, {"actual": "f0d6b0dce541d33c9d4db7701ba426c3df0e600807cf019966393edea0da13ef", "epoch": 4, "exact": true, "expected": "f0d6b0dce541d33c9d4db7701ba426c3df0e600807cf019966393edea0da13ef"}, {"actual": "6e430b8f5bdcb766507c74a719062efc66d023b4e5b73091961625bcca6bea6d", "epoch": 5, "exact": true, "expected": "6e430b8f5bdcb766507c74a719062efc66d023b4e5b73091961625bcca6bea6d"}, {"actual": "4734af9d8306e4e8102949e66b5bdd3d63ad625b6e6cf34cf096a359bf3f1be4", "epoch": 6, "exact": true, "expected": "4734af9d8306e4e8102949e66b5bdd3d63ad625b6e6cf34cf096a359bf3f1be4"}], "failed": [], "steps": [{"boundary_export_kg": 3152669.5802621953, "deposition_kg": 31291913.8203051, "erosion_kg": 34444583.40056729, "export_kg": 3152669.5802621953, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.5838532969355583e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.4924596548080444e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 1}, {"boundary_export_kg": 2290469.1859690077, "deposition_kg": 29939234.427235812, "erosion_kg": 32229703.613204814, "export_kg": 2290469.1859690077, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.92901711165905e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.1109160520136356e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 2}, {"boundary_export_kg": 2193101.0017828625, "deposition_kg": 28014561.25625682, "erosion_kg": 30207662.258039683, "export_kg": 2193101.0017828625, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.929461283609271e-10, "global_residual_kg": 1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.537934389896691e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 3}, {"boundary_export_kg": 2061630.4925732482, "deposition_kg": 26304215.12127395, "erosion_kg": 28365845.613847196, "export_kg": 2061630.4925732482, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.0740920919924974e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.3655745685100555e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 4}, {"boundary_export_kg": 2002602.9493001201, "deposition_kg": 24664815.892118864, "erosion_kg": 26667418.841418985, "export_kg": 2002602.9493001201, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.0745362639427185e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.7834979593753815e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 5}, {"boundary_export_kg": 1936800.4881137358, "deposition_kg": 23181349.601140454, "erosion_kg": 25118150.089254193, "export_kg": 1936800.4881137358, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.473825588822365e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.637978807091713e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 6}, {"boundary_export_kg": 1858606.591519341, "deposition_kg": 21847764.885774136, "erosion_kg": 23706371.47729347, "export_kg": 1858606.591519341, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.838067641481757e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.94765117764473e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 7}, {"boundary_export_kg": 1742965.2438235357, "deposition_kg": 20668867.861768864, "erosion_kg": 22411833.1055924, "export_kg": 1742965.2438235357, "export_residual_kg": 0.0, "flow_abs_max_kg": 1.7462298274040222e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.9744918467476964e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 8}, {"boundary_export_kg": 1711359.0224672242, "deposition_kg": 19489840.314191997, "erosion_kg": 21201199.336659223, "export_kg": 1711359.0224672242, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.892637323588133e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.511093720793724e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 9}, {"boundary_export_kg": 1643706.3394694983, "deposition_kg": 18450161.347900778, "erosion_kg": 20093867.68737027, "export_kg": 1643706.3394694983, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.928572939708829e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.238689482212067e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 10}, {"boundary_export_kg": 1632363.2030135286, "deposition_kg": 17454757.021820135, "erosion_kg": 19087120.22483366, "export_kg": 1632363.2030135286, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.055902197957039e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.94765117764473e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 11}, {"boundary_export_kg": 1573874.3407241968, "deposition_kg": 16587406.361334128, "erosion_kg": 18161280.702058323, "export_kg": 1573874.3407241968, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.310560714453459e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.093170329928398e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 12}, {"boundary_export_kg": 1518451.1613715119, "deposition_kg": 15760977.00480961, "erosion_kg": 17279428.166181125, "export_kg": 1518451.1613715119, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.2009771782904863e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.2928149923682213e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 13}, {"boundary_export_kg": 1501381.2404522095, "deposition_kg": 14968107.066886935, "erosion_kg": 16469488.307339143, "export_kg": 1501381.2404522095, "export_residual_kg": 0.0, "flow_abs_max_kg": 1.382431946694851e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.093170329928398e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 14}, {"boundary_export_kg": 1484664.367765955, "deposition_kg": 14233029.336587157, "erosion_kg": 15717693.704353113, "export_kg": 1484664.367765955, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.9831426218152046e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.147295840084553e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 15}, {"boundary_export_kg": 1439715.540156388, "deposition_kg": 13590631.613910269, "erosion_kg": 15030347.154066658, "export_kg": 1439715.540156388, "export_residual_kg": 0.0, "flow_abs_max_kg": 1.3915268937125802e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.456968210637569e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 16}, {"boundary_export_kg": 1403394.4637620193, "deposition_kg": 13005058.78348949, "erosion_kg": 14408453.247251509, "export_kg": 1403394.4637620193, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.1650415621697903e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.511093720793724e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 1.1641532182693481e-10, "step": 17}, {"boundary_export_kg": 1374817.9262729462, "deposition_kg": 12416831.964952277, "erosion_kg": 13791649.891225222, "export_kg": 1374817.9262729462, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.1827872842550278e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.748006515204906e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 18}]}, "8128_0.0": {"epochs": [{"actual": "0d9bd24fe2d180c3db7a0b95c28e8c33eeeb980501216a24634eba0eab98eaf1", "epoch": 0, "exact": true, "expected": "0d9bd24fe2d180c3db7a0b95c28e8c33eeeb980501216a24634eba0eab98eaf1"}, {"actual": "05061e3a2784b877836146a0bc8087bed704d8d36257137efbbaf16e4f37e7b3", "epoch": 1, "exact": true, "expected": "05061e3a2784b877836146a0bc8087bed704d8d36257137efbbaf16e4f37e7b3"}, {"actual": "2a86b57667f5c2c554094c18117e74e4058c1f2868c68ce1320b97ebc76b8d02", "epoch": 2, "exact": true, "expected": "2a86b57667f5c2c554094c18117e74e4058c1f2868c68ce1320b97ebc76b8d02"}, {"actual": "7669804a56d3e0dbd9240c827fb5b815b3ea5680432fa8de64735320409e1037", "epoch": 3, "exact": true, "expected": "7669804a56d3e0dbd9240c827fb5b815b3ea5680432fa8de64735320409e1037"}, {"actual": "c0c996702d0b22bb1d11fd5934f78dbe2d114626d03065f3df9d5e9347269f48", "epoch": 4, "exact": true, "expected": "c0c996702d0b22bb1d11fd5934f78dbe2d114626d03065f3df9d5e9347269f48"}, {"actual": "6138d4022ca425d3f400bd75023876b53ae93a1929a74a213beaab869bf131ce", "epoch": 5, "exact": true, "expected": "6138d4022ca425d3f400bd75023876b53ae93a1929a74a213beaab869bf131ce"}, {"actual": "879bd711596dae5992a9ce715a20553aed203db6ddedc9b8b54c2dca2999c07c", "epoch": 6, "exact": true, "expected": "879bd711596dae5992a9ce715a20553aed203db6ddedc9b8b54c2dca2999c07c"}], "failed": [], "steps": [{"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 1}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 2}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 3}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 4}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 5}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 6}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 7}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 8}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 9}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 10}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 11}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 12}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 13}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 14}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 15}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 16}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 17}, {"boundary_export_kg": 0.0, "deposition_kg": 0.0, "erosion_kg": 0.0, "export_kg": 0.0, "export_residual_kg": 0.0, "flow_abs_max_kg": 0.0, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 0.0, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 0.0, "step": 18}]}, "8128_0.1": {"epochs": [{"actual": "62eac9b20a060662597c7687a4d0c1b59b20bfe69866166f7155c167e0e26ce1", "epoch": 0, "exact": true, "expected": "62eac9b20a060662597c7687a4d0c1b59b20bfe69866166f7155c167e0e26ce1"}, {"actual": "4cada16ebf80270608f8b53d08fe44add24dd7cc137d3e1638fb0fd2fbea4cc4", "epoch": 1, "exact": true, "expected": "4cada16ebf80270608f8b53d08fe44add24dd7cc137d3e1638fb0fd2fbea4cc4"}, {"actual": "828b6e7ef814ef37a2d61094bc374b44c2a5c455c355532e51a09a1e7e9d6462", "epoch": 2, "exact": true, "expected": "828b6e7ef814ef37a2d61094bc374b44c2a5c455c355532e51a09a1e7e9d6462"}, {"actual": "26b52e93f104e108d4ece95987941250c941062ed1bb5be1fe212ae106a1a212", "epoch": 3, "exact": true, "expected": "26b52e93f104e108d4ece95987941250c941062ed1bb5be1fe212ae106a1a212"}, {"actual": "7133f5ad47d55c63cb48e7f8d5f1b88a98f91dbeb42451ba18b647f7ffe5640a", "epoch": 4, "exact": true, "expected": "7133f5ad47d55c63cb48e7f8d5f1b88a98f91dbeb42451ba18b647f7ffe5640a"}, {"actual": "bdfc60b5487be51fc6f01484efa55d3b0e2067eef943df2f99a5def19f6632b5", "epoch": 5, "exact": true, "expected": "bdfc60b5487be51fc6f01484efa55d3b0e2067eef943df2f99a5def19f6632b5"}, {"actual": "58a9ad3a423e23348321c2118949aad1e64b1df234042098f0460d76ee005676", "epoch": 6, "exact": true, "expected": "58a9ad3a423e23348321c2118949aad1e64b1df234042098f0460d76ee005676"}], "failed": [], "steps": [{"boundary_export_kg": 2724860.962770822, "deposition_kg": 40860893.440494314, "erosion_kg": 43585754.40326513, "export_kg": 2724860.962770822, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.2741809263825417e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.2014213502407074e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 1}, {"boundary_export_kg": 2322979.8621641733, "deposition_kg": 38810946.35751643, "erosion_kg": 41133926.21968061, "export_kg": 2322979.8621641733, "export_residual_kg": 0.0, "flow_abs_max_kg": 5.020410753786564e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.7834979593753815e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 2}, {"boundary_export_kg": 2264154.8976774337, "deposition_kg": 36576145.97206582, "erosion_kg": 38840300.86974326, "export_kg": 2264154.8976774337, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.346940502524376e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.0745362639427185e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 3}, {"boundary_export_kg": 2179386.3766361307, "deposition_kg": 34550805.41165669, "erosion_kg": 36730191.78829282, "export_kg": 2179386.3766361307, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.5652192309498787e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.802132025361061e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 4}, {"boundary_export_kg": 2127683.0505259894, "deposition_kg": 32599510.331457183, "erosion_kg": 34727193.381983176, "export_kg": 2127683.0505259894, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.2928149923682213e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.656612873077393e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 5}, {"boundary_export_kg": 2038890.8501830697, "deposition_kg": 30819498.642561242, "erosion_kg": 32858389.492744304, "export_kg": 2038890.8501830697, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.001776687800884e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.3655745685100555e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 6}, {"boundary_export_kg": 2001800.2912875547, "deposition_kg": 29116898.129447155, "erosion_kg": 31118698.42073471, "export_kg": 2001800.2912875547, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.05634636990726e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 3.7834979593753815e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 7}, {"boundary_export_kg": 1909177.2204512607, "deposition_kg": 27580091.760919824, "erosion_kg": 29489268.981371082, "export_kg": 1909177.2204512607, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.892637323588133e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.3655745685100555e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 8}, {"boundary_export_kg": 1865971.332531123, "deposition_kg": 26092833.894252576, "erosion_kg": 27958805.2267837, "export_kg": 1865971.332531123, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.5652192309498787e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.94765117764473e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 9}, {"boundary_export_kg": 1834750.0021723171, "deposition_kg": 24707573.296564013, "erosion_kg": 26542323.298736326, "export_kg": 1834750.0021723171, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.80168785341084e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.656612873077393e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 10}, {"boundary_export_kg": 1738817.631645405, "deposition_kg": 23477851.284019217, "erosion_kg": 25216668.91566462, "export_kg": 1738817.631645405, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.219611244276166e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.093170329928398e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 11}, {"boundary_export_kg": 1691431.9071170336, "deposition_kg": 22276528.75817889, "erosion_kg": 23967960.66529592, "export_kg": 1691431.9071170336, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.8198777474462986e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 4.94765117764473e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 12}, {"boundary_export_kg": 1654178.7204025248, "deposition_kg": 21146792.265353158, "erosion_kg": 22800970.985755682, "export_kg": 1654178.7204025248, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.346940502524376e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.820766091346741e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 13}, {"boundary_export_kg": 1599370.0557712526, "deposition_kg": 20113080.192184296, "erosion_kg": 21712450.247955553, "export_kg": 1599370.0557712526, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.783942131325603e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.748006515204906e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 14}, {"boundary_export_kg": 1551311.2383212217, "deposition_kg": 19132610.818863846, "erosion_kg": 20683922.05718507, "export_kg": 1551311.2383212217, "export_residual_kg": 0.0, "flow_abs_max_kg": 3.583409124985337e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 7.275957614183426e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 15}, {"boundary_export_kg": 1570036.843219345, "deposition_kg": 18149435.712842066, "erosion_kg": 19719472.55606141, "export_kg": 1570036.843219345, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.6921043172478676e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 5.675246939063072e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 16}, {"boundary_export_kg": 1493108.0788181203, "deposition_kg": 17326774.59021472, "erosion_kg": 18819882.669032842, "export_kg": 1493108.0788181203, "export_residual_kg": 0.0, "flow_abs_max_kg": 2.5283952709287405e-10, "global_residual_kg": -1.1920928955078125e-07, "inactive_out_kg": 0.0, "mass_abs_max_kg": 6.111804395914078e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 2.3283064365386963e-10, "step": 17}, {"boundary_export_kg": 1495277.9476681668, "deposition_kg": 16483504.644113006, "erosion_kg": 17978782.591781177, "export_kg": 1495277.9476681668, "export_residual_kg": 0.0, "flow_abs_max_kg": 4.765752237290144e-10, "global_residual_kg": 0.0, "inactive_out_kg": 0.0, "mass_abs_max_kg": 6.111804395914078e-10, "max_erosion_minus_stock_kg": 0.0, "route_abs_max_kg": 4.656612873077393e-10, "step": 18}]}}, "elapsed_s": 1.3838678960000266, "experiment": "P1-B.2a", "failed_preregistered_gates": [], "input_archives": {"continuous": ["45447643891/14946621830.zip", "34849933ca9b1c4fd1b2b1b5c9538f4093caef62950a71859f8583a58c7d9c44"], "raw": ["45389348480/14917807888.zip", "f2b204f42f7d055600587230093ad36b1a89f0f85ae758bae114a4b6b94a5170"], "results": ["45447643891/14948035431.zip", "0cb082e656d34aef4d2b5387d1e4d2cba81b0dd9337f100dde4a715956db5fad"], "thermal": ["45488606315/14965401716.zip", "7f919ae46e68c8da7d775f297f00a662c98f37752f7b78658b419eddcf79d512"]}, "outputs": {"7321_0.0_fluxes.npz": "30197f79d410acb300f264627eb7cbbc3bc9cde5600f987fe3ad7f1f7a69f6a5", "7321_0.1_fluxes.npz": "f8e9af38baa5d1510519cd3c7f11767611c825ab13597152a2a5129ab5aaeb16", "8128_0.0_fluxes.npz": "d3506b90ce00a18f629103ffe2ca5e43013d56641b636f848d007cc58e5f1b62", "8128_0.1_fluxes.npz": "8f97cf8886fe9227765ddb65d62160d3e7567ed68e0a23485a5d2fe9ebd53041"}, "runtime": {"cpu": "x86_64", "cpu_features": {"ASIMD": false, "ASIMDDP": false, "ASIMDFHM": false, "ASIMDHP": false, "AVX": true, "AVX2": true, "AVX5124FMAPS": false, "AVX5124VNNIW": false, "AVX512BF16": true, "AVX512BITALG": true, "AVX512BW": true, "AVX512CD": true, "AVX512DQ": true, "AVX512ER": false, "AVX512F": true, "AVX512FP16": true, "AVX512IFMA": true, "AVX512PF": false, "AVX512VBMI": true, "AVX512VBMI2": true, "AVX512VL": true, "AVX512VNNI": true, "AVX512VPOPCNTDQ": true, "AVX512_CLX": true, "AVX512_CNL": true, "AVX512_ICL": false, "AVX512_KNL": false, "AVX512_KNM": false, "AVX512_SKX": false, "AVX512_SPR": false, "BMI": true, "BMI2": true, "CX16": true, "F16C": true, "FMA3": true, "FMA4": false, "FPHP": false, "GFNI": true, "LAHF": true, "LSX": false, "LZCNT": true, "MMX": true, "MOVBE": true, "NEON": false, "NEON_FP16": false, "NEON_VFPV4": false, "POPCNT": true, "RVV": false, "SSE": true, "SSE2": true, "SSE3": true, "SSE41": true, "SSE42": true, "SSSE3": true, "SVE": false, "VAES": true, "VPCLMULQDQ": true, "VSX": false, "VSX2": false, "VSX3": false, "VSX4": false, "VX": false, "VXE": false, "VXE2": false, "X86_V2": true, "X86_V3": false, "X86_V4": false, "XOP": false}, "profile": {"MKL_NUM_THREADS": "1", "NPY_DISABLE_CPU_FEATURES": "X86_V3,X86_V4,AVX512_ICL,AVX512_SPR", "OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1"}, "python": "3.13.18", "versions": {"landlab": "2.11.0", "numpy": "2.5.5", "scipy": "1.18.1", "xarray": "2026.9.0"}}}
+2026-11-24T22:34:52.0592807Z ##[group]Run actions/upload-artifact@v4
+2026-11-24T22:34:52.0593163Z with:
+2026-11-24T22:34:52.0593375Z   name: p1b2a-results
+2026-11-24T22:34:52.0593672Z   path: p1b2a-output/result.json
+p1b2a-output/*_fluxes.npz
+
+2026-11-24T22:34:52.0593969Z   retention-days: 30
+2026-11-24T22:34:52.0594422Z   if-no-files-found: warn
+2026-11-24T22:34:52.0594697Z   compression-level: 6
+2026-11-24T22:34:52.0594922Z   overwrite: false
+2026-11-24T22:34:52.0595146Z   include-hidden-files: false
+2026-11-24T22:34:52.0595387Z env:
+2026-11-24T22:34:52.0595664Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-24T22:34:52.0596009Z   OPENBLAS_NUM_THREADS: 1
+2026-11-24T22:34:52.0596238Z   OMP_NUM_THREADS: 1
+2026-11-24T22:34:52.0596462Z   MKL_NUM_THREADS: 1
+2026-11-24T22:34:52.0596715Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments
+2026-11-24T22:34:52.0597062Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:52.0597529Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-24T22:34:52.0598029Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:52.0598381Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:52.0598783Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-24T22:34:52.0599148Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-24T22:34:52.0599448Z ##[endgroup]
+2026-11-24T22:34:52.1796233Z (node:2231) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-24T22:34:52.1796868Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-24T22:34:52.1862949Z With the provided path, there will be 5 files uploaded
+2026-11-24T22:34:52.1866575Z Artifact name is valid!
+2026-11-24T22:34:52.1867049Z Root directory input is valid!
+2026-11-24T22:34:52.7465598Z Beginning upload of artifact content to blob storage
+2026-11-24T22:34:52.8311055Z (node:2231) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-24T22:34:53.5971828Z Uploaded bytes 782522
+2026-11-24T22:34:53.6882942Z Finished uploading artifact content to blob storage!
+2026-11-24T22:34:53.6883708Z SHA256 digest of uploaded artifact zip is 60028665102c3eb233b3c9d7ad15048be157e39d20189b69f831448bc76e635c
+2026-11-24T22:34:53.6884470Z Finalizing artifact upload
+2026-11-24T22:34:54.0772692Z Artifact p1b2a-results.zip successfully finalized. Artifact ID 14969549342
+2026-11-24T22:34:54.0773574Z Artifact p1b2a-results has been successfully uploaded! Final size is 782522 bytes. Artifact ID is 14969549342
+2026-11-24T22:34:54.0779434Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45502145469/artifacts/14969549342
+2026-11-24T22:34:54.0927603Z Post job cleanup.
+2026-11-24T22:34:54.1829367Z (node:2243) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-24T22:34:54.1830003Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-24T22:34:54.1947301Z Post job cleanup.
+2026-11-24T22:34:54.2602989Z [command]/usr/bin/git version
+2026-11-24T22:34:54.2638985Z git version 2.56.1
+2026-11-24T22:34:54.2669749Z Temporarily overriding HOME='/home/runner/work/_temp/9535dd66-663e-40b7-b436-1f59a7d1b4e5' before making global git config changes
+2026-11-24T22:34:54.2670436Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-24T22:34:54.2674883Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-24T22:34:54.2706200Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-24T22:34:54.2731927Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-24T22:34:54.2895049Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-24T22:34:54.2926042Z http.https://github.com/.extraheader
+2026-11-24T22:34:54.2928684Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-24T22:34:54.2952097Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-24T22:34:54.3127558Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-24T22:34:54.3152950Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-24T22:34:54.3435146Z Cleaning up orphan processes
+2026-11-24T22:34:54.3686830Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
