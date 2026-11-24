@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
+  "status": "ready",
   "stage": "P1-B",
-  "current_task": "P1-B.2b",
-  "next_action": "Consultar CI 45503529832 de P1-B.2b; leer gates, distinguir fallo analítico/instrumental de divergencia tracker, archivar ZIP/log y auditar. No repetir sin diagnóstico, no iniciar B.2c si falla.",
-  "scientific_next": "P1-B.2b",
+  "current_task": "P1-B.2c",
+  "next_action": "Ejecutar P1-B.2c según prerregistro: usar propietarios P0-D epoch0 y 1, campo térmico material con capacidad real derivada, rayos exactos, controles y nulos, remapeo/flujo sedimentario archivado, sensibilidad y replay, sin repetir mecánica. No avanzar P1-C si falla.",
+  "scientific_next": "P1-B.2c",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -14,7 +14,7 @@
     "P0": "complete_limited",
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
-    "P1_B": "B2b_ci_pending"
+    "P1_B": "B2b_passed_verified_archive"
   },
   "blockers": [],
   "evidence_refs": [
@@ -25,13 +25,15 @@
     "evidence/LOG_MANIFEST.json",
     "research/P1-B/P1-B.1_CONTRATO_Y_PRERREGISTRO.md",
     "research/P1-B/P1-B.2a_RESULTADO.md",
-    "evidence/P1-B/B2a/archive_manifest.json"
+    "evidence/P1-B/B2a/archive_manifest.json",
+    "research/P1-B/P1-B.2b_RESULTADO.md",
+    "evidence/P1-B/B2b/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "be379a9f626930d1c4b37f1f84060a22fb43808d",
+  "last_confirmed_non_state_write": "de89d5b58b6302a915ac20ae24937b5bc85591e2",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -54,11 +56,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24",
-  "active_run": {
-    "id": 45503529832,
-    "head_sha": "be379a9f626930d1c4b37f1f84060a22fb43808d",
-    "unit": "P1-B.2b",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45503529832"
-  }
+  "updated_at": "2026-11-24"
 }
