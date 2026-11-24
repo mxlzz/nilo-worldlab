@@ -13,3 +13,5 @@
 - P1-B.2a CI 45502145469 SUCCESS, gates vacíos, 28/28 hashes exactos y 72 pasos, autoverificación. Se inicia archivo durable del artefacto y log antes de B.2b.
 
 - Archivo B.2a run 45503207288: ZIP pasó digest; gh CLI rechazó secuencias ANSI de log (no se escribió evidencia binaria). Recuperación limitada: habilitar salida cruda exclusivamente al archivo de log, sin imprimirlo; checkout con historial para rebase. No repetir física.
+
+- Archivo recuperado CI 45503283036 SUCCESS: ZIP, log, JSON y manifest en evidence/P1-B/B2a, digest y NPZ verificados en CI, tamaños y blobs releídos en HEAD 717caa02. B.2a cerrada, workflow temporal de archivo inactivo. GO B.2b.
