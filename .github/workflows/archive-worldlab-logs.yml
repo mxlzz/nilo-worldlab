@@ -1,0 +1,32 @@
+name: WorldLab migration - preserve original CI logs
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/archive-worldlab-logs.yml'
+      - 'migration/archive_logs.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: worldlab-migration
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive logs of original research runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 migration/archive_logs.py
+      - name: Commit available validated logs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence/LOG_MANIFEST.json
+          if [ -d evidence/logs ]; then git add evidence/logs; fi
+          git commit -m "Preserve original WorldLab CI log archives and retrieval manifest"
+          git push origin HEAD:main
