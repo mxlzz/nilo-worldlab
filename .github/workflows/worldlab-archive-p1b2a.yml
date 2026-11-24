@@ -12,6 +12,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Archive exact artifact and job logs
         env:
           GH_TOKEN: ${{ github.token }}
@@ -21,7 +23,7 @@ jobs:
           mkdir -p "$d"
           gh api repos/${{ github.repository }}/actions/artifacts/14969549342/zip > "$d/14969549342.zip"
           echo '60028665102c3eb233b3c9d7ad15048be157e39d20189b69f831448bc76e635c  '"$d/14969549342.zip" | sha256sum -c -
-          gh api repos/${{ github.repository }}/actions/jobs/138827906462/logs > "$d/job-138827906462.log"
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138827906462/logs > "$d/job-138827906462.log"
           python - <<'PY'
           import hashlib, json, pathlib, zipfile
           d=pathlib.Path("evidence/P1-B/B2a")

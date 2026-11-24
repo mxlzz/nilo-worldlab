@@ -11,3 +11,5 @@
 - P1-B.2a: implementado adaptador de solo lectura de campos nativos SPACE (tasas × dt × área/densidad según unidades), comparador de hashes P0-D, controles y CI de 15 min. Referencias archivadas con digest verificado al ejecutar. Lanzamiento por push; resultado pendiente, no habilitar B.2b.
 
 - P1-B.2a CI 45502145469 SUCCESS, gates vacíos, 28/28 hashes exactos y 72 pasos, autoverificación. Se inicia archivo durable del artefacto y log antes de B.2b.
+
+- Archivo B.2a run 45503207288: ZIP pasó digest; gh CLI rechazó secuencias ANSI de log (no se escribió evidencia binaria). Recuperación limitada: habilitar salida cruda exclusivamente al archivo de log, sin imprimirlo; checkout con historial para rebase. No repetir física.
