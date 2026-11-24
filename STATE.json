@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "migration_in_progress",
-  "stage": "WL-M",
-  "current_task": "WL-M3-M4",
-  "next_action": "Verificar snapshot, artefactos y HEAD original; consolidar continuidad. Solo después habilitar P1-B.1.",
+  "status": "ready",
+  "stage": "P1-B",
+  "current_task": "P1-B.1",
+  "next_action": "Leer el protocolo P1 y la evidencia P1-A-R; evaluar si la capa térmica puede pertenecer al propietario material P0-D, comparar proyección conservativa, refinamiento ROI y alternativas existentes; definir receptor, flujos, exportación, unidades y relojes; redactar protocolo prerregistrado con controles y criterios. No implementar ni ejecutar experimentos antes de este gate; no repetir P0 o P1-A-R.",
   "scientific_next": "P1-B.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -16,15 +16,40 @@
     "P1_A_R": "passed_ci_readback",
     "P1_B": "not_started"
   },
-  "blockers": [
-    "Migración y conservación de evidencia pendientes de lectura verificada"
-  ],
+  "blockers": [],
   "evidence_refs": [
     "evidence/P1-A-R_READBACK.md",
-    "evidence/P1-A-R_LOG_RESULT.json"
+    "evidence/P1-A-R_LOG_RESULT.json",
+    "MIGRATION_MANIFEST.json",
+    "evidence/ARTIFACT_MANIFEST.json",
+    "evidence/LOG_MANIFEST.json"
   ],
   "audit_refs": [
-    "AUDIT.md"
+    "AUDIT.md",
+    "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": null
+  "last_confirmed_non_state_write": "add343de1ffcbd8714f5355c27af43222ab5ec5d",
+  "migration": {
+    "status": "verified",
+    "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
+    "source_files": 314,
+    "source_files_exact": 314,
+    "artifacts_archived_verified": 58,
+    "workflow_runs": 487,
+    "logs_archived": 481,
+    "logs_unavailable_no_jobs": [
+      45299168169,
+      45059377821,
+      45059294431,
+      44948854110,
+      44948670859,
+      44948420491
+    ],
+    "snapshot_commit": "a43a538b0036f60b5898b947176e0baa3bb13f69",
+    "logs_commit": "98d2c3dc1570acb3da3f7ffc531fd34b81268bfb",
+    "verification": "evidence/MIGRATION_VERIFICATION.md",
+    "simulation": "documentary_pass",
+    "new_repo_experiment_execution": "not_tested"
+  },
+  "updated_at": "2026-11-24"
 }
