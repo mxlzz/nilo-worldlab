@@ -4,9 +4,9 @@
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "ready",
   "stage": "P1-B",
-  "current_task": "P1-B.1",
-  "next_action": "Leer el protocolo P1 y la evidencia P1-A-R; evaluar si la capa térmica puede pertenecer al propietario material P0-D, comparar proyección conservativa, refinamiento ROI y alternativas existentes; definir receptor, flujos, exportación, unidades y relojes; redactar protocolo prerregistrado con controles y criterios. No implementar ni ejecutar experimentos antes de este gate; no repetir P0 o P1-A-R.",
-  "scientific_next": "P1-B.1",
+  "current_task": "P1-B.2a",
+  "next_action": "Implementar y ejecutar exclusivamente B.2a del prerregistro research/P1-B/P1-B.1_CONTRATO_Y_PRERREGISTRO.md: instrumentar adaptador H33, verificar flujos efectivos, export y hashes suelo de 28 estados P0-D en perfil heredado. Recuperar artefactos archivados y validar digest. No modificar inherited ni repetir mecánica. Si gate falla, auditar antes de B.2b; no ajustar criterios.",
+  "scientific_next": "P1-B.2a",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -14,7 +14,7 @@
     "P0": "complete_limited",
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
-    "P1_B": "not_started"
+    "P1_B": "protocol_preregistered_not_tested"
   },
   "blockers": [],
   "evidence_refs": [
@@ -22,13 +22,14 @@
     "evidence/P1-A-R_LOG_RESULT.json",
     "MIGRATION_MANIFEST.json",
     "evidence/ARTIFACT_MANIFEST.json",
-    "evidence/LOG_MANIFEST.json"
+    "evidence/LOG_MANIFEST.json",
+    "research/P1-B/P1-B.1_CONTRATO_Y_PRERREGISTRO.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "add343de1ffcbd8714f5355c27af43222ab5ec5d",
+  "last_confirmed_non_state_write": "d4fcea8ff7b45d0d8d6076cab655568426d85951",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
