@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project": "mxlzz/nilo-worldlab",
+  "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
+  "status": "migration_in_progress",
+  "stage": "WL-M",
+  "current_task": "WL-M3-M4",
+  "next_action": "Verificar snapshot, artefactos y HEAD original; consolidar continuidad. Solo después habilitar P1-B.1.",
+  "scientific_next": "P1-B.1",
+  "scientific_state": {
+    "E0_E6": "provisional_limited",
+    "E7": "open",
+    "E8": "not_started",
+    "P0": "complete_limited",
+    "P1_A": "failed_instrument",
+    "P1_A_R": "passed_ci_readback",
+    "P1_B": "not_started"
+  },
+  "blockers": [
+    "Migración y conservación de evidencia pendientes de lectura verificada"
+  ],
+  "evidence_refs": [
+    "evidence/P1-A-R_READBACK.md",
+    "evidence/P1-A-R_LOG_RESULT.json"
+  ],
+  "audit_refs": [
+    "AUDIT.md"
+  ],
+  "last_confirmed_non_state_write": null
+}
