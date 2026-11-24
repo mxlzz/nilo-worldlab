@@ -1,0 +1,47 @@
+name: WorldLab archive P1-B.2b evidence
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-archive-p1b2b.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Archive exact artifact and job logs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-B/B2b
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14972836210/zip > "$d/14972836210.zip"
+          echo 'c6fe9dd45be37cef2d420aa90825b53756105cb2572178959ec40a35c5000d6e  '"$d/14972836210.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138832700033/logs > "$d/job-138832700033.log"
+          python - <<'PY'
+          import hashlib, json, pathlib, zipfile
+          d=pathlib.Path("evidence/P1-B/B2b")
+          r=json.loads((d/"result.json").read_text())
+          z=d/"14972836210.zip"
+          with zipfile.ZipFile(z) as f:
+              assert f.testzip() is None
+              for name, digest in r["outputs"].items():
+                  assert hashlib.sha256(f.read(name)).hexdigest()==digest, name
+              assert json.loads(f.read("result.json"))==r
+          log=d/"job-138832700033.log"
+          assert "WORLD_EVAL_JSON " in log.read_text()
+          m={"run":45503529832,"job":138832700033,"artifact":14972836210,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in [z,log,d/"result.json"]}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P1-B.2b verified flux artifact and logs'
+          git pull --rebase origin main
+          git push origin HEAD:main

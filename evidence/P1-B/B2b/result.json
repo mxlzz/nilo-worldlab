@@ -1,0 +1,1433 @@
+{
+  "analytical": {
+    "K0": true,
+    "chain": {
+      "deposited_J": 600,
+      "export_J": 400,
+      "outgoing_J": 1400,
+      "removed_J": 1000,
+      "residual_J": 0
+    },
+    "convergence": {
+      "deposited_J": 383.3333333333333,
+      "export_J": 766.6666666666666,
+      "outgoing_J": 1766.6666666666665,
+      "removed_J": 1150,
+      "residual_J": 0
+    },
+    "reject_duplicate_stock": true,
+    "reject_energy_plus_1": true,
+    "reject_false_export": true,
+    "reject_identity": true,
+    "reject_mass_plus_1": true,
+    "reject_receiver": true,
+    "reject_repeat": true,
+    "reject_units": true,
+    "remap": true,
+    "roundtrip": true,
+    "two_chains": true,
+    "zero_energy": true,
+    "zero_mass": true
+  },
+  "cases": {
+    "7321_0.0_heterogeneous": {
+      "export_J": 0,
+      "final_energy_J": 552207058.8235294,
+      "final_hash": "abeadbf2525e6c72ce1eeb1b0ba1f75683101c48f44749133c3b4008b944c492",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 2
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 3
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 5
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 7
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 8
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 10
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 11
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 14
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 15
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 16
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 17
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 2.3283064365386963e-10
+    },
+    "7321_0.0_uniform": {
+      "export_J": 0,
+      "final_energy_J": 921600000,
+      "final_hash": "e5ebe8f1e6e535628dcdcaff73554c16ea40d058a7f7c154ad046ab69854d497",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 2
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 3
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 5
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 7
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 8
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 10
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 11
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 14
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 15
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 16
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 17
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 0
+    },
+    "7321_0.1_heterogeneous": {
+      "export_J": 16065320.870431215,
+      "final_energy_J": 552207058.8235294,
+      "final_hash": "aafb00e5f4a2139b62cd567e3fa18e3a54d2ed0cd1f15abcaff1d1a3da89094e",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 17917658.66188969,
+          "export_J": 1736629.4168800723,
+          "max_tracker_difference_J": 6.984919309616089e-10,
+          "outgoing_J": 59074612.051797695,
+          "removed_J": 19654288.078769766,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 17225820.592554957,
+          "export_J": 1138064.3110471256,
+          "max_tracker_difference_J": 6.984919309616089e-10,
+          "outgoing_J": 61686479.4262897,
+          "removed_J": 18363884.903602086,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 2
+        },
+        {
+          "deposited_J": 16098262.709454838,
+          "export_J": 1091308.6056170827,
+          "max_tracker_difference_J": 9.313225746154785e-10,
+          "outgoing_J": 45557595.54978639,
+          "removed_J": 17189571.315071918,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 3
+        },
+        {
+          "deposited_J": 15111564.95132136,
+          "export_J": 1012541.554061145,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 52396803.235955685,
+          "removed_J": 16124106.505382508,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 14151870.633985035,
+          "export_J": 987900.1310776726,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 40143901.201882936,
+          "removed_J": 15139770.765062708,
+          "residual_J": 0,
+          "step": 5
+        },
+        {
+          "deposited_J": 13290692.39897611,
+          "export_J": 954202.8922536994,
+          "max_tracker_difference_J": 2.0954757928848267e-9,
+          "outgoing_J": 37710960.895176835,
+          "removed_J": 14244895.29122981,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 12519609.338352276,
+          "export_J": 912710.7122959872,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 34707062.31440952,
+          "removed_J": 13432320.050648265,
+          "residual_J": 0,
+          "step": 7
+        },
+        {
+          "deposited_J": 11841741.233912814,
+          "export_J": 846937.4900117508,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 40868308.719507076,
+          "removed_J": 12688678.723924566,
+          "residual_J": 0,
+          "step": 8
+        },
+        {
+          "deposited_J": 11158320.628839806,
+          "export_J": 830451.6639936491,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 39932201.55944368,
+          "removed_J": 11988772.292833459,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 10557190.932232626,
+          "export_J": 794155.2055624021,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 37188985.30687222,
+          "removed_J": 11351346.13779503,
+          "residual_J": 0,
+          "step": 10
+        },
+        {
+          "deposited_J": 9979950.61079669,
+          "export_J": 794984.4209020423,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 30045453.774020057,
+          "removed_J": 10774935.031698734,
+          "residual_J": 0,
+          "step": 11
+        },
+        {
+          "deposited_J": 9483730.91819205,
+          "export_J": 762709.4423682488,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 28525390.719848145,
+          "removed_J": 10246440.360560302,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 9016096.793101318,
+          "export_J": 728230.741450482,
+          "max_tracker_difference_J": 2.0954757928848267e-9,
+          "outgoing_J": 32873758.37580421,
+          "removed_J": 9744327.534551801,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 8551603.329537058,
+          "export_J": 723686.2245326474,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 31511310.73337625,
+          "removed_J": 9275289.554069705,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 14
+        },
+        {
+          "deposited_J": 8123340.750526162,
+          "export_J": 720726.5612354664,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 25953280.100545786,
+          "removed_J": 8844067.311761629,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 15
+        },
+        {
+          "deposited_J": 7764099.95547987,
+          "export_J": 693464.1830466924,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 25276392.174708698,
+          "removed_J": 8457564.138526563,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 16
+        },
+        {
+          "deposited_J": 7423801.921258385,
+          "export_J": 675666.922772481,
+          "max_tracker_difference_J": 2.561137080192566e-9,
+          "outgoing_J": 24497243.913915627,
+          "removed_J": 8099468.844030866,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 17
+        },
+        {
+          "deposited_J": 7083277.796679527,
+          "export_J": 660950.3913225689,
+          "max_tracker_difference_J": 2.561137080192566e-9,
+          "outgoing_J": 23860682.22175946,
+          "removed_J": 7744228.188002096,
+          "residual_J": 0,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 2.561137080192566e-9
+    },
+    "7321_0.1_uniform": {
+      "export_J": 32522573.138799526,
+      "final_energy_J": 921600000.0000001,
+      "final_hash": "2f07413e547127a8bcf597fa5104323c55c596c214b86e9e6a56d03ec56ecf0b",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 31291913.8203051,
+          "export_J": 3152669.5802621963,
+          "max_tracker_difference_J": 9.313225746154785e-10,
+          "outgoing_J": 96881819.24498487,
+          "removed_J": 34444583.40056729,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 29939234.427235812,
+          "export_J": 2290469.1859690077,
+          "max_tracker_difference_J": 9.313225746154785e-10,
+          "outgoing_J": 99919963.24767521,
+          "removed_J": 32229703.613204822,
+          "residual_J": 0,
+          "step": 2
+        },
+        {
+          "deposited_J": 28014561.25625682,
+          "export_J": 2193101.0017828625,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 75798739.95827854,
+          "removed_J": 30207662.258039683,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 3
+        },
+        {
+          "deposited_J": 26304215.12127395,
+          "export_J": 2061630.4925732475,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 85337730.6527343,
+          "removed_J": 28365845.613847196,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 24664815.892118864,
+          "export_J": 2002602.9493001208,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 66968812.122967094,
+          "removed_J": 26667418.841418985,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 5
+        },
+        {
+          "deposited_J": 23181349.601140454,
+          "export_J": 1936800.488113736,
+          "max_tracker_difference_J": 2.0954757928848267e-9,
+          "outgoing_J": 63067243.79075295,
+          "removed_J": 25118150.089254193,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 6
+        },
+        {
+          "deposited_J": 21847764.88577413,
+          "export_J": 1858606.5915193402,
+          "max_tracker_difference_J": 2.561137080192566e-9,
+          "outgoing_J": 57982907.236063674,
+          "removed_J": 23706371.47729347,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 7
+        },
+        {
+          "deposited_J": 20668867.861768864,
+          "export_J": 1742965.2438235371,
+          "max_tracker_difference_J": 2.0954757928848267e-9,
+          "outgoing_J": 66798914.99236894,
+          "removed_J": 22411833.1055924,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 8
+        },
+        {
+          "deposited_J": 19489840.314191997,
+          "export_J": 1711359.0224672246,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 65320982.881499864,
+          "removed_J": 21201199.336659223,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 9
+        },
+        {
+          "deposited_J": 18450161.347900778,
+          "export_J": 1643706.3394694983,
+          "max_tracker_difference_J": 2.561137080192566e-9,
+          "outgoing_J": 60958589.49602578,
+          "removed_J": 20093867.687370278,
+          "residual_J": 0,
+          "step": 10
+        },
+        {
+          "deposited_J": 17454757.021820135,
+          "export_J": 1632363.203013529,
+          "max_tracker_difference_J": 2.561137080192566e-9,
+          "outgoing_J": 50180046.96465829,
+          "removed_J": 19087120.22483366,
+          "residual_J": 0,
+          "step": 11
+        },
+        {
+          "deposited_J": 16587406.361334128,
+          "export_J": 1573874.340724197,
+          "max_tracker_difference_J": 2.7939677238464355e-9,
+          "outgoing_J": 47811133.19644441,
+          "removed_J": 18161280.702058326,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 15760977.004809612,
+          "export_J": 1518451.1613715112,
+          "max_tracker_difference_J": 3.259629011154175e-9,
+          "outgoing_J": 53768371.286134645,
+          "removed_J": 17279428.166181125,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 13
+        },
+        {
+          "deposited_J": 14968107.066886935,
+          "export_J": 1501381.2404522088,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 51640486.485989936,
+          "removed_J": 16469488.307339143,
+          "residual_J": 2.384185791015625e-7,
+          "step": 14
+        },
+        {
+          "deposited_J": 14233029.336587159,
+          "export_J": 1484664.3677659554,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 43463274.33041326,
+          "removed_J": 15717693.704353113,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 15
+        },
+        {
+          "deposited_J": 13590631.61391027,
+          "export_J": 1439715.5401563875,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 42249390.01586385,
+          "removed_J": 15030347.15406666,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 16
+        },
+        {
+          "deposited_J": 13005058.783489488,
+          "export_J": 1403394.463762019,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 40932535.69878579,
+          "removed_J": 14408453.247251509,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 17
+        },
+        {
+          "deposited_J": 12416831.964952277,
+          "export_J": 1374817.9262729469,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 39839479.239755504,
+          "removed_J": 13791649.891225222,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 3.725290298461914e-9
+    },
+    "8128_0.0_heterogeneous": {
+      "export_J": 0,
+      "final_energy_J": 552207058.8235294,
+      "final_hash": "859dbcf7c064462c158140c20601e67c4f49aac8448bac91dcca2c4c7de70132",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 2
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 3
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 5
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 7
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 8
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 10
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 11
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 14
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 15
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 16
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 17
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 2.3283064365386963e-10,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 2.3283064365386963e-10
+    },
+    "8128_0.0_uniform": {
+      "export_J": 0,
+      "final_energy_J": 921600000,
+      "final_hash": "77955e7ae7e78382fc8882afe46b642b5a0143b0e43964b3d1a6a7554849f306",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 2
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 3
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 5
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 7
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 8
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 10
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 11
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 14
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 15
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 16
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 17
+        },
+        {
+          "deposited_J": 0,
+          "export_J": 0,
+          "max_tracker_difference_J": 0,
+          "outgoing_J": 0,
+          "removed_J": 0,
+          "residual_J": 0,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 0
+    },
+    "8128_0.1_heterogeneous": {
+      "export_J": 18473686.30186809,
+      "final_energy_J": 552207058.8235295,
+      "final_hash": "4211e4508b8001a00a87bdd60e89623534f30deea015bfeb7785232f530d7e01",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 25741398.123126,
+          "export_J": 1654138.6166822172,
+          "max_tracker_difference_J": 6.984919309616089e-10,
+          "outgoing_J": 80140768.84011161,
+          "removed_J": 27395536.739808217,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 24542167.946519278,
+          "export_J": 1277056.15682021,
+          "max_tracker_difference_J": 1.1641532182693481e-9,
+          "outgoing_J": 77038330.25624573,
+          "removed_J": 25819224.10333949,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 2
+        },
+        {
+          "deposited_J": 23093611.31433881,
+          "export_J": 1250090.6170437525,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 69703083.36903977,
+          "removed_J": 24343701.931382567,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 3
+        },
+        {
+          "deposited_J": 21784362.567533653,
+          "export_J": 1200386.500898854,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 66778335.72145748,
+          "removed_J": 22984749.06843251,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 4
+        },
+        {
+          "deposited_J": 20532413.989300575,
+          "export_J": 1165280.4110815832,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 64085939.50519669,
+          "removed_J": 21697694.400382157,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 5
+        },
+        {
+          "deposited_J": 19390231.48223297,
+          "export_J": 1113842.4264925723,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 60945398.92701382,
+          "removed_J": 20504073.90872554,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 18303058.11085647,
+          "export_J": 1088919.1924436116,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 58708428.99639906,
+          "removed_J": 19391977.303300083,
+          "residual_J": 0,
+          "step": 7
+        },
+        {
+          "deposited_J": 17334788.355840065,
+          "export_J": 1020267.1350250527,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 57610735.7366826,
+          "removed_J": 18355055.490865115,
+          "residual_J": 0,
+          "step": 8
+        },
+        {
+          "deposited_J": 16368194.23890284,
+          "export_J": 1009441.977132855,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 53704700.958008155,
+          "removed_J": 17377636.216035698,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 15487405.920082055,
+          "export_J": 985012.9139188266,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 51414465.06432679,
+          "removed_J": 16472418.834000882,
+          "residual_J": 2.384185791015625e-7,
+          "step": 10
+        },
+        {
+          "deposited_J": 14704107.040858217,
+          "export_J": 927689.3147249741,
+          "max_tracker_difference_J": 1.862645149230957e-9,
+          "outgoing_J": 47048831.10058248,
+          "removed_J": 15631796.355583189,
+          "residual_J": -2.384185791015625e-7,
+          "step": 11
+        },
+        {
+          "deposited_J": 13948679.462166077,
+          "export_J": 887214.6377121481,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 46523952.1720868,
+          "removed_J": 14835894.099878224,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 13218357.499407591,
+          "export_J": 877214.072091194,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 44107590.45625224,
+          "removed_J": 14095571.571498785,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 12572631.272454485,
+          "export_J": 832360.7753071997,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 43053753.96713647,
+          "removed_J": 13404992.047761686,
+          "residual_J": 0,
+          "step": 14
+        },
+        {
+          "deposited_J": 11942914.611980058,
+          "export_J": 811578.9261240984,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 40853211.42886738,
+          "removed_J": 12754493.538104158,
+          "residual_J": 0,
+          "step": 15
+        },
+        {
+          "deposited_J": 11313421.119784806,
+          "export_J": 823362.3532736149,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 40321760.98663609,
+          "removed_J": 12136783.473058421,
+          "residual_J": 0,
+          "step": 16
+        },
+        {
+          "deposited_J": 10803111.14121908,
+          "export_J": 771449.4283156523,
+          "max_tracker_difference_J": 2.7939677238464355e-9,
+          "outgoing_J": 39111326.49769746,
+          "removed_J": 11574560.569534734,
+          "residual_J": 0,
+          "step": 17
+        },
+        {
+          "deposited_J": 10258714.170557698,
+          "export_J": 778380.8467796724,
+          "max_tracker_difference_J": 2.7939677238464355e-9,
+          "outgoing_J": 37589767.45868349,
+          "removed_J": 11037095.017337369,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 2.7939677238464355e-9
+    },
+    "8128_0.1_uniform": {
+      "export_J": 34063187.26936295,
+      "final_energy_J": 921600000,
+      "final_hash": "a361a807e6cc29f3383c2d7cdc79b44212f90e8051e8b136a44ede033e4f6ad4",
+      "first_failure": null,
+      "history": [
+        {
+          "deposited_J": 40860893.440494314,
+          "export_J": 2724860.9627708234,
+          "max_tracker_difference_J": 9.313225746154785e-10,
+          "outgoing_J": 122299658.29797778,
+          "removed_J": 43585754.40326513,
+          "residual_J": 0,
+          "step": 1
+        },
+        {
+          "deposited_J": 38810946.35751644,
+          "export_J": 2322979.8621641747,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 119548434.3873113,
+          "removed_J": 41133926.219680615,
+          "residual_J": 0,
+          "step": 2
+        },
+        {
+          "deposited_J": 36576145.97206582,
+          "export_J": 2264154.897677433,
+          "max_tracker_difference_J": 1.3969838619232178e-9,
+          "outgoing_J": 109429960.68474592,
+          "removed_J": 38840300.86974326,
+          "residual_J": 0,
+          "step": 3
+        },
+        {
+          "deposited_J": 34550805.41165669,
+          "export_J": 2179386.376636131,
+          "max_tracker_difference_J": 1.6298145055770874e-9,
+          "outgoing_J": 105016540.7557971,
+          "removed_J": 36730191.78829282,
+          "residual_J": 0,
+          "step": 4
+        },
+        {
+          "deposited_J": 32599510.331457183,
+          "export_J": 2127683.0505259894,
+          "max_tracker_difference_J": 2.0954757928848267e-9,
+          "outgoing_J": 100975161.72083083,
+          "removed_J": 34727193.381983176,
+          "residual_J": 0,
+          "step": 5
+        },
+        {
+          "deposited_J": 30819498.642561242,
+          "export_J": 2038890.85018307,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 96240147.52141196,
+          "removed_J": 32858389.492744304,
+          "residual_J": 0,
+          "step": 6
+        },
+        {
+          "deposited_J": 29116898.129447155,
+          "export_J": 2001800.2912875551,
+          "max_tracker_difference_J": 2.0954757928848267e-9,
+          "outgoing_J": 92776212.56213427,
+          "removed_J": 31118698.42073471,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 7
+        },
+        {
+          "deposited_J": 27580091.760919824,
+          "export_J": 1909177.2204512611,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 90662897.56306258,
+          "removed_J": 29489268.981371082,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 8
+        },
+        {
+          "deposited_J": 26092833.894252576,
+          "export_J": 1865971.3325311225,
+          "max_tracker_difference_J": 2.3283064365386963e-9,
+          "outgoing_J": 85086428.69315153,
+          "removed_J": 27958805.2267837,
+          "residual_J": 0,
+          "step": 9
+        },
+        {
+          "deposited_J": 24707573.296564013,
+          "export_J": 1834750.0021723183,
+          "max_tracker_difference_J": 2.7939677238464355e-9,
+          "outgoing_J": 81679998.25708967,
+          "removed_J": 26542323.29873633,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 10
+        },
+        {
+          "deposited_J": 23477851.284019217,
+          "export_J": 1738817.6316454068,
+          "max_tracker_difference_J": 2.7939677238464355e-9,
+          "outgoing_J": 75369435.45493925,
+          "removed_J": 25216668.91566462,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 11
+        },
+        {
+          "deposited_J": 22276528.75817889,
+          "export_J": 1691431.907117036,
+          "max_tracker_difference_J": 3.259629011154175e-9,
+          "outgoing_J": 74416449.06156303,
+          "removed_J": 23967960.665295925,
+          "residual_J": 0,
+          "step": 12
+        },
+        {
+          "deposited_J": 21146792.265353158,
+          "export_J": 1654178.7204025243,
+          "max_tracker_difference_J": 3.259629011154175e-9,
+          "outgoing_J": 70645318.14756852,
+          "removed_J": 22800970.985755682,
+          "residual_J": 0,
+          "step": 13
+        },
+        {
+          "deposited_J": 20113080.1921843,
+          "export_J": 1599370.0557712533,
+          "max_tracker_difference_J": 3.259629011154175e-9,
+          "outgoing_J": 69047350.16084108,
+          "removed_J": 21712450.24795555,
+          "residual_J": -1.1920928955078125e-7,
+          "step": 14
+        },
+        {
+          "deposited_J": 19132610.818863846,
+          "export_J": 1551311.2383212212,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 65750749.27274856,
+          "removed_J": 20683922.05718507,
+          "residual_J": 1.1920928955078125e-7,
+          "step": 15
+        },
+        {
+          "deposited_J": 18149435.712842066,
+          "export_J": 1570036.8432193438,
+          "max_tracker_difference_J": 3.725290298461914e-9,
+          "outgoing_J": 64967533.5047593,
+          "removed_J": 19719472.55606141,
+          "residual_J": 0,
+          "step": 16
+        },
+        {
+          "deposited_J": 17326774.59021472,
+          "export_J": 1493108.0788181203,
+          "max_tracker_difference_J": 4.190951585769653e-9,
+          "outgoing_J": 62857538.26801114,
+          "removed_J": 18819882.669032842,
+          "residual_J": 0,
+          "step": 17
+        },
+        {
+          "deposited_J": 16483504.644113006,
+          "export_J": 1495277.9476681666,
+          "max_tracker_difference_J": 4.190951585769653e-9,
+          "outgoing_J": 60697664.90311082,
+          "removed_J": 17978782.591781177,
+          "residual_J": 0,
+          "step": 18
+        }
+      ],
+      "max_tracker_difference_J": 4.190951585769653e-9
+    }
+  },
+  "elapsed_s": 4.069259447999997,
+  "experiment": "P1-B.2b",
+  "failed_preregistered_gates": [],
+  "outputs": {
+    "7321_0.0_heterogeneous.nc": "a3366d1aa65ab72738daa0843a6f77c440466b309c6e58ad005b29982f5b0e1c",
+    "7321_0.0_heterogeneous_comparison.npz": "5a378bcfb0be20d5e09fb5d5c7099e0df6355cdf4f7a1cab0a87ad690385bd1f",
+    "7321_0.0_uniform.nc": "30832c8d804e3f465bff98fa06e0696d005b8e3b6701594e8ac4c7ddd494d782",
+    "7321_0.0_uniform_comparison.npz": "865c2d0e7ea9f41cb5de91b6bee7b1c1a2f6e43dce5c70c2fa360ea69cbfda72",
+    "7321_0.1_heterogeneous.nc": "b82db29d27a4724324c44cd37590c693de178480ff124d91780a95e1ebe95a8f",
+    "7321_0.1_heterogeneous_comparison.npz": "78aa83059b4ad00817821e1cd85a40b7516e83a12d98d1fc14f93136f5fde337",
+    "7321_0.1_uniform.nc": "56615635c25e2d24528d56e03d7ca1e5ac7d92c415217d07429cfeb3c3f9c369",
+    "7321_0.1_uniform_comparison.npz": "a54f6e3326df7407448df7b752f86ad49a39886512c3b151b82d762beb8e1935",
+    "8128_0.0_heterogeneous.nc": "34692b71544fd2e66085a94ec436b3a2e3efebf780c81a1e5597c89e622b3afa",
+    "8128_0.0_heterogeneous_comparison.npz": "c243598c7f38a61fb3ec98689d9d78f3ac75b05c1afc630d98b3d149e516883a",
+    "8128_0.0_uniform.nc": "86e91907c3fb9a6846cb99e5f776318ba082e4a7c923c4f6b5b538218ab485b9",
+    "8128_0.0_uniform_comparison.npz": "865c2d0e7ea9f41cb5de91b6bee7b1c1a2f6e43dce5c70c2fa360ea69cbfda72",
+    "8128_0.1_heterogeneous.nc": "8d81c8ef365173dfaed0548ae20158dc181224c138c3bd0f6324410a04f98777",
+    "8128_0.1_heterogeneous_comparison.npz": "feda145cc12e1194ac8a7c1f095e6888ace3509353afa0a9d4d19e4b327bfa5e",
+    "8128_0.1_uniform.nc": "e62550dfe8f57a1ef41aef775fa124d7316221fabb1d8d9d427c660035396324",
+    "8128_0.1_uniform_comparison.npz": "e94e4adfc4c907c004fd9f1a3d02c35f254d0e86f5c46bece57d3bab5c107e26",
+    "analytical_owner.nc": "0c5af364f83ee72d3c63eefd9907c527e4e8be0bb7214cdf78248707c2c793a2"
+  },
+  "runtime": {
+    "python": "3.13.18",
+    "versions": {
+      "landlab": "2.11.0",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1",
+      "xarray": "2026.9.0"
+    }
+  }
+}

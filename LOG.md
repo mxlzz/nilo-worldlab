@@ -17,3 +17,5 @@
 - Archivo recuperado CI 45503283036 SUCCESS: ZIP, log, JSON y manifest en evidence/P1-B/B2a, digest y NPZ verificados en CI, tamaños y blobs releídos en HEAD 717caa02. B.2a cerrada, workflow temporal de archivo inactivo. GO B.2b.
 
 - P1-B.2b: operador de energía de partición disjunta, casos analíticos, rechazo corrupción, remapeo, contraste por nodo con ConcentrationTrackerForSpace. Owner reducido de laboratorio, no integración P0-D ni dinámica térmica. Se usa entalpía específica inicial uniforme 1 J/kg y gradiente determinista con ROI heterogénea (solo si pasa uniforme); 18 pasos en cuatro casos archivados. CI limitado a 15 min.
+
+- P1-B.2b CI 45503529832 SUCCESS, gates vacíos, ocho casos 144 pasos, tracker max 4.191e-9 J/nodo, residual 2.3842e-7 J, propietario reducido. Archivo de evidencia pendiente antes de B.2c.
