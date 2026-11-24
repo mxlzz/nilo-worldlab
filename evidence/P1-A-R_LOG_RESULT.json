@@ -1,0 +1,505 @@
+{
+  "run_id": 45488606315,
+  "job_id": 138780569664,
+  "result": {
+    "cases": {
+      "7321_0.0_epoch0": {
+        "actual": {
+          "cool_cells": 569,
+          "grain_energy_J": 51210.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 569,
+          "largest_cool_component": 521,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999999814118,
+          "mean_deficit_K": 1.1854166666666672,
+          "state_sha": "0e0bd48f7c455639f70692816321e925e4d3920f5ab7281067b6ea258a26e4fb",
+          "surface_energy_J": 272790.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "9aaa22e77f6c2ba9dd2aa35337006c742a7fc69f60c67006bf8b157c835f6bff",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5344350690000113
+      },
+      "7321_0.0_epoch3": {
+        "actual": {
+          "cool_cells": 608,
+          "grain_energy_J": 54720.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 608,
+          "largest_cool_component": 560,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999996060336,
+          "mean_deficit_K": 1.2666666666666673,
+          "state_sha": "741cbccf494e0754fc894c8ac260b0f11b935b66317148d81db3c235cb301218",
+          "surface_energy_J": 269280.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "886face21699fc17be9e4e040f103d4fd6e2409c66f47195cfe14f01e12e5b5b",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5383836949999932
+      },
+      "7321_0.0_epoch6": {
+        "actual": {
+          "cool_cells": 632,
+          "grain_energy_J": 56880.00000000001,
+          "grain_max_delta_K": 36.00000000000001,
+          "intercepted_cells": 632,
+          "largest_cool_component": 578,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.4999999906234756,
+          "mean_deficit_K": 1.3166666666666673,
+          "state_sha": "206d7c1135323056efa8393c529557cf9ab77117e59bc88941377233e2e9a29f",
+          "surface_energy_J": 267120.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "a38fd467a2266cb69ae6294ca97525de8334a25a5558cab5187eb9a329f7b1d2",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5308083559999943
+      },
+      "7321_0.1_epoch0": {
+        "actual": {
+          "cool_cells": 569,
+          "grain_energy_J": 51210.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 569,
+          "largest_cool_component": 521,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999999814118,
+          "mean_deficit_K": 1.1854166666666672,
+          "state_sha": "2f2103dbbb1c8c021acfaa07a4f4f97e6c3a058bf3a1ab9866256bd978294113",
+          "surface_energy_J": 272790.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "717de0131be0b4bee254b07e39510763c0251e03830f07ecc650bb5856b50b23",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5320118090000108
+      },
+      "7321_0.1_epoch3": {
+        "actual": {
+          "cool_cells": 612,
+          "grain_energy_J": 55080.00000000001,
+          "grain_max_delta_K": 36.00000000000001,
+          "intercepted_cells": 612,
+          "largest_cool_component": 564,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999993134744,
+          "mean_deficit_K": 1.2750000000000006,
+          "state_sha": "fc02785d568ed6940c11acfa7090ccbb5aee762182c8790fb1c5090c25c867e7",
+          "surface_energy_J": 268920.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "916af90546ce04fbd68656fcf3f73a8725c01f6a78268b39888c5a23c89ab26f",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5335281250000037
+      },
+      "7321_0.1_epoch6": {
+        "actual": {
+          "cool_cells": 627,
+          "grain_energy_J": 56430.00000000001,
+          "grain_max_delta_K": 36.00000000000001,
+          "intercepted_cells": 627,
+          "largest_cool_component": 579,
+          "max_balance_residual_J": 2.9103830456733704e-11,
+          "max_deficit_K": 7.49999989906733,
+          "mean_deficit_K": 1.3062500000000006,
+          "state_sha": "27cb086b3ca6d607fc5068a8f8c2b4c519aba593d0ba80c0d46444576d1e5859",
+          "surface_energy_J": 267570.00000000006
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "6245c1991f95e23b4975d938ecb03738392e636dcf8d31c3d26c56288ba2d78a",
+          "surface_energy_J": 324000.0000000001
+        },
+        "null": {
+          "p95": 15,
+          "rank": 0.030303030303030304,
+          "samples": [
+            9,
+            7,
+            8,
+            9,
+            8,
+            7,
+            7,
+            8,
+            15,
+            6,
+            6,
+            6,
+            8,
+            9,
+            8,
+            5,
+            6,
+            9,
+            9,
+            12,
+            10,
+            9,
+            7,
+            10,
+            11,
+            8,
+            7,
+            6,
+            7,
+            9,
+            15,
+            12
+          ]
+        },
+        "templates": {
+          "monolayer": {
+            "cool_cells": 880,
+            "grain_energy_J": 79200.00000000001,
+            "grain_max_delta_K": 40.500000000000014,
+            "intercepted_cells": 880,
+            "largest_cool_component": 178,
+            "max_balance_residual_J": 5.820766091346741e-11,
+            "max_deficit_K": 7.499758181937369,
+            "mean_deficit_K": 1.8333333333333344,
+            "state_sha": "1273ac4605d277d6e9be29af0b11088f67476a728277a4519f9b31f57da7d704",
+            "surface_energy_J": 244800.0000000001
+          },
+          "stack": {
+            "cool_cells": 172,
+            "grain_energy_J": 15480.000000000004,
+            "grain_max_delta_K": 36.00000000000001,
+            "intercepted_cells": 172,
+            "largest_cool_component": 30,
+            "max_balance_residual_J": 8.731149137020111e-11,
+            "max_deficit_K": 7.495465115409353,
+            "mean_deficit_K": 0.35833333333333356,
+            "state_sha": "eb4654c7e388df195b287bcdedd555c5e6d0e57649ee6a7973887b8d7a66422b",
+            "surface_energy_J": 308520.0000000001
+          }
+        },
+        "wall_seconds": 5.255576090000005
+      },
+      "8128_0.0_epoch0": {
+        "actual": {
+          "cool_cells": 553,
+          "grain_energy_J": 49770.00000000001,
+          "grain_max_delta_K": 36.00000000000001,
+          "intercepted_cells": 553,
+          "largest_cool_component": 478,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999996114618,
+          "mean_deficit_K": 1.1520833333333338,
+          "state_sha": "27e2985868b49bbbcce0bcd34e0b831510bad0ad1fe4790e33ce9e67e6f7913c",
+          "surface_energy_J": 274230.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "fd3c975d44e1fdb13d4ecf2ac15db5600357b082f3d9e44f7dd1832a7b5bcc18",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5473206940000068
+      },
+      "8128_0.0_epoch3": {
+        "actual": {
+          "cool_cells": 579,
+          "grain_energy_J": 52110.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 579,
+          "largest_cool_component": 504,
+          "max_balance_residual_J": 2.9103830456733704e-11,
+          "max_deficit_K": 7.499999400267616,
+          "mean_deficit_K": 1.2062500000000007,
+          "state_sha": "c00d50e1d8ac34cbe6a1c32df8878da273d02a7078948bee6c60d9c0f2d8c5dc",
+          "surface_energy_J": 271890.00000000006
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "815d77d0dfcf1e0f229f67255270e0eb73e7e03926f3cd7a8f7f13a4c6a8622b",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5381265219999989
+      },
+      "8128_0.0_epoch6": {
+        "actual": {
+          "cool_cells": 579,
+          "grain_energy_J": 52110.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 579,
+          "largest_cool_component": 504,
+          "max_balance_residual_J": 2.9103830456733704e-11,
+          "max_deficit_K": 7.4999996547084855,
+          "mean_deficit_K": 1.2062500000000005,
+          "state_sha": "e1882b0c06e5ded75bf84a1465e763062858334a994b58edd6eee6d5b54eb01f",
+          "surface_energy_J": 271890.00000000006
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "825fd35ab28f29eb37861b2730ac49c32a88a1d56bdec99a41a6af9b0dfabfb5",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5681432259999895
+      },
+      "8128_0.1_epoch0": {
+        "actual": {
+          "cool_cells": 553,
+          "grain_energy_J": 49770.00000000001,
+          "grain_max_delta_K": 36.00000000000001,
+          "intercepted_cells": 553,
+          "largest_cool_component": 478,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999996114618,
+          "mean_deficit_K": 1.1520833333333338,
+          "state_sha": "5b4f8da8826a2173aa28d48d713b46cfceaf2558e734582c3b7e47d903f259bd",
+          "surface_energy_J": 274230.0000000001
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "c35de22f677267c6561a3d0f945716455deb7a7c414e2e6e90373812389e8aa1",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5406205130000217
+      },
+      "8128_0.1_epoch3": {
+        "actual": {
+          "cool_cells": 578,
+          "grain_energy_J": 52020.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 578,
+          "largest_cool_component": 503,
+          "max_balance_residual_J": 2.9103830456733704e-11,
+          "max_deficit_K": 7.499999993699707,
+          "mean_deficit_K": 1.2041666666666673,
+          "state_sha": "425432e656ae52439fab2035ececbe02adf4118c057adaa96b18d8eb661d4d30",
+          "surface_energy_J": 271980.00000000006
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "6ff9826473a9cba8181226e82e7150a12a77f46c8f00c2b06ec6b0441bac7c71",
+          "surface_energy_J": 324000.0000000001
+        },
+        "wall_seconds": 0.5287995770000009
+      },
+      "8128_0.1_epoch6": {
+        "actual": {
+          "cool_cells": 581,
+          "grain_energy_J": 52290.00000000001,
+          "grain_max_delta_K": 40.500000000000014,
+          "intercepted_cells": 581,
+          "largest_cool_component": 529,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "max_deficit_K": 7.499999986311001,
+          "mean_deficit_K": 1.2104166666666671,
+          "state_sha": "c0c47d8fa57314ef8b3801dba2b77946c2ae45a7d46e65b39a7bd63bfd028ee5",
+          "surface_energy_J": 271710.00000000006
+        },
+        "bare": {
+          "grain_energy_J": 0,
+          "grain_max_delta_K": 0,
+          "intercepted_cells": 0,
+          "max_balance_residual_J": 5.820766091346741e-11,
+          "state_sha": "e773aaf796f0da7c82902c99ce5b95098aed546f495b16683f56f8d926fd2b77",
+          "surface_energy_J": 324000.0000000001
+        },
+        "null": {
+          "p95": 11,
+          "rank": 0.030303030303030304,
+          "samples": [
+            7,
+            8,
+            8,
+            9,
+            11,
+            8,
+            10,
+            7,
+            11,
+            7,
+            16,
+            11,
+            7,
+            7,
+            7,
+            9,
+            7,
+            7,
+            9,
+            6,
+            11,
+            7,
+            8,
+            9,
+            7,
+            8,
+            8,
+            6,
+            8,
+            9,
+            8,
+            7
+          ]
+        },
+        "templates": {
+          "monolayer": {
+            "cool_cells": 880,
+            "grain_energy_J": 79200.00000000001,
+            "grain_max_delta_K": 40.500000000000014,
+            "intercepted_cells": 880,
+            "largest_cool_component": 178,
+            "max_balance_residual_J": 5.820766091346741e-11,
+            "max_deficit_K": 7.499758181937369,
+            "mean_deficit_K": 1.8333333333333344,
+            "state_sha": "b904c11a9326673402825e7057df3bc13515a8b0cedc09dabc1b9182d8fecc44",
+            "surface_energy_J": 244800.0000000001
+          },
+          "stack": {
+            "cool_cells": 172,
+            "grain_energy_J": 15480.000000000004,
+            "grain_max_delta_K": 36.00000000000001,
+            "intercepted_cells": 172,
+            "largest_cool_component": 30,
+            "max_balance_residual_J": 8.731149137020111e-11,
+            "max_deficit_K": 7.495465115409353,
+            "mean_deficit_K": 0.35833333333333356,
+            "state_sha": "c6c8a0c6c1fb1491090e5a67529dd02109d4c3fef56dca4384ffd9ee1641edf7",
+            "surface_energy_J": 308520.0000000001
+          }
+        },
+        "wall_seconds": 4.825288750999988
+      }
+    },
+    "experiment": "P1-A",
+    "failed_preregistered_gates": [],
+    "limitations": "Frozen geometry; hypothetical receiving slab; direct irradiation only; not a live world energy owner."
+  },
+  "diagnostics": [
+    {
+      "actual_analytic_occluded": 569,
+      "actual_first_id_difference": 14,
+      "actual_mask_difference": 6,
+      "actual_original_occluded": 575,
+      "analytic_disk": 7,
+      "epoch": 0,
+      "expected_disk": 7,
+      "mismatch": [
+        {
+          "bullet": 0,
+          "distance": 0.07566372975210639,
+          "expected": false,
+          "xy": [
+            39.975,
+            30.075
+          ]
+        }
+      ],
+      "original_disk": 8,
+      "seed": 7321
+    },
+    {
+      "actual_analytic_occluded": 627,
+      "actual_first_id_difference": 10,
+      "actual_mask_difference": 8,
+      "actual_original_occluded": 635,
+      "analytic_disk": 7,
+      "epoch": 6,
+      "expected_disk": 7,
+      "mismatch": [
+        {
+          "bullet": 0,
+          "distance": 0.07566372975210639,
+          "expected": false,
+          "xy": [
+            39.975,
+            30.075
+          ]
+        }
+      ],
+      "original_disk": 8,
+      "seed": 7321
+    },
+    {
+      "actual_analytic_occluded": 553,
+      "actual_first_id_difference": 15,
+      "actual_mask_difference": 3,
+      "actual_original_occluded": 556,
+      "analytic_disk": 7,
+      "epoch": 0,
+      "expected_disk": 7,
+      "mismatch": [
+        {
+          "bullet": 0,
+          "distance": 0.07566372975210639,
+          "expected": false,
+          "xy": [
+            39.975,
+            30.075
+          ]
+        }
+      ],
+      "original_disk": 8,
+      "seed": 8128
+    },
+    {
+      "actual_analytic_occluded": 581,
+      "actual_first_id_difference": 13,
+      "actual_mask_difference": 9,
+      "actual_original_occluded": 590,
+      "analytic_disk": 7,
+      "epoch": 6,
+      "expected_disk": 7,
+      "mismatch": [
+        {
+          "bullet": 0,
+          "distance": 0.07566372975210639,
+          "expected": false,
+          "xy": [
+            39.975,
+            30.075
+          ]
+        }
+      ],
+      "original_disk": 8,
+      "seed": 8128
+    }
+  ]
+}

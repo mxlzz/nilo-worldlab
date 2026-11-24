@@ -1,0 +1,8 @@
+# Traspaso autorizado, 2026-11-24
+
+Origen https://github.com/mxlzz/Nilo_public/tree/research/world-foundations-2026-11 ; SHA 0448ea6e5e02d77142cec270ea99ac0773493fc1; destino mxlzz/nilo-worldlab. Árbol no truncado: 254 archivos WORLD_RESEARCH + 60 workflows world-*. Se excluye runtime Nilo, cognición, organismos y otras ramas. No modificar origen ni reescribir historial.
+
+- Copiar bytes exactos en inherited/WORLD_RESEARCH/ e inherited/.github/workflows/. Mantener relativos internos, workflows históricos inactivos; historia original queda consultable por SHA/URL, no se importa DAG completo. Verificar 314 hashes Git y manifiesto.
+- Recuperar artefactos de Actions de rama, metadatos, digest y ZIP verificado cuando sea accesible. Registrar expirados, errores, límites de tamaño y regeneración; no confundir inventario con bytes. Críticos: H41 raw 14917807888 y soil 14918336361 vencen 8/12; H41 results 14917573997, H42b 14923160247; P0-B-R/C/D y P1-A-R 14965401716 vencen diciembre. WorldEngine raw regenerable en principio con pin 3b9113ecfad884cab4b32081d138a15e6262ada8, comprobar hashes lógicos, no asumir ZIP idéntico.
+- Workflow transfer-worldlab solo copia y archiva; no física. Verificar resultado y HEAD tras push; si origen avanzó, reconciliar antes de ciencia. No operar dos fuentes canónicas.
+- Simular continuidad desde repositorio. Siguiente científica P1-B.1 después de M; si falta evidencia necesaria, primero WL-M3 recuperar/regenerar con hashes. No repetir P0 ni P1-A-R ni alterar gates. Si se exige historia filtrada autónoma offline, evaluar aparte con mapa de commits y autorización.
