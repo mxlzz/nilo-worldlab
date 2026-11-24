@@ -1,0 +1,45 @@
+name: WorldLab archive P1-B.2a evidence
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-archive-p1b2a.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive exact artifact and job logs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-B/B2a
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14969549342/zip > "$d/14969549342.zip"
+          echo '60028665102c3eb233b3c9d7ad15048be157e39d20189b69f831448bc76e635c  '"$d/14969549342.zip" | sha256sum -c -
+          gh api repos/${{ github.repository }}/actions/jobs/138827906462/logs > "$d/job-138827906462.log"
+          python - <<'PY'
+          import hashlib, json, pathlib, zipfile
+          d=pathlib.Path("evidence/P1-B/B2a")
+          r=json.loads((d/"result.json").read_text())
+          z=d/"14969549342.zip"
+          with zipfile.ZipFile(z) as f:
+              assert f.testzip() is None
+              for name, digest in r["outputs"].items():
+                  assert hashlib.sha256(f.read(name)).hexdigest()==digest, name
+              assert json.loads(f.read("result.json"))==r
+          log=d/"job-138827906462.log"
+          assert "WORLD_EVAL_JSON " in log.read_text()
+          m={"run":45502145469,"job":138827906462,"artifact":14969549342,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in [z,log,d/"result.json"]}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P1-B.2a verified flux artifact and logs'
+          git pull --rebase origin main
+          git push origin HEAD:main
