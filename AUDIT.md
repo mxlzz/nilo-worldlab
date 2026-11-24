@@ -12,3 +12,6 @@ P1-A original CI 45449986939 FAILURE por instrumento antes de FiPy. P1-A-R CI 45
 Tiempo/unidades nominales, falta de retroacción ambiental y diversidad funcional, portabilidad restringida, acople unilateral, 2.5D y ROI, rendimiento solo en escenarios pequeños, arneses específicos y artefactos temporales. Priorizar P1-B contrato material/energético. No crear scheduler, GUI, motor completo ni nuevos montículos sin evidencia. Chrono, BMI/HELICS, FiPy, modelos de agua o DEM/CFD solo si una necesidad demostrada lo justifica. Revisión heredada no exhaustiva.
 
 La migración no valida automáticamente la física. Verificar cobertura, hashes, evidencia y exclusividad antes de habilitar ciencia. Si binarios no se recuperan, no afirmar preservación íntegra.
+
+## Cierre WL-M
+Ver [verificación](evidence/MIGRATION_VERIFICATION.md): 314/314 blobs heredados, 58/58 artefactos con digest, 487 ejecuciones inventariadas y 481 ZIP de logs. Seis fallos históricos sin jobs devuelven 404; se preservan metadatos y no bloquean P1-B.1. Simulación documental satisfactoria; no auditoría científica independiente. Siguiente tarea P1-B.1.
