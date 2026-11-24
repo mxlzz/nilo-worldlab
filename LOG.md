@@ -7,3 +7,5 @@
 - WL-M3: archivo de logs 45492349703 SUCCESS, 481/487 ZIP, seis 404 sin jobs. Manifiestos y archivos recuperados en evidence/. Ningún artefacto inventariado faltante.
 - WL-M4: verificación de árboles, evidencia, documentos, enlaces y simulación de continuidad (evidence/MIGRATION_VERIFICATION.md). Se archivan workflows de traspaso. P1-B.1 es siguiente unidad científica; STATE se actualizará al final.
 - P1-B.1: inspección de contratos y fuentes Landlab v2.11.0; identificado déficit de flujos brutos en H33. Prerregistro de receptor por partición del suelo existente, entalpía incremental y transporte sedimentario. GO documental condicionado a B.2a; sin ejecución física nueva. Ver research/P1-B/P1-B.1_CONTRATO_Y_PRERREGISTRO.md.
+
+- P1-B.2a: implementado adaptador de solo lectura de campos nativos SPACE (tasas × dt × área/densidad según unidades), comparador de hashes P0-D, controles y CI de 15 min. Referencias archivadas con digest verificado al ejecutar. Lanzamiento por push; resultado pendiente, no habilitar B.2b.
