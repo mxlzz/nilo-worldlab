@@ -35,3 +35,5 @@
 - C.2a fallo archivado CI 45516870053 SUCCESS, ZIP/log/JSON y manifest verificados; corregido trigger de archivo sin repetir física. Revisión de comparador: reemplazo de conteo erróneo por conjunto exacto de 33 nombres para tres pasos, mantiene comparación numérica y topológica. Único reintento instrumental C.2a, sin cambiar parámetros ni criterios físicos.
 
 - C.2a segundo intento CI 45516933103 SUCCESS; cuatro casos y tres controles, 28 proyecciones, 72 pasos, exactitud y balances; se inicia archivo separado producer/checkpoint y log antes de C.2b.
+
+- Archivo C.2a CI 45518056825 SUCCESS, ambos ZIP, 147 outputs, 12 archivos de checkpoint, log/JSON idénticos verificados; blobs releídos en 3918169f. C.2a aprobada, GO C.2b sin entregar futuro al consumidor. Workflow temporal inactivo.
