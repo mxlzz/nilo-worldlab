@@ -153,3 +153,5 @@
 - P5.1 prerregistro: RBD Wilcock–Crowe fraccional, conservación de clase y contraste proporcional, 9 propuestas sobre P4.2 retenida; no estratigrafía ni acople vivo aún. Comparadas alternativas y H5/H6/H16.
 
 - P5.1 CI 45629664885 y archivo 45629899720 aprobados: 9/9, 6 controles, composición→transporte en 3/3. GO P5.2 prerregistrada: owner por clase, tres casos vivos y restart, sin motor nuevo.
+
+- P5.2 CI 45630220328 y archivo 45630534322 aprobados, 3×240, fork causal y restart exacto 120, 7 controles. P5 completa limitada, GO P6 evolución sostenida. [Dictamen](research/P5/P5_DICTAMEN.md).

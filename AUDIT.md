@@ -249,3 +249,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - P4 autoverificación: P4.1 y P4.2 cumplen gates y evidencia archivada; P4.2 ZIP 27 miembros y log/JSON coinciden, hash/bytes verificados. Error P4.1 instrumental conservado. Cierre limitado: no atmósfera cerrada ni estabilidad prolongada. GO P5, E7 abierta/E8 pendiente. [Dictamen](research/P4/P4_DICTAMEN.md).
 
 - P5.1 autoverificación: ZIP/hash/log/fuente verificados, 9 propuestas y 6 controles pasan; límites de GSD mezclada y ausencia de estratigrafía. [Resultado](research/P5/P5.1_RESULTADO.md). GO P5.2 tras prerregistro.
+
+- P5.2 autoverificación: hashes/ZIP/JSON/log/source y checkpoint verificados; 3 casos y gates pasan, 7 controles. P5 cierre limitado de granulometría móvil (no estratos, química o 3D viva). GO P6. [Dictamen](research/P5/P5_DICTAMEN.md).
