@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
+  "status": "diagnostic_pending",
   "stage": "P1-C",
-  "current_task": "P1-C.2b",
-  "next_action": "Leer consumer y comparador CI 45518264979; auditar aislamiento de inputs, 12 sufijos, controles y exactitud. Archivar ambos artefactos y logs, si aprueba cerrar P1-C y avanzar P1-D. Si falla diagnosticar sin alterar gates.",
-  "scientific_next": "P1-C.2b",
+  "current_task": "P1-C.2b-D2",
+  "next_action": "Leer ambos jobs D2 CI 45519386325; verificar perfiles/CPU, repetición exacta y hashes por etapa, archivar datos/logs. Si causa y perfil común demostrados, prerregistrar única corrección C.2b-R desde t0 sin cambiar gates; si no, dictaminar bloqueo/replanteo. No iniciar P1-D.",
+  "scientific_next": "P1-C.2b-D2",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -15,9 +15,11 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2b_ci_pending"
+    "P1_C": "C2b_exact_restart_failed_D2_pending"
   },
-  "blockers": [],
+  "blockers": [
+    "P1-C.2b exactitud térmica interhost no satisfecha; diagnóstico D2 en curso."
+  ],
   "evidence_refs": [
     "evidence/P1-A-R_READBACK.md",
     "evidence/P1-A-R_LOG_RESULT.json",
@@ -35,13 +37,17 @@
     "research/P1-C/P1-C.2a_FALLO_INSTRUMENTAL.md",
     "evidence/P1-C/C2a-failed/archive_manifest.json",
     "research/P1-C/P1-C.2a_RESULTADO.md",
-    "evidence/P1-C/C2a/archive_manifest.json"
+    "evidence/P1-C/C2a/archive_manifest.json",
+    "research/P1-C/P1-C.2b_RESULTADO_PRELIMINAR.md",
+    "research/P1-C/P1-C.2b_DIAGNOSTICO.md",
+    "research/P1-C/P1-C.2b_D2_PROTOCOLO.md",
+    "evidence/P1-C/C2b/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "3f69867d02821b2f987a48d6f8b8882319dda08f",
+  "last_confirmed_non_state_write": "b1eb87a408e6f5629f9198c1ec961a3b0ee3f7f8",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -66,9 +72,9 @@
   },
   "updated_at": "2026-11-24",
   "active_run": {
-    "id": 45518264979,
-    "unit": "P1-C.2b",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45518264979",
-    "sha": "3f69867d02821b2f987a48d6f8b8882319dda08f"
+    "id": 45519386325,
+    "unit": "P1-C.2b-D2",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45519386325",
+    "sha": "b1eb87a408e6f5629f9198c1ec961a3b0ee3f7f8"
   }
 }
