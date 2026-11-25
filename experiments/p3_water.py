@@ -30,7 +30,7 @@ def geometry(case):
     g=RasterModelGrid(SHAPE,xy_spacing=DX)
     g.set_closed_boundaries_at_grid_edges(True,True,True,True)
     if case!="closed":g.status_at_node[5]=NodeStatus.FIXED_VALUE
-    core=g.status_at_node==NodeStatus.CORE
+    core=np.asarray(g.status_at_node)==NodeStatus.CORE
     bed=1.+.005*g.node_y+.001*g.node_x+.02*np.exp(-((g.node_x-11.)**2+(g.node_y-11.)**2)/16.)
     mass=np.where(core,RHO*THICK*DX*DX,0.)
     return g,core,bed,mass

@@ -38,3 +38,5 @@ jobs:
           name: p3-water
           path: p3-water
           retention-days: 30
+
+# Retry after documented ndarray mask initialization correction; protocol unchanged.
