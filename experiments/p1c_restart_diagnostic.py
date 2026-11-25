@@ -28,7 +28,7 @@ def compare(a,b):
             if not bits:
                 m["different_values"]=int(np.count_nonzero(u!=v))
                 m["max_abs"]=float(np.max(np.abs(u.astype(float)-v.astype(float))))
-                m["different_bits"]=int(np.count_nonzero(u.view(np.uint8)!=v.view(np.uint8))) if u.flags.c_contiguous and v.flags.c_contiguous and u.dtype==v.dtype else None
+                m["different_bits"]=int(np.count_nonzero(u.ravel().view(np.uint8)!=v.ravel().view(np.uint8))) if u.flags.c_contiguous and v.flags.c_contiguous and u.dtype==v.dtype else None
                 if u.dtype==v.dtype==np.float64 and np.all(u>=0) and np.all(v>=0):
                     uu=u.view(np.uint64);vv=v.view(np.uint64)
                     m["max_ulp"]=int(np.max(np.maximum(uu,vv)-np.minimum(uu,vv)))
