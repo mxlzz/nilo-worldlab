@@ -1,0 +1,202 @@
+{
+  "cases": {
+    "7321_0.0": {
+      "corruption_controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "suffix": [
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 4,
+          "exact": true,
+          "owner_sha": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "trace_sha": "5df7cb56c7828d757366e4122549220603d8f2c3dae13aecebcbdee776e77c84"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 5,
+          "exact": true,
+          "owner_sha": "58989dc7a9de70156f57c8b72b22e7e5e3b1fb3a7d7d676a168e2d3c90019292",
+          "trace_sha": "dad86b7b2c8ee98510e12414ea1e097a39e79404c5120b9550e4914ab2c9d9e0"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 6,
+          "exact": true,
+          "owner_sha": "a88b65b6c2786f533e399d628e23acd178eab730444dbb59f799fe22684a6c71",
+          "trace_sha": "0e1a608c0123ea481e39d4bfb23e804c3c9a99f637fb0a65bf4f7d21e53cdf38"
+        }
+      ]
+    },
+    "7321_0.1": {
+      "corruption_controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "suffix": [
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 4,
+          "exact": true,
+          "owner_sha": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "trace_sha": "93b35c20a7bb4acbf8d020cba0cc9790f13ebfb517aaa2017883e8e3f02e3c08"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 5,
+          "exact": true,
+          "owner_sha": "02cc4542b6ecf8cee9191d6cdff861e3c452e362401e7c004cce541a73954902",
+          "trace_sha": "24e13216a925ddfee918b8abf8144f71fee05d1db8d67720710cdb9769e93aa3"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 6,
+          "exact": true,
+          "owner_sha": "c8d63c7b479f710533149d3ef6bebaf61313dce9d4afb2a8a62f2af4af57b286",
+          "trace_sha": "64869d5efdf2877fe735222ca5130aba16eae6b85530256d71cdb62a01b2601b"
+        }
+      ]
+    },
+    "8128_0.0": {
+      "corruption_controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "suffix": [
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 4,
+          "exact": true,
+          "owner_sha": "2ec96f531b4d712ade1ac224f1647a42720f51eb06fb46efb1a32c9ac0887900",
+          "trace_sha": "74f86a0b9b44060fa18b7eac51424977ee06d17787ff2707229ad5628b7342d6"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 5,
+          "exact": true,
+          "owner_sha": "138047880263a20e65f2f4a4cb189f973346fcaad82e1fdff9f0e06879a47e5d",
+          "trace_sha": "256e919e1725d56af00f5bed9fe527b32459f1d780d105d529805783bca3a798"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 6,
+          "exact": true,
+          "owner_sha": "f46be4701a390122aeb08e4beaa928d2d0ffdc67d193f991840ccb7a808cdf1e",
+          "trace_sha": "336bb25044aa3a646d9b3a831826da943c637b0509056f539b074c4a0be0c78d"
+        }
+      ]
+    },
+    "8128_0.1": {
+      "corruption_controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "suffix": [
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 4,
+          "exact": true,
+          "owner_sha": "26f5c62156e07dc301c4e842da33abaa0c89400c26284c8090179b4d088937f1",
+          "trace_sha": "62e2124b1d949cb81b2c863938aa1666fc9f38f657c505e815869a6eca36380b"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 5,
+          "exact": true,
+          "owner_sha": "0c023b09d936926e123f4806737cd883fbdd6b3e209d3d0b4153c18eb18e8047",
+          "trace_sha": "231dafcf224e37a18ec8ebbd5860343bd12f6085265c9196404c6fb0fa962e43"
+        },
+        {
+          "byte_exact_files": {
+            "epoch": true,
+            "flux": true,
+            "ray": true
+          },
+          "epoch": 6,
+          "exact": true,
+          "owner_sha": "6b2a87904b6bfa792628f793fb81f4822f749f484101ab63e6057a921e0509a7",
+          "trace_sha": "1aa3202166413efed810c2577352feea9e580911932bb871d3fc2ad47a62a08b"
+        }
+      ]
+    }
+  },
+  "experiment": "P1-C.2b-compare",
+  "failed_preregistered_gates": []
+}

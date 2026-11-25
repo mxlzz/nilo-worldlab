@@ -1,0 +1,281 @@
+﻿2026-11-25T03:29:35.0563466Z Current runner version: '2.338.2'
+2026-11-25T03:29:35.0588172Z ##[group]Runner Image Provisioner
+2026-11-25T03:29:35.0589131Z Hosted Compute Agent
+2026-11-25T03:29:35.0589735Z Version: 20261111.635
+2026-11-25T03:29:35.0590359Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-25T03:29:35.0591199Z Build Date: 2026-11-11T01:49:01Z
+2026-11-25T03:29:35.0591895Z Worker ID: {324ec5ba-a7ee-44c3-b5ce-6e40ba11004e}
+2026-11-25T03:29:35.0592631Z Region: westus3
+2026-11-25T03:29:35.0593246Z Cloud: Azure
+2026-11-25T03:29:35.0593764Z ##[endgroup]
+2026-11-25T03:29:35.0595278Z ##[group]Operating System
+2026-11-25T03:29:35.0595917Z Ubuntu
+2026-11-25T03:29:35.0596734Z 24.04.5
+2026-11-25T03:29:35.0597270Z LTS
+2026-11-25T03:29:35.0597832Z ##[endgroup]
+2026-11-25T03:29:35.0598486Z ##[group]Runner Image
+2026-11-25T03:29:35.0599106Z Image: ubuntu-24.04
+2026-11-25T03:29:35.0599755Z Version: 20261116.376.1
+2026-11-25T03:29:35.0601065Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.376/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-25T03:29:35.0603079Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.376
+2026-11-25T03:29:35.0604064Z ##[endgroup]
+2026-11-25T03:29:35.0605229Z ##[group]GITHUB_TOKEN Permissions
+2026-11-25T03:29:35.0607387Z Contents: read
+2026-11-25T03:29:35.0608112Z Metadata: read
+2026-11-25T03:29:35.0608701Z ##[endgroup]
+2026-11-25T03:29:35.0610775Z Secret source: Actions
+2026-11-25T03:29:35.0611788Z Cache mode: write
+2026-11-25T03:29:35.0612564Z Prepare workflow directory
+2026-11-25T03:29:35.1018159Z Prepare all required actions
+2026-11-25T03:29:35.1065621Z Getting action download info
+2026-11-25T03:29:35.4787254Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-25T03:29:35.5884262Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+2026-11-25T03:29:36.1889918Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-25T03:29:36.2690191Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-25T03:29:36.4921909Z Complete job name: portability
+2026-11-25T03:29:36.5883484Z ##[group]Run actions/checkout@v4
+2026-11-25T03:29:36.5884399Z with:
+2026-11-25T03:29:36.5884845Z   persist-credentials: false
+2026-11-25T03:29:36.5885376Z   sparse-checkout-cone-mode: false
+2026-11-25T03:29:36.5886779Z   sparse-checkout: /experiments/p1c_portability.py
+/evidence/P1-C/C2a/14977708755.zip
+/evidence/P1-C/C2b/14977979956.zip
+
+2026-11-25T03:29:36.5887830Z   repository: mxlzz/nilo-worldlab
+2026-11-25T03:29:36.5891491Z   token: ***
+2026-11-25T03:29:36.5891920Z   ssh-strict: true
+2026-11-25T03:29:36.5892348Z   ssh-user: git
+2026-11-25T03:29:36.5892752Z   clean: true
+2026-11-25T03:29:36.5893159Z   fetch-depth: 1
+2026-11-25T03:29:36.5893586Z   fetch-tags: false
+2026-11-25T03:29:36.5894039Z   show-progress: true
+2026-11-25T03:29:36.5894877Z   lfs: false
+2026-11-25T03:29:36.5895654Z   submodules: false
+2026-11-25T03:29:36.5896718Z   set-safe-directory: true
+2026-11-25T03:29:36.5897597Z   allow-unsafe-pr-checkout: false
+2026-11-25T03:29:36.5899049Z env:
+2026-11-25T03:29:36.5900079Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:29:36.5901257Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:29:36.5902032Z   OMP_NUM_THREADS: 1
+2026-11-25T03:29:36.5902810Z   MKL_NUM_THREADS: 1
+2026-11-25T03:29:36.5903628Z   FIPY_SOLVERS: scipy
+2026-11-25T03:29:36.5904659Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:29:36.5905838Z ##[endgroup]
+2026-11-25T03:29:36.8574389Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-25T03:29:36.8577455Z ##[group]Getting Git version info
+2026-11-25T03:29:36.8578803Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T03:29:36.8580279Z [command]/usr/bin/git version
+2026-11-25T03:29:36.8646688Z git version 2.56.1
+2026-11-25T03:29:36.8679197Z ##[endgroup]
+2026-11-25T03:29:36.8685900Z Temporarily overriding HOME='/home/runner/work/_temp/9f569ec7-bffe-440e-9cad-b7483132a672' before making global git config changes
+2026-11-25T03:29:36.8687818Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T03:29:36.8689763Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T03:29:36.8741778Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T03:29:36.8746836Z ##[group]Initializing the repository
+2026-11-25T03:29:36.8751143Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T03:29:36.8888992Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-25T03:29:36.8890899Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-25T03:29:36.8892525Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-25T03:29:36.8893853Z hint: call:
+2026-11-25T03:29:36.8894667Z hint:
+2026-11-25T03:29:36.8895591Z hint: 	git config --global init.defaultBranch <name>
+2026-11-25T03:29:36.8897445Z hint:
+2026-11-25T03:29:36.8898760Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-25T03:29:36.8907852Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-25T03:29:36.8909708Z hint:
+2026-11-25T03:29:36.8910907Z hint: 	git branch -m <name>
+2026-11-25T03:29:36.8912174Z hint:
+2026-11-25T03:29:36.8913634Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-25T03:29:36.8915426Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-25T03:29:36.8917810Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-25T03:29:36.8968934Z ##[endgroup]
+2026-11-25T03:29:36.8970140Z ##[group]Disabling automatic garbage collection
+2026-11-25T03:29:36.8972199Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-25T03:29:36.9009141Z ##[endgroup]
+2026-11-25T03:29:36.9010340Z ##[group]Setting up auth
+2026-11-25T03:29:36.9017149Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T03:29:36.9057005Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T03:29:36.9465623Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T03:29:36.9515438Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T03:29:36.9763995Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T03:29:36.9808221Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T03:29:37.0049785Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-25T03:29:37.0100948Z ##[endgroup]
+2026-11-25T03:29:37.0101831Z ##[group]Fetching the repository
+2026-11-25T03:29:37.0114740Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +714ff70d7e96b831ddf1e8899c6318a8daae92ad:refs/remotes/origin/main
+2026-11-25T03:29:37.4330992Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-25T03:29:37.4332344Z  * [new ref]         714ff70d7e96b831ddf1e8899c6318a8daae92ad -> origin/main
+2026-11-25T03:29:37.4337703Z ##[endgroup]
+2026-11-25T03:29:37.4338835Z ##[group]Determining the checkout info
+2026-11-25T03:29:37.4340760Z ##[endgroup]
+2026-11-25T03:29:37.4341630Z ##[group]Setting up sparse checkout
+2026-11-25T03:29:37.4347373Z [command]/usr/bin/git config core.sparseCheckout true
+2026-11-25T03:29:37.4395151Z [command]/usr/bin/git rev-parse --git-path info/sparse-checkout
+2026-11-25T03:29:37.4431887Z .git/info/sparse-checkout
+2026-11-25T03:29:37.4439885Z ##[endgroup]
+2026-11-25T03:29:37.4444380Z ##[group]Checking out the ref
+2026-11-25T03:29:37.4445229Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-25T03:29:38.2009927Z Switched to a new branch 'main'
+2026-11-25T03:29:38.2017456Z branch 'main' set up to track 'origin/main'.
+2026-11-25T03:29:38.2025682Z ##[endgroup]
+2026-11-25T03:29:38.2080462Z [command]/usr/bin/git log -1 --format=%H
+2026-11-25T03:29:38.2114514Z 714ff70d7e96b831ddf1e8899c6318a8daae92ad
+2026-11-25T03:29:38.2124913Z ##[group]Removing auth
+2026-11-25T03:29:38.2129030Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T03:29:38.2169986Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T03:29:38.2414374Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T03:29:38.2449438Z http.https://github.com/.extraheader
+2026-11-25T03:29:38.2458607Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-25T03:29:38.2502152Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T03:29:38.2817034Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T03:29:38.2825730Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T03:29:38.3035831Z ##[endgroup]
+2026-11-25T03:29:38.3365330Z ##[group]Run actions/download-artifact@v4
+2026-11-25T03:29:38.3366959Z with:
+2026-11-25T03:29:38.3367890Z   name: s1h-compare
+2026-11-25T03:29:38.3368903Z   path: p1c-compare
+2026-11-25T03:29:38.3369918Z   merge-multiple: false
+2026-11-25T03:29:38.3371019Z   repository: mxlzz/nilo-worldlab
+2026-11-25T03:29:38.3372213Z   run-id: 45539671147
+2026-11-25T03:29:38.3373192Z env:
+2026-11-25T03:29:38.3374409Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:29:38.3376019Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:29:38.3377291Z   OMP_NUM_THREADS: 1
+2026-11-25T03:29:38.3378314Z   MKL_NUM_THREADS: 1
+2026-11-25T03:29:38.3379329Z   FIPY_SOLVERS: scipy
+2026-11-25T03:29:38.3380715Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:29:38.3382332Z ##[endgroup]
+2026-11-25T03:29:38.4988651Z Downloading single artifact
+2026-11-25T03:29:38.5193348Z (node:2440) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:29:38.5198700Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:29:38.7382171Z Preparing to download the following artifacts:
+2026-11-25T03:29:38.7385815Z - s1h-compare (ID: 14987879961, Size: 1459, Expected Digest: sha256:c0fa87956e97b247e68ae4c66727a12436bd531aeddd802ca7e5e742ea52465b)
+2026-11-25T03:29:38.9684831Z Redirecting to blob download url: https://productionresultssa1.blob.core.windows.net/actions-results/89b1aa49-ba4a-8549-92f8-5afae6ce8241/workflow-job-run-a251ea6a-dcbc-5c7d-9a5e-44f108b26d25/artifacts/425eb07acad3d53acdc3a932d527c29b30abd63b2920d49d4e0a9059212a6258.zip
+2026-11-25T03:29:38.9691055Z Starting download of artifact to: /home/runner/work/nilo-worldlab/nilo-worldlab/p1c-compare
+2026-11-25T03:29:39.1927755Z (node:2440) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-25T03:29:39.2009986Z SHA256 digest of downloaded artifact is c0fa87956e97b247e68ae4c66727a12436bd531aeddd802ca7e5e742ea52465b
+2026-11-25T03:29:39.2011123Z Artifact download completed successfully.
+2026-11-25T03:29:39.2012092Z Total of 1 artifact(s) downloaded
+2026-11-25T03:29:39.2015979Z Download artifact has finished successfully
+2026-11-25T03:29:39.2212463Z ##[group]Run actions/setup-python@v5
+2026-11-25T03:29:39.2212784Z with:
+2026-11-25T03:29:39.2212994Z   python-version: 3.11.18
+2026-11-25T03:29:39.2213246Z   check-latest: false
+2026-11-25T03:29:39.2215653Z   token: ***
+2026-11-25T03:29:39.2215872Z   update-environment: true
+2026-11-25T03:29:39.2216438Z   allow-prereleases: false
+2026-11-25T03:29:39.2216701Z   freethreaded: false
+2026-11-25T03:29:39.2216920Z env:
+2026-11-25T03:29:39.2217195Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:29:39.2217552Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:29:39.2217784Z   OMP_NUM_THREADS: 1
+2026-11-25T03:29:39.2217998Z   MKL_NUM_THREADS: 1
+2026-11-25T03:29:39.2218216Z   FIPY_SOLVERS: scipy
+2026-11-25T03:29:39.2218531Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:29:39.2218880Z ##[endgroup]
+2026-11-25T03:29:39.3568196Z ##[group]Installed versions
+2026-11-25T03:29:39.3604029Z (node:2452) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:29:39.3605028Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:29:39.3605859Z Successfully set up CPython (3.11.18)
+2026-11-25T03:29:39.3606899Z ##[endgroup]
+2026-11-25T03:29:39.3777419Z ##[group]Run python -m pip install --only-binary=:all: numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1
+2026-11-25T03:29:39.3778219Z [36;1mpython -m pip install --only-binary=:all: numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1[0m
+2026-11-25T03:29:39.3779064Z [36;1mpython experiments/p1c_portability.py evidence/P1-C/C2a/14977708755.zip evidence/P1-C/C2b/14977979956.zip p1c-compare p1c-portability[0m
+2026-11-25T03:29:39.3814874Z shell: /usr/bin/bash -e {0}
+2026-11-25T03:29:39.3815147Z env:
+2026-11-25T03:29:39.3815444Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:29:39.3815837Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:29:39.3816297Z   OMP_NUM_THREADS: 1
+2026-11-25T03:29:39.3816516Z   MKL_NUM_THREADS: 1
+2026-11-25T03:29:39.3816741Z   FIPY_SOLVERS: scipy
+2026-11-25T03:29:39.3817055Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:29:39.3817485Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:39.3817976Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T03:29:39.3818421Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:39.3818839Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:39.3819252Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:39.3819652Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T03:29:39.3819990Z ##[endgroup]
+2026-11-25T03:29:40.3986434Z Collecting numpy==2.4.6
+2026-11-25T03:29:40.4457645Z   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-25T03:29:40.4672602Z Collecting xarray==2026.9.0
+2026-11-25T03:29:40.4711895Z   Downloading xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-25T03:29:40.5897084Z Collecting scipy==1.17.1
+2026-11-25T03:29:40.5936863Z   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-25T03:29:40.6315193Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-25T03:29:40.6363187Z   Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T03:29:40.7460883Z Collecting pandas>=2.2 (from xarray==2026.9.0)
+2026-11-25T03:29:40.7503724Z   Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-25T03:29:40.7699532Z Collecting python-dateutil>=2.9.0 (from pandas>=2.2->xarray==2026.9.0)
+2026-11-25T03:29:40.7736230Z   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-25T03:29:40.7881696Z Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.2->xarray==2026.9.0)
+2026-11-25T03:29:40.7920438Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-25T03:29:40.7991410Z Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-11-25T03:29:40.8614478Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 291.5 MB/s  0:00:00
+2026-11-25T03:29:40.8663665Z Downloading xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-25T03:29:40.8781307Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 147.3 MB/s  0:00:00
+2026-11-25T03:29:40.8820603Z Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-25T03:29:41.0027752Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 296.5 MB/s  0:00:00
+2026-11-25T03:29:41.0072124Z Downloading packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-25T03:29:41.0155234Z Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+2026-11-25T03:29:41.0735203Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 227.2 MB/s  0:00:00
+2026-11-25T03:29:41.0776240Z Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-25T03:29:41.0838565Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-25T03:29:41.2817985Z Installing collected packages: tzdata, packaging, numpy, scipy, python-dateutil, pandas, xarray
+2026-11-25T03:29:52.4465721Z 
+2026-11-25T03:29:52.4476483Z Successfully installed numpy-2.4.6 packaging-26.4 pandas-3.1.1 python-dateutil-4.0.0 scipy-1.17.1 tzdata-2026.6 xarray-2026.9.0
+2026-11-25T03:29:53.4995673Z WORLD_PORTABILITY_JSON {"cases": {"7321_0.0": [{"combined_L1_J": 4.79810635667377e-12, "compensated_rejected": true, "epoch": 4, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 4.79810635667377e-12, "max": 2.8421709430404007e-13}}, "ledger_residuals_J": [-2.7939677238464355e-09, -2.7939677238464355e-09], "one_J_rejected": true}, {"combined_L1_J": 8.08197953006129e-12, "compensated_rejected": true, "epoch": 5, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 8.08197953006129e-12, "max": 3.410605131648481e-13}}, "ledger_residuals_J": [-4.190951585769653e-09, -4.190951585769653e-09], "one_J_rejected": true}, {"combined_L1_J": 1.4137802040181668e-11, "compensated_rejected": true, "epoch": 6, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 1.4137802040181668e-11, "max": 9.094947017729282e-13}}, "ledger_residuals_J": [-5.587935447692871e-09, -5.587935447692871e-09], "one_J_rejected": true}], "7321_0.1": [{"combined_L1_J": 5.931921620572211e-12, "compensated_rejected": true, "epoch": 4, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 5.931921620572211e-12, "max": 1.4210854715202004e-13}}, "ledger_residuals_J": [-4.656612873077393e-10, -4.656612873077393e-10], "one_J_rejected": true}, {"combined_L1_J": 5.869326552554455e-11, "compensated_rejected": true, "epoch": 5, "export_delta_J": 2.9103830456733704e-11, "fields": {"E_coarse_rest": {"L1": 1.9667822925839573e-11, "max": 3.637978807091713e-12}, "E_roi": {"L1": 9.92161214297127e-12, "max": 1.1368683772161603e-13}}, "ledger_residuals_J": [-4.656612873077393e-10, -4.656612873077393e-10], "one_J_rejected": true}, {"combined_L1_J": 1.0001018763139413e-10, "compensated_rejected": true, "epoch": 6, "export_delta_J": 5.820766091346741e-11, "fields": {"E_coarse_rest": {"L1": 3.2514435588382185e-11, "max": 7.275957614183426e-12}, "E_roi": {"L1": 9.28809112954454e-12, "max": 1.1368683772161603e-13}}, "ledger_residuals_J": [-9.313225746154785e-10, -4.656612873077393e-10], "one_J_rejected": true}], "8128_0.0": [{"combined_L1_J": 3.0924429683665267e-12, "compensated_rejected": true, "epoch": 4, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 3.0924429683665267e-12, "max": 2.2737367544323206e-13}}, "ledger_residuals_J": [-2.7939677238464355e-09, -2.7939677238464355e-09], "one_J_rejected": true}, {"combined_L1_J": 5.855260720721844e-12, "compensated_rejected": true, "epoch": 5, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 5.855260720721844e-12, "max": 4.547473508864641e-13}}, "ledger_residuals_J": [-4.190951585769653e-09, -4.190951585769653e-09], "one_J_rejected": true}, {"combined_L1_J": 8.189018907422962e-12, "compensated_rejected": true, "epoch": 6, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 8.189018907422962e-12, "max": 4.547473508864641e-13}}, "ledger_residuals_J": [-5.587935447692871e-09, -5.587935447692871e-09], "one_J_rejected": true}], "8128_0.1": [{"combined_L1_J": 3.6281394555359725e-12, "compensated_rejected": true, "epoch": 4, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 3.6281394555359725e-12, "max": 7.105427357601002e-14}}, "ledger_residuals_J": [0.0, 0.0], "one_J_rejected": true}, {"combined_L1_J": 6.611822200852657e-12, "compensated_rejected": true, "epoch": 5, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 6.611822200852657e-12, "max": 8.526512829121202e-14}}, "ledger_residuals_J": [-4.656612873077393e-10, -4.656612873077393e-10], "one_J_rejected": true}, {"combined_L1_J": 5.204781050593965e-12, "compensated_rejected": true, "epoch": 6, "export_delta_J": 0.0, "fields": {"E_coarse_rest": {"L1": 0.0, "max": 0.0}, "E_roi": {"L1": 5.204781050593965e-12, "max": 8.526512829121202e-14}}, "ledger_residuals_J": [0.0, 0.0], "one_J_rejected": true}]}, "experiment": "P1-C.2b-S2", "failed_preregistered_gates": [], "retrospective": true}
+2026-11-25T03:29:53.5718835Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T03:29:53.5719139Z with:
+2026-11-25T03:29:53.5719341Z   name: s1h-s2-retrospective
+2026-11-25T03:29:53.5719588Z   path: p1c-portability
+2026-11-25T03:29:53.5719817Z   retention-days: 30
+2026-11-25T03:29:53.5720033Z   if-no-files-found: warn
+2026-11-25T03:29:53.5720261Z   compression-level: 6
+2026-11-25T03:29:53.5720486Z   overwrite: false
+2026-11-25T03:29:53.5720713Z   include-hidden-files: false
+2026-11-25T03:29:53.5721000Z env:
+2026-11-25T03:29:53.5721260Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:29:53.5721603Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:29:53.5721831Z   OMP_NUM_THREADS: 1
+2026-11-25T03:29:53.5722034Z   MKL_NUM_THREADS: 1
+2026-11-25T03:29:53.5722242Z   FIPY_SOLVERS: scipy
+2026-11-25T03:29:53.5722537Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:29:53.5722951Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:53.5723402Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T03:29:53.5723823Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:53.5724201Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:53.5724583Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:29:53.5724981Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T03:29:53.5725301Z ##[endgroup]
+2026-11-25T03:29:53.7419145Z (node:2491) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:29:53.7419882Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:29:53.7517187Z With the provided path, there will be 1 file uploaded
+2026-11-25T03:29:53.7528084Z Artifact name is valid!
+2026-11-25T03:29:53.7528379Z Root directory input is valid!
+2026-11-25T03:29:54.0937913Z Beginning upload of artifact content to blob storage
+2026-11-25T03:29:54.1130301Z (node:2491) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-25T03:29:54.3457421Z Uploaded bytes 978
+2026-11-25T03:29:54.4129888Z Finished uploading artifact content to blob storage!
+2026-11-25T03:29:54.4131606Z SHA256 digest of uploaded artifact zip is 8d7927450383741912951d2b59dea293540694511f4b8f76b244090ad8d41754
+2026-11-25T03:29:54.4132984Z Finalizing artifact upload
+2026-11-25T03:29:54.8057860Z Artifact s1h-s2-retrospective.zip successfully finalized. Artifact ID 14989056568
+2026-11-25T03:29:54.8059524Z Artifact s1h-s2-retrospective has been successfully uploaded! Final size is 978 bytes. Artifact ID is 14989056568
+2026-11-25T03:29:54.8062711Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45539671147/artifacts/14989056568
+2026-11-25T03:29:54.8278136Z Post job cleanup.
+2026-11-25T03:29:54.9532046Z (node:2503) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:29:54.9532947Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:29:54.9755678Z Post job cleanup.
+2026-11-25T03:29:55.0767693Z [command]/usr/bin/git version
+2026-11-25T03:29:55.0819580Z git version 2.56.1
+2026-11-25T03:29:55.0877220Z Temporarily overriding HOME='/home/runner/work/_temp/b0158fbe-2167-40a5-a83b-eefa34affbc3' before making global git config changes
+2026-11-25T03:29:55.0879056Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T03:29:55.0898786Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T03:29:55.0955297Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T03:29:55.1012018Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T03:29:55.1403898Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T03:29:55.1446674Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T03:29:55.1717176Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T03:29:55.1772323Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T03:29:55.2185645Z Cleaning up orphan processes
+2026-11-25T03:29:55.2581667Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

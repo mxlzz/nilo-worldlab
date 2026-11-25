@@ -1,0 +1,267 @@
+{
+  "cases": {
+    "7321_0.0": [
+      {
+        "combined_L1_J": 4.79810635667377e-12,
+        "compensated_rejected": true,
+        "epoch": 4,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 4.79810635667377e-12,
+            "max": 2.8421709430404007e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -2.7939677238464355e-09,
+          -2.7939677238464355e-09
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 8.08197953006129e-12,
+        "compensated_rejected": true,
+        "epoch": 5,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 8.08197953006129e-12,
+            "max": 3.410605131648481e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -4.190951585769653e-09,
+          -4.190951585769653e-09
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 1.4137802040181668e-11,
+        "compensated_rejected": true,
+        "epoch": 6,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 1.4137802040181668e-11,
+            "max": 9.094947017729282e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -5.587935447692871e-09,
+          -5.587935447692871e-09
+        ],
+        "one_J_rejected": true
+      }
+    ],
+    "7321_0.1": [
+      {
+        "combined_L1_J": 5.931921620572211e-12,
+        "compensated_rejected": true,
+        "epoch": 4,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 5.931921620572211e-12,
+            "max": 1.4210854715202004e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -4.656612873077393e-10,
+          -4.656612873077393e-10
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 5.869326552554455e-11,
+        "compensated_rejected": true,
+        "epoch": 5,
+        "export_delta_J": 2.9103830456733704e-11,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 1.9667822925839573e-11,
+            "max": 3.637978807091713e-12
+          },
+          "E_roi": {
+            "L1": 9.92161214297127e-12,
+            "max": 1.1368683772161603e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -4.656612873077393e-10,
+          -4.656612873077393e-10
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 1.0001018763139413e-10,
+        "compensated_rejected": true,
+        "epoch": 6,
+        "export_delta_J": 5.820766091346741e-11,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 3.2514435588382185e-11,
+            "max": 7.275957614183426e-12
+          },
+          "E_roi": {
+            "L1": 9.28809112954454e-12,
+            "max": 1.1368683772161603e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -9.313225746154785e-10,
+          -4.656612873077393e-10
+        ],
+        "one_J_rejected": true
+      }
+    ],
+    "8128_0.0": [
+      {
+        "combined_L1_J": 3.0924429683665267e-12,
+        "compensated_rejected": true,
+        "epoch": 4,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 3.0924429683665267e-12,
+            "max": 2.2737367544323206e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -2.7939677238464355e-09,
+          -2.7939677238464355e-09
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 5.855260720721844e-12,
+        "compensated_rejected": true,
+        "epoch": 5,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 5.855260720721844e-12,
+            "max": 4.547473508864641e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -4.190951585769653e-09,
+          -4.190951585769653e-09
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 8.189018907422962e-12,
+        "compensated_rejected": true,
+        "epoch": 6,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 8.189018907422962e-12,
+            "max": 4.547473508864641e-13
+          }
+        },
+        "ledger_residuals_J": [
+          -5.587935447692871e-09,
+          -5.587935447692871e-09
+        ],
+        "one_J_rejected": true
+      }
+    ],
+    "8128_0.1": [
+      {
+        "combined_L1_J": 3.6281394555359725e-12,
+        "compensated_rejected": true,
+        "epoch": 4,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 3.6281394555359725e-12,
+            "max": 7.105427357601002e-14
+          }
+        },
+        "ledger_residuals_J": [
+          0.0,
+          0.0
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 6.611822200852657e-12,
+        "compensated_rejected": true,
+        "epoch": 5,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 6.611822200852657e-12,
+            "max": 8.526512829121202e-14
+          }
+        },
+        "ledger_residuals_J": [
+          -4.656612873077393e-10,
+          -4.656612873077393e-10
+        ],
+        "one_J_rejected": true
+      },
+      {
+        "combined_L1_J": 5.204781050593965e-12,
+        "compensated_rejected": true,
+        "epoch": 6,
+        "export_delta_J": 0.0,
+        "fields": {
+          "E_coarse_rest": {
+            "L1": 0.0,
+            "max": 0.0
+          },
+          "E_roi": {
+            "L1": 5.204781050593965e-12,
+            "max": 8.526512829121202e-14
+          }
+        },
+        "ledger_residuals_J": [
+          0.0,
+          0.0
+        ],
+        "one_J_rejected": true
+      }
+    ]
+  },
+  "experiment": "P1-C.2b-S2",
+  "failed_preregistered_gates": [],
+  "retrospective": true
+}
