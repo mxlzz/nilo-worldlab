@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
-  "stage": "P3",
-  "current_task": "P3.3",
-  "next_action": "Leer CI 45626406906 y WORLD_RECIPROCAL_JSON/RESTART/COMPARE. Primera CI sin física HTTP429, log y pin exacto de RBD archivados. Retry mismo protocolo; verificar 4×240 pasos, balances, controles, bifurcación geométrica y restart. Archivar resultados antes de dictamen P3 y transición P4. Si falla conservar y clasificar sin modificar gates.",
-  "scientific_next": "P3.3",
+  "status": "ready",
+  "stage": "P4",
+  "current_task": "P4.1-design",
+  "next_action": "P4.1 diseño de transferencia energética sobre flujos retenidos P3.3: comparar alternativas de energía superficial y advección, elegir contrato de entalpía sensible única, lluvias/salidas explícitas y calentamiento/enfriamiento; sin confundir ciclos de segundos con día/noche ni integrar P1 por obligación. P4.2 evaporación y feedback solo tras gate. No organismos ni motor definitivo.",
+  "scientific_next": "P4.1-design",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -19,7 +19,8 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "P31_P32a_P32b_passed_P33_retry_archived_source"
+    "P3": "complete_limited_reciprocal_hydromorphodynamics",
+    "P4": "not_started_design_next"
   },
   "blockers": [],
   "evidence_refs": [
@@ -87,13 +88,16 @@
     "research/P3/P3.3_PROTOCOLO_RETROACCION.md",
     "research/P3/P3.3_INCIDENCIA_1.md",
     "evidence/P3/P33-fetch-failed/archive_manifest.json",
-    "evidence/P3/RBD_SOURCE/archive_manifest.json"
+    "evidence/P3/RBD_SOURCE/archive_manifest.json",
+    "research/P3/P3.3_RESULTADO.md",
+    "evidence/P3/P33/archive_manifest.json",
+    "research/P3/P3_DICTAMEN.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "58da137e82303c76b30871377cd9aed377887ca4",
+  "last_confirmed_non_state_write": "aa0428a8fd1585646078d0dbc53642d2b7253054",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -116,11 +120,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25",
-  "active_run": {
-    "id": 45626406906,
-    "unit": "P3.3",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45626406906",
-    "sha": "58da137e82303c76b30871377cd9aed377887ca4"
-  }
+  "updated_at": "2026-11-25"
 }
