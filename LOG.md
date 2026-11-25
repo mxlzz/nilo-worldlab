@@ -81,3 +81,5 @@
 - E7.1 diseño: NO-GO nuevas sombras; GO historia de suministro con idénticos puntos y distribución de reacción basal como función distinta. Antecedentes Vanel/Atman; reutilizar Bullet/H35 y terreno retenido. E7.1a calibrar fuerza completa y CDF antes de formación prospectiva; E7.1b aún no prerregistrada ni ejecutada.
 
 - E7.1a instrumento implementado y lanzado: cuatro fixtures de reacción basal, sumatoria normal+tangencial, CDF sintético y poses no mutadas, 240 muestras por fixture; sin escenas prospectivas. CI hasta5min gratuito.
+
+- E7.1a CI 45595575928 SUCCESS: 4/4 fixtures, CDF sintético, reacción y fricción inclinada, residual máximo 2.693e-8 relativo. Archivo durable pendiente. No formación prospectiva.

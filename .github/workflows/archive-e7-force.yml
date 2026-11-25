@@ -1,0 +1,47 @@
+name: WorldLab archive E7.1a force calibration
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-e7-force.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify and preserve calibration evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/E7/E71a
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15013321366/zip > "$d/15013321366.zip"
+          echo '52bc1574cd114416a171579a542b35366f1736b3d2fbfbe4855d13044c330b88  '"$d/15013321366.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139140632979/logs > "$d/job-139140632979.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/E7/E71a")
+          with zipfile.ZipFile(d/"15013321366.zip") as z:
+              assert z.testzip() is None
+              a=json.loads(z.read("result.json"))
+              assert set(a["fixtures"])=={"single","separated","stacked","inclined"} and not a["failed_preregistered_gates"] and a["cdf_controls"]
+              assert set(z.namelist())==set(a["outputs"])|{"result.json"}
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              (d/"result.json").write_bytes(z.read("result.json"))
+          log=(d/"job-139140632979.log").read_text()
+          assert [json.loads(l.split("WORLD_FORCE_JSON ",1)[1]) for l in log.splitlines() if "WORLD_FORCE_JSON {" in l]==[a]
+          m={"run":45595575928,"job":139140632979,"artifact":15013321366,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive E7.1a calibrated reaction force instrument'
+          git pull --rebase origin main
+          git push origin HEAD:main
