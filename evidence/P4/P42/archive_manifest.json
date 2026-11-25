@@ -1,0 +1,31 @@
+{
+  "artifact": 15030052011,
+  "files": {
+    "15030052011.zip": {
+      "bytes": 2803450,
+      "sha256": "8cbf531b85232ec030ca433a0074706c1520a988c1a49fca762c7506a1dd55d8"
+    },
+    "checkpoint_manifest.json": {
+      "bytes": 191,
+      "sha256": "cf43ae07f2400cd1b84b1ad57c96e9879c9dc12a6b82592c2f3e31d12468ff83"
+    },
+    "compare.json": {
+      "bytes": 258,
+      "sha256": "5764c7db03e8834692f06781b78acdf1670cf302671d366393b7149fec1322c3"
+    },
+    "consumer.json": {
+      "bytes": 929,
+      "sha256": "8a4c22dd0f47969738c846458f7909407f8527f3caa5f8320bba7ee073b80b3e"
+    },
+    "job-139255156527.log": {
+      "bytes": 53106,
+      "sha256": "d5330151d54963fbf016fe0ccc41ed74c606003491a960bcf0bb23459b3ca357"
+    },
+    "reference.json": {
+      "bytes": 9495,
+      "sha256": "832e712a2bc8dd628ce2ad7f925bae21d4f2e964a29e82a601886af445257851"
+    }
+  },
+  "job": 139255156527,
+  "run": 45628538282
+}
