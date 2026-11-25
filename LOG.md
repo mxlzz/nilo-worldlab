@@ -63,3 +63,5 @@
 - S1/S2 lanzados: consumidor y comparador originales intactos, guard CPU Intel, portabilidad retrospectiva solo después del comparador exacto, controles 1J, L1 sin cancelación. Sin repetir productor ni modificar leyes.
 
 - S1 CI 45531989960 inconclusa: Intel 8573C distinto, guard sin física; S2 omitida. Log y jobs archivados. Prerregistro S1-H: referencia nueva y procesos separados mismo host, sin selección CPU; gates intactos, comparación posterior, S2 histórica. No repetir asignaciones aleatorias.
+
+- S1-H lanzada: original productor/consumer/compare sin modificar; nueva referencia y checkpoint empaquetados y publicados, futuro local eliminado, consumidor separado, comparación en job posterior y S2 histórica. Sin selección CPU ni ajustes de gates.

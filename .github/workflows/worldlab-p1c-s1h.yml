@@ -1,0 +1,204 @@
+name: WorldLab P1-C S1-H same-host restart and S2 portability
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-p1c-s1h.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  FIPY_SOLVERS: scipy
+  PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+jobs:
+  same_host:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        id: landlab
+        with:
+          python-version: '3.13.18'
+      - run: |
+          "${{ steps.landlab.outputs.python-path }}" -m pip install --only-binary=:all: landlab==2.11.0 numpy==2.5.5 xarray==2026.9.0 scipy==1.18.1
+          "${{ steps.landlab.outputs.python-path }}" -m pip freeze
+      - uses: actions/setup-python@v5
+        id: bullet
+        with:
+          python-version: '3.11.18'
+      - run: |
+          "${{ steps.bullet.outputs.python-path }}" -m pip install --only-binary=:all: fipy==4.0.3 pybullet==3.2.7 numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1
+          "${{ steps.bullet.outputs.python-path }}" -m pip freeze
+          lscpu
+          test -z "${OPENBLAS_CORETYPE:-}"
+      - name: Generate independent continuous reference with original gates
+        run: |
+          "${{ steps.bullet.outputs.python-path }}" experiments/p1c_live_world.py "${{ steps.landlab.outputs.python-path }}"
+      - name: Package reference and prepare isolated consumer inputs
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/s1h" "$RUNNER_TEMP/s1h-clean"
+          python - <<'PY'
+          import os,pathlib,hashlib,zipfile,json,shutil
+          root=pathlib.Path.cwd()
+          staging=pathlib.Path(os.environ["RUNNER_TEMP"])/"s1h"
+          clean=staging.with_name("s1h-clean")
+          def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+          def pack(src,dst):
+              with zipfile.ZipFile(dst,"w",zipfile.ZIP_DEFLATED) as z:
+                  for p in sorted(src.rglob("*")):
+                      if p.is_file():z.write(p,str(p.relative_to(src)))
+              with zipfile.ZipFile(dst) as z:assert z.testzip() is None
+          report=json.loads((root/"p1c-producer/result.json").read_text())
+          assert not report["failed_preregistered_gates"]
+          assert len(report["cases"])==4 and len(report["checkpoints"])==12
+          for n,h in report["outputs"].items():assert sha(root/"p1c-producer"/n)==h
+          for n,h in report["checkpoints"].items():assert sha(root/"p1c-checkpoints"/n)==h
+          pack(root/"p1c-producer",staging/"producer.zip")
+          pack(root/"p1c-checkpoints",staging/"checkpoint.zip")
+          scripts={p:sha(root/p) for p in ["experiments/p1c_live_world.py","experiments/p1c_restart_consumer.py","experiments/p1c_compare_restart.py","experiments/p1c_live_worker.py"]}
+          manifest={"producer_sha":sha(staging/"producer.zip"),"checkpoint_sha":sha(staging/"checkpoint.zip"),"scripts":scripts,"cpu":next(l.split(":",1)[1].strip() for l in pathlib.Path("/proc/cpuinfo").read_text().splitlines() if l.startswith("model name")),"runtime":report["runtime"]}
+          (staging/"manifest.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
+          for p in ["experiments","inherited/WORLD_RESEARCH/experiments"]:
+              shutil.copytree(root/p,clean/p)
+          for src,dst in [(root/"evidence/archives/45389348480/14917807888.zip",clean/"evidence/archives/45389348480/14917807888.zip"),(staging/"checkpoint.zip",clean/"evidence/P1-C/C2a/14977883611.zip")]:
+              dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dst)
+          (clean/"checkpoint.sha256").write_text(manifest["checkpoint_sha"]+"\n")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s1h-reference
+          path: |
+            ${{ runner.temp }}/s1h/producer.zip
+            ${{ runner.temp }}/s1h/manifest.json
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s1h-checkpoint
+          path: ${{ runner.temp }}/s1h/checkpoint.zip
+          retention-days: 30
+      - name: Remove local future evidence and launch separate restart process
+        run: |
+          set -euo pipefail
+          rm -rf "$RUNNER_TEMP/s1h"
+          find "$GITHUB_WORKSPACE" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
+          cp -a "$RUNNER_TEMP/s1h-clean/." "$GITHUB_WORKSPACE/"
+          rm -rf "$RUNNER_TEMP/s1h-clean"
+          test ! -e .git
+          test ! -e p1c-producer
+          test ! -e p1c-checkpoints
+          test ! -e "$RUNNER_TEMP/s1h"
+          find evidence -type f
+          lscpu
+          "${{ steps.bullet.outputs.python-path }}" - "${{ steps.landlab.outputs.python-path }}" <<'PY'
+          import pathlib,sys
+          import p1c_restart_consumer as c
+          c.CHECK_SHA=pathlib.Path("checkpoint.sha256").read_text().strip()
+          c.main(sys.argv[1])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: s1h-consumer
+          path: p1c-consumer
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: s1h-producer-partial
+          path: |
+            p1c-producer
+            p1c-checkpoints
+          retention-days: 30
+  compare:
+    needs: same_host
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/p1c_compare_restart.py
+      - uses: actions/download-artifact@v4
+        with:
+          name: s1h-reference
+          path: reference
+      - uses: actions/download-artifact@v4
+        with:
+          name: s1h-checkpoint
+          path: checkpoint
+      - uses: actions/download-artifact@v4
+        with:
+          name: s1h-consumer
+          path: p1c-consumer
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.4.6
+          python - <<'PY'
+          import pathlib,hashlib,json,sys,zipfile
+          def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+          m=json.loads(pathlib.Path("reference/manifest.json").read_text())
+          assert sha(pathlib.Path("reference/producer.zip"))==m["producer_sha"]
+          assert sha(pathlib.Path("checkpoint/checkpoint.zip"))==m["checkpoint_sha"]
+          with zipfile.ZipFile("reference/producer.zip") as z:
+              a=json.loads(z.read("result.json"))
+              assert a["runtime"]==m["runtime"]
+              with zipfile.ZipFile("checkpoint/checkpoint.zip") as q:
+                  assert set(q.namelist())==set(a["checkpoints"])
+                  for n,h in a["checkpoints"].items():assert hashlib.sha256(q.read(n)).hexdigest()==h
+          b=json.loads(pathlib.Path("p1c-consumer/result.json").read_text())
+          assert b["runtime"]["bullet"]==a["runtime"]["bullet_profile"]
+          assert b["runtime"]["landlab"]==a["runtime"]["landlab_profile"]
+          assert b["runtime"]["python"]==a["runtime"]["python"]
+          p=pathlib.Path("experiments/p1c_compare_restart.py")
+          assert sha(p)==m["scripts"][str(p)]
+          src=p.read_text()
+          old="fd0ba07f97a2e0f9121bc5cdf6b19ba37d2dcd06a1c751a193fa60d40b271d7d"
+          assert src.count(old)==1
+          sys.argv=[str(p),"reference/producer.zip","p1c-consumer","p1c-compare"]
+          exec(compile(src.replace(old,m["producer_sha"]),str(p),"exec"),{"__name__":"__main__"})
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: s1h-compare
+          path: p1c-compare
+          retention-days: 30
+  portability:
+    needs: compare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/p1c_portability.py
+            /evidence/P1-C/C2a/14977708755.zip
+            /evidence/P1-C/C2b/14977979956.zip
+      - uses: actions/download-artifact@v4
+        with:
+          name: s1h-compare
+          path: p1c-compare
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1
+          python experiments/p1c_portability.py evidence/P1-C/C2a/14977708755.zip evidence/P1-C/C2b/14977979956.zip p1c-compare p1c-portability
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: s1h-s2-retrospective
+          path: p1c-portability
+          retention-days: 30
