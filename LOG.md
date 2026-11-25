@@ -121,3 +121,5 @@
 - P3.2b archivo fallo 45624204131 SUCCESS, ZIP/9 outputs/JSON/log verificados; tamaños releídos. Retry con comparaciones explícitas de stock core/owner y flujo halo; sin cambiar operador físico ni tolerancias.
 
 - P3.2b retry 45624348735 SUCCESS, 5 analíticas/5 muestras/8 controles, owner error5.55e-17m³, export/halo exacto, 9 NPZ previos idénticos. Archivo pendiente. GO P3.3 tras retención.
+
+- P3.2b archivo 45625575751 SUCCESS, 10 outputs/JSON/log cotejados y 9 hashes históricos idénticos; tamaños verificados. P3.3 prerregistro: 240 pasos, 4 modos, ablación relieve→agua y bifurcación mismo estado paso121, balances y restart. Sin export natural sólido, sin nuevo solver. 5min.
