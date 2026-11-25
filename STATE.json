@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "decision_required",
+  "status": "diagnostic_pending",
   "stage": "P1-C",
-  "current_task": "P1-C.2b-D2",
-  "next_action": "Esperar decisión explícita de alcance: recomendar una verificación adicional acotada en AMD con D2 intacto, sin gasto pago ni nuevos perfiles; si no hay AMD, definir límite de portabilidad o cierre parcial. No relanzar al azar sin autorización. Si AMD confirma gate, prerregistrar C.2b-R único desde t0. No repetir C.2a original ni alterar resultados.",
-  "scientific_next": "P1-C.2b-D2",
+  "current_task": "P1-C.2b-D2-AMD",
+  "next_action": "Leer CI 45521624938. Una sola asignación autorizada; si no AMD archivar CPU/log y detener. Si AMD, verificar D2 intacto y hashes contra Intel y sufijo AMD original; archivar antes de prerregistrar único C.2b-R desde t0 si cumple. No P1-D ni gasto pago.",
+  "scientific_next": "P1-C.2b-D2-AMD",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -15,11 +15,10 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2a_passed_C2b_failed_exact_D2_inconclusive"
+    "P1_C": "C2b_failed_D2_AMD_authorized_pending"
   },
   "blockers": [
-    "D2 inconcluso: ambos runners Intel; presupuesto de dos jobs agotado. Falta verificación AMD del perfil Nehalem antes de C.2b-R.",
-    "No disponibilidad dirigida AMD verificada; no iniciar P1-D."
+    "P1-C.2b exactitud térmica entre Intel/AMD pendiente de D2-AMD."
   ],
   "evidence_refs": [
     "evidence/P1-A-R_READBACK.md",
@@ -44,13 +43,14 @@
     "research/P1-C/P1-C.2b_D2_PROTOCOLO.md",
     "evidence/P1-C/C2b/archive_manifest.json",
     "research/P1-C/P1-C.2b_D2_RESULTADO.md",
-    "evidence/P1-C/D2/archive_manifest.json"
+    "evidence/P1-C/D2/archive_manifest.json",
+    "research/P1-C/P1-C.2b_D2_AMD_AUTORIZACION.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "9f15ebef3f93b2739c16f65f8e75134b22d4580b",
+  "last_confirmed_non_state_write": "e2d6b8e0b3bdbc130c46834775ebbc2591df8a43",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -73,5 +73,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24"
+  "updated_at": "2026-11-24",
+  "active_run": {
+    "id": 45521624938,
+    "unit": "P1-C.2b-D2-AMD",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45521624938",
+    "sha": "e2d6b8e0b3bdbc130c46834775ebbc2591df8a43"
+  }
 }
