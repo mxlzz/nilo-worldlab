@@ -1,0 +1,51 @@
+name: WorldLab archive P6.1 mixed horizon result
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p6-horizon.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P6/P61
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15031640270/zip > "$d/15031640270.zip"
+          echo 'a37481e1a0b72a2cca2bb826cb5ae4d92f14c0bac2fff26819e6be8e47cc5c6c  '"$d/15031640270.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139264007446/logs > "$d/job-139264007446.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P6/P61")
+          with zipfile.ZipFile(d/"15031640270.zip") as z:
+              assert z.testzip() is None
+              b=z.read("reference/result.json");a=json.loads(b);m=json.loads(z.read("checkpoint/manifest.json"))
+              assert a["failed_preregistered_gates"]==["relaxation:ValueError('hydraulic bounds')","incomplete horizon"]
+              assert a["cases"]["periodic"]["steps"]==2400 and a["cases"]["relaxation"]["steps"]==2078
+              assert a["stops"]["relaxation"]["attempted_step"]==2079 and a["prefix"]["exact_between_modes"] and all(v==0 for v in a["prefix"]["P52_max_diffs"].values())
+              assert m["owner_sha"]==a["cases"]["periodic"]["snapshots"]["1200"]["owner_sha"]
+              assert hashlib.sha256(z.read("checkpoint/owner.nc")).hexdigest()==m["sha256"]
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read("reference/"+n)).hexdigest()==h
+              assert {n for n in z.namelist() if not n.endswith("/")}=={"reference/"+n for n in a["outputs"]}|{"reference/result.json","checkpoint/manifest.json","checkpoint/owner.nc"}
+              assert z.read("reference/source_archive_manifest.json")==pathlib.Path("evidence/P3/RBD_SOURCE/archive_manifest.json").read_bytes()
+              (d/"result.json").write_bytes(b);(d/"checkpoint_manifest.json").write_bytes(z.read("checkpoint/manifest.json"))
+          log=(d/"job-139264007446.log").read_text()
+          assert [json.loads(l.split("WORLD_HORIZON_JSON ",1)[1]) for l in log.splitlines() if "WORLD_HORIZON_JSON {" in l]==[a]
+          m={"run":45631044420,"job":139264007446,"artifact":15031640270,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P6.1 negative horizon and last valid state'
+          git pull --rebase origin main
+          git push origin HEAD:main
