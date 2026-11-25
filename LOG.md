@@ -59,3 +59,5 @@
 - D2-AMD archivo CI 45521720220 SUCCESS, CPU/log/ZIP verificados, blobs releídos en 7a8113a9. Desactivados workflows de asignación única y archivo. Bloqueo disponibilidad AMD, no fallo científico nuevo. Requiere acceso a AMD dirigido o decisión explícita de alcance; no reintentar asignaciones aleatorias.
 
 - Usuario aprueba separar persistencia exacta en entorno especificado y portabilidad numérica. Prerregistro S1/S2: misma referencia, mismo consumidor, CPU Intel equivalente; S2 evaluación retrospectiva explícita de AMD, límites físicos predefinidos, sin generalización. No aprobar C.2b original retrospectivamente.
+
+- S1/S2 lanzados: consumidor y comparador originales intactos, guard CPU Intel, portabilidad retrospectiva solo después del comparador exacto, controles 1J, L1 sin cancelación. Sin repetir productor ni modificar leyes.
