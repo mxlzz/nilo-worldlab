@@ -2,7 +2,7 @@ name: WorldLab archive P1-C.2a failed instrument evidence
 on:
   push:
     branches: [main]
-    paths: [.github/workflows/worldlab-archive-p1c2a-failed.yml]
+    paths: [.github/workflows/archive-p1c2a-failed.yml]
 permissions:
   contents: write
   actions: read
