@@ -1,0 +1,371 @@
+{
+  "cases": {
+    "7321_0.0": [
+      {
+        "attrs": {},
+        "epoch": 4,
+        "fields": {
+          "E_roi": {
+            "different_bits": 64,
+            "different_values": 64,
+            "max_abs": 2.8421709430404007e-13,
+            "max_ulp": 7
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {},
+        "epoch": 5,
+        "fields": {
+          "E_roi": {
+            "different_bits": 83,
+            "different_values": 83,
+            "max_abs": 3.410605131648481e-13,
+            "max_ulp": 9
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {},
+        "epoch": 6,
+        "fields": {
+          "E_roi": {
+            "different_bits": 105,
+            "different_values": 104,
+            "max_abs": 9.094947017729282e-13,
+            "max_ulp": 8
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      }
+    ],
+    "7321_0.1": [
+      {
+        "attrs": {},
+        "epoch": 4,
+        "fields": {
+          "E_roi": {
+            "different_bits": 195,
+            "different_values": 195,
+            "max_abs": 1.4210854715202004e-13,
+            "max_ulp": 5
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {
+          "p1c_E_export_J": [
+            211025.44701091785,
+            211025.44701091788
+          ]
+        },
+        "epoch": 5,
+        "fields": {
+          "E_coarse_rest": {
+            "different_bits": 13,
+            "different_values": 13,
+            "max_abs": 3.637978807091713e-12,
+            "max_ulp": 2
+          },
+          "E_roi": {
+            "different_bits": 295,
+            "different_values": 295,
+            "max_abs": 1.1368683772161603e-13,
+            "max_ulp": 7
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": false,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": false
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {
+          "p1c_E_export_J": [
+            262751.02640254854,
+            262751.0264025486
+          ]
+        },
+        "epoch": 6,
+        "fields": {
+          "E_coarse_rest": {
+            "different_bits": 10,
+            "different_values": 10,
+            "max_abs": 7.275957614183426e-12,
+            "max_ulp": 2
+          },
+          "E_roi": {
+            "different_bits": 295,
+            "different_values": 294,
+            "max_abs": 1.1368683772161603e-13,
+            "max_ulp": 5
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": false,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": false
+        },
+        "ray_arrays_exact": true
+      }
+    ],
+    "8128_0.0": [
+      {
+        "attrs": {},
+        "epoch": 4,
+        "fields": {
+          "E_roi": {
+            "different_bits": 50,
+            "different_values": 50,
+            "max_abs": 2.2737367544323206e-13,
+            "max_ulp": 4
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {},
+        "epoch": 5,
+        "fields": {
+          "E_roi": {
+            "different_bits": 67,
+            "different_values": 67,
+            "max_abs": 4.547473508864641e-13,
+            "max_ulp": 5
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {},
+        "epoch": 6,
+        "fields": {
+          "E_roi": {
+            "different_bits": 82,
+            "different_values": 81,
+            "max_abs": 4.547473508864641e-13,
+            "max_ulp": 4
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      }
+    ],
+    "8128_0.1": [
+      {
+        "attrs": {},
+        "epoch": 4,
+        "fields": {
+          "E_roi": {
+            "different_bits": 204,
+            "different_values": 202,
+            "max_abs": 7.105427357601002e-14,
+            "max_ulp": 5
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {},
+        "epoch": 5,
+        "fields": {
+          "E_roi": {
+            "different_bits": 297,
+            "different_values": 295,
+            "max_abs": 8.526512829121202e-14,
+            "max_ulp": 6
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      },
+      {
+        "attrs": {},
+        "epoch": 6,
+        "fields": {
+          "E_roi": {
+            "different_bits": 299,
+            "different_values": 299,
+            "max_abs": 8.526512829121202e-14,
+            "max_ulp": 6
+          }
+        },
+        "file_bytes_equal": false,
+        "flux_arrays_exact": true,
+        "logical_equal": {
+          "epoch": true,
+          "flux_sha": true,
+          "observation": true,
+          "owner_sha": false,
+          "projection_sha": true,
+          "radiation": true,
+          "ray_sha": true,
+          "soil_sha": true,
+          "steps": true,
+          "trace_sha": true,
+          "transport": true
+        },
+        "ray_arrays_exact": true
+      }
+    ]
+  },
+  "diagnostic_only": true
+}

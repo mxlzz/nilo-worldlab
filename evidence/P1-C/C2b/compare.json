@@ -1,0 +1,7 @@
+{
+  "cases": {},
+  "experiment": "P1-C.2b-compare",
+  "failed_preregistered_gates": [
+    "ValueError('epoch logical mismatch 7321_0.0:4')"
+  ]
+}

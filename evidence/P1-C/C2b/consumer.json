@@ -1,0 +1,1763 @@
+{
+  "cases": {
+    "7321_0.0": {
+      "checkpoint_owner_sha": "74c5823ec01020b5711d9cd86b5792283dc04e430e1a7d4a7524ff07ddc6746c",
+      "controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "epochs": [
+        {
+          "epoch": 4,
+          "flux_sha": "33a1d5db33e2f06e59264a08ef10d5373c74980435690ff7dd732c4d23767195",
+          "observation": {
+            "connected_cells": 224,
+            "direction_cells": [
+              619,
+              799,
+              736,
+              701,
+              848
+            ],
+            "protected_cells": 325,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "3d4247236d884e5f78a40b0a840820637bc0ea43fe39bad8de5a1bda51f3205d",
+          "projection_sha": "a87fe872a4364d1db613a062ff1600c3f0195858ff945f21e21f69688bc923c9",
+          "radiation": {
+            "export_J": 0.0,
+            "grain_J": 267570.0,
+            "grain_added_J": 55080.0,
+            "incident_J": 1620000.0,
+            "intercepted_cells": 612,
+            "max_grain_K": 484.5,
+            "max_roi_K": 301.25,
+            "residual_max_J": 2.7939677238464355e-09,
+            "rest_J": 0.0,
+            "roi_J": 1352429.9999999972
+          },
+          "ray_sha": "e7c45fa3967e2752de2142ad1157783f85f0c2576bbf4f8b15c7e2dba4a66084",
+          "soil_sha": "1cf130cbcd73113fe5a2c137c6bac20fdb0e83109ec914b1ac43b40d7a6b107d",
+          "steps": 6512,
+          "trace_sha": "5df7cb56c7828d757366e4122549220603d8f2c3dae13aecebcbdee776e77c84",
+          "transport": [
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            }
+          ]
+        },
+        {
+          "epoch": 5,
+          "flux_sha": "ad1e91747288f97265ee39075200bc5482b24d21e19606e6167b146f4ce16ea0",
+          "observation": {
+            "connected_cells": 252,
+            "direction_cells": [
+              634,
+              807,
+              750,
+              710,
+              876
+            ],
+            "protected_cells": 344,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "a09fb2ecaebfb6ceb2773fe6942a321b6f6c52ffff069acb1dad0ae912deb312",
+          "projection_sha": "ed08e53503f62f666c9b604f43664ee7d938d755bf4b456f9236ab7c1532151c",
+          "radiation": {
+            "export_J": 0.0,
+            "grain_J": 324360.0,
+            "grain_added_J": 56790.0,
+            "incident_J": 1944000.0,
+            "intercepted_cells": 631,
+            "max_grain_K": 516.0,
+            "max_roi_K": 301.5,
+            "residual_max_J": 4.190951585769653e-09,
+            "rest_J": 0.0,
+            "roi_J": 1619639.9999999958
+          },
+          "ray_sha": "aa37215f82e1d395a7df155ac088b3cb7036695f7fd828324a188b7ec8897d48",
+          "soil_sha": "962b79d16de85d35c663ebd9c3c78946ad90f84d64f27bb94806a9f44e9753ef",
+          "steps": 7232,
+          "trace_sha": "dad86b7b2c8ee98510e12414ea1e097a39e79404c5120b9550e4914ab2c9d9e0",
+          "transport": [
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            }
+          ]
+        },
+        {
+          "epoch": 6,
+          "flux_sha": "93e39d3f60dc0f9adcbcc0977d3a087e33f95644fbfb5fe0493a96fe790721e1",
+          "observation": {
+            "connected_cells": 251,
+            "direction_cells": [
+              639,
+              812,
+              749,
+              713,
+              871
+            ],
+            "protected_cells": 350,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "356b35485e82b6a86ca1fc4bf63f0d661a7fecd4cba41528ef0403f9bc14f290",
+          "projection_sha": "62376744398e9809ab59fa78a68656723a23f69fbf070666e3fdf566deca4412",
+          "radiation": {
+            "export_J": 0.0,
+            "grain_J": 381240.0,
+            "grain_added_J": 56880.0,
+            "incident_J": 2268000.0,
+            "intercepted_cells": 632,
+            "max_grain_K": 547.5,
+            "max_roi_K": 301.75,
+            "residual_max_J": 5.587935447692871e-09,
+            "rest_J": 0.0,
+            "roi_J": 1886759.9999999944
+          },
+          "ray_sha": "8c9b32829a6bafbfb960a338ae689ee3a29d7a2f5f4ed193437f99cbd0cfdce1",
+          "soil_sha": "788a2e522a48aced61a0e32566e7533da649d210e48948e42393f2529b437164",
+          "steps": 7952,
+          "trace_sha": "0e1a608c0123ea481e39d4bfb23e804c3c9a99f637fb0a65bf4f7d21e53cdf38",
+          "transport": [
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            }
+          ]
+        }
+      ],
+      "formation_steps": 3632,
+      "history": [
+        "f01e0b467b8cea6c7f98518a0f6cb680e64e977e75f6114634e93433ccc806f4",
+        "97f6c03c0a913aef7b595820d1082f96364a8ea8bd40c8c7b6309ad7a5eaa810",
+        "072a6f50a2f9fa57db087debc1a7fe17307ced2f0d20f45837665a2a6b936b97",
+        "a695341089abd3e6010da31d06cebc62b41b91660a3b44e88d168168bb6ba6f4",
+        "5df7cb56c7828d757366e4122549220603d8f2c3dae13aecebcbdee776e77c84",
+        "dad86b7b2c8ee98510e12414ea1e097a39e79404c5120b9550e4914ab2c9d9e0",
+        "0e1a608c0123ea481e39d4bfb23e804c3c9a99f637fb0a65bf4f7d21e53cdf38"
+      ],
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "peak_rss_kib": 228728,
+      "requests": [
+        {
+          "K": 0.0,
+          "files": {
+            "flux.npz": "bf4d6d9ba248789beb6fd5e77c004e9e6ac2e692fc5990441dae44ecaf3857da",
+            "soil.nc": "57edd88666328baa76116b78a9bb79b0edf52785b3dbdd26db28d99bc19a47d6"
+          },
+          "from": 10,
+          "input_sha": "a2d11343f676c7f46fa9d5a1aef0f5120d786da82f31b924f95cbb407b0f7f81",
+          "output_sha": "1cf130cbcd73113fe5a2c137c6bac20fdb0e83109ec914b1ac43b40d7a6b107d",
+          "seed": 7321,
+          "steps": [
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 10
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 11
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 12
+            }
+          ],
+          "to": 12
+        },
+        {
+          "K": 0.0,
+          "files": {
+            "flux.npz": "8db829b2af36e4fd233f74a15c2766f2bc0ab6540b08b7cd6a91a78865b23f64",
+            "soil.nc": "11828ee957b7880575674ae37577208034e5ee6f55d72163bd0496f360e4cc3f"
+          },
+          "from": 13,
+          "input_sha": "1cf130cbcd73113fe5a2c137c6bac20fdb0e83109ec914b1ac43b40d7a6b107d",
+          "output_sha": "962b79d16de85d35c663ebd9c3c78946ad90f84d64f27bb94806a9f44e9753ef",
+          "seed": 7321,
+          "steps": [
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 13
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 14
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 15
+            }
+          ],
+          "to": 15
+        },
+        {
+          "K": 0.0,
+          "files": {
+            "flux.npz": "d6f9f632500fed3cf9af0d1e82822170f8d7bee95e60912ef634485a9236972b",
+            "soil.nc": "0e905ea2f3e583c2850258cd52838f1f1cb4a7b3353b74f2d8650e013caf75b7"
+          },
+          "from": 16,
+          "input_sha": "962b79d16de85d35c663ebd9c3c78946ad90f84d64f27bb94806a9f44e9753ef",
+          "output_sha": "788a2e522a48aced61a0e32566e7533da649d210e48948e42393f2529b437164",
+          "seed": 7321,
+          "steps": [
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 16
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 17
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 18
+            }
+          ],
+          "to": 18
+        }
+      ],
+      "wall_seconds": 16.214984528000002
+    },
+    "7321_0.1": {
+      "checkpoint_owner_sha": "1c80952c8a02a74091b197eaa9832c89e1057e2545162d9d49c00a28d8dac3fe",
+      "controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "epochs": [
+        {
+          "epoch": 4,
+          "flux_sha": "44a13e043fc8e2cb0221bba6df121663a4e1a7100aeed36ba037e1cc057aac95",
+          "observation": {
+            "connected_cells": 209,
+            "direction_cells": [
+              634,
+              799,
+              734,
+              711,
+              871
+            ],
+            "protected_cells": 336,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "9031bb7f29aae88973f530e8b1f43ed7f6cdb5d3f50e70e120e49c48c63a4ecc",
+          "projection_sha": "361b07ece7d515df7aeb5756045d8e1dddc1ec9d6ffbc06ca1728cbe35033335",
+          "radiation": {
+            "export_J": 162178.27164074843,
+            "grain_J": 269640.0,
+            "grain_added_J": 56430.0,
+            "incident_J": 1620000.0,
+            "intercepted_cells": 627,
+            "max_grain_K": 484.5,
+            "max_roi_K": 301.7549550925365,
+            "residual_max_J": 4.656612873077393e-10,
+            "rest_J": 755511.7610041664,
+            "roi_J": 432669.9673550846
+          },
+          "ray_sha": "a9ee17d3c57d0916cd54470e2391d13bf62f0e068cb10504d21c3c6bc53a58fa",
+          "soil_sha": "f0d6b0dce541d33c9d4db7701ba426c3df0e600807cf019966393edea0da13ef",
+          "steps": 6512,
+          "trace_sha": "93b35c20a7bb4acbf8d020cba0cc9790f13ebfb517aaa2017883e8e3f02e3c08",
+          "transport": [
+            {
+              "deposited_J": 130522.8031184745,
+              "export_J": 17956.70490246419,
+              "outgoing_J": 2245048.6156316893,
+              "removed_J": 148479.5080209387,
+              "residual_J": -2.3283064365386963e-10
+            },
+            {
+              "deposited_J": 104599.107480269,
+              "export_J": 17858.688021664122,
+              "outgoing_J": 1037865.4661190899,
+              "removed_J": 122457.79550193311,
+              "residual_J": 2.3283064365386963e-10
+            },
+            {
+              "deposited_J": 86911.07483025189,
+              "export_J": 13536.025938909532,
+              "outgoing_J": 818278.6217693234,
+              "removed_J": 100447.10076916145,
+              "residual_J": -2.3283064365386963e-10
+            }
+          ]
+        },
+        {
+          "epoch": 5,
+          "flux_sha": "4f69a14c011f0c9cc24ed67f9c6bf9fefb6dafedf79057154096d50ea15a1e8f",
+          "observation": {
+            "connected_cells": 222,
+            "direction_cells": [
+              634,
+              802,
+              737,
+              715,
+              876
+            ],
+            "protected_cells": 341,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "5e79ab896ee0b9391a63c999d38c7cdd294841e20615d650f553185463c84a7d",
+          "projection_sha": "304948f6979180b4c2c865ec79c7781903e6c20db462ed231e842479175ed8b9",
+          "radiation": {
+            "export_J": 211025.44701091788,
+            "grain_J": 325980.0,
+            "grain_added_J": 56340.0,
+            "incident_J": 1944000.0,
+            "intercepted_cells": 626,
+            "max_grain_K": 511.5,
+            "max_roi_K": 302.4486292257152,
+            "residual_max_J": 6.984919309616089e-10,
+            "rest_J": 975510.6549694843,
+            "roi_J": 431483.89801959746
+          },
+          "ray_sha": "4300d1295b387299fa23450f238cc6ac2b8634972e20d9fa07405d2458aa1ec9",
+          "soil_sha": "6e430b8f5bdcb766507c74a719062efc66d023b4e5b73091961625bcca6bea6d",
+          "steps": 7232,
+          "trace_sha": "24e13216a925ddfee918b8abf8144f71fee05d1db8d67720710cdb9769e93aa3",
+          "transport": [
+            {
+              "deposited_J": 138172.22824258753,
+              "export_J": 17445.732513143517,
+              "outgoing_J": 2253670.833755921,
+              "removed_J": 155617.9607557311,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 110946.04305151838,
+              "export_J": 15515.070176171404,
+              "outgoing_J": 1928297.9108816888,
+              "removed_J": 126461.11322768981,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 87705.42923737262,
+              "export_J": 15886.372680854536,
+              "outgoing_J": 869704.4462062593,
+              "removed_J": 103591.80191822714,
+              "residual_J": -2.3283064365386963e-10
+            }
+          ]
+        },
+        {
+          "epoch": 6,
+          "flux_sha": "fff9f50b4f3e87650cbd7454480bb3ffeddee3f1adb288824b96115a0e8d4a0d",
+          "observation": {
+            "connected_cells": 236,
+            "direction_cells": [
+              635,
+              805,
+              742,
+              711,
+              880
+            ],
+            "protected_cells": 345,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "25179c390ffc960897aa6a19b2bb7cf88065abbbef6f8f28df77a71cba505c5a",
+          "projection_sha": "303a7d47b8dd6693b73862945966731868def73b11086c65cf1543c5de43302b",
+          "radiation": {
+            "export_J": 262751.0264025486,
+            "grain_J": 382410.0,
+            "grain_added_J": 56430.0,
+            "incident_J": 2268000.0,
+            "intercepted_cells": 627,
+            "max_grain_K": 538.5,
+            "max_roi_K": 303.3359603552891,
+            "residual_max_J": 4.656612873077393e-10,
+            "rest_J": 1193396.7382402665,
+            "roi_J": 429442.23535718437
+          },
+          "ray_sha": "13f4488a27955f1ad98868830152fa2c4ea2401b08bb0f341b11243441fe3fbb",
+          "soil_sha": "4734af9d8306e4e8102949e66b5bdd3d63ad625b6e6cf34cf096a359bf3f1be4",
+          "steps": 7952,
+          "trace_sha": "64869d5efdf2877fe735222ca5130aba16eae6b85530256d71cdb62a01b2601b",
+          "transport": [
+            {
+              "deposited_J": 138790.09882321354,
+              "export_J": 20285.13516955013,
+              "outgoing_J": 1300784.289425787,
+              "removed_J": 159075.23399276368,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 113519.35612382571,
+              "export_J": 16801.497301930063,
+              "outgoing_J": 1071377.070263316,
+              "removed_J": 130320.85342575573,
+              "residual_J": 2.3283064365386963e-10
+            },
+            {
+              "deposited_J": 90899.23497676406,
+              "export_J": 14638.9469201505,
+              "outgoing_J": 875628.273694249,
+              "removed_J": 105538.18189691455,
+              "residual_J": 0.0
+            }
+          ]
+        }
+      ],
+      "formation_steps": 3632,
+      "history": [
+        "f01e0b467b8cea6c7f98518a0f6cb680e64e977e75f6114634e93433ccc806f4",
+        "c51b9b20d3965ecc0bfa7e8ee7c032a8118ad4cf5afb7ce4bb8770e7815409d1",
+        "e598a34a7cabb9d2df58e195f8ee83f4c454ca025f4deb384b8945d45fd3c1da",
+        "029b35796f1d877e61e951f570d7d9aa7eef6332631596212137be7224cf3a4c",
+        "93b35c20a7bb4acbf8d020cba0cc9790f13ebfb517aaa2017883e8e3f02e3c08",
+        "24e13216a925ddfee918b8abf8144f71fee05d1db8d67720710cdb9769e93aa3",
+        "64869d5efdf2877fe735222ca5130aba16eae6b85530256d71cdb62a01b2601b"
+      ],
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "peak_rss_kib": 229116,
+      "requests": [
+        {
+          "K": 0.1,
+          "files": {
+            "flux.npz": "162dbc10bc0c98a563374128c109cd07f6adb239a1357bae08cfc12f2a01cd89",
+            "soil.nc": "2381999e529ac177c30f044a53f80816c765eff3d458fe4103e2294ab0d0bad8"
+          },
+          "from": 10,
+          "input_sha": "905e33e5380f04a2936a0a2cdc8ffa7597e849dde36058264110ba119db76e2c",
+          "output_sha": "f0d6b0dce541d33c9d4db7701ba426c3df0e600807cf019966393edea0da13ef",
+          "seed": 7321,
+          "steps": [
+            {
+              "boundary_export_kg": 1643706.3394694983,
+              "deposition_kg": 18450161.347900778,
+              "erosion_kg": 20093867.68737027,
+              "export_kg": 1643706.3394694983,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 2.928572939708829e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.238689482212067e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 10
+            },
+            {
+              "boundary_export_kg": 1632363.2030135286,
+              "deposition_kg": 17454757.021820135,
+              "erosion_kg": 19087120.22483366,
+              "export_kg": 1632363.2030135286,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.055902197957039e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 4.94765117764473e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 11
+            },
+            {
+              "boundary_export_kg": 1573874.3407241968,
+              "deposition_kg": 16587406.361334128,
+              "erosion_kg": 18161280.702058323,
+              "export_kg": 1573874.3407241968,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.310560714453459e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.093170329928398e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 4.656612873077393e-10,
+              "step": 12
+            }
+          ],
+          "to": 12
+        },
+        {
+          "K": 0.1,
+          "files": {
+            "flux.npz": "80a3525487c05473d0860dcc655921d0961b0f009165a9d870d0edb69d8e5130",
+            "soil.nc": "352d0833cf92c820425ffbe39fc854786f8c6442d7b0298800fb41c42191f900"
+          },
+          "from": 13,
+          "input_sha": "f0d6b0dce541d33c9d4db7701ba426c3df0e600807cf019966393edea0da13ef",
+          "output_sha": "6e430b8f5bdcb766507c74a719062efc66d023b4e5b73091961625bcca6bea6d",
+          "seed": 7321,
+          "steps": [
+            {
+              "boundary_export_kg": 1518451.1613715119,
+              "deposition_kg": 15760977.00480961,
+              "erosion_kg": 17279428.166181125,
+              "export_kg": 1518451.1613715119,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 2.2009771782904863e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 4.2928149923682213e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 13
+            },
+            {
+              "boundary_export_kg": 1501381.2404522095,
+              "deposition_kg": 14968107.066886935,
+              "erosion_kg": 16469488.307339143,
+              "export_kg": 1501381.2404522095,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 1.382431946694851e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.093170329928398e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 14
+            },
+            {
+              "boundary_export_kg": 1484664.367765955,
+              "deposition_kg": 14233029.336587157,
+              "erosion_kg": 15717693.704353113,
+              "export_kg": 1484664.367765955,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 2.9831426218152046e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 4.147295840084553e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 15
+            }
+          ],
+          "to": 15
+        },
+        {
+          "K": 0.1,
+          "files": {
+            "flux.npz": "86b8b9600663a3aae52231392abb9fd894c5b3b0c1ebadf0d2818cbdd2a7d535",
+            "soil.nc": "8458f5315b5c304fd5c70679c4fc507ba7086a85b988f714e31c9f7748b1d757"
+          },
+          "from": 16,
+          "input_sha": "6e430b8f5bdcb766507c74a719062efc66d023b4e5b73091961625bcca6bea6d",
+          "output_sha": "4734af9d8306e4e8102949e66b5bdd3d63ad625b6e6cf34cf096a359bf3f1be4",
+          "seed": 7321,
+          "steps": [
+            {
+              "boundary_export_kg": 1439715.540156388,
+              "deposition_kg": 13590631.613910269,
+              "erosion_kg": 15030347.154066658,
+              "export_kg": 1439715.540156388,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 1.3915268937125802e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.456968210637569e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 16
+            },
+            {
+              "boundary_export_kg": 1403394.4637620193,
+              "deposition_kg": 13005058.78348949,
+              "erosion_kg": 14408453.247251509,
+              "export_kg": 1403394.4637620193,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.1650415621697903e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 4.511093720793724e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 1.1641532182693481e-10,
+              "step": 17
+            },
+            {
+              "boundary_export_kg": 1374817.9262729462,
+              "deposition_kg": 12416831.964952277,
+              "erosion_kg": 13791649.891225222,
+              "export_kg": 1374817.9262729462,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 2.1827872842550278e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.748006515204906e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 18
+            }
+          ],
+          "to": 18
+        }
+      ],
+      "wall_seconds": 14.967243101999998
+    },
+    "8128_0.0": {
+      "checkpoint_owner_sha": "8f17e22ee6b58799ea951e8c9dc9b9b8e97c0688a05ad0bc688eb4def2543cd4",
+      "controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "epochs": [
+        {
+          "epoch": 4,
+          "flux_sha": "54321cdccc6d61a43e932f5f8966c2f568c0f65113ce108c2d483b2b8a7b5025",
+          "observation": {
+            "connected_cells": 221,
+            "direction_cells": [
+              583,
+              768,
+              679,
+              728,
+              744
+            ],
+            "protected_cells": 315,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "f34731b638c00e8e465d27c8c26e92dbc183a4ed69a04e9f62a7046ec216fd8d",
+          "projection_sha": "91a36a48c78c31d90b4274362ccdb03d6006f2219274748d74b5a8d95e4932f9",
+          "radiation": {
+            "export_J": 0.0,
+            "grain_J": 257670.0,
+            "grain_added_J": 51750.0,
+            "incident_J": 1620000.0,
+            "intercepted_cells": 575,
+            "max_grain_K": 484.5,
+            "max_roi_K": 301.25,
+            "residual_max_J": 2.7939677238464355e-09,
+            "rest_J": 0.0,
+            "roi_J": 1362329.9999999972
+          },
+          "ray_sha": "7e6802ad4a5fb877a78b25a0027bbebaa81b1824fd31e6583c2519609865c8f1",
+          "soil_sha": "c0c996702d0b22bb1d11fd5934f78dbe2d114626d03065f3df9d5e9347269f48",
+          "steps": 6624,
+          "trace_sha": "74f86a0b9b44060fa18b7eac51424977ee06d17787ff2707229ad5628b7342d6",
+          "transport": [
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            }
+          ]
+        },
+        {
+          "epoch": 5,
+          "flux_sha": "ed77c58c4429d909e1465b09de7530ff89f9fedc716baa4252ee8a004263b02d",
+          "observation": {
+            "connected_cells": 235,
+            "direction_cells": [
+              587,
+              769,
+              683,
+              727,
+              747
+            ],
+            "protected_cells": 319,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "c35999d64023463d7400cf34c3ac6bf0b3b1b47b1be20cdb008e6d1eb51ef186",
+          "projection_sha": "6eef87951ab93218c6841977219fdb3685d45b7659b50916640f36cad56fe218",
+          "radiation": {
+            "export_J": 0.0,
+            "grain_J": 310050.0,
+            "grain_added_J": 52380.0,
+            "incident_J": 1944000.0,
+            "intercepted_cells": 582,
+            "max_grain_K": 520.5,
+            "max_roi_K": 301.5,
+            "residual_max_J": 4.190951585769653e-09,
+            "rest_J": 0.0,
+            "roi_J": 1633949.9999999958
+          },
+          "ray_sha": "ebf88d70cb046472f9bd9dabede0a415881c09af165dab5e63a6cae01f9b39ea",
+          "soil_sha": "6138d4022ca425d3f400bd75023876b53ae93a1929a74a213beaab869bf131ce",
+          "steps": 7344,
+          "trace_sha": "256e919e1725d56af00f5bed9fe527b32459f1d780d105d529805783bca3a798",
+          "transport": [
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            }
+          ]
+        },
+        {
+          "epoch": 6,
+          "flux_sha": "c339c2ccab4ae8601ca93e361494aa5c0c6a3c60e7eefea12e6a2d47740f6f68",
+          "observation": {
+            "connected_cells": 218,
+            "direction_cells": [
+              587,
+              772,
+              684,
+              730,
+              750
+            ],
+            "protected_cells": 321,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "437bfe94712253c69ce9c9b82aa230c33dc473c0436913bf890b0112afd6c65c",
+          "projection_sha": "9b41821ef1efb3c7c327b519626af830392d21a85cdbd5c7db4ea8cefd119d47",
+          "radiation": {
+            "export_J": 0.0,
+            "grain_J": 362160.0,
+            "grain_added_J": 52110.0,
+            "incident_J": 2268000.0,
+            "intercepted_cells": 579,
+            "max_grain_K": 556.5,
+            "max_roi_K": 301.75,
+            "residual_max_J": 5.587935447692871e-09,
+            "rest_J": 0.0,
+            "roi_J": 1905839.9999999944
+          },
+          "ray_sha": "5a1f6879e0829ea880056bf703426e7e8fac119752db669b9bd25f41a871a3a7",
+          "soil_sha": "879bd711596dae5992a9ce715a20553aed203db6ddedc9b8b54c2dca2999c07c",
+          "steps": 8064,
+          "trace_sha": "336bb25044aa3a646d9b3a831826da943c637b0509056f539b074c4a0be0c78d",
+          "transport": [
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 0.0,
+              "export_J": 0.0,
+              "outgoing_J": 0.0,
+              "removed_J": 0.0,
+              "residual_J": 0.0
+            }
+          ]
+        }
+      ],
+      "formation_steps": 3744,
+      "history": [
+        "bd95498ea1365b46e80c8e266d095323166cd2d284e280522d46091ea98511ae",
+        "5b4e679f2e50f7eec2a8f3c04ec3c871caefb2bab6291c48378927dc5aeb7292",
+        "c9e36b33beb27d6da5b1121084f1790dcbe808ce3bc82ca25f4da5a71c999558",
+        "ddc783b5b95eb3edc9db68c474ed95c1c2a86d9e595ccbcf09b0dca77d09ecd2",
+        "74f86a0b9b44060fa18b7eac51424977ee06d17787ff2707229ad5628b7342d6",
+        "256e919e1725d56af00f5bed9fe527b32459f1d780d105d529805783bca3a798",
+        "336bb25044aa3a646d9b3a831826da943c637b0509056f539b074c4a0be0c78d"
+      ],
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "peak_rss_kib": 229764,
+      "requests": [
+        {
+          "K": 0.0,
+          "files": {
+            "flux.npz": "9bc04973c1d27c796c57ecb58f7ad688ae1ae663cc1e596a6e0c0327ee78f3ec",
+            "soil.nc": "af2ae510553417fd6baf6f232a4c7e54097e303af2c0feb8e0c1e9392b4346a8"
+          },
+          "from": 10,
+          "input_sha": "7669804a56d3e0dbd9240c827fb5b815b3ea5680432fa8de64735320409e1037",
+          "output_sha": "c0c996702d0b22bb1d11fd5934f78dbe2d114626d03065f3df9d5e9347269f48",
+          "seed": 8128,
+          "steps": [
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 10
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 11
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 12
+            }
+          ],
+          "to": 12
+        },
+        {
+          "K": 0.0,
+          "files": {
+            "flux.npz": "c4c527ea2ab9416ec4d3914318fef011e422442218a18293809928b762977439",
+            "soil.nc": "384c1fbe4ef4bfd57ba0432111fa6b2cab30852e1203f634430823158648c712"
+          },
+          "from": 13,
+          "input_sha": "c0c996702d0b22bb1d11fd5934f78dbe2d114626d03065f3df9d5e9347269f48",
+          "output_sha": "6138d4022ca425d3f400bd75023876b53ae93a1929a74a213beaab869bf131ce",
+          "seed": 8128,
+          "steps": [
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 13
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 14
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 15
+            }
+          ],
+          "to": 15
+        },
+        {
+          "K": 0.0,
+          "files": {
+            "flux.npz": "e270855bb46d1c102c01270013423fc3e0c15d0524f2ac5f1004fdc64c3cec57",
+            "soil.nc": "7cbf234126bf67ae09e7369706d2857f458e6c67abcf87d7de24f4cc630784ed"
+          },
+          "from": 16,
+          "input_sha": "6138d4022ca425d3f400bd75023876b53ae93a1929a74a213beaab869bf131ce",
+          "output_sha": "879bd711596dae5992a9ce715a20553aed203db6ddedc9b8b54c2dca2999c07c",
+          "seed": 8128,
+          "steps": [
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 16
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 17
+            },
+            {
+              "boundary_export_kg": 0.0,
+              "deposition_kg": 0.0,
+              "erosion_kg": 0.0,
+              "export_kg": 0.0,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 0.0,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 0.0,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 0.0,
+              "step": 18
+            }
+          ],
+          "to": 18
+        }
+      ],
+      "wall_seconds": 15.32834452199998
+    },
+    "8128_0.1": {
+      "checkpoint_owner_sha": "b4496043be8b5f395ec9ad1b73a847f2d38f7060a285253da33e5b737434a346",
+      "controls": {
+        "cache": true,
+        "clock": true,
+        "compensated_file": true,
+        "compensated_logical": true,
+        "duplicate_stock": true,
+        "energy_plus_1": true,
+        "source_id": true
+      },
+      "epochs": [
+        {
+          "epoch": 4,
+          "flux_sha": "f7f6754f7b3bee772367d4683ee74fdee9dc2e263b434e6531709d025c92f6e1",
+          "observation": {
+            "connected_cells": 229,
+            "direction_cells": [
+              585,
+              770,
+              679,
+              732,
+              738
+            ],
+            "protected_cells": 317,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "82090acd0303c60e78e753922a11a12286971fcb528e4afc3a5a7838c3a5f6cf",
+          "projection_sha": "fe7ed885632704d2b84767059057259095349944814abd502da7fce43a485167",
+          "radiation": {
+            "export_J": 117402.31762993906,
+            "grain_J": 256950.0,
+            "grain_added_J": 51840.0,
+            "incident_J": 1620000.0,
+            "intercepted_cells": 576,
+            "max_grain_K": 480.0,
+            "max_roi_K": 301.5167954704387,
+            "residual_max_J": 0.0,
+            "rest_J": 929508.7216217972,
+            "roi_J": 316138.9607482636
+          },
+          "ray_sha": "4db7b235a1b6115bfad4384e112023ece2394d559164b9d2e6685a73ec0cce58",
+          "soil_sha": "7133f5ad47d55c63cb48e7f8d5f1b88a98f91dbeb42451ba18b647f7ffe5640a",
+          "steps": 6624,
+          "trace_sha": "62e2124b1d949cb81b2c863938aa1666fc9f38f657c505e815869a6eca36380b",
+          "transport": [
+            {
+              "deposited_J": 246390.50373708378,
+              "export_J": 14493.09235583719,
+              "outgoing_J": 1049674.0679747441,
+              "removed_J": 260883.59609292093,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 200908.64485805796,
+              "export_J": 11971.045226934517,
+              "outgoing_J": 805428.9821558981,
+              "removed_J": 212879.6900849925,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 164603.70689192554,
+              "export_J": 8922.364510625768,
+              "outgoing_J": 652227.7260689032,
+              "removed_J": 173526.0714025513,
+              "residual_J": 0.0
+            }
+          ]
+        },
+        {
+          "epoch": 5,
+          "flux_sha": "1e5f4071ccf5f2e96711018443eefbf3eeac4826d6150f274470a9b2ca338f7f",
+          "observation": {
+            "connected_cells": 229,
+            "direction_cells": [
+              585,
+              772,
+              678,
+              733,
+              740
+            ],
+            "protected_cells": 319,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "0b4e9676f652b9d73e188043b87cb20afca9f8acd705da6315df5cdb9e1ac75f",
+          "projection_sha": "3d7f56f714474a8ecf97773c084b68da483649ea36eca376061aadf7d5c0f337",
+          "radiation": {
+            "export_J": 153891.12362550298,
+            "grain_J": 309150.0,
+            "grain_added_J": 52200.0,
+            "incident_J": 1944000.0,
+            "intercepted_cells": 580,
+            "max_grain_K": 516.0,
+            "max_roi_K": 302.07953251191475,
+            "residual_max_J": 4.656612873077393e-10,
+            "rest_J": 1167998.7401893265,
+            "roi_J": 312960.13618517027
+          },
+          "ray_sha": "840ffe964d87e4552a61bdda70f0c0fcc2c9ea55da159e757c3bd67e4452019c",
+          "soil_sha": "bdfc60b5487be51fc6f01484efa55d3b0e2067eef943df2f99a5def19f6632b5",
+          "steps": 7344,
+          "trace_sha": "231dafcf224e37a18ec8ebbd5860343bd12f6085265c9196404c6fb0fa962e43",
+          "transport": [
+            {
+              "deposited_J": 259860.15433618196,
+              "export_J": 15038.403915238574,
+              "outgoing_J": 1052260.4477485518,
+              "removed_J": 274898.5582514206,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 211758.98097640605,
+              "export_J": 11452.408780766813,
+              "outgoing_J": 837968.2506556688,
+              "removed_J": 223211.38975717287,
+              "residual_J": -2.3283064365386963e-10
+            },
+            {
+              "deposited_J": 171085.75646796296,
+              "export_J": 9997.993299558535,
+              "outgoing_J": 717610.5816761078,
+              "removed_J": 181083.74976752148,
+              "residual_J": -2.3283064365386963e-10
+            }
+          ]
+        },
+        {
+          "epoch": 6,
+          "flux_sha": "ef53cd87bf6966b4df29a214c0e69af9c2bd67989f033ecf7844a9c86ada871c",
+          "observation": {
+            "connected_cells": 196,
+            "direction_cells": [
+              588,
+              770,
+              679,
+              733,
+              742
+            ],
+            "protected_cells": 323,
+            "terrain_hits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "owner_sha": "69c09bd42d46170742e4b3176e725aabd6eb200d9bbd309899bbb5f4348c1b91",
+          "projection_sha": "477a7f144f42e3e631c3b7d79178121505d589358524ace2556bb375e79ef594",
+          "radiation": {
+            "export_J": 191454.15007167662,
+            "grain_J": 361440.0,
+            "grain_added_J": 52290.0,
+            "incident_J": 2268000.0,
+            "intercepted_cells": 581,
+            "max_grain_K": 552.0,
+            "max_roi_K": 302.7610876923294,
+            "residual_max_J": 0.0,
+            "rest_J": 1404684.12031702,
+            "roi_J": 310421.7296113035
+          },
+          "ray_sha": "069667035bd98998b74ee48339d88411ae7642603643684c7a79128b9a893576",
+          "soil_sha": "58a9ad3a423e23348321c2118949aad1e64b1df234042098f0460d76ee005676",
+          "steps": 8064,
+          "trace_sha": "1aa3202166413efed810c2577352feea9e580911932bb871d3fc2ad47a62a08b",
+          "transport": [
+            {
+              "deposited_J": 267718.0603190637,
+              "export_J": 14961.701553912097,
+              "outgoing_J": 1046327.2220526115,
+              "removed_J": 282679.76187297585,
+              "residual_J": 2.3283064365386963e-10
+            },
+            {
+              "deposited_J": 216540.05838468604,
+              "export_J": 11897.697967383367,
+              "outgoing_J": 865607.8438526532,
+              "removed_J": 228437.75635206944,
+              "residual_J": 0.0
+            },
+            {
+              "deposited_J": 173815.31485695796,
+              "export_J": 10703.62692487817,
+              "outgoing_J": 731618.9528916419,
+              "removed_J": 184518.94178183615,
+              "residual_J": 2.3283064365386963e-10
+            }
+          ]
+        }
+      ],
+      "formation_steps": 3744,
+      "history": [
+        "bd95498ea1365b46e80c8e266d095323166cd2d284e280522d46091ea98511ae",
+        "0a8c0c046b948db256ea8f32ccbe6e3430dcc5ac1be6bfc2845dea20a5ab55f1",
+        "8d459a63901257c469a0ee64c07a240b97eb3d646c0a2f9fe321ace3f7327ec6",
+        "d413d98b9d56cc637e5bdadf15cd34e46a1b8e7cbae90915a46bd4a9c00653bb",
+        "62e2124b1d949cb81b2c863938aa1666fc9f38f657c505e815869a6eca36380b",
+        "231dafcf224e37a18ec8ebbd5860343bd12f6085265c9196404c6fb0fa962e43",
+        "1aa3202166413efed810c2577352feea9e580911932bb871d3fc2ad47a62a08b"
+      ],
+      "new_bullet_steps": 2160,
+      "new_soil_steps": 9,
+      "new_thermal_steps": 18,
+      "peak_rss_kib": 230412,
+      "requests": [
+        {
+          "K": 0.1,
+          "files": {
+            "flux.npz": "a260958cff7b82e3c10292a639587cd4ec0298e6f2e06cb351bd8bc397fd0b92",
+            "soil.nc": "a04c8f46fec24b2c78c77d10c724185d2642ed6d145f9a2c7ca2ff79a97958b0"
+          },
+          "from": 10,
+          "input_sha": "26b52e93f104e108d4ece95987941250c941062ed1bb5be1fe212ae106a1a212",
+          "output_sha": "7133f5ad47d55c63cb48e7f8d5f1b88a98f91dbeb42451ba18b647f7ffe5640a",
+          "seed": 8128,
+          "steps": [
+            {
+              "boundary_export_kg": 1834750.0021723171,
+              "deposition_kg": 24707573.296564013,
+              "erosion_kg": 26542323.298736326,
+              "export_kg": 1834750.0021723171,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.80168785341084e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 4.656612873077393e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 10
+            },
+            {
+              "boundary_export_kg": 1738817.631645405,
+              "deposition_kg": 23477851.284019217,
+              "erosion_kg": 25216668.91566462,
+              "export_kg": 1738817.631645405,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.219611244276166e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.093170329928398e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 4.656612873077393e-10,
+              "step": 11
+            },
+            {
+              "boundary_export_kg": 1691431.9071170336,
+              "deposition_kg": 22276528.75817889,
+              "erosion_kg": 23967960.66529592,
+              "export_kg": 1691431.9071170336,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.8198777474462986e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 4.94765117764473e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 4.656612873077393e-10,
+              "step": 12
+            }
+          ],
+          "to": 12
+        },
+        {
+          "K": 0.1,
+          "files": {
+            "flux.npz": "fc5a6918479e69250f1fc01b8fec9fb59b57d65d2eafb9522bbbd435e10b1ac9",
+            "soil.nc": "ecb06fe63003ece1563acf1339ad3e60ada995fc0385c7c77cd83cf64c69fde9"
+          },
+          "from": 13,
+          "input_sha": "7133f5ad47d55c63cb48e7f8d5f1b88a98f91dbeb42451ba18b647f7ffe5640a",
+          "output_sha": "bdfc60b5487be51fc6f01484efa55d3b0e2067eef943df2f99a5def19f6632b5",
+          "seed": 8128,
+          "steps": [
+            {
+              "boundary_export_kg": 1654178.7204025248,
+              "deposition_kg": 21146792.265353158,
+              "erosion_kg": 22800970.985755682,
+              "export_kg": 1654178.7204025248,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.346940502524376e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.820766091346741e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 13
+            },
+            {
+              "boundary_export_kg": 1599370.0557712526,
+              "deposition_kg": 20113080.192184296,
+              "erosion_kg": 21712450.247955553,
+              "export_kg": 1599370.0557712526,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 4.783942131325603e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.748006515204906e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 14
+            },
+            {
+              "boundary_export_kg": 1551311.2383212217,
+              "deposition_kg": 19132610.818863846,
+              "erosion_kg": 20683922.05718507,
+              "export_kg": 1551311.2383212217,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 3.583409124985337e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 7.275957614183426e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 4.656612873077393e-10,
+              "step": 15
+            }
+          ],
+          "to": 15
+        },
+        {
+          "K": 0.1,
+          "files": {
+            "flux.npz": "9d749ba8ebea2ad99a4d5bacc8eba2e67842d1eee3559452900b28bb4e1e53c6",
+            "soil.nc": "1b29beaccc8263a0bd63920958084ce2cf73d715ee4dda068d506dc18a271331"
+          },
+          "from": 16,
+          "input_sha": "bdfc60b5487be51fc6f01484efa55d3b0e2067eef943df2f99a5def19f6632b5",
+          "output_sha": "58a9ad3a423e23348321c2118949aad1e64b1df234042098f0460d76ee005676",
+          "seed": 8128,
+          "steps": [
+            {
+              "boundary_export_kg": 1570036.843219345,
+              "deposition_kg": 18149435.712842066,
+              "erosion_kg": 19719472.55606141,
+              "export_kg": 1570036.843219345,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 2.6921043172478676e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 5.675246939063072e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 16
+            },
+            {
+              "boundary_export_kg": 1493108.0788181203,
+              "deposition_kg": 17326774.59021472,
+              "erosion_kg": 18819882.669032842,
+              "export_kg": 1493108.0788181203,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 2.5283952709287405e-10,
+              "global_residual_kg": -1.1920928955078125e-07,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 6.111804395914078e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 2.3283064365386963e-10,
+              "step": 17
+            },
+            {
+              "boundary_export_kg": 1495277.9476681668,
+              "deposition_kg": 16483504.644113006,
+              "erosion_kg": 17978782.591781177,
+              "export_kg": 1495277.9476681668,
+              "export_residual_kg": 0.0,
+              "flow_abs_max_kg": 4.765752237290144e-10,
+              "global_residual_kg": 0.0,
+              "inactive_out_kg": 0.0,
+              "mass_abs_max_kg": 6.111804395914078e-10,
+              "max_erosion_minus_stock_kg": 0.0,
+              "route_abs_max_kg": 4.656612873077393e-10,
+              "step": 18
+            }
+          ],
+          "to": 18
+        }
+      ],
+      "wall_seconds": 15.34213830600001
+    }
+  },
+  "experiment": "P1-C.2b-consumer",
+  "failed_preregistered_gates": [],
+  "outputs": {
+    "7321_0.0/epoch_4.nc": "18e6410aac2dd7d50e00fc044dfc0eeb1d288e7f21b3ab99229bb56f9472626b",
+    "7321_0.0/epoch_5.nc": "11b4013d011ba2fca4e1e7b7193f9608e06afe6e5dab289f31bd718258dc719d",
+    "7321_0.0/epoch_6.nc": "6081e766b3e45639909ea7bd3621e8aeab4667e142a1ce3d9086080805b65cf7",
+    "7321_0.0/flux_4.npz": "bf4d6d9ba248789beb6fd5e77c004e9e6ac2e692fc5990441dae44ecaf3857da",
+    "7321_0.0/flux_5.npz": "8db829b2af36e4fd233f74a15c2766f2bc0ab6540b08b7cd6a91a78865b23f64",
+    "7321_0.0/flux_6.npz": "d6f9f632500fed3cf9af0d1e82822170f8d7bee95e60912ef634485a9236972b",
+    "7321_0.0/ray_4.npz": "12acec03f84d9e1ccd38d65315354cf20099e04e6ff2413ba00cfaa6858f34b0",
+    "7321_0.0/ray_5.npz": "c17f0a08137100566c64904dcf8f89fbc260250b4a7b9facbc64d92fcd36d765",
+    "7321_0.0/ray_6.npz": "0bf98a8fb895bd0aefee92eed7eb02dcbfec1c238037dafdefcd271c9ab86c7c",
+    "7321_0.1/epoch_4.nc": "9c6cb3b0247f9059b33784dbb2546b6c50b9fed598bc80811ac538ced621c37d",
+    "7321_0.1/epoch_5.nc": "c10aea5ed765ea5510bc160ee7a6c2bc4913ab4ae47d27775869a5b157bc806c",
+    "7321_0.1/epoch_6.nc": "ca09a4fb77a2b6b9fe2ac60db62c20fdb998b991806a9496cb861379ed2ba24c",
+    "7321_0.1/flux_4.npz": "162dbc10bc0c98a563374128c109cd07f6adb239a1357bae08cfc12f2a01cd89",
+    "7321_0.1/flux_5.npz": "80a3525487c05473d0860dcc655921d0961b0f009165a9d870d0edb69d8e5130",
+    "7321_0.1/flux_6.npz": "86b8b9600663a3aae52231392abb9fd894c5b3b0c1ebadf0d2818cbdd2a7d535",
+    "7321_0.1/ray_4.npz": "fc0b8e6f7f15c6a575105e0b8121a147a31ff1a27b2b4eacd6da69a11eec41b0",
+    "7321_0.1/ray_5.npz": "ed0587cbaf34d9ee301edd6879c6ed284de4e717c41fe4b168495d79c0f5224d",
+    "7321_0.1/ray_6.npz": "934971eadd70db8ac3672e06d45c29a86fc0de06faa58a86004cff169e270af9",
+    "8128_0.0/epoch_4.nc": "be045969fbf0945a8f72ba8e029af0388103b490b5faa61214389ad9f63aa7a9",
+    "8128_0.0/epoch_5.nc": "037f6671b9fea15d94fe63ee34d7d01193479192da61ba7db48105562bfbbc6d",
+    "8128_0.0/epoch_6.nc": "6b7c8e456c79d7517f49fc334cfc7d8fefc53ef482ce16b42f5659a933fe8b88",
+    "8128_0.0/flux_4.npz": "9bc04973c1d27c796c57ecb58f7ad688ae1ae663cc1e596a6e0c0327ee78f3ec",
+    "8128_0.0/flux_5.npz": "c4c527ea2ab9416ec4d3914318fef011e422442218a18293809928b762977439",
+    "8128_0.0/flux_6.npz": "e270855bb46d1c102c01270013423fc3e0c15d0524f2ac5f1004fdc64c3cec57",
+    "8128_0.0/ray_4.npz": "7082bfd51c048e4662f8974125611769759553fae48d1df7f743c468e51a0737",
+    "8128_0.0/ray_5.npz": "04a477dc26070c417ec5d142c77d941b414eb02b9b40ce3042961babc7a62825",
+    "8128_0.0/ray_6.npz": "59f6d5efe530f938976b52188107840f708b09b679939a342760b7b342e883a9",
+    "8128_0.1/epoch_4.nc": "c8d68d9590bb106fdee73995fecc9bca4adc8ef1b560f1d0556fd20f97a9e1a2",
+    "8128_0.1/epoch_5.nc": "edf554df4cbadd7e416a77ba2562ccb64abaa15e7367f9a2f1987ad345ccccdc",
+    "8128_0.1/epoch_6.nc": "31798eafd6720d1176dad728dd1a4b0464b43c1dced408e2ccd424d2ccfe861f",
+    "8128_0.1/flux_4.npz": "a260958cff7b82e3c10292a639587cd4ec0298e6f2e06cb351bd8bc397fd0b92",
+    "8128_0.1/flux_5.npz": "fc5a6918479e69250f1fc01b8fec9fb59b57d65d2eafb9522bbbd435e10b1ac9",
+    "8128_0.1/flux_6.npz": "9d749ba8ebea2ad99a4d5bacc8eba2e67842d1eee3559452900b28bb4e1e53c6",
+    "8128_0.1/ray_4.npz": "3a984980e4846ee9d8813ddb1c558d250c23fb0e9b5c795ea8216768fa2cb6f9",
+    "8128_0.1/ray_5.npz": "6f6ff7614514e1be7467a74b21b92d8fe1aa4ab563bccb1aea7631e7c3e4464f",
+    "8128_0.1/ray_6.npz": "8eecaffde7d240b3be940ed4f5e6ed8750b9d3607fef853e9a32b24cf6175077"
+  },
+  "runtime": {
+    "bullet": {
+      "baseline": [
+        "X86_V2"
+      ],
+      "dispatch": [
+        "X86_V3",
+        "X86_V4",
+        "AVX512_ICL",
+        "AVX512_SPR"
+      ],
+      "enabled": {
+        "ASIMD": false,
+        "ASIMDDP": false,
+        "ASIMDFHM": false,
+        "ASIMDHP": false,
+        "AVX": true,
+        "AVX2": true,
+        "AVX5124FMAPS": false,
+        "AVX5124VNNIW": false,
+        "AVX512BF16": false,
+        "AVX512BITALG": false,
+        "AVX512BW": false,
+        "AVX512CD": false,
+        "AVX512DQ": false,
+        "AVX512ER": false,
+        "AVX512F": false,
+        "AVX512FP16": false,
+        "AVX512IFMA": false,
+        "AVX512PF": false,
+        "AVX512VBMI": false,
+        "AVX512VBMI2": false,
+        "AVX512VL": false,
+        "AVX512VNNI": false,
+        "AVX512VPOPCNTDQ": false,
+        "AVX512_CLX": false,
+        "AVX512_CNL": false,
+        "AVX512_ICL": false,
+        "AVX512_KNL": false,
+        "AVX512_KNM": false,
+        "AVX512_SKX": false,
+        "AVX512_SPR": false,
+        "BMI": true,
+        "BMI2": true,
+        "CX16": true,
+        "F16C": true,
+        "FMA3": true,
+        "FMA4": false,
+        "FPHP": false,
+        "GFNI": false,
+        "LAHF": true,
+        "LSX": false,
+        "LZCNT": true,
+        "MMX": true,
+        "MOVBE": true,
+        "NEON": false,
+        "NEON_FP16": false,
+        "NEON_VFPV4": false,
+        "POPCNT": true,
+        "RVV": false,
+        "SSE": true,
+        "SSE2": true,
+        "SSE3": true,
+        "SSE41": true,
+        "SSE42": true,
+        "SSSE3": true,
+        "SVE": false,
+        "VAES": true,
+        "VPCLMULQDQ": true,
+        "VSX": false,
+        "VSX2": false,
+        "VSX3": false,
+        "VSX4": false,
+        "VX": false,
+        "VXE": false,
+        "VXE2": false,
+        "X86_V2": true,
+        "X86_V3": false,
+        "X86_V4": false,
+        "XOP": false
+      },
+      "numpy": "2.4.6"
+    },
+    "landlab": {
+      "baseline": [
+        "X86_V2"
+      ],
+      "dispatch": [
+        "X86_V3",
+        "X86_V4",
+        "AVX512_ICL",
+        "AVX512_SPR"
+      ],
+      "enabled": {
+        "ASIMD": false,
+        "ASIMDDP": false,
+        "ASIMDFHM": false,
+        "ASIMDHP": false,
+        "AVX": true,
+        "AVX2": true,
+        "AVX5124FMAPS": false,
+        "AVX5124VNNIW": false,
+        "AVX512BF16": false,
+        "AVX512BITALG": false,
+        "AVX512BW": false,
+        "AVX512CD": false,
+        "AVX512DQ": false,
+        "AVX512ER": false,
+        "AVX512F": false,
+        "AVX512FP16": false,
+        "AVX512IFMA": false,
+        "AVX512PF": false,
+        "AVX512VBMI": false,
+        "AVX512VBMI2": false,
+        "AVX512VL": false,
+        "AVX512VNNI": false,
+        "AVX512VPOPCNTDQ": false,
+        "AVX512_CLX": false,
+        "AVX512_CNL": false,
+        "AVX512_ICL": false,
+        "AVX512_KNL": false,
+        "AVX512_KNM": false,
+        "AVX512_SKX": false,
+        "AVX512_SPR": false,
+        "BMI": true,
+        "BMI2": true,
+        "CX16": true,
+        "F16C": true,
+        "FMA3": true,
+        "FMA4": false,
+        "FPHP": false,
+        "GFNI": false,
+        "LAHF": true,
+        "LSX": false,
+        "LZCNT": true,
+        "MMX": true,
+        "MOVBE": true,
+        "NEON": false,
+        "NEON_FP16": false,
+        "NEON_VFPV4": false,
+        "POPCNT": true,
+        "RVV": false,
+        "SSE": true,
+        "SSE2": true,
+        "SSE3": true,
+        "SSE41": true,
+        "SSE42": true,
+        "SSSE3": true,
+        "SVE": false,
+        "VAES": true,
+        "VPCLMULQDQ": true,
+        "VSX": false,
+        "VSX2": false,
+        "VSX3": false,
+        "VSX4": false,
+        "VX": false,
+        "VXE": false,
+        "VXE2": false,
+        "X86_V2": true,
+        "X86_V3": false,
+        "X86_V4": false,
+        "XOP": false
+      },
+      "numpy": "2.5.5"
+    },
+    "python": "3.11.18"
+  }
+}
