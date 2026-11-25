@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
-  "stage": "P4",
-  "current_task": "P4.2",
-  "next_action": "Leer CI 45628538282 y WORLD_EVAP_JSON/RESTART/COMPARE. Verificar 3×240 pasos, fixture, balances material/energía, vapor y latente/sensible, controles no_evap/dark, bifurcaciones temperatura y flujo, restart120. Archivar antes de dictamen P4. Si falla, conservar y clasificar sin alterar gates. P4 atmósfera externa y pulso nominal, no ciclo atmosférico cerrado. Después auditar P4 y P5 según PLAN.",
-  "scientific_next": "P4.2",
+  "status": "ready",
+  "stage": "P5",
+  "current_task": "P5.1",
+  "next_action": "Leer P4_DICTAMEN, ADR-WL-0001, H5/H6/H15/H16, contratos de owner y RBD. Comparar alternativas existentes para diferenciación material y elegir unidad causal mínima de P5, prerregistrar antes del código; conservar P3/P4 y balances; no repetir bancos aislados ni crear motor. P6 estabilidad, P7 E7/E8.",
+  "scientific_next": "P5.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -20,7 +20,8 @@
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
-    "P4": "P41_passed_P42_live_evap_pending"
+    "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
+    "P5": "not_started"
   },
   "blockers": [],
   "evidence_refs": [
@@ -98,13 +99,16 @@
     "evidence/P4/P41-failed/archive_manifest.json",
     "research/P4/P4.1_RESULTADO.md",
     "evidence/P4/P41/archive_manifest.json",
-    "research/P4/P4.2_PROTOCOLO_EVAPORACION.md"
+    "research/P4/P4.2_PROTOCOLO_EVAPORACION.md",
+    "research/P4/P4.2_RESULTADO.md",
+    "evidence/P4/P42/archive_manifest.json",
+    "research/P4/P4_DICTAMEN.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "46d55c7601e4bbeb33e5741fd124a15cd884e9f0",
+  "last_confirmed_non_state_write": "3f17a60630d5e4b5b2a2fd758be4795f6b139e7e",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -127,11 +131,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25",
-  "active_run": {
-    "id": 45628538282,
-    "unit": "P4.2",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45628538282",
-    "sha": "46d55c7601e4bbeb33e5741fd124a15cd884e9f0"
-  }
+  "updated_at": "2026-11-25"
 }
