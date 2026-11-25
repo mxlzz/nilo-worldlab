@@ -1,0 +1,307 @@
+﻿2026-11-25T10:30:11.5210430Z Current runner version: '2.338.2'
+2026-11-25T10:30:11.5229147Z ##[group]Runner Image Provisioner
+2026-11-25T10:30:11.5229732Z Hosted Compute Agent
+2026-11-25T10:30:11.5230244Z Version: 20261111.635
+2026-11-25T10:30:11.5230649Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-25T10:30:11.5231132Z Build Date: 2026-11-11T01:49:01Z
+2026-11-25T10:30:11.5231641Z Worker ID: {23d10154-ec39-4cca-96b3-c8421c89371c}
+2026-11-25T10:30:11.5232063Z Region: centralus
+2026-11-25T10:30:11.5232455Z Cloud: Azure
+2026-11-25T10:30:11.5232791Z ##[endgroup]
+2026-11-25T10:30:11.5233604Z ##[group]Operating System
+2026-11-25T10:30:11.5233992Z Ubuntu
+2026-11-25T10:30:11.5234356Z 24.04.5
+2026-11-25T10:30:11.5234737Z LTS
+2026-11-25T10:30:11.5235063Z ##[endgroup]
+2026-11-25T10:30:11.5235424Z ##[group]Runner Image
+2026-11-25T10:30:11.5236130Z Image: ubuntu-24.04
+2026-11-25T10:30:11.5236484Z Version: 20261116.376.1
+2026-11-25T10:30:11.5237317Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.376/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-25T10:30:11.5238245Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.376
+2026-11-25T10:30:11.5238860Z ##[endgroup]
+2026-11-25T10:30:11.5239912Z ##[group]GITHUB_TOKEN Permissions
+2026-11-25T10:30:11.5241167Z Contents: read
+2026-11-25T10:30:11.5241520Z Metadata: read
+2026-11-25T10:30:11.5241920Z ##[endgroup]
+2026-11-25T10:30:11.5243626Z Secret source: Actions
+2026-11-25T10:30:11.5244262Z Cache mode: write
+2026-11-25T10:30:11.5244808Z Prepare workflow directory
+2026-11-25T10:30:11.5518879Z Prepare all required actions
+2026-11-25T10:30:11.5550721Z Getting action download info
+2026-11-25T10:30:11.8674394Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-25T10:30:11.9848743Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-25T10:30:12.0802561Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-25T10:30:12.2713036Z Complete job name: calibration
+2026-11-25T10:30:12.3238133Z ##[group]Run actions/checkout@v4
+2026-11-25T10:30:12.3238606Z with:
+2026-11-25T10:30:12.3238854Z   persist-credentials: false
+2026-11-25T10:30:12.3239152Z   sparse-checkout-cone-mode: false
+2026-11-25T10:30:12.3239631Z   sparse-checkout: /experiments/e7_force_instrument.py
+/inherited/WORLD_RESEARCH/experiments/
+
+2026-11-25T10:30:12.3240126Z   repository: mxlzz/nilo-worldlab
+2026-11-25T10:30:12.3242158Z   token: ***
+2026-11-25T10:30:12.3242390Z   ssh-strict: true
+2026-11-25T10:30:12.3242660Z   ssh-user: git
+2026-11-25T10:30:12.3242892Z   clean: true
+2026-11-25T10:30:12.3243119Z   fetch-depth: 1
+2026-11-25T10:30:12.3243361Z   fetch-tags: false
+2026-11-25T10:30:12.3243606Z   show-progress: true
+2026-11-25T10:30:12.3243856Z   lfs: false
+2026-11-25T10:30:12.3244083Z   submodules: false
+2026-11-25T10:30:12.3244327Z   set-safe-directory: true
+2026-11-25T10:30:12.3244609Z   allow-unsafe-pr-checkout: false
+2026-11-25T10:30:12.3244988Z env:
+2026-11-25T10:30:12.3245308Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:30:12.3245849Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:30:12.3246108Z   OMP_NUM_THREADS: 1
+2026-11-25T10:30:12.3246353Z   MKL_NUM_THREADS: 1
+2026-11-25T10:30:12.3246673Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:30:12.3247033Z ##[endgroup]
+2026-11-25T10:30:12.5175360Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-25T10:30:12.5177017Z ##[group]Getting Git version info
+2026-11-25T10:30:12.5177437Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T10:30:12.5178026Z [command]/usr/bin/git version
+2026-11-25T10:30:12.5247308Z git version 2.56.1
+2026-11-25T10:30:12.5268818Z ##[endgroup]
+2026-11-25T10:30:12.5274682Z Temporarily overriding HOME='/home/runner/work/_temp/bfd76af4-98f7-46fc-b1e1-aa437c086804' before making global git config changes
+2026-11-25T10:30:12.5276019Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T10:30:12.5277994Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T10:30:12.5332408Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T10:30:12.5335305Z ##[group]Initializing the repository
+2026-11-25T10:30:12.5338654Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T10:30:12.5425420Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-25T10:30:12.5426553Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-25T10:30:12.5427407Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-25T10:30:12.5428064Z hint: call:
+2026-11-25T10:30:12.5428410Z hint:
+2026-11-25T10:30:12.5428870Z hint: 	git config --global init.defaultBranch <name>
+2026-11-25T10:30:12.5429411Z hint:
+2026-11-25T10:30:12.5429909Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-25T10:30:12.5430803Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-25T10:30:12.5431498Z hint:
+2026-11-25T10:30:12.5431852Z hint: 	git branch -m <name>
+2026-11-25T10:30:12.5432264Z hint:
+2026-11-25T10:30:12.5432810Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-25T10:30:12.5433759Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-25T10:30:12.5438481Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-25T10:30:12.5488544Z ##[endgroup]
+2026-11-25T10:30:12.5489319Z ##[group]Disabling automatic garbage collection
+2026-11-25T10:30:12.5492955Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-25T10:30:12.5531947Z ##[endgroup]
+2026-11-25T10:30:12.5532653Z ##[group]Setting up auth
+2026-11-25T10:30:12.5539587Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T10:30:12.5586551Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T10:30:12.5960296Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T10:30:12.6004426Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T10:30:12.6211178Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T10:30:12.6252373Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T10:30:12.6456016Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-25T10:30:12.6504305Z ##[endgroup]
+2026-11-25T10:30:12.6505141Z ##[group]Fetching the repository
+2026-11-25T10:30:12.6514462Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +c36500138e984faa1258ed19da106ac19d235367:refs/remotes/origin/main
+2026-11-25T10:30:12.9815325Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-25T10:30:12.9816790Z  * [new ref]         c36500138e984faa1258ed19da106ac19d235367 -> origin/main
+2026-11-25T10:30:12.9819197Z ##[endgroup]
+2026-11-25T10:30:12.9819963Z ##[group]Determining the checkout info
+2026-11-25T10:30:12.9820895Z ##[endgroup]
+2026-11-25T10:30:12.9822752Z ##[group]Setting up sparse checkout
+2026-11-25T10:30:12.9836419Z [command]/usr/bin/git config core.sparseCheckout true
+2026-11-25T10:30:12.9871270Z [command]/usr/bin/git rev-parse --git-path info/sparse-checkout
+2026-11-25T10:30:12.9908168Z .git/info/sparse-checkout
+2026-11-25T10:30:12.9923960Z ##[endgroup]
+2026-11-25T10:30:12.9924811Z ##[group]Checking out the ref
+2026-11-25T10:30:12.9928294Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-25T10:30:13.4004470Z Switched to a new branch 'main'
+2026-11-25T10:30:13.4006086Z branch 'main' set up to track 'origin/main'.
+2026-11-25T10:30:13.4011717Z ##[endgroup]
+2026-11-25T10:30:13.4058168Z [command]/usr/bin/git log -1 --format=%H
+2026-11-25T10:30:13.4089087Z c36500138e984faa1258ed19da106ac19d235367
+2026-11-25T10:30:13.4097393Z ##[group]Removing auth
+2026-11-25T10:30:13.4099671Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T10:30:13.4133975Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T10:30:13.4335330Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T10:30:13.4367684Z http.https://github.com/.extraheader
+2026-11-25T10:30:13.4374038Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-25T10:30:13.4409528Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T10:30:13.4599912Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T10:30:13.4634034Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T10:30:13.4824217Z ##[endgroup]
+2026-11-25T10:30:13.5090991Z ##[group]Run actions/setup-python@v5
+2026-11-25T10:30:13.5091550Z with:
+2026-11-25T10:30:13.5092053Z   python-version: 3.11.18
+2026-11-25T10:30:13.5092580Z   check-latest: false
+2026-11-25T10:30:13.5094455Z   token: ***
+2026-11-25T10:30:13.5094927Z   update-environment: true
+2026-11-25T10:30:13.5095427Z   allow-prereleases: false
+2026-11-25T10:30:13.5096030Z   freethreaded: false
+2026-11-25T10:30:13.5096492Z env:
+2026-11-25T10:30:13.5097007Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:30:13.5157729Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:30:13.5158294Z   OMP_NUM_THREADS: 1
+2026-11-25T10:30:13.5158831Z   MKL_NUM_THREADS: 1
+2026-11-25T10:30:13.5159441Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:30:13.5160020Z ##[endgroup]
+2026-11-25T10:30:13.6109006Z ##[group]Installed versions
+2026-11-25T10:30:13.6133162Z (node:2218) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T10:30:13.6134432Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T10:30:13.6135353Z Successfully set up CPython (3.11.18)
+2026-11-25T10:30:13.6136646Z ##[endgroup]
+2026-11-25T10:30:13.6329221Z ##[group]Run python -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 pybullet==3.2.7
+2026-11-25T10:30:13.6330669Z [36;1mpython -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 pybullet==3.2.7[0m
+2026-11-25T10:30:13.6331750Z [36;1mpython -m pip freeze[0m
+2026-11-25T10:30:13.6332519Z [36;1mlscpu[0m
+2026-11-25T10:30:13.6333310Z [36;1mpython experiments/e7_force_instrument.py e7-force[0m
+2026-11-25T10:30:13.6370430Z shell: /usr/bin/bash -e {0}
+2026-11-25T10:30:13.6371138Z env:
+2026-11-25T10:30:13.6371691Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:30:13.6372391Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:30:13.6372944Z   OMP_NUM_THREADS: 1
+2026-11-25T10:30:13.6373423Z   MKL_NUM_THREADS: 1
+2026-11-25T10:30:13.6374004Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:30:13.6374811Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:13.6375785Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T10:30:13.6376746Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:13.6377770Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:13.6378395Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:13.6379024Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T10:30:13.6379588Z ##[endgroup]
+2026-11-25T10:30:14.4881202Z Collecting numpy==2.4.6
+2026-11-25T10:30:14.5700783Z   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-25T10:30:14.6600765Z Collecting scipy==1.17.1
+2026-11-25T10:30:14.6763120Z   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-25T10:30:14.7239351Z Collecting xarray==2026.9.0
+2026-11-25T10:30:14.7400993Z   Downloading xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-25T10:30:14.7701386Z Collecting pybullet==3.2.7
+2026-11-25T10:30:14.7860806Z   Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.8 kB)
+2026-11-25T10:30:14.8047195Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-25T10:30:14.8204695Z   Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T10:30:14.9087283Z Collecting pandas>=2.2 (from xarray==2026.9.0)
+2026-11-25T10:30:14.9246149Z   Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-25T10:30:14.9602096Z Collecting python-dateutil>=2.9.0 (from pandas>=2.2->xarray==2026.9.0)
+2026-11-25T10:30:14.9757819Z   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-25T10:30:14.9936248Z Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.2->xarray==2026.9.0)
+2026-11-25T10:30:15.0094421Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-25T10:30:15.0279594Z Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-11-25T10:30:15.2137766Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 101.6 MB/s  0:00:00
+2026-11-25T10:30:15.2296593Z Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-25T10:30:15.5337515Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 116.2 MB/s  0:00:00
+2026-11-25T10:30:15.5496810Z Downloading xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-25T10:30:15.5602037Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 133.2 MB/s  0:00:00
+2026-11-25T10:30:15.5765763Z Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (103.2 MB)
+2026-11-25T10:30:16.4047918Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 MB 124.6 MB/s  0:00:00
+2026-11-25T10:30:16.4207651Z Downloading packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-25T10:30:16.4382734Z Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+2026-11-25T10:30:16.5216861Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 148.4 MB/s  0:00:00
+2026-11-25T10:30:16.5373750Z Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-25T10:30:16.5550224Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-25T10:30:16.7566118Z Installing collected packages: pybullet, tzdata, packaging, numpy, scipy, python-dateutil, pandas, xarray
+2026-11-25T10:30:25.7825129Z 
+2026-11-25T10:30:25.7846905Z Successfully installed numpy-2.4.6 packaging-26.4 pandas-3.1.1 pybullet-3.2.7 python-dateutil-4.0.0 scipy-1.17.1 tzdata-2026.6 xarray-2026.9.0
+2026-11-25T10:30:26.0053569Z numpy==2.4.6
+2026-11-25T10:30:26.0054258Z packaging==26.4
+2026-11-25T10:30:26.0054446Z pandas==3.1.1
+2026-11-25T10:30:26.0054659Z pybullet==3.2.7
+2026-11-25T10:30:26.0054867Z python-dateutil==4.0.0
+2026-11-25T10:30:26.0055071Z scipy==1.17.1
+2026-11-25T10:30:26.0055243Z tzdata==2026.6
+2026-11-25T10:30:26.0055443Z xarray==2026.9.0
+2026-11-25T10:30:26.0394633Z Architecture:                            x86_64
+2026-11-25T10:30:26.0395094Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-25T10:30:26.0395422Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-25T10:30:26.0396567Z Byte Order:                              Little Endian
+2026-11-25T10:30:26.0396936Z CPU(s):                                  4
+2026-11-25T10:30:26.0397173Z On-line CPU(s) list:                     0-3
+2026-11-25T10:30:26.0397431Z Vendor ID:                               AuthenticAMD
+2026-11-25T10:30:26.0397674Z Model name:                              AMD EPYC 9V45 96-Core Processor
+2026-11-25T10:30:26.0397872Z CPU family:                              26
+2026-11-25T10:30:26.0398026Z Model:                                   2
+2026-11-25T10:30:26.0398179Z Thread(s) per core:                      2
+2026-11-25T10:30:26.0398329Z Core(s) per socket:                      2
+2026-11-25T10:30:26.0398572Z Socket(s):                               1
+2026-11-25T10:30:26.0398804Z Stepping:                                1
+2026-11-25T10:30:26.0399042Z BogoMIPS:                                5192.24
+2026-11-25T10:30:26.0400797Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx_vnni avx512_bf16 clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect
+2026-11-25T10:30:26.0402494Z Virtualization:                          AMD-V
+2026-11-25T10:30:26.0402676Z Hypervisor vendor:                       Microsoft
+2026-11-25T10:30:26.0402855Z Virtualization type:                     full
+2026-11-25T10:30:26.0403036Z L1d cache:                               96 KiB (2 instances)
+2026-11-25T10:30:26.0403233Z L1i cache:                               64 KiB (2 instances)
+2026-11-25T10:30:26.0403422Z L2 cache:                                2 MiB (2 instances)
+2026-11-25T10:30:26.0403610Z L3 cache:                                32 MiB (1 instance)
+2026-11-25T10:30:26.0403783Z NUMA node(s):                            1
+2026-11-25T10:30:26.0403938Z NUMA node0 CPU(s):                       0-3
+2026-11-25T10:30:26.0404119Z Vulnerability Gather data sampling:      Not affected
+2026-11-25T10:30:26.0404314Z Vulnerability Ghostwrite:                Not affected
+2026-11-25T10:30:26.0404636Z Vulnerability Indirect target selection: Not affected
+2026-11-25T10:30:26.0404824Z Vulnerability Itlb multihit:             Not affected
+2026-11-25T10:30:26.0405005Z Vulnerability L1tf:                      Not affected
+2026-11-25T10:30:26.0405188Z Vulnerability Mds:                       Not affected
+2026-11-25T10:30:26.0405367Z Vulnerability Meltdown:                  Not affected
+2026-11-25T10:30:26.0405696Z Vulnerability Mmio stale data:           Not affected
+2026-11-25T10:30:26.0405959Z Vulnerability Old microcode:             Not affected
+2026-11-25T10:30:26.0406144Z Vulnerability Reg file data sampling:    Not affected
+2026-11-25T10:30:26.0406345Z Vulnerability Retbleed:                  Not affected
+2026-11-25T10:30:26.0406568Z Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+2026-11-25T10:30:26.0406799Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-25T10:30:26.0407071Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-25T10:30:26.0407480Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+2026-11-25T10:30:26.0407897Z Vulnerability Srbds:                     Not affected
+2026-11-25T10:30:26.0408080Z Vulnerability Tsa:                       Not affected
+2026-11-25T10:30:26.0408262Z Vulnerability Tsx async abort:           Not affected
+2026-11-25T10:30:26.0408446Z Vulnerability Vmscape:                   Not affected
+2026-11-25T10:30:26.0974327Z pybullet build time: Jan 29 2025 23:17:20
+2026-11-25T10:30:26.5494499Z WORLD_FORCE_JSON {"cdf_controls": true, "experiment": "E7.1a", "failed_preregistered_gates": [], "fixtures": {"inclined": {"average_reaction_N": [-6.594760652534118e-09, 0.0, 0.24524999967026273], "by_grain_vertical_N": [0.24524999967026198], "contact_records": 240, "grains": 1, "mean_tangent_N": 0.01224719395248612, "p90_speed": 1.3205823522083871e-05, "relative_residual": 2.6923542999752484e-08, "sha256": "060f568fdf59344fd9573536df323d69f906483cda2c14856d0aaa015459c37a", "weight_N": 0.24525000000000002, "window_steps": 240}, "separated": {"average_reaction_N": [0.0, 0.0, 0.4904999999999982], "by_grain_vertical_N": [0.2452499999999991, 0.2452499999999991], "contact_records": 480, "grains": 2, "mean_tangent_N": 0.0, "p90_speed": 1.5265566588595902e-15, "relative_residual": 3.734695189870557e-15, "sha256": "376481175ab1b03a66f767b77f159684aa5ac15072a214c9d139cc6b3de89244", "weight_N": 0.49050000000000005, "window_steps": 240}, "single": {"average_reaction_N": [0.0, 0.0, 0.2452499999999991], "by_grain_vertical_N": [0.24525], "contact_records": 240, "grains": 1, "mean_tangent_N": 0.0, "p90_speed": 1.5265566588595902e-15, "relative_residual": 3.734695189870557e-15, "sha256": "0c68b9ad0d01ffd583211dcc37ac5ae115185412eb8fe7ae7a0b064bbbb4b159", "weight_N": 0.24525000000000002, "window_steps": 240}, "stacked": {"average_reaction_N": [0.0, 0.0, 0.4904999999999982], "by_grain_vertical_N": [0.4904999999999982, 0.0], "contact_records": 240, "grains": 2, "mean_tangent_N": 0.0, "p90_speed": 2.8935187579293142e-15, "relative_residual": 3.734695189870557e-15, "sha256": "9747f932e996550a6b727c437a4429bb15291f93de2679a02e8860823f2f0637", "weight_N": 0.49050000000000005, "window_steps": 240}}, "outputs": {"inclined.npz": "060f568fdf59344fd9573536df323d69f906483cda2c14856d0aaa015459c37a", "separated.npz": "376481175ab1b03a66f767b77f159684aa5ac15072a214c9d139cc6b3de89244", "single.npz": "0c68b9ad0d01ffd583211dcc37ac5ae115185412eb8fe7ae7a0b064bbbb4b159", "stacked.npz": "9747f932e996550a6b727c437a4429bb15291f93de2679a02e8860823f2f0637"}, "wall_seconds": 0.15092010699999037}
+2026-11-25T10:30:26.6276760Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T10:30:26.6276929Z with:
+2026-11-25T10:30:26.6277049Z   name: e7-force-calibration
+2026-11-25T10:30:26.6277189Z   path: e7-force
+2026-11-25T10:30:26.6277305Z   retention-days: 30
+2026-11-25T10:30:26.6277428Z   if-no-files-found: warn
+2026-11-25T10:30:26.6277559Z   compression-level: 6
+2026-11-25T10:30:26.6277679Z   overwrite: false
+2026-11-25T10:30:26.6277799Z   include-hidden-files: false
+2026-11-25T10:30:26.6277929Z env:
+2026-11-25T10:30:26.6278100Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:30:26.6278298Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:30:26.6278423Z   OMP_NUM_THREADS: 1
+2026-11-25T10:30:26.6278536Z   MKL_NUM_THREADS: 1
+2026-11-25T10:30:26.6278697Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:30:26.6278915Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:26.6279184Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T10:30:26.6279415Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:26.6279621Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:26.6279828Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:30:26.6280035Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T10:30:26.6280210Z ##[endgroup]
+2026-11-25T10:30:26.7428631Z (node:2262) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T10:30:26.7429782Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T10:30:26.7473876Z With the provided path, there will be 5 files uploaded
+2026-11-25T10:30:26.7477162Z Artifact name is valid!
+2026-11-25T10:30:26.7477652Z Root directory input is valid!
+2026-11-25T10:30:27.0568847Z Beginning upload of artifact content to blob storage
+2026-11-25T10:30:27.0744507Z (node:2262) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-25T10:30:27.2398587Z Uploaded bytes 18162
+2026-11-25T10:30:27.2791881Z Finished uploading artifact content to blob storage!
+2026-11-25T10:30:27.2792399Z SHA256 digest of uploaded artifact zip is 52bc1574cd114416a171579a542b35366f1736b3d2fbfbe4855d13044c330b88
+2026-11-25T10:30:27.2793773Z Finalizing artifact upload
+2026-11-25T10:30:27.7659009Z Artifact e7-force-calibration.zip successfully finalized. Artifact ID 15013321366
+2026-11-25T10:30:27.7659530Z Artifact e7-force-calibration has been successfully uploaded! Final size is 18162 bytes. Artifact ID is 15013321366
+2026-11-25T10:30:27.7665036Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45595575928/artifacts/15013321366
+2026-11-25T10:30:27.7838865Z Post job cleanup.
+2026-11-25T10:30:27.8692100Z (node:2274) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T10:30:27.8692736Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T10:30:27.8833064Z Post job cleanup.
+2026-11-25T10:30:27.9493993Z [command]/usr/bin/git version
+2026-11-25T10:30:27.9532949Z git version 2.56.1
+2026-11-25T10:30:27.9560753Z Temporarily overriding HOME='/home/runner/work/_temp/cd55b0ef-eb0a-4acf-a967-d634603f0269' before making global git config changes
+2026-11-25T10:30:27.9561291Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T10:30:27.9565114Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T10:30:27.9605736Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T10:30:27.9642699Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T10:30:27.9897467Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T10:30:27.9936030Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T10:30:28.0163391Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T10:30:28.0201424Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T10:30:28.0540332Z Cleaning up orphan processes
+2026-11-25T10:30:28.0805042Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

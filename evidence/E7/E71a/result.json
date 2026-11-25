@@ -1,0 +1,88 @@
+{
+  "cdf_controls": true,
+  "experiment": "E7.1a",
+  "failed_preregistered_gates": [],
+  "fixtures": {
+    "inclined": {
+      "average_reaction_N": [
+        -6.594760652534118e-09,
+        0.0,
+        0.24524999967026273
+      ],
+      "by_grain_vertical_N": [
+        0.24524999967026198
+      ],
+      "contact_records": 240,
+      "grains": 1,
+      "mean_tangent_N": 0.01224719395248612,
+      "p90_speed": 1.3205823522083871e-05,
+      "relative_residual": 2.6923542999752484e-08,
+      "sha256": "060f568fdf59344fd9573536df323d69f906483cda2c14856d0aaa015459c37a",
+      "weight_N": 0.24525000000000002,
+      "window_steps": 240
+    },
+    "separated": {
+      "average_reaction_N": [
+        0.0,
+        0.0,
+        0.4904999999999982
+      ],
+      "by_grain_vertical_N": [
+        0.2452499999999991,
+        0.2452499999999991
+      ],
+      "contact_records": 480,
+      "grains": 2,
+      "mean_tangent_N": 0.0,
+      "p90_speed": 1.5265566588595902e-15,
+      "relative_residual": 3.734695189870557e-15,
+      "sha256": "376481175ab1b03a66f767b77f159684aa5ac15072a214c9d139cc6b3de89244",
+      "weight_N": 0.49050000000000005,
+      "window_steps": 240
+    },
+    "single": {
+      "average_reaction_N": [
+        0.0,
+        0.0,
+        0.2452499999999991
+      ],
+      "by_grain_vertical_N": [
+        0.24525
+      ],
+      "contact_records": 240,
+      "grains": 1,
+      "mean_tangent_N": 0.0,
+      "p90_speed": 1.5265566588595902e-15,
+      "relative_residual": 3.734695189870557e-15,
+      "sha256": "0c68b9ad0d01ffd583211dcc37ac5ae115185412eb8fe7ae7a0b064bbbb4b159",
+      "weight_N": 0.24525000000000002,
+      "window_steps": 240
+    },
+    "stacked": {
+      "average_reaction_N": [
+        0.0,
+        0.0,
+        0.4904999999999982
+      ],
+      "by_grain_vertical_N": [
+        0.4904999999999982,
+        0.0
+      ],
+      "contact_records": 240,
+      "grains": 2,
+      "mean_tangent_N": 0.0,
+      "p90_speed": 2.8935187579293142e-15,
+      "relative_residual": 3.734695189870557e-15,
+      "sha256": "9747f932e996550a6b727c437a4429bb15291f93de2679a02e8860823f2f0637",
+      "weight_N": 0.49050000000000005,
+      "window_steps": 240
+    }
+  },
+  "outputs": {
+    "inclined.npz": "060f568fdf59344fd9573536df323d69f906483cda2c14856d0aaa015459c37a",
+    "separated.npz": "376481175ab1b03a66f767b77f159684aa5ac15072a214c9d139cc6b3de89244",
+    "single.npz": "0c68b9ad0d01ffd583211dcc37ac5ae115185412eb8fe7ae7a0b064bbbb4b159",
+    "stacked.npz": "9747f932e996550a6b727c437a4429bb15291f93de2679a02e8860823f2f0637"
+  },
+  "wall_seconds": 0.15092010699999037
+}
