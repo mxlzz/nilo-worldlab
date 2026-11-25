@@ -140,3 +140,19 @@ Archivo E7.1b verificado, evidencia negativa retenida. Usuario autoriza plan y r
 CI 45605745963 FAILURE, job 139176024762, commit 2233d6b1ddef6ed795998bdb48f9724ff328775e. Cinco owners iniciales serializados/restaurados correctamente. Ningún paso hidráulico ejecutado: todos fallan en Model.__init__, al asignar máscara self.bsign derivada de self.core (subclase de array de status_at_node de Landlab), AttributeError: 'array' object has no attribute 'grid', traceback landlab/grid/decorators.py __setitem__. No es fallo de conservación, estabilidad, solver ni resultado científico. Consumidor y comparación omitidos. Script .169s, job ~33s, artifact 15017074351, 14190 bytes SHA256 ec4173ddfd24930b8fbe09eca06c6502d4fbadcd83db6edafc09d6cf6aa805a8.
 
 Corrección preregistrada antes del retry: geometry devuelve máscara core como ndarray base mediante np.asarray(status_at_node) == NodeStatus.CORE; bsign se calcula a partir de ndarray base, preservando idénticos valores. No modificar escenario, ecuaciones, dt, parámetros, controles, tolerancias ni gates. Retener primer ZIP/log/JSON. Una corrección instrumental; verificar y no pasar P3.2 sin gate P3.1. Autoverificación.
+
+# P3.1 — Agua superficial, almacenamiento finito y restart aprobados
+
+CI 45606950182 SUCCESS job 139180177272 commit 515e851b98d6a7d79bba3fa8369e3dae05124c38. Intel Xeon6975P-C, Python3.13.18, Landlab2.11.0, perfil fijado. Primera CI negativa instrumental antes de física (archivo 45606846131), no se alteraron gates ni escenario. WORLD_WATER_JSON gates vacíos; 5×960 pasos de .25s. 
+| Caso | Lluvia m³ | Export m³ | Superficie final m³ | Subsuelo final m³ | Rechazo capacidad m³ |
+|---|---:|---:|---:|---:|---:|
+| activo | .72 | .7025148901 | 1.6622777744 | 16.3552073355 | 0 |
+| cerrado | .72 | 0 | 2.3632560878 | 16.3567439122 | 0 |
+| K0 | .72 | .7922906800 | 1.9277093200 | 16 | 0 |
+| sin lluvia | 0 | .4604803075 | 1.1928526255 | 16.3466670669 | 0 |
+| saturado | .72 | .7922906800 | 1.9277093200 | 32 | .1503151827 |
+
+Entrada por frontera cero en todos, salida medida directamente por enlace. Inicial superficial 2m³, subsuelo 16m³ (saturado32m³); caso sin lluvia infiltra parte del stock inicial, no creación. Residual máximo acumulado 1.4211e-14m³ (<1e-8), divergencia local max3.463e-18m, transferencia nativa max3.470e-18m, profundidades no negativas. Diferencia max h closed/active .013309898m, noinf/active .001724908m. Saturado conserva stock y rechaza propuesta de infiltración manteniendo exceso en superficie. Modelo de almacenamiento finito impermeable a fondo, no acuífero ni humedad vertical resuelta.
+ 
+Checkpoint 480; consumidor proceso separado ejecuta 481..960, 5/5 corrupciones rechazadas, owner lógico final exacto b548d39818213ec8d83a837e0ae28077d13bba7f2e56b2c7f061e38ee0f4dca2 y 480 registros/hash exactos. Bytes NetCDF final distintos entre productor/consumidor (837803ea... vs ddf6b314...), no se exige igualdad de serialización ni inferir causa; los hashes lógicos, arrays y serie sí coinciden. No aislamiento adversarial ni portabilidad interhost ensayada. Productor 2.704s y RSS pico210972KiB. Artefacto 15018181616 589627bytes sha256 77decdc094b3b2fbbb54eacb5e4221f2b72d4b23ab7b83f638720b97d3aa10e9. Archivo pendiente. 
+GO P3.2 tras retención y cotejo. Sin erosión ni retorno al relieve aún. Se halló RiverBedDynamics (Monsalve et al 2025 DOI 10.5194/gmd-18-3427-2025), acople directo con OverlandFlow y Exner, candidato a contrastar; no figura en árbol oficial v2.11.0; fuente distribución DOI 10.5281/zenodo.14159914, compatibilidad, licencia, stock finito, porosidad y contabilidad de borde pendientes. No adoptar ni desarrollar física aún. Autoverificación.

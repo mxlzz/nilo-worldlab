@@ -101,3 +101,5 @@
 - P3.1 CI 45605745963 FAILURE instrumental antes de física, cinco iniciales roundtrip; máscara heredó subclase status_at_node. Corrección np.asarray preregistrada, sin cambios de gates. Archivo pendiente.
 
 - Archivo primera incidencia P3.1 CI 45606846131 SUCCESS: 5 NC iniciales, ZIP/JSON/log cotejados, blobs/tamaños verificados. Corrección exclusiva máscara ndarray y retry mismo protocolo.
+
+- P3.1 retry CI 45606950182 SUCCESS, 5×960 pasos, residual máximo1.4211e-14m³, export activo .702515m³, infiltración .355207m³, 480 sufijos y 5 controles exactos. Archivo pendiente. Candidato P3.2 RiverBedDynamics (no incluido en árbol v2.11.0, verificar distribución y contrato antes de adoptar).
