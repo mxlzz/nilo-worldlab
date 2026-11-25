@@ -1,0 +1,12 @@
+{
+  "controls": {
+    "capacity": true,
+    "clock": true,
+    "duplicate": true,
+    "file": true,
+    "q": true
+  },
+  "final_owner_sha": "b548d39818213ec8d83a837e0ae28077d13bba7f2e56b2c7f061e38ee0f4dca2",
+  "steps": 480,
+  "suffix_exact": true
+}

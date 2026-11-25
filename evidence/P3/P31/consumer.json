@@ -1,0 +1,36 @@
+{
+  "controls": {
+    "capacity": true,
+    "clock": true,
+    "duplicate": true,
+    "file": true,
+    "q": true
+  },
+  "final": {
+    "owner_sha": "b548d39818213ec8d83a837e0ae28077d13bba7f2e56b2c7f061e38ee0f4dca2",
+    "sha256": "ddf6b3147ac19c1a80edb383f4976486edb9cbc94c9125d87a34ebc8d7da34f7"
+  },
+  "first_step": 481,
+  "input_owner_sha": "2b7a57e7cd3601a43b66b72d5e84b6043253d167cbf022e4d0cda2e561245406",
+  "last": {
+    "hash": "b548d39818213ec8d83a837e0ae28077d13bba7f2e56b2c7f061e38ee0f4dca2",
+    "in_m3": 0.0,
+    "max_flow_local_m": 1.6703489719854803e-18,
+    "max_h_m": 0.02832707029760165,
+    "max_inf_local_m": 1.734723475976807e-18,
+    "min_h_m": 0.00012265291021356465,
+    "out_m3": 0.7025148900809098,
+    "q_abs_max_m2s": 0.0018676982750975863,
+    "rain_m3": 0.7200000000000005,
+    "reject_m3": 0.0,
+    "residual_m3": 3.552713678800501e-15,
+    "step": 960,
+    "subsurface_m3": 16.355207335479214,
+    "surface_m3": 1.662277774439875
+  },
+  "outputs": {
+    "final.nc": "ddf6b3147ac19c1a80edb383f4976486edb9cbc94c9125d87a34ebc8d7da34f7",
+    "series.npz": "f18aa8c28e4ca5331595af7f820b22178efdcb0be746d8bde9c0c3f810063278"
+  },
+  "steps": 480
+}

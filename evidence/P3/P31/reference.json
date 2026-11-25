@@ -1,0 +1,207 @@
+{
+  "cases": {
+    "active": {
+      "final": {
+        "owner_sha": "b548d39818213ec8d83a837e0ae28077d13bba7f2e56b2c7f061e38ee0f4dca2",
+        "sha256": "837803ea8cab9b756280331c8f41ea6954b4aa6f81e0841f1acf9639b1b8d361"
+      },
+      "initial": {
+        "owner_sha": "11f2eea07ab529d5ec1ef7d41d643bb7ecd70d0238b90cd6006efb4476d180e9",
+        "sha256": "15e7dbd93d35b527230f96ec462f8a4a0258172ed12a938f9adfb45f6b462932"
+      },
+      "last": {
+        "hash": "b548d39818213ec8d83a837e0ae28077d13bba7f2e56b2c7f061e38ee0f4dca2",
+        "in_m3": 0.0,
+        "max_flow_local_m": 1.6703489719854803e-18,
+        "max_h_m": 0.02832707029760165,
+        "max_inf_local_m": 1.734723475976807e-18,
+        "min_h_m": 0.00012265291021356465,
+        "out_m3": 0.7025148900809098,
+        "q_abs_max_m2s": 0.0018676982750975863,
+        "rain_m3": 0.7200000000000005,
+        "reject_m3": 0.0,
+        "residual_m3": 3.552713678800501e-15,
+        "step": 960,
+        "subsurface_m3": 16.355207335479214,
+        "surface_m3": 1.662277774439875
+      },
+      "max_flow_local_m": 1.734723475976807e-18,
+      "max_inf_local_m": 1.734723475976807e-18,
+      "max_residual_m3": 1.0658141036401503e-14,
+      "mid": {
+        "owner_sha": "2b7a57e7cd3601a43b66b72d5e84b6043253d167cbf022e4d0cda2e561245406",
+        "sha256": "27bd96e014bd654cb63531f1cdba6efc924d268df112bef59950921d97882a0e"
+      },
+      "min_h_m": 0.00012265291021356465,
+      "steps": 960
+    },
+    "closed": {
+      "final": {
+        "owner_sha": "2f05f2b0944697c1f5191e1e4760d01dcec5a8e636f06a946b654b543b239a6c",
+        "sha256": "77f5c48884c55bd9caf2d24155212298a7e93d579a535e622b925607b79fdd22"
+      },
+      "initial": {
+        "owner_sha": "fc9d49649199fc525d93e0a4b195458013f7d7e7a5bdb02229162d00f1873513",
+        "sha256": "5d9e5a6b11510a217267cff353dead6266db6984797a35027358b9c06f27d474"
+      },
+      "last": {
+        "hash": "2f05f2b0944697c1f5191e1e4760d01dcec5a8e636f06a946b654b543b239a6c",
+        "in_m3": 0.0,
+        "max_flow_local_m": 2.049819732355407e-18,
+        "max_h_m": 0.03593716583802141,
+        "max_inf_local_m": 1.734723475976807e-18,
+        "min_h_m": 0.00012265290839806012,
+        "out_m3": 0.0,
+        "q_abs_max_m2s": 0.00029219510710506134,
+        "rain_m3": 0.7200000000000005,
+        "reject_m3": 0.0,
+        "residual_m3": 1.0658141036401503e-14,
+        "step": 960,
+        "subsurface_m3": 16.35674391223915,
+        "surface_m3": 2.3632560877608544
+      },
+      "max_flow_local_m": 3.4626706883755798e-18,
+      "max_inf_local_m": 3.469446951953614e-18,
+      "max_residual_m3": 1.0658141036401503e-14,
+      "mid": {
+        "owner_sha": "c9a7939433f8c2107d8d71ad5ec9a6993c3e60afa04cf1ce7915726d3ee4d457",
+        "sha256": "99fe36b1ea7fdea4bacac4da64ac5fdd7615da00a81e12990853a1f3410f00e7"
+      },
+      "min_h_m": 0.00012265290839806012,
+      "steps": 960
+    },
+    "noinf": {
+      "final": {
+        "owner_sha": "8f1bcab8454cce3a53001f55b6872ec81ada89688280899ed05f498867d88e35",
+        "sha256": "dcbef36793f0a3ef26e4b2c003ac92fd89c9114481c3d8e4a4699ea573b2001c"
+      },
+      "initial": {
+        "owner_sha": "4e60a8d9013ff0ac5fb6b7eaf595d66af4ff24d56c0024621980cae7740482f5",
+        "sha256": "6f9a3b2df2417705b5ce86fbabca62764768e702f2a8da5ed59b1aa7c16a54c9"
+      },
+      "last": {
+        "hash": "8f1bcab8454cce3a53001f55b6872ec81ada89688280899ed05f498867d88e35",
+        "in_m3": 0.0,
+        "max_flow_local_m": 1.4848487565367885e-18,
+        "max_h_m": 0.029985110766976405,
+        "max_inf_local_m": 0.0,
+        "min_h_m": 0.00033225394614722526,
+        "out_m3": 0.7922906799797342,
+        "q_abs_max_m2s": 0.0022221456943364738,
+        "rain_m3": 0.7200000000000005,
+        "reject_m3": 0.0,
+        "residual_m3": 3.552713678800501e-15,
+        "step": 960,
+        "subsurface_m3": 15.999999999999998,
+        "surface_m3": 1.927709320020266
+      },
+      "max_flow_local_m": 1.734723475976807e-18,
+      "max_inf_local_m": 0.0,
+      "max_residual_m3": 7.105427357601002e-15,
+      "mid": {
+        "owner_sha": "60d86485b2e9ecf2a69d6ffb3d73ad33a9c474cfa601bef43a7747845b3d38e4",
+        "sha256": "16e0c0ee6bdfa758ad5131521bee5f2af2f5d6bca0e38234ca5f5a2dbbefd049"
+      },
+      "min_h_m": 0.00033225394614722526,
+      "steps": 960
+    },
+    "norain": {
+      "final": {
+        "owner_sha": "f4f772fffbdc8c51fec81bb2f52c2ec8a5253231207a5ef6b392f3caa81e798b",
+        "sha256": "148be21e72d2e8b80dde54975a3d5e16994093d747d636a68441fd7c8132448c"
+      },
+      "initial": {
+        "owner_sha": "a021e77ec978b422bcdefb7801c6c79b07254dcb3602d7068ee9d1339663c442",
+        "sha256": "968b15ef263e70649faa3eb4c003cc5c8c1a7cde8191056b7b2d26273465e1d3"
+      },
+      "last": {
+        "hash": "f4f772fffbdc8c51fec81bb2f52c2ec8a5253231207a5ef6b392f3caa81e798b",
+        "in_m3": 0.0,
+        "max_flow_local_m": 1.1858461261560205e-18,
+        "max_h_m": 0.024515225319384958,
+        "max_inf_local_m": 1.734723475976807e-18,
+        "min_h_m": 9.99999999625983e-09,
+        "out_m3": 0.4604803075232047,
+        "q_abs_max_m2s": 0.0011653956745791936,
+        "rain_m3": 0.0,
+        "reject_m3": 0.0,
+        "residual_m3": 7.105427357601002e-15,
+        "step": 960,
+        "subsurface_m3": 16.34666706694858,
+        "surface_m3": 1.1928526255282168
+      },
+      "max_flow_local_m": 1.734723475976807e-18,
+      "max_inf_local_m": 1.734723475976807e-18,
+      "max_residual_m3": 1.0658141036401503e-14,
+      "mid": {
+        "owner_sha": "ca27831a4b2e218efc3082b9079600438339cfc4ff5b5d843ac4fc303af32811",
+        "sha256": "6cda216ecf5be9d43a7186f4805570f4ffb084cd6bda1c4aa2211ff6bb5ae4b3"
+      },
+      "min_h_m": 9.99999999625983e-09,
+      "steps": 960
+    },
+    "saturated": {
+      "final": {
+        "owner_sha": "37acfff68cf65b08ce9612e1a2531d5aa6a177af6185bcd84c265e51e15d4838",
+        "sha256": "7ec3e79f7fda71b4819abfa98f472664ddd23d5511e0476e8635fe218a4239cd"
+      },
+      "initial": {
+        "owner_sha": "d0f6e0102d6fd8d367b332446e0a9d5cd66fe1a11e471d803b93959dea1d175b",
+        "sha256": "0b9c5545b3afa003fa62eb11c14e411006607371afa7ed9cb9b2de4b99133cff"
+      },
+      "last": {
+        "hash": "37acfff68cf65b08ce9612e1a2531d5aa6a177af6185bcd84c265e51e15d4838",
+        "in_m3": 0.0,
+        "max_flow_local_m": 1.4848487565367885e-18,
+        "max_h_m": 0.029985110766976405,
+        "max_inf_local_m": 3.469446951953614e-18,
+        "min_h_m": 0.00033225394614722526,
+        "out_m3": 0.7922906799797342,
+        "q_abs_max_m2s": 0.0022221456943364738,
+        "rain_m3": 0.7200000000000005,
+        "reject_m3": 0.15031518269066232,
+        "residual_m3": -7.105427357601002e-15,
+        "step": 960,
+        "subsurface_m3": 31.999999999999996,
+        "surface_m3": 1.927709320020266
+      },
+      "max_flow_local_m": 1.734723475976807e-18,
+      "max_inf_local_m": 3.469446951953614e-18,
+      "max_residual_m3": 1.4210854715202004e-14,
+      "mid": {
+        "owner_sha": "927ca806d23a140dd113ecd834ed0bc413115c5225c70b2da9742ec05cc0ee5c",
+        "sha256": "a424d4399ebc6738e440fff304495eb16177c6f6d496584785cc36a99b710537"
+      },
+      "min_h_m": 0.00033225394614722526,
+      "steps": 960
+    }
+  },
+  "closed_difference_m": 0.013309898050597213,
+  "experiment": "P3.1",
+  "failed_preregistered_gates": [],
+  "noinf_difference_m": 0.0017249076627607156,
+  "outputs": {
+    "active/final.nc": "837803ea8cab9b756280331c8f41ea6954b4aa6f81e0841f1acf9639b1b8d361",
+    "active/initial.nc": "15e7dbd93d35b527230f96ec462f8a4a0258172ed12a938f9adfb45f6b462932",
+    "active/mid.nc": "27bd96e014bd654cb63531f1cdba6efc924d268df112bef59950921d97882a0e",
+    "active/series.npz": "36f5056fbd3823131bade0e46c65e63da890d5c02811b039e0d4f6849aa301cb",
+    "closed/final.nc": "77f5c48884c55bd9caf2d24155212298a7e93d579a535e622b925607b79fdd22",
+    "closed/initial.nc": "5d9e5a6b11510a217267cff353dead6266db6984797a35027358b9c06f27d474",
+    "closed/mid.nc": "99fe36b1ea7fdea4bacac4da64ac5fdd7615da00a81e12990853a1f3410f00e7",
+    "closed/series.npz": "eea7ada9077eea4ce23a32dd88399ec93c42557ac9fa667ddb64d14a4300dc24",
+    "noinf/final.nc": "dcbef36793f0a3ef26e4b2c003ac92fd89c9114481c3d8e4a4699ea573b2001c",
+    "noinf/initial.nc": "6f9a3b2df2417705b5ce86fbabca62764768e702f2a8da5ed59b1aa7c16a54c9",
+    "noinf/mid.nc": "16e0c0ee6bdfa758ad5131521bee5f2af2f5d6bca0e38234ca5f5a2dbbefd049",
+    "noinf/series.npz": "dc11091f334073ca451f41bf83a066083758454d1bdb97d11e922c167fb74590",
+    "norain/final.nc": "148be21e72d2e8b80dde54975a3d5e16994093d747d636a68441fd7c8132448c",
+    "norain/initial.nc": "968b15ef263e70649faa3eb4c003cc5c8c1a7cde8191056b7b2d26273465e1d3",
+    "norain/mid.nc": "6cda216ecf5be9d43a7186f4805570f4ffb084cd6bda1c4aa2211ff6bb5ae4b3",
+    "norain/series.npz": "37fd85e7ffa5afe9db9da079436437afb359f687b3ceb786222ceee3440c4691",
+    "saturated/final.nc": "7ec3e79f7fda71b4819abfa98f472664ddd23d5511e0476e8635fe218a4239cd",
+    "saturated/initial.nc": "0b9c5545b3afa003fa62eb11c14e411006607371afa7ed9cb9b2de4b99133cff",
+    "saturated/mid.nc": "a424d4399ebc6738e440fff304495eb16177c6f6d496584785cc36a99b710537",
+    "saturated/series.npz": "dfc2b820c28af581cd92604798fead54ea6ee8858b76f3859cc17326cc9b43c9"
+  },
+  "peak_rss_kib": 210972,
+  "wall_seconds": 2.7042265590000056
+}
