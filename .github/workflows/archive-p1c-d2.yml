@@ -1,0 +1,53 @@
+name: WorldLab archive D2 diagnostic evidence
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p1c-d2.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Archive exact D2 evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-C/D2
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14979950220/zip > "$d/14979950220.zip"
+          echo '3b301070cdd8897808b2fa4f62d9cf46c7d3306a4cd2a9699dbecea85b79f3d5  '"$d/14979950220.zip" | sha256sum -c -
+          gh api repos/${{ github.repository }}/actions/artifacts/14979492303/zip > "$d/14979492303.zip"
+          echo 'e8c5c8bc5f1a9c22afe45be6e94c75baae239e075dc7380b45b14a7ba22e08dc  '"$d/14979492303.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138887077348/logs > "$d/job-138887077348.log"
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138887077749/logs > "$d/job-138887077749.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P1-C/D2")
+          for label,artifact,job in [("a",14979950220,138887077348),("b",14979492303,138887077749)]:
+              rows=[json.loads(x.split("WORLD_D2_JSON ",1)[1]) for x in (d/f"job-{job}.log").read_text().splitlines() if "WORLD_D2_JSON {" in x]
+              assert len(rows)==4
+              with zipfile.ZipFile(d/f"{artifact}.zip") as z:
+                  assert z.testzip() is None
+                  for prefix,r in zip(["native-1","fixed-1","native-2","fixed-2"],rows):
+                      assert json.loads(z.read(prefix+"/result.json"))==r
+                      for n,h in r["outputs"].items():assert hashlib.sha256(z.read(prefix+"/"+n)).hexdigest()==h
+              (d/f"{label}.json").write_text(json.dumps(rows,indent=2,sort_keys=True)+"\n")
+          a=json.loads((d/"a.json").read_text());b=json.loads((d/"b.json").read_text())
+          assert all(r["profile_verified"] and "Intel" in r["cpu"] for r in a+b)
+          assert all(r["cases"]==a[i%2]["cases"] for i,r in enumerate(a+b))
+          m={"run":45519386325,"jobs":[138887077348,138887077749],"artifacts":[14979950220,14979492303],"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive D2 inconclusive diagnostic and all repetitions'
+          git pull --rebase origin main
+          git push origin HEAD:main
