@@ -1,0 +1,3 @@
+# C.2b — dictamen diagnóstico de archivos retenidos
+
+Archivo 45519166290 SUCCESS, commit 630e99ab2bff3541611542ae7ddc43070539fbd8, manifiesto y diagnostic.json verificados. 12/12 E_roi difieren (50–299 celdas, máximo 9.095e-13 J y 9 ULP); dos estados 7321 activo con E_coarse_rest distinto (hasta 7.276e-12 J y 2 ULP) y export (hasta 5.821e-11 J). Resto de campos, flujos y rayos exactos; evidencia negativa del criterio de exactitud, no pérdida material ni fallo de integridad. No atribuir causa a Intel/AMD sin mismo input probado. Mantener P1-C no aprobada, P1-D bloqueada. D2 protocolo mínimo para aislar operación y comprobar perfil OpenBLAS, no reintento científico. No redondear ni relajar tolerancia. Fallo YAML de archivo resuelto sin física. Autoverificación.

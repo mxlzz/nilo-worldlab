@@ -43,3 +43,5 @@
 - C.2b CI 45518264979: consumidor pasa 4 casos/28 corrupciones; comparador falla exactitud owner 12/12 pese a trayectorias/flujos/rayos exactos. Archivo de ambos ZIP/logs y diagnóstico no mutante, sin nueva dinámica. NO-GO P1-D.
 
 - Archivo C.2b intento 45519115487 sin jobs, YAML con :all: en escalar plano; corregido a bloque shell. Solo archivo/diagnóstico, no repetición científica.
+
+- Archivo C.2b CI 45519166290 SUCCESS, ambos ZIP/log/JSON, diagnóstico 12 estados confirmado; diferencias reales E_roi hasta 9.095e-13 J, E_rest hasta 7.276e-12 J. NO-GO P1-D, prerregistro D2 mínimo sin dinámica. Archivo temporal desactivado.
