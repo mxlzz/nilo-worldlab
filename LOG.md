@@ -55,3 +55,5 @@
 - Usuario autorizó extensión única D2-AMD sin gasto. Runner público estándar sin selección de fabricante documentada; una asignación con guard AMD antes de instalar, no reintentos si Intel. Protocolo D2 intacto.
 
 - D2-AMD CI 45521624938: Intel, filtro falló antes de ejecución científica, no AMD. Única asignación consumida, no relanzar. Archivar CPU/log y elevar disponibilidad/alcance.
+
+- D2-AMD archivo CI 45521720220 SUCCESS, CPU/log/ZIP verificados, blobs releídos en 7a8113a9. Desactivados workflows de asignación única y archivo. Bloqueo disponibilidad AMD, no fallo científico nuevo. Requiere acceso a AMD dirigido o decisión explícita de alcance; no reintentar asignaciones aleatorias.
