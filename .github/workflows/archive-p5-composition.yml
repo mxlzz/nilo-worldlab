@@ -1,0 +1,58 @@
+name: WorldLab archive P5.2 live composition
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p5-composition.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P5/P52
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15030611016/zip > "$d/15030611016.zip"
+          echo 'd9716143daad2d8d331dbdbc3526ea88294f677da307c9f6f116733c9f16fea1  '"$d/15030611016.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139261079370/logs > "$d/job-139261079370.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P5/P52")
+          with zipfile.ZipFile(d/"15030611016.zip") as z:
+              assert z.testzip() is None
+              a=json.loads(z.read("reference/result.json"));b=json.loads(z.read("consumer/result.json"));c=json.loads(z.read("compare.json"));m=json.loads(z.read("checkpoint/manifest.json"))
+              assert not a["failed_preregistered_gates"] and len(a["cases"])==3 and all(v["steps"]==240 for v in a["cases"].values())
+              assert a["fork"]["real_exact"] and a["fork"]["qb_diff"]>1e-8 and a["fork"]["p_diff"]>1e-5
+              assert b["steps"]==120 and c["suffix_exact"] and all(b["controls"].values()) and len(b["controls"])==7
+              assert c["owner_sha"]==b["final"]["owner_sha"]==a["cases"]["active"]["final"]["owner_sha"]
+              assert m["owner_sha"]==b["input_owner_sha"]==a["cases"]["active"]["mid"]["owner_sha"]==a["fork"]["input_owner_sha"]
+              assert hashlib.sha256(z.read("checkpoint/owner.nc")).hexdigest()==m["sha256"]
+              for prefix,x,n in [("reference/",a,16),("consumer/",b,5)]:
+                  assert len(x["outputs"])==n
+                  for name,h in x["outputs"].items():assert hashlib.sha256(z.read(prefix+name)).hexdigest()==h
+              for name,path in [("reference.json","reference/result.json"),("consumer.json","consumer/result.json"),("compare.json","compare.json"),("checkpoint_manifest.json","checkpoint/manifest.json")]:
+                  (d/name).write_bytes(z.read(path))
+              expected={"reference/"+n for n in a["outputs"]}|{"consumer/"+n for n in b["outputs"]}|{"reference/result.json","consumer/result.json","checkpoint/manifest.json","checkpoint/owner.nc","compare.json"}
+              assert {n for n in z.namelist() if not n.endswith("/")}==expected
+              for prefix in ("reference/","consumer/"):
+                  assert z.read(prefix+"source_archive_manifest.json")==pathlib.Path("evidence/P3/RBD_SOURCE/archive_manifest.json").read_bytes()
+          log=(d/"job-139261079370.log").read_text()
+          for mark,v in [("WORLD_COMPOSITION_JSON ",a),("WORLD_COMPOSITION_RESTART_JSON ",b),("WORLD_COMPOSITION_COMPARE_JSON ",c)]:
+              assert [json.loads(l.split(mark,1)[1]) for l in log.splitlines() if mark+"{" in l]==[v]
+          m={"run":45630220328,"job":139261079370,"artifact":15030611016,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P5.2 validated live composition and restart'
+          git pull --rebase origin main
+          git push origin HEAD:main
