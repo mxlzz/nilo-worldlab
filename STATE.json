@@ -2,14 +2,14 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
+  "status": "ready",
   "stage": "E7",
-  "current_task": "E7.1a",
-  "next_action": "Leer CI 45595575928 y WORLD_FORCE_JSON; cotejar cuatro fixtures, CDF, fuerzas completas, estabilidad y controles de integridad; archivar NPZ/log/JSON. Si gate pasa, cerrar protocolo E7.1b antes de datos prospectivos (mismo inventario/puntos, historias distintas, dos terrenos retenidos x dos semillas feed independientes, plantillas relajadas, K0 y replay); si falla, diagnosticar sin cambiar gates. No nuevas sombras ni E8.",
-  "scientific_next": "E7.1a",
+  "current_task": "E7.1b-preregister",
+  "next_action": "Cerrar prerregistro E7.1b conforme decisión de diseño y E7.1a; fijar tratamientos, controles y criterios antes de datos, ejecutar con perfil heredado y terreno P0-D retenido, no nueva ley ni cierre E7. Si falla comparador no seleccionar casos. No E8.",
+  "scientific_next": "E7.1b-preregister",
   "scientific_state": {
     "E0_E6": "provisional_limited",
-    "E7": "open_history_load_design_calibration_pending",
+    "E7": "open_force_instrument_passed",
     "E8": "not_started",
     "P0": "complete_limited",
     "P1_A": "failed_instrument",
@@ -59,13 +59,15 @@
     "research/P1-D/P1-D.2_DICTAMEN.md",
     "research/E7/E7.1_ENCARGO_DISENO.md",
     "research/E7/E7.1_DECISION_DISENO.md",
-    "research/E7/E7.1a_PROTOCOLO_FUERZAS.md"
+    "research/E7/E7.1a_PROTOCOLO_FUERZAS.md",
+    "research/E7/E7.1a_RESULTADO.md",
+    "evidence/E7/E71a/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "c36500138e984faa1258ed19da106ac19d235367",
+  "last_confirmed_non_state_write": "443de8225fb0d0e58a7b21a348fe232bd6aec2be",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -88,11 +90,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25",
-  "active_run": {
-    "id": 45595575928,
-    "unit": "E7.1a",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45595575928",
-    "sha": "c36500138e984faa1258ed19da106ac19d235367"
-  }
+  "updated_at": "2026-11-25"
 }
