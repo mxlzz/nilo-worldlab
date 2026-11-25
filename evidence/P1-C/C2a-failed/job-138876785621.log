@@ -1,0 +1,712 @@
+﻿2026-11-25T00:13:30.9407686Z Current runner version: '2.338.2'
+2026-11-25T00:13:30.9433074Z ##[group]Runner Image Provisioner
+2026-11-25T00:13:30.9434034Z Hosted Compute Agent
+2026-11-25T00:13:30.9434571Z Version: 20261111.635
+2026-11-25T00:13:30.9435458Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-25T00:13:30.9436151Z Build Date: 2026-11-11T01:49:01Z
+2026-11-25T00:13:30.9436818Z Worker ID: {b61652f7-b01c-48db-a0b8-6db87f1b30b9}
+2026-11-25T00:13:30.9437504Z Region: eastus3
+2026-11-25T00:13:30.9438007Z Cloud: Azure
+2026-11-25T00:13:30.9438486Z ##[endgroup]
+2026-11-25T00:13:30.9440117Z ##[group]Operating System
+2026-11-25T00:13:30.9440726Z Ubuntu
+2026-11-25T00:13:30.9441272Z 24.04.5
+2026-11-25T00:13:30.9441998Z LTS
+2026-11-25T00:13:30.9442479Z ##[endgroup]
+2026-11-25T00:13:30.9443414Z ##[group]Runner Image
+2026-11-25T00:13:30.9443968Z Image: ubuntu-24.04
+2026-11-25T00:13:30.9444529Z Version: 20261116.376.1
+2026-11-25T00:13:30.9445823Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.376/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-25T00:13:30.9447373Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.376
+2026-11-25T00:13:30.9448325Z ##[endgroup]
+2026-11-25T00:13:30.9449387Z ##[group]GITHUB_TOKEN Permissions
+2026-11-25T00:13:30.9451925Z Contents: read
+2026-11-25T00:13:30.9452498Z Metadata: read
+2026-11-25T00:13:30.9453038Z ##[endgroup]
+2026-11-25T00:13:30.9455098Z Secret source: Actions
+2026-11-25T00:13:30.9455989Z Cache mode: write
+2026-11-25T00:13:30.9456663Z Prepare workflow directory
+2026-11-25T00:13:30.9838985Z Prepare all required actions
+2026-11-25T00:13:30.9887960Z Getting action download info
+2026-11-25T00:13:31.2427113Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-25T00:13:31.3835823Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-25T00:13:31.4967457Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-25T00:13:31.7854094Z Complete job name: producer
+2026-11-25T00:13:31.8627717Z ##[group]Run actions/checkout@v4
+2026-11-25T00:13:31.8628546Z with:
+2026-11-25T00:13:31.8629102Z   repository: mxlzz/nilo-worldlab
+2026-11-25T00:13:31.8633214Z   token: ***
+2026-11-25T00:13:31.8633686Z   ssh-strict: true
+2026-11-25T00:13:31.8634213Z   ssh-user: git
+2026-11-25T00:13:31.8634692Z   persist-credentials: true
+2026-11-25T00:13:31.8635267Z   clean: true
+2026-11-25T00:13:31.8635776Z   sparse-checkout-cone-mode: true
+2026-11-25T00:13:31.8636308Z   fetch-depth: 1
+2026-11-25T00:13:31.8636815Z   fetch-tags: false
+2026-11-25T00:13:31.8637298Z   show-progress: true
+2026-11-25T00:13:31.8637784Z   lfs: false
+2026-11-25T00:13:31.8638270Z   submodules: false
+2026-11-25T00:13:31.8638760Z   set-safe-directory: true
+2026-11-25T00:13:31.8639318Z   allow-unsafe-pr-checkout: false
+2026-11-25T00:13:31.8640040Z env:
+2026-11-25T00:13:31.8640644Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:13:31.8641398Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:13:31.8642212Z   OMP_NUM_THREADS: 1
+2026-11-25T00:13:31.8642719Z   MKL_NUM_THREADS: 1
+2026-11-25T00:13:31.8643206Z   FIPY_SOLVERS: scipy
+2026-11-25T00:13:31.8643830Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:13:31.8644537Z ##[endgroup]
+2026-11-25T00:13:32.1453042Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-25T00:13:32.1456086Z ##[group]Getting Git version info
+2026-11-25T00:13:32.1457089Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T00:13:32.1458617Z [command]/usr/bin/git version
+2026-11-25T00:13:32.1538922Z git version 2.56.1
+2026-11-25T00:13:32.1558040Z ##[endgroup]
+2026-11-25T00:13:32.1573240Z Temporarily overriding HOME='/home/runner/work/_temp/5ba58cf7-88bd-465f-bc2b-94b324c30ebc' before making global git config changes
+2026-11-25T00:13:32.1576137Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T00:13:32.1578372Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T00:13:32.1652996Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T00:13:32.1655202Z ##[group]Initializing the repository
+2026-11-25T00:13:32.1660440Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T00:13:32.1777862Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-25T00:13:32.1779634Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-25T00:13:32.1780776Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-25T00:13:32.1781751Z hint: call:
+2026-11-25T00:13:32.1782387Z hint:
+2026-11-25T00:13:32.1783151Z hint: 	git config --global init.defaultBranch <name>
+2026-11-25T00:13:32.1783916Z hint:
+2026-11-25T00:13:32.1784579Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-25T00:13:32.1785754Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-25T00:13:32.1786829Z hint:
+2026-11-25T00:13:32.1787636Z hint: 	git branch -m <name>
+2026-11-25T00:13:32.1788336Z hint:
+2026-11-25T00:13:32.1789245Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-25T00:13:32.1790762Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-25T00:13:32.1800067Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-25T00:13:32.1853624Z ##[endgroup]
+2026-11-25T00:13:32.1854971Z ##[group]Disabling automatic garbage collection
+2026-11-25T00:13:32.1857521Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-25T00:13:32.1890073Z ##[endgroup]
+2026-11-25T00:13:32.1891648Z ##[group]Setting up auth
+2026-11-25T00:13:32.1897142Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T00:13:32.1932376Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T00:13:32.2318449Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T00:13:32.2353571Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T00:13:32.2549213Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T00:13:32.2582385Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T00:13:32.2770473Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-25T00:13:32.2813773Z ##[endgroup]
+2026-11-25T00:13:32.2814826Z ##[group]Fetching the repository
+2026-11-25T00:13:32.2826881Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +510f99fb5a5768052bbb5a76a3913720ec33145b:refs/remotes/origin/main
+2026-11-25T00:13:33.0068883Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-25T00:13:33.0072108Z  * [new ref]         510f99fb5a5768052bbb5a76a3913720ec33145b -> origin/main
+2026-11-25T00:13:33.0079898Z ##[endgroup]
+2026-11-25T00:13:33.0081802Z ##[group]Determining the checkout info
+2026-11-25T00:13:33.0084626Z ##[endgroup]
+2026-11-25T00:13:33.0086389Z [command]/usr/bin/git sparse-checkout disable
+2026-11-25T00:13:33.0157483Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-25T00:13:33.0200711Z ##[group]Checking out the ref
+2026-11-25T00:13:33.0205457Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-25T00:13:33.2600821Z Switched to a new branch 'main'
+2026-11-25T00:13:33.2983186Z branch 'main' set up to track 'origin/main'.
+2026-11-25T00:13:33.2992371Z ##[endgroup]
+2026-11-25T00:13:33.3035966Z [command]/usr/bin/git log -1 --format=%H
+2026-11-25T00:13:33.3060757Z 510f99fb5a5768052bbb5a76a3913720ec33145b
+2026-11-25T00:13:33.3626874Z ##[group]Run actions/setup-python@v5
+2026-11-25T00:13:33.3627580Z with:
+2026-11-25T00:13:33.3628132Z   python-version: 3.13.18
+2026-11-25T00:13:33.3628654Z   check-latest: false
+2026-11-25T00:13:33.3631691Z   token: ***
+2026-11-25T00:13:33.3632240Z   update-environment: true
+2026-11-25T00:13:33.3632828Z   allow-prereleases: false
+2026-11-25T00:13:33.3633383Z   freethreaded: false
+2026-11-25T00:13:33.3633904Z env:
+2026-11-25T00:13:33.3634496Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:13:33.3635114Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:13:33.3635639Z   OMP_NUM_THREADS: 1
+2026-11-25T00:13:33.3636129Z   MKL_NUM_THREADS: 1
+2026-11-25T00:13:33.3636608Z   FIPY_SOLVERS: scipy
+2026-11-25T00:13:33.3637196Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:13:33.3637837Z ##[endgroup]
+2026-11-25T00:13:33.4979186Z ##[group]Installed versions
+2026-11-25T00:13:33.5019847Z (node:2338) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T00:13:33.5021398Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T00:13:33.5022776Z Successfully set up CPython (3.13.18)
+2026-11-25T00:13:33.5024106Z ##[endgroup]
+2026-11-25T00:13:33.5510219Z ##[group]Run "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python" -m pip install --only-binary=:all: landlab==2.11.0 numpy==2.5.5 xarray==2026.9.0 scipy==1.18.1
+2026-11-25T00:13:33.5511972Z [36;1m"/opt/hostedtoolcache/Python/3.13.18/x64/bin/python" -m pip install --only-binary=:all: landlab==2.11.0 numpy==2.5.5 xarray==2026.9.0 scipy==1.18.1[0m
+2026-11-25T00:13:33.5513033Z [36;1m"/opt/hostedtoolcache/Python/3.13.18/x64/bin/python" -m pip freeze[0m
+2026-11-25T00:13:33.5801931Z shell: /usr/bin/bash -e {0}
+2026-11-25T00:13:33.5802902Z env:
+2026-11-25T00:13:33.5803634Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:13:33.5804415Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:13:33.5804994Z   OMP_NUM_THREADS: 1
+2026-11-25T00:13:33.5805540Z   MKL_NUM_THREADS: 1
+2026-11-25T00:13:33.5806126Z   FIPY_SOLVERS: scipy
+2026-11-25T00:13:33.5806822Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:13:33.5807726Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:13:33.5808419Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-25T00:13:33.5809110Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:13:33.5809801Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:13:33.5810465Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:13:33.5811149Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-25T00:13:33.5811871Z ##[endgroup]
+2026-11-25T00:13:35.0265590Z Collecting landlab==2.11.0
+2026-11-25T00:13:35.0727903Z   Downloading landlab-2.11.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-11-25T00:13:35.2240707Z Collecting numpy==2.5.5
+2026-11-25T00:13:35.2272760Z   Downloading numpy-2.5.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-25T00:13:35.2483939Z Collecting xarray==2026.9.0
+2026-11-25T00:13:35.2516626Z   Downloading xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-25T00:13:35.3442731Z Collecting scipy==1.18.1
+2026-11-25T00:13:35.3473218Z   Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-25T00:13:35.3850847Z Collecting bmipy (from landlab==2.11.0)
+2026-11-25T00:13:35.3892832Z   Downloading bmipy-2.0.1-py3-none-any.whl.metadata (2.7 kB)
+2026-11-25T00:13:35.4860438Z Collecting matplotlib (from landlab==2.11.0)
+2026-11-25T00:13:35.4899137Z   Downloading matplotlib-3.11.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-11-25T00:13:35.5455038Z Collecting netcdf4 (from landlab==2.11.0)
+2026-11-25T00:13:35.5482218Z   Downloading netcdf4-1.7.5.1.post1-cp311-abi3-manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+2026-11-25T00:13:35.5815900Z Collecting py-richdem (from landlab==2.11.0)
+2026-11-25T00:13:35.5856291Z   Downloading py_richdem-2.2.0rc3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+2026-11-25T00:13:35.6153589Z Collecting pyyaml (from landlab==2.11.0)
+2026-11-25T00:13:35.6180550Z   Downloading pyyaml-6.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.3 kB)
+2026-11-25T00:13:35.6303173Z Collecting pyshp!=2.3.0 (from landlab==2.11.0)
+2026-11-25T00:13:35.6343569Z   Downloading pyshp-3.1.9-py3-none-any.whl.metadata (79 kB)
+2026-11-25T00:13:35.6513256Z Collecting requireit (from landlab==2.11.0)
+2026-11-25T00:13:35.6547840Z   Downloading requireit-0.12.0-py3-none-any.whl.metadata (15 kB)
+2026-11-25T00:13:35.6697500Z Collecting rich-click (from landlab==2.11.0)
+2026-11-25T00:13:35.6729625Z   Downloading rich_click-1.9.9-py3-none-any.whl.metadata (7.4 kB)
+2026-11-25T00:13:35.7160047Z Collecting statsmodels (from landlab==2.11.0)
+2026-11-25T00:13:35.7190191Z   Downloading statsmodels-0.15.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.6 kB)
+2026-11-25T00:13:35.8082916Z Collecting pandas (from landlab==2.11.0)
+2026-11-25T00:13:35.8110709Z   Downloading pandas-3.1.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-25T00:13:35.8301959Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-25T00:13:35.8329257Z   Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T00:13:35.8620760Z Collecting python-dateutil>=2.9.0 (from pandas->landlab==2.11.0)
+2026-11-25T00:13:35.8678970Z   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-25T00:13:35.8814401Z Collecting tzdata (from python-dateutil>=2.9.0->pandas->landlab==2.11.0)
+2026-11-25T00:13:35.8846158Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-25T00:13:35.9242546Z Collecting black (from bmipy->landlab==2.11.0)
+2026-11-25T00:13:35.9274673Z   Downloading black-26.10.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (108 kB)
+2026-11-25T00:13:35.9495462Z Collecting click (from bmipy->landlab==2.11.0)
+2026-11-25T00:13:35.9538942Z   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+2026-11-25T00:13:35.9671929Z Collecting jinja2 (from bmipy->landlab==2.11.0)
+2026-11-25T00:13:35.9705956Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2026-11-25T00:13:36.0001029Z Collecting mypy-extensions>=0.4.3 (from black->bmipy->landlab==2.11.0)
+2026-11-25T00:13:36.0028844Z   Downloading mypy_extensions-1.2.0-py3-none-any.whl.metadata (1.1 kB)
+2026-11-25T00:13:36.0167525Z Collecting pathspec>=1.0.0 (from black->bmipy->landlab==2.11.0)
+2026-11-25T00:13:36.0196233Z   Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+2026-11-25T00:13:36.0386585Z Collecting platformdirs>=2 (from black->bmipy->landlab==2.11.0)
+2026-11-25T00:13:36.0427141Z   Downloading platformdirs-4.14.8-py3-none-any.whl.metadata (5.7 kB)
+2026-11-25T00:13:36.0562157Z Collecting pytokens~=0.4.0 (from black->bmipy->landlab==2.11.0)
+2026-11-25T00:13:36.0593257Z   Downloading pytokens-0.4.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-11-25T00:13:36.1044441Z Collecting MarkupSafe>=2.0 (from jinja2->bmipy->landlab==2.11.0)
+2026-11-25T00:13:36.1392234Z   Downloading markupsafe-3.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+2026-11-25T00:13:36.1875740Z Collecting contourpy>=1.0.1 (from matplotlib->landlab==2.11.0)
+2026-11-25T00:13:36.1915560Z   Downloading contourpy-1.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-11-25T00:13:36.2032415Z Collecting cycler>=0.10 (from matplotlib->landlab==2.11.0)
+2026-11-25T00:13:36.2160011Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-11-25T00:13:36.3304708Z Collecting fonttools>=4.28.2 (from matplotlib->landlab==2.11.0)
+2026-11-25T00:13:36.3355414Z   Downloading fonttools-4.68.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+2026-11-25T00:13:36.3944790Z Collecting kiwisolver>=1.3.1 (from matplotlib->landlab==2.11.0)
+2026-11-25T00:13:36.3977521Z   Downloading kiwisolver-1.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-11-25T00:13:36.5237827Z Collecting pillow>=9 (from matplotlib->landlab==2.11.0)
+2026-11-25T00:13:36.5266821Z   Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-11-25T00:13:36.5567970Z Collecting pyparsing>=3 (from matplotlib->landlab==2.11.0)
+2026-11-25T00:13:36.5596440Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-11-25T00:13:36.6000219Z Collecting cftime (from netcdf4->landlab==2.11.0)
+2026-11-25T00:13:36.6033334Z   Downloading cftime-1.6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.8 kB)
+2026-11-25T00:13:36.6189417Z Collecting certifi (from netcdf4->landlab==2.11.0)
+2026-11-25T00:13:36.6218525Z   Downloading certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+2026-11-25T00:13:36.6478636Z Collecting rich>=12 (from rich-click->landlab==2.11.0)
+2026-11-25T00:13:36.6510118Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-11-25T00:13:36.6827007Z Collecting markdown-it-py>=2.2.0 (from rich>=12->rich-click->landlab==2.11.0)
+2026-11-25T00:13:36.6883519Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+2026-11-25T00:13:36.7325705Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12->rich-click->landlab==2.11.0)
+2026-11-25T00:13:36.7360598Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-25T00:13:36.7477003Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12->rich-click->landlab==2.11.0)
+2026-11-25T00:13:36.7502835Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-11-25T00:13:36.7653061Z Collecting patsy>=0.5.6 (from statsmodels->landlab==2.11.0)
+2026-11-25T00:13:36.7682580Z   Downloading patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+2026-11-25T00:13:36.7806028Z Collecting formulaic>=1.1.0 (from statsmodels->landlab==2.11.0)
+2026-11-25T00:13:36.7833405Z   Downloading formulaic-1.2.2-py3-none-any.whl.metadata (7.0 kB)
+2026-11-25T00:13:36.7970291Z Collecting interface-meta>=1.2.0 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-25T00:13:36.8000559Z   Downloading interface_meta-2.0.1-py3-none-any.whl.metadata (6.4 kB)
+2026-11-25T00:13:36.8429492Z Collecting narwhals>=1.17 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-25T00:13:36.8466152Z   Downloading narwhals-2.29.0-py3-none-any.whl.metadata (15 kB)
+2026-11-25T00:13:36.8673981Z Collecting typing-extensions>=4.2.0 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-25T00:13:36.8704445Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-25T00:13:37.1373254Z Collecting wrapt>=1.17.0rc1 (from formulaic>=1.1.0->statsmodels->landlab==2.11.0)
+2026-11-25T00:13:37.1420995Z   Downloading wrapt-2.6.0.dev1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+2026-11-25T00:13:37.1744970Z Downloading landlab-2.11.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (52.7 MB)
+2026-11-25T00:13:38.7930903Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.7/52.7 MB 32.5 MB/s  0:00:01
+2026-11-25T00:13:38.7965051Z Downloading numpy-2.5.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)
+2026-11-25T00:13:38.9309055Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 117.2 MB/s  0:00:00
+2026-11-25T00:13:38.9424314Z Downloading xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-25T00:13:38.9507456Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 208.3 MB/s  0:00:00
+2026-11-25T00:13:38.9542350Z Downloading scipy-1.18.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-25T00:13:39.2797101Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 108.5 MB/s  0:00:00
+2026-11-25T00:13:39.2824964Z Downloading packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-25T00:13:39.2878913Z Downloading pandas-3.1.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.0 MB)
+2026-11-25T00:13:39.3780517Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 133.5 MB/s  0:00:00
+2026-11-25T00:13:39.3828283Z Downloading pyshp-3.1.9-py3-none-any.whl (75 kB)
+2026-11-25T00:13:39.3888146Z Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-25T00:13:39.3967691Z Downloading bmipy-2.0.1-py3-none-any.whl (8.4 kB)
+2026-11-25T00:13:39.4186279Z Downloading black-26.10.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (2.1 MB)
+2026-11-25T00:13:39.4359936Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 119.8 MB/s  0:00:00
+2026-11-25T00:13:39.4387858Z Downloading pytokens-0.4.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (268 kB)
+2026-11-25T00:13:39.4447593Z Downloading click-8.5.1-py3-none-any.whl (126 kB)
+2026-11-25T00:13:39.4504194Z Downloading mypy_extensions-1.2.0-py3-none-any.whl (5.1 kB)
+2026-11-25T00:13:39.4557975Z Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+2026-11-25T00:13:39.4608185Z Downloading platformdirs-4.14.8-py3-none-any.whl (94 kB)
+2026-11-25T00:13:39.4662532Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-11-25T00:13:39.4717098Z Downloading markupsafe-3.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (23 kB)
+2026-11-25T00:13:39.4767189Z Downloading matplotlib-3.11.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+2026-11-25T00:13:39.5768754Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 98.5 MB/s  0:00:00
+2026-11-25T00:13:39.5798587Z Downloading contourpy-1.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (384 kB)
+2026-11-25T00:13:39.5863809Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-11-25T00:13:39.5927987Z Downloading fonttools-4.68.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+2026-11-25T00:13:39.6274209Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 159.3 MB/s  0:00:00
+2026-11-25T00:13:39.6304828Z Downloading kiwisolver-1.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-11-25T00:13:39.6385105Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 214.3 MB/s  0:00:00
+2026-11-25T00:13:39.6416612Z Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-11-25T00:13:39.6877360Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 158.0 MB/s  0:00:00
+2026-11-25T00:13:39.6905209Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-11-25T00:13:39.7013991Z Downloading netcdf4-1.7.5.1.post1-cp311-abi3-manylinux_2_28_x86_64.whl (10.6 MB)
+2026-11-25T00:13:39.7879010Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 123.0 MB/s  0:00:00
+2026-11-25T00:13:39.7916061Z Downloading certifi-2026.11.20-py3-none-any.whl (127 kB)
+2026-11-25T00:13:39.7993508Z Downloading cftime-1.6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (1.7 MB)
+2026-11-25T00:13:39.8080141Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 220.8 MB/s  0:00:00
+2026-11-25T00:13:39.8268593Z Downloading py_richdem-2.2.0rc3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (768 kB)
+2026-11-25T00:13:39.8336173Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 768.1/768.1 kB 133.6 MB/s  0:00:00
+2026-11-25T00:13:39.8362330Z Downloading pyyaml-6.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (838 kB)
+2026-11-25T00:13:39.8580899Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 838.5/838.5 kB 29.3 MB/s  0:00:00
+2026-11-25T00:13:39.8618467Z Downloading requireit-0.12.0-py3-none-any.whl (11 kB)
+2026-11-25T00:13:39.8668635Z Downloading rich_click-1.9.9-py3-none-any.whl (71 kB)
+2026-11-25T00:13:39.8721150Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-11-25T00:13:39.8777945Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-25T00:13:39.8846065Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 213.7 MB/s  0:00:00
+2026-11-25T00:13:39.8874410Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+2026-11-25T00:13:39.8932988Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-11-25T00:13:39.9117420Z Downloading statsmodels-0.15.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (12.1 MB)
+2026-11-25T00:13:40.0674149Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 77.0 MB/s  0:00:00
+2026-11-25T00:13:40.0704277Z Downloading formulaic-1.2.2-py3-none-any.whl (118 kB)
+2026-11-25T00:13:40.0761712Z Downloading interface_meta-2.0.1-py3-none-any.whl (15 kB)
+2026-11-25T00:13:40.0810866Z Downloading narwhals-2.29.0-py3-none-any.whl (501 kB)
+2026-11-25T00:13:40.0881781Z Downloading patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+2026-11-25T00:13:40.1090584Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-25T00:13:40.1167428Z Downloading wrapt-2.6.0.dev1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (248 kB)
+2026-11-25T00:13:40.1293645Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-25T00:13:40.5804382Z Installing collected packages: wrapt, tzdata, typing-extensions, requireit, pyyaml, pytokens, pyshp, pyparsing, pygments, platformdirs, pillow, pathspec, packaging, numpy, narwhals, mypy-extensions, mdurl, MarkupSafe, kiwisolver, interface-meta, fonttools, cycler, click, certifi, scipy, python-dateutil, py-richdem, patsy, markdown-it-py, jinja2, contourpy, cftime, black, rich, pandas, netcdf4, matplotlib, bmipy, xarray, rich-click, formulaic, statsmodels, landlab
+2026-11-25T00:14:01.1371966Z 
+2026-11-25T00:14:01.1412869Z Successfully installed MarkupSafe-3.0.4 black-26.10.1 bmipy-2.0.1 certifi-2026.11.20 cftime-1.6.6.1 click-8.5.1 contourpy-1.4.0 cycler-0.12.1 fonttools-4.68.0 formulaic-1.2.2 interface-meta-2.0.1 jinja2-3.1.6 kiwisolver-1.5.1 landlab-2.11.0 markdown-it-py-4.3.0 matplotlib-3.11.2 mdurl-0.1.2 mypy-extensions-1.2.0 narwhals-2.29.0 netcdf4-1.7.5.1.post1 numpy-2.5.5 packaging-26.4 pandas-3.1.1 pathspec-1.1.1 patsy-1.0.3 pillow-13.0.0 platformdirs-4.14.8 py-richdem-2.2.0rc3 pygments-2.21.0 pyparsing-3.3.3 pyshp-3.1.9 python-dateutil-4.0.0 pytokens-0.4.1 pyyaml-6.0.4 requireit-0.12.0 rich-15.0.0 rich-click-1.9.9 scipy-1.18.1 statsmodels-0.15.0 typing-extensions-4.16.0 tzdata-2026.6 wrapt-2.6.0.dev1 xarray-2026.9.0
+2026-11-25T00:14:01.4872093Z black==26.10.1
+2026-11-25T00:14:01.4872686Z bmipy==2.0.1
+2026-11-25T00:14:01.4873286Z certifi==2026.11.20
+2026-11-25T00:14:01.4873768Z cftime==1.6.6.1
+2026-11-25T00:14:01.4874171Z click==8.5.1
+2026-11-25T00:14:01.4874605Z contourpy==1.4.0
+2026-11-25T00:14:01.4875020Z cycler==0.12.1
+2026-11-25T00:14:01.4875414Z fonttools==4.68.0
+2026-11-25T00:14:01.4875765Z formulaic==1.2.2
+2026-11-25T00:14:01.4876085Z interface_meta==2.0.1
+2026-11-25T00:14:01.4876727Z Jinja2==3.1.6
+2026-11-25T00:14:01.4876998Z kiwisolver==1.5.1
+2026-11-25T00:14:01.4877359Z landlab==2.11.0
+2026-11-25T00:14:01.4877644Z markdown-it-py==4.3.0
+2026-11-25T00:14:01.4877923Z MarkupSafe==3.0.4
+2026-11-25T00:14:01.4878233Z matplotlib==3.11.2
+2026-11-25T00:14:01.4878513Z mdurl==0.1.2
+2026-11-25T00:14:01.4878797Z mypy_extensions==1.2.0
+2026-11-25T00:14:01.4879120Z narwhals==2.29.0
+2026-11-25T00:14:01.4879414Z netCDF4==1.7.5.1.post1
+2026-11-25T00:14:01.4879717Z numpy==2.5.5
+2026-11-25T00:14:01.4879984Z packaging==26.4
+2026-11-25T00:14:01.4880329Z pandas==3.1.1
+2026-11-25T00:14:01.4880604Z pathspec==1.1.1
+2026-11-25T00:14:01.4880871Z patsy==1.0.3
+2026-11-25T00:14:01.4881154Z pillow==13.0.0
+2026-11-25T00:14:01.4881432Z platformdirs==4.14.8
+2026-11-25T00:14:01.4881919Z py-richdem==2.2.0rc3
+2026-11-25T00:14:01.4882262Z Pygments==2.21.0
+2026-11-25T00:14:01.4882534Z pyparsing==3.3.3
+2026-11-25T00:14:01.4882822Z pyshp==3.1.9
+2026-11-25T00:14:01.4883110Z python-dateutil==4.0.0
+2026-11-25T00:14:01.4883454Z pytokens==0.4.1
+2026-11-25T00:14:01.4883985Z PyYAML==6.0.4
+2026-11-25T00:14:01.4884259Z requireit==0.12.0
+2026-11-25T00:14:01.4884538Z rich==15.0.0
+2026-11-25T00:14:01.4884818Z rich-click==1.9.9
+2026-11-25T00:14:01.4885110Z scipy==1.18.1
+2026-11-25T00:14:01.4885401Z statsmodels==0.15.0
+2026-11-25T00:14:01.4885698Z typing_extensions==4.16.0
+2026-11-25T00:14:01.4885987Z tzdata==2026.6
+2026-11-25T00:14:01.4886412Z wrapt==2.6.0.dev1
+2026-11-25T00:14:01.4886744Z xarray==2026.9.0
+2026-11-25T00:14:01.5323225Z ##[group]Run actions/setup-python@v5
+2026-11-25T00:14:01.5323584Z with:
+2026-11-25T00:14:01.5323907Z   python-version: 3.11.18
+2026-11-25T00:14:01.5324337Z   check-latest: false
+2026-11-25T00:14:01.5326832Z   token: ***
+2026-11-25T00:14:01.5327149Z   update-environment: true
+2026-11-25T00:14:01.5327472Z   allow-prereleases: false
+2026-11-25T00:14:01.5327813Z   freethreaded: false
+2026-11-25T00:14:01.5328106Z env:
+2026-11-25T00:14:01.5328441Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:14:01.5328886Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:14:01.5329190Z   OMP_NUM_THREADS: 1
+2026-11-25T00:14:01.5329536Z   MKL_NUM_THREADS: 1
+2026-11-25T00:14:01.5329832Z   FIPY_SOLVERS: scipy
+2026-11-25T00:14:01.5330194Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:14:01.5330667Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:14:01.5331263Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-25T00:14:01.5331900Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:14:01.5332337Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:14:01.5332746Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-25T00:14:01.5333211Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-25T00:14:01.5333654Z ##[endgroup]
+2026-11-25T00:14:01.6651209Z ##[group]Installed versions
+2026-11-25T00:14:01.6679291Z (node:2393) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T00:14:01.6680411Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T00:14:01.6681073Z Successfully set up CPython (3.11.18)
+2026-11-25T00:14:01.6682148Z ##[endgroup]
+2026-11-25T00:14:01.6888083Z ##[group]Run "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python" -m pip install --only-binary=:all: fipy==4.0.3 pybullet==3.2.7 numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1
+2026-11-25T00:14:01.6889183Z [36;1m"/opt/hostedtoolcache/Python/3.11.18/x64/bin/python" -m pip install --only-binary=:all: fipy==4.0.3 pybullet==3.2.7 numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1[0m
+2026-11-25T00:14:01.6890405Z [36;1m"/opt/hostedtoolcache/Python/3.11.18/x64/bin/python" -m pip freeze[0m
+2026-11-25T00:14:01.6890867Z [36;1mlscpu[0m
+2026-11-25T00:14:01.6919161Z shell: /usr/bin/bash -e {0}
+2026-11-25T00:14:01.6919658Z env:
+2026-11-25T00:14:01.6920320Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:14:01.6921113Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:14:01.6921714Z   OMP_NUM_THREADS: 1
+2026-11-25T00:14:01.6922144Z   MKL_NUM_THREADS: 1
+2026-11-25T00:14:01.6922570Z   FIPY_SOLVERS: scipy
+2026-11-25T00:14:01.6923304Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:14:01.6924014Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:01.6924823Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T00:14:01.6925543Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:01.6926268Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:01.6926936Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:01.6927867Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib:/opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-25T00:14:01.6928694Z ##[endgroup]
+2026-11-25T00:14:02.2974031Z Collecting fipy==4.0.3
+2026-11-25T00:14:02.3490312Z   Downloading fipy-4.0.3-py3-none-any.whl.metadata (5.1 kB)
+2026-11-25T00:14:02.4083025Z Collecting pybullet==3.2.7
+2026-11-25T00:14:02.4138026Z   Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.8 kB)
+2026-11-25T00:14:02.5746285Z Collecting numpy==2.4.6
+2026-11-25T00:14:02.5783670Z   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-25T00:14:02.5932819Z Collecting xarray==2026.9.0
+2026-11-25T00:14:02.5947272Z   Using cached xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-25T00:14:02.6828792Z Collecting scipy==1.17.1
+2026-11-25T00:14:02.6863899Z   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-25T00:14:02.8221306Z Collecting matplotlib (from fipy==4.0.3)
+2026-11-25T00:14:02.8265453Z   Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-11-25T00:14:02.8572587Z Collecting typer (from fipy==4.0.3)
+2026-11-25T00:14:02.8618563Z   Downloading typer-0.29.2-py3-none-any.whl.metadata (16 kB)
+2026-11-25T00:14:02.8727943Z Collecting typing_extensions (from fipy==4.0.3)
+2026-11-25T00:14:02.8742096Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-25T00:14:02.8821978Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-25T00:14:02.8834989Z   Using cached packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T00:14:02.9687111Z Collecting pandas>=2.2 (from xarray==2026.9.0)
+2026-11-25T00:14:02.9723003Z   Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-25T00:14:02.9858416Z Collecting python-dateutil>=2.9.0 (from pandas>=2.2->xarray==2026.9.0)
+2026-11-25T00:14:02.9872449Z   Using cached python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-25T00:14:02.9938319Z Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.2->xarray==2026.9.0)
+2026-11-25T00:14:02.9951687Z   Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-25T00:14:03.0363721Z Collecting contourpy>=1.0.1 (from matplotlib->fipy==4.0.3)
+2026-11-25T00:14:03.0409378Z   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-11-25T00:14:03.0481883Z Collecting cycler>=0.10 (from matplotlib->fipy==4.0.3)
+2026-11-25T00:14:03.0495107Z   Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-11-25T00:14:03.1559106Z Collecting fonttools>=4.28.2 (from matplotlib->fipy==4.0.3)
+2026-11-25T00:14:03.1596091Z   Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+2026-11-25T00:14:03.2347977Z Collecting kiwisolver>=1.3.1 (from matplotlib->fipy==4.0.3)
+2026-11-25T00:14:03.2408958Z   Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-11-25T00:14:03.3812733Z Collecting pillow>=9 (from matplotlib->fipy==4.0.3)
+2026-11-25T00:14:03.3860257Z   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-11-25T00:14:03.4011934Z Collecting pyparsing>=3 (from matplotlib->fipy==4.0.3)
+2026-11-25T00:14:03.4026115Z   Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-11-25T00:14:03.4858711Z Collecting pydantic>=2.5.3 (from typer->fipy==4.0.3)
+2026-11-25T00:14:03.4899469Z   Downloading pydantic-2.14.4-py3-none-any.whl.metadata (143 kB)
+2026-11-25T00:14:03.5073815Z Collecting shellingham>=1.3.0 (from typer->fipy==4.0.3)
+2026-11-25T00:14:03.5105934Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T00:14:03.5276010Z Collecting rich>=13.8.0 (from typer->fipy==4.0.3)
+2026-11-25T00:14:03.5290442Z   Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-11-25T00:14:03.5390347Z Collecting annotated-doc>=0.0.2 (from typer->fipy==4.0.3)
+2026-11-25T00:14:03.5427239Z   Downloading annotated_doc-0.0.7-py3-none-any.whl.metadata (6.4 kB)
+2026-11-25T00:14:03.5607835Z Collecting annotated-types>=0.6.0 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T00:14:03.5641158Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-11-25T00:14:04.1384665Z Collecting pydantic-core==2.50.5 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T00:14:04.1437390Z   Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+2026-11-25T00:14:04.1638457Z Collecting typing-inspection>=0.4.4 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T00:14:04.1670127Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+2026-11-25T00:14:04.1764888Z Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T00:14:04.1778495Z   Using cached markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+2026-11-25T00:14:04.1873873Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T00:14:04.1886972Z   Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-25T00:14:04.1926722Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T00:14:04.1939552Z   Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-11-25T00:14:04.2054624Z Downloading fipy-4.0.3-py3-none-any.whl (439 kB)
+2026-11-25T00:14:04.2163928Z Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (103.2 MB)
+2026-11-25T00:14:07.3364231Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 MB 33.1 MB/s  0:00:03
+2026-11-25T00:14:07.3407054Z Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-11-25T00:14:07.5011171Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 105.4 MB/s  0:00:00
+2026-11-25T00:14:07.5025673Z Using cached xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-25T00:14:07.5080351Z Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-25T00:14:07.8022876Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 120.3 MB/s  0:00:00
+2026-11-25T00:14:07.8036963Z Using cached packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-25T00:14:07.8083030Z Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+2026-11-25T00:14:07.8985683Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 139.1 MB/s  0:00:00
+2026-11-25T00:14:07.8999396Z Using cached python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-25T00:14:07.9051222Z Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+2026-11-25T00:14:07.9885622Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 120.0 MB/s  0:00:00
+2026-11-25T00:14:07.9919487Z Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2026-11-25T00:14:07.9967400Z Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-11-25T00:14:07.9999656Z Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+2026-11-25T00:14:08.0278645Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 205.3 MB/s  0:00:00
+2026-11-25T00:14:08.0316704Z Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2026-11-25T00:14:08.0391625Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 228.9 MB/s  0:00:00
+2026-11-25T00:14:08.0424318Z Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-11-25T00:14:08.0980939Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 128.9 MB/s  0:00:00
+2026-11-25T00:14:08.0995046Z Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-11-25T00:14:08.1037096Z Downloading typer-0.29.2-py3-none-any.whl (121 kB)
+2026-11-25T00:14:08.1093292Z Downloading annotated_doc-0.0.7-py3-none-any.whl (5.3 kB)
+2026-11-25T00:14:08.1142937Z Downloading pydantic-2.14.4-py3-none-any.whl (494 kB)
+2026-11-25T00:14:08.1206822Z Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+2026-11-25T00:14:08.1369418Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 144.5 MB/s  0:00:00
+2026-11-25T00:14:08.1403009Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-11-25T00:14:08.1437726Z Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+2026-11-25T00:14:08.1452569Z Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-25T00:14:08.1470412Z Using cached markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+2026-11-25T00:14:08.1483384Z Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-11-25T00:14:08.1530457Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-11-25T00:14:08.1564732Z Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-25T00:14:08.1605516Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+2026-11-25T00:14:08.1637860Z Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-25T00:14:08.5784667Z Installing collected packages: pybullet, tzdata, typing_extensions, shellingham, pyparsing, pygments, pillow, packaging, numpy, mdurl, kiwisolver, fonttools, cycler, annotated-types, annotated-doc, typing-inspection, scipy, python-dateutil, pydantic-core, markdown-it-py, contourpy, rich, pydantic, pandas, matplotlib, xarray, typer, fipy
+2026-11-25T00:14:25.6935262Z 
+2026-11-25T00:14:25.6953776Z Successfully installed annotated-doc-0.0.7 annotated-types-0.8.0 contourpy-1.3.3 cycler-0.12.1 fipy-4.0.3 fonttools-4.68.0 kiwisolver-1.5.1 markdown-it-py-4.3.0 matplotlib-3.11.2 mdurl-0.1.2 numpy-2.4.6 packaging-26.4 pandas-3.1.1 pillow-13.0.0 pybullet-3.2.7 pydantic-2.14.4 pydantic-core-2.50.5 pygments-2.21.0 pyparsing-3.3.3 python-dateutil-4.0.0 rich-15.0.0 scipy-1.17.1 shellingham-1.5.4 typer-0.29.2 typing-inspection-0.4.5 typing_extensions-4.16.0 tzdata-2026.6 xarray-2026.9.0
+2026-11-25T00:14:26.0204925Z annotated-doc==0.0.7
+2026-11-25T00:14:26.0205807Z annotated-types==0.8.0
+2026-11-25T00:14:26.0206461Z contourpy==1.3.3
+2026-11-25T00:14:26.0207100Z cycler==0.12.1
+2026-11-25T00:14:26.0207673Z FiPy==4.0.3
+2026-11-25T00:14:26.0208301Z fonttools==4.68.0
+2026-11-25T00:14:26.0208916Z kiwisolver==1.5.1
+2026-11-25T00:14:26.0209517Z markdown-it-py==4.3.0
+2026-11-25T00:14:26.0210136Z matplotlib==3.11.2
+2026-11-25T00:14:26.0210788Z mdurl==0.1.2
+2026-11-25T00:14:26.0211352Z numpy==2.4.6
+2026-11-25T00:14:26.0212206Z packaging==26.4
+2026-11-25T00:14:26.0213206Z pandas==3.1.1
+2026-11-25T00:14:26.0213800Z pillow==13.0.0
+2026-11-25T00:14:26.0214381Z pybullet==3.2.7
+2026-11-25T00:14:26.0214945Z pydantic==2.14.4
+2026-11-25T00:14:26.0215508Z pydantic_core==2.50.5
+2026-11-25T00:14:26.0216061Z Pygments==2.21.0
+2026-11-25T00:14:26.0216572Z pyparsing==3.3.3
+2026-11-25T00:14:26.0217243Z python-dateutil==4.0.0
+2026-11-25T00:14:26.0217794Z rich==15.0.0
+2026-11-25T00:14:26.0218317Z scipy==1.17.1
+2026-11-25T00:14:26.0218826Z shellingham==1.5.4
+2026-11-25T00:14:26.0219336Z typer==0.29.2
+2026-11-25T00:14:26.0219907Z typing-inspection==0.4.5
+2026-11-25T00:14:26.0220353Z typing_extensions==4.16.0
+2026-11-25T00:14:26.0220757Z tzdata==2026.6
+2026-11-25T00:14:26.0221345Z xarray==2026.9.0
+2026-11-25T00:14:26.0527626Z Architecture:                            x86_64
+2026-11-25T00:14:26.0528790Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-25T00:14:26.0529798Z Address sizes:                           48 bits physical, 57 bits virtual
+2026-11-25T00:14:26.0531345Z Byte Order:                              Little Endian
+2026-11-25T00:14:26.0532188Z CPU(s):                                  4
+2026-11-25T00:14:26.0532756Z On-line CPU(s) list:                     0-3
+2026-11-25T00:14:26.0533521Z Vendor ID:                               GenuineIntel
+2026-11-25T00:14:26.0534098Z Model name:                              INTEL(R) XEON(R) PLATINUM 8573C
+2026-11-25T00:14:26.0534723Z CPU family:                              6
+2026-11-25T00:14:26.0535281Z Model:                                   207
+2026-11-25T00:14:26.0535803Z Thread(s) per core:                      2
+2026-11-25T00:14:26.0536512Z Core(s) per socket:                      2
+2026-11-25T00:14:26.0537182Z Socket(s):                               1
+2026-11-25T00:14:26.0537769Z Stepping:                                2
+2026-11-25T00:14:26.0538312Z CPU(s) scaling MHz:                      108%
+2026-11-25T00:14:26.0538879Z CPU max MHz:                             2300.0000
+2026-11-25T00:14:26.0539531Z CPU min MHz:                             800.0000
+2026-11-25T00:14:26.0540100Z BogoMIPS:                                4600.00
+2026-11-25T00:14:26.0543146Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch tpr_shadow ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves vnmi avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid fsrm arch_capabilities
+2026-11-25T00:14:26.0545560Z Virtualization:                          VT-x
+2026-11-25T00:14:26.0546446Z Hypervisor vendor:                       Microsoft
+2026-11-25T00:14:26.0546994Z Virtualization type:                     full
+2026-11-25T00:14:26.0547573Z L1d cache:                               96 KiB (2 instances)
+2026-11-25T00:14:26.0548160Z L1i cache:                               64 KiB (2 instances)
+2026-11-25T00:14:26.0548717Z L2 cache:                                4 MiB (2 instances)
+2026-11-25T00:14:26.0549376Z L3 cache:                                260 MiB (1 instance)
+2026-11-25T00:14:26.0549739Z NUMA node(s):                            1
+2026-11-25T00:14:26.0550138Z NUMA node0 CPU(s):                       0-3
+2026-11-25T00:14:26.0550510Z Vulnerability Gather data sampling:      Not affected
+2026-11-25T00:14:26.0550909Z Vulnerability Ghostwrite:                Not affected
+2026-11-25T00:14:26.0551579Z Vulnerability Indirect target selection: Mitigation; Aligned branch/return thunks
+2026-11-25T00:14:26.0552129Z Vulnerability Itlb multihit:             Not affected
+2026-11-25T00:14:26.0552692Z Vulnerability L1tf:                      Not affected
+2026-11-25T00:14:26.0553073Z Vulnerability Mds:                       Not affected
+2026-11-25T00:14:26.0553451Z Vulnerability Meltdown:                  Not affected
+2026-11-25T00:14:26.0553911Z Vulnerability Mmio stale data:           Not affected
+2026-11-25T00:14:26.0554297Z Vulnerability Old microcode:             Not affected
+2026-11-25T00:14:26.0554690Z Vulnerability Reg file data sampling:    Not affected
+2026-11-25T00:14:26.0555083Z Vulnerability Retbleed:                  Vulnerable
+2026-11-25T00:14:26.0555470Z Vulnerability Spec rstack overflow:      Not affected
+2026-11-25T00:14:26.0555896Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-25T00:14:26.0556522Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-25T00:14:26.0557229Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Retpoline
+2026-11-25T00:14:26.0557882Z Vulnerability Srbds:                     Not affected
+2026-11-25T00:14:26.0558308Z Vulnerability Tsa:                       Not affected
+2026-11-25T00:14:26.0558869Z Vulnerability Tsx async abort:           Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown
+2026-11-25T00:14:26.0559420Z Vulnerability Vmscape:                   Not affected
+2026-11-25T00:14:26.0632319Z ##[group]Run "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python" experiments/p1c_live_world.py "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python"
+2026-11-25T00:14:26.0633305Z [36;1m"/opt/hostedtoolcache/Python/3.11.18/x64/bin/python" experiments/p1c_live_world.py "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python"[0m
+2026-11-25T00:14:26.0648145Z shell: /usr/bin/bash -e {0}
+2026-11-25T00:14:26.0648472Z env:
+2026-11-25T00:14:26.0648899Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:14:26.0649308Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:14:26.0649631Z   OMP_NUM_THREADS: 1
+2026-11-25T00:14:26.0649931Z   MKL_NUM_THREADS: 1
+2026-11-25T00:14:26.0650216Z   FIPY_SOLVERS: scipy
+2026-11-25T00:14:26.0650600Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:14:26.0651113Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:26.0651949Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T00:14:26.0652429Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:26.0652860Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:26.0653321Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:14:26.0653871Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib:/opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-25T00:14:26.0654403Z ##[endgroup]
+2026-11-25T00:14:26.2209787Z pybullet build time: Jan 29 2025 23:17:20
+2026-11-25T00:14:41.0943976Z Traceback (most recent call last):
+2026-11-25T00:14:41.0954448Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 256, in main
+2026-11-25T00:14:41.0955391Z     result["cases"][key]=run(rawpath,python,raws[seed],seed,k,checkpoints/key,root/key,refs["cases"][key],flux_ref,ref0)
+2026-11-25T00:14:41.0956060Z                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:14:41.0956812Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 174, in run
+2026-11-25T00:14:41.0957400Z     flux_comparison=compare_flux(arrays,flux_ref,epoch)
+2026-11-25T00:14:41.0957840Z                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:14:41.0958443Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 148, in compare_flux
+2026-11-25T00:14:41.0959004Z     REQ(len(arrays)==3*12,"three native steps")
+2026-11-25T00:14:41.0959595Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1b2b_transport_kernel.py", line 13, in req
+2026-11-25T00:14:41.0960130Z     if not bool(x):raise ValueError(msg)
+2026-11-25T00:14:41.0960501Z                    ^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:14:41.0960856Z ValueError: three native steps
+2026-11-25T00:14:54.0768558Z Traceback (most recent call last):
+2026-11-25T00:14:54.0770374Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 256, in main
+2026-11-25T00:14:54.0772209Z     result["cases"][key]=run(rawpath,python,raws[seed],seed,k,checkpoints/key,root/key,refs["cases"][key],flux_ref,ref0)
+2026-11-25T00:14:54.0773259Z                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:14:54.0777270Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 174, in run
+2026-11-25T00:14:54.0778388Z     flux_comparison=compare_flux(arrays,flux_ref,epoch)
+2026-11-25T00:14:54.0779072Z                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:14:54.0780116Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 148, in compare_flux
+2026-11-25T00:14:54.0781075Z     REQ(len(arrays)==3*12,"three native steps")
+2026-11-25T00:14:54.0782352Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1b2b_transport_kernel.py", line 13, in req
+2026-11-25T00:14:54.0783623Z     if not bool(x):raise ValueError(msg)
+2026-11-25T00:14:54.0784124Z                    ^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:14:54.0784715Z ValueError: three native steps
+2026-11-25T00:15:07.5995651Z Traceback (most recent call last):
+2026-11-25T00:15:07.5999711Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 256, in main
+2026-11-25T00:15:07.6000825Z     result["cases"][key]=run(rawpath,python,raws[seed],seed,k,checkpoints/key,root/key,refs["cases"][key],flux_ref,ref0)
+2026-11-25T00:15:07.6002306Z                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:15:07.6003187Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 174, in run
+2026-11-25T00:15:07.6003971Z     flux_comparison=compare_flux(arrays,flux_ref,epoch)
+2026-11-25T00:15:07.6004472Z                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:15:07.6005274Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 148, in compare_flux
+2026-11-25T00:15:07.6006142Z     REQ(len(arrays)==3*12,"three native steps")
+2026-11-25T00:15:07.6006965Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1b2b_transport_kernel.py", line 13, in req
+2026-11-25T00:15:07.6007767Z     if not bool(x):raise ValueError(msg)
+2026-11-25T00:15:07.6008338Z                    ^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:15:07.6008799Z ValueError: three native steps
+2026-11-25T00:15:21.1252868Z Traceback (most recent call last):
+2026-11-25T00:15:21.1254812Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 256, in main
+2026-11-25T00:15:21.1256501Z     result["cases"][key]=run(rawpath,python,raws[seed],seed,k,checkpoints/key,root/key,refs["cases"][key],flux_ref,ref0)
+2026-11-25T00:15:21.1257726Z                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:15:21.1259186Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 174, in run
+2026-11-25T00:15:21.1260134Z     flux_comparison=compare_flux(arrays,flux_ref,epoch)
+2026-11-25T00:15:21.1260987Z                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:15:21.1262273Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1c_live_world.py", line 148, in compare_flux
+2026-11-25T00:15:21.1263438Z     REQ(len(arrays)==3*12,"three native steps")
+2026-11-25T00:15:21.1264615Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/p1b2b_transport_kernel.py", line 13, in req
+2026-11-25T00:15:21.1265749Z     if not bool(x):raise ValueError(msg)
+2026-11-25T00:15:21.1266501Z                    ^^^^^^^^^^^^^^^^^^^^^
+2026-11-25T00:15:21.1267213Z ValueError: three native steps
+2026-11-25T00:15:21.1304710Z WORLD_EVAL_JSON {"cases": {}, "checkpoints": {}, "controls": {}, "experiment": "P1-C.2a", "failed_preregistered_gates": ["7321_0.0:ValueError('three native steps')", "7321_0.1:ValueError('three native steps')", "8128_0.0:ValueError('three native steps')", "8128_0.1:ValueError('three native steps')"], "outputs": {"7321_0.0/epoch_0.nc": "7d9116ae6ea605f647b433cf191b15cde29be80e617e251fad7a6e113d8f0672", "7321_0.0/flux_0.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85", "7321_0.0/ray_0.npz": "542d2d56753ef0974f0ee7a27aa55e66f5d7cbf37d85551039229ced2036c1e5", "7321_0.1/epoch_0.nc": "a3c242677536ec21e6bc6398e97fac587374cb3aed77cc37e891ab38f884a916", "7321_0.1/flux_0.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85", "7321_0.1/ray_0.npz": "542d2d56753ef0974f0ee7a27aa55e66f5d7cbf37d85551039229ced2036c1e5", "8128_0.0/epoch_0.nc": "d94fd29a9e5583680167b4aa8906ab38d5d3388ac27d3c23c2616173c293dac9", "8128_0.0/flux_0.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85", "8128_0.0/ray_0.npz": "75e4fb29f4022e3d6929aa63dafa2f79276d50a728bc7a1e0f452ab77bf323c9", "8128_0.1/epoch_0.nc": "8ee4a8b30f6a0fce351fa1a45c09d4eebce5049764e681fc3bbc5c9015dbe603", "8128_0.1/flux_0.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85", "8128_0.1/ray_0.npz": "75e4fb29f4022e3d6929aa63dafa2f79276d50a728bc7a1e0f452ab77bf323c9"}, "runtime": {"bullet_profile": {"baseline": ["X86_V2"], "dispatch": ["X86_V3", "X86_V4", "AVX512_ICL", "AVX512_SPR"], "enabled": {"ASIMD": false, "ASIMDDP": false, "ASIMDFHM": false, "ASIMDHP": false, "AVX": true, "AVX2": true, "AVX5124FMAPS": false, "AVX5124VNNIW": false, "AVX512BF16": false, "AVX512BITALG": true, "AVX512BW": true, "AVX512CD": true, "AVX512DQ": true, "AVX512ER": false, "AVX512F": true, "AVX512FP16": false, "AVX512IFMA": true, "AVX512PF": false, "AVX512VBMI": true, "AVX512VBMI2": true, "AVX512VL": true, "AVX512VNNI": true, "AVX512VPOPCNTDQ": true, "AVX512_CLX": true, "AVX512_CNL": true, "AVX512_ICL": false, "AVX512_KNL": false, "AVX512_KNM": false, "AVX512_SKX": false, "AVX512_SPR": false, "BMI": true, "BMI2": true, "CX16": true, "F16C": true, "FMA3": true, "FMA4": false, "FPHP": false, "GFNI": true, "LAHF": true, "LSX": false, "LZCNT": true, "MMX": true, "MOVBE": true, "NEON": false, "NEON_FP16": false, "NEON_VFPV4": false, "POPCNT": true, "RVV": false, "SSE": true, "SSE2": true, "SSE3": true, "SSE41": true, "SSE42": true, "SSSE3": true, "SVE": false, "VAES": true, "VPCLMULQDQ": true, "VSX": false, "VSX2": false, "VSX3": false, "VSX4": false, "VX": false, "VXE": false, "VXE2": false, "X86_V2": true, "X86_V3": false, "X86_V4": false, "XOP": false}, "numpy": "2.4.6"}, "landlab_profile": {"baseline": ["X86_V2"], "dispatch": ["X86_V3", "X86_V4", "AVX512_ICL", "AVX512_SPR"], "enabled": {"ASIMD": false, "ASIMDDP": false, "ASIMDFHM": false, "ASIMDHP": false, "AVX": true, "AVX2": true, "AVX5124FMAPS": false, "AVX5124VNNIW": false, "AVX512BF16": false, "AVX512BITALG": true, "AVX512BW": true, "AVX512CD": true, "AVX512DQ": true, "AVX512ER": false, "AVX512F": true, "AVX512FP16": false, "AVX512IFMA": true, "AVX512PF": false, "AVX512VBMI": true, "AVX512VBMI2": true, "AVX512VL": true, "AVX512VNNI": true, "AVX512VPOPCNTDQ": true, "AVX512_CLX": true, "AVX512_CNL": true, "AVX512_ICL": false, "AVX512_KNL": false, "AVX512_KNM": false, "AVX512_SKX": false, "AVX512_SPR": false, "BMI": true, "BMI2": true, "CX16": true, "F16C": true, "FMA3": true, "FMA4": false, "FPHP": false, "GFNI": true, "LAHF": true, "LSX": false, "LZCNT": true, "MMX": true, "MOVBE": true, "NEON": false, "NEON_FP16": false, "NEON_VFPV4": false, "POPCNT": true, "RVV": false, "SSE": true, "SSE2": true, "SSE3": true, "SSE41": true, "SSE42": true, "SSSE3": true, "SVE": false, "VAES": true, "VPCLMULQDQ": true, "VSX": false, "VSX2": false, "VSX3": false, "VSX4": false, "VX": false, "VXE": false, "VXE2": false, "X86_V2": true, "X86_V3": false, "X86_V4": false, "XOP": false}, "numpy": "2.5.5"}, "python": "3.11.18", "versions": {"fipy": "4.0.3", "numpy": "2.4.6", "pybullet": "3.2.7", "scipy": "1.17.1", "xarray": "2026.9.0"}}}
+2026-11-25T00:15:21.2589454Z ##[error]Process completed with exit code 1.
+2026-11-25T00:15:21.2663786Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T00:15:21.2664157Z with:
+2026-11-25T00:15:21.2664463Z   name: p1c-producer
+2026-11-25T00:15:21.2664759Z   path: p1c-producer
+2026-11-25T00:15:21.2665034Z   retention-days: 30
+2026-11-25T00:15:21.2665387Z   if-no-files-found: warn
+2026-11-25T00:15:21.2665698Z   compression-level: 6
+2026-11-25T00:15:21.2665996Z   overwrite: false
+2026-11-25T00:15:21.2666475Z   include-hidden-files: false
+2026-11-25T00:15:21.2666759Z env:
+2026-11-25T00:15:21.2667156Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:15:21.2667556Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:15:21.2667944Z   OMP_NUM_THREADS: 1
+2026-11-25T00:15:21.2668401Z   MKL_NUM_THREADS: 1
+2026-11-25T00:15:21.2668698Z   FIPY_SOLVERS: scipy
+2026-11-25T00:15:21.2669115Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:15:21.2669572Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:21.2670183Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T00:15:21.2670659Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:21.2671133Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:21.2671740Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:21.2672445Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib:/opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-25T00:15:21.2672965Z ##[endgroup]
+2026-11-25T00:15:21.4310136Z (node:2476) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T00:15:21.4310990Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T00:15:21.4424455Z With the provided path, there will be 13 files uploaded
+2026-11-25T00:15:21.4425341Z Artifact name is valid!
+2026-11-25T00:15:21.4425807Z Root directory input is valid!
+2026-11-25T00:15:21.7462029Z Beginning upload of artifact content to blob storage
+2026-11-25T00:15:21.7952665Z (node:2476) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-25T00:15:21.8947915Z Uploaded bytes 126628
+2026-11-25T00:15:21.9196219Z Finished uploading artifact content to blob storage!
+2026-11-25T00:15:21.9197298Z SHA256 digest of uploaded artifact zip is 3c964d5c0e344804450b7485ee774221433390dd8506a0080c57d879a1b200bf
+2026-11-25T00:15:21.9199236Z Finalizing artifact upload
+2026-11-25T00:15:22.2989248Z Artifact p1c-producer.zip successfully finalized. Artifact ID 14977782549
+2026-11-25T00:15:22.2990714Z Artifact p1c-producer has been successfully uploaded! Final size is 126628 bytes. Artifact ID is 14977782549
+2026-11-25T00:15:22.2992084Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45516385783/artifacts/14977782549
+2026-11-25T00:15:22.3139216Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T00:15:22.3139628Z with:
+2026-11-25T00:15:22.3139921Z   name: p1c-checkpoints
+2026-11-25T00:15:22.3140237Z   path: p1c-checkpoints
+2026-11-25T00:15:22.3140569Z   retention-days: 30
+2026-11-25T00:15:22.3140920Z   if-no-files-found: warn
+2026-11-25T00:15:22.3141234Z   compression-level: 6
+2026-11-25T00:15:22.3141727Z   overwrite: false
+2026-11-25T00:15:22.3142054Z   include-hidden-files: false
+2026-11-25T00:15:22.3142412Z env:
+2026-11-25T00:15:22.3142823Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T00:15:22.3143223Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T00:15:22.3143531Z   OMP_NUM_THREADS: 1
+2026-11-25T00:15:22.3143898Z   MKL_NUM_THREADS: 1
+2026-11-25T00:15:22.3144169Z   FIPY_SOLVERS: scipy
+2026-11-25T00:15:22.3144578Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T00:15:22.3145039Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:22.3145638Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T00:15:22.3146140Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:22.3146621Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:22.3147055Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T00:15:22.3147653Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib:/opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-25T00:15:22.3148331Z ##[endgroup]
+2026-11-25T00:15:22.4856543Z (node:2489) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T00:15:22.4857513Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T00:15:22.4928729Z ##[warning]No files were found with the provided path: p1c-checkpoints. No artifacts will be uploaded.
+2026-11-25T00:15:22.5143708Z Post job cleanup.
+2026-11-25T00:15:22.6073711Z [command]/usr/bin/git version
+2026-11-25T00:15:22.6116825Z git version 2.56.1
+2026-11-25T00:15:22.6149927Z Temporarily overriding HOME='/home/runner/work/_temp/4afe780c-9c95-4e81-95e8-453c7d6f082d' before making global git config changes
+2026-11-25T00:15:22.6151431Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T00:15:22.6156011Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T00:15:22.6214530Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T00:15:22.6229246Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T00:15:22.6445047Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T00:15:22.6478552Z http.https://github.com/.extraheader
+2026-11-25T00:15:22.6486031Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-25T00:15:22.6522951Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T00:15:22.6764946Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T00:15:22.6807183Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T00:15:22.7212706Z Cleaning up orphan processes
+2026-11-25T00:15:22.7534946Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
