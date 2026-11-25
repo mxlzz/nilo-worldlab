@@ -4,9 +4,9 @@
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "experiment_pending",
   "stage": "P4",
-  "current_task": "P4.1",
-  "next_action": "Leer CI 45627810769 y WORLD_ENERGY_JSON; P4.1 primer fallo instrumental archivado; verificar gates y fixture idéntico, archivar antes de P4.2. Si falla, clasificar sin alterar física ni gates. Si aprueba, P4.2 evaporación viva bulk y energía/materia exportadas, feedback, restart; no afirmar ciclo cerrado sin condensación.",
-  "scientific_next": "P4.1",
+  "current_task": "P4.2",
+  "next_action": "Leer CI 45628538282 y WORLD_EVAP_JSON/RESTART/COMPARE. Verificar 3×240 pasos, fixture, balances material/energía, vapor y latente/sensible, controles no_evap/dark, bifurcaciones temperatura y flujo, restart120. Archivar antes de dictamen P4. Si falla, conservar y clasificar sin alterar gates. P4 atmósfera externa y pulso nominal, no ciclo atmosférico cerrado. Después auditar P4 y P5 según PLAN.",
+  "scientific_next": "P4.2",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -20,7 +20,7 @@
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
-    "P4": "P41_retry_xarray_field_access"
+    "P4": "P41_passed_P42_live_evap_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -95,13 +95,16 @@
     "research/P4/P4_SELECCION_MODELO.md",
     "research/P4/P4.1_PROTOCOLO_ENERGIA.md",
     "research/P4/P4.1_INCIDENCIA_1.md",
-    "evidence/P4/P41-failed/archive_manifest.json"
+    "evidence/P4/P41-failed/archive_manifest.json",
+    "research/P4/P4.1_RESULTADO.md",
+    "evidence/P4/P41/archive_manifest.json",
+    "research/P4/P4.2_PROTOCOLO_EVAPORACION.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "cd9a64fa7c8c5a12e4fb8dc8f1d279805f5f30ed",
+  "last_confirmed_non_state_write": "46d55c7601e4bbeb33e5741fd124a15cd884e9f0",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -126,9 +129,9 @@
   },
   "updated_at": "2026-11-25",
   "active_run": {
-    "id": 45627810769,
-    "unit": "P4.1",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45627810769",
-    "sha": "cd9a64fa7c8c5a12e4fb8dc8f1d279805f5f30ed"
+    "id": 45628538282,
+    "unit": "P4.2",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45628538282",
+    "sha": "46d55c7601e4bbeb33e5741fd124a15cd884e9f0"
   }
 }
