@@ -143,3 +143,5 @@
 - P4.1 archivo primer fallo45627669512 SUCCESS, fixture/JSON/log/ZIP cotejados y tamaños releídos. Retry solo acceso variables tail/head por índice.
 
 - P4.1 retry45627810769 SUCCESS, 4×240 pasos, 5 controles, energía residual max1.1683e-5J, pulso calentamiento/enfriamiento, uniformidad1.71e-13K, 12 snapshots exactos, P3 retenida inmutada. Archivo pendiente.
+
+- P4.1 archivo45628092122 SUCCESS, 17 outputs/CRC/SHA/JSON/log y fixture histórico exacto, tamaños verificados. P4.2 prerregistro vapor bulk con déficit de humedad, latente/sensible y feedback en hidrología viva, 3 modos y 2 bifurcaciones, restart; atmósfera externa, 5min.
