@@ -4,9 +4,9 @@
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "experiment_pending",
   "stage": "P5",
-  "current_task": "P5.1",
-  "next_action": "Leer CI 45629664885 y WORLD_GRAIN_JSON. Verificar 9 propuestas WC, fixture y 6 controles, conservación por clase, Exner, contrastes selección y heterogéneo/espejo. Archivar resultados antes de dictamen, si falla no cambiar gates; P5.2 integración viva solo si pasa.",
-  "scientific_next": "P5.1",
+  "current_task": "P5.2",
+  "next_action": "Leer CI 45630220328 y WORLD_COMPOSITION_JSON/RESTART/COMPARE. Verificar 3×240 pasos, balances por clase y agua/energía, contrastes active/passive/frozen, fork y restart120, siete controles. Archivar antes de dictamen P5; si falla, conservar y clasificar sin alterar gates. P6 horizonte prolongado después.",
+  "scientific_next": "P5.2",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -21,7 +21,7 @@
     "P2": "complete_documentary_approved_direction",
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
-    "P5": "P51_native_fractional_compatibility_pending"
+    "P5": "P51_passed_P52_live_composition_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -103,13 +103,16 @@
     "research/P4/P4.2_RESULTADO.md",
     "evidence/P4/P42/archive_manifest.json",
     "research/P4/P4_DICTAMEN.md",
-    "research/P5/P5.1_PROTOCOLO_GRANULOMETRIA.md"
+    "research/P5/P5.1_PROTOCOLO_GRANULOMETRIA.md",
+    "research/P5/P5.1_RESULTADO.md",
+    "evidence/P5/P51/archive_manifest.json",
+    "research/P5/P5.2_PROTOCOLO_COMPOSICION_VIVA.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "eebcfbe154118e5c71989c00ec32b1f265bc4941",
+  "last_confirmed_non_state_write": "f91c5b115ba5ef01e5af9411bbd6c5f11c7a2109",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -134,9 +137,9 @@
   },
   "updated_at": "2026-11-25",
   "active_run": {
-    "id": 45629664885,
-    "unit": "P5.1",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45629664885",
-    "sha": "eebcfbe154118e5c71989c00ec32b1f265bc4941"
+    "id": 45630220328,
+    "unit": "P5.2",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45630220328",
+    "sha": "f91c5b115ba5ef01e5af9411bbd6c5f11c7a2109"
   }
 }
