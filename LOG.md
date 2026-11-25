@@ -129,3 +129,5 @@
 - P3.3 CI45625952812 FAILURE antes de física: HTTP429 descarga upstream. Sin artefacto. Archivar log y recuperar fuente exacta MIT como evidencia ZIP por blob API, no vendor activo; retry solo cambio de origen de bytes verificados.
 
 - P3.3 fuente/fallo archivados CI45626242896 SUCCESS, ZIP38429bytes SHA256 b44242fead0857610603a75aec4148f3afa684f35307ca9005f9bc453a64720a; 11 miembros Git SHA1/tamaño y SHA256, log completo y blobs/tamaños verificados. Retry desde evidencia local exacta, no cambio de física.
+
+- P3.3 retry CI45626406906 SUCCESS, 4×240 pasos, erosión/deposición acumuladas .0988295m³, Δz .0275477m, bifurcación q diff .00133745m²/s exacta rama física, restart120 y5 controles. Archivo pendiente, GO dictamen P3 y P4 tras retención.
