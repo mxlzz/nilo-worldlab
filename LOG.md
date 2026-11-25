@@ -167,3 +167,7 @@
 
 # ARCH-01 — Evaluación documental autorizada
 Revisión focal de arquitecturas sobre P6.1-R pendiente; historial 42 alternativas y H13A recuperados. Delft3D FM/DIMR y HAIL-CAESAR priorizados para gate técnico; BMI/PyMT como infraestructura, preCICE reserva. Sin ejecución física nueva, coste jobs 0. [Dictamen y secuencia](research/ARCH/ARCH-01_EVALUACION_DOCUMENTAL.md). P6.1-R preservada; siguiente ARCH-02.
+
+
+# ARCH-02A — Prerregistro de smoke HAIL
+Delft3D acceso restringido/compilación no acotada; HAIL restart integral no identificado. Ensayo oficial hidrológico pin exacto, dos ejecuciones, costo 10 min. No ARCH-03 aún. [Protocolo](research/ARCH/ARCH-02A_PROTOCOLO_HAIL.md).

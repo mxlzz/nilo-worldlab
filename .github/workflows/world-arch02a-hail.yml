@@ -1,0 +1,48 @@
+name: WorldLab ARCH-02A HAIL official smoke
+on:
+  push:
+    paths:
+      - '.github/workflows/world-arch02a-hail.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      OMP_NUM_THREADS: '1'
+      HAIL_PIN: '5913d54b9bf5cf97a417ae30c98b39e624bac013'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and run official case twice
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/arch02a-out"
+          out="$GITHUB_WORKSPACE/arch02a-out"
+          { uname -a; lscpu; g++ --version; } > "$out/environment.txt"
+          git clone --no-checkout https://github.com/dvalters/HAIL-CAESAR.git "$RUNNER_TEMP/hail" 2>&1 | tee "$out/clone.log"
+          cd "$RUNNER_TEMP/hail"
+          git checkout "$HAIL_PIN" 2>&1 | tee -a "$out/clone.log"
+          git rev-parse HEAD | tee "$out/source.txt"
+          test "$(git rev-parse HEAD)" = "$HAIL_PIN"
+          /usr/bin/time -v -o "$out/build.time" make -j2 > "$out/build.log" 2>&1
+          cd test
+          for i in 1 2; do
+            rm -rf results/boscastle50m_72_u
+            mkdir -p results/boscastle50m_72_u
+            /usr/bin/time -v -o "$out/run$i.time" ../bin/HAIL-CAESAR.exe ./input_data/boscastle/boscastle_input_data/ boscastle_test_72hr_50m_u.params > "$out/run$i.log" 2>&1
+            grep -F 'THE SIMULATION IS FINISHED!' "$out/run$i.log"
+            cp -r results/boscastle50m_72_u "$out/run$i"
+            python "$GITHUB_WORKSPACE/experiments/ARCH/validate_hail_smoke.py" "$out/run$i" > "$out/hash$i.json"
+          done
+          cmp "$out/hash1.json" "$out/hash2.json"
+          echo PASS > "$out/gate.txt"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arch02a-hail-smoke
+          path: arch02a-out/
+          if-no-files-found: error
+          retention-days: 7
