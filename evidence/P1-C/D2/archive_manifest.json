@@ -1,0 +1,37 @@
+{
+  "artifacts": [
+    14979950220,
+    14979492303
+  ],
+  "files": {
+    "14979492303.zip": {
+      "bytes": 288846,
+      "sha256": "e8c5c8bc5f1a9c22afe45be6e94c75baae239e075dc7380b45b14a7ba22e08dc"
+    },
+    "14979950220.zip": {
+      "bytes": 288846,
+      "sha256": "3b301070cdd8897808b2fa4f62d9cf46c7d3306a4cd2a9699dbecea85b79f3d5"
+    },
+    "a.json": {
+      "bytes": 17427,
+      "sha256": "8d667e2cfb802133d99c2a7596818706a94283a5fb4c5dc896c27d29a2b6abfc"
+    },
+    "b.json": {
+      "bytes": 17427,
+      "sha256": "8d667e2cfb802133d99c2a7596818706a94283a5fb4c5dc896c27d29a2b6abfc"
+    },
+    "job-138887077348.log": {
+      "bytes": 50433,
+      "sha256": "ce36fdc7e156da3a4347bd8132fa5153db232f325062ff366e7a7e7fb4f678f0"
+    },
+    "job-138887077749.log": {
+      "bytes": 50427,
+      "sha256": "2a729cac194a1cbb1aca257ddb08cc82d5f5963e8ccdaa7ef01c760661cfcd23"
+    }
+  },
+  "jobs": [
+    138887077348,
+    138887077749
+  ],
+  "run": 45519386325
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "cases": {
+      "7321_0.0": {
+        "hashes": {
+          "base": "93231ee3260aa2065d247c4ccf18762d63ac415dd723142310083bb11aed18c4",
+          "checkpoint": "74c5823ec01020b5711d9cd86b5792283dc04e430e1a7d4a7524ff07ddc6746c",
+          "flows": "33a1d5db33e2f06e59264a08ef10d5373c74980435690ff7dd732c4d23767195",
+          "input": "4293aca9f8c36bbfc922d66264a222dd9d1330f22b754e78f2ccacad3a9a4275",
+          "irradiation": "5e4a58671475158e267a1886d210ba6394bf51b420674ea640313dfa95e8a04b",
+          "owner": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "rays": "e7c45fa3967e2752de2142ad1157783f85f0c2576bbf4f8b15c7e2dba4a66084",
+          "reference": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "transport_10": "b7a915b67271da0074b15dd23428bb8e3f8e11868d8abcf58b43458800c79e8b",
+          "transport_11": "08d63bb4ce4376bf3ad0a9d8dabf62130b8b697b54558f9fd10df298b2916d2a",
+          "transport_12": "a764542c3ba00423a55cf56c7831b9543c3c87806f5d7288b2ab55c0dcbc4664"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 0.0,
+        "metrics": {
+          "export_J": 0.0,
+          "grain_J": 267570.0,
+          "grain_added_J": 55080.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 612,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.25,
+          "residual_max_J": 2.7939677238464355e-09,
+          "rest_J": 0.0,
+          "roi_J": 1352429.9999999972
+        }
+      },
+      "7321_0.1": {
+        "hashes": {
+          "base": "b988b9bd7d11562d990bf99e564d5b5f3606abe73521f0cb05c7b3f3bea4e06a",
+          "checkpoint": "1c80952c8a02a74091b197eaa9832c89e1057e2545162d9d49c00a28d8dac3fe",
+          "flows": "44a13e043fc8e2cb0221bba6df121663a4e1a7100aeed36ba037e1cc057aac95",
+          "input": "88f6f2621654e95493c6fa2660d81c580f8c9e8d1a259e99082b8a98c4ae1c43",
+          "irradiation": "8a62889da092ac7d001d93e3ce089e4db255fece31385046ca69d40cf0c406f3",
+          "owner": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "rays": "a9ee17d3c57d0916cd54470e2391d13bf62f0e068cb10504d21c3c6bc53a58fa",
+          "reference": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "transport_10": "0880ea2b6b9ed80998aed59228825537a63f9365401d08f16c5fbe977baf18aa",
+          "transport_11": "d9f25faef4bd36c4159bcf9eb2de67e27133cc6a11c037fc13328d419a56723a",
+          "transport_12": "b1029003a56792133d20649650c892128505267abe2bcf3dfffed6bb1d2c0d06"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 0.0,
+        "metrics": {
+          "export_J": 162178.27164074843,
+          "grain_J": 269640.0,
+          "grain_added_J": 56430.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 627,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.7549550925365,
+          "residual_max_J": 4.656612873077393e-10,
+          "rest_J": 755511.7610041664,
+          "roi_J": 432669.9673550846
+        }
+      }
+    },
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "mode": "native",
+    "outputs": {
+      "7321_0.0.nc": "919798855aeeb7169ca851ba0cd3441ce8e35ee122dbe22ba982ba5a0e128e01",
+      "7321_0.1.nc": "78065330aec1cc7a9f8c8a55dd7e12fa77ffe09eb6d0d7d817e11750a2b36589"
+    },
+    "pools": [
+      {
+        "architecture": "SkylakeX",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.31.188.0"
+      },
+      {
+        "architecture": "SkylakeX",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "profile_verified": true,
+    "python": "3.11.18",
+    "versions": {
+      "fipy": "4.0.3",
+      "numpy": "2.4.6",
+      "pybullet": "3.2.7",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.6.0",
+      "xarray": "2026.9.0"
+    }
+  },
+  {
+    "cases": {
+      "7321_0.0": {
+        "hashes": {
+          "base": "93231ee3260aa2065d247c4ccf18762d63ac415dd723142310083bb11aed18c4",
+          "checkpoint": "74c5823ec01020b5711d9cd86b5792283dc04e430e1a7d4a7524ff07ddc6746c",
+          "flows": "33a1d5db33e2f06e59264a08ef10d5373c74980435690ff7dd732c4d23767195",
+          "input": "4293aca9f8c36bbfc922d66264a222dd9d1330f22b754e78f2ccacad3a9a4275",
+          "irradiation": "efc0037a9b0c62b356e3f69a83f0f15bcd640ceeb34df7fd90979d4e97274260",
+          "owner": "e71b25d7504b3cafca299dc9a7a42397287bd824d15b6aca1fe1b950150c1722",
+          "rays": "e7c45fa3967e2752de2142ad1157783f85f0c2576bbf4f8b15c7e2dba4a66084",
+          "reference": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "transport_10": "b7a915b67271da0074b15dd23428bb8e3f8e11868d8abcf58b43458800c79e8b",
+          "transport_11": "08d63bb4ce4376bf3ad0a9d8dabf62130b8b697b54558f9fd10df298b2916d2a",
+          "transport_12": "a764542c3ba00423a55cf56c7831b9543c3c87806f5d7288b2ab55c0dcbc4664"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 3.410605131648481e-13,
+        "metrics": {
+          "export_J": 0.0,
+          "grain_J": 267570.0,
+          "grain_added_J": 55080.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 612,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.25,
+          "residual_max_J": 2.7939677238464355e-09,
+          "rest_J": 0.0,
+          "roi_J": 1352429.9999999972
+        }
+      },
+      "7321_0.1": {
+        "hashes": {
+          "base": "b988b9bd7d11562d990bf99e564d5b5f3606abe73521f0cb05c7b3f3bea4e06a",
+          "checkpoint": "1c80952c8a02a74091b197eaa9832c89e1057e2545162d9d49c00a28d8dac3fe",
+          "flows": "44a13e043fc8e2cb0221bba6df121663a4e1a7100aeed36ba037e1cc057aac95",
+          "input": "88f6f2621654e95493c6fa2660d81c580f8c9e8d1a259e99082b8a98c4ae1c43",
+          "irradiation": "b839b605cb179d0e70e25ba6c3b66e69dc685dab694c9ee34ae2356003c03982",
+          "owner": "be8bec58c39bf889dc137ec13a7b132967071be6358580bfae4214b038e90f6f",
+          "rays": "a9ee17d3c57d0916cd54470e2391d13bf62f0e068cb10504d21c3c6bc53a58fa",
+          "reference": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "transport_10": "0880ea2b6b9ed80998aed59228825537a63f9365401d08f16c5fbe977baf18aa",
+          "transport_11": "d9f25faef4bd36c4159bcf9eb2de67e27133cc6a11c037fc13328d419a56723a",
+          "transport_12": "b1029003a56792133d20649650c892128505267abe2bcf3dfffed6bb1d2c0d06"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 1.4210854715202004e-13,
+        "metrics": {
+          "export_J": 162178.27164074843,
+          "grain_J": 269640.0,
+          "grain_added_J": 56430.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 627,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.7549550925365,
+          "residual_max_J": 4.656612873077393e-10,
+          "rest_J": 755511.7610041664,
+          "roi_J": 432669.9673550846
+        }
+      }
+    },
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "mode": "fixed",
+    "outputs": {
+      "7321_0.0.nc": "5396662cce1870f51a71714c42b93e82b5972ab0bbc9c902c697e4bf775bd444",
+      "7321_0.1.nc": "d4809b513e7bea79e341ddb5eff0d8cb87ea969ea547ce2ba0b56a353352e0ee"
+    },
+    "pools": [
+      {
+        "architecture": "Nehalem",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.31.188.0"
+      },
+      {
+        "architecture": "Nehalem",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "profile_verified": true,
+    "python": "3.11.18",
+    "versions": {
+      "fipy": "4.0.3",
+      "numpy": "2.4.6",
+      "pybullet": "3.2.7",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.6.0",
+      "xarray": "2026.9.0"
+    }
+  },
+  {
+    "cases": {
+      "7321_0.0": {
+        "hashes": {
+          "base": "93231ee3260aa2065d247c4ccf18762d63ac415dd723142310083bb11aed18c4",
+          "checkpoint": "74c5823ec01020b5711d9cd86b5792283dc04e430e1a7d4a7524ff07ddc6746c",
+          "flows": "33a1d5db33e2f06e59264a08ef10d5373c74980435690ff7dd732c4d23767195",
+          "input": "4293aca9f8c36bbfc922d66264a222dd9d1330f22b754e78f2ccacad3a9a4275",
+          "irradiation": "5e4a58671475158e267a1886d210ba6394bf51b420674ea640313dfa95e8a04b",
+          "owner": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "rays": "e7c45fa3967e2752de2142ad1157783f85f0c2576bbf4f8b15c7e2dba4a66084",
+          "reference": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "transport_10": "b7a915b67271da0074b15dd23428bb8e3f8e11868d8abcf58b43458800c79e8b",
+          "transport_11": "08d63bb4ce4376bf3ad0a9d8dabf62130b8b697b54558f9fd10df298b2916d2a",
+          "transport_12": "a764542c3ba00423a55cf56c7831b9543c3c87806f5d7288b2ab55c0dcbc4664"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 0.0,
+        "metrics": {
+          "export_J": 0.0,
+          "grain_J": 267570.0,
+          "grain_added_J": 55080.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 612,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.25,
+          "residual_max_J": 2.7939677238464355e-09,
+          "rest_J": 0.0,
+          "roi_J": 1352429.9999999972
+        }
+      },
+      "7321_0.1": {
+        "hashes": {
+          "base": "b988b9bd7d11562d990bf99e564d5b5f3606abe73521f0cb05c7b3f3bea4e06a",
+          "checkpoint": "1c80952c8a02a74091b197eaa9832c89e1057e2545162d9d49c00a28d8dac3fe",
+          "flows": "44a13e043fc8e2cb0221bba6df121663a4e1a7100aeed36ba037e1cc057aac95",
+          "input": "88f6f2621654e95493c6fa2660d81c580f8c9e8d1a259e99082b8a98c4ae1c43",
+          "irradiation": "8a62889da092ac7d001d93e3ce089e4db255fece31385046ca69d40cf0c406f3",
+          "owner": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "rays": "a9ee17d3c57d0916cd54470e2391d13bf62f0e068cb10504d21c3c6bc53a58fa",
+          "reference": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "transport_10": "0880ea2b6b9ed80998aed59228825537a63f9365401d08f16c5fbe977baf18aa",
+          "transport_11": "d9f25faef4bd36c4159bcf9eb2de67e27133cc6a11c037fc13328d419a56723a",
+          "transport_12": "b1029003a56792133d20649650c892128505267abe2bcf3dfffed6bb1d2c0d06"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 0.0,
+        "metrics": {
+          "export_J": 162178.27164074843,
+          "grain_J": 269640.0,
+          "grain_added_J": 56430.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 627,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.7549550925365,
+          "residual_max_J": 4.656612873077393e-10,
+          "rest_J": 755511.7610041664,
+          "roi_J": 432669.9673550846
+        }
+      }
+    },
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "mode": "native",
+    "outputs": {
+      "7321_0.0.nc": "919798855aeeb7169ca851ba0cd3441ce8e35ee122dbe22ba982ba5a0e128e01",
+      "7321_0.1.nc": "78065330aec1cc7a9f8c8a55dd7e12fa77ffe09eb6d0d7d817e11750a2b36589"
+    },
+    "pools": [
+      {
+        "architecture": "SkylakeX",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.31.188.0"
+      },
+      {
+        "architecture": "SkylakeX",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "profile_verified": true,
+    "python": "3.11.18",
+    "versions": {
+      "fipy": "4.0.3",
+      "numpy": "2.4.6",
+      "pybullet": "3.2.7",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.6.0",
+      "xarray": "2026.9.0"
+    }
+  },
+  {
+    "cases": {
+      "7321_0.0": {
+        "hashes": {
+          "base": "93231ee3260aa2065d247c4ccf18762d63ac415dd723142310083bb11aed18c4",
+          "checkpoint": "74c5823ec01020b5711d9cd86b5792283dc04e430e1a7d4a7524ff07ddc6746c",
+          "flows": "33a1d5db33e2f06e59264a08ef10d5373c74980435690ff7dd732c4d23767195",
+          "input": "4293aca9f8c36bbfc922d66264a222dd9d1330f22b754e78f2ccacad3a9a4275",
+          "irradiation": "efc0037a9b0c62b356e3f69a83f0f15bcd640ceeb34df7fd90979d4e97274260",
+          "owner": "e71b25d7504b3cafca299dc9a7a42397287bd824d15b6aca1fe1b950150c1722",
+          "rays": "e7c45fa3967e2752de2142ad1157783f85f0c2576bbf4f8b15c7e2dba4a66084",
+          "reference": "deb8dc25862f2b4663b8312d5ef584651ad055c0eb3a5988a8705ef0362f4576",
+          "transport_10": "b7a915b67271da0074b15dd23428bb8e3f8e11868d8abcf58b43458800c79e8b",
+          "transport_11": "08d63bb4ce4376bf3ad0a9d8dabf62130b8b697b54558f9fd10df298b2916d2a",
+          "transport_12": "a764542c3ba00423a55cf56c7831b9543c3c87806f5d7288b2ab55c0dcbc4664"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 3.410605131648481e-13,
+        "metrics": {
+          "export_J": 0.0,
+          "grain_J": 267570.0,
+          "grain_added_J": 55080.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 612,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.25,
+          "residual_max_J": 2.7939677238464355e-09,
+          "rest_J": 0.0,
+          "roi_J": 1352429.9999999972
+        }
+      },
+      "7321_0.1": {
+        "hashes": {
+          "base": "b988b9bd7d11562d990bf99e564d5b5f3606abe73521f0cb05c7b3f3bea4e06a",
+          "checkpoint": "1c80952c8a02a74091b197eaa9832c89e1057e2545162d9d49c00a28d8dac3fe",
+          "flows": "44a13e043fc8e2cb0221bba6df121663a4e1a7100aeed36ba037e1cc057aac95",
+          "input": "88f6f2621654e95493c6fa2660d81c580f8c9e8d1a259e99082b8a98c4ae1c43",
+          "irradiation": "b839b605cb179d0e70e25ba6c3b66e69dc685dab694c9ee34ae2356003c03982",
+          "owner": "be8bec58c39bf889dc137ec13a7b132967071be6358580bfae4214b038e90f6f",
+          "rays": "a9ee17d3c57d0916cd54470e2391d13bf62f0e068cb10504d21c3c6bc53a58fa",
+          "reference": "54654f8151143401cabc98a649caf227b609132f9fe2d96222c1b0389543acee",
+          "transport_10": "0880ea2b6b9ed80998aed59228825537a63f9365401d08f16c5fbe977baf18aa",
+          "transport_11": "d9f25faef4bd36c4159bcf9eb2de67e27133cc6a11c037fc13328d419a56723a",
+          "transport_12": "b1029003a56792133d20649650c892128505267abe2bcf3dfffed6bb1d2c0d06"
+        },
+        "max_rest_delta_J": 0.0,
+        "max_roi_delta_J": 1.4210854715202004e-13,
+        "metrics": {
+          "export_J": 162178.27164074843,
+          "grain_J": 269640.0,
+          "grain_added_J": 56430.0,
+          "incident_J": 1620000.0,
+          "intercepted_cells": 627,
+          "max_grain_K": 484.5,
+          "max_roi_K": 301.7549550925365,
+          "residual_max_J": 4.656612873077393e-10,
+          "rest_J": 755511.7610041664,
+          "roi_J": 432669.9673550846
+        }
+      }
+    },
+    "cpu": "Intel(R) Xeon(R) 6975P-C",
+    "mode": "fixed",
+    "outputs": {
+      "7321_0.0.nc": "5396662cce1870f51a71714c42b93e82b5972ab0bbc9c902c697e4bf775bd444",
+      "7321_0.1.nc": "d4809b513e7bea79e341ddb5eff0d8cb87ea969ea547ce2ba0b56a353352e0ee"
+    },
+    "pools": [
+      {
+        "architecture": "Nehalem",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.31.188.0"
+      },
+      {
+        "architecture": "Nehalem",
+        "filepath": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      }
+    ],
+    "profile_verified": true,
+    "python": "3.11.18",
+    "versions": {
+      "fipy": "4.0.3",
+      "numpy": "2.4.6",
+      "pybullet": "3.2.7",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.6.0",
+      "xarray": "2026.9.0"
+    }
+  }
+]
