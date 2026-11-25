@@ -51,3 +51,5 @@
 - D2 CI 45519386325 SUCCESS técnico pero inconcluso científico: dos Intel, no AMD; native reproduce referencia, Nehalem cambia hashes reproduciblemente sin cambiar transporte. Agotado presupuesto D2; no habilitar C.2b-R. Archivo pendiente; elevar decisión de alcance.
 
 - D2 archivo CI 45520590725 SUCCESS, ZIP/log/JSON y 16 outputs NC cotejados, blobs releídos en fff200ab. Dos runners Intel, sin AMD; API de runners no accesible desde conector, disponibilidad dirigida no confirmada. Detener en decisión D2: preservar exactitud y autorizar verificación AMD dirigida/acotada, o redefinir alcance explícitamente, o cerrar P1 parcial. No nuevo lanzamiento aleatorio ni P1-D.
+
+- Usuario autorizó extensión única D2-AMD sin gasto. Runner público estándar sin selección de fabricante documentada; una asignación con guard AMD antes de instalar, no reintentos si Intel. Protocolo D2 intacto.
