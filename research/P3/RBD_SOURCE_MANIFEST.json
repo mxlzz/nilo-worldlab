@@ -1,0 +1,50 @@
+{
+  "repository": "https://github.com/angelmons/landlab",
+  "commit": "ea89ef9463a644f698cb4a91f0c0acc43d115c4f",
+  "files": {
+    "LICENSE.md": {
+      "git_blob_sha1": "c9cdc1232bdb24df5da75ebd53a07fbb571bf9f7",
+      "bytes": 1089
+    },
+    "src/landlab/components/river_bed_dynamics/RiverBedDynamics.py": {
+      "git_blob_sha1": "843f482839a5245910c9a7868901e6eb9cadb56a",
+      "bytes": 59768
+    },
+    "src/landlab/components/river_bed_dynamics/__init__.py": {
+      "git_blob_sha1": "e44e8d0f89c695c0a569ab6535875e7ac69b3588",
+      "bytes": 86
+    },
+    "src/landlab/components/river_bed_dynamics/_bedload_eq_MPM_style.py": {
+      "git_blob_sha1": "4ef1774f13a32a9e2111b7df15ab77b6693d36bb",
+      "bytes": 12799
+    },
+    "src/landlab/components/river_bed_dynamics/_bedload_eq_Parker_1990.py": {
+      "git_blob_sha1": "758af187b4b72285016355c44e42ed98128b9bc5",
+      "bytes": 10668
+    },
+    "src/landlab/components/river_bed_dynamics/_bedload_eq_Wilcock_Crowe_2003.py": {
+      "git_blob_sha1": "3a5c8e51c9c01d4c9ab90e5daf4042f680cfe0c3",
+      "bytes": 6976
+    },
+    "src/landlab/components/river_bed_dynamics/_initialize_fields.py": {
+      "git_blob_sha1": "062b04e59b8e7e64b22967b02fa260342dbd517f",
+      "bytes": 9020
+    },
+    "src/landlab/components/river_bed_dynamics/_initialize_gsd.py": {
+      "git_blob_sha1": "923dea9bda6976f29e8eba4efa0c0d8213d07967",
+      "bytes": 9116
+    },
+    "src/landlab/components/river_bed_dynamics/_nodes_and_links_info.py": {
+      "git_blob_sha1": "cbc62787c314dbcc3d46927ec1e709e3ffbe0a82",
+      "bytes": 7180
+    },
+    "src/landlab/components/river_bed_dynamics/_stratigraphy.py": {
+      "git_blob_sha1": "3978d7819e15e5bf2b38f23d992c05b385701fda",
+      "bytes": 19288
+    },
+    "src/landlab/components/river_bed_dynamics/_utilities.py": {
+      "git_blob_sha1": "3d4a0da779a257321c9738625d3b7199dddd7a81",
+      "bytes": 15657
+    }
+  }
+}

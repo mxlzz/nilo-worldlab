@@ -105,3 +105,5 @@
 - P3.1 retry CI 45606950182 SUCCESS, 5×960 pasos, residual máximo1.4211e-14m³, export activo .702515m³, infiltración .355207m³, 480 sufijos y 5 controles exactos. Archivo pendiente. Candidato P3.2 RiverBedDynamics (no incluido en árbol v2.11.0, verificar distribución y contrato antes de adoptar).
 
 - P3.1 archivo CI 45607198410 SUCCESS: 27 archivos internos cotejados, 20 outputs referencia, 2 consumidor, checkpoint y resúmenes; ZIP/log/JSON/CRC y blobs/tamaños verificados. P3.1 cerrada con límites. GO P3.2 evaluación proveedor conservativo.
+
+- P3.2 selección: RBD candidato, MIT fork exacto, no reemplazar Landlab2.11. Sin límite de bedrock y outlet nativo anulado en fuente inspeccionada; comprobar con controles, no fingir export libre. P3.2a prerregistro: fixtures, live hidráulica→Exner unidireccional, stock finito y balances, 5min.
