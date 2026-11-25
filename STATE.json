@@ -5,7 +5,7 @@
   "status": "experiment_pending",
   "stage": "P1-C",
   "current_task": "P1-C.2a",
-  "next_action": "Leer CI 45516385783 y WORLD_EVAL_JSON antes de nuevo lanzamiento. Revisión estática posterior al push: compare_flux cuenta 12 campos/paso, worker emite 11; probable fallo instrumental, no alterar gates. Si se confirma, conservar fallo y corregir conteo por nombres exactos; no ejecutar C.2b hasta aprobación y archivo.",
+  "next_action": "Leer CI 45516933103; conservar y auditar resultado del único reintento instrumental. No relanzar C.2a si falla sin nueva decisión metodológica; C.2b solo si aprueba y se archivan outputs/checkpoints/logs.",
   "scientific_next": "P1-C.2a",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -15,7 +15,7 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2a_ci_pending"
+    "P1_C": "C2a_instrument_retry_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -31,13 +31,15 @@
     "evidence/P1-B/B2b/archive_manifest.json",
     "research/P1-B/P1-B.2c_RESULTADO.md",
     "evidence/P1-B/B2c/archive_manifest.json",
-    "research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.md"
+    "research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.md",
+    "research/P1-C/P1-C.2a_FALLO_INSTRUMENTAL.md",
+    "evidence/P1-C/C2a-failed/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "510f99fb5a5768052bbb5a76a3913720ec33145b",
+  "last_confirmed_non_state_write": "9602e498ba8c01af456e6ac719b5976e33498078",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -62,9 +64,10 @@
   },
   "updated_at": "2026-11-24",
   "active_run": {
-    "id": 45516385783,
+    "id": 45516933103,
     "unit": "P1-C.2a",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45516385783",
-    "sha": "510f99fb5a5768052bbb5a76a3913720ec33145b"
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45516933103",
+    "sha": "9602e498ba8c01af456e6ac719b5976e33498078",
+    "attempt": 2
   }
 }
