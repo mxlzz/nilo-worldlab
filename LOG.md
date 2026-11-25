@@ -65,3 +65,5 @@
 - S1 CI 45531989960 inconclusa: Intel 8573C distinto, guard sin física; S2 omitida. Log y jobs archivados. Prerregistro S1-H: referencia nueva y procesos separados mismo host, sin selección CPU; gates intactos, comparación posterior, S2 histórica. No repetir asignaciones aleatorias.
 
 - S1-H lanzada: original productor/consumer/compare sin modificar; nueva referencia y checkpoint empaquetados y publicados, futuro local eliminado, consumidor separado, comparación en job posterior y S2 histórica. Sin selección CPU ni ajustes de gates.
+
+- S1-H/S2 CI 45539671147 SUCCESS, 12/12 sufijos exactos, 36/36 archivos byte-exactos, 28 corrupciones, S2 12/12 y 24 controles; máximo L1 1.000102e-10 J. Archivo durable pendiente antes de P1-D.

@@ -1,0 +1,83 @@
+name: WorldLab archive S1-H and S2 verified results
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p1c-s1h.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve and verify all S1-H and S2 artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-C/S1H
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14989330302/zip > "$d/14989330302.zip"
+          echo '69681e5c799fd928aef60bbb686396205f6f4be378ce1ee64a3927b81e8373a5  '"$d/14989330302.zip" | sha256sum -c -
+          gh api repos/${{ github.repository }}/actions/artifacts/14989056568/zip > "$d/14989056568.zip"
+          echo '8d7927450383741912951d2b59dea293540694511f4b8f76b244090ad8d41754  '"$d/14989056568.zip" | sha256sum -c -
+          gh api repos/${{ github.repository }}/actions/artifacts/14988648599/zip > "$d/14988648599.zip"
+          echo 'ae91a09c7fe2c7914293d7c6651a3d4d01f525597d620f19a37f0f4035941b2a  '"$d/14988648599.zip" | sha256sum -c -
+          gh api repos/${{ github.repository }}/actions/artifacts/14987879961/zip > "$d/14987879961.zip"
+          echo 'c0fa87956e97b247e68ae4c66727a12436bd531aeddd802ca7e5e742ea52465b  '"$d/14987879961.zip" | sha256sum -c -
+          gh api repos/${{ github.repository }}/actions/artifacts/14987864882/zip > "$d/14987864882.zip"
+          echo 'e261ee63e9881b28e0c05b44f52109897a57306213ff943fb3c23a6d98a11880  '"$d/14987864882.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138954816297/logs > "$d/job-138954816297.log"
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138956898635/logs > "$d/job-138956898635.log"
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138957013645/logs > "$d/job-138957013645.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile,io
+          d=pathlib.Path("evidence/P1-C/S1H")
+          def sha(b):return hashlib.sha256(b).hexdigest()
+          def rows(job,marker):
+              return [json.loads(s.split(marker+" ",1)[1]) for s in (d/f"job-{job}.log").read_text().splitlines() if marker+" {" in s]
+          a,b=rows(138954816297,"WORLD_EVAL_JSON")
+          c,=rows(138956898635,"WORLD_COMPARE_JSON")
+          s,=rows(138957013645,"WORLD_PORTABILITY_JSON")
+          assert all(not x["failed_preregistered_gates"] and len(x["cases"])==4 for x in (a,b,c,s))
+          for f in d.glob("*.zip"):
+              with zipfile.ZipFile(f) as z:assert z.testzip() is None
+          with zipfile.ZipFile(d/"14988648599.zip") as z:
+              m=json.loads(z.read("manifest.json"));p=z.read("producer.zip")
+              assert sha(p)==m["producer_sha"]
+              with zipfile.ZipFile(io.BytesIO(p)) as q:
+                  assert q.testzip() is None and json.loads(q.read("result.json"))==a
+                  assert len(a["outputs"])==147
+                  for n,h in a["outputs"].items():assert sha(q.read(n))==h
+          with zipfile.ZipFile(d/"14987864882.zip") as z:
+              p=z.read("checkpoint.zip");assert sha(p)==m["checkpoint_sha"]
+              with zipfile.ZipFile(io.BytesIO(p)) as q:
+                  assert q.testzip() is None and len(a["checkpoints"])==12 and set(q.namelist())==set(a["checkpoints"])
+                  for n,h in a["checkpoints"].items():assert sha(q.read(n))==h
+          with zipfile.ZipFile(d/"14989330302.zip") as z:
+              assert json.loads(z.read("result.json"))==b and len(b["outputs"])==36
+              for n,h in b["outputs"].items():assert sha(z.read(n))==h
+          for f,obj in [("14987879961.zip",c),("14989056568.zip",s)]:
+              with zipfile.ZipFile(d/f) as z:assert json.loads(z.read("result.json"))==obj
+          assert sum(len(v["suffix"]) for v in c["cases"].values())==12
+          assert all(e["exact"] and all(e["byte_exact_files"].values()) for v in c["cases"].values() for e in v["suffix"])
+          assert all(len(v["controls"])==7 and all(v["controls"].values()) for v in b["cases"].values())
+          assert sum(len(v) for v in s["cases"].values())==12
+          assert all(e["one_J_rejected"] and e["compensated_rejected"] and e["combined_L1_J"]<=1e-4 for v in s["cases"].values() for e in v)
+          assert m["runtime"]==a["runtime"]
+          assert b["runtime"]["bullet"]==a["runtime"]["bullet_profile"] and b["runtime"]["landlab"]==a["runtime"]["landlab_profile"]
+          for n,obj in [("producer",a),("consumer",b),("compare",c),("portability",s),("reference_manifest",m)]:
+              (d/(n+".json")).write_text(json.dumps(obj,indent=2,sort_keys=True)+"\n")
+          meta={"run":45539671147,"jobs":[138954816297,138956898635,138957013645],"artifacts":[14988648599,14987864882,14989330302,14987879961,14989056568],"files":{p.name:{"sha256":sha(p.read_bytes()),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(meta,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive S1-H exact restart and S2 retrospective portability evidence'
+          git pull --rebase origin main
+          git push origin HEAD:main
