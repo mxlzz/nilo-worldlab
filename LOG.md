@@ -79,3 +79,5 @@
 - P1-D.1 archivo CI 45541914771 SUCCESS, ZIP/log/JSON digest y blobs verificados. P1-D.2 dictamen: P1 cerrada como consecuencia ambiental causal finita; no retroacción bidireccional ni E7 general. GO diseño E7.1 prospectivo discriminante, no repetición de montículos por inercia, no E8. Encargo y límites registrados.
 
 - E7.1 diseño: NO-GO nuevas sombras; GO historia de suministro con idénticos puntos y distribución de reacción basal como función distinta. Antecedentes Vanel/Atman; reutilizar Bullet/H35 y terreno retenido. E7.1a calibrar fuerza completa y CDF antes de formación prospectiva; E7.1b aún no prerregistrada ni ejecutada.
+
+- E7.1a instrumento implementado y lanzado: cuatro fixtures de reacción basal, sumatoria normal+tangencial, CDF sintético y poses no mutadas, 240 muestras por fixture; sin escenas prospectivas. CI hasta5min gratuito.
