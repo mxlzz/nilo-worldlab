@@ -67,3 +67,5 @@
 - S1-H lanzada: original productor/consumer/compare sin modificar; nueva referencia y checkpoint empaquetados y publicados, futuro local eliminado, consumidor separado, comparación en job posterior y S2 histórica. Sin selección CPU ni ajustes de gates.
 
 - S1-H/S2 CI 45539671147 SUCCESS, 12/12 sufijos exactos, 36/36 archivos byte-exactos, 28 corrupciones, S2 12/12 y 24 controles; máximo L1 1.000102e-10 J. Archivo durable pendiente antes de P1-D.
+
+- S1-H archivo CI 45540857670 SUCCESS, 5 ZIP y 3 logs, 147 producer/12 checkpoint/36 suffix hashes cotejados; blobs/tamaños releídos en 18b4d446. Nueva referencia coincide además 147/147 archivos con productor original. P1-C cerrada limitada según alcance aprobado, C2b original negativa, S1 original inconclusa, S2 retrospectiva; GO P1-D.
