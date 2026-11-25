@@ -39,3 +39,5 @@ jobs:
           name: p4-energy
           path: p4-energy
           retention-days: 30
+
+# Retry after preregistered xarray field indexing correction.

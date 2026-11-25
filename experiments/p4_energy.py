@@ -86,7 +86,7 @@ def snapshot(hydro,E,mode,ledger,initial_energy,p):
 def total_balance(E,ledger,E0):
     return float(E.sum())+ledger["water_out_J"]+ledger["solid_out_J"]+ledger["longwave_out_J"]+ledger["sensible_out_J"]-ledger["rain_J"]-ledger["shortwave_J"]-ledger["longwave_in_J"]-ledger["sensible_in_J"]-E0
 def run(mode,ds,x,out):
-    ini=ds["initial"];c=ini.core.values.astype(bool);act=ini.active.values.astype(bool);t=ini.tail.values;head=ini.head.values
+    ini=ds["initial"];c=ini.core.values.astype(bool);act=ini.active.values.astype(bool);t=ini["tail"].values;head=ini["head"].values
     V,W,H=(ini[k].values.copy() for k in ("V","W","H"))
     C=capacity(V,W,H);T0=np.where(c,297.+.5*ini.x.values if mode=="heterogeneous" else 300.,TR)
     E=C*(T0-TR);E0=float(E.sum());ledger={k:0. for k in LEDGER}

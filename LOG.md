@@ -139,3 +139,5 @@
 - P4.1 implementación y CI: 4 modos ×240 pasos de P3.3 retenidos, fixture analítico y5 controles, advección agua/sólido, lluvia y export energética, pulso shortwave y pérdidas longwave/sensible; NC owner y NPZ. Sin evaporación ni acople vivo. 5min.
 
 - P4.1 CI45627361465 FAILURE instrumental antes de física, fixture/5 controles pasan, ini.tail/head colisionan con métodos xarray. Corrección acceso por nombre preregistrada; archivo pendiente.
+
+- P4.1 archivo primer fallo45627669512 SUCCESS, fixture/JSON/log/ZIP cotejados y tamaños releídos. Retry solo acceso variables tail/head por índice.
