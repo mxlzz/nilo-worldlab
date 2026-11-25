@@ -119,3 +119,5 @@
 - P3.2b CI45619612376 FAILURE: 5 analíticas, 8 controles, 4/5 muestras; error de comparación halo candidato bruto vs stock autoritativo (imposed_export). Corrección prospectiva de comparador core/owner + flujo halo explícito, sin modificar física/umbrales. Archivo pendiente.
 
 - P3.2b archivo fallo 45624204131 SUCCESS, ZIP/9 outputs/JSON/log verificados; tamaños releídos. Retry con comparaciones explícitas de stock core/owner y flujo halo; sin cambiar operador físico ni tolerancias.
+
+- P3.2b retry 45624348735 SUCCESS, 5 analíticas/5 muestras/8 controles, owner error5.55e-17m³, export/halo exacto, 9 NPZ previos idénticos. Archivo pendiente. GO P3.3 tras retención.
