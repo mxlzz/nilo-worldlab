@@ -5,7 +5,7 @@
   "status": "experiment_pending",
   "stage": "P3",
   "current_task": "P3.2b",
-  "next_action": "Leer CI 45619612376 y WORLD_PORE_JSON; verificar 5 analíticas, 5 muestras retenidas, 8 controles, balances y dominio GA. Archivar evidencia y dictamen. Si aprobado GO P3.3 integración viva con z derivada, estado único, remapeo, GA equivalente con guard, q/h_link/prev u persistidos, controles de relieve congelado y no sedimento, variación lluvia, restart. No afirmar frente físico ni export libre sólido. No cambiar gates; documentar fallo instrumental antes de corregir.",
+  "next_action": "Leer CI 45624348735 y WORLD_PORE_JSON. Verificar 5 analíticas, 5 muestras retenidas, 8 controles, balances y dominio GA, nuevas comparaciones core/owner y flujo halo. Primer fallo archivado 45624204131. Archivar resultado antes de P3.3. Si aprobado, prerregistrar integración viva con z derivada, estado único, remapeo, GA equivalente con guard, q/h_link/prev u persistidos, controles de relieve congelado y no sedimento, lluvia variable y restart. No afirmar frente físico ni export libre sólido. No cambiar gates.",
   "scientific_next": "P3.2b",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -19,7 +19,7 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "P31_P32a_passed_P32b_pore_remap_pending"
+    "P3": "P31_P32a_passed_P32b_retry_owner_boundary_comparator"
   },
   "blockers": [],
   "evidence_refs": [
@@ -79,13 +79,15 @@
     "research/P3/RBD_SOURCE_MANIFEST.json",
     "research/P3/P3.2a_RESULTADO.md",
     "evidence/P3/P32a/archive_manifest.json",
-    "research/P3/P3.2b_PROTOCOLO_AGUA_POROSA.md"
+    "research/P3/P3.2b_PROTOCOLO_AGUA_POROSA.md",
+    "research/P3/P3.2b_INCIDENCIA_1.md",
+    "evidence/P3/P32b-failed/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "359e8fe66a8c0b9d0455ae77f1c010f838f40b46",
+  "last_confirmed_non_state_write": "1d0c0fcede102e510e52b4b8169158edb42a5d9d",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -110,9 +112,9 @@
   },
   "updated_at": "2026-11-25",
   "active_run": {
-    "id": 45619612376,
+    "id": 45624348735,
     "unit": "P3.2b",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45619612376",
-    "sha": "359e8fe66a8c0b9d0455ae77f1c010f838f40b46"
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45624348735",
+    "sha": "1d0c0fcede102e510e52b4b8169158edb42a5d9d"
   }
 }
