@@ -133,3 +133,5 @@
 - P3.3 retry CI45626406906 SUCCESS, 4×240 pasos, erosión/deposición acumuladas .0988295m³, Δz .0275477m, bifurcación q diff .00133745m²/s exacta rama física, restart120 y5 controles. Archivo pendiente, GO dictamen P3 y P4 tras retención.
 
 - P3.3 archivo45626732836 SUCCESS, 30 miembros/JSON/log/CRC/SHA, blobs/tamaños verificados. P3 dictamen completo limitado, costo299s jobs experimentales. GO P4 energía y ciclos, no repetir erosión ni integrar motor final.
+
+- P4 selección: PET/FAO56/AquaSEBS/FLake/CTSM y antecedentes H14–H16/P1 contrastados; columna energía sensible única, advección por q/qb, pulso irradiación y disipación, P4.1 retrospectiva sobre P3.3 retenida (no replay físico), P4.2 evaporación viva después. Prerregistro 4×240 pasos y fixture, 5min.
