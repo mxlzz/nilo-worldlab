@@ -1,0 +1,20 @@
+{
+  "cases": {},
+  "experiment": "P3.1",
+  "failed_preregistered_gates": [
+    "active:AttributeError(\"'array' object has no attribute 'grid'\")",
+    "closed:AttributeError(\"'array' object has no attribute 'grid'\")",
+    "noinf:AttributeError(\"'array' object has no attribute 'grid'\")",
+    "norain:AttributeError(\"'array' object has no attribute 'grid'\")",
+    "saturated:AttributeError(\"'array' object has no attribute 'grid'\")"
+  ],
+  "outputs": {
+    "active/initial.nc": "15e7dbd93d35b527230f96ec462f8a4a0258172ed12a938f9adfb45f6b462932",
+    "closed/initial.nc": "5d9e5a6b11510a217267cff353dead6266db6984797a35027358b9c06f27d474",
+    "noinf/initial.nc": "6f9a3b2df2417705b5ce86fbabca62764768e702f2a8da5ed59b1aa7c16a54c9",
+    "norain/initial.nc": "968b15ef263e70649faa3eb4c003cc5c8c1a7cde8191056b7b2d26273465e1d3",
+    "saturated/initial.nc": "0b9c5545b3afa003fa62eb11c14e411006607371afa7ed9cb9b2de4b99133cff"
+  },
+  "peak_rss_kib": 207816,
+  "wall_seconds": 0.16875199500000804
+}
