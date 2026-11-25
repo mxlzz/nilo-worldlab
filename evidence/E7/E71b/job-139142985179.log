@@ -1,0 +1,416 @@
+﻿2026-11-25T10:34:23.5415308Z Current runner version: '2.338.2'
+2026-11-25T10:34:23.5431659Z ##[group]Runner Image Provisioner
+2026-11-25T10:34:23.5432329Z Hosted Compute Agent
+2026-11-25T10:34:23.5432707Z Version: 20261111.635
+2026-11-25T10:34:23.5433100Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-25T10:34:23.5433608Z Build Date: 2026-11-11T01:49:01Z
+2026-11-25T10:34:23.5434044Z Worker ID: {17e3bdc7-2ad0-4cc8-8105-fa97cbdfb12d}
+2026-11-25T10:34:23.5434507Z Region: centralus
+2026-11-25T10:34:23.5434908Z Cloud: Azure
+2026-11-25T10:34:23.5435274Z ##[endgroup]
+2026-11-25T10:34:23.5436329Z ##[group]Operating System
+2026-11-25T10:34:23.5436722Z Ubuntu
+2026-11-25T10:34:23.5437150Z 24.04.5
+2026-11-25T10:34:23.5437496Z LTS
+2026-11-25T10:34:23.5437836Z ##[endgroup]
+2026-11-25T10:34:23.5438222Z ##[group]Runner Image
+2026-11-25T10:34:23.5438602Z Image: ubuntu-24.04
+2026-11-25T10:34:23.5438951Z Version: 20261116.376.1
+2026-11-25T10:34:23.5439837Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.376/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-25T10:34:23.5440784Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.376
+2026-11-25T10:34:23.5441376Z ##[endgroup]
+2026-11-25T10:34:23.5442480Z ##[group]GITHUB_TOKEN Permissions
+2026-11-25T10:34:23.5443700Z Contents: read
+2026-11-25T10:34:23.5444136Z Metadata: read
+2026-11-25T10:34:23.5444502Z ##[endgroup]
+2026-11-25T10:34:23.5446041Z Secret source: Actions
+2026-11-25T10:34:23.5446673Z Cache mode: write
+2026-11-25T10:34:23.5447107Z Prepare workflow directory
+2026-11-25T10:34:23.5725118Z Prepare all required actions
+2026-11-25T10:34:23.5757008Z Getting action download info
+2026-11-25T10:34:23.8183715Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-25T10:34:23.9735210Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-25T10:34:24.1230959Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-25T10:34:24.4119687Z Complete job name: history
+2026-11-25T10:34:24.4751334Z ##[group]Run actions/checkout@v4
+2026-11-25T10:34:24.4752048Z with:
+2026-11-25T10:34:24.4752509Z   persist-credentials: false
+2026-11-25T10:34:24.4753097Z   sparse-checkout-cone-mode: false
+2026-11-25T10:34:24.4754473Z   sparse-checkout: /experiments/
+/inherited/WORLD_RESEARCH/experiments/
+/evidence/P1-C/C2a/14977708755.zip
+/evidence/archives/45389348480/14917807888.zip
+
+2026-11-25T10:34:24.4756166Z   repository: mxlzz/nilo-worldlab
+2026-11-25T10:34:24.4761224Z   token: ***
+2026-11-25T10:34:24.4761664Z   ssh-strict: true
+2026-11-25T10:34:24.4762119Z   ssh-user: git
+2026-11-25T10:34:24.4762558Z   clean: true
+2026-11-25T10:34:24.4763034Z   fetch-depth: 1
+2026-11-25T10:34:24.4763483Z   fetch-tags: false
+2026-11-25T10:34:24.4763944Z   show-progress: true
+2026-11-25T10:34:24.4764428Z   lfs: false
+2026-11-25T10:34:24.4764879Z   submodules: false
+2026-11-25T10:34:24.4765356Z   set-safe-directory: true
+2026-11-25T10:34:24.4766081Z   allow-unsafe-pr-checkout: false
+2026-11-25T10:34:24.4766795Z env:
+2026-11-25T10:34:24.4767363Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:34:24.4768107Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:34:24.4768618Z   OMP_NUM_THREADS: 1
+2026-11-25T10:34:24.4769081Z   MKL_NUM_THREADS: 1
+2026-11-25T10:34:24.4769550Z   FIPY_SOLVERS: scipy
+2026-11-25T10:34:24.4770182Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:34:24.4770915Z ##[endgroup]
+2026-11-25T10:34:24.7004123Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-25T10:34:24.7006901Z ##[group]Getting Git version info
+2026-11-25T10:34:24.7008201Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T10:34:24.7009644Z [command]/usr/bin/git version
+2026-11-25T10:34:24.7084617Z git version 2.56.1
+2026-11-25T10:34:24.7101680Z ##[endgroup]
+2026-11-25T10:34:24.7112244Z Temporarily overriding HOME='/home/runner/work/_temp/633abcf3-047f-4a8c-bc38-cf82a33f8543' before making global git config changes
+2026-11-25T10:34:24.7115169Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T10:34:24.7118162Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T10:34:24.7176436Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T10:34:24.7180570Z ##[group]Initializing the repository
+2026-11-25T10:34:24.7184417Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T10:34:24.7284286Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-25T10:34:24.7286409Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-25T10:34:24.7288205Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-25T10:34:24.7289506Z hint: call:
+2026-11-25T10:34:24.7290159Z hint:
+2026-11-25T10:34:24.7291150Z hint: 	git config --global init.defaultBranch <name>
+2026-11-25T10:34:24.7292346Z hint:
+2026-11-25T10:34:24.7293368Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-25T10:34:24.7295111Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-25T10:34:24.7296594Z hint:
+2026-11-25T10:34:24.7297284Z hint: 	git branch -m <name>
+2026-11-25T10:34:24.7298129Z hint:
+2026-11-25T10:34:24.7299232Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-25T10:34:24.7301231Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-25T10:34:24.7304310Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-25T10:34:24.7357853Z ##[endgroup]
+2026-11-25T10:34:24.7359365Z ##[group]Disabling automatic garbage collection
+2026-11-25T10:34:24.7360804Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-25T10:34:24.7392545Z ##[endgroup]
+2026-11-25T10:34:24.7393727Z ##[group]Setting up auth
+2026-11-25T10:34:24.7398526Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T10:34:24.7438344Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T10:34:24.7780308Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T10:34:24.7819572Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T10:34:24.8015615Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T10:34:24.8054278Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T10:34:24.8251150Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-25T10:34:24.8293411Z ##[endgroup]
+2026-11-25T10:34:24.8294282Z ##[group]Fetching the repository
+2026-11-25T10:34:24.8303782Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +b4b3e6fe7d5cfe86782ea03769b3e5a0cba9f460:refs/remotes/origin/main
+2026-11-25T10:34:25.1664638Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-25T10:34:25.1676115Z  * [new ref]         b4b3e6fe7d5cfe86782ea03769b3e5a0cba9f460 -> origin/main
+2026-11-25T10:34:25.1677563Z ##[endgroup]
+2026-11-25T10:34:25.1677953Z ##[group]Determining the checkout info
+2026-11-25T10:34:25.1678362Z ##[endgroup]
+2026-11-25T10:34:25.1678765Z ##[group]Setting up sparse checkout
+2026-11-25T10:34:25.1680299Z [command]/usr/bin/git config core.sparseCheckout true
+2026-11-25T10:34:25.1720318Z [command]/usr/bin/git rev-parse --git-path info/sparse-checkout
+2026-11-25T10:34:25.1751421Z .git/info/sparse-checkout
+2026-11-25T10:34:25.1757798Z ##[endgroup]
+2026-11-25T10:34:25.1758434Z ##[group]Checking out the ref
+2026-11-25T10:34:25.1761101Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-25T10:34:25.6901370Z Switched to a new branch 'main'
+2026-11-25T10:34:25.6902479Z branch 'main' set up to track 'origin/main'.
+2026-11-25T10:34:25.6903753Z ##[endgroup]
+2026-11-25T10:34:25.6951517Z [command]/usr/bin/git log -1 --format=%H
+2026-11-25T10:34:25.6982353Z b4b3e6fe7d5cfe86782ea03769b3e5a0cba9f460
+2026-11-25T10:34:25.6990895Z ##[group]Removing auth
+2026-11-25T10:34:25.6993618Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T10:34:25.7029033Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T10:34:25.7229243Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T10:34:25.7261804Z http.https://github.com/.extraheader
+2026-11-25T10:34:25.7268784Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-25T10:34:25.7304748Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T10:34:25.7501656Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T10:34:25.7536487Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T10:34:25.7732185Z ##[endgroup]
+2026-11-25T10:34:25.7950550Z ##[group]Run actions/setup-python@v5
+2026-11-25T10:34:25.7950755Z with:
+2026-11-25T10:34:25.7950914Z   python-version: 3.11.18
+2026-11-25T10:34:25.7951086Z   check-latest: false
+2026-11-25T10:34:25.7952791Z   token: ***
+2026-11-25T10:34:25.7952961Z   update-environment: true
+2026-11-25T10:34:25.7953137Z   allow-prereleases: false
+2026-11-25T10:34:25.7953301Z   freethreaded: false
+2026-11-25T10:34:25.8016913Z env:
+2026-11-25T10:34:25.8017163Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:34:25.8017429Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:34:25.8017609Z   OMP_NUM_THREADS: 1
+2026-11-25T10:34:25.8017791Z   MKL_NUM_THREADS: 1
+2026-11-25T10:34:25.8017964Z   FIPY_SOLVERS: scipy
+2026-11-25T10:34:25.8018224Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:34:25.8018484Z ##[endgroup]
+2026-11-25T10:34:25.8949920Z ##[group]Installed versions
+2026-11-25T10:34:25.8973751Z (node:2210) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T10:34:25.8974179Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T10:34:25.8974693Z Successfully set up CPython (3.11.18)
+2026-11-25T10:34:25.8975276Z ##[endgroup]
+2026-11-25T10:34:25.9142587Z ##[group]Run python -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 fipy==4.0.3 pybullet==3.2.7
+2026-11-25T10:34:25.9143127Z [36;1mpython -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 fipy==4.0.3 pybullet==3.2.7[0m
+2026-11-25T10:34:25.9143455Z [36;1mpython -m pip freeze[0m
+2026-11-25T10:34:25.9143637Z [36;1mlscpu[0m
+2026-11-25T10:34:25.9143832Z [36;1mpython experiments/e7_history_load.py e7-history[0m
+2026-11-25T10:34:25.9241469Z shell: /usr/bin/bash -e {0}
+2026-11-25T10:34:25.9241722Z env:
+2026-11-25T10:34:25.9241952Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:34:25.9242201Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:34:25.9242367Z   OMP_NUM_THREADS: 1
+2026-11-25T10:34:25.9242521Z   MKL_NUM_THREADS: 1
+2026-11-25T10:34:25.9242675Z   FIPY_SOLVERS: scipy
+2026-11-25T10:34:25.9242885Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:34:25.9243218Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:34:25.9243774Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T10:34:25.9244041Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:34:25.9244284Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:34:25.9244532Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:34:25.9244779Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T10:34:25.9245017Z ##[endgroup]
+2026-11-25T10:34:29.0335327Z Collecting numpy==2.4.6
+2026-11-25T10:34:29.0896586Z   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-25T10:34:29.1617867Z Collecting scipy==1.17.1
+2026-11-25T10:34:29.1714536Z   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-25T10:34:29.2249017Z Collecting xarray==2026.9.0
+2026-11-25T10:34:29.2345301Z   Downloading xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-25T10:34:29.2732860Z Collecting fipy==4.0.3
+2026-11-25T10:34:29.2847188Z   Downloading fipy-4.0.3-py3-none-any.whl.metadata (5.1 kB)
+2026-11-25T10:34:29.3106471Z Collecting pybullet==3.2.7
+2026-11-25T10:34:29.3202833Z   Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.8 kB)
+2026-11-25T10:34:29.3397293Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-25T10:34:29.3492879Z   Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T10:34:29.4148261Z Collecting pandas>=2.2 (from xarray==2026.9.0)
+2026-11-25T10:34:29.4245400Z   Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-25T10:34:29.5296352Z Collecting matplotlib (from fipy==4.0.3)
+2026-11-25T10:34:29.5399785Z   Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-11-25T10:34:29.5727814Z Collecting typer (from fipy==4.0.3)
+2026-11-25T10:34:29.5826338Z   Downloading typer-0.29.2-py3-none-any.whl.metadata (16 kB)
+2026-11-25T10:34:29.6038740Z Collecting typing_extensions (from fipy==4.0.3)
+2026-11-25T10:34:29.6137474Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-25T10:34:29.6353178Z Collecting python-dateutil>=2.9.0 (from pandas>=2.2->xarray==2026.9.0)
+2026-11-25T10:34:29.6455291Z   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-25T10:34:29.6658147Z Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.2->xarray==2026.9.0)
+2026-11-25T10:34:29.6756660Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-25T10:34:29.7204917Z Collecting contourpy>=1.0.1 (from matplotlib->fipy==4.0.3)
+2026-11-25T10:34:29.7309293Z   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-11-25T10:34:29.7493139Z Collecting cycler>=0.10 (from matplotlib->fipy==4.0.3)
+2026-11-25T10:34:29.7590962Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-11-25T10:34:29.8482562Z Collecting fonttools>=4.28.2 (from matplotlib->fipy==4.0.3)
+2026-11-25T10:34:29.8585958Z   Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+2026-11-25T10:34:29.9120463Z Collecting kiwisolver>=1.3.1 (from matplotlib->fipy==4.0.3)
+2026-11-25T10:34:29.9221592Z   Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-11-25T10:34:30.0412938Z Collecting pillow>=9 (from matplotlib->fipy==4.0.3)
+2026-11-25T10:34:30.0516200Z   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-11-25T10:34:30.0827007Z Collecting pyparsing>=3 (from matplotlib->fipy==4.0.3)
+2026-11-25T10:34:30.0929014Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-11-25T10:34:30.3967270Z Collecting pydantic>=2.5.3 (from typer->fipy==4.0.3)
+2026-11-25T10:34:30.4070573Z   Downloading pydantic-2.14.4-py3-none-any.whl.metadata (143 kB)
+2026-11-25T10:34:30.6413146Z Collecting shellingham>=1.3.0 (from typer->fipy==4.0.3)
+2026-11-25T10:34:30.6514193Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T10:34:30.8891789Z Collecting rich>=13.8.0 (from typer->fipy==4.0.3)
+2026-11-25T10:34:30.8993271Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-11-25T10:34:30.9568127Z Collecting annotated-doc>=0.0.2 (from typer->fipy==4.0.3)
+2026-11-25T10:34:30.9664743Z   Downloading annotated_doc-0.0.7-py3-none-any.whl.metadata (6.4 kB)
+2026-11-25T10:34:30.9841987Z Collecting annotated-types>=0.6.0 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T10:34:30.9939016Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-11-25T10:34:31.4522746Z Collecting pydantic-core==2.50.5 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T10:34:31.4626963Z   Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+2026-11-25T10:34:31.4817292Z Collecting typing-inspection>=0.4.4 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T10:34:31.4915553Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+2026-11-25T10:34:31.5220353Z Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T10:34:31.5319435Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+2026-11-25T10:34:31.5534426Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T10:34:31.5631719Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-25T10:34:31.5807526Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T10:34:31.5903960Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-11-25T10:34:31.6036817Z Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-11-25T10:34:31.7714402Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 106.6 MB/s  0:00:00
+2026-11-25T10:34:31.7820047Z Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-25T10:34:32.0626363Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 126.2 MB/s  0:00:00
+2026-11-25T10:34:32.0726582Z Downloading xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-25T10:34:32.0782854Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 276.3 MB/s  0:00:00
+2026-11-25T10:34:32.0891310Z Downloading fipy-4.0.3-py3-none-any.whl (439 kB)
+2026-11-25T10:34:32.1040455Z Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (103.2 MB)
+2026-11-25T10:34:32.8826767Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 MB 132.5 MB/s  0:00:00
+2026-11-25T10:34:32.8927938Z Downloading packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-25T10:34:32.9042937Z Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+2026-11-25T10:34:33.0157556Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 110.4 MB/s  0:00:00
+2026-11-25T10:34:33.0257467Z Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-25T10:34:33.0372621Z Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+2026-11-25T10:34:33.1021238Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 152.1 MB/s  0:00:00
+2026-11-25T10:34:33.1122335Z Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2026-11-25T10:34:33.1242057Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-11-25T10:34:33.1354863Z Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+2026-11-25T10:34:33.1703967Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 157.4 MB/s  0:00:00
+2026-11-25T10:34:33.1805703Z Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2026-11-25T10:34:33.1858020Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 311.0 MB/s  0:00:00
+2026-11-25T10:34:33.1957572Z Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-11-25T10:34:33.2616693Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 107.0 MB/s  0:00:00
+2026-11-25T10:34:33.2718326Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-11-25T10:34:33.2835648Z Downloading typer-0.29.2-py3-none-any.whl (121 kB)
+2026-11-25T10:34:33.2952123Z Downloading annotated_doc-0.0.7-py3-none-any.whl (5.3 kB)
+2026-11-25T10:34:33.3064230Z Downloading pydantic-2.14.4-py3-none-any.whl (494 kB)
+2026-11-25T10:34:33.3190989Z Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+2026-11-25T10:34:33.3343523Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 144.4 MB/s  0:00:00
+2026-11-25T10:34:33.3441698Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-11-25T10:34:33.3551957Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-11-25T10:34:33.3676014Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-25T10:34:33.3722440Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 293.8 MB/s  0:00:00
+2026-11-25T10:34:33.3819716Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+2026-11-25T10:34:33.3932065Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-11-25T10:34:33.4042463Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-11-25T10:34:33.4157720Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-25T10:34:33.4268931Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+2026-11-25T10:34:33.4380391Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-25T10:34:33.9079784Z Installing collected packages: pybullet, tzdata, typing_extensions, shellingham, pyparsing, pygments, pillow, packaging, numpy, mdurl, kiwisolver, fonttools, cycler, annotated-types, annotated-doc, typing-inspection, scipy, python-dateutil, pydantic-core, markdown-it-py, contourpy, rich, pydantic, pandas, matplotlib, xarray, typer, fipy
+2026-11-25T10:34:44.9934475Z 
+2026-11-25T10:34:44.9945256Z Successfully installed annotated-doc-0.0.7 annotated-types-0.8.0 contourpy-1.3.3 cycler-0.12.1 fipy-4.0.3 fonttools-4.68.0 kiwisolver-1.5.1 markdown-it-py-4.3.0 matplotlib-3.11.2 mdurl-0.1.2 numpy-2.4.6 packaging-26.4 pandas-3.1.1 pillow-13.0.0 pybullet-3.2.7 pydantic-2.14.4 pydantic-core-2.50.5 pygments-2.21.0 pyparsing-3.3.3 python-dateutil-4.0.0 rich-15.0.0 scipy-1.17.1 shellingham-1.5.4 typer-0.29.2 typing-inspection-0.4.5 typing_extensions-4.16.0 tzdata-2026.6 xarray-2026.9.0
+2026-11-25T10:34:45.2095018Z annotated-doc==0.0.7
+2026-11-25T10:34:45.2095303Z annotated-types==0.8.0
+2026-11-25T10:34:45.2095506Z contourpy==1.3.3
+2026-11-25T10:34:45.2095637Z cycler==0.12.1
+2026-11-25T10:34:45.2095934Z FiPy==4.0.3
+2026-11-25T10:34:45.2096097Z fonttools==4.68.0
+2026-11-25T10:34:45.2096257Z kiwisolver==1.5.1
+2026-11-25T10:34:45.2096445Z markdown-it-py==4.3.0
+2026-11-25T10:34:45.2096631Z matplotlib==3.11.2
+2026-11-25T10:34:45.2097162Z mdurl==0.1.2
+2026-11-25T10:34:45.2097339Z numpy==2.4.6
+2026-11-25T10:34:45.2097534Z packaging==26.4
+2026-11-25T10:34:45.2097703Z pandas==3.1.1
+2026-11-25T10:34:45.2097860Z pillow==13.0.0
+2026-11-25T10:34:45.2098014Z pybullet==3.2.7
+2026-11-25T10:34:45.2098169Z pydantic==2.14.4
+2026-11-25T10:34:45.2098337Z pydantic_core==2.50.5
+2026-11-25T10:34:45.2098504Z Pygments==2.21.0
+2026-11-25T10:34:45.2098661Z pyparsing==3.3.3
+2026-11-25T10:34:45.2098828Z python-dateutil==4.0.0
+2026-11-25T10:34:45.2099074Z rich==15.0.0
+2026-11-25T10:34:45.2099224Z scipy==1.17.1
+2026-11-25T10:34:45.2099378Z shellingham==1.5.4
+2026-11-25T10:34:45.2099540Z typer==0.29.2
+2026-11-25T10:34:45.2099703Z typing-inspection==0.4.5
+2026-11-25T10:34:45.2099896Z typing_extensions==4.16.0
+2026-11-25T10:34:45.2100075Z tzdata==2026.6
+2026-11-25T10:34:45.2100230Z xarray==2026.9.0
+2026-11-25T10:34:45.2283479Z Architecture:                            x86_64
+2026-11-25T10:34:45.2283803Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-25T10:34:45.2287844Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-25T10:34:45.2288072Z Byte Order:                              Little Endian
+2026-11-25T10:34:45.2288247Z CPU(s):                                  4
+2026-11-25T10:34:45.2288408Z On-line CPU(s) list:                     0-3
+2026-11-25T10:34:45.2288581Z Vendor ID:                               AuthenticAMD
+2026-11-25T10:34:45.2288778Z Model name:                              AMD EPYC 9V45 96-Core Processor
+2026-11-25T10:34:45.2288969Z CPU family:                              26
+2026-11-25T10:34:45.2289122Z Model:                                   2
+2026-11-25T10:34:45.2289275Z Thread(s) per core:                      2
+2026-11-25T10:34:45.2289425Z Core(s) per socket:                      2
+2026-11-25T10:34:45.2289575Z Socket(s):                               1
+2026-11-25T10:34:45.2289721Z Stepping:                                1
+2026-11-25T10:34:45.2289876Z BogoMIPS:                                5192.24
+2026-11-25T10:34:45.2291545Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx_vnni avx512_bf16 clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect
+2026-11-25T10:34:45.2293236Z Virtualization:                          AMD-V
+2026-11-25T10:34:45.2293422Z Hypervisor vendor:                       Microsoft
+2026-11-25T10:34:45.2293599Z Virtualization type:                     full
+2026-11-25T10:34:45.2293782Z L1d cache:                               96 KiB (2 instances)
+2026-11-25T10:34:45.2293978Z L1i cache:                               64 KiB (2 instances)
+2026-11-25T10:34:45.2294170Z L2 cache:                                2 MiB (2 instances)
+2026-11-25T10:34:45.2294377Z L3 cache:                                32 MiB (1 instance)
+2026-11-25T10:34:45.2294548Z NUMA node(s):                            1
+2026-11-25T10:34:45.2294704Z NUMA node0 CPU(s):                       0-3
+2026-11-25T10:34:45.2294906Z Vulnerability Gather data sampling:      Not affected
+2026-11-25T10:34:45.2295099Z Vulnerability Ghostwrite:                Not affected
+2026-11-25T10:34:45.2295285Z Vulnerability Indirect target selection: Not affected
+2026-11-25T10:34:45.2295470Z Vulnerability Itlb multihit:             Not affected
+2026-11-25T10:34:45.2295927Z Vulnerability L1tf:                      Not affected
+2026-11-25T10:34:45.2296151Z Vulnerability Mds:                       Not affected
+2026-11-25T10:34:45.2296331Z Vulnerability Meltdown:                  Not affected
+2026-11-25T10:34:45.2296512Z Vulnerability Mmio stale data:           Not affected
+2026-11-25T10:34:45.2296693Z Vulnerability Old microcode:             Not affected
+2026-11-25T10:34:45.2296879Z Vulnerability Reg file data sampling:    Not affected
+2026-11-25T10:34:45.2297062Z Vulnerability Retbleed:                  Not affected
+2026-11-25T10:34:45.2297281Z Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+2026-11-25T10:34:45.2297554Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-25T10:34:45.2297939Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-25T10:34:45.2298346Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+2026-11-25T10:34:45.2298755Z Vulnerability Srbds:                     Not affected
+2026-11-25T10:34:45.2298936Z Vulnerability Tsa:                       Not affected
+2026-11-25T10:34:45.2299116Z Vulnerability Tsx async abort:           Not affected
+2026-11-25T10:34:45.2299298Z Vulnerability Vmscape:                   Not affected
+2026-11-25T10:34:45.3038239Z pybullet build time: Jan 29 2025 23:17:20
+2026-11-25T10:34:57.7950282Z E7_SCENE {"case": "7321_2026112501_0.1_alternate", "wall_seconds": 11.191928576000002, "valid_windows": 7}
+2026-11-25T10:35:09.2589454Z E7_SCENE {"case": "7321_2026112501_0.1_grouped", "wall_seconds": 11.463070492000007, "valid_windows": 7}
+2026-11-25T10:35:20.3586418Z E7_SCENE {"case": "7321_2026112502_0.1_alternate", "wall_seconds": 11.098864992000003, "valid_windows": 7}
+2026-11-25T10:35:31.7275620Z E7_SCENE {"case": "7321_2026112502_0.1_grouped", "wall_seconds": 11.367691632000003, "valid_windows": 7}
+2026-11-25T10:35:42.7492205Z E7_SCENE {"case": "8128_2026112501_0.1_alternate", "wall_seconds": 11.020707137000002, "valid_windows": 7}
+2026-11-25T10:35:53.8629653Z E7_SCENE {"case": "8128_2026112501_0.1_grouped", "wall_seconds": 11.112810745999994, "valid_windows": 7}
+2026-11-25T10:36:04.8521360Z E7_SCENE {"case": "8128_2026112502_0.1_alternate", "wall_seconds": 10.988147783000002, "valid_windows": 7}
+2026-11-25T10:36:16.2614856Z E7_SCENE {"case": "8128_2026112502_0.1_grouped", "wall_seconds": 11.40787002099998, "valid_windows": 7}
+2026-11-25T10:36:23.1205842Z E7_SCENE {"case": "7321_0_0.1_monolayer", "wall_seconds": 6.858116832999997, "valid_windows": 7}
+2026-11-25T10:36:36.4442366Z E7_SCENE {"case": "7321_0_0.1_pyramid", "wall_seconds": 13.322671507000024, "valid_windows": 7}
+2026-11-25T10:36:43.4358252Z E7_SCENE {"case": "8128_0_0.1_monolayer", "wall_seconds": 6.990743157999987, "valid_windows": 7}
+2026-11-25T10:36:58.0591031Z E7_SCENE {"case": "8128_0_0.1_pyramid", "wall_seconds": 14.621892891999977, "valid_windows": 7}
+2026-11-25T10:37:09.6904158Z E7_SCENE {"case": "7321_2026112501_0.0_alternate", "wall_seconds": 11.630242613999997, "valid_windows": 7}
+2026-11-25T10:37:21.5684469Z E7_SCENE {"case": "7321_2026112501_0.0_grouped", "wall_seconds": 11.877140018000006, "valid_windows": 7}
+2026-11-25T10:37:33.0579626Z E7_SCENE {"case": "7321_2026112501_0.1_alternate_replay", "wall_seconds": 11.48849281699998, "valid_windows": 7}
+2026-11-25T10:37:33.0936179Z WORLD_E7_JSON {"case_summary": {"7321_0_0.1_monolayer": {"epochs": [{"anisotropy": 0.07863876204686031, "epoch": 0, "high": 0, "p90_speed": 6.178971115951587e-05, "redistribution_x": 0.010600000000002838, "relative_residual": 1.2598069137939435e-07, "valid": true}, {"anisotropy": 0.07859625899154063, "epoch": 1, "high": 0, "p90_speed": 6.175289537272442e-05, "redistribution_x": 0.011000000000003247, "relative_residual": 1.0800051558546882e-07, "valid": true}, {"anisotropy": 0.07860406502034084, "epoch": 2, "high": 0, "p90_speed": 6.177487351321241e-05, "redistribution_x": 0.011000000000001882, "relative_residual": 1.0803895584663724e-07, "valid": true}, {"anisotropy": 0.07860909717000898, "epoch": 3, "high": 0, "p90_speed": 6.177304569724561e-05, "redistribution_x": 0.011000000000002404, "relative_residual": 1.0803575875984521e-07, "valid": true}, {"anisotropy": 0.07861026487960605, "epoch": 4, "high": 0, "p90_speed": 6.17618071624696e-05, "redistribution_x": 0.011000000000001852, "relative_residual": 1.080161025081265e-07, "valid": true}, {"anisotropy": 0.07861567445489956, "epoch": 5, "high": 0, "p90_speed": 6.17478310387051e-05, "redistribution_x": 0.01100000000000192, "relative_residual": 1.0799165823444942e-07, "valid": true}, {"anisotropy": 0.0786130455671703, "epoch": 6, "high": 0, "p90_speed": 6.184771327993295e-05, "redistribution_x": 0.01100000000000212, "relative_residual": 1.2609895692463384e-07, "valid": true}], "valid_windows": 7, "wall_seconds": 6.858116832999997}, "7321_0_0.1_pyramid": {"epochs": [{"anisotropy": 0.018067234646724682, "epoch": 0, "high": 40, "p90_speed": 4.4635726048911546e-05, "redistribution_x": 0.034138045286544294, "relative_residual": 8.939552900918631e-07, "valid": true}, {"anisotropy": 0.017462320761988455, "epoch": 1, "high": 40, "p90_speed": 5.1686614476944357e-05, "redistribution_x": 0.03214934728721819, "relative_residual": 3.840338542794709e-06, "valid": true}, {"anisotropy": 0.017486276927134184, "epoch": 2, "high": 40, "p90_speed": 0.00010240974526806307, "redistribution_x": 0.028116301130970214, "relative_residual": 9.235203727455819e-07, "valid": true}, {"anisotropy": 0.01739690882108983, "epoch": 3, "high": 40, "p90_speed": 3.2730893126316576e-05, "redistribution_x": 0.027380862444044297, "relative_residual": 5.3007644702233584e-08, "valid": true}, {"anisotropy": 0.01733344713558285, "epoch": 4, "high": 40, "p90_speed": 6.0369853242002325e-05, "redistribution_x": 0.027370856484195752, "relative_residual": 1.1805381475646122e-06, "valid": true}, {"anisotropy": 0.01769024548458118, "epoch": 5, "high": 40, "p90_speed": 7.652714062109727e-05, "redistribution_x": 0.027562334148031116, "relative_residual": 1.9146820146367137e-06, "valid": true}, {"anisotropy": 0.017610573809888855, "epoch": 6, "high": 40, "p90_speed": 5.641492638750255e-05, "redistribution_x": 0.028058956324744394, "relative_residual": 4.507413762402914e-07, "valid": true}], "valid_windows": 7, "wall_seconds": 13.322671507000024}, "7321_2026112501_0.0_alternate": {"epochs": [{"anisotropy": 0.6222448904753235, "epoch": 0, "high": 33, "p90_speed": 0.008959350176317321, "redistribution_x": 0.02424485552418201, "relative_residual": 3.778989143827926e-05, "valid": true}, {"anisotropy": 0.6119396480413772, "epoch": 1, "high": 33, "p90_speed": 0.010266688400714773, "redistribution_x": 0.02265115794050277, "relative_residual": 4.9059316511876644e-05, "valid": true}, {"anisotropy": 0.6014748239740811, "epoch": 2, "high": 33, "p90_speed": 0.00673387602789507, "redistribution_x": 0.02449336902158107, "relative_residual": 2.6597118782950323e-05, "valid": true}, {"anisotropy": 0.5920437498565015, "epoch": 3, "high": 33, "p90_speed": 0.01059237985642975, "redistribution_x": 0.02421916717473495, "relative_residual": 4.942559157001242e-05, "valid": true}, {"anisotropy": 0.5858070099896683, "epoch": 4, "high": 29, "p90_speed": 0.007529484119465174, "redistribution_x": 0.022572546411080315, "relative_residual": 4.7714952010034076e-05, "valid": true}, {"anisotropy": 0.5759406654463602, "epoch": 5, "high": 27, "p90_speed": 0.007610929435548706, "redistribution_x": 0.02085327226196471, "relative_residual": 2.2183537770374914e-05, "valid": true}, {"anisotropy": 0.5687979119127348, "epoch": 6, "high": 25, "p90_speed": 0.005594896337162582, "redistribution_x": 0.020787030923616858, "relative_residual": 8.778842705557999e-06, "valid": true}], "valid_windows": 7, "wall_seconds": 11.630242613999997}, "7321_2026112501_0.0_grouped": {"epochs": [{"anisotropy": 0.5807242219917135, "epoch": 0, "high": 22, "p90_speed": 0.007216233218682817, "redistribution_x": 0.023120716293618723, "relative_residual": 9.157970932369424e-05, "valid": true}, {"anisotropy": 0.5859047861980635, "epoch": 1, "high": 21, "p90_speed": 0.011568809308648197, "redistribution_x": 0.0261980348922572, "relative_residual": 5.093391905380014e-05, "valid": true}, {"anisotropy": 0.5903907517807762, "epoch": 2, "high": 20, "p90_speed": 0.014132031541092417, "redistribution_x": 0.02576875468892942, "relative_residual": 0.0003733748870961358, "valid": true}, {"anisotropy": 0.590210498728323, "epoch": 3, "high": 16, "p90_speed": 0.0032907547226275293, "redistribution_x": 0.02254456614637483, "relative_residual": 1.9699330499618757e-05, "valid": true}, {"anisotropy": 0.5912795455449635, "epoch": 4, "high": 16, "p90_speed": 0.002498055199889378, "redistribution_x": 0.020512446039417764, "relative_residual": 7.059052954219105e-06, "valid": true}, {"anisotropy": 0.5924717356825984, "epoch": 5, "high": 15, "p90_speed": 0.0029071793331061574, "redistribution_x": 0.019984839219739987, "relative_residual": 0.0009710482452844134, "valid": true}, {"anisotropy": 0.5929305254468054, "epoch": 6, "high": 15, "p90_speed": 0.002781534257750292, "redistribution_x": 0.019604940326580878, "relative_residual": 1.5597422285182852e-05, "valid": true}], "valid_windows": 7, "wall_seconds": 11.877140018000006}, "7321_2026112501_0.1_alternate": {"epochs": [{"anisotropy": 0.6222448904753235, "epoch": 0, "high": 33, "p90_speed": 0.008959350176317321, "redistribution_x": 0.02424485552418201, "relative_residual": 3.778989143827926e-05, "valid": true}, {"anisotropy": 0.6116382683251026, "epoch": 1, "high": 32, "p90_speed": 0.007253195260575036, "redistribution_x": 0.02482388099918792, "relative_residual": 5.7609746647159326e-05, "valid": true}, {"anisotropy": 0.6017034541687765, "epoch": 2, "high": 32, "p90_speed": 0.006732457359485872, "redistribution_x": 0.02256646673845432, "relative_residual": 1.3347827320160156e-05, "valid": true}, {"anisotropy": 0.5908073733626505, "epoch": 3, "high": 32, "p90_speed": 0.011893524322335685, "redistribution_x": 0.02262646118058028, "relative_residual": 0.00014400547555223163, "valid": true}, {"anisotropy": 0.5800862191235656, "epoch": 4, "high": 29, "p90_speed": 0.010003896155565408, "redistribution_x": 0.023918551520269796, "relative_residual": 2.4249463734728214e-05, "valid": true}, {"anisotropy": 0.5657589336514007, "epoch": 5, "high": 24, "p90_speed": 0.009362660356213828, "redistribution_x": 0.023244491902337818, "relative_residual": 8.77943129900113e-05, "valid": true}, {"anisotropy": 0.5598434309780314, "epoch": 6, "high": 22, "p90_speed": 0.0047984539251355735, "redistribution_x": 0.020524294411665096, "relative_residual": 1.4191044072127744e-05, "valid": true}], "valid_windows": 7, "wall_seconds": 11.191928576000002}, "7321_2026112501_0.1_alternate_replay": {"epochs": [{"anisotropy": 0.6222448904753235, "epoch": 0, "high": 33, "p90_speed": 0.008959350176317321, "redistribution_x": 0.02424485552418201, "relative_residual": 3.778989143827926e-05, "valid": true}, {"anisotropy": 0.6116382683251026, "epoch": 1, "high": 32, "p90_speed": 0.007253195260575036, "redistribution_x": 0.02482388099918792, "relative_residual": 5.7609746647159326e-05, "valid": true}, {"anisotropy": 0.6017034541687765, "epoch": 2, "high": 32, "p90_speed": 0.006732457359485872, "redistribution_x": 0.02256646673845432, "relative_residual": 1.3347827320160156e-05, "valid": true}, {"anisotropy": 0.5908073733626505, "epoch": 3, "high": 32, "p90_speed": 0.011893524322335685, "redistribution_x": 0.02262646118058028, "relative_residual": 0.00014400547555223163, "valid": true}, {"anisotropy": 0.5800862191235656, "epoch": 4, "high": 29, "p90_speed": 0.010003896155565408, "redistribution_x": 0.023918551520269796, "relative_residual": 2.4249463734728214e-05, "valid": true}, {"anisotropy": 0.5657589336514007, "epoch": 5, "high": 24, "p90_speed": 0.009362660356213828, "redistribution_x": 0.023244491902337818, "relative_residual": 8.77943129900113e-05, "valid": true}, {"anisotropy": 0.5598434309780314, "epoch": 6, "high": 22, "p90_speed": 0.0047984539251355735, "redistribution_x": 0.020524294411665096, "relative_residual": 1.4191044072127744e-05, "valid": true}], "valid_windows": 7, "wall_seconds": 11.48849281699998}, "7321_2026112501_0.1_grouped": {"epochs": [{"anisotropy": 0.5807242219917135, "epoch": 0, "high": 22, "p90_speed": 0.007216233218682817, "redistribution_x": 0.023120716293618723, "relative_residual": 9.157970932369424e-05, "valid": true}, {"anisotropy": 0.5850464660656967, "epoch": 1, "high": 20, "p90_speed": 0.011255595253334463, "redistribution_x": 0.026580386689488412, "relative_residual": 5.151867777893691e-05, "valid": true}, {"anisotropy": 0.588963183068402, "epoch": 2, "high": 16, "p90_speed": 0.006487995260900264, "redistribution_x": 0.026128496265341524, "relative_residual": 0.0005912695940042726, "valid": true}, {"anisotropy": 0.5898882977353705, "epoch": 3, "high": 15, "p90_speed": 0.003644184122507362, "redistribution_x": 0.02389154491975637, "relative_residual": 7.676948429065184e-06, "valid": true}, {"anisotropy": 0.5904777426642193, "epoch": 4, "high": 14, "p90_speed": 0.002352913679104691, "redistribution_x": 0.02225687922806724, "relative_residual": 3.938304395392838e-06, "valid": true}, {"anisotropy": 0.5915635543814538, "epoch": 5, "high": 14, "p90_speed": 0.0024062785550144987, "redistribution_x": 0.0224332809259966, "relative_residual": 2.759844004249561e-06, "valid": true}, {"anisotropy": 0.5917260597300954, "epoch": 6, "high": 14, "p90_speed": 0.002127530950928944, "redistribution_x": 0.02207309504193683, "relative_residual": 4.224097379509914e-06, "valid": true}], "valid_windows": 7, "wall_seconds": 11.463070492000007}, "7321_2026112502_0.1_alternate": {"epochs": [{"anisotropy": 0.5623625178809504, "epoch": 0, "high": 23, "p90_speed": 0.020099038820095772, "redistribution_x": 0.025078273190040003, "relative_residual": 7.170491720864546e-05, "valid": true}, {"anisotropy": 0.5705779256439569, "epoch": 1, "high": 20, "p90_speed": 0.006474385858285695, "redistribution_x": 0.020425554113616795, "relative_residual": 0.0003578181636092441, "valid": true}, {"anisotropy": 0.5714471640729046, "epoch": 2, "high": 18, "p90_speed": 0.004571861871291952, "redistribution_x": 0.018572653306227142, "relative_residual": 6.983433354296124e-06, "valid": true}, {"anisotropy": 0.5717190725003588, "epoch": 3, "high": 16, "p90_speed": 0.0038936982545141924, "redistribution_x": 0.02024631350205569, "relative_residual": 8.032904290635375e-06, "valid": true}, {"anisotropy": 0.5718382932421735, "epoch": 4, "high": 16, "p90_speed": 0.004951494926095278, "redistribution_x": 0.020774422773269588, "relative_residual": 3.698415367196914e-05, "valid": true}, {"anisotropy": 0.5711033301098832, "epoch": 5, "high": 14, "p90_speed": 0.0025252602940053926, "redistribution_x": 0.01887316423570268, "relative_residual": 2.279049876382797e-05, "valid": true}, {"anisotropy": 0.5696831328974494, "epoch": 6, "high": 14, "p90_speed": 0.0025722611223529222, "redistribution_x": 0.020148149029619578, "relative_residual": 3.950839396178478e-06, "valid": true}], "valid_windows": 7, "wall_seconds": 11.098864992000003}, "7321_2026112502_0.1_grouped": {"epochs": [{"anisotropy": 0.5981314047758908, "epoch": 0, "high": 35, "p90_speed": 0.013380525713802653, "redistribution_x": 0.0250694809716158, "relative_residual": 0.0002159275223654243, "valid": true}, {"anisotropy": 0.6002907922832319, "epoch": 1, "high": 35, "p90_speed": 0.006743704123335677, "redistribution_x": 0.02535100772265101, "relative_residual": 3.280935539780468e-05, "valid": true}, {"anisotropy": 0.5991167231211851, "epoch": 2, "high": 34, "p90_speed": 0.00595596487699882, "redistribution_x": 0.02723983197834033, "relative_residual": 2.142622703298186e-05, "valid": true}, {"anisotropy": 0.5953664482955179, "epoch": 3, "high": 33, "p90_speed": 0.00607929784325663, "redistribution_x": 0.024728538556446217, "relative_residual": 0.0001426824517712676, "valid": true}, {"anisotropy": 0.5906602724349093, "epoch": 4, "high": 33, "p90_speed": 0.007053188880449893, "redistribution_x": 0.028216788839659987, "relative_residual": 2.779918035893493e-05, "valid": true}, {"anisotropy": 0.5865240525925594, "epoch": 5, "high": 31, "p90_speed": 0.009094928354081497, "redistribution_x": 0.03105075868980224, "relative_residual": 3.858799150173865e-05, "valid": true}, {"anisotropy": 0.5815044347085833, "epoch": 6, "high": 30, "p90_speed": 0.006026128350403323, "redistribution_x": 0.030264628426970214, "relative_residual": 4.419167312591998e-05, "valid": true}], "valid_windows": 7, "wall_seconds": 11.367691632000003}, "8128_0_0.1_monolayer": {"epochs": [{"anisotropy": 0.08641721762961226, "epoch": 0, "high": 0, "p90_speed": 2.7691847095607085e-05, "redistribution_x": 0.003000000000002564, "relative_residual": 5.6457928700142365e-08, "valid": true}, {"anisotropy": 0.08646172563671331, "epoch": 1, "high": 0, "p90_speed": 2.774404067869058e-05, "redistribution_x": 0.0030000000000023467, "relative_residual": 5.6564343546472785e-08, "valid": true}, {"anisotropy": 0.08647992120458219, "epoch": 2, "high": 0, "p90_speed": 2.7765169148670208e-05, "redistribution_x": 0.0030000000000034452, "relative_residual": 5.660742089932541e-08, "valid": true}, {"anisotropy": 0.0864839794394074, "epoch": 3, "high": 0, "p90_speed": 2.7769682457586233e-05, "redistribution_x": 0.0030000000000025627, "relative_residual": 5.6616623111939876e-08, "valid": true}, {"anisotropy": 0.08650024554241287, "epoch": 4, "high": 0, "p90_speed": 2.7765937905688904e-05, "redistribution_x": 0.0030000000000025527, "relative_residual": 5.6608988409363927e-08, "valid": true}, {"anisotropy": 0.08649410879217743, "epoch": 5, "high": 0, "p90_speed": 2.775857629727742e-05, "redistribution_x": 0.0030000000000042822, "relative_residual": 5.659397910291069e-08, "valid": true}, {"anisotropy": 0.08648695299715772, "epoch": 6, "high": 0, "p90_speed": 2.7750073423224254e-05, "redistribution_x": 0.0030000000000022066, "relative_residual": 5.6576643120809013e-08, "valid": true}], "valid_windows": 7, "wall_seconds": 6.990743157999987}, "8128_0_0.1_pyramid": {"epochs": [{"anisotropy": 0.00608168289085334, "epoch": 0, "high": 40, "p90_speed": 1.7075281046162168e-05, "redistribution_x": 0.038250033572844844, "relative_residual": 1.6916165737773214e-07, "valid": true}, {"anisotropy": 0.006086561162139275, "epoch": 1, "high": 40, "p90_speed": 0.00016083218404357917, "redistribution_x": 0.03757721023153641, "relative_residual": 5.517077813658548e-06, "valid": true}, {"anisotropy": 0.0060828601675741, "epoch": 2, "high": 40, "p90_speed": 7.27799875680227e-05, "redistribution_x": 0.03721433777693868, "relative_residual": 8.48962385314363e-07, "valid": true}, {"anisotropy": 0.006065304951947289, "epoch": 3, "high": 40, "p90_speed": 2.053919223222201e-05, "redistribution_x": 0.037259397325008874, "relative_residual": 6.10176208668046e-07, "valid": true}, {"anisotropy": 0.006182608833985049, "epoch": 4, "high": 40, "p90_speed": 0.0001229772352244587, "redistribution_x": 0.03696973980752825, "relative_residual": 3.6942956901546053e-06, "valid": true}, {"anisotropy": 0.006206433788555892, "epoch": 5, "high": 40, "p90_speed": 9.3788610940746e-05, "redistribution_x": 0.03699124063085938, "relative_residual": 2.4667402207445753e-07, "valid": true}, {"anisotropy": 0.006294098695026149, "epoch": 6, "high": 40, "p90_speed": 6.160611492089912e-05, "redistribution_x": 0.03729642154052098, "relative_residual": 2.1415064002457324e-06, "valid": true}], "valid_windows": 7, "wall_seconds": 14.621892891999977}, "8128_2026112501_0.1_alternate": {"epochs": [{"anisotropy": 0.7268185442596199, "epoch": 0, "high": 24, "p90_speed": 0.00691601043709323, "redistribution_x": 0.028080177475316517, "relative_residual": 0.0004135797452556005, "valid": true}, {"anisotropy": 0.7124932654161822, "epoch": 1, "high": 21, "p90_speed": 0.0072219258442770395, "redistribution_x": 0.02861802563574256, "relative_residual": 1.2281287524592041e-05, "valid": true}, {"anisotropy": 0.7102347671841286, "epoch": 2, "high": 21, "p90_speed": 0.004707865004904696, "redistribution_x": 0.029101372023847327, "relative_residual": 0.00010949562173370233, "valid": true}, {"anisotropy": 0.7037683857322998, "epoch": 3, "high": 18, "p90_speed": 0.00597444409681422, "redistribution_x": 0.026616640383567293, "relative_residual": 0.00028120951462680383, "valid": true}, {"anisotropy": 0.6992354690116164, "epoch": 4, "high": 16, "p90_speed": 0.0031731202193124182, "redistribution_x": 0.022845501085865968, "relative_residual": 6.680998147564075e-05, "valid": true}, {"anisotropy": 0.6970592914575597, "epoch": 5, "high": 16, "p90_speed": 0.002189745315249747, "redistribution_x": 0.023144612660734663, "relative_residual": 1.63256315316938e-06, "valid": true}, {"anisotropy": 0.6955667407875414, "epoch": 6, "high": 15, "p90_speed": 0.0021352016646439508, "redistribution_x": 0.02315194933250304, "relative_residual": 4.009047419377991e-06, "valid": true}], "valid_windows": 7, "wall_seconds": 11.020707137000002}, "8128_2026112501_0.1_grouped": {"epochs": [{"anisotropy": 0.7596445414148361, "epoch": 0, "high": 40, "p90_speed": 0.02850031696621339, "redistribution_x": 0.028135451252252437, "relative_residual": 0.00044951425275608096, "valid": true}, {"anisotropy": 0.7623025861060883, "epoch": 1, "high": 37, "p90_speed": 0.012129505511885475, "redistribution_x": 0.03244863964512538, "relative_residual": 6.298513060523273e-05, "valid": true}, {"anisotropy": 0.7602709946905465, "epoch": 2, "high": 34, "p90_speed": 0.012249720949637678, "redistribution_x": 0.028543782878912894, "relative_residual": 6.403663775017078e-05, "valid": true}, {"anisotropy": 0.756953564815564, "epoch": 3, "high": 31, "p90_speed": 0.006970009661004672, "redistribution_x": 0.030072757338061196, "relative_residual": 0.00037373317256456274, "valid": true}, {"anisotropy": 0.7540392994956289, "epoch": 4, "high": 29, "p90_speed": 0.006408012744598609, "redistribution_x": 0.02983325603874348, "relative_residual": 2.3595580312972382e-05, "valid": true}, {"anisotropy": 0.7495694436416677, "epoch": 5, "high": 28, "p90_speed": 0.0034988755596171736, "redistribution_x": 0.029305315515772503, "relative_residual": 1.116106289237023e-05, "valid": true}, {"anisotropy": 0.7442226937114198, "epoch": 6, "high": 28, "p90_speed": 0.002141706369719386, "redistribution_x": 0.02711244752465891, "relative_residual": 4.052316650121568e-05, "valid": true}], "valid_windows": 7, "wall_seconds": 11.112810745999994}, "8128_2026112502_0.1_alternate": {"epochs": [{"anisotropy": 0.5093519285427016, "epoch": 0, "high": 46, "p90_speed": 0.011129965448952712, "redistribution_x": 0.02700644728239209, "relative_residual": 0.00012464882028680112, "valid": true}, {"anisotropy": 0.5091271697814918, "epoch": 1, "high": 41, "p90_speed": 0.00830344001911562, "redistribution_x": 0.03251674615301508, "relative_residual": 4.7450740672275826e-05, "valid": true}, {"anisotropy": 0.48376299428901215, "epoch": 2, "high": 35, "p90_speed": 0.010158995521350921, "redistribution_x": 0.02485946750560546, "relative_residual": 0.0002581025427296531, "valid": true}, {"anisotropy": 0.46650978432533874, "epoch": 3, "high": 30, "p90_speed": 0.007391144581225968, "redistribution_x": 0.027225373502594997, "relative_residual": 7.127004390055386e-05, "valid": true}, {"anisotropy": 0.46766130292013885, "epoch": 4, "high": 30, "p90_speed": 0.005298865948876874, "redistribution_x": 0.028944163848854145, "relative_residual": 0.00010246657926946683, "valid": true}, {"anisotropy": 0.46690922832144943, "epoch": 5, "high": 29, "p90_speed": 0.004851134495698861, "redistribution_x": 0.028003926436083605, "relative_residual": 5.510942357896651e-05, "valid": true}, {"anisotropy": 0.46747449694586574, "epoch": 6, "high": 28, "p90_speed": 0.004092189437354719, "redistribution_x": 0.03024501577869352, "relative_residual": 1.733526710145593e-05, "valid": true}], "valid_windows": 7, "wall_seconds": 10.988147783000002}, "8128_2026112502_0.1_grouped": {"epochs": [{"anisotropy": 0.5108701499972097, "epoch": 0, "high": 39, "p90_speed": 0.016165013627898787, "redistribution_x": 0.026593024772634567, "relative_residual": 6.0372505923257854e-05, "valid": true}, {"anisotropy": 0.5167006742174358, "epoch": 1, "high": 32, "p90_speed": 0.017670998468808558, "redistribution_x": 0.02515287516628817, "relative_residual": 0.00029171829582421, "valid": true}, {"anisotropy": 0.5272735405095503, "epoch": 2, "high": 30, "p90_speed": 0.00673954215146548, "redistribution_x": 0.021659980815106863, "relative_residual": 0.000777727083969943, "valid": true}, {"anisotropy": 0.5334102678600898, "epoch": 3, "high": 26, "p90_speed": 0.005986060651334098, "redistribution_x": 0.02166884770678363, "relative_residual": 1.9999508943385414e-05, "valid": true}, {"anisotropy": 0.5369855487136703, "epoch": 4, "high": 24, "p90_speed": 0.006492681898622674, "redistribution_x": 0.022122297640560985, "relative_residual": 0.00011461255588841725, "valid": true}, {"anisotropy": 0.5363562699870591, "epoch": 5, "high": 24, "p90_speed": 0.006004204881905884, "redistribution_x": 0.02210625551619816, "relative_residual": 3.6581262774216294e-05, "valid": true}, {"anisotropy": 0.5346922119609183, "epoch": 6, "high": 23, "p90_speed": 0.009285312636997663, "redistribution_x": 0.023995047983687647, "relative_residual": 0.00011191895237656384, "valid": true}], "valid_windows": 7, "wall_seconds": 11.40787002099998}}, "eligible_pairs": 4, "experiment": "E7.1b", "failed_preregistered_gates": [], "pairs": {"7321_2026112501": {"anisotropy_differences": [0.041520668483610024, 0.031882628752064046], "controls": {"7321_2026112501_0.1_alternate": {"nontrivial": false, "redistribution": [0.02424485552418201, 0.020524294411665096], "template_distances": {"7321_0_0.1_monolayer": [0.02777237077121644, 0.02594553519102903], "7321_0_0.1_pyramid": [0.048053086160676155, 0.04041099494547693]}}, "7321_2026112501_0.1_grouped": {"nontrivial": false, "redistribution": [0.023120716293618723, 0.02207309504193683], "template_distances": {"7321_0_0.1_monolayer": [0.0276937331310019, 0.027644386725751105], "7321_0_0.1_pyramid": [0.048139412695586276, 0.0439811122473846]}}}, "effective_rank_difference": 19.761904761904766, "eligible": true, "function_distances": [0.031771882687400124, 0.028318016898507794], "high_differences": [11, 8], "passed": false, "structural": false, "valid_endpoints": true}, "7321_2026112502": {"anisotropy_differences": [0.0357688868949404, 0.011821301811133833], "controls": {"7321_2026112502_0.1_alternate": {"nontrivial": false, "redistribution": [0.025078273190040003, 0.020148149029619578], "template_distances": {"7321_0_0.1_monolayer": [0.030161542747772264, 0.025414004894689087], "7321_0_0.1_pyramid": [0.05100255341293844, 0.03936780651175957]}}, "7321_2026112502_0.1_grouped": {"nontrivial": false, "redistribution": [0.0250694809716158, 0.030264628426970214], "template_distances": {"7321_0_0.1_monolayer": [0.02754782928514443, 0.030938143993094105], "7321_0_0.1_pyramid": [0.052318714266113654, 0.049207388000141176]}}}, "effective_rank_difference": 19.17460317460317, "eligible": true, "function_distances": [0.038814883095173384, 0.0363615805672626], "high_differences": [12, 16], "passed": false, "structural": true, "valid_endpoints": true}, "8128_2026112501": {"anisotropy_differences": [0.03282599715521617, 0.048655952923878365], "controls": {"8128_2026112501_0.1_alternate": {"nontrivial": false, "redistribution": [0.028080177475316517, 0.02315194933250304], "template_distances": {"8128_0_0.1_monolayer": [0.028604329186693336, 0.025015256402447263], "8128_0_0.1_pyramid": [0.061658246687379764, 0.057620639367599605]}}, "8128_2026112501_0.1_grouped": {"nontrivial": false, "redistribution": [0.028135451252252437, 0.02711244752465891], "template_distances": {"8128_0_0.1_monolayer": [0.029312841081094256, 0.029494767957503915], "8128_0_0.1_pyramid": [0.05536482752514887, 0.05505876758516512]}}}, "effective_rank_difference": 19.85714285714286, "eligible": true, "function_distances": [0.03957477417545893, 0.036901848455368], "high_differences": [16, 13], "passed": false, "structural": true, "valid_endpoints": true}, "8128_2026112502": {"anisotropy_differences": [0.001518221454508084, 0.06721771501505258], "controls": {"8128_2026112502_0.1_alternate": {"nontrivial": false, "redistribution": [0.02700644728239209, 0.03024501577869352], "template_distances": {"8128_0_0.1_monolayer": [0.02742554326344729, 0.03095673287216525], "8128_0_0.1_pyramid": [0.04751681057748668, 0.052899567766793276]}}, "8128_2026112502_0.1_grouped": {"nontrivial": false, "redistribution": [0.026593024772634567, 0.023995047983687647], "template_distances": {"8128_0_0.1_monolayer": [0.028063409674712006, 0.025713678640439316], "8128_0_0.1_pyramid": [0.05570675239329035, 0.0493224264792596]}}}, "effective_rank_difference": 19.19047619047619, "eligible": true, "function_distances": [0.034468606939002513, 0.036027904520879984], "high_differences": [7, 5], "passed": false, "structural": false, "valid_endpoints": true}}, "passed_pairs": 0, "replay_exact": true, "scientific_outcome": "negative", "wall_seconds": 166.720720487}
+2026-11-25T10:37:33.2174341Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T10:37:33.2174517Z with:
+2026-11-25T10:37:33.2174640Z   name: e7-history-load
+2026-11-25T10:37:33.2174767Z   path: e7-history
+2026-11-25T10:37:33.2174883Z   retention-days: 30
+2026-11-25T10:37:33.2175012Z   if-no-files-found: warn
+2026-11-25T10:37:33.2175318Z   compression-level: 6
+2026-11-25T10:37:33.2175440Z   overwrite: false
+2026-11-25T10:37:33.2175560Z   include-hidden-files: false
+2026-11-25T10:37:33.2175697Z env:
+2026-11-25T10:37:33.2176039Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T10:37:33.2176235Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T10:37:33.2176361Z   OMP_NUM_THREADS: 1
+2026-11-25T10:37:33.2176478Z   MKL_NUM_THREADS: 1
+2026-11-25T10:37:33.2176597Z   FIPY_SOLVERS: scipy
+2026-11-25T10:37:33.2176762Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T10:37:33.2176986Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:37:33.2177251Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T10:37:33.2177482Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:37:33.2177692Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:37:33.2177905Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T10:37:33.2178120Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T10:37:33.2178298Z ##[endgroup]
+2026-11-25T10:37:33.3278644Z (node:2304) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T10:37:33.3279153Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T10:37:33.3527172Z With the provided path, there will be 151 files uploaded
+2026-11-25T10:37:33.3528734Z Artifact name is valid!
+2026-11-25T10:37:33.3550011Z Root directory input is valid!
+2026-11-25T10:37:33.6635951Z Beginning upload of artifact content to blob storage
+2026-11-25T10:37:33.8994156Z (node:2304) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-25T10:37:34.4251168Z Uploaded bytes 8388608
+2026-11-25T10:37:34.5357842Z Uploaded bytes 16777216
+2026-11-25T10:37:34.7531742Z Uploaded bytes 24728758
+2026-11-25T10:37:34.7929208Z Finished uploading artifact content to blob storage!
+2026-11-25T10:37:34.7930028Z SHA256 digest of uploaded artifact zip is 91c5da5b3883898da626dc9da35774bf4ce73d03f1b0b6f19f071a0775132231
+2026-11-25T10:37:34.7938000Z Finalizing artifact upload
+2026-11-25T10:37:35.1371646Z Artifact e7-history-load.zip successfully finalized. Artifact ID 15012774805
+2026-11-25T10:37:35.1372090Z Artifact e7-history-load has been successfully uploaded! Final size is 24728758 bytes. Artifact ID is 15012774805
+2026-11-25T10:37:35.1372540Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45596252199/artifacts/15012774805
+2026-11-25T10:37:35.1561992Z Post job cleanup.
+2026-11-25T10:37:35.2351380Z (node:2319) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T10:37:35.2352003Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T10:37:35.2502269Z Post job cleanup.
+2026-11-25T10:37:35.3116537Z [command]/usr/bin/git version
+2026-11-25T10:37:35.3151262Z git version 2.56.1
+2026-11-25T10:37:35.3196566Z Temporarily overriding HOME='/home/runner/work/_temp/9e22c262-406a-4840-bbc4-45efbb7372e4' before making global git config changes
+2026-11-25T10:37:35.3236427Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T10:37:35.3237159Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T10:37:35.3238133Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T10:37:35.3253262Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T10:37:35.3458248Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T10:37:35.3488054Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T10:37:35.3733076Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T10:37:35.3787474Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T10:37:35.4141895Z Cleaning up orphan processes
+2026-11-25T10:37:35.4375083Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
