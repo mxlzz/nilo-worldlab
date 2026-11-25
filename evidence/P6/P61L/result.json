@@ -1,0 +1,68 @@
+{
+  "cases": {
+    "periodic_240": {
+      "energy_residual_J": 0.0,
+      "flux_removed_m3": 0.0,
+      "global_residual_m3": 3.5236570605778894e-18,
+      "input_owner_sha": "57645d21c5ec7672fb12ed90816dee140a4b34a9e0402d3117b458135b15fe41",
+      "limited_links": 0,
+      "limited_nodes": [],
+      "max_local_residual_m": 3.63207727782644e-18,
+      "max_overdraw_m3": 0.0,
+      "min_h": 0.0004747081911743706,
+      "native_identity": true,
+      "native_min_h": 0.0004747081911743706,
+      "out_m3": 0.0034553610098461787,
+      "repeat_exact": true
+    },
+    "periodic_2400": {
+      "energy_residual_J": 0.0,
+      "flux_removed_m3": 0.0,
+      "global_residual_m3": -4.960224939121183e-17,
+      "input_owner_sha": "77e8036e5389fcbcba2ea79b43c6a462c9d957a3f1b6811b7dcdc9cca5d2d203",
+      "limited_links": 0,
+      "limited_nodes": [],
+      "max_local_residual_m": 6.2002811739014785e-18,
+      "max_overdraw_m3": 0.0,
+      "min_h": 0.0001543723412604199,
+      "native_identity": true,
+      "native_min_h": 0.0001543723412604199,
+      "out_m3": 0.000212111230684406,
+      "repeat_exact": true
+    },
+    "relaxation_2078": {
+      "energy_residual_J": 2.384185791015625e-07,
+      "flux_removed_m3": 1.5389329140079602e-07,
+      "global_residual_m3": 4.2148359455373985e-17,
+      "input_owner_sha": "772e0b24764ea7751868038f42ddc244f4d97d34300afc6824a8e8c6c5f64611",
+      "limited_links": 2,
+      "limited_nodes": [
+        17
+      ],
+      "max_local_residual_m": 8.599078480525657e-18,
+      "max_overdraw_m3": 0.0,
+      "min_h": 1.3234889800848443e-23,
+      "native_identity": false,
+      "native_min_h": -3.847332285019899e-08,
+      "out_m3": 0.0002286672091224677,
+      "repeat_exact": true
+    }
+  },
+  "experiment": "P6.1-L",
+  "failed_gates": [],
+  "fixture": {
+    "analytic_flux_m3": [
+      0.5333333333333332,
+      0.4666666666666665
+    ],
+    "dry": true,
+    "reject_inflow": true,
+    "zero": true
+  },
+  "outputs": {
+    "periodic_240.npz": "c93207d04cdf3a727bd39ed198916d7f800900df3003d02108a75a982e3f393d",
+    "periodic_2400.npz": "dc04a9b6cd784a670303948e79aaef27a3617595da613d50c3dbf6e483447b39",
+    "relaxation_2078.npz": "2540c593dbfb0c452ebb799868cf176a74905219d1a0ab9485dbd2cddee941bb"
+  },
+  "wall_s": 0.14656366600002002
+}
