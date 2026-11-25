@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
-  "stage": "P1-B",
-  "current_task": "P1-B.2c",
-  "next_action": "Leer resultado CI 45504052684 de P1-B.2c y gates; archivar evidencia, auditar y solo si aprueba definir protocolo P1-C. No duplicar ejecución.",
-  "scientific_next": "P1-B.2c",
+  "status": "ready",
+  "stage": "P1-C",
+  "current_task": "P1-C.2a",
+  "next_action": "Implementar y ejecutar productor P1-C.2a según research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.md: flujos vivos, owner energético único, P0-D exacto, controles y checkpoint epoch3. No alimentar futuro. No avanzar C.2b si falla.",
+  "scientific_next": "P1-C.2a",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -14,7 +14,8 @@
     "P0": "complete_limited",
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
-    "P1_B": "B2b_passed_verified_archive"
+    "P1_B": "passed_limited_verified_archive",
+    "P1_C": "protocol_preregistered_not_tested"
   },
   "blockers": [],
   "evidence_refs": [
@@ -27,13 +28,16 @@
     "research/P1-B/P1-B.2a_RESULTADO.md",
     "evidence/P1-B/B2a/archive_manifest.json",
     "research/P1-B/P1-B.2b_RESULTADO.md",
-    "evidence/P1-B/B2b/archive_manifest.json"
+    "evidence/P1-B/B2b/archive_manifest.json",
+    "research/P1-B/P1-B.2c_RESULTADO.md",
+    "evidence/P1-B/B2c/archive_manifest.json",
+    "research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "694fb7e7647f364f01860023be0d515a3327f266",
+  "last_confirmed_non_state_write": "c34fc95d912aa3403bcdc9aba86a07d407ca6035",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -56,11 +60,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24",
-  "active_run": {
-    "id": 45504052684,
-    "unit": "P1-B.2c",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45504052684",
-    "sha": "694fb7e7647f364f01860023be0d515a3327f266"
-  }
+  "updated_at": "2026-11-24"
 }
