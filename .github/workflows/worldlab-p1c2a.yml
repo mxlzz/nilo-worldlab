@@ -1,0 +1,49 @@
+name: WorldLab P1-C.2a live thermal producer
+on:
+  push:
+    branches: [main]
+    paths: [experiments/p1c_live_worker.py, experiments/p1c_live_world.py, .github/workflows/worldlab-p1c2a.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  FIPY_SOLVERS: scipy
+  PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+jobs:
+  producer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        id: landlab
+        with:
+          python-version: '3.13.18'
+      - run: |
+          "${{ steps.landlab.outputs.python-path }}" -m pip install --only-binary=:all: landlab==2.11.0 numpy==2.5.5 xarray==2026.9.0 scipy==1.18.1
+          "${{ steps.landlab.outputs.python-path }}" -m pip freeze
+      - uses: actions/setup-python@v5
+        id: bullet
+        with:
+          python-version: '3.11.18'
+      - run: |
+          "${{ steps.bullet.outputs.python-path }}" -m pip install --only-binary=:all: fipy==4.0.3 pybullet==3.2.7 numpy==2.4.6 xarray==2026.9.0 scipy==1.17.1
+          "${{ steps.bullet.outputs.python-path }}" -m pip freeze
+          lscpu
+      - run: |
+          "${{ steps.bullet.outputs.python-path }}" experiments/p1c_live_world.py "${{ steps.landlab.outputs.python-path }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p1c-producer
+          path: p1c-producer
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p1c-checkpoints
+          path: p1c-checkpoints
+          retention-days: 30
