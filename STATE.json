@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P1-C",
   "current_task": "P1-C.2a",
-  "next_action": "Implementar y ejecutar productor P1-C.2a según research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.md: flujos vivos, owner energético único, P0-D exacto, controles y checkpoint epoch3. No alimentar futuro. No avanzar C.2b si falla.",
+  "next_action": "Leer CI 45516385783 y WORLD_EVAL_JSON antes de nuevo lanzamiento. Revisión estática posterior al push: compare_flux cuenta 12 campos/paso, worker emite 11; probable fallo instrumental, no alterar gates. Si se confirma, conservar fallo y corregir conteo por nombres exactos; no ejecutar C.2b hasta aprobación y archivo.",
   "scientific_next": "P1-C.2a",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -15,7 +15,7 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "protocol_preregistered_not_tested"
+    "P1_C": "C2a_ci_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -37,7 +37,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "c34fc95d912aa3403bcdc9aba86a07d407ca6035",
+  "last_confirmed_non_state_write": "510f99fb5a5768052bbb5a76a3913720ec33145b",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -60,5 +60,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24"
+  "updated_at": "2026-11-24",
+  "active_run": {
+    "id": 45516385783,
+    "unit": "P1-C.2a",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45516385783",
+    "sha": "510f99fb5a5768052bbb5a76a3913720ec33145b"
+  }
 }
