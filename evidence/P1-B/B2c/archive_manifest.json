@@ -1,0 +1,19 @@
+{
+  "artifact": 14973541094,
+  "files": {
+    "14973541094.zip": {
+      "bytes": 5810261,
+      "sha256": "4a763034d7b43416e37db5d4bc56e382cb67a8534425bc6c4f1884cb680a1789"
+    },
+    "job-138834510925.log": {
+      "bytes": 64832,
+      "sha256": "aaf4474f0b16947c539500bbb9450f784edfbb61d798df1c1b76675931d4a8f8"
+    },
+    "result.json": {
+      "bytes": 44791,
+      "sha256": "eec7eb9175b70845681bc0f2c8e67b6764bce9add65f527e09561254de6feecc"
+    }
+  },
+  "job": 138834510925,
+  "run": 45504052684
+}
