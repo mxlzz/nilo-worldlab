@@ -1,0 +1,42 @@
+name: WorldLab P1-D read-only functional audit
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-p1d.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  FIPY_SOLVERS: scipy
+  PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/
+            /inherited/WORLD_RESEARCH/experiments/
+            /evidence/P1-C/C2a/14977708755.zip
+            /evidence/P1-B/B2c/result.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 fipy==4.0.3 pybullet==3.2.7
+          python -m pip freeze
+          lscpu
+          python experiments/p1d_function_audit.py p1d-audit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p1d-audit
+          path: p1d-audit
+          retention-days: 30

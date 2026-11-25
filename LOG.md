@@ -71,3 +71,5 @@
 - S1-H archivo CI 45540857670 SUCCESS, 5 ZIP y 3 logs, 147 producer/12 checkpoint/36 suffix hashes cotejados; blobs/tamaños releídos en 18b4d446. Nueva referencia coincide además 147/147 archivos con productor original. P1-C cerrada limitada según alcance aprobado, C2b original negativa, S1 original inconclusa, S2 retrospectiva; GO P1-D.
 
 - P1-D.1 prerregistro de auditoría: contraste térmico de 28 snapshots vivos frente a bare analítico uniforme, mismos flujos y stock, controles B2c y frozen retenido, sin repetir mecánica ni solver térmico. Evaluación descriptiva y gate de instrumento.
+
+- P1-D.1 lanzado: lectura de owners y flujos por digest, bare analítico uniforme con operador conservativo heredado, contraste por época y frozen. Export material cotejado con tolerancia heredada .09216 kg de C.1, sin cambios. CI 5 min, no nuevos solvers ni mecánica.
