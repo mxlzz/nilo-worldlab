@@ -1,0 +1,399 @@
+﻿2026-11-25T03:36:03.4866817Z Current runner version: '2.338.2'
+2026-11-25T03:36:03.4904001Z ##[group]Runner Image Provisioner
+2026-11-25T03:36:03.4905651Z Hosted Compute Agent
+2026-11-25T03:36:03.4906718Z Version: 20261111.635
+2026-11-25T03:36:03.4908524Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-25T03:36:03.4909929Z Build Date: 2026-11-11T01:49:01Z
+2026-11-25T03:36:03.4911567Z Worker ID: {59d5e824-c856-4da9-a567-2cfdfa59823e}
+2026-11-25T03:36:03.4912956Z Region: eastus
+2026-11-25T03:36:03.4913970Z Cloud: Azure
+2026-11-25T03:36:03.4915115Z ##[endgroup]
+2026-11-25T03:36:03.4917790Z ##[group]Operating System
+2026-11-25T03:36:03.4919092Z Ubuntu
+2026-11-25T03:36:03.4920113Z 24.04.5
+2026-11-25T03:36:03.4921411Z LTS
+2026-11-25T03:36:03.4922533Z ##[endgroup]
+2026-11-25T03:36:03.4923543Z ##[group]Runner Image
+2026-11-25T03:36:03.4924660Z Image: ubuntu-24.04
+2026-11-25T03:36:03.4925673Z Version: 20261116.376.1
+2026-11-25T03:36:03.4927974Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.376/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-25T03:36:03.4931505Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.376
+2026-11-25T03:36:03.4933440Z ##[endgroup]
+2026-11-25T03:36:03.4935597Z ##[group]GITHUB_TOKEN Permissions
+2026-11-25T03:36:03.4938690Z Contents: read
+2026-11-25T03:36:03.4939790Z Metadata: read
+2026-11-25T03:36:03.4941295Z ##[endgroup]
+2026-11-25T03:36:03.4944418Z Secret source: Actions
+2026-11-25T03:36:03.4946229Z Cache mode: write
+2026-11-25T03:36:03.4947785Z Prepare workflow directory
+2026-11-25T03:36:03.5546113Z Prepare all required actions
+2026-11-25T03:36:03.5620421Z Getting action download info
+2026-11-25T03:36:03.7498262Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-25T03:36:03.8807434Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-25T03:36:03.9650138Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-25T03:36:04.1893334Z Complete job name: audit
+2026-11-25T03:36:04.2904241Z ##[group]Run actions/checkout@v4
+2026-11-25T03:36:04.2905146Z with:
+2026-11-25T03:36:04.2905616Z   persist-credentials: false
+2026-11-25T03:36:04.2906159Z   sparse-checkout-cone-mode: false
+2026-11-25T03:36:04.2907310Z   sparse-checkout: /experiments/
+/inherited/WORLD_RESEARCH/experiments/
+/evidence/P1-C/C2a/14977708755.zip
+/evidence/P1-B/B2c/result.json
+
+2026-11-25T03:36:04.2908486Z   repository: mxlzz/nilo-worldlab
+2026-11-25T03:36:04.2912572Z   token: ***
+2026-11-25T03:36:04.2913022Z   ssh-strict: true
+2026-11-25T03:36:04.2913464Z   ssh-user: git
+2026-11-25T03:36:04.2913880Z   clean: true
+2026-11-25T03:36:04.2914308Z   fetch-depth: 1
+2026-11-25T03:36:04.2914743Z   fetch-tags: false
+2026-11-25T03:36:04.2915192Z   show-progress: true
+2026-11-25T03:36:04.2915641Z   lfs: false
+2026-11-25T03:36:04.2916046Z   submodules: false
+2026-11-25T03:36:04.2916489Z   set-safe-directory: true
+2026-11-25T03:36:04.2917050Z   allow-unsafe-pr-checkout: false
+2026-11-25T03:36:04.2917860Z env:
+2026-11-25T03:36:04.2918452Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:36:04.2919134Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:36:04.2919604Z   OMP_NUM_THREADS: 1
+2026-11-25T03:36:04.2920043Z   MKL_NUM_THREADS: 1
+2026-11-25T03:36:04.2920645Z   FIPY_SOLVERS: scipy
+2026-11-25T03:36:04.2921249Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:36:04.2921920Z ##[endgroup]
+2026-11-25T03:36:04.5558482Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-25T03:36:04.5562164Z ##[group]Getting Git version info
+2026-11-25T03:36:04.5563069Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T03:36:04.5564239Z [command]/usr/bin/git version
+2026-11-25T03:36:04.5670244Z git version 2.56.1
+2026-11-25T03:36:04.5692234Z ##[endgroup]
+2026-11-25T03:36:04.5707390Z Temporarily overriding HOME='/home/runner/work/_temp/32a8fb80-a43d-4e4b-a732-774720107ae7' before making global git config changes
+2026-11-25T03:36:04.5710770Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T03:36:04.5722777Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T03:36:04.5791214Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T03:36:04.5812903Z ##[group]Initializing the repository
+2026-11-25T03:36:04.5815107Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T03:36:04.5906377Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-25T03:36:04.5908606Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-25T03:36:04.5911161Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-25T03:36:04.5913105Z hint: call:
+2026-11-25T03:36:04.5914194Z hint:
+2026-11-25T03:36:04.5915698Z hint: 	git config --global init.defaultBranch <name>
+2026-11-25T03:36:04.5916994Z hint:
+2026-11-25T03:36:04.5918050Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-25T03:36:04.5919771Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-25T03:36:04.5921509Z hint:
+2026-11-25T03:36:04.5922233Z hint: 	git branch -m <name>
+2026-11-25T03:36:04.5923053Z hint:
+2026-11-25T03:36:04.5924265Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-25T03:36:04.5926468Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-25T03:36:04.5933241Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-25T03:36:04.6012490Z ##[endgroup]
+2026-11-25T03:36:04.6014594Z ##[group]Disabling automatic garbage collection
+2026-11-25T03:36:04.6016458Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-25T03:36:04.6044354Z ##[endgroup]
+2026-11-25T03:36:04.6045980Z ##[group]Setting up auth
+2026-11-25T03:36:04.6055599Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T03:36:04.6106924Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T03:36:04.6516336Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T03:36:04.6577401Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T03:36:04.6824694Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T03:36:04.6872185Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T03:36:04.7117978Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-25T03:36:04.7168026Z ##[endgroup]
+2026-11-25T03:36:04.7168906Z ##[group]Fetching the repository
+2026-11-25T03:36:04.7181308Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +d4a952c23cf353566769d4d6abe3c70a500df8d0:refs/remotes/origin/main
+2026-11-25T03:36:04.8876855Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-25T03:36:04.8885833Z  * [new ref]         d4a952c23cf353566769d4d6abe3c70a500df8d0 -> origin/main
+2026-11-25T03:36:04.8889249Z ##[endgroup]
+2026-11-25T03:36:04.8890412Z ##[group]Determining the checkout info
+2026-11-25T03:36:04.8892359Z ##[endgroup]
+2026-11-25T03:36:04.8893608Z ##[group]Setting up sparse checkout
+2026-11-25T03:36:04.8894628Z [command]/usr/bin/git config core.sparseCheckout true
+2026-11-25T03:36:04.8940185Z [command]/usr/bin/git rev-parse --git-path info/sparse-checkout
+2026-11-25T03:36:04.8973622Z .git/info/sparse-checkout
+2026-11-25T03:36:04.8983651Z ##[endgroup]
+2026-11-25T03:36:04.8986082Z ##[group]Checking out the ref
+2026-11-25T03:36:04.8997875Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-25T03:36:05.1142300Z Switched to a new branch 'main'
+2026-11-25T03:36:05.1150360Z branch 'main' set up to track 'origin/main'.
+2026-11-25T03:36:05.1156875Z ##[endgroup]
+2026-11-25T03:36:05.1217818Z [command]/usr/bin/git log -1 --format=%H
+2026-11-25T03:36:05.1256259Z d4a952c23cf353566769d4d6abe3c70a500df8d0
+2026-11-25T03:36:05.1268236Z ##[group]Removing auth
+2026-11-25T03:36:05.1274238Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T03:36:05.1322096Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T03:36:05.1602091Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T03:36:05.1637131Z http.https://github.com/.extraheader
+2026-11-25T03:36:05.1646614Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-25T03:36:05.1689953Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T03:36:05.1931562Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T03:36:05.1972660Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T03:36:05.2218967Z ##[endgroup]
+2026-11-25T03:36:05.2674902Z ##[group]Run actions/setup-python@v5
+2026-11-25T03:36:05.2676205Z with:
+2026-11-25T03:36:05.2677108Z   python-version: 3.11.18
+2026-11-25T03:36:05.2678178Z   check-latest: false
+2026-11-25T03:36:05.2688486Z   token: ***
+2026-11-25T03:36:05.2689532Z   update-environment: true
+2026-11-25T03:36:05.2690786Z   allow-prereleases: false
+2026-11-25T03:36:05.2691866Z   freethreaded: false
+2026-11-25T03:36:05.2692815Z env:
+2026-11-25T03:36:05.2693974Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:36:05.2695511Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:36:05.2696532Z   OMP_NUM_THREADS: 1
+2026-11-25T03:36:05.2697488Z   MKL_NUM_THREADS: 1
+2026-11-25T03:36:05.2698450Z   FIPY_SOLVERS: scipy
+2026-11-25T03:36:05.2699769Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:36:05.2701461Z ##[endgroup]
+2026-11-25T03:36:05.4115291Z ##[group]Installed versions
+2026-11-25T03:36:05.4152719Z (node:2371) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:36:05.4157382Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:36:05.4160182Z Successfully set up CPython (3.11.18)
+2026-11-25T03:36:05.4163312Z ##[endgroup]
+2026-11-25T03:36:05.4464181Z ##[group]Run python -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 fipy==4.0.3 pybullet==3.2.7
+2026-11-25T03:36:05.4469549Z [36;1mpython -m pip install --only-binary=:all: numpy==2.4.6 scipy==1.17.1 xarray==2026.9.0 fipy==4.0.3 pybullet==3.2.7[0m
+2026-11-25T03:36:05.4473324Z [36;1mpython -m pip freeze[0m
+2026-11-25T03:36:05.4475017Z [36;1mlscpu[0m
+2026-11-25T03:36:05.4476886Z [36;1mpython experiments/p1d_function_audit.py p1d-audit[0m
+2026-11-25T03:36:05.4526122Z shell: /usr/bin/bash -e {0}
+2026-11-25T03:36:05.4527194Z env:
+2026-11-25T03:36:05.4528332Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:36:05.4529836Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:36:05.4531336Z   OMP_NUM_THREADS: 1
+2026-11-25T03:36:05.4532302Z   MKL_NUM_THREADS: 1
+2026-11-25T03:36:05.4533726Z   FIPY_SOLVERS: scipy
+2026-11-25T03:36:05.4535763Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:36:05.4538626Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:05.4542042Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T03:36:05.4544624Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:05.4546825Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:05.4548702Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:05.4550723Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T03:36:05.4552290Z ##[endgroup]
+2026-11-25T03:36:08.2387547Z Collecting numpy==2.4.6
+2026-11-25T03:36:08.3049728Z   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-25T03:36:08.4833150Z Collecting scipy==1.17.1
+2026-11-25T03:36:08.4931924Z   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-11-25T03:36:08.5911012Z Collecting xarray==2026.9.0
+2026-11-25T03:36:08.6008105Z   Downloading xarray-2026.9.0-py3-none-any.whl.metadata (12 kB)
+2026-11-25T03:36:08.6737930Z Collecting fipy==4.0.3
+2026-11-25T03:36:08.6838357Z   Downloading fipy-4.0.3-py3-none-any.whl.metadata (5.1 kB)
+2026-11-25T03:36:08.7810381Z Collecting pybullet==3.2.7
+2026-11-25T03:36:08.7924345Z   Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.8 kB)
+2026-11-25T03:36:08.8646253Z Collecting packaging>=24.2 (from xarray==2026.9.0)
+2026-11-25T03:36:08.8741582Z   Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T03:36:09.0507092Z Collecting pandas>=2.2 (from xarray==2026.9.0)
+2026-11-25T03:36:09.0604520Z   Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+2026-11-25T03:36:09.2590070Z Collecting matplotlib (from fipy==4.0.3)
+2026-11-25T03:36:09.2699455Z   Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-11-25T03:36:09.3593502Z Collecting typer (from fipy==4.0.3)
+2026-11-25T03:36:09.3689455Z   Downloading typer-0.29.2-py3-none-any.whl.metadata (16 kB)
+2026-11-25T03:36:09.4413561Z Collecting typing_extensions (from fipy==4.0.3)
+2026-11-25T03:36:09.4510295Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-25T03:36:09.5218403Z Collecting python-dateutil>=2.9.0 (from pandas>=2.2->xarray==2026.9.0)
+2026-11-25T03:36:09.5309508Z   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+2026-11-25T03:36:09.6002554Z Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.2->xarray==2026.9.0)
+2026-11-25T03:36:09.6092982Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-11-25T03:36:09.7251397Z Collecting contourpy>=1.0.1 (from matplotlib->fipy==4.0.3)
+2026-11-25T03:36:09.7366991Z   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-11-25T03:36:09.8059133Z Collecting cycler>=0.10 (from matplotlib->fipy==4.0.3)
+2026-11-25T03:36:09.8177404Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-11-25T03:36:10.0251998Z Collecting fonttools>=4.28.2 (from matplotlib->fipy==4.0.3)
+2026-11-25T03:36:10.0354041Z   Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+2026-11-25T03:36:10.1731404Z Collecting kiwisolver>=1.3.1 (from matplotlib->fipy==4.0.3)
+2026-11-25T03:36:10.1829775Z   Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-11-25T03:36:10.4166830Z Collecting pillow>=9 (from matplotlib->fipy==4.0.3)
+2026-11-25T03:36:10.4264488Z   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-11-25T03:36:10.5072734Z Collecting pyparsing>=3 (from matplotlib->fipy==4.0.3)
+2026-11-25T03:36:10.5164349Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-11-25T03:36:10.6732975Z Collecting pydantic>=2.5.3 (from typer->fipy==4.0.3)
+2026-11-25T03:36:10.6835146Z   Downloading pydantic-2.14.4-py3-none-any.whl.metadata (143 kB)
+2026-11-25T03:36:10.7550501Z Collecting shellingham>=1.3.0 (from typer->fipy==4.0.3)
+2026-11-25T03:36:10.7652912Z   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2026-11-25T03:36:10.8514279Z Collecting rich>=13.8.0 (from typer->fipy==4.0.3)
+2026-11-25T03:36:10.8629155Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-11-25T03:36:10.9316108Z Collecting annotated-doc>=0.0.2 (from typer->fipy==4.0.3)
+2026-11-25T03:36:10.9410891Z   Downloading annotated_doc-0.0.7-py3-none-any.whl.metadata (6.4 kB)
+2026-11-25T03:36:11.0094157Z Collecting annotated-types>=0.6.0 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T03:36:11.0202447Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-11-25T03:36:11.7976823Z Collecting pydantic-core==2.50.5 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T03:36:11.8074583Z   Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+2026-11-25T03:36:11.8744077Z Collecting typing-inspection>=0.4.4 (from pydantic>=2.5.3->typer->fipy==4.0.3)
+2026-11-25T03:36:11.8839865Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+2026-11-25T03:36:11.9546748Z Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T03:36:11.9658037Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+2026-11-25T03:36:12.0393723Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T03:36:12.0490070Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-25T03:36:12.1148064Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->fipy==4.0.3)
+2026-11-25T03:36:12.1278729Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-11-25T03:36:12.1467745Z Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-11-25T03:36:12.2337309Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 216.2 MB/s  0:00:00
+2026-11-25T03:36:12.2435730Z Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-11-25T03:36:12.4073467Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 220.0 MB/s  0:00:00
+2026-11-25T03:36:12.4169960Z Downloading xarray-2026.9.0-py3-none-any.whl (1.4 MB)
+2026-11-25T03:36:12.4304120Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 115.8 MB/s  0:00:00
+2026-11-25T03:36:12.4427641Z Downloading fipy-4.0.3-py3-none-any.whl (439 kB)
+2026-11-25T03:36:12.4589546Z Downloading pybullet-3.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (103.2 MB)
+2026-11-25T03:36:13.3479647Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 MB 116.1 MB/s  0:00:00
+2026-11-25T03:36:13.3575695Z Downloading packaging-26.4-py3-none-any.whl (140 kB)
+2026-11-25T03:36:13.3698484Z Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+2026-11-25T03:36:13.4351094Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 194.0 MB/s  0:00:00
+2026-11-25T03:36:13.4452070Z Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+2026-11-25T03:36:13.4576302Z Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+2026-11-25T03:36:13.5079982Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 199.7 MB/s  0:00:00
+2026-11-25T03:36:13.5179822Z Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2026-11-25T03:36:13.5304599Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-11-25T03:36:13.5419735Z Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+2026-11-25T03:36:13.5638091Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 273.6 MB/s  0:00:00
+2026-11-25T03:36:13.5741952Z Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2026-11-25T03:36:13.5829327Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 206.8 MB/s  0:00:00
+2026-11-25T03:36:13.6001745Z Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-11-25T03:36:13.6446639Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 163.6 MB/s  0:00:00
+2026-11-25T03:36:13.6550998Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-11-25T03:36:13.6675259Z Downloading typer-0.29.2-py3-none-any.whl (121 kB)
+2026-11-25T03:36:13.6790027Z Downloading annotated_doc-0.0.7-py3-none-any.whl (5.3 kB)
+2026-11-25T03:36:13.6902492Z Downloading pydantic-2.14.4-py3-none-any.whl (494 kB)
+2026-11-25T03:36:13.7033893Z Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+2026-11-25T03:36:13.7140429Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 245.8 MB/s  0:00:00
+2026-11-25T03:36:13.7234680Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-11-25T03:36:13.7352013Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-11-25T03:36:13.7469816Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-25T03:36:13.7537801Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 229.4 MB/s  0:00:00
+2026-11-25T03:36:13.7634447Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+2026-11-25T03:36:13.7752400Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-11-25T03:36:13.7867232Z Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-11-25T03:36:13.7977335Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-25T03:36:13.8088421Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+2026-11-25T03:36:13.8227792Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-11-25T03:36:14.3710413Z Installing collected packages: pybullet, tzdata, typing_extensions, shellingham, pyparsing, pygments, pillow, packaging, numpy, mdurl, kiwisolver, fonttools, cycler, annotated-types, annotated-doc, typing-inspection, scipy, python-dateutil, pydantic-core, markdown-it-py, contourpy, rich, pydantic, pandas, matplotlib, xarray, typer, fipy
+2026-11-25T03:36:32.6353856Z 
+2026-11-25T03:36:32.6372373Z Successfully installed annotated-doc-0.0.7 annotated-types-0.8.0 contourpy-1.3.3 cycler-0.12.1 fipy-4.0.3 fonttools-4.68.0 kiwisolver-1.5.1 markdown-it-py-4.3.0 matplotlib-3.11.2 mdurl-0.1.2 numpy-2.4.6 packaging-26.4 pandas-3.1.1 pillow-13.0.0 pybullet-3.2.7 pydantic-2.14.4 pydantic-core-2.50.5 pygments-2.21.0 pyparsing-3.3.3 python-dateutil-4.0.0 rich-15.0.0 scipy-1.17.1 shellingham-1.5.4 typer-0.29.2 typing-inspection-0.4.5 typing_extensions-4.16.0 tzdata-2026.6 xarray-2026.9.0
+2026-11-25T03:36:32.9515977Z annotated-doc==0.0.7
+2026-11-25T03:36:32.9516427Z annotated-types==0.8.0
+2026-11-25T03:36:32.9516812Z contourpy==1.3.3
+2026-11-25T03:36:32.9517149Z cycler==0.12.1
+2026-11-25T03:36:32.9517461Z FiPy==4.0.3
+2026-11-25T03:36:32.9517736Z fonttools==4.68.0
+2026-11-25T03:36:32.9518051Z kiwisolver==1.5.1
+2026-11-25T03:36:32.9518396Z markdown-it-py==4.3.0
+2026-11-25T03:36:32.9518745Z matplotlib==3.11.2
+2026-11-25T03:36:32.9519441Z mdurl==0.1.2
+2026-11-25T03:36:32.9519779Z numpy==2.4.6
+2026-11-25T03:36:32.9520087Z packaging==26.4
+2026-11-25T03:36:32.9520391Z pandas==3.1.1
+2026-11-25T03:36:32.9521022Z pillow==13.0.0
+2026-11-25T03:36:32.9521377Z pybullet==3.2.7
+2026-11-25T03:36:32.9521745Z pydantic==2.14.4
+2026-11-25T03:36:32.9522138Z pydantic_core==2.50.5
+2026-11-25T03:36:32.9522524Z Pygments==2.21.0
+2026-11-25T03:36:32.9522886Z pyparsing==3.3.3
+2026-11-25T03:36:32.9523256Z python-dateutil==4.0.0
+2026-11-25T03:36:32.9523525Z rich==15.0.0
+2026-11-25T03:36:32.9524058Z scipy==1.17.1
+2026-11-25T03:36:32.9524310Z shellingham==1.5.4
+2026-11-25T03:36:32.9524551Z typer==0.29.2
+2026-11-25T03:36:32.9524791Z typing-inspection==0.4.5
+2026-11-25T03:36:32.9525081Z typing_extensions==4.16.0
+2026-11-25T03:36:32.9525349Z tzdata==2026.6
+2026-11-25T03:36:32.9525582Z xarray==2026.9.0
+2026-11-25T03:36:32.9804697Z Architecture:                            x86_64
+2026-11-25T03:36:32.9805311Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-25T03:36:32.9805997Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-25T03:36:32.9807036Z Byte Order:                              Little Endian
+2026-11-25T03:36:32.9807751Z CPU(s):                                  4
+2026-11-25T03:36:32.9808422Z On-line CPU(s) list:                     0-3
+2026-11-25T03:36:32.9808821Z Vendor ID:                               AuthenticAMD
+2026-11-25T03:36:32.9809373Z Model name:                              AMD EPYC 7763 64-Core Processor
+2026-11-25T03:36:32.9809783Z CPU family:                              25
+2026-11-25T03:36:32.9810099Z Model:                                   1
+2026-11-25T03:36:32.9810407Z Thread(s) per core:                      2
+2026-11-25T03:36:32.9811055Z Core(s) per socket:                      2
+2026-11-25T03:36:32.9811395Z Socket(s):                               1
+2026-11-25T03:36:32.9811716Z Stepping:                                1
+2026-11-25T03:36:32.9812056Z BogoMIPS:                                4890.86
+2026-11-25T03:36:32.9815425Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+2026-11-25T03:36:32.9819280Z Virtualization:                          AMD-V
+2026-11-25T03:36:32.9819671Z Hypervisor vendor:                       Microsoft
+2026-11-25T03:36:32.9820064Z Virtualization type:                     full
+2026-11-25T03:36:32.9820766Z L1d cache:                               64 KiB (2 instances)
+2026-11-25T03:36:32.9821389Z L1i cache:                               64 KiB (2 instances)
+2026-11-25T03:36:32.9821845Z L2 cache:                                1 MiB (2 instances)
+2026-11-25T03:36:32.9822191Z L3 cache:                                32 MiB (1 instance)
+2026-11-25T03:36:32.9822505Z NUMA node(s):                            1
+2026-11-25T03:36:32.9822796Z NUMA node0 CPU(s):                       0-3
+2026-11-25T03:36:32.9823126Z Vulnerability Gather data sampling:      Not affected
+2026-11-25T03:36:32.9823488Z Vulnerability Ghostwrite:                Not affected
+2026-11-25T03:36:32.9823837Z Vulnerability Indirect target selection: Not affected
+2026-11-25T03:36:32.9824176Z Vulnerability Itlb multihit:             Not affected
+2026-11-25T03:36:32.9824523Z Vulnerability L1tf:                      Not affected
+2026-11-25T03:36:32.9824848Z Vulnerability Mds:                       Not affected
+2026-11-25T03:36:32.9825378Z Vulnerability Meltdown:                  Not affected
+2026-11-25T03:36:32.9825721Z Vulnerability Mmio stale data:           Not affected
+2026-11-25T03:36:32.9826050Z Vulnerability Old microcode:             Not affected
+2026-11-25T03:36:32.9826400Z Vulnerability Reg file data sampling:    Not affected
+2026-11-25T03:36:32.9826752Z Vulnerability Retbleed:                  Not affected
+2026-11-25T03:36:32.9827173Z Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+2026-11-25T03:36:32.9827610Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-25T03:36:32.9828130Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-25T03:36:32.9828916Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+2026-11-25T03:36:32.9829556Z Vulnerability Srbds:                     Not affected
+2026-11-25T03:36:32.9829948Z Vulnerability Tsa:                       Vulnerable: No microcode
+2026-11-25T03:36:32.9832701Z Vulnerability Tsx async abort:           Not affected
+2026-11-25T03:36:32.9833093Z Vulnerability Vmscape:                   Not affected
+2026-11-25T03:36:33.1001696Z pybullet build time: Jan 29 2025 23:17:20
+2026-11-25T03:36:36.1141432Z WORLD_FUNCTION_JSON {"cases": {"7321_0.0": [{"actual_max_K": 300.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.25, "bare_rest_J": 0.0, "bare_roi_J": 324000.0, "cold_area_m2": 1.4225, "cold_cells": 569, "epoch": 0, "export_J": 0.0, "field_max_difference_J": 89.99999999776936, "grain_J": 51210.0, "intercepted_cells": 569, "largest": 521, "largest_area_m2": 1.3025, "max_deficit_K": 0.2499999999938038, "mean_deficit_K": 0.03951388888888897, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 272789.9999999999}, {"actual_max_K": 300.5, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.5, "bare_rest_J": 0.0, "bare_roi_J": 648000.0, "cold_area_m2": 1.665, "cold_cells": 666, "epoch": 1, "export_J": 0.0, "field_max_difference_J": 179.99999991870686, "grain_J": 103500.0, "intercepted_cells": 581, "largest": 645, "largest_area_m2": 1.6125, "max_deficit_K": 0.49999999977418574, "mean_deficit_K": 0.07986111111111142, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 544499.9999999995}, {"actual_max_K": 300.75, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.75, "bare_rest_J": 0.0, "bare_roi_J": 972000.0, "cold_area_m2": 2.125, "cold_cells": 850, "epoch": 2, "export_J": 0.0, "field_max_difference_J": 269.999970257638, "grain_J": 157770.0, "intercepted_cells": 603, "largest": 850, "largest_area_m2": 2.125, "max_deficit_K": 0.7499999173823276, "mean_deficit_K": 0.12173611111111178, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 814229.9999999992}, {"actual_max_K": 301.0, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.0, "bare_rest_J": 0.0, "bare_roi_J": 1296000.0, "cold_area_m2": 2.1825, "cold_cells": 873, "epoch": 3, "export_J": 0.0, "field_max_difference_J": 359.99968119250866, "grain_J": 212490.0, "intercepted_cells": 608, "largest": 873, "largest_area_m2": 2.1825, "max_deficit_K": 0.9999991144236351, "mean_deficit_K": 0.16395833333333448, "min_deficit_K": -2.220446049250313e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1083509.9999999986}, {"actual_max_K": 301.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.25, "bare_rest_J": 0.0, "bare_roi_J": 1620000.0, "cold_area_m2": 2.23, "cold_cells": 892, "epoch": 4, "export_J": 0.0, "field_max_difference_J": 449.9983696190034, "grain_J": 267570.0, "intercepted_cells": 612, "largest": 892, "largest_area_m2": 2.23, "max_deficit_K": 1.2499954711638983, "mean_deficit_K": 0.2064583333333355, "min_deficit_K": 0.0, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1352429.9999999972}, {"actual_max_K": 301.5, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.5, "bare_rest_J": 0.0, "bare_roi_J": 1944000.0, "cold_area_m2": 2.2625, "cold_cells": 905, "epoch": 5, "export_J": 0.0, "field_max_difference_J": 539.9946170813574, "grain_J": 324360.0, "intercepted_cells": 631, "largest": 905, "largest_area_m2": 2.2625, "max_deficit_K": 1.499985047448215, "mean_deficit_K": 0.25027777777778093, "min_deficit_K": 8.881784197001252e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1619639.9999999958}, {"actual_max_K": 301.75, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.75, "bare_rest_J": 0.0, "bare_roi_J": 2268000.0, "cold_area_m2": 2.29, "cold_cells": 916, "epoch": 6, "export_J": 0.0, "field_max_difference_J": 629.9893216003362, "grain_J": 381240.0, "intercepted_cells": 632, "largest": 916, "largest_area_m2": 2.29, "max_deficit_K": 1.7499703377787117, "mean_deficit_K": 0.2941666666666711, "min_deficit_K": 1.9984014443252818e-15, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1886759.9999999944}], "7321_0.1": [{"actual_frozen_roi_max_J": 0.0, "actual_max_K": 300.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.25, "bare_rest_J": 0.0, "bare_roi_J": 324000.0, "cold_area_m2": 1.4225, "cold_cells": 569, "epoch": 0, "export_J": 0.0, "field_max_difference_J": 89.99999999776936, "frozen": {"actual_max_K": 300.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.25, "bare_rest_J": 0.0, "bare_roi_J": 324000.0, "cold_area_m2": 1.4225, "cold_cells": 569, "export_J": 0.0, "grain_J": 51210.0, "largest": 521, "largest_area_m2": 1.3025, "max_deficit_K": 0.2499999999938038, "mean_deficit_K": 0.03951388888888897, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 272789.9999999999}, "grain_J": 51210.0, "intercepted_cells": 569, "largest": 521, "largest_area_m2": 1.3025, "max_deficit_K": 0.2499999999938038, "mean_deficit_K": 0.03951388888888897, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 272789.9999999999}, {"actual_frozen_roi_max_J": 86.25639951510172, "actual_max_K": 300.50912370912954, "bare_export_J": 38966.35436753516, "bare_ledger_residual_J": 1.1641532182693481e-10, "bare_max_K": 300.5091284534896, "bare_rest_J": 154782.96837531228, "bare_roi_J": 454250.6772571526, "cold_area_m2": 1.5925, "cold_cells": 637, "epoch": 1, "export_J": 32807.50557999971, "field_max_difference_J": 126.17447534541044, "frozen": {"actual_max_K": 300.50912370912954, "bare_export_J": 38966.35436753516, "bare_ledger_residual_J": 1.1641532182693481e-10, "bare_max_K": 300.5091284534896, "bare_rest_J": 154782.96837531228, "bare_roi_J": 454250.6772571526, "cold_area_m2": 1.55, "cold_cells": 620, "export_J": 32807.50557999971, "grain_J": 102420.0, "largest": 599, "largest_area_m2": 1.4975, "max_deficit_K": 0.5091031806683206, "mean_deficit_K": 0.08047058056544011, "min_deficit_K": 4.7443600357244264e-06, "negative_cells": 0, "rest_J": 130318.66031821424, "roi_J": 382453.83410178596}, "grain_J": 103410.0, "intercepted_cells": 580, "largest": 616, "largest_area_m2": 1.54, "max_deficit_K": 0.5091031612881405, "mean_deficit_K": 0.081580181924756, "min_deficit_K": 4.7443600357244264e-06, "negative_cells": 0, "rest_J": 130318.66031821424, "roi_J": 381463.8341017859}, {"actual_frozen_roi_max_J": 119.03616520561181, "actual_max_K": 300.8206140953102, "bare_export_J": 81749.67237990546, "bare_ledger_residual_J": -1.1641532182693481e-10, "bare_max_K": 300.8206273448684, "bare_rest_J": 387453.7188978039, "bare_roi_J": 502796.6087222905, "cold_area_m2": 1.87, "cold_cells": 748, "epoch": 2, "export_J": 68746.17189713965, "field_max_difference_J": 139.65377269097246, "frozen": {"actual_max_K": 300.82061422985754, "bare_export_J": 81749.67237990546, "bare_ledger_residual_J": -1.1641532182693481e-10, "bare_max_K": 300.8206273448684, "bare_rest_J": 387453.7188978039, "bare_roi_J": 502796.6087222905, "cold_area_m2": 1.7875, "cold_cells": 715, "export_J": 68828.68249541483, "grain_J": 153630.0, "largest": 706, "largest_area_m2": 1.7650000000000001, "max_deficit_K": 0.8205574817490605, "mean_deficit_K": 0.12970471089725955, "min_deficit_K": 1.3115010895403678e-05, "negative_cells": 0, "rest_J": 326214.50610534544, "roi_J": 423326.8113992394}, "grain_J": 158130.0, "intercepted_cells": 608, "largest": 739, "largest_area_m2": 1.8475000000000001, "max_deficit_K": 0.8205571193324818, "mean_deficit_K": 0.13606945713085652, "min_deficit_K": 1.3249558245664872e-05, "negative_cells": 0, "rest_J": 325696.6830279784, "roi_J": 419427.14507488173}, {"actual_frozen_roi_max_J": 131.17734714356305, "actual_max_K": 301.22365973349923, "bare_export_J": 134521.02595799734, "bare_ledger_residual_J": 4.656612873077393e-10, "bare_max_K": 301.223685387572, "bare_rest_J": 642649.8443764152, "bare_roi_J": 518829.1296655877, "cold_area_m2": 2.2025, "cold_cells": 881, "epoch": 3, "export_J": 112826.85277771059, "field_max_difference_J": 144.10361525172382, "frozen": {"actual_max_K": 301.2236605967076, "bare_export_J": 134521.02595799734, "bare_ledger_residual_J": 4.656612873077393e-10, "bare_max_K": 301.223685387572, "bare_rest_J": 642649.8443764152, "bare_roi_J": 518829.1296655877, "cold_area_m2": 2.125, "cold_cells": 850, "export_J": 113259.2304663027, "grain_J": 204840.0, "largest": 850, "largest_area_m2": 2.125, "max_deficit_K": 1.2235533261412934, "mean_deficit_K": 0.1934102737579055, "min_deficit_K": 2.4790864423751557e-05, "negative_cells": 0, "rest_J": 541075.4661958093, "roi_J": 436825.30333788774}, "grain_J": 213210.0, "intercepted_cells": 612, "largest": 881, "largest_area_m2": 2.2025, "max_deficit_K": 1.223553038004167, "mean_deficit_K": 0.2061017740838449, "min_deficit_K": 2.565407274945919e-05, "negative_cells": 0, "rest_J": 538518.9002695914, "roi_J": 431444.2469526979}, {"actual_frozen_roi_max_J": 137.79763758358305, "actual_max_K": 301.7549550925365, "bare_export_J": 193790.32485094314, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.754997137136, "bare_rest_J": 903670.3336049446, "bare_roi_J": 522539.34154411225, "cold_area_m2": 2.2725, "cold_cells": 909, "epoch": 4, "export_J": 162178.27164074843, "field_max_difference_J": 145.13223637895933, "frozen": {"actual_max_K": 301.75495719605516, "bare_export_J": 193790.32485094314, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.754997137136, "bare_rest_J": 903670.3336049446, "bare_roi_J": 522539.34154411225, "cold_area_m2": 2.125, "cold_cells": 850, "export_J": 163160.6873953357, "grain_J": 256050.0, "largest": 850, "largest_area_m2": 2.125, "max_deficit_K": 1.754784367280741, "mean_deficit_K": 0.2773870475084449, "min_deficit_K": 3.9941080889338565e-05, "negative_cells": 0, "rest_J": 760840.2169879406, "roi_J": 439949.0956167231}, "grain_J": 269640.0, "intercepted_cells": 627, "largest": 909, "largest_area_m2": 2.2725, "max_deficit_K": 1.7547845698178755, "mean_deficit_K": 0.30183467899638516, "min_deficit_K": 4.20445995505947e-05, "negative_cells": 0, "rest_J": 755511.7610041664, "roi_J": 432669.9673550846}, {"actual_frozen_roi_max_J": 142.03447318071355, "actual_max_K": 302.4486292257152, "bare_export_J": 252682.6300003665, "bare_ledger_residual_J": -2.3283064365386963e-10, "bare_max_K": 302.4486925047281, "bare_rest_J": 1169465.8489014904, "bare_roi_J": 521851.5210981427, "cold_area_m2": 2.295, "cold_cells": 918, "epoch": 5, "export_J": 211025.44701091785, "field_max_difference_J": 144.94021664943563, "frozen": {"actual_max_K": 302.4486334923478, "bare_export_J": 252682.6300003665, "bare_ledger_residual_J": -2.3283064365386963e-10, "bare_max_K": 302.4486925047281, "bare_rest_J": 1169465.8489014904, "bare_roi_J": 521851.5210981427, "cold_area_m2": 2.125, "cold_cells": 850, "export_J": 212744.7365364197, "grain_J": 307260.0, "largest": 850, "largest_area_m2": 2.125, "max_deficit_K": 2.4483781360893637, "mean_deficit_K": 0.387029454219524, "min_deficit_K": 5.901238026062572e-05, "negative_cells": 0, "rest_J": 984625.2744501156, "roi_J": 439369.9890134643}, "grain_J": 325980.0, "intercepted_cells": 626, "largest": 918, "largest_area_m2": 2.295, "max_deficit_K": 2.448379334080763, "mean_deficit_K": 0.4240334891366778, "min_deficit_K": 6.327901291136584e-05, "negative_cells": 0, "rest_J": 975510.6549694843, "roi_J": 431483.89801959746}, {"actual_frozen_roi_max_J": 143.19426025080855, "actual_max_K": 303.3359603552891, "bare_export_J": 315155.6045831082, "bare_ledger_residual_J": 0.0, "bare_max_K": 303.3360499617078, "bare_rest_J": 1433070.559409442, "bare_roi_J": 519773.83600744966, "cold_area_m2": 2.3025, "cold_cells": 921, "epoch": 6, "export_J": 262751.02640254854, "field_max_difference_J": 144.36265979882873, "frozen": {"actual_max_K": 303.33596736972527, "bare_export_J": 315155.6045831082, "bare_ledger_residual_J": 0.0, "bare_max_K": 303.3360499617078, "bare_rest_J": 1433070.559409442, "bare_roi_J": 519773.83600744966, "cold_area_m2": 2.125, "cold_cells": 850, "export_J": 265343.5104142781, "grain_J": 358470.0, "largest": 850, "largest_area_m2": 2.125, "max_deficit_K": 3.3356099758408604, "mean_deficit_K": 0.5272812300588147, "min_deficit_K": 8.259198253224298e-05, "negative_cells": 0, "rest_J": 1206565.7959916717, "roi_J": 437620.6935940496}, "grain_J": 382410.0, "intercepted_cells": 627, "largest": 921, "largest_area_m2": 2.3025, "max_deficit_K": 3.335611845751406, "mean_deficit_K": 0.5797728011957887, "min_deficit_K": 8.960641868682728e-05, "negative_cells": 0, "rest_J": 1193396.7382402665, "roi_J": 429442.2353571843}], "8128_0.0": [{"actual_max_K": 300.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.25, "bare_rest_J": 0.0, "bare_roi_J": 324000.0, "cold_area_m2": 1.3825, "cold_cells": 553, "epoch": 0, "export_J": 0.0, "field_max_difference_J": 89.99999995337544, "grain_J": 49770.0, "intercepted_cells": 553, "largest": 478, "largest_area_m2": 1.195, "max_deficit_K": 0.24999999987048732, "mean_deficit_K": 0.038402777777777855, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 274229.9999999999}, {"actual_max_K": 300.5, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.5, "bare_rest_J": 0.0, "bare_roi_J": 648000.0, "cold_area_m2": 1.6, "cold_cells": 640, "epoch": 1, "export_J": 0.0, "field_max_difference_J": 179.99992999847947, "grain_J": 101700.0, "intercepted_cells": 577, "largest": 617, "largest_area_m2": 1.5425, "max_deficit_K": 0.4999998055513319, "mean_deficit_K": 0.07847222222222254, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 546299.9999999997}, {"actual_max_K": 300.75, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.75, "bare_rest_J": 0.0, "bare_roi_J": 972000.0, "cold_area_m2": 2.045, "cold_cells": 818, "epoch": 2, "export_J": 0.0, "field_max_difference_J": 269.99955413531524, "grain_J": 153810.0, "intercepted_cells": 579, "largest": 818, "largest_area_m2": 2.045, "max_deficit_K": 0.7499987614869867, "mean_deficit_K": 0.11868055555555622, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 818189.9999999992}, {"actual_max_K": 301.0, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.0, "bare_rest_J": 0.0, "bare_roi_J": 1296000.0, "cold_area_m2": 2.09, "cold_cells": 836, "epoch": 3, "export_J": 0.0, "field_max_difference_J": 359.9981792910551, "grain_J": 205920.0, "intercepted_cells": 579, "largest": 836, "largest_area_m2": 2.09, "max_deficit_K": 0.9999949424751531, "mean_deficit_K": 0.15888888888889002, "min_deficit_K": -2.220446049250313e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1090079.9999999986}, {"actual_max_K": 301.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.25, "bare_rest_J": 0.0, "bare_roi_J": 1620000.0, "cold_area_m2": 2.1125, "cold_cells": 845, "epoch": 4, "export_J": 0.0, "field_max_difference_J": 449.99397416668455, "grain_J": 257670.0, "intercepted_cells": 575, "largest": 845, "largest_area_m2": 2.1125, "max_deficit_K": 1.2499832615741238, "mean_deficit_K": 0.19881944444444663, "min_deficit_K": 0.0, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1362329.9999999972}, {"actual_max_K": 301.5, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.5, "bare_rest_J": 0.0, "bare_roi_J": 1944000.0, "cold_area_m2": 2.13, "cold_cells": 852, "epoch": 5, "export_J": 0.0, "field_max_difference_J": 539.9838613453533, "grain_J": 310050.0, "intercepted_cells": 582, "largest": 852, "largest_area_m2": 2.13, "max_deficit_K": 1.4999551704037593, "mean_deficit_K": 0.23923611111111434, "min_deficit_K": 8.881784197001252e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1633949.9999999958}, {"actual_max_K": 301.75, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 301.75, "bare_rest_J": 0.0, "bare_roi_J": 2268000.0, "cold_area_m2": 2.1525, "cold_cells": 861, "epoch": 6, "export_J": 0.0, "field_max_difference_J": 629.9684108448804, "grain_J": 362160.0, "intercepted_cells": 579, "largest": 861, "largest_area_m2": 2.1525, "max_deficit_K": 1.7499122523468902, "mean_deficit_K": 0.2794444444444489, "min_deficit_K": 1.9984014443252818e-15, "negative_cells": 0, "rest_J": 0.0, "roi_J": 1905839.9999999944}], "8128_0.1": [{"actual_max_K": 300.25, "bare_export_J": 0.0, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.25, "bare_rest_J": 0.0, "bare_roi_J": 324000.0, "cold_area_m2": 1.3825, "cold_cells": 553, "epoch": 0, "export_J": 0.0, "field_max_difference_J": 89.99999995337544, "grain_J": 49770.0, "intercepted_cells": 553, "largest": 478, "largest_area_m2": 1.195, "max_deficit_K": 0.24999999987048732, "mean_deficit_K": 0.038402777777777855, "min_deficit_K": -1.1102230246251565e-16, "negative_cells": 0, "rest_J": 0.0, "roi_J": 274229.9999999999}, {"actual_max_K": 300.4616856772533, "bare_export_J": 24266.542612198053, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.4617067627669, "bare_rest_J": 246016.50281172196, "bare_roi_J": 377716.95457608, "cold_area_m2": 1.455, "cold_cells": 582, "epoch": 1, "export_J": 20538.932038713174, "field_max_difference_J": 104.89495636770486, "grain_J": 101250.0, "intercepted_cells": 572, "largest": 507, "largest_area_m2": 1.2675, "max_deficit_K": 0.4615905019197977, "mean_deficit_K": 0.07301352745202817, "min_deficit_K": 2.1085513627838726e-05, "negative_cells": 0, "rest_J": 208225.63446314345, "roi_J": 317985.43349814333}, {"actual_max_K": 300.7212823153095, "bare_export_J": 58103.41917686281, "bare_ledger_residual_J": 0.0, "bare_max_K": 300.7213390086898, "bare_rest_J": 531111.6709286518, "bare_roi_J": 382784.90989448543, "cold_area_m2": 1.68, "cold_cells": 672, "epoch": 2, "export_J": 49064.30600309018, "field_max_difference_J": 106.2841495225149, "grain_J": 153090.0, "intercepted_cells": 576, "largest": 672, "largest_area_m2": 1.68, "max_deficit_K": 0.7210337812891578, "mean_deficit_K": 0.1152076390789919, "min_deficit_K": 5.669338031388804e-05, "negative_cells": 0, "rest_J": 448196.73434599425, "roi_J": 321648.9596509155}, {"actual_max_K": 301.06695630012825, "bare_export_J": 97264.22986512468, "bare_ledger_residual_J": -2.3283064365386963e-10, "bare_max_K": 301.06706099484524, "bare_rest_J": 818704.3498388022, "bare_roi_J": 380031.42029607296, "cold_area_m2": 1.7650000000000001, "cold_cells": 706, "epoch": 3, "export_J": 82015.81553654159, "field_max_difference_J": 105.50924338163222, "grain_J": 205110.0, "intercepted_cells": 578, "largest": 706, "largest_area_m2": 1.7650000000000001, "max_deficit_K": 1.0665046412047958, "mean_deficit_K": 0.17118948036074408, "min_deficit_K": 0.00010469471696450405, "negative_cells": 0, "rest_J": 689811.5201012273, "roi_J": 319062.66436223104}, {"actual_max_K": 301.5167954704387, "bare_export_J": 139365.45641836748, "bare_ledger_residual_J": 2.3283064365386963e-10, "bare_max_K": 301.5169597908, "bare_rest_J": 1104251.9904890945, "bare_roi_J": 376382.55309253815, "cold_area_m2": 2.085, "cold_cells": 834, "epoch": 4, "export_J": 117402.31762993906, "field_max_difference_J": 104.49099695888587, "grain_J": 256950.0, "intercepted_cells": 576, "largest": 834, "largest_area_m2": 2.085, "max_deficit_K": 1.5160934068422176, "mean_deficit_K": 0.24280378165441013, "min_deficit_K": 0.00016432036130309413, "negative_cells": 0, "rest_J": 929508.7216217972, "roi_J": 316138.9607482636}, {"actual_max_K": 302.07953251191475, "bare_export_J": 182787.76979067142, "bare_ledger_residual_J": 0.0, "bare_max_K": 302.0797668982627, "bare_rest_J": 1388208.6698128984, "bare_roi_J": 373003.56039643043, "cold_area_m2": 2.1175, "cold_cells": 847, "epoch": 5, "export_J": 153891.12362550298, "field_max_difference_J": 103.55066400583677, "grain_J": 309150.0, "intercepted_cells": 580, "largest": 847, "largest_area_m2": 2.1175, "max_deficit_K": 2.0785337143400264, "mean_deficit_K": 0.3347858824730836, "min_deficit_K": 0.00023438634792460888, "negative_cells": 0, "rest_J": 1167998.7401893265, "roi_J": 312960.13618517027}, {"actual_max_K": 302.7610876923294, "bare_export_J": 227519.72502955946, "bare_ledger_residual_J": 0.0, "bare_max_K": 302.7614035344572, "bare_rest_J": 1670341.5973972236, "bare_roi_J": 370138.6775732171, "cold_area_m2": 2.1175, "cold_cells": 847, "epoch": 6, "export_J": 191454.15007167662, "field_max_difference_J": 102.75471244389965, "grain_J": 361440.0, "intercepted_cells": 581, "largest": 847, "largest_area_m2": 2.1175, "max_deficit_K": 2.7597494559236493, "mean_deficit_K": 0.44551569765741705, "min_deficit_K": 0.0003158421278333101, "negative_cells": 0, "rest_J": 1404684.12031702, "roi_J": 310421.7296113035}]}, "experiment": "P1-D.1", "failed_preregistered_gates": [], "retrospective": true, "wall_seconds": 1.86379813100001}
+2026-11-25T03:36:36.2488172Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T03:36:36.2488490Z with:
+2026-11-25T03:36:36.2488683Z   name: p1d-audit
+2026-11-25T03:36:36.2488889Z   path: p1d-audit
+2026-11-25T03:36:36.2489106Z   retention-days: 30
+2026-11-25T03:36:36.2489331Z   if-no-files-found: warn
+2026-11-25T03:36:36.2489567Z   compression-level: 6
+2026-11-25T03:36:36.2489786Z   overwrite: false
+2026-11-25T03:36:36.2490002Z   include-hidden-files: false
+2026-11-25T03:36:36.2490233Z env:
+2026-11-25T03:36:36.2490900Z   NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+2026-11-25T03:36:36.2491505Z   OPENBLAS_NUM_THREADS: 1
+2026-11-25T03:36:36.2491827Z   OMP_NUM_THREADS: 1
+2026-11-25T03:36:36.2492038Z   MKL_NUM_THREADS: 1
+2026-11-25T03:36:36.2492243Z   FIPY_SOLVERS: scipy
+2026-11-25T03:36:36.2492558Z   PYTHONPATH: inherited/WORLD_RESEARCH/experiments:experiments
+2026-11-25T03:36:36.2492971Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:36.2493447Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+2026-11-25T03:36:36.2493872Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:36.2494251Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:36.2494636Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+2026-11-25T03:36:36.2495025Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+2026-11-25T03:36:36.2495350Z ##[endgroup]
+2026-11-25T03:36:36.4260717Z (node:2427) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:36:36.4261818Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:36:36.4315248Z With the provided path, there will be 1 file uploaded
+2026-11-25T03:36:36.4323664Z Artifact name is valid!
+2026-11-25T03:36:36.4324382Z Root directory input is valid!
+2026-11-25T03:36:36.6505095Z Beginning upload of artifact content to blob storage
+2026-11-25T03:36:36.6778433Z (node:2427) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-25T03:36:36.7259186Z Uploaded bytes 4423
+2026-11-25T03:36:36.7447978Z Finished uploading artifact content to blob storage!
+2026-11-25T03:36:36.7449119Z SHA256 digest of uploaded artifact zip is b580ea10b0acfdf5edb1da10118fc8faf6a17984b27155bd82af096e585416f9
+2026-11-25T03:36:36.7450862Z Finalizing artifact upload
+2026-11-25T03:36:37.0936097Z Artifact p1d-audit.zip successfully finalized. Artifact ID 14989690672
+2026-11-25T03:36:37.0937357Z Artifact p1d-audit has been successfully uploaded! Final size is 4423 bytes. Artifact ID is 14989690672
+2026-11-25T03:36:37.0944755Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45541091512/artifacts/14989690672
+2026-11-25T03:36:37.1181631Z Post job cleanup.
+2026-11-25T03:36:37.2457644Z (node:2439) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T03:36:37.2458790Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T03:36:37.2609038Z Post job cleanup.
+2026-11-25T03:36:37.3742980Z [command]/usr/bin/git version
+2026-11-25T03:36:37.3803891Z git version 2.56.1
+2026-11-25T03:36:37.3863522Z Temporarily overriding HOME='/home/runner/work/_temp/e1ae8501-4e47-42d5-a964-4bd42753d5c6' before making global git config changes
+2026-11-25T03:36:37.3866962Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T03:36:37.3872081Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T03:36:37.3931462Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T03:36:37.3981088Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T03:36:37.4432896Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T03:36:37.4499831Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T03:36:37.4877382Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T03:36:37.4944628Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T03:36:37.5356448Z Cleaning up orphan processes
+2026-11-25T03:36:37.5775934Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
