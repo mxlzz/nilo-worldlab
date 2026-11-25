@@ -1,0 +1,217 @@
+{
+  "cases": {
+    "active": {
+      "final": {
+        "owner_sha": "65b0bb019d7aeb4b809c513a3a40ae2b8ddf3e11688a47d1599272b041d2da16",
+        "sha256": "7d4fa3ff8c1dadfd4d4510d2ce04e020f085292f1502793f203a5fde80386356"
+      },
+      "initial": {
+        "owner_sha": "cb9f04a29eea8b8d7a71ca22a2fb6ea06a8b5956b3c44e0aaacc6aef6ff828c5",
+        "sha256": "2764ec8f99f45d93ff322b0565a9ec41994c02447b9f3c481d582de5b401328f"
+      },
+      "last": {
+        "deposition": 0.09882948467855224,
+        "erosion": 0.09882948467855246,
+        "exner_local": 2.5534316414749236e-16,
+        "flow_local": 4.9229554894419936e-18,
+        "ga_local": 1.1102230246251565e-16,
+        "inc": 0.0,
+        "infiltration": 0.011181601195546176,
+        "max_dz": 0.02754766466406,
+        "min_F": 0.006010522333457204,
+        "out": 1.0530803632079413,
+        "owner_sha": "65b0bb019d7aeb4b809c513a3a40ae2b8ddf3e11688a47d1599272b041d2da16",
+        "pore_local": 1.1102230246251565e-16,
+        "rain": 0.01799999999999997,
+        "release": 0.043672666734941704,
+        "solid_out": 0.0,
+        "solid_res": 0.0,
+        "step": 240,
+        "water_res": 0.0
+      },
+      "max_residuals": {
+        "exner_local": 3.1086786790590626e-16,
+        "flow_local": 1.3877787807814457e-17,
+        "ga_local": 1.1102230246251565e-16,
+        "pore_local": 1.1102230246251565e-16,
+        "solid_res": 1.7763568394002505e-15,
+        "water_res": 1.7763568394002505e-15
+      },
+      "mid": {
+        "owner_sha": "c88cac4d06a2aaef1ebe74863e52e8a509aa6d6931cf59ab876c9d8f9cd7fcca",
+        "sha256": "87aa46765b479b060b76359b0bca56718742f7149e020a71b29457150c305154"
+      },
+      "min_F": 0.006010522333457204,
+      "steps": 240
+    },
+    "frozen": {
+      "final": {
+        "owner_sha": "f2f90111ff5975f6cb90414db06238522c689918de2c722d0a5fbccf8ec67732",
+        "sha256": "0fef74ad5c0c3d3ccb0b5d69972c030e5dc40606d9fe34d9fdd2de6f65b60fb0"
+      },
+      "initial": {
+        "owner_sha": "e045b924386c0c6721075131ce3a9af12ddc53030b3d5a43548040e0ea1f2080",
+        "sha256": "969fd509c91eeea5b5b44ae33a9c2988e566ed89235fe2e9fb228a314fae2db3"
+      },
+      "last": {
+        "deposition": 0.0766739464584657,
+        "erosion": 0.0766739464584652,
+        "exner_local": 2.553499404110704e-16,
+        "flow_local": 5.841139204265655e-18,
+        "ga_local": 1.1102230246251565e-16,
+        "inc": 0.0,
+        "infiltration": 0.011134381085265987,
+        "max_dz": 0.01917934297145729,
+        "min_F": 0.0072655296923574905,
+        "out": 1.1508326286113097,
+        "owner_sha": "f2f90111ff5975f6cb90414db06238522c689918de2c722d0a5fbccf8ec67732",
+        "pore_local": 2.7755575615628914e-17,
+        "rain": 0.01799999999999997,
+        "release": 0.03642433077961474,
+        "solid_out": 0.0,
+        "solid_res": 0.0,
+        "step": 240,
+        "water_res": -2.6645352591003757e-15
+      },
+      "max_residuals": {
+        "exner_local": 3.1086786790590626e-16,
+        "flow_local": 1.362028979184915e-17,
+        "ga_local": 1.1102230246251565e-16,
+        "pore_local": 1.1102230246251565e-16,
+        "solid_res": 3.552713678800501e-15,
+        "water_res": 2.6645352591003757e-15
+      },
+      "mid": {
+        "owner_sha": "8422fbd8f34147f4bff9d42961ff159ffac4dc79a5dbe4b4fe22150059a7c1f6",
+        "sha256": "3be29c104b9092af6c1a4e00151f9979539ec8e7c560b72e7114a75ba375e1d8"
+      },
+      "min_F": 0.0072655296923574905,
+      "steps": 240
+    },
+    "no_rain": {
+      "final": {
+        "owner_sha": "6641c46fe9273a581d7ffd0eae208636f490b3e6f5274c680032d5b191d49f36",
+        "sha256": "307849de1b32f356711809b60c03ebf55e9cf68b386b5a72ac9b95ff467d1964"
+      },
+      "initial": {
+        "owner_sha": "7f62dea60045ff00755eac456e0dcbe5840cec1c22278721a049afdca104cdfb",
+        "sha256": "2b9102b6e450f7cc188feb29545f32c268c980207d788467713057b50e5d0b1d"
+      },
+      "last": {
+        "deposition": 0.09823392023146049,
+        "erosion": 0.09823392023146044,
+        "exner_local": 2.220446049250313e-16,
+        "flow_local": 5.014435047745458e-18,
+        "ga_local": 5.551115123125783e-17,
+        "inc": 0.0,
+        "infiltration": 0.011173363846553125,
+        "max_dz": 0.027397114651581234,
+        "min_F": 0.006032816000605359,
+        "out": 1.0480637740465732,
+        "owner_sha": "6641c46fe9273a581d7ffd0eae208636f490b3e6f5274c680032d5b191d49f36",
+        "pore_local": 5.551115123125783e-17,
+        "rain": 0.0,
+        "release": 0.043430705144700994,
+        "solid_out": 0.0,
+        "solid_res": 0.0,
+        "step": 240,
+        "water_res": 1.7763568394002505e-15
+      },
+      "max_residuals": {
+        "exner_local": 3.1086278570822273e-16,
+        "flow_local": 1.3715157481941631e-17,
+        "ga_local": 1.1102230246251565e-16,
+        "pore_local": 1.1102230246251565e-16,
+        "solid_res": 1.7763568394002505e-15,
+        "water_res": 3.552713678800501e-15
+      },
+      "mid": {
+        "owner_sha": "38e72e589f8c3c65514856ba2a95a19fa326fc625b6bb63fdd94af383840ba52",
+        "sha256": "bede266dc10e6df46b2581b4e9dea014456a4d0a8f3b4ce5fb68e6f011c4ef19"
+      },
+      "min_F": 0.006032816000605359,
+      "steps": 240
+    },
+    "no_sediment": {
+      "final": {
+        "owner_sha": "facf0f80070478cd22d421c2e6f31081ab6b42f58d58165db3c0d08e3055f0ff",
+        "sha256": "55cb86de2def960e3dd32f5303197707033d56cd3f5d174ee261bee0784939d7"
+      },
+      "initial": {
+        "owner_sha": "501a4a5daba53af95804e9c2b14b82ed8b89b2a1509d057414013b9b27bc8817",
+        "sha256": "93da98e101f55f90595d207d0c4941aba47d266a838ba460e4ddba8b87088b26"
+      },
+      "last": {
+        "deposition": 0.0,
+        "erosion": 0.0,
+        "exner_local": 0.0,
+        "flow_local": 6.884683795282953e-18,
+        "ga_local": 5.551115123125783e-17,
+        "inc": 0.0,
+        "infiltration": 0.01088040357266723,
+        "max_dz": 0.0,
+        "min_F": 0.010092038175912227,
+        "out": 1.1397702014894087,
+        "owner_sha": "facf0f80070478cd22d421c2e6f31081ab6b42f58d58165db3c0d08e3055f0ff",
+        "pore_local": 0.0,
+        "rain": 0.01799999999999997,
+        "release": 0.0,
+        "solid_out": 0.0,
+        "solid_res": 0.0,
+        "step": 240,
+        "water_res": 0.0
+      },
+      "max_residuals": {
+        "exner_local": 0.0,
+        "flow_local": 1.3362791775883842e-17,
+        "ga_local": 1.1102230246251565e-16,
+        "pore_local": 0.0,
+        "solid_res": 0.0,
+        "water_res": 1.7763568394002505e-15
+      },
+      "mid": {
+        "owner_sha": "18b08e21c5949c8b6f48cba8b4fdfa442cb9d674af7d119e2095744dc78a6091",
+        "sha256": "c0e0431b4d42164eb9e241081330a220d698e70dfb1886ea6320fa5e0d7efbde"
+      },
+      "min_F": 0.010000000000000002,
+      "steps": 240
+    }
+  },
+  "comparisons": {
+    "frozen_q_diff": 0.005017475393238654,
+    "no_sediment_q_diff": 0.00470686607501046,
+    "rain_h_diff": 0.00037549617291947335
+  },
+  "experiment": "P3.3",
+  "failed_preregistered_gates": [],
+  "fork": {
+    "h_diff": 0.00015401197511436676,
+    "input_owner_sha": "c88cac4d06a2aaef1ebe74863e52e8a509aa6d6931cf59ab876c9d8f9cd7fcca",
+    "q_diff": 0.0013374529129861696,
+    "real_exact": true
+  },
+  "outputs": {
+    "active/final.nc": "7d4fa3ff8c1dadfd4d4510d2ce04e020f085292f1502793f203a5fde80386356",
+    "active/fork.npz": "ab1557b34cbef0f67fd60189da319634004119e603d4dc0134d00203248b9f94",
+    "active/initial.nc": "2764ec8f99f45d93ff322b0565a9ec41994c02447b9f3c481d582de5b401328f",
+    "active/mid.nc": "87aa46765b479b060b76359b0bca56718742f7149e020a71b29457150c305154",
+    "active/series.npz": "36b5b970ee9659a7fed94cfa476892f443046517918b9662e02997211abbb10e",
+    "frozen/final.nc": "0fef74ad5c0c3d3ccb0b5d69972c030e5dc40606d9fe34d9fdd2de6f65b60fb0",
+    "frozen/initial.nc": "969fd509c91eeea5b5b44ae33a9c2988e566ed89235fe2e9fb228a314fae2db3",
+    "frozen/mid.nc": "3be29c104b9092af6c1a4e00151f9979539ec8e7c560b72e7114a75ba375e1d8",
+    "frozen/series.npz": "21851b427fc76aa54e08eb21ab9b86f18656534bdc1e517d4dc8934e74d9d5ec",
+    "no_rain/final.nc": "307849de1b32f356711809b60c03ebf55e9cf68b386b5a72ac9b95ff467d1964",
+    "no_rain/initial.nc": "2b9102b6e450f7cc188feb29545f32c268c980207d788467713057b50e5d0b1d",
+    "no_rain/mid.nc": "bede266dc10e6df46b2581b4e9dea014456a4d0a8f3b4ce5fb68e6f011c4ef19",
+    "no_rain/series.npz": "7845a3366618b7d2d94243b90d5f637804cfb9fa014b5f1d58901fba87ff59dc",
+    "no_sediment/final.nc": "55cb86de2def960e3dd32f5303197707033d56cd3f5d174ee261bee0784939d7",
+    "no_sediment/initial.nc": "93da98e101f55f90595d207d0c4941aba47d266a838ba460e4ddba8b87088b26",
+    "no_sediment/mid.nc": "c0e0431b4d42164eb9e241081330a220d698e70dfb1886ea6320fa5e0d7efbde",
+    "no_sediment/series.npz": "df1ce451f400daaedbd6b6f048dde67d2a5869606b85f75f9a5480c19c2e9035",
+    "source_archive_manifest.json": "e15758cb3f4b980791e3c2eabd816c8ddcc2d23ff8c0d5ef4ada7fe437f95769",
+    "source_manifest.json": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f",
+    "upstream_license.md": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0"
+  },
+  "peak_rss_kib": 212648,
+  "wall_seconds": 15.344233440999972
+}
