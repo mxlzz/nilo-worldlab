@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
+  "status": "ready",
   "stage": "P3",
-  "current_task": "P3.1",
-  "next_action": "Leer CI 45606950182 y WORLD_WATER_JSON/RESTART/COMPARE; primer fallo instrumental archivado. Verificar gates originales y archivar antes de P3.2. Si fallo físico no cambiar parámetros; si fallo instrumental identificar y registrar antes de decidir. P3.2 candidato RiverBedDynamics (Monsalve et al. 2025 DOI 10.5194/gmd-18-3427-2025), comprobar código y compatibilidad Landlab 2.11/flujo/volumen/porosidad antes de adoptar.",
-  "scientific_next": "P3.1",
+  "current_task": "P3.2-provider",
+  "next_action": "P3.2 evaluar RiverBedDynamics (paper 10.5194/gmd-18-3427-2025, release 10.5281/zenodo.14159914, fork angelmons/landlab, no en oficial 2.11); revisar versión exacta, licencia, campo q por enlace, balances Exner, porosidad, stock finito y agua subsuperficial, cache. Comparar SPACE, ErosionDeposition y alternativas existentes. Seleccionar ruta mínima antes de prerregistro; no instalar fork ni modificar perfil histórico por inercia. Si requiere cambio definitivo/licencia, elevar. P3.3 retorno agua-relieve después.",
+  "scientific_next": "P3.2-provider",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -19,7 +19,7 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "water_open_boundary_retry_mask_initialization"
+    "P3": "P31_passed_same_host_ready_sediment_provider"
   },
   "blockers": [],
   "evidence_refs": [
@@ -71,13 +71,15 @@
     "research/P2/P2_CONSOLIDACION.md",
     "research/P3/P3.1_PROTOCOLO_AGUA.md",
     "research/P3/P3.1_INCIDENCIA_1.md",
-    "evidence/P3/P31-failed/archive_manifest.json"
+    "evidence/P3/P31-failed/archive_manifest.json",
+    "research/P3/P3.1_RESULTADO.md",
+    "evidence/P3/P31/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "515e851b98d6a7d79bba3fa8369e3dae05124c38",
+  "last_confirmed_non_state_write": "50ceb4b154fafd78b5524f2a381cfd1bfe951ed9",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -100,11 +102,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25",
-  "active_run": {
-    "id": 45606950182,
-    "unit": "P3.1",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45606950182",
-    "sha": "515e851b98d6a7d79bba3fa8369e3dae05124c38"
-  }
+  "updated_at": "2026-11-25"
 }
