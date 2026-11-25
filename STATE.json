@@ -5,7 +5,7 @@
   "status": "running",
   "stage": "P6",
   "current_task": "ARCH-02A",
-  "next_action": "Consultar workflow world-arch02a-hail.yml asociado al commit de prerregistro, no duplicar. Archivar salida y dictaminar gate técnico; Delft3D bloqueado por entorno, HAIL restart no demostrado.",
+  "next_action": "Consultar ARCH-02A run 45662003426 y archivo P6.1-R (workflow worldlab-archive-p61r.yml); verificar gates y retención antes de continuar. No repetir P6.1-R.",
   "scientific_next": "ARCH-02A",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -22,7 +22,7 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "P61L_isolated_pass_R_preregistered",
+    "P6": "P61R_ci_success_readback_archive_pending",
     "ARCH": "ARCH02A_hail_smoke_preregistered_Delft_environment_blocked"
   },
   "blockers": [],
@@ -123,13 +123,15 @@
     "evidence/P6/P61L/archive_manifest.json",
     "research/P6/P6.1R_PROTOCOLO_HORIZONTE.md",
     "research/ARCH/ARCH-01_EVALUACION_DOCUMENTAL.md",
-    "research/ARCH/ARCH-02A_PROTOCOLO_HAIL.md"
+    "research/ARCH/ARCH-02A_PROTOCOLO_HAIL.md",
+    "research/P6/P6.1R_READBACK_PRELIMINAR.md",
+    "evidence/P6/P61R/readback.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "d5f1000a563f738007d6c84e60134100da114a35",
+  "last_confirmed_non_state_write": "90d1d2b0790ce9c9b82ecf1aa970d9a547fb1d6e",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
