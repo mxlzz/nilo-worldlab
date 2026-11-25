@@ -157,3 +157,5 @@
 - P5.2 CI 45630220328 y archivo 45630534322 aprobados, 3×240, fork causal y restart exacto 120, 7 controles. P5 completa limitada, GO P6 evolución sostenida. [Dictamen](research/P5/P5_DICTAMEN.md).
 
 - P6.1 prerregistro: 2×2400 pasos, 10 pulsos nominales vs relajación tras primer ciclo, sin reset, mismas leyes y tolerancias, frontera explícita; prefijo y restart. Presupuesto job <=5min.
+
+- P6.1 negativo válido: periodic 2400, relaxation 2078, guard hydraulic bounds en2079; prefijo exacto, consumidor no ejecutado. Archivo45631726210 verificado. P6.1-D prerregistro diagnóstico aislado y opciones nativas, no cambio de gates.

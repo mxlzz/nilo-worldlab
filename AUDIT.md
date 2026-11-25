@@ -251,3 +251,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - P5.1 autoverificación: ZIP/hash/log/fuente verificados, 9 propuestas y 6 controles pasan; límites de GSD mezclada y ausencia de estratigrafía. [Resultado](research/P5/P5.1_RESULTADO.md). GO P5.2 tras prerregistro.
 
 - P5.2 autoverificación: hashes/ZIP/JSON/log/source y checkpoint verificados; 3 casos y gates pasan, 7 controles. P5 cierre limitado de granulometría móvil (no estratos, química o 3D viva). GO P6. [Dictamen](research/P5/P5_DICTAMEN.md).
+
+- P6.1 negativo conservado con ZIP/hash/log y último owner válido. P6 no cerrada; P6.2 bloqueada. No se atribuye causa exacta sin diagnóstico. [Resultado](research/P6/P6.1_RESULTADO.md).
