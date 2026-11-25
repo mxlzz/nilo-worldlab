@@ -134,3 +134,9 @@ Ninguna historia supera redistribución .15 nominal ni distancias .075 a ambas p
 
 # Reorientación P2
 Archivo E7.1b verificado, evidencia negativa retenida. Usuario autoriza plan y representación multiescala; no motor final ni conversión física general validada. P2 auditoría documental GO P3.1. Antecedentes H5/H6/H11c/H12b/H15/H16 y documentación de Landlab revisados; priorizar bucle agua/relieve/sedimento, evitar repetir pruebas y no integrar solvers sin necesidad. Autoverificación. P3 aún no ejecutada.
+
+# P3.1 — Incidencia instrumental 1, antes de nueva ejecución
+
+CI 45605745963 FAILURE, job 139176024762, commit 2233d6b1ddef6ed795998bdb48f9724ff328775e. Cinco owners iniciales serializados/restaurados correctamente. Ningún paso hidráulico ejecutado: todos fallan en Model.__init__, al asignar máscara self.bsign derivada de self.core (subclase de array de status_at_node de Landlab), AttributeError: 'array' object has no attribute 'grid', traceback landlab/grid/decorators.py __setitem__. No es fallo de conservación, estabilidad, solver ni resultado científico. Consumidor y comparación omitidos. Script .169s, job ~33s, artifact 15017074351, 14190 bytes SHA256 ec4173ddfd24930b8fbe09eca06c6502d4fbadcd83db6edafc09d6cf6aa805a8.
+
+Corrección preregistrada antes del retry: geometry devuelve máscara core como ndarray base mediante np.asarray(status_at_node) == NodeStatus.CORE; bsign se calcula a partir de ndarray base, preservando idénticos valores. No modificar escenario, ecuaciones, dt, parámetros, controles, tolerancias ni gates. Retener primer ZIP/log/JSON. Una corrección instrumental; verificar y no pasar P3.2 sin gate P3.1. Autoverificación.

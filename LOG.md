@@ -97,3 +97,5 @@
 - P3.1 prerregistro: inspección exacta OverlandFlow/Green-Ampt 2.11, q nativo m²/s pese a metadato, dx2, borde abierto, lluvia variable, stock subsuperficial finito, 5 escenarios y restart mismo host sin futuro. Sin erosión. Presupuesto5min.
 
 - P3.1 código y workflow: flujo nativo de Almeida por enlace, balance independiente de frontera, Green-Ampt con capacidad finita, 5 casos y consumidor separado mismo host. Sin erosión ni acoplamiento nuevo. CI5min.
+
+- P3.1 CI 45605745963 FAILURE instrumental antes de física, cinco iniciales roundtrip; máscara heredó subclase status_at_node. Corrección np.asarray preregistrada, sin cambios de gates. Archivo pendiente.
