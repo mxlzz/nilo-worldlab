@@ -1,0 +1,21 @@
+{
+  "artifact": 14979774311,
+  "cpu": "Intel Xeon 6975P-C",
+  "files": {
+    "14979774311.zip": {
+      "bytes": 1365,
+      "sha256": "71a2e3bcc681048c3e4581b5350b2620583959caa9ba18d19cca48dc14b1b96a"
+    },
+    "cpu.txt": {
+      "bytes": 3427,
+      "sha256": "3d9601a374bc3faf0c92865c7dfdd07f45e654ae6742304cea818ce3e5a7bdb4"
+    },
+    "job-138894645543.log": {
+      "bytes": 10636,
+      "sha256": "eab392c088d775b99f20cba91dce8b307f0b11ad410f9584b4d543e600a40f6c"
+    }
+  },
+  "job": 138894645543,
+  "run": 45521624938,
+  "scientific_execution": false
+}
