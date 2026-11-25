@@ -1,0 +1,283 @@
+{
+  "cases": {
+    "half": {
+      "elapsed": 0.1,
+      "eligible_hydraulic_candidate": false,
+      "global_residual_m3": 3.821812658011403e-18,
+      "gross_overdraw_free": false,
+      "in_m3": 0.0,
+      "max_local_residual_m": 5.747965580067682e-18,
+      "n": 2,
+      "out_m3": 0.0001990242582732567,
+      "rows": [
+        {
+          "cfl": 1.5595255192172606,
+          "dt": 0.05,
+          "global_residual_m3": 3.164345684352615e-17,
+          "gross_overdraw_nodes": [],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": true
+          },
+          "local_residual_m": 5.050433948003766e-18,
+          "max_gross_overdraw_m3": 0.0,
+          "min_h_m": 9.072704028434886e-09,
+          "negative_details": [],
+          "negative_nodes": [],
+          "negative_volume_m3": -0.0,
+          "substep": 1
+        },
+        {
+          "cfl": 1.559543383840992,
+          "dt": 0.05,
+          "global_residual_m3": -2.780809165835868e-17,
+          "gross_overdraw_nodes": [
+            17
+          ],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": false
+          },
+          "local_residual_m": 5.747965580067682e-18,
+          "max_gross_overdraw_m3": 2.1895513542274883e-07,
+          "min_h_m": -5.473878385568721e-08,
+          "negative_details": [
+            {
+              "gross_in_m3": 0.0,
+              "gross_out_m3": 2.5524595153648837e-07,
+              "new_h_m": -5.473878385568721e-08,
+              "node": 17,
+              "old_h_m": 9.072704028434886e-09
+            }
+          ],
+          "negative_nodes": [
+            17
+          ],
+          "negative_volume_m3": 2.1895513542274883e-07,
+          "substep": 2
+        }
+      ],
+      "steep_slopes": false
+    },
+    "original": {
+      "elapsed": 0.1,
+      "eligible_hydraulic_candidate": false,
+      "global_residual_m3": 1.723881454251952e-17,
+      "gross_overdraw_free": false,
+      "in_m3": 0.0,
+      "max_local_residual_m": 5.2787093272888e-18,
+      "n": 1,
+      "out_m3": 0.0002286672091224677,
+      "rows": [
+        {
+          "cfl": 1.5595255192172606,
+          "dt": 0.1,
+          "global_residual_m3": 1.725660223441186e-17,
+          "gross_overdraw_nodes": [
+            17
+          ],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": false
+          },
+          "local_residual_m": 5.2787093272888e-18,
+          "max_gross_overdraw_m3": 1.5389329140079596e-07,
+          "min_h_m": -3.847332285019899e-08,
+          "negative_details": [
+            {
+              "gross_in_m3": 0.0,
+              "gross_out_m3": 4.3187268848272865e-07,
+              "new_h_m": -3.847332285019899e-08,
+              "node": 17,
+              "old_h_m": 6.949484927048317e-08
+            }
+          ],
+          "negative_nodes": [
+            17
+          ],
+          "negative_volume_m3": 1.5389329140079596e-07,
+          "substep": 1
+        }
+      ],
+      "steep_slopes": false
+    },
+    "quarter": {
+      "elapsed": 0.07500000000000001,
+      "eligible_hydraulic_candidate": false,
+      "global_residual_m3": 9.966528470573e-17,
+      "gross_overdraw_free": false,
+      "in_m3": 0.0,
+      "max_local_residual_m": 6.498436771334992e-18,
+      "n": 4,
+      "out_m3": 0.00012876825894118094,
+      "rows": [
+        {
+          "cfl": 1.5595255192172606,
+          "dt": 0.025,
+          "global_residual_m3": 4.3728075902003255e-17,
+          "gross_overdraw_nodes": [],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": true
+          },
+          "local_residual_m": 5.775282392616633e-18,
+          "max_gross_overdraw_m3": 0.0,
+          "min_h_m": 9.999999996365183e-09,
+          "negative_details": [],
+          "negative_nodes": [],
+          "negative_volume_m3": -0.0,
+          "substep": 1
+        },
+        {
+          "cfl": 1.5595294723178996,
+          "dt": 0.025,
+          "global_residual_m3": 5.844103819581045e-17,
+          "gross_overdraw_nodes": [],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": true
+          },
+          "local_residual_m": 6.498436771334992e-18,
+          "max_gross_overdraw_m3": 0.0,
+          "min_h_m": 3.261438052233682e-09,
+          "negative_details": [],
+          "negative_nodes": [],
+          "negative_volume_m3": -0.0,
+          "substep": 2
+        },
+        {
+          "cfl": 1.5595256099615569,
+          "dt": 0.025,
+          "global_residual_m3": -2.5008647767683218e-18,
+          "gross_overdraw_nodes": [
+            17
+          ],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": false
+          },
+          "local_residual_m": 5.285485590866834e-18,
+          "max_gross_overdraw_m3": 1.2848871976639792e-07,
+          "min_h_m": -3.212217994159948e-08,
+          "negative_details": [
+            {
+              "gross_in_m3": 0.0,
+              "gross_out_m3": 1.4153447197533265e-07,
+              "new_h_m": -3.212217994159948e-08,
+              "node": 17,
+              "old_h_m": 3.261438052233682e-09
+            }
+          ],
+          "negative_nodes": [
+            17
+          ],
+          "negative_volume_m3": 1.2848871976639792e-07,
+          "substep": 3
+        }
+      ],
+      "steep_slopes": false
+    },
+    "repeat": {
+      "elapsed": 0.1,
+      "eligible_hydraulic_candidate": false,
+      "global_residual_m3": 1.723881454251952e-17,
+      "gross_overdraw_free": false,
+      "in_m3": 0.0,
+      "max_local_residual_m": 5.2787093272888e-18,
+      "n": 1,
+      "out_m3": 0.0002286672091224677,
+      "rows": [
+        {
+          "cfl": 1.5595255192172606,
+          "dt": 0.1,
+          "global_residual_m3": 1.725660223441186e-17,
+          "gross_overdraw_nodes": [
+            17
+          ],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": false
+          },
+          "local_residual_m": 5.2787093272888e-18,
+          "max_gross_overdraw_m3": 1.5389329140079596e-07,
+          "min_h_m": -3.847332285019899e-08,
+          "negative_details": [
+            {
+              "gross_in_m3": 0.0,
+              "gross_out_m3": 4.3187268848272865e-07,
+              "new_h_m": -3.847332285019899e-08,
+              "node": 17,
+              "old_h_m": 6.949484927048317e-08
+            }
+          ],
+          "negative_nodes": [
+            17
+          ],
+          "negative_volume_m3": 1.5389329140079596e-07,
+          "substep": 1
+        }
+      ],
+      "steep_slopes": false
+    },
+    "steep": {
+      "elapsed": 0.1,
+      "eligible_hydraulic_candidate": false,
+      "global_residual_m3": -1.6574670851565373e-07,
+      "gross_overdraw_free": false,
+      "in_m3": 0.0,
+      "max_local_residual_m": 3.848332285019899e-08,
+      "n": 1,
+      "out_m3": 0.0002286672091224677,
+      "rows": [
+        {
+          "cfl": 1.5595255192172606,
+          "dt": 0.1,
+          "global_residual_m3": -1.6574670851563457e-07,
+          "gross_overdraw_nodes": [
+            17
+          ],
+          "guards": {
+            "active_hl": true,
+            "halo_film": true,
+            "inactive_q": true,
+            "nonnegative_h": true
+          },
+          "local_residual_m": 3.848332285019899e-08,
+          "max_gross_overdraw_m3": 1.5389329140079596e-07,
+          "min_h_m": 1.0000000000000001e-11,
+          "negative_details": [],
+          "negative_nodes": [],
+          "negative_volume_m3": -0.0,
+          "substep": 1
+        }
+      ],
+      "steep_slopes": true
+    }
+  },
+  "experiment": "P6.1-D",
+  "failed_diagnostic_gates": [],
+  "input_owner_sha": "772e0b24764ea7751868038f42ddc244f4d97d34300afc6824a8e8c6c5f64611",
+  "outputs": {
+    "half.npz": "4b359cf44f044305cf0960a6c21479fa0b1684765fc09120abf9af91561ce41f",
+    "original.npz": "2a60c96e8528223083f14824784cf67616a81388f184c21623fdd92fbe2d1b53",
+    "quarter.npz": "fc9b86282ffe6c3c3fd828791cfa8bc7a2db03b486b4453af7b65bcb00615885",
+    "repeat.npz": "2a60c96e8528223083f14824784cf67616a81388f184c21623fdd92fbe2d1b53",
+    "steep.npz": "52d7be4c0c32f3d84e7dabe602ddbeec443152d07e30d7e451b12f88aeaf9ede"
+  },
+  "repeat_exact": true,
+  "wall_s": 0.06990986299996393
+}
