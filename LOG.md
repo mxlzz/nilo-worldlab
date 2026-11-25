@@ -159,3 +159,5 @@
 - P6.1 prerregistro: 2×2400 pasos, 10 pulsos nominales vs relajación tras primer ciclo, sin reset, mismas leyes y tolerancias, frontera explícita; prefijo y restart. Presupuesto job <=5min.
 
 - P6.1 negativo válido: periodic 2400, relaxation 2078, guard hydraulic bounds en2079; prefijo exacto, consumidor no ejecutado. Archivo45631726210 verificado. P6.1-D prerregistro diagnóstico aislado y opciones nativas, no cambio de gates.
+
+- P6.1-D CI45632353847 y archivo45632681102 aprobados diagnóstico, todas alternativas nativas rechazadas. Nodo17 sobreextracción, CFL no explica; floor no conserva. P6.1-L prerregistro adaptador conservativo de tiempo de drenaje, no cambiar proveedor ni gates.
