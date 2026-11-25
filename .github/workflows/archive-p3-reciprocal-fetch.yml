@@ -1,0 +1,54 @@
+name: WorldLab preserve P3.3 source-fetch failure and pinned provider
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p3-reciprocal-fetch.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P3/P33-fetch-failed
+          mkdir -p "$d" evidence/P3/RBD_SOURCE
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139246064654/logs > "$d/job-139246064654.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,subprocess,base64,zipfile
+          d=pathlib.Path("evidence/P3/P33-fetch-failed")
+          log=d/"job-139246064654.log"
+          assert "HTTP Error 429: Too Many Requests" in log.read_text()
+          assert "WORLD_RECIPROCAL_JSON {" not in log.read_text()
+          (d/"archive_manifest.json").write_text(json.dumps({"run":45625952812,"job":139246064654,"artifact":None,"reason":"HTTP429 before simulation; no outputs uploaded","files":{log.name:{"sha256":hashlib.sha256(log.read_bytes()).hexdigest(),"bytes":log.stat().st_size}}},indent=2,sort_keys=True)+"\n")
+          m=json.loads(pathlib.Path("research/P3/RBD_SOURCE_MANIFEST.json").read_text())
+          dest=pathlib.Path("evidence/P3/RBD_SOURCE")
+          payload={}
+          for name,meta in m["files"].items():
+              b=json.loads(subprocess.check_output(["gh","api","repos/angelmons/landlab/git/blobs/"+meta["git_blob_sha1"]]))
+              assert b["encoding"]=="base64" and b["sha"]==meta["git_blob_sha1"]
+              raw=base64.b64decode(b["content"])
+              assert len(raw)==meta["bytes"] and hashlib.sha1(("blob "+str(len(raw))+"\0").encode()+raw).hexdigest()==meta["git_blob_sha1"]
+              payload[name]=raw
+          zpath=dest/"source.zip"
+          with zipfile.ZipFile(zpath,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+              for name,data in sorted(payload.items()):
+                  i=zipfile.ZipInfo(name,date_time=(2026,11,25,0,0,0));i.compress_type=zipfile.ZIP_DEFLATED;z.writestr(i,data)
+          with zipfile.ZipFile(zpath) as z:
+              assert z.testzip() is None and set(z.namelist())==set(payload)
+              assert all(z.read(n)==v for n,v in payload.items())
+          (dest/"archive_manifest.json").write_text(json.dumps({"commit":m["commit"],"source_manifest_sha256":hashlib.sha256(pathlib.Path("research/P3/RBD_SOURCE_MANIFEST.json").read_bytes()).hexdigest(),"source_zip_sha256":hashlib.sha256(zpath.read_bytes()).hexdigest(),"bytes":zpath.stat().st_size,"files":{n:hashlib.sha256(v).hexdigest() for n,v in payload.items()}},sort_keys=True,indent=2)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d" evidence/P3/RBD_SOURCE
+          git commit -m 'Retain source-fetch failure and exact MIT upstream provider archive'
+          git pull --rebase origin main
+          git push origin HEAD:main

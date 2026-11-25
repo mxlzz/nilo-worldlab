@@ -125,3 +125,5 @@
 - P3.2b archivo 45625575751 SUCCESS, 10 outputs/JSON/log cotejados y 9 hashes históricos idénticos; tamaños verificados. P3.3 prerregistro: 240 pasos, 4 modos, ablación relieve→agua y bifurcación mismo estado paso121, balances y restart. Sin export natural sólido, sin nuevo solver. 5min.
 
 - P3.3 implementación: 4 modos ×240 pasos, RBD y GA aislados por paso, hidráulica persistente, inventario único, bifurcación paso121, owner NC y consumidor mismo host, trazas completas de arrays. CI5min.
+
+- P3.3 CI45625952812 FAILURE antes de física: HTTP429 descarga upstream. Sin artefacto. Archivar log y recuperar fuente exacta MIT como evidencia ZIP por blob API, no vendor activo; retry solo cambio de origen de bytes verificados.
