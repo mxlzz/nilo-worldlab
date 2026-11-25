@@ -174,3 +174,20 @@ GO P3.2 tras retención y cotejo. Sin erosión ni retorno al relieve aún. Se ha
 - Fuente inspeccionada _nodes_and_links_info.links_at_border enumera enlaces normales al borde, shear_stress los pone en cero, incluso enlace a outlet; en MPM no hay flujo allí a menos que se imponga explícitamente. No afirmar export natural por la descripción de artículo: contrastar con medición nativa. Se puede ensayar frontera de agua abierta pero sedimento retenido (filtro) o export prescrito como control contable; si mundo requiere salida natural habrá que elegir otra ruta o adaptador explícito validado, no suponer efecto. 
 - Empezar con MPM total, GSD uniforme, sin estratigrafía, no convertir clases de grano en stocks no verificados. La referencia tiene variante de profundidad local sin avance de reloj; no usar para maquillar balance. P3.2a no acopla todavía al suelo húmedo: si se cambia espesor, la capacidad de agua porosa y su destino deberán resolverse antes de P3.3. 
 **GO P3.2a compatibilidad y balance con nativo sin modificaciones; NO-GO instalar fork completo, ajustar leyes, motor propio o declarar P3 completa.** Si incompatibilidad de API, separar instrumental de hipótesis y corregir solo adaptador. Si falla stock/flujo físicamente, retener negativo y evaluar alternativas. Autoverificación.
+
+# P3.2a — Resultado: compatibilidad nativa Exner aprobada limitada
+
+2026-11-25. CI 45615897598 SUCCESS, job 139211081026, código 41409ec5d42a51a4650c814d14125b76a2087f0a. Intel Xeon Platinum8573C, Python3.13.18, Landlab2.11.0, perfil heredado. RBD fork ea89ef9463a644f698cb4a91f0c0acc43d115c4f; 10 módulos + licencia MIT obtenidos con verificación SHA1 Git/tamaño antes de import. No se instaló fork ni modificó Landlab. Gates vacíos. 
+| Caso | Erosión neta sólido m³ | Deposición neta sólido m³ | Salida sólido m³ | Aceptado |
+|---|---:|---:|---:|---|
+| active | .000555510796 | .000555510796 | 0 | sí |
+| flat/dry | 0 | 0 | 0 | sí |
+| imposed_export | .000555510796 | .000535510796 | .00002 | sí |
+| depleted | .000555510796 | .000555510796 | 0 | NO (control correcto) |
+| live40 | .000377789670 | .000377789670 | 0 | sí |
+| live80 | .000807016729 | .000807016729 | 0 | sí |
+| live120 | .000819538300 | .000819538300 | 0 | sí |
+
+Replay active exacto, incluso NPZ. Masa seca inicial/final31800kg salvo export prescrito .053kg, y depleted1.59g (se conserva original, candidato espesor mínimo −.00007223499m rechazado). Máx error local2.657e-16m³, máx residual absoluto global1.066e-15m³, equivalentes <=2.825e-12kg global, q inactivos0, halo/hidráulica inmutados. Flat/dry sin transporte, active sí. Live 120 pasos .1s, salida agua .5552654422m³, entrada0, residual máx1.333e-15m³, tres propuestas Exner independientes desde misma geometría congelada: movimientos equivalentes a 1.0011/2.1386/2.1718kg netos erosionados y redepositados, no sumarlos como trayectoria continua. No se devuelve z a hidráulica. Salida natural sólido cero como predicho por código; export solo control impuesto, no prueba de frontera libre. 
+Costo script1.142s, RSS210060KiB, job39s. Artefacto15021698022 45826bytes SHA256 8e75c09ac396d2635dd79e36d67d5a5c13c19f7d427f2f6d18e2d82961d2cd37. Retención durable pendiente. 
+GO P3.2b contrato agua porosa ante movimiento sólido (grosor, capacidad, agua liberada, nueva deposición; no F acumulada duplicada); evaluar sin nueva física de transporte, y P3.3 solo si compatible. No declarar mundo integrado, calibración, clasificación granulométrica dinámica ni salida natural. Autoverificación.

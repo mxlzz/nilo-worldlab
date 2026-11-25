@@ -1,0 +1,51 @@
+name: WorldLab archive P3.2a Exner validation
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p3-exner.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P3/P32a
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15021698022/zip > "$d/15021698022.zip"
+          echo '8e75c09ac396d2635dd79e36d67d5a5c13c19f7d427f2f6d18e2d82961d2cd37  '"$d/15021698022.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139211081026/logs > "$d/job-139211081026.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P3/P32a")
+          with zipfile.ZipFile(d/"15021698022.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert not a["failed_preregistered_gates"] and a["replay_exact"] and len(a["cases"])==9
+              assert a["live"]["steps"]==120 and a["live"]["any_live_erosion_deposition"]
+              assert all(v["accepted"]==(k!="depleted") for k,v in a["cases"].items())
+              assert len(a["outputs"])==12
+              assert {n for n in z.namelist() if not n.endswith("/")}==set(a["outputs"])|{"result.json"}
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              assert z.read("source_manifest.json")==pathlib.Path("research/P3/RBD_SOURCE_MANIFEST.json").read_bytes()
+              (d/"result.json").write_bytes(b)
+              (d/"upstream_license.md").write_bytes(z.read("upstream_license.md"))
+          log=(d/"job-139211081026.log").read_text()
+          assert [json.loads(l.split("WORLD_EXNER_JSON ",1)[1]) for l in log.splitlines() if "WORLD_EXNER_JSON {" in l]==[a]
+          m={"run":45615897598,"job":139211081026,"artifact":15021698022,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P3.2a native Exner validation'
+          git pull --rebase origin main
+          git push origin HEAD:main

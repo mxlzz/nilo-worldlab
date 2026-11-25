@@ -109,3 +109,5 @@
 - P3.2 selección: RBD candidato, MIT fork exacto, no reemplazar Landlab2.11. Sin límite de bedrock y outlet nativo anulado en fuente inspeccionada; comprobar con controles, no fingir export libre. P3.2a prerregistro: fixtures, live hidráulica→Exner unidireccional, stock finito y balances, 5min.
 
 - P3.2a implementación y CI: recuperación hash exacto de 10 módulos y licencia, sin instalar fork; Exner nativo, controles flat/dry/export/depleted/replay, 3 propuestas desde hidrodinámica viva de terreno congelado, balances y stock finito; 5min.
+
+- P3.2a CI 45615897598 SUCCESS: 9 escenarios (6 fixtures/replay y 3 live), gates vacíos, residual sólido max1.066e-15m³, depleted rechazado, export prescrito .00002m³, natural0. Live 120 pasos, RBD compatible. Archivo pendiente.
