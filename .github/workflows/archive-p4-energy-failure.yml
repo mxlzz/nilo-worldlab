@@ -1,0 +1,47 @@
+name: WorldLab archive P4.1 initial data-access failure
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p4-energy-failure.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P4/P41-failed
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15029411268/zip > "$d/15029411268.zip"
+          echo '9965d6031ae72218082b0e7a48c75b3fba1283fe5d5c006f4c7ddf5fd13ac07f  '"$d/15029411268.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139251016164/logs > "$d/job-139251016164.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P4/P41-failed")
+          with zipfile.ZipFile(d/"15029411268.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert not a["cases"] and len(a["failed_preregistered_gates"])==5 and len(a["fixture"]["controls"])==5
+              assert all(a["fixture"]["controls"].values()) and a["source_unchanged"]
+              assert len(a["outputs"])==1
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              (d/"result.json").write_bytes(b)
+          log=(d/"job-139251016164.log").read_text()
+          assert [json.loads(l.split("WORLD_ENERGY_JSON ",1)[1]) for l in log.splitlines() if "WORLD_ENERGY_JSON {" in l]==[a]
+          m={"run":45627361465,"job":139251016164,"artifact":15029411268,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P4.1 initial xarray field access failure'
+          git pull --rebase origin main
+          git push origin HEAD:main

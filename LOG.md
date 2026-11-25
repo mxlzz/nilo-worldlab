@@ -137,3 +137,5 @@
 - P4 selección: PET/FAO56/AquaSEBS/FLake/CTSM y antecedentes H14–H16/P1 contrastados; columna energía sensible única, advección por q/qb, pulso irradiación y disipación, P4.1 retrospectiva sobre P3.3 retenida (no replay físico), P4.2 evaporación viva después. Prerregistro 4×240 pasos y fixture, 5min.
 
 - P4.1 implementación y CI: 4 modos ×240 pasos de P3.3 retenidos, fixture analítico y5 controles, advección agua/sólido, lluvia y export energética, pulso shortwave y pérdidas longwave/sensible; NC owner y NPZ. Sin evaporación ni acople vivo. 5min.
+
+- P4.1 CI45627361465 FAILURE instrumental antes de física, fixture/5 controles pasan, ini.tail/head colisionan con métodos xarray. Corrección acceso por nombre preregistrada; archivo pendiente.
