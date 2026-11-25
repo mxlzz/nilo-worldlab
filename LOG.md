@@ -45,3 +45,5 @@
 - Archivo C.2b intento 45519115487 sin jobs, YAML con :all: en escalar plano; corregido a bloque shell. Solo archivo/diagnóstico, no repetición científica.
 
 - Archivo C.2b CI 45519166290 SUCCESS, ambos ZIP/log/JSON, diagnóstico 12 estados confirmado; diferencias reales E_roi hasta 9.095e-13 J, E_rest hasta 7.276e-12 J. NO-GO P1-D, prerregistro D2 mínimo sin dinámica. Archivo temporal desactivado.
+
+- D2 implementado y lanzado: 2 jobs x 2 perfiles x 2 repeticiones en dos casos retenidos; un solo bloque térmico, sin dinámica nueva, perfil candidato Nehalem predefinido. Gate C.2b intacto.
