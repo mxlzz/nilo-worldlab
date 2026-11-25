@@ -117,3 +117,5 @@
 - P3.2b implementación: 5 casos analíticos, 5 muestras Exner retenidas, 8 controles (incluye dominio GA y K0), operador conservativo con release proporcional a salidas brutas y capacidad derivada, GA nativo solo como tasa equivalente. CI5min; no acople vivo todavía.
 
 - P3.2b CI45619612376 FAILURE: 5 analíticas, 8 controles, 4/5 muestras; error de comparación halo candidato bruto vs stock autoritativo (imposed_export). Corrección prospectiva de comparador core/owner + flujo halo explícito, sin modificar física/umbrales. Archivo pendiente.
+
+- P3.2b archivo fallo 45624204131 SUCCESS, ZIP/9 outputs/JSON/log verificados; tamaños releídos. Retry con comparaciones explícitas de stock core/owner y flujo halo; sin cambiar operador físico ni tolerancias.

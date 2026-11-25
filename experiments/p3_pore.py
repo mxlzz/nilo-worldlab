@@ -144,7 +144,15 @@ def main(dest):
                     core=x["core"];A=DX*DX
                     args=(x["stock_before"],np.where(core,.04*A,0.),np.where(core,x["h_node"]*A,0.),x["qb"]*DX*DT,x["tail"],x["head"],core,x["active"],A)
                     r,a=remap(*args)
-                    req(np.max(np.abs(a["V_after"]-x["stock_candidate"]))<=1e-12,"stock candidate mismatch")
+                    candidate_core_error=float(np.max(np.abs(a["V_after"][core]-x["stock_candidate"][core])))
+                    owner_error=float(np.max(np.abs(a["V_after"]-x["stock_accepted"])))
+                    halo_flux_error=float(np.max(np.abs(x["stock_candidate"][~core]-a["incoming"][~core])))
+                    halo_sum_error=abs(float(x["stock_candidate"][~core].sum())-r["solid_out_m3"])
+                    reference_out_error=abs(old["cases"][name]["out_solid_m3"]-r["solid_out_m3"])
+                    req(candidate_core_error<=1e-12 and owner_error<=1e-12,"stock candidate/accepted owner mismatch")
+                    req(np.all(a["V_after"][~core]==0) and np.all(x["stock_accepted"][~core]==0),"halo owner stock")
+                    req(max(halo_flux_error,halo_sum_error,reference_out_error)<=1e-12,"halo boundary flux mismatch")
+                    r["reference_comparison"]={"candidate_core_max_error_m3":candidate_core_error,"accepted_owner_max_error_m3":owner_error,"halo_flux_max_error_m3":halo_flux_error,"halo_sum_error_m3":halo_sum_error,"reference_export_error_m3":reference_out_error,"halo_candidate_m3":float(x["stock_candidate"][~core].sum())}
                     req(np.max(np.abs(a["gross"]-x["gross_out"]))<=1e-12,"gross mismatch")
                     req(np.max(np.abs((x["bedrock"]+a["thickness_after"]-x["z_after"])[core]))<=1e-12,"geometry mismatch")
                     req(r["GA_domain_valid"],"retained GA domain")
