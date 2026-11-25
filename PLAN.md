@@ -17,9 +17,22 @@ P1-C: B aprobada. [Prerregistro C.1](research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.
 P1-D completada: [D1 resultado](research/P1-D/P1-D.1_RESULTADO.md), [D2 dictamen](research/P1-D/P1-D.2_DICTAMEN.md). P1 completa limitada, E7 abierta. GO diseño E7.1, NO-GO repetir P1/motor/E8.
 
 ## E7 — Organización funcional generalizable
-E7.1: [encargo](research/E7/E7.1_ENCARGO_DISENO.md), [decisión de diseño](research/E7/E7.1_DECISION_DISENO.md). E7.1a [calibración de instrumento](research/E7/E7.1a_PROTOCOLO_FUERZAS.md), E7.1a aprobada y [archivada](research/E7/E7.1a_RESULTADO.md); E7.1b [prerregistro](research/E7/E7.1b_PROTOCOLO_HISTORIA_CARGAS.md) prospectivo, 15 escenas y gate estructural/funcional, no cierre E7. No nuevas sombras por inercia. Preservar positivos acotados y negativos H19/H21–23/H36/H41/P0-B/P1-A. Contrastar semillas reservadas, configuraciones, plantillas y nulos pertinentes; medir diversidad, estabilidad, persistencia y función. No repetir montículos por inercia. Criterio: función generativa distinguible de explicación trivial o conclusión negativa/inconclusa documentada. Auditar controles, sesgos, incertidumbre y costo.
+E7.1: [encargo](research/E7/E7.1_ENCARGO_DISENO.md), [decisión de diseño](research/E7/E7.1_DECISION_DISENO.md). E7.1a [calibración de instrumento](research/E7/E7.1a_PROTOCOLO_FUERZAS.md), E7.1a aprobada y [archivada](research/E7/E7.1a_RESULTADO.md); E7.1b [prerregistro](research/E7/E7.1b_PROTOCOLO_HISTORIA_CARGAS.md), [negativa válida](research/E7/E7.1b_RESULTADO.md), 15 escenas/105 ventanas, 0/4 pares, replay exacto. E7 abierta; se suspende esta línea. No nuevas sombras por inercia. Preservar positivos acotados y negativos H19/H21–23/H36/H41/P0-B/P1-A. Contrastar semillas reservadas, configuraciones, plantillas y nulos pertinentes; medir diversidad, estabilidad, persistencia y función. No repetir montículos por inercia. Criterio: función generativa distinguible de explicación trivial o conclusión negativa/inconclusa documentada. Auditar controles, sesgos, incertidumbre y costo.
 
 ## E8 — Escala y contratos de interacción
 Condicionada al valor de E7. Medir CPU/RSS/almacenamiento frente a resolución, número de cuerpos y horizonte; validar consultas parciales no mutantes, intervenciones físicas equivalentes de clientes distintos, corrupción y restart. No crear habitantes ni GUI final. Aceptación: frontera de viabilidad, contrato versionado reproducible y límites. Auditoría final.
 
 Cada unidad exige criterio previo, evidencia verificada y actualización final de STATE.json. Métodos reversibles pueden ajustarse con ADR; cambios sustantivos, motor definitivo, licencia, gasto pago o merge a Nilo requieren autorización.
+## P2–P7 — Dirección aprobada 2026-11-25
+[ADR-WL-0001](research/P2/ADR-WL-0001_DIRECCION_MULTIESCALA.md), [P2 consolidación](research/P2/P2_CONSOLIDACION.md). E7.1b [resultado negativo](research/E7/E7.1b_RESULTADO.md), evidencia completa archivada. E7 abierta, investigación específica de montículos suspendida; E8 pendiente. Los gates E0–E8 se conservan, pero E7 no bloquea adquisición de nuevas capacidades. E7/E8 se evalúan sobre el mundo enriquecido en P7.
+
+| Fase | Entregable y gate |
+|---|---|
+| P2 — Consolidación (completa documentalmente) | Reutilización y contrato mínimo, negativos archivados, GO P3.1 |
+| P3 — Hidrología | P3.1 flujo superficial e inventario agua/frontera/continuidad; P3.2 ruta compatible de sedimento conservativo; P3.3 relieve→agua→relieve→agua, lluvia variable, balances, controles y restart. No aprobar si solo hay incisión sin destino material. |
+| P4 — Energía/ciclos | Energía entrante y saliente, enfriamiento y evaporación con destino explícito del agua y calor latente; ciclo probado, no temperatura acumulada ilimitadamente. |
+| P5 — Materiales y escalas | Conjunto mínimo de propiedades/transformaciones justificadas, transferencia representacional conservativa cuando requerida y rechazo de pérdida topológica/causal. |
+| P6 — Mundo autónomo integrado | Evolución sostenida sobre estado común, controles, estabilidad y diversidad observada, restart, observación no mutante, costos; no afirmar evolución abierta si no se demuestra. |
+| P7 — E7/E8 | Evaluar organizaciones frente a controles/plantillas en mundo rico, medir frontera de viabilidad y contratos físicos de consulta/intervención. No habitantes/GUI/merge. |
+
+Cada fase fija presupuesto y criterios previos; si valor marginal bajo, cerrar limitado/negativo o replantear. Evitar completar fenómenos individuales por inercia. No motor nuevo sin comparar soluciones existentes.

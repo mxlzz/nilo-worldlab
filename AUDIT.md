@@ -131,3 +131,6 @@ CI 45596252199 SUCCESS, job 139142985179, commit b4b3e6fe7d5cfe86782ea03769b3e5a
 | 8128/2026112502 | .034469/.036028 | 7/5 | No |
 
 Ninguna historia supera redistribución .15 nominal ni distancias .075 a ambas plantillas; máximo distancia plantilla .061659, máximo redistribución endpoint .030265. Hay diferencias estructurales persistentes en 2/4, no función no trivial a la escala elegida. No afirmar ausencia de toda dependencia histórica ni ajustar umbrales. No probar otra variante de orden/forma por inercia. Script 166.721s; artefacto 15012774805 24728758 bytes, sha256 91c5da5b3883898da626dc9da35774bf4ce73d03f1b0b6f19f071a0775132231. Archivo duradero pendiente. E7.1 negativa; E7 general abierta, no cerrar por este ensayo; E8 pendiente. Autoverificación propia.
+
+# Reorientación P2
+Archivo E7.1b verificado, evidencia negativa retenida. Usuario autoriza plan y representación multiescala; no motor final ni conversión física general validada. P2 auditoría documental GO P3.1. Antecedentes H5/H6/H11c/H12b/H15/H16 y documentación de Landlab revisados; priorizar bucle agua/relieve/sedimento, evitar repetir pruebas y no integrar solvers sin necesidad. Autoverificación. P3 aún no ejecutada.

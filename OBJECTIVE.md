@@ -18,3 +18,5 @@ Fuente: inherited/WORLD_RESEARCH/BASES_Y_HOJA_DE_RUTA.md §§1–6. Se excluyen 
 - Frontera medible de viabilidad y decisión fundada de adoptar, adaptar, combinar, desarrollar o detener. No exigir motor definitivo ni conclusión positiva si la evidencia no lo permite.
 
 P0 prueba un laboratorio finito, no un mundo general, geofísica SI, evolución abierta ni producto. P1 examina una consecuencia ambiental causal y su posible acople conservativo. Objetivo y alcance solo cambian por autorización del usuario.
+## Orientación aprobada 2026-11-25
+Construir primero un mundo físico mínimo dinámicamente rico; investigar diversidad emergente sobre ese mundo, no exigirla como barrera previa. Representación híbrida multiescala, campos territoriales y regiones locales volumétricas/partículas/cuerpos con único inventario y conversiones conservativas sin pérdida causal; selección por necesidades físicas, independiente de observación. [Decisión y límites](research/P2/ADR-WL-0001_DIRECCION_MULTIESCALA.md). No arquitectura definitiva.

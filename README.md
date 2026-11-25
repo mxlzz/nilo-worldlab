@@ -10,3 +10,4 @@ Investigación de un mundo físico autónomo, generativo y persistente, independ
 **Repositorio operativo canónico: este repositorio, rama main.** La transición fue verificada. [Historia original](https://github.com/mxlzz/Nilo_public/tree/research/world-foundations-2026-11). El snapshot histórico se conserva en inherited/ con workflows inactivos. No repetir tareas por cambio de chat. Leer STATE.json antes de «Continuá».
 
 - [Manifiesto de snapshot](MIGRATION_MANIFEST.json), [artefactos](evidence/ARTIFACT_MANIFEST.json), [logs](evidence/LOG_MANIFEST.json) y [verificación de continuidad](evidence/MIGRATION_VERIFICATION.md).
+**Dirección vigente aprobada:** [mundo físico mínimo dinámicamente rico y representación multiescala](research/P2/ADR-WL-0001_DIRECCION_MULTIESCALA.md), P2–P7 en PLAN. E7.1 negativa archivada; E7 abierta, E8 pendiente.

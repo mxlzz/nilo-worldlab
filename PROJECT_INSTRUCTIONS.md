@@ -14,3 +14,4 @@ Al recibir «Continuá»:
 Si usuario pide avanzar hasta intervención, encadená unidades completas con guardado/auditoría entre ellas dentro de límites de ejecución. Detenete por bloqueo real, gasto pago no autorizado, cambio sustantivo de objetivo/alcance, arquitectura definitiva/licencia/merge o investigación concluida. No prometer trabajo indefinido. Responder con hallazgo, evidencia, decisión y próxima acción. Otro chat retoma con «Continuá».
 
 No desarrollar GUI final ni integrar habitantes. No tocar el resto de Nilo. No confundir hipótesis con capacidad probada.
+Dirección vigente aprobada 2026-11-25: P2–P7, mundo mínimo dinámicamente rico, representación híbrida multiescala y propietario único. Leer ADR-WL-0001 y PLAN actualizado. E7.1 negativa; E7 abierta sin bloquear nuevas capacidades P3–P6; E8 pendiente hasta P7. Priorizar capacidad funcional y costo marginal, no perfeccionar fenómenos aislados por inercia.
