@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
+  "status": "ready",
   "stage": "P1-C",
-  "current_task": "P1-C.2a",
-  "next_action": "Leer CI 45516933103; conservar y auditar resultado del único reintento instrumental. No relanzar C.2a si falla sin nueva decisión metodológica; C.2b solo si aprueba y se archivan outputs/checkpoints/logs.",
-  "scientific_next": "P1-C.2a",
+  "current_task": "P1-C.2b",
+  "next_action": "Implementar consumidor C.2b conforme C.1: solo código/raw/checkpoints, reconstrucción sin pasos previos, soil10-18 y 2160 pasos Bullet, 18 térmicos; controles corrupción, comparación posterior separada. No entregar archivo productor al consumidor.",
+  "scientific_next": "P1-C.2b",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -15,7 +15,7 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2a_instrument_retry_pending"
+    "P1_C": "C2a_passed_verified_archive"
   },
   "blockers": [],
   "evidence_refs": [
@@ -33,13 +33,15 @@
     "evidence/P1-B/B2c/archive_manifest.json",
     "research/P1-C/P1-C.1_PROTOCOLO_CONTINUIDAD.md",
     "research/P1-C/P1-C.2a_FALLO_INSTRUMENTAL.md",
-    "evidence/P1-C/C2a-failed/archive_manifest.json"
+    "evidence/P1-C/C2a-failed/archive_manifest.json",
+    "research/P1-C/P1-C.2a_RESULTADO.md",
+    "evidence/P1-C/C2a/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "9602e498ba8c01af456e6ac719b5976e33498078",
+  "last_confirmed_non_state_write": "a2fc77b94c27129ece275fff97c0c4662056e516",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -62,12 +64,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24",
-  "active_run": {
-    "id": 45516933103,
-    "unit": "P1-C.2a",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45516933103",
-    "sha": "9602e498ba8c01af456e6ac719b5976e33498078",
-    "attempt": 2
-  }
+  "updated_at": "2026-11-24"
 }
