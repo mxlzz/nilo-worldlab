@@ -1,0 +1,25 @@
+{
+  "controls": {
+    "E": true,
+    "capacity": true,
+    "clock": true,
+    "duplicate": true,
+    "file": true,
+    "negative_class": true,
+    "q": true
+  },
+  "final": {
+    "owner_sha": "218718b503e565e31f7aed1caa94c0ad59946a7b6dcbb713666b5ec0f0f3d3ee",
+    "sha256": "97944515483dc8a3ca4335d23bf15d86b171d18acef7cd230d29982e386f96a0"
+  },
+  "first_step": 121,
+  "input_owner_sha": "7a390a53b53ba6ed924692013c8559ce34b87c2b1db3f1511c8fdcbc1e226f23",
+  "outputs": {
+    "final.nc": "97944515483dc8a3ca4335d23bf15d86b171d18acef7cd230d29982e386f96a0",
+    "series.npz": "a6ff7c13f10a5ba49e7fcb0bb9f5e6f2baa197cdfbb5529cb752e41c5032f6e2",
+    "source_archive_manifest.json": "e15758cb3f4b980791e3c2eabd816c8ddcc2d23ff8c0d5ef4ada7fe437f95769",
+    "source_manifest.json": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f",
+    "upstream_license.md": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0"
+  },
+  "steps": 120
+}
