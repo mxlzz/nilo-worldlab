@@ -29,7 +29,7 @@ Cada unidad exige criterio previo, evidencia verificada y actualización final d
 | Fase | Entregable y gate |
 |---|---|
 | P2 — Consolidación (completa documentalmente) | Reutilización y contrato mínimo, negativos archivados, GO P3.1 |
-| P3 — Hidrología | P3.1 [aprobada y archivada](research/P3/P3.1_RESULTADO.md): flujo superficial e inventario agua/frontera/continuidad; P3.2 ruta compatible de sedimento conservativo; P3.3 relieve→agua→relieve→agua, lluvia variable, balances, controles y restart. No aprobar si solo hay incisión sin destino material. |
+| P3 — Hidrología | P3.1 [aprobada y archivada](research/P3/P3.1_RESULTADO.md): flujo superficial e inventario agua/frontera/continuidad; P3.2a [compatibilidad Exner aprobada](research/P3/P3.2a_RESULTADO.md); P3.2b [remapeo agua porosa](research/P3/P3.2b_PROTOCOLO_AGUA_POROSA.md); P3.3 relieve→agua→relieve→agua, lluvia variable, balances, controles y restart. No aprobar si solo hay incisión sin destino material. |
 | P4 — Energía/ciclos | Energía entrante y saliente, enfriamiento y evaporación con destino explícito del agua y calor latente; ciclo probado, no temperatura acumulada ilimitadamente. |
 | P5 — Materiales y escalas | Conjunto mínimo de propiedades/transformaciones justificadas, transferencia representacional conservativa cuando requerida y rechazo de pérdida topológica/causal. |
 | P6 — Mundo autónomo integrado | Evolución sostenida sobre estado común, controles, estabilidad y diversidad observada, restart, observación no mutante, costos; no afirmar evolución abierta si no se demuestra. |

@@ -111,3 +111,5 @@
 - P3.2a implementación y CI: recuperación hash exacto de 10 módulos y licencia, sin instalar fork; Exner nativo, controles flat/dry/export/depleted/replay, 3 propuestas desde hidrodinámica viva de terreno congelado, balances y stock finito; 5min.
 
 - P3.2a CI 45615897598 SUCCESS: 9 escenarios (6 fixtures/replay y 3 live), gates vacíos, residual sólido max1.066e-15m³, depleted rechazado, export prescrito .00002m³, natural0. Live 120 pasos, RBD compatible. Archivo pendiente.
+
+- P3.2a archivo 45619205788 SUCCESS; 12 outputs SHA/CRC y JSON/log verificados, blob/tamaño releído, gate aprobado limitado. P3.2b prerregistro de remapeo sólido/agua porosa con liberación local, capacidad dinámica y guard GA equivalente; no nueva física ni ajuste de gates.
