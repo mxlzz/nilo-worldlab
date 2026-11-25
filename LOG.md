@@ -171,3 +171,7 @@ Revisión focal de arquitecturas sobre P6.1-R pendiente; historial 42 alternativ
 
 # ARCH-02A — Prerregistro de smoke HAIL
 Delft3D acceso restringido/compilación no acotada; HAIL restart integral no identificado. Ensayo oficial hidrológico pin exacto, dos ejecuciones, costo 10 min. No ARCH-03 aún. [Protocolo](research/ARCH/ARCH-02A_PROTOCOLO_HAIL.md).
+
+
+# P6.1-R — Reconciliación de CI omitida
+CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos horizontes y dos restart exactos, gates vacíos. Pendiente archivo durable con workflow dedicado. No repetir P6.1-R ni cerrar hasta cotejo. ARCH-02A smoke run45662003426 activo.

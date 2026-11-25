@@ -263,3 +263,6 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 
 
 - ARCH-02A: prerregistro técnico, HAIL ejemplo hidrológico sin atribuir morfodinámica, restart pendiente, Delft3D bloqueo de entorno. Autoverificación.
+
+
+- Reconciliación P6.1-R: detectado estado desactualizado; log y JSON leídos, no inferir archivo durable. Autoverificación, no auditor separado. Preservar negativo P6.1 y ARCH-02A en curso.

@@ -1,0 +1,31 @@
+name: WorldLab archive recovered P6.1-R
+on:
+  push:
+    paths:
+      - '.github/workflows/worldlab-archive-p61r.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve and verify artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/P6/P61R
+          gh api repos/"$GITHUB_REPOSITORY"/actions/artifacts/15031613248/zip > evidence/P6/P61R/p6-horizon-r.zip
+          echo "a1309b755e908093755f3f29bbc83a5ab9820f741195c1eb2f88c6efa8e3adf9  evidence/P6/P61R/p6-horizon-r.zip" | sha256sum -c
+          python experiments/ARCH/archive_p61r.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence/P6/P61R/p6-horizon-r.zip evidence/P6/P61R/archive_manifest.json
+          git commit -m "evidence: retain verified P6.1-R archive"
+          git pull --rebase origin main
+          git push origin HEAD:main
