@@ -77,3 +77,5 @@
 - P1-D.1 CI 45541091512 SUCCESS, 28 contrastes, 4 casos, 7 frozen. Déficit final activo 3.3356/2.7597 K máximo, 921/847 celdas conectadas, controles B2c y balance superados. Script 1.864s, archivo pendiente. Sin inferencia E7 ni retroacción bidireccional.
 
 - P1-D.1 archivo CI 45541914771 SUCCESS, ZIP/log/JSON digest y blobs verificados. P1-D.2 dictamen: P1 cerrada como consecuencia ambiental causal finita; no retroacción bidireccional ni E7 general. GO diseño E7.1 prospectivo discriminante, no repetición de montículos por inercia, no E8. Encargo y límites registrados.
+
+- E7.1 diseño: NO-GO nuevas sombras; GO historia de suministro con idénticos puntos y distribución de reacción basal como función distinta. Antecedentes Vanel/Atman; reutilizar Bullet/H35 y terreno retenido. E7.1a calibrar fuerza completa y CDF antes de formación prospectiva; E7.1b aún no prerregistrada ni ejecutada.
