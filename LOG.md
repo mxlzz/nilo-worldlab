@@ -141,3 +141,5 @@
 - P4.1 CI45627361465 FAILURE instrumental antes de física, fixture/5 controles pasan, ini.tail/head colisionan con métodos xarray. Corrección acceso por nombre preregistrada; archivo pendiente.
 
 - P4.1 archivo primer fallo45627669512 SUCCESS, fixture/JSON/log/ZIP cotejados y tamaños releídos. Retry solo acceso variables tail/head por índice.
+
+- P4.1 retry45627810769 SUCCESS, 4×240 pasos, 5 controles, energía residual max1.1683e-5J, pulso calentamiento/enfriamiento, uniformidad1.71e-13K, 12 snapshots exactos, P3 retenida inmutada. Archivo pendiente.

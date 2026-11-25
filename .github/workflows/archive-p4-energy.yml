@@ -1,0 +1,50 @@
+name: WorldLab archive P4.1 sensible energy validation
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p4-energy.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P4/P41
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15029581633/zip > "$d/15029581633.zip"
+          echo '4dc457f9f04458353b560e651cd2e2cce7535ffec0a10e0d2eb9e9c812322d01  '"$d/15029581633.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139252586408/logs > "$d/job-139252586408.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P4/P41")
+          with zipfile.ZipFile(d/"15029581633.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert not a["failed_preregistered_gates"] and a["source_unchanged"] and len(a["cases"])==4
+              assert all(v["steps"]==240 for v in a["cases"].values())
+              assert len(a["fixture"]["controls"])==5 and all(a["fixture"]["controls"].values())
+              assert len(a["outputs"])==17 and {n for n in z.namelist() if not n.endswith("/")}==set(a["outputs"])|{"result.json"}
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              old=json.loads(pathlib.Path("evidence/P4/P41-failed/result.json").read_text())
+              assert a["fixture"]==old["fixture"] and a["outputs"]["fixture.npz"]==old["outputs"]["fixture.npz"]
+              (d/"result.json").write_bytes(b)
+          log=(d/"job-139252586408.log").read_text()
+          assert [json.loads(l.split("WORLD_ENERGY_JSON ",1)[1]) for l in log.splitlines() if "WORLD_ENERGY_JSON {" in l]==[a]
+          m={"run":45627810769,"job":139252586408,"artifact":15029581633,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P4.1 sensible energy and heating cooling evidence'
+          git pull --rebase origin main
+          git push origin HEAD:main
