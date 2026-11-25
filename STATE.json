@@ -4,9 +4,9 @@
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "ready",
   "stage": "P6",
-  "current_task": "P6.1-R",
-  "next_action": "Implementar P6.1-R con limitador y mismos gates, reinicio de periodic 1200 y relaxation 1920, validar archivo y decidir P6.2.",
-  "scientific_next": "P6.1-R",
+  "current_task": "ARCH-02",
+  "next_action": "Verificar viabilidad headless Delft3D FM/DIMR y HAIL-CAESAR con pin, receta, licencia, ejemplo y estado expuesto; prerregistrar antes de ejecutar. P6.1-R retenida.",
+  "scientific_next": "ARCH-02",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -22,7 +22,8 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "P61L_isolated_pass_R_preregistered"
+    "P6": "P61L_isolated_pass_R_preregistered",
+    "ARCH": "ARCH01_documentary_complete_ARCH02_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -120,13 +121,14 @@
     "research/P6/P6.1L_PROTOCOLO_LIMITADOR.md",
     "research/P6/P6.1L_RESULTADO.md",
     "evidence/P6/P61L/archive_manifest.json",
-    "research/P6/P6.1R_PROTOCOLO_HORIZONTE.md"
+    "research/P6/P6.1R_PROTOCOLO_HORIZONTE.md",
+    "research/ARCH/ARCH-01_EVALUACION_DOCUMENTAL.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "dbfeb2cbc73868d07571a94367b0f678181fa943",
+  "last_confirmed_non_state_write": "66328db2b6d362bbd1512f72897ba82c694c8b5d",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
