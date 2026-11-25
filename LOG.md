@@ -31,3 +31,5 @@
 - C.2a implementado productor continuo: worker por demanda con gates B.2a, owner P1C-v1, irradiación acumulada, controles observador/flujo/pose y checkpoint epoch3. Solo referencia posterior a evolución, no modificar inherited. Lanzamiento CI 15 min; aún sin resultado.
 
 - C.2a intento 45516385783 FAILURE: conteo incorrecto 12 vs 11 campos, confirmado en 4 casos. Archivar antes de único reintento. No gates físicos modificados.
+
+- C.2a fallo archivado CI 45516870053 SUCCESS, ZIP/log/JSON y manifest verificados; corregido trigger de archivo sin repetir física. Revisión de comparador: reemplazo de conteo erróneo por conjunto exacto de 33 nombres para tres pasos, mantiene comparación numérica y topológica. Único reintento instrumental C.2a, sin cambiar parámetros ni criterios físicos.

@@ -145,7 +145,9 @@ def compare_flux(arrays,ref,epoch):
         else:
             REQ(np.allclose(v,expect,rtol=1e-13,atol=1e-7),"flow numeric "+key)
             result[key]=float(np.max(np.abs(v-expect)))
-    REQ(len(arrays)==3*12,"three native steps")
+    names=("before","after","erosion","deposition","influx","outflux","bedrock","receiver","order","active","core")
+    expected={f"s{j}_{name}" for j in range(3*epoch-2,3*epoch+1) for name in names}
+    REQ(set(arrays)==expected,"three native steps: exact field set")
     return {"max_abs":max(result.values(),default=0.),"fields":len(arrays)}
 def save(folder,owner,state,recipe,history,raw,seed,k,mode):
     stage=folder.with_name(folder.name+".staging");stage.mkdir()
