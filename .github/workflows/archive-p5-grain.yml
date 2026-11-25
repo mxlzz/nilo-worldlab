@@ -1,0 +1,51 @@
+name: WorldLab archive P5.1 fractional sediment validation
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p5-grain.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P5/P51
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15029763884/zip > "$d/15029763884.zip"
+          echo '6a4a8f968d3784441245bd29a2b8c323cb6d3b46b55d20110314efe0a71c4cfb  '"$d/15029763884.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139259129691/logs > "$d/job-139259129691.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P5/P51")
+          with zipfile.ZipFile(d/"15029763884.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert not a["failed_preregistered_gates"] and len(a["cases"])==9
+              assert set(a["comparisons"])=={"40","80","120"} and all(v["class_residual_m3"]<=1e-9 and v["exner_local_m3"]<=1e-10 for v in a["cases"].values())
+              assert len(a["fixture"]["controls"])==6 and all(a["fixture"]["controls"].values())
+              assert len(a["outputs"])==12 and {n for n in z.namelist() if not n.endswith("/")}==set(a["outputs"])|{"result.json"}
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              assert sum(v["uniform_selection_diff"]>1e-8 for v in a["comparisons"].values())>=2
+              assert sum(v["heterogeneous_mirror_qb_diff"]>1e-8 for v in a["comparisons"].values())>=2
+              assert z.read("source_archive_manifest.json")==pathlib.Path("evidence/P3/RBD_SOURCE/archive_manifest.json").read_bytes()
+              (d/"result.json").write_bytes(b)
+          log=(d/"job-139259129691.log").read_text()
+          assert [json.loads(l.split("WORLD_GRAIN_JSON ",1)[1]) for l in log.splitlines() if "WORLD_GRAIN_JSON {" in l]==[a]
+          m={"run":45629664885,"job":139259129691,"artifact":15029763884,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P5.1 native fractional sediment evidence'
+          git pull --rebase origin main
+          git push origin HEAD:main
