@@ -1,0 +1,45 @@
+name: WorldLab P5.1 native fractional sediment
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-p5-grain.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+jobs:
+  grains:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/p5_grain.py
+            /evidence/P4/P42/15030052011.zip
+            /experiments/p3_reciprocal.py
+            /experiments/p3_water.py
+            /experiments/p3_pore.py
+            /experiments/p3_exner.py
+            /research/P3/RBD_SOURCE_MANIFEST.json
+            /evidence/P3/RBD_SOURCE/source.zip
+            /evidence/P3/RBD_SOURCE/archive_manifest.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.5.5 scipy==1.18.1 xarray==2026.9.0 landlab==2.11.0
+          python -m pip freeze
+          lscpu
+          python experiments/p5_grain.py p5-grain
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p5-grain
+          path: p5-grain
+          retention-days: 30
