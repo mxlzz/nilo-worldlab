@@ -29,3 +29,5 @@
 - Archivo B.2c CI 45516061554 SUCCESS, ZIP/log/JSON/manifest verificados, los 44 outputs cotejados por digest y blobs/tamaños releídos en 62ca60d5. P1-B cerrada limitada. P1-C.1 prerregistrada; C.2a siguiente unidad.
 
 - C.2a implementado productor continuo: worker por demanda con gates B.2a, owner P1C-v1, irradiación acumulada, controles observador/flujo/pose y checkpoint epoch3. Solo referencia posterior a evolución, no modificar inherited. Lanzamiento CI 15 min; aún sin resultado.
+
+- C.2a intento 45516385783 FAILURE: conteo incorrecto 12 vs 11 campos, confirmado en 4 casos. Archivar antes de único reintento. No gates físicos modificados.

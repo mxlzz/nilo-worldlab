@@ -1,0 +1,47 @@
+name: WorldLab archive P1-C.2a failed instrument evidence
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-archive-p1c2a-failed.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Archive exact artifact and job logs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-C/C2a-failed
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14977782549/zip > "$d/14977782549.zip"
+          echo '3c964d5c0e344804450b7485ee774221433390dd8506a0080c57d879a1b200bf  '"$d/14977782549.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138876785621/logs > "$d/job-138876785621.log"
+          python - <<'PY'
+          import hashlib, json, pathlib, zipfile
+          d=pathlib.Path("evidence/P1-C/C2a-failed")
+          r=json.loads((d/"result.json").read_text())
+          z=d/"14977782549.zip"
+          with zipfile.ZipFile(z) as f:
+              assert f.testzip() is None
+              for name, digest in r["outputs"].items():
+                  assert hashlib.sha256(f.read(name)).hexdigest()==digest, name
+              assert json.loads(f.read("result.json"))==r
+          log=d/"job-138876785621.log"
+          assert "WORLD_EVAL_JSON " in log.read_text()
+          m={"run":45516385783,"job":138876785621,"artifact":14977782549,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in [z,log,d/"result.json"]}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P1-C.2a failed instrument verified flux artifact and logs'
+          git pull --rebase origin main
+          git push origin HEAD:main
