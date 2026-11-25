@@ -61,3 +61,5 @@
 - Usuario aprueba separar persistencia exacta en entorno especificado y portabilidad numérica. Prerregistro S1/S2: misma referencia, mismo consumidor, CPU Intel equivalente; S2 evaluación retrospectiva explícita de AMD, límites físicos predefinidos, sin generalización. No aprobar C.2b original retrospectivamente.
 
 - S1/S2 lanzados: consumidor y comparador originales intactos, guard CPU Intel, portabilidad retrospectiva solo después del comparador exacto, controles 1J, L1 sin cancelación. Sin repetir productor ni modificar leyes.
+
+- S1 CI 45531989960 inconclusa: Intel 8573C distinto, guard sin física; S2 omitida. Log y jobs archivados. Prerregistro S1-H: referencia nueva y procesos separados mismo host, sin selección CPU; gates intactos, comparación posterior, S2 histórica. No repetir asignaciones aleatorias.

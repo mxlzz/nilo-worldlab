@@ -1,0 +1,5 @@
+# S1/S2 — ejecución inconclusa por asignación
+ 
+CI 45531989960, commit b215075b8693c5bc01fd58d318ce5e4424f41f1a. Consumer job 138929304996 GenuineIntel Xeon Platinum 8573C, no 6975P-C. Guard detuvo antes de checkout/instalación; comparador y S2 omitidos. No artefactos, no cálculos ni resultado científico nuevo. Log íntegro recuperado por API y job metadata archivados. S1 original inconclusa, S2 no ejecutada, C.2b original negativa. No repetir selección aleatoria.
+ 
+Alternativa operativa dentro del alcance ya aprobado: referencia continua nueva y consumidor en procesos separados del mismo runner, publicación remota y eliminación local de futuro antes de consumidor, comparación en job posterior. No seleccionar CPU a priori; ejecutar todos gates C.2a sin cambiar referencias, si falla detener. Nueva unidad S1-H, no reetiquetar S1. Mayor costo (regenerar referencia) justificado por bloqueo de asignación y prueba de persistencia en un entorno único. No extrapolar portabilidad; S2 seguirá comparando los archivos históricos Intel→AMD. Autoverificación.
