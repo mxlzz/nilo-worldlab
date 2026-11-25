@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "experiment_pending",
-  "stage": "P1-C",
-  "current_task": "P1-C.2b-S1-H",
-  "next_action": "Leer CI 45539671147: verificar productor nuevo todos gates C2a, CPU/env, empaquetado y retiro de futuro, consumidor mismo host en proceso separado, 12 sufijos exactos y corrupciones, S2 histórica. Archivar cinco artefactos o parciales y logs; no reiterar selección CPU ni modificar gates. Si pasa habilitar P1-D con alcance same-host y portabilidad retrospectiva; si falla dictaminar y detener/replantear.",
-  "scientific_next": "P1-C.2b-S1-H",
+  "status": "ready",
+  "stage": "P1-D",
+  "current_task": "P1-D",
+  "next_action": "P1-D: auditar función, robustez, viabilidad y límites contra P1 plan; cuantificar contraste bare por época con referencia archivada y presupuesto explícito si necesario; no nueva mecánica, no cerrar E7 automáticamente. Dictamen de dirección posterior.",
+  "scientific_next": "P1-D",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -15,11 +15,9 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2b_original_failed_S1_inconclusive_S1H_S2_pending"
+    "P1_C": "passed_same_host_exact_and_retrospective_portability_limited_original_C2b_negative"
   },
-  "blockers": [
-    "S1 original inconclusa por CPU distinta; S1-H exactitud y S2 retrospectiva pendientes."
-  ],
+  "blockers": [],
   "evidence_refs": [
     "evidence/P1-A-R_READBACK.md",
     "evidence/P1-A-R_LOG_RESULT.json",
@@ -50,13 +48,15 @@
     "research/P1-C/P1-C.2b_S_PROTOCOLO.md",
     "evidence/P1-C/S1-unavailable/job-138929304996.log",
     "research/P1-C/P1-C.2b_S_RESULTADO_INCONCLUSO.md",
-    "research/P1-C/P1-C.2b_S1H_PROTOCOLO.md"
+    "research/P1-C/P1-C.2b_S1H_PROTOCOLO.md",
+    "research/P1-C/P1-C.2b_S1H_S2_RESULTADO.md",
+    "evidence/P1-C/S1H/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "714ff70d7e96b831ddf1e8899c6318a8daae92ad",
+  "last_confirmed_non_state_write": "3a8a76530c41cd65463de26ae08a1130c14c51f4",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -79,11 +79,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24",
-  "active_run": {
-    "id": 45539671147,
-    "unit": "P1-C.2b-S1-H",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45539671147",
-    "sha": "714ff70d7e96b831ddf1e8899c6318a8daae92ad"
-  }
+  "updated_at": "2026-11-25"
 }
