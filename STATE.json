@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "diagnostic_pending",
+  "status": "decision_required",
   "stage": "P1-C",
   "current_task": "P1-C.2b-D2-AMD",
-  "next_action": "Leer CI 45521624938. Una sola asignación autorizada; si no AMD archivar CPU/log y detener. Si AMD, verificar D2 intacto y hashes contra Intel y sufijo AMD original; archivar antes de prerregistrar único C.2b-R desde t0 si cumple. No P1-D ni gasto pago.",
+  "next_action": "Disponer de AMD x86_64 Linux verificable con perfil D2 intacto o solicitar decisión explícita de alcance (exactitud en hardware/perfil especificado y portabilidad numérica separada, o cierre parcial). No repetir asignaciones aleatorias, no gasto pago, no cambiar gates ni borrar negativos.",
   "scientific_next": "P1-C.2b-D2-AMD",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -15,10 +15,11 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2b_failed_D2_AMD_authorized_pending"
+    "P1_C": "C2b_failed_exact_D2_AMD_unavailable"
   },
   "blockers": [
-    "P1-C.2b exactitud térmica entre Intel/AMD pendiente de D2-AMD."
+    "AMD dirigido no disponible: única asignación autorizada CI 45521624938 fue Intel, sin diagnóstico científico.",
+    "C.2b exactitud térmica interhost no satisfecha; C.2b-R y P1-D bloqueadas."
   ],
   "evidence_refs": [
     "evidence/P1-A-R_READBACK.md",
@@ -44,13 +45,15 @@
     "evidence/P1-C/C2b/archive_manifest.json",
     "research/P1-C/P1-C.2b_D2_RESULTADO.md",
     "evidence/P1-C/D2/archive_manifest.json",
-    "research/P1-C/P1-C.2b_D2_AMD_AUTORIZACION.md"
+    "research/P1-C/P1-C.2b_D2_AMD_AUTORIZACION.md",
+    "research/P1-C/P1-C.2b_D2_AMD_RESULTADO.md",
+    "evidence/P1-C/D2-AMD/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "e2d6b8e0b3bdbc130c46834775ebbc2591df8a43",
+  "last_confirmed_non_state_write": "db76a664a98883d5ccc1fd077c2e179cb016f407",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -73,11 +76,5 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24",
-  "active_run": {
-    "id": 45521624938,
-    "unit": "P1-C.2b-D2-AMD",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45521624938",
-    "sha": "e2d6b8e0b3bdbc130c46834775ebbc2591df8a43"
-  }
+  "updated_at": "2026-11-24"
 }
