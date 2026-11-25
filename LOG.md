@@ -149,3 +149,5 @@
 - P4.2 código/CI: 3×240 pasos vivos, reutiliza Model.flow/remap/GA/transfer y RBD pin, E única, vapor/latente/sensible exportados, fixture, bifurcaciones temperatura y agua, restart separado. 5min.
 
 - 2026-11-25 P4.2 CI 45628538282 aprobada, archivo 45628925042 verificado; P4 completa limitada, GO P5. Vapor 0,104136 kg, latente 255133 J, fork causal y restart120 exactos. Atmósfera externa, no ciclo cerrado. [Dictamen](research/P4/P4_DICTAMEN.md).
+
+- P5.1 prerregistro: RBD Wilcock–Crowe fraccional, conservación de clase y contraste proporcional, 9 propuestas sobre P4.2 retenida; no estratigrafía ni acople vivo aún. Comparadas alternativas y H5/H6/H16.
