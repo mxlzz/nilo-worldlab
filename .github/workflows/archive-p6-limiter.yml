@@ -1,0 +1,49 @@
+name: WorldLab archive P6.1-L limiter diagnostic
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p6-limiter.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P6/P61L
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15030583093/zip > "$d/15030583093.zip"
+          echo '6c9684dba38e1f995c78dbbd6cd49c6f5c79b2af200662077f8f6d8a2d3fd26b  '"$d/15030583093.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139271158088/logs > "$d/job-139271158088.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P6/P61L")
+          with zipfile.ZipFile(d/"15030583093.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert a["failed_gates"]==[]
+              assert len(a["cases"])==3 and all(c["repeat_exact"] for c in a["cases"].values())
+              assert a["cases"]["periodic_240"]["native_identity"] and a["cases"]["periodic_2400"]["native_identity"]
+              assert a["cases"]["relaxation_2078"]["limited_nodes"]==[17]
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              assert set(z.namelist())==set(a["outputs"])|{"result.json"}
+              (d/"result.json").write_bytes(b)
+          log=(d/"job-139271158088.log").read_text()
+          assert [json.loads(l.split("WORLD_LIMITER_JSON ",1)[1]) for l in log.splitlines() if "WORLD_LIMITER_JSON {" in l]==[a]
+          m={"run":45633071167,"job":139271158088,"artifact":15030583093,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P6.1-L isolated limiter results'
+          git pull --rebase origin main
+          git push origin HEAD:main
