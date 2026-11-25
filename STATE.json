@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P1-C",
   "current_task": "P1-C.2b",
-  "next_action": "Implementar consumidor C.2b conforme C.1: solo código/raw/checkpoints, reconstrucción sin pasos previos, soil10-18 y 2160 pasos Bullet, 18 térmicos; controles corrupción, comparación posterior separada. No entregar archivo productor al consumidor.",
+  "next_action": "Leer consumer y comparador CI 45518264979; auditar aislamiento de inputs, 12 sufijos, controles y exactitud. Archivar ambos artefactos y logs, si aprueba cerrar P1-C y avanzar P1-D. Si falla diagnosticar sin alterar gates.",
   "scientific_next": "P1-C.2b",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -15,7 +15,7 @@
     "P1_A": "failed_instrument",
     "P1_A_R": "passed_ci_readback",
     "P1_B": "passed_limited_verified_archive",
-    "P1_C": "C2a_passed_verified_archive"
+    "P1_C": "C2b_ci_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -41,7 +41,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "a2fc77b94c27129ece275fff97c0c4662056e516",
+  "last_confirmed_non_state_write": "3f69867d02821b2f987a48d6f8b8882319dda08f",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -64,5 +64,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-24"
+  "updated_at": "2026-11-24",
+  "active_run": {
+    "id": 45518264979,
+    "unit": "P1-C.2b",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45518264979",
+    "sha": "3f69867d02821b2f987a48d6f8b8882319dda08f"
+  }
 }
