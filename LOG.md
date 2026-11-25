@@ -127,3 +127,5 @@
 - P3.3 implementación: 4 modos ×240 pasos, RBD y GA aislados por paso, hidráulica persistente, inventario único, bifurcación paso121, owner NC y consumidor mismo host, trazas completas de arrays. CI5min.
 
 - P3.3 CI45625952812 FAILURE antes de física: HTTP429 descarga upstream. Sin artefacto. Archivar log y recuperar fuente exacta MIT como evidencia ZIP por blob API, no vendor activo; retry solo cambio de origen de bytes verificados.
+
+- P3.3 fuente/fallo archivados CI45626242896 SUCCESS, ZIP38429bytes SHA256 b44242fead0857610603a75aec4148f3afa684f35307ca9005f9bc453a64720a; 11 miembros Git SHA1/tamaño y SHA256, log completo y blobs/tamaños verificados. Retry desde evidencia local exacta, no cambio de física.

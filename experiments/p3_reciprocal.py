@@ -3,7 +3,30 @@ import hashlib,json,pathlib,sys,time,resource,traceback
 import numpy as np
 import xarray as xr
 from landlab.components import OverlandFlow
-from p3_exner import grid,load_provider,req,DX,DT,PHI,FILM,RHO_S
+from p3_exner import grid,req,DX,DT,PHI,FILM,RHO_S
+import zipfile
+from importlib.metadata import version
+def load_provider(dest):
+    manifest_path=pathlib.Path("research/P3/RBD_SOURCE_MANIFEST.json")
+    archive=pathlib.Path("evidence/P3/RBD_SOURCE/source.zip")
+    m=json.loads(manifest_path.read_text());a=json.loads((archive.parent/"archive_manifest.json").read_text())
+    req(a["commit"]==m["commit"] and sha(manifest_path)==a["source_manifest_sha256"],"source manifest identity")
+    req(sha(archive)==a["source_zip_sha256"] and archive.stat().st_size==a["bytes"],"source archive identity")
+    root=pathlib.Path("rbd-upstream");pkg=root/"river_bed_dynamics";pkg.mkdir(parents=True)
+    with zipfile.ZipFile(archive) as z:
+        req(z.testzip() is None and set(z.namelist())==set(m["files"])==set(a["files"]),"source archive members")
+        for name,meta in m["files"].items():
+            b=z.read(name)
+            req(len(b)==meta["bytes"] and hashlib.sha1(("blob "+str(len(b))+"\0").encode()+b).hexdigest()==meta["git_blob_sha1"] and hashlib.sha256(b).hexdigest()==a["files"][name],"source member "+name)
+            target=root/"LICENSE.md" if name=="LICENSE.md" else pkg/pathlib.Path(name).name
+            target.write_bytes(b)
+    (dest/"upstream_license.md").write_bytes((root/"LICENSE.md").read_bytes())
+    (dest/"source_manifest.json").write_bytes(manifest_path.read_bytes())
+    (dest/"source_archive_manifest.json").write_bytes((archive.parent/"archive_manifest.json").read_bytes())
+    sys.path.insert(0,str(root.resolve()))
+    from river_bed_dynamics import RiverBedDynamics
+    req(version("landlab")=="2.11.0","landlab version")
+    return RiverBedDynamics
 from p3_pore import remap,ga,geometry,domain
 from p3_water import digest,sha
 A=DX*DX;STEPS=240;MID=120
