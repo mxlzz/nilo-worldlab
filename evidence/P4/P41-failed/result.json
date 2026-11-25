@@ -1,0 +1,33 @@
+{
+  "cases": {},
+  "experiment": "P4.1",
+  "failed_preregistered_gates": [
+    "forced:AttributeError(\"'function' object has no attribute 'values'\")",
+    "dark:AttributeError(\"'function' object has no attribute 'values'\")",
+    "transport_only:AttributeError(\"'function' object has no attribute 'values'\")",
+    "heterogeneous:AttributeError(\"'function' object has no attribute 'values'\")",
+    "incomplete cases"
+  ],
+  "fixture": {
+    "controls": {
+      "energy_capacity": true,
+      "external_inflow": true,
+      "inactive": true,
+      "nan": true,
+      "overdraw": true
+    },
+    "energy_delta_J": [
+      -12540000.0,
+      4180000.0,
+      0.0
+    ],
+    "export_J": 8360000.0
+  },
+  "outputs": {
+    "fixture.npz": "2da1ac4ad3af7e6ea7453e162e09ae9d1545c134c0e351b63a53d068f64f8055"
+  },
+  "peak_rss_kib": 207064,
+  "source_archive_sha256": "36814182ed6d793d1d0a40a0b2745601605e1171f08b45ace5a47df29bc2c16c",
+  "source_unchanged": true,
+  "wall_seconds": 0.03420358000002466
+}
