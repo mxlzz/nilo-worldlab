@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P1-D",
-  "current_task": "P1-D",
-  "next_action": "P1-D: auditar función, robustez, viabilidad y límites contra P1 plan; cuantificar contraste bare por época con referencia archivada y presupuesto explícito si necesario; no nueva mecánica, no cerrar E7 automáticamente. Dictamen de dirección posterior.",
-  "scientific_next": "P1-D",
+  "current_task": "P1-D.1",
+  "next_action": "Leer CI 45541091512; comprobar 28 contrastes bare y frozen, gates B2c, energía/masa y flujos, archivar JSON/logs/artefacto. Si pasa P1-D.2 dictamen integral función, robustez, límites, costo y próxima dirección. Si fallo de instrumento no ajustar criterio; distinguir fallo físico. E7 abierta E8 pendiente.",
+  "scientific_next": "P1-D.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open",
@@ -50,13 +50,14 @@
     "research/P1-C/P1-C.2b_S_RESULTADO_INCONCLUSO.md",
     "research/P1-C/P1-C.2b_S1H_PROTOCOLO.md",
     "research/P1-C/P1-C.2b_S1H_S2_RESULTADO.md",
-    "evidence/P1-C/S1H/archive_manifest.json"
+    "evidence/P1-C/S1H/archive_manifest.json",
+    "research/P1-D/P1-D.1_PROTOCOLO_AUDITORIA.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "3a8a76530c41cd65463de26ae08a1130c14c51f4",
+  "last_confirmed_non_state_write": "d4a952c23cf353566769d4d6abe3c70a500df8d0",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -79,5 +80,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25"
+  "updated_at": "2026-11-25",
+  "active_run": {
+    "id": 45541091512,
+    "unit": "P1-D.1",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45541091512",
+    "sha": "d4a952c23cf353566769d4d6abe3c70a500df8d0"
+  }
 }
