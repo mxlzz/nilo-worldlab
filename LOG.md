@@ -87,3 +87,5 @@
 - E7.1a archivo CI 45595753850 SUCCESS, ZIP/4 NPZ/log/JSON verificados; blobs y tamaños releídos en 4ca90002. Gate instrumento aprobado, GO cerrar prerregistro E7.1b.
 
 - E7.1b prerregistrada: 15 escenas, 4 pares prospectivos con puntos idénticos y orden distinto, 4 plantillas relajadas, 2 K0, replay; 7 épocas y criterios estructurales/funcionales fijos (>=3/4), límites de instrumento y negativos. Presupuesto15min gratuito. No datos de formación aún.
+
+- E7.1b implementación y CI: 15 escenas, propietarios/recetas/NPZ por época, replay exacto, CDF por ventana, pares predefinidos; resultado negativo científico separado de fallo instrumental. Perfil heredado, suelo archivado como condición exógena, sin nueva ley. Presupuesto15min.
