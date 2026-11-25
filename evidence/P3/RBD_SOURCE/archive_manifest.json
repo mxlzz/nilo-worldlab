@@ -1,0 +1,19 @@
+{
+  "bytes": 38429,
+  "commit": "ea89ef9463a644f698cb4a91f0c0acc43d115c4f",
+  "files": {
+    "LICENSE.md": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0",
+    "src/landlab/components/river_bed_dynamics/RiverBedDynamics.py": "6f03e7fbce52d7dfd37aa68cd019fd30273cf93ebd79e10d7fca8571249a4bfe",
+    "src/landlab/components/river_bed_dynamics/__init__.py": "435fd650fee151232526ad17361068084fef289014c01c6fa6562e65d3c984ab",
+    "src/landlab/components/river_bed_dynamics/_bedload_eq_MPM_style.py": "c88d20f212c99f393f343675e33f43fe0113a4ffc07b2613431322f902a9934a",
+    "src/landlab/components/river_bed_dynamics/_bedload_eq_Parker_1990.py": "870b5a0d14e9d2c19651701b704572ec9f42607a6ca52a1db367dd4173fc8f00",
+    "src/landlab/components/river_bed_dynamics/_bedload_eq_Wilcock_Crowe_2003.py": "c54ef5d18c03ecdb20635c740a4c371b2942499d45d6c7c8a9a6305323c19cc6",
+    "src/landlab/components/river_bed_dynamics/_initialize_fields.py": "35cf9795eac740bb177d700ec3a7484679e71e7a552eee9585d926136e2804a5",
+    "src/landlab/components/river_bed_dynamics/_initialize_gsd.py": "9fc6321ec8cb6fe7cd7bd32c62b3acb60c754c6d24853b2e61aba70305f0f016",
+    "src/landlab/components/river_bed_dynamics/_nodes_and_links_info.py": "2027dfc3f5c0d2b9b05d1d6943bc2be28aea471019f330a139cd7d6c13c713cf",
+    "src/landlab/components/river_bed_dynamics/_stratigraphy.py": "2ffc2fc152741863af2f960d22b31261aee11fca46742cd35ce7d516e5b43a35",
+    "src/landlab/components/river_bed_dynamics/_utilities.py": "3a0241c44b172714041b66c2b62d6b079227f75a9acac8ce928adefcedea1fb3"
+  },
+  "source_manifest_sha256": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f",
+  "source_zip_sha256": "b44242fead0857610603a75aec4148f3afa684f35307ca9005f9bc453a64720a"
+}
