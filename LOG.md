@@ -49,3 +49,5 @@
 - D2 implementado y lanzado: 2 jobs x 2 perfiles x 2 repeticiones en dos casos retenidos; un solo bloque térmico, sin dinámica nueva, perfil candidato Nehalem predefinido. Gate C.2b intacto.
 
 - D2 CI 45519386325 SUCCESS técnico pero inconcluso científico: dos Intel, no AMD; native reproduce referencia, Nehalem cambia hashes reproduciblemente sin cambiar transporte. Agotado presupuesto D2; no habilitar C.2b-R. Archivo pendiente; elevar decisión de alcance.
+
+- D2 archivo CI 45520590725 SUCCESS, ZIP/log/JSON y 16 outputs NC cotejados, blobs releídos en fff200ab. Dos runners Intel, sin AMD; API de runners no accesible desde conector, disponibilidad dirigida no confirmada. Detener en decisión D2: preservar exactitud y autorizar verificación AMD dirigida/acotada, o redefinir alcance explícitamente, o cerrar P1 parcial. No nuevo lanzamiento aleatorio ni P1-D.
