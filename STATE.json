@@ -5,7 +5,7 @@
   "status": "experiment_pending",
   "stage": "P3",
   "current_task": "P3.1",
-  "next_action": "Leer CI 45605745963 y WORLD_WATER_JSON/RESTART/COMPARE; verificar 5 casos, 960 pasos/caso, 480 sufijo, balances de borde independientes, capacidad, controles, observar posible fallo instrumental sin alterar gates. Archivar ZIP/logs y resultados antes de avanzar P3.2 (ruta conservativa sedimento con agua real).",
+  "next_action": "Leer CI 45606950182 y WORLD_WATER_JSON/RESTART/COMPARE; primer fallo instrumental archivado. Verificar gates originales y archivar antes de P3.2. Si fallo físico no cambiar parámetros; si fallo instrumental identificar y registrar antes de decidir. P3.2 candidato RiverBedDynamics (Monsalve et al. 2025 DOI 10.5194/gmd-18-3427-2025), comprobar código y compatibilidad Landlab 2.11/flujo/volumen/porosidad antes de adoptar.",
   "scientific_next": "P3.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -19,7 +19,7 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "water_open_boundary_pending"
+    "P3": "water_open_boundary_retry_mask_initialization"
   },
   "blockers": [],
   "evidence_refs": [
@@ -69,13 +69,15 @@
     "evidence/E7/E71b/archive_manifest.json",
     "research/P2/ADR-WL-0001_DIRECCION_MULTIESCALA.md",
     "research/P2/P2_CONSOLIDACION.md",
-    "research/P3/P3.1_PROTOCOLO_AGUA.md"
+    "research/P3/P3.1_PROTOCOLO_AGUA.md",
+    "research/P3/P3.1_INCIDENCIA_1.md",
+    "evidence/P3/P31-failed/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "2233d6b1ddef6ed795998bdb48f9724ff328775e",
+  "last_confirmed_non_state_write": "515e851b98d6a7d79bba3fa8369e3dae05124c38",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -100,9 +102,9 @@
   },
   "updated_at": "2026-11-25",
   "active_run": {
-    "id": 45605745963,
+    "id": 45606950182,
     "unit": "P3.1",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45605745963",
-    "sha": "2233d6b1ddef6ed795998bdb48f9724ff328775e"
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45606950182",
+    "sha": "515e851b98d6a7d79bba3fa8369e3dae05124c38"
   }
 }
