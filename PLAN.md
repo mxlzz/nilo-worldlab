@@ -36,3 +36,7 @@ Cada unidad exige criterio previo, evidencia verificada y actualización final d
 | P7 — E7/E8 | Evaluar organizaciones frente a controles/plantillas en mundo rico, medir frontera de viabilidad y contratos físicos de consulta/intervención. No habitantes/GUI/merge. |
 
 Cada fase fija presupuesto y criterios previos; si valor marginal bajo, cerrar limitado/negativo o replantear. Evitar completar fenómenos individuales por inercia. No motor nuevo sin comparar soluciones existentes.
+
+
+## ARCH — Evaluación de arquitectura autorizada 2026-11-25
+[ARCH-01 filtro y secuencia](research/ARCH/ARCH-01_EVALUACION_DOCUMENTAL.md). Pausa reversible de P6.1-R (prerregistro y evidencia intactos) para ARCH-02 viabilidad headless B/B2, ARCH-03 comparación experimental condicionada, ARCH-04 contrato BMI si aporta. A referencia; C/D2/B3 reservas justificadas. No sustituir motor ni licencia sin decisión explícita. Si no hay candidato viable, retornar a P6.1-R. No tocar gates anteriores.

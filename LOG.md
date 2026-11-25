@@ -163,3 +163,7 @@
 - P6.1-D CI45632353847 y archivo45632681102 aprobados diagnóstico, todas alternativas nativas rechazadas. Nodo17 sobreextracción, CFL no explica; floor no conserva. P6.1-L prerregistro adaptador conservativo de tiempo de drenaje, no cambiar proveedor ni gates.
 
 - P6.1-L CI45633071167 y archivo45633469223 aprobados. Limitador aislado deja húmedos bitwise y evita sobreextracción del nodo17, sin fuente agua ni cambio owner. GO P6.1-R prerregistro dos trayectorias y restart adicional cruzando activación.
+
+
+# ARCH-01 — Evaluación documental autorizada
+Revisión focal de arquitecturas sobre P6.1-R pendiente; historial 42 alternativas y H13A recuperados. Delft3D FM/DIMR y HAIL-CAESAR priorizados para gate técnico; BMI/PyMT como infraestructura, preCICE reserva. Sin ejecución física nueva, coste jobs 0. [Dictamen y secuencia](research/ARCH/ARCH-01_EVALUACION_DOCUMENTAL.md). P6.1-R preservada; siguiente ARCH-02.

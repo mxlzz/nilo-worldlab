@@ -257,3 +257,6 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - P6.1-D diagnóstico reproducido exacto y archivos verificados; dt/2,dt/4,steep_slopes negativos. P6.1 sigue negativa; nuevo ensayo aislado P6.1-L, no propietario mutado. [Resultado](research/P6/P6.1D_RESULTADO.md).
 
 - P6.1-L ZIP/hash/log verificados, 3 estados/fixtures pasan; no integración ni conservación de momento declaradas. [Resultado](research/P6/P6.1L_RESULTADO.md). P6.1-R prospectiva, mismos gates y restart adicional.
+
+
+- ARCH-01 autoverificación documental: objetivo y gates E/P intactos, A referencia, negativos H13A/P6.1 preservados; fuentes y límites explícitos; no inferir superioridad ni integración. GO ARCH-02 técnico acotado, no adoptar motor/licencia. Sin auditor independiente.
