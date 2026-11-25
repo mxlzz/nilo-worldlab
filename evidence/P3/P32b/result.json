@@ -1,0 +1,207 @@
+{
+  "analytic": {
+    "deposition_domain": {
+      "GA_domain_valid": false,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": -0.06499999999999997,
+      "released_water_m3": 0.1,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "exhaustion": {
+      "GA_domain_valid": false,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": -0.09999999999999998,
+      "released_water_m3": 0.2,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "saturated": {
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": 0.125,
+      "released_water_m3": 0.2,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "through": {
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 5.551115123125783e-17,
+      "min_F_equiv_m": 0.010000000000000009,
+      "released_water_m3": 0.10000000000000002,
+      "solid_out_m3": 0.06,
+      "solid_residual_m3": 4.440892098500626e-16,
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "zero": {
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": 0.05000000000000002,
+      "released_water_m3": 0.0,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    }
+  },
+  "controls": {
+    "GA_K0": true,
+    "deposition_domain_GA_rejected": true,
+    "exhaustion_GA_rejected": true,
+    "inactive": true,
+    "nan": true,
+    "overcapacity": true,
+    "overdraw": true,
+    "undeclared_inflow": true
+  },
+  "experiment": "P3.2b",
+  "failed_preregistered_gates": [],
+  "outputs": {
+    "deposition_domain.npz": "a8dc6e059314408ecc04059c129036ae530cb149fa8335944f36069a4662c495",
+    "dry.npz": "6560777cd9a2bab7a45555478179c34864a7c65e432605463903f3a5ec996642",
+    "exhaustion.npz": "eab5a3356fad55bca9d5be36a84e78301a539c853fe28bc93f9a1807e6b223f8",
+    "imposed_export.npz": "ebf1856374c38ee2533a17d732d0c8207143a8c775760550d1334d860e0255d3",
+    "live_120.npz": "13719f181bd9689baad4da4eeb773bf15cddd3c44acc01c9ba693be365ee1438",
+    "live_40.npz": "7f29f3a8942fa234473b739dca9ec1f5a2d9b64135bea0832cf83c66cebfada1",
+    "live_80.npz": "8bbe5dd362a8a562e506b783f5d4748f14740d060cfe8c6f7b40d07f9a04aa65",
+    "saturated.npz": "e226e157659065850c36de6c4608e00945aea0f562f697c57a909297b10589f8",
+    "through.npz": "a2e09771166d551b9801033e784a238bc0f5f4202e08dfd1a93b25a382c00d2c",
+    "zero.npz": "32dc35eb88f962eb78ea47c53512f29b3a47022d10f1a9b46140a4eb9947dcd9"
+  },
+  "peak_rss_kib": 207076,
+  "retained": {
+    "dry": {
+      "GA": {
+        "infiltration_m3": 0.0,
+        "max_local_water_residual_m3": 6.7013408668718e-18,
+        "max_native_transfer_error_m3": 0.0,
+        "water_residual_m3": 0.0
+      },
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": 0.010000000000000002,
+      "reference_comparison": {
+        "accepted_owner_max_error_m3": 0.0,
+        "candidate_core_max_error_m3": 0.0,
+        "halo_candidate_m3": 0.0,
+        "halo_flux_max_error_m3": 0.0,
+        "halo_sum_error_m3": 0.0,
+        "reference_export_error_m3": 0.0
+      },
+      "released_water_m3": 0.0,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_npz_sha256": "a7e6034a0ad7dc2363471769e65272c954e3ec2db0e824f5e2e42e2a16499567",
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "imposed_export": {
+      "GA": {
+        "infiltration_m3": 4.6933183919961596e-05,
+        "max_local_water_residual_m3": 0.0,
+        "max_native_transfer_error_m3": 1.3877787807814457e-17,
+        "water_residual_m3": 0.0
+      },
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": 0.009988076642549047,
+      "reference_comparison": {
+        "accepted_owner_max_error_m3": 5.551115123125783e-17,
+        "candidate_core_max_error_m3": 5.551115123125783e-17,
+        "halo_candidate_m3": 2e-05,
+        "halo_flux_max_error_m3": 0.0,
+        "halo_sum_error_m3": 0.0,
+        "reference_export_error_m3": 0.0
+      },
+      "released_water_m3": 0.0005377653742471536,
+      "solid_out_m3": 2e-05,
+      "solid_residual_m3": 0.0,
+      "source_npz_sha256": "bf2479ef94ba056d403c7c0a9b317b87c5f7931b84dc578e8157b04abf434e66",
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "live_120": {
+      "GA": {
+        "infiltration_m3": 4.5537351997554376e-05,
+        "max_local_water_residual_m3": 5.551115123125783e-17,
+        "max_native_transfer_error_m3": 2.0816681711721685e-17,
+        "water_residual_m3": 0.0
+      },
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 5.551115123125783e-17,
+      "min_F_equiv_m": 0.009960165502841484,
+      "reference_comparison": {
+        "accepted_owner_max_error_m3": 5.551115123125783e-17,
+        "candidate_core_max_error_m3": 5.551115123125783e-17,
+        "halo_candidate_m3": 0.0,
+        "halo_flux_max_error_m3": 0.0,
+        "halo_sum_error_m3": 0.0,
+        "reference_export_error_m3": 0.0
+      },
+      "released_water_m3": 0.0002850985184634608,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_npz_sha256": "2acea1b7126fbc2fa864307005f64be94a3aadde0b06d7d3b996997190d542b1",
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "live_40": {
+      "GA": {
+        "infiltration_m3": 4.65503880363316e-05,
+        "max_local_water_residual_m3": 5.551115123125783e-17,
+        "max_native_transfer_error_m3": 2.7755575615628914e-17,
+        "water_residual_m3": 0.0
+      },
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 5.551115123125783e-17,
+      "min_F_equiv_m": 0.009989670917882072,
+      "reference_comparison": {
+        "accepted_owner_max_error_m3": 5.551115123125783e-17,
+        "candidate_core_max_error_m3": 5.551115123125783e-17,
+        "halo_candidate_m3": 0.0,
+        "halo_flux_max_error_m3": 0.0,
+        "halo_sum_error_m3": 0.0,
+        "reference_export_error_m3": 0.0
+      },
+      "released_water_m3": 0.0003359308364881959,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_npz_sha256": "5fa6cc52b51ba4e0f4b6277ae7bc920fa35cf93974b384be36a3b6f64f7eb423",
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    },
+    "live_80": {
+      "GA": {
+        "infiltration_m3": 4.606179847702063e-05,
+        "max_local_water_residual_m3": 2.7755575615628914e-17,
+        "max_native_transfer_error_m3": 2.0816681711721685e-17,
+        "water_residual_m3": 0.0
+      },
+      "GA_domain_valid": true,
+      "max_local_water_residual_m3": 0.0,
+      "min_F_equiv_m": 0.009966234379762035,
+      "reference_comparison": {
+        "accepted_owner_max_error_m3": 5.551115123125783e-17,
+        "candidate_core_max_error_m3": 5.551115123125783e-17,
+        "halo_candidate_m3": 0.0,
+        "halo_flux_max_error_m3": 0.0,
+        "halo_sum_error_m3": 0.0,
+        "reference_export_error_m3": 0.0
+      },
+      "released_water_m3": 0.00033429143869421714,
+      "solid_out_m3": 0.0,
+      "solid_residual_m3": 0.0,
+      "source_npz_sha256": "afe9d1d19671ba023adab086759db477458503fec04e3402a39a1bfe01adcaa8",
+      "source_unchanged": true,
+      "water_residual_m3": 0.0
+    }
+  },
+  "wall_seconds": 0.05149176100000119
+}
