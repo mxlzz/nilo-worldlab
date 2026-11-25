@@ -93,3 +93,5 @@
 - E7.1b CI 45596252199: resultado NEGATIVO válido, 15/15 escenas y 105/105 ventanas, 0/4 pares cumplen, replay exacto, 2/4 diversidad estructural persistente sin función fuerte. Archivo pendiente. No repetir montículos. Usuario aprueba reorientación P2–P7 y representación material híbrida multiescala.
 
 - E7.1b archivo 45604296564 SUCCESS, 150 outputs SHA/CRC y cotejo log/JSON verificados, blobs/tamaños releídos en 36d93f5d. Resultado negativo cerrado sin modificar gates. Dirección P2–P7 aprobada; ADR-WL-0001 y P2 consolidación completos documentalmente. GO P3.1: flujo real y contrato hidrológico, no repetir H11c cerrado ni confundir acumulación con descarga real.
+
+- P3.1 prerregistro: inspección exacta OverlandFlow/Green-Ampt 2.11, q nativo m²/s pese a metadato, dx2, borde abierto, lluvia variable, stock subsuperficial finito, 5 escenarios y restart mismo host sin futuro. Sin erosión. Presupuesto5min.
