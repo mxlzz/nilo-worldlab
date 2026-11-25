@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P6",
   "current_task": "P6.1-D",
-  "next_action": "Implementar diagnóstico prerregistrado P6.1-D desde último owner válido 2078 retenido; separar guard exacto y evaluar subpasos nativos/steep_slopes sin aceptar candidato. Archivar y decidir continuidad. P6.2 bloqueada hasta estabilidad.",
+  "next_action": "Leer CI, verificar diagnóstico aislado, archivar y decidir P6.1-R solo si subpasos conservativos y sin sobreextracción; no aceptar candidato.",
   "scientific_next": "P6.1-D",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -22,7 +22,7 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "P61_negative_relaxation_2079_diagnosis_next"
+    "P6": "P61_negative_D_running"
   },
   "blockers": [],
   "evidence_refs": [
@@ -120,7 +120,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "9361895fbaf963bb26e0816c24144a324f10bf6f",
+  "last_confirmed_non_state_write": "60464a1b02ad149be6dbb662ee9d17d0d2ada794",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -143,5 +143,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25"
+  "updated_at": "2026-11-25",
+  "active_run": {
+    "id": 45632353847,
+    "unit": "P6.1-D",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45632353847",
+    "sha": "60464a1b02ad149be6dbb662ee9d17d0d2ada794"
+  }
 }
