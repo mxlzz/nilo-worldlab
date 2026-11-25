@@ -95,3 +95,5 @@
 - E7.1b archivo 45604296564 SUCCESS, 150 outputs SHA/CRC y cotejo log/JSON verificados, blobs/tamaños releídos en 36d93f5d. Resultado negativo cerrado sin modificar gates. Dirección P2–P7 aprobada; ADR-WL-0001 y P2 consolidación completos documentalmente. GO P3.1: flujo real y contrato hidrológico, no repetir H11c cerrado ni confundir acumulación con descarga real.
 
 - P3.1 prerregistro: inspección exacta OverlandFlow/Green-Ampt 2.11, q nativo m²/s pese a metadato, dx2, borde abierto, lluvia variable, stock subsuperficial finito, 5 escenarios y restart mismo host sin futuro. Sin erosión. Presupuesto5min.
+
+- P3.1 código y workflow: flujo nativo de Almeida por enlace, balance independiente de frontera, Green-Ampt con capacidad finita, 5 casos y consumidor separado mismo host. Sin erosión ni acoplamiento nuevo. CI5min.

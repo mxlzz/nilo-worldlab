@@ -1,0 +1,40 @@
+name: WorldLab P3.1 open-boundary hydrology and restart
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-p3-water.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+jobs:
+  hydrology:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/p3_water.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.5.5 scipy==1.18.1 xarray==2026.9.0 landlab==2.11.0
+          python -m pip freeze
+          lscpu
+          mkdir -p p3-water
+          python experiments/p3_water.py produce p3-water/reference p3-water/checkpoint
+      - run: python experiments/p3_water.py consume p3-water/checkpoint p3-water/consumer
+      - run: python experiments/p3_water.py compare p3-water/reference p3-water/consumer p3-water/compare.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p3-water
+          path: p3-water
+          retention-days: 30
