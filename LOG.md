@@ -39,3 +39,5 @@
 - Archivo C.2a CI 45518056825 SUCCESS, ambos ZIP, 147 outputs, 12 archivos de checkpoint, log/JSON idénticos verificados; blobs releídos en 3918169f. C.2a aprobada, GO C.2b sin entregar futuro al consumidor. Workflow temporal inactivo.
 
 - C.2b implementada: consumer sparse checkout código/raw/checkpoint únicamente, .git removido y lista de evidencia exacta, sin datos futuros del productor. Reconstrucción nativa P0-D sin pasos previos, siete controles de corrupción, 9 soil/2160 Bullet/18 térmicos nuevos por caso. Comparador separado posterior verifica hashes lógicos, arrays bit a bit y reporta igualdad de bytes. CI 15+5 min, pendiente.
+
+- C.2b CI 45518264979: consumidor pasa 4 casos/28 corrupciones; comparador falla exactitud owner 12/12 pese a trayectorias/flujos/rayos exactos. Archivo de ambos ZIP/logs y diagnóstico no mutante, sin nueva dinámica. NO-GO P1-D.
