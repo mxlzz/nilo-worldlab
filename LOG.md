@@ -107,3 +107,5 @@
 - P3.1 archivo CI 45607198410 SUCCESS: 27 archivos internos cotejados, 20 outputs referencia, 2 consumidor, checkpoint y resúmenes; ZIP/log/JSON/CRC y blobs/tamaños verificados. P3.1 cerrada con límites. GO P3.2 evaluación proveedor conservativo.
 
 - P3.2 selección: RBD candidato, MIT fork exacto, no reemplazar Landlab2.11. Sin límite de bedrock y outlet nativo anulado en fuente inspeccionada; comprobar con controles, no fingir export libre. P3.2a prerregistro: fixtures, live hidráulica→Exner unidireccional, stock finito y balances, 5min.
+
+- P3.2a implementación y CI: recuperación hash exacto de 10 módulos y licencia, sin instalar fork; Exner nativo, controles flat/dry/export/depleted/replay, 3 propuestas desde hidrodinámica viva de terreno congelado, balances y stock finito; 5min.
