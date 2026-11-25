@@ -85,3 +85,5 @@
 - E7.1a CI 45595575928 SUCCESS: 4/4 fixtures, CDF sintético, reacción y fricción inclinada, residual máximo 2.693e-8 relativo. Archivo durable pendiente. No formación prospectiva.
 
 - E7.1a archivo CI 45595753850 SUCCESS, ZIP/4 NPZ/log/JSON verificados; blobs y tamaños releídos en 4ca90002. Gate instrumento aprobado, GO cerrar prerregistro E7.1b.
+
+- E7.1b prerregistrada: 15 escenas, 4 pares prospectivos con puntos idénticos y orden distinto, 4 plantillas relajadas, 2 K0, replay; 7 épocas y criterios estructurales/funcionales fijos (>=3/4), límites de instrumento y negativos. Presupuesto15min gratuito. No datos de formación aún.
