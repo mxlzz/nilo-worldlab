@@ -1,0 +1,47 @@
+name: WorldLab archive D2 AMD allocation unavailable
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p1c-d2-amd.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve allocation evidence only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-C/D2-AMD
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14979774311/zip > "$d/14979774311.zip"
+          echo '71a2e3bcc681048c3e4581b5350b2620583959caa9ba18d19cca48dc14b1b96a  '"$d/14979774311.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138894645543/logs > "$d/job-138894645543.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P1-C/D2-AMD")
+          with zipfile.ZipFile(d/"14979774311.zip") as z:
+              assert z.testzip() is None
+              assert set(z.namelist())=={"cpu.txt"}
+              cpu=z.read("cpu.txt").decode()
+              assert "GenuineIntel" in cpu and "6975P-C" in cpu
+              (d/"cpu.txt").write_text(cpu)
+          log=(d/"job-138894645543.log").read_text()
+          assert "AMD unavailable; no diagnostic executed" in log and "GenuineIntel" in log
+          assert "WORLD_D2_JSON {" not in log
+          m={"run":45521624938,"job":138894645543,"artifact":14979774311,"scientific_execution":False,"cpu":"Intel Xeon 6975P-C","files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive guarded AMD allocation failure without science'
+          git pull --rebase origin main
+          git push origin HEAD:main

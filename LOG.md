@@ -53,3 +53,5 @@
 - D2 archivo CI 45520590725 SUCCESS, ZIP/log/JSON y 16 outputs NC cotejados, blobs releídos en fff200ab. Dos runners Intel, sin AMD; API de runners no accesible desde conector, disponibilidad dirigida no confirmada. Detener en decisión D2: preservar exactitud y autorizar verificación AMD dirigida/acotada, o redefinir alcance explícitamente, o cerrar P1 parcial. No nuevo lanzamiento aleatorio ni P1-D.
 
 - Usuario autorizó extensión única D2-AMD sin gasto. Runner público estándar sin selección de fabricante documentada; una asignación con guard AMD antes de instalar, no reintentos si Intel. Protocolo D2 intacto.
+
+- D2-AMD CI 45521624938: Intel, filtro falló antes de ejecución científica, no AMD. Única asignación consumida, no relanzar. Archivar CPU/log y elevar disponibilidad/alcance.
