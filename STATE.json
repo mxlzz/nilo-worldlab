@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P3",
-  "current_task": "P3.2-provider",
-  "next_action": "P3.2 evaluar RiverBedDynamics (paper 10.5194/gmd-18-3427-2025, release 10.5281/zenodo.14159914, fork angelmons/landlab, no en oficial 2.11); revisar versión exacta, licencia, campo q por enlace, balances Exner, porosidad, stock finito y agua subsuperficial, cache. Comparar SPACE, ErosionDeposition y alternativas existentes. Seleccionar ruta mínima antes de prerregistro; no instalar fork ni modificar perfil histórico por inercia. Si requiere cambio definitivo/licencia, elevar. P3.3 retorno agua-relieve después.",
-  "scientific_next": "P3.2-provider",
+  "current_task": "P3.2a",
+  "next_action": "Leer CI 45615897598 y WORLD_EXNER_JSON; verificar 6 fixtures, replay, 120 pasos live/3 muestras, balance Exner local y global, stock finito, controles, fuente exacta. Archivar resultados y fallos antes de P3.2b/P3.3. Si fallo instrumental identificar y preregistrar corrección; no cambiar física/gates. No afirmar export natural: RBD fork anula shear frontera, control export prescrito. P3.2b definir destino agua porosa ante cambio espesor y regla conservativa antes de acople. No instalar fork ni cambiar versión Landlab.",
+  "scientific_next": "P3.2a",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -19,7 +19,7 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "P31_passed_same_host_ready_sediment_provider"
+    "P3": "P31_passed_P32a_native_exner_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -73,13 +73,16 @@
     "research/P3/P3.1_INCIDENCIA_1.md",
     "evidence/P3/P31-failed/archive_manifest.json",
     "research/P3/P3.1_RESULTADO.md",
-    "evidence/P3/P31/archive_manifest.json"
+    "evidence/P3/P31/archive_manifest.json",
+    "research/P3/P3.2_SELECCION_PROVEEDOR.md",
+    "research/P3/P3.2a_PROTOCOLO_EXNER.md",
+    "research/P3/RBD_SOURCE_MANIFEST.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "50ceb4b154fafd78b5524f2a381cfd1bfe951ed9",
+  "last_confirmed_non_state_write": "41409ec5d42a51a4650c814d14125b76a2087f0a",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -102,5 +105,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25"
+  "updated_at": "2026-11-25",
+  "active_run": {
+    "id": 45615897598,
+    "unit": "P3.2a",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45615897598",
+    "sha": "41409ec5d42a51a4650c814d14125b76a2087f0a"
+  }
 }
