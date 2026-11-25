@@ -5,7 +5,7 @@
   "status": "experiment_pending",
   "stage": "P3",
   "current_task": "P3.3",
-  "next_action": "Leer CI 45625952812 y WORLD_RECIPROCAL_JSON/RESTART/COMPARE. Verificar 4×240 pasos, balances, erosión/deposición, controles frozen/no_sediment/no_rain, bifurcación geométrica paso121 y restart120 pasos mismo host; archivar antes de dictamen P3. Si falla, preservar y distinguir instrumento de gate físico sin ajustar umbrales. Si pasa, auditar P3, cerrar con límites y GO P4 ciclos energéticos. No export sólido natural, no calibración, no estratos, no acople térmico todavía.",
+  "next_action": "Leer CI 45626406906 y WORLD_RECIPROCAL_JSON/RESTART/COMPARE. Primera CI sin física HTTP429, log y pin exacto de RBD archivados. Retry mismo protocolo; verificar 4×240 pasos, balances, controles, bifurcación geométrica y restart. Archivar resultados antes de dictamen P3 y transición P4. Si falla conservar y clasificar sin modificar gates.",
   "scientific_next": "P3.3",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -19,7 +19,7 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "P31_P32a_P32b_passed_P33_reciprocal_pending"
+    "P3": "P31_P32a_P32b_passed_P33_retry_archived_source"
   },
   "blockers": [],
   "evidence_refs": [
@@ -84,13 +84,16 @@
     "evidence/P3/P32b-failed/archive_manifest.json",
     "research/P3/P3.2b_RESULTADO.md",
     "evidence/P3/P32b/archive_manifest.json",
-    "research/P3/P3.3_PROTOCOLO_RETROACCION.md"
+    "research/P3/P3.3_PROTOCOLO_RETROACCION.md",
+    "research/P3/P3.3_INCIDENCIA_1.md",
+    "evidence/P3/P33-fetch-failed/archive_manifest.json",
+    "evidence/P3/RBD_SOURCE/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "2e88d0ce415c1267c4ac5757bd91e85962823cf3",
+  "last_confirmed_non_state_write": "58da137e82303c76b30871377cd9aed377887ca4",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -115,9 +118,9 @@
   },
   "updated_at": "2026-11-25",
   "active_run": {
-    "id": 45625952812,
+    "id": 45626406906,
     "unit": "P3.3",
-    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45625952812",
-    "sha": "2e88d0ce415c1267c4ac5757bd91e85962823cf3"
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45626406906",
+    "sha": "58da137e82303c76b30871377cd9aed377887ca4"
   }
 }
