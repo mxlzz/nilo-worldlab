@@ -145,3 +145,5 @@
 - P4.1 retry45627810769 SUCCESS, 4×240 pasos, 5 controles, energía residual max1.1683e-5J, pulso calentamiento/enfriamiento, uniformidad1.71e-13K, 12 snapshots exactos, P3 retenida inmutada. Archivo pendiente.
 
 - P4.1 archivo45628092122 SUCCESS, 17 outputs/CRC/SHA/JSON/log y fixture histórico exacto, tamaños verificados. P4.2 prerregistro vapor bulk con déficit de humedad, latente/sensible y feedback en hidrología viva, 3 modos y 2 bifurcaciones, restart; atmósfera externa, 5min.
+
+- P4.2 código/CI: 3×240 pasos vivos, reutiliza Model.flow/remap/GA/transfer y RBD pin, E única, vapor/latente/sensible exportados, fixture, bifurcaciones temperatura y agua, restart separado. 5min.
