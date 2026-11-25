@@ -119,3 +119,15 @@ Nueva pregunta de dependencia de historia y transferencia de carga, no ventaja t
 # E7.1a — Calibración aprobada en CI
  
 CI 45595575928 SUCCESS, job 139140632979, commit c36500138e984faa1258ed19da106ac19d235367. AMD EPYC 9V45, Python3.11.18, Bullet3.2.7, perfil heredado. WORLD_FORCE_JSON gates vacíos, CDF controles aprobados, cuatro fixtures 240 muestras cada una. Grano .025kg, peso .24525N: reacción single .24525N; separated dos apoyos .24525N cada uno; stacked único apoyo .49050N, segundo sin apoyo directo. Inclinado: reacción vertical .24524999967N, componente tangencial media .01224719N, residual vectorial relativo 2.6923543e-8 (<.01), P90 velocidad .0000132058 nominal/s; demás residual 3.735e-15. Consultas no mutantes, control sin contacto, identidad y geometría válidas. Script .151s, cuatro NPZ, artefacto 15013321366 18162 bytes sha256 52bc1574cd114416a171579a542b35366f1736b3d2fbfbe4855d13044c330b88. No hay datos de formaciones prospectivas. Esto verifica instrumento para fixtures y signo/fuerza tangencial, no generalización automática a agregados; verificar balance/estabilidad en cada ventana real. Gate durable pendiente de archivo. Autoverificación.
+
+# E7.1b — Resultado científico negativo válido
+
+CI 45596252199 SUCCESS, job 139142985179, commit b4b3e6fe7d5cfe86782ea03769b3e5a0cba9f460. AMD EPYC 9V45, perfil heredado. 15/15 escenas, 105/105 ventanas válidas, replay exacto, 4/4 pares evaluables, 0/4 pasan gate (requería 3/4). Residual relativo máximo de reacción .00097105 (<.01), P90 máxima .028501 (<.08). Manipulación efectiva 19.17–19.86 ranks (>=15). No fallo instrumental. 
+| Par | L1 diferencia inicial/final nominal | Diferencia granos altos inicial/final | Diversidad estructural |
+|---|---:|---:|---|
+| 7321/2026112501 | .031772/.028318 | 11/8 | No |
+| 7321/2026112502 | .038815/.036362 | 12/16 | Sí |
+| 8128/2026112501 | .039575/.036902 | 16/13 | Sí |
+| 8128/2026112502 | .034469/.036028 | 7/5 | No |
+
+Ninguna historia supera redistribución .15 nominal ni distancias .075 a ambas plantillas; máximo distancia plantilla .061659, máximo redistribución endpoint .030265. Hay diferencias estructurales persistentes en 2/4, no función no trivial a la escala elegida. No afirmar ausencia de toda dependencia histórica ni ajustar umbrales. No probar otra variante de orden/forma por inercia. Script 166.721s; artefacto 15012774805 24728758 bytes, sha256 91c5da5b3883898da626dc9da35774bf4ce73d03f1b0b6f19f071a0775132231. Archivo duradero pendiente. E7.1 negativa; E7 general abierta, no cerrar por este ensayo; E8 pendiente. Autoverificación propia.

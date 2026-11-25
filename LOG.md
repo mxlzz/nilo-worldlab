@@ -89,3 +89,5 @@
 - E7.1b prerregistrada: 15 escenas, 4 pares prospectivos con puntos idénticos y orden distinto, 4 plantillas relajadas, 2 K0, replay; 7 épocas y criterios estructurales/funcionales fijos (>=3/4), límites de instrumento y negativos. Presupuesto15min gratuito. No datos de formación aún.
 
 - E7.1b implementación y CI: 15 escenas, propietarios/recetas/NPZ por época, replay exacto, CDF por ventana, pares predefinidos; resultado negativo científico separado de fallo instrumental. Perfil heredado, suelo archivado como condición exógena, sin nueva ley. Presupuesto15min.
+
+- E7.1b CI 45596252199: resultado NEGATIVO válido, 15/15 escenas y 105/105 ventanas, 0/4 pares cumplen, replay exacto, 2/4 diversidad estructural persistente sin función fuerte. Archivo pendiente. No repetir montículos. Usuario aprueba reorientación P2–P7 y representación material híbrida multiescala.

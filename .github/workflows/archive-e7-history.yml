@@ -1,0 +1,54 @@
+name: WorldLab archive E7.1b negative result
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-e7-history.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve and verify prospective negative evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/E7/E71b
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15012774805/zip > "$d/15012774805.zip"
+          echo '91c5da5b3883898da626dc9da35774bf4ce73d03f1b0b6f19f071a0775132231  '"$d/15012774805.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139142985179/logs > "$d/job-139142985179.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/E7/E71b")
+          with zipfile.ZipFile(d/"15012774805.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert not a["failed_preregistered_gates"] and a["scientific_outcome"]=="negative"
+              assert a["eligible_pairs"]==4 and a["passed_pairs"]==0 and a["replay_exact"]
+              assert len(a["cases"])==15 and all(len(v["epochs"])==7 and all(e["valid"] for e in v["epochs"]) for v in a["cases"].values())
+              assert len(a["outputs"])==150
+              assert {n for n in z.namelist() if not n.endswith("/")}==set(a["outputs"])|{"result.json"}
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              (d/"result.json").write_bytes(b)
+          log=(d/"job-139142985179.log").read_text()
+          j,=[json.loads(l.split("WORLD_E7_JSON ",1)[1]) for l in log.splitlines() if "WORLD_E7_JSON {" in l]
+          for k in ("experiment","scientific_outcome","failed_preregistered_gates","eligible_pairs","passed_pairs","replay_exact","pairs","wall_seconds"):assert a[k]==j[k]
+          for k,v in a["cases"].items():
+              assert j["case_summary"][k]["valid_windows"]==7 and j["case_summary"][k]["wall_seconds"]==v["wall_seconds"]
+              for e,f in zip(v["epochs"],j["case_summary"][k]["epochs"]):assert all(e[n]==x for n,x in f.items())
+          m={"run":45596252199,"job":139142985179,"artifact":15012774805,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive E7.1b valid prospective negative evidence'
+          git pull --rebase origin main
+          git push origin HEAD:main
