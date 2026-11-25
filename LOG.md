@@ -25,3 +25,5 @@
 - P1-B.2c implementada según gates prerregistrados: kernel B.2b copiado literalmente y verificado al iniciar, cuatro propietarios P0-D, rayos exactos/FiPy, control/nulos, transporte de tres pasos archivados, remapeo y resolución, owner completo de snapshot. Sin repetir mecánica ni Landlab. CI pendiente; no declarar resultado hasta lectura.
 
 - P1-B.2c CI 45504052684 SUCCESS, 4 casos, gates vacíos, 521/478 celdas vs P95 9/12; energía exportada y retenida contabilizada. Cierre P1-B condicionado al archivo durable. No afirmar dinámica viva ni E7.
+
+- Archivo B.2c CI 45516061554 SUCCESS, ZIP/log/JSON/manifest verificados, los 44 outputs cotejados por digest y blobs/tamaños releídos en 62ca60d5. P1-B cerrada limitada. P1-C.1 prerregistrada; C.2a siguiente unidad.
