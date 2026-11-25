@@ -161,3 +161,5 @@
 - P6.1 negativo válido: periodic 2400, relaxation 2078, guard hydraulic bounds en2079; prefijo exacto, consumidor no ejecutado. Archivo45631726210 verificado. P6.1-D prerregistro diagnóstico aislado y opciones nativas, no cambio de gates.
 
 - P6.1-D CI45632353847 y archivo45632681102 aprobados diagnóstico, todas alternativas nativas rechazadas. Nodo17 sobreextracción, CFL no explica; floor no conserva. P6.1-L prerregistro adaptador conservativo de tiempo de drenaje, no cambiar proveedor ni gates.
+
+- P6.1-L CI45633071167 y archivo45633469223 aprobados. Limitador aislado deja húmedos bitwise y evita sobreextracción del nodo17, sin fuente agua ni cambio owner. GO P6.1-R prerregistro dos trayectorias y restart adicional cruzando activación.
