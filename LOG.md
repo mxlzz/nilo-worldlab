@@ -33,3 +33,5 @@
 - C.2a intento 45516385783 FAILURE: conteo incorrecto 12 vs 11 campos, confirmado en 4 casos. Archivar antes de único reintento. No gates físicos modificados.
 
 - C.2a fallo archivado CI 45516870053 SUCCESS, ZIP/log/JSON y manifest verificados; corregido trigger de archivo sin repetir física. Revisión de comparador: reemplazo de conteo erróneo por conjunto exacto de 33 nombres para tres pasos, mantiene comparación numérica y topológica. Único reintento instrumental C.2a, sin cambiar parámetros ni criterios físicos.
+
+- C.2a segundo intento CI 45516933103 SUCCESS; cuatro casos y tres controles, 28 proyecciones, 72 pasos, exactitud y balances; se inicia archivo separado producer/checkpoint y log antes de C.2b.

@@ -1,0 +1,53 @@
+name: WorldLab archive C2a producer and checkpoints
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p1c2a.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve both archives and exact log
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-C/C2a
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14977708755/zip > "$d/14977708755.zip"
+          gh api repos/${{ github.repository }}/actions/artifacts/14977883611/zip > "$d/14977883611.zip"
+          echo 'fd0ba07f97a2e0f9121bc5cdf6b19ba37d2dcd06a1c751a193fa60d40b271d7d  '"$d/14977708755.zip" | sha256sum -c -
+          echo 'a81ecf3bb6091b2e4a0578baaa3b84702a1e40f2ee8db93e7a91f1577e1f5be6  '"$d/14977883611.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138878664062/logs > "$d/job-138878664062.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P1-C/C2a")
+          with zipfile.ZipFile(d/"14977708755.zip") as z:
+              assert z.testzip() is None
+              r=json.loads(z.read("result.json"))
+              assert not r["failed_preregistered_gates"] and len(r["cases"])==4 and len(r["controls"])==3
+              assert len(r["outputs"])==147 and len(r["checkpoints"])==12
+              for n,h in r["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h,n
+          with zipfile.ZipFile(d/"14977883611.zip") as z:
+              assert z.testzip() is None
+              for n,h in r["checkpoints"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h,n
+          log=d/"job-138878664062.log"
+          line=next(x for x in log.read_text().splitlines() if "WORLD_EVAL_JSON {" in x)
+          assert json.loads(line.split("WORLD_EVAL_JSON ",1)[1])==r
+          (d/"result.json").write_text(json.dumps(r,indent=2,sort_keys=True)+"\n")
+          m={"run":45516933103,"job":138878664062,"artifacts":[14977708755,14977883611],"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive C2a producer and checkpoint evidence'
+          git pull --rebase origin main
+          git push origin HEAD:main
