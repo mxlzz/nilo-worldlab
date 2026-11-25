@@ -1,0 +1,47 @@
+name: WorldLab archive P1-D1 functional audit
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p1d.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify and retain audit artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P1-D/D1
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/14989690672/zip > "$d/14989690672.zip"
+          echo 'b580ea10b0acfdf5edb1da10118fc8faf6a17984b27155bd82af096e585416f9  '"$d/14989690672.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/138959500098/logs > "$d/job-138959500098.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P1-D/D1")
+          with zipfile.ZipFile(d/"14989690672.zip") as z:
+              assert z.testzip() is None and set(z.namelist())=={"result.json"}
+              b=z.read("result.json")
+          a=json.loads(b)
+          log=(d/"job-138959500098.log").read_text()
+          rows=[json.loads(l.split("WORLD_FUNCTION_JSON ",1)[1]) for l in log.splitlines() if "WORLD_FUNCTION_JSON {" in l]
+          assert rows==[a] and not a["failed_preregistered_gates"]
+          assert len(a["cases"])==4 and all(len(v)==7 for v in a["cases"].values())
+          (d/"result.json").write_bytes(b)
+          m={"run":45541091512,"job":138959500098,"artifact":14989690672,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P1-D1 retrospective functional audit'
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -73,3 +73,5 @@
 - P1-D.1 prerregistro de auditoría: contraste térmico de 28 snapshots vivos frente a bare analítico uniforme, mismos flujos y stock, controles B2c y frozen retenido, sin repetir mecánica ni solver térmico. Evaluación descriptiva y gate de instrumento.
 
 - P1-D.1 lanzado: lectura de owners y flujos por digest, bare analítico uniforme con operador conservativo heredado, contraste por época y frozen. Export material cotejado con tolerancia heredada .09216 kg de C.1, sin cambios. CI 5 min, no nuevos solvers ni mecánica.
+
+- P1-D.1 CI 45541091512 SUCCESS, 28 contrastes, 4 casos, 7 frozen. Déficit final activo 3.3356/2.7597 K máximo, 921/847 celdas conectadas, controles B2c y balance superados. Script 1.864s, archivo pendiente. Sin inferencia E7 ni retroacción bidireccional.
