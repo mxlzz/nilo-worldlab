@@ -83,3 +83,5 @@
 - E7.1a instrumento implementado y lanzado: cuatro fixtures de reacción basal, sumatoria normal+tangencial, CDF sintético y poses no mutadas, 240 muestras por fixture; sin escenas prospectivas. CI hasta5min gratuito.
 
 - E7.1a CI 45595575928 SUCCESS: 4/4 fixtures, CDF sintético, reacción y fricción inclinada, residual máximo 2.693e-8 relativo. Archivo durable pendiente. No formación prospectiva.
+
+- E7.1a archivo CI 45595753850 SUCCESS, ZIP/4 NPZ/log/JSON verificados; blobs y tamaños releídos en 4ca90002. Gate instrumento aprobado, GO cerrar prerregistro E7.1b.
