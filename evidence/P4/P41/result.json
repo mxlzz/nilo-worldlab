@@ -1,0 +1,276 @@
+{
+  "cases": {
+    "dark": {
+      "last": {
+        "T_max_K": 299.99609840355794,
+        "T_mean_K": 299.99443548050124,
+        "T_min_K": 299.99297328985915,
+        "T_uniform_error_K": 0.007026710140848991,
+        "energy_residual_J": 1.0251998901367188e-05,
+        "longwave_in_J": 852954.8120320698,
+        "longwave_out_J": 1047165.2379552015,
+        "max_operator_residual_J": 2.384185791015625e-07,
+        "rain_J": 2020194.0000000042,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 119932.08688282882,
+        "shortwave_J": 0.0,
+        "solid_out_J": 0.0,
+        "step": 240,
+        "water_out_J": 118179789.14927688
+      },
+      "max_energy_residual_J": 1.0251998901367188e-05,
+      "max_final_temperature_change_K": 0.007026710140848991,
+      "max_operator_residual_J": 6.065765774110332e-07,
+      "max_uniform_error_K": 0.007026710140848991,
+      "mid": {
+        "T_max_K": 299.9979352972409,
+        "T_mean_K": 299.9972823634546,
+        "T_min_K": 299.99665360314793,
+        "T_uniform_error_K": 0.003346396852066391,
+        "energy_residual_J": 6.9141387939453125e-06,
+        "longwave_in_J": 426477.4060160357,
+        "longwave_out_J": 523592.8487785848,
+        "max_operator_residual_J": 2.384185791015625e-07,
+        "rain_J": 1346796.0000000014,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 59983.62756721364,
+        "shortwave_J": 0.0,
+        "solid_out_J": 0.0,
+        "step": 120,
+        "water_out_J": 62023865.31866738
+      },
+      "snapshots": {
+        "final": {
+          "hydro_owner_sha": "65b0bb019d7aeb4b809c513a3a40ae2b8ddf3e11688a47d1599272b041d2da16",
+          "owner_sha": "320a2f8bbb2c039c032b11b5d0326d26837a08ba6516957eb2bda1546c68b810",
+          "sha256": "e024dc9a2e5d64bdf53d9c0a4a6e901a180b96790a5730d2ef8b01dba59be008"
+        },
+        "initial": {
+          "hydro_owner_sha": "cb9f04a29eea8b8d7a71ca22a2fb6ea06a8b5956b3c44e0aaacc6aef6ff828c5",
+          "owner_sha": "e9a62c1f11749b4ba1f2c4eb981ac3ff59661ee184def0656b528b1896464500",
+          "sha256": "93822bf8e5adc6594fc209bf6bde16dbdf78ddf31a837ee879bc29803ef22405"
+        },
+        "mid": {
+          "hydro_owner_sha": "c88cac4d06a2aaef1ebe74863e52e8a509aa6d6931cf59ab876c9d8f9cd7fcca",
+          "owner_sha": "2af275cd7923ee00332e86905e7aa9ca198fcf8123940914381337927e72d3b2",
+          "sha256": "0ee12910e9427c361f5970553b6b1f5d45396e0089faa5d3b0d111f7e8c68549"
+        }
+      },
+      "steps": 240
+    },
+    "forced": {
+      "last": {
+        "T_max_K": 300.00522809407437,
+        "T_mean_K": 300.0044255013012,
+        "T_min_K": 300.00388239136123,
+        "T_uniform_error_K": 0.005228094074368528,
+        "energy_residual_J": 1.1682510375976562e-05,
+        "longwave_in_J": 852954.8120320698,
+        "longwave_out_J": 1047272.1157201489,
+        "max_operator_residual_J": 2.384185791015625e-07,
+        "rain_J": 2020194.0000000042,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 120115.79297374116,
+        "shortwave_J": 576000.0,
+        "solid_out_J": 0.0,
+        "step": 240,
+        "water_out_J": 118210509.32353798
+      },
+      "max_energy_residual_J": 1.1682510375976562e-05,
+      "max_final_temperature_change_K": 0.005228094074368528,
+      "max_operator_residual_J": 5.138035703566857e-07,
+      "max_uniform_error_K": 0.008921065214792634,
+      "mid": {
+        "T_max_K": 300.0089210652148,
+        "T_mean_K": 300.0072448708105,
+        "T_min_K": 300.00550423300376,
+        "T_uniform_error_K": 0.008921065214792634,
+        "energy_residual_J": 8.106231689453125e-06,
+        "longwave_in_J": 426477.4060160357,
+        "longwave_out_J": 523627.7673401619,
+        "max_operator_residual_J": 2.384185791015625e-07,
+        "rain_J": 1346796.0000000014,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 60043.646808000434,
+        "shortwave_J": 576000.0,
+        "solid_out_J": 0.0,
+        "step": 120,
+        "water_out_J": 62035692.953063026
+      },
+      "snapshots": {
+        "final": {
+          "hydro_owner_sha": "65b0bb019d7aeb4b809c513a3a40ae2b8ddf3e11688a47d1599272b041d2da16",
+          "owner_sha": "3a8aab00b2dd5e965a6823b82e6da5db4224194cf9aa9b6c23b8e74579c7be28",
+          "sha256": "9709176aa3b371dd7956b9bad65b2d7d66fdd1cf72ae4ab81de06fbe539aeb25"
+        },
+        "initial": {
+          "hydro_owner_sha": "cb9f04a29eea8b8d7a71ca22a2fb6ea06a8b5956b3c44e0aaacc6aef6ff828c5",
+          "owner_sha": "acf0ddb49df6d18bb17ecca2f72461e3ce9fcded3977f4dc6db1ccd8de2ca84a",
+          "sha256": "22c7af8c85f8560a6468a41b406e11423e9e0a8f8014ee7bf40c7baddcc7af9a"
+        },
+        "mid": {
+          "hydro_owner_sha": "c88cac4d06a2aaef1ebe74863e52e8a509aa6d6931cf59ab876c9d8f9cd7fcca",
+          "owner_sha": "499a064dbd0121fd53a0bad3a7124cb5480901c46fe12d0ad22a14e0437265ed",
+          "sha256": "56017bbe244c5ea4715226388feaaa5f480a66c5fe7e67b61c5b8a93413fe528"
+        }
+      },
+      "steps": 240
+    },
+    "heterogeneous": {
+      "last": {
+        "T_max_K": 301.99706610446356,
+        "T_mean_K": 299.9970103794275,
+        "T_min_K": 298.0671838533673,
+        "T_uniform_error_K": 1.9970661044635563,
+        "energy_residual_J": -7.62939453125e-06,
+        "longwave_in_J": 0.0,
+        "longwave_out_J": 0.0,
+        "max_operator_residual_J": 2.384185791015625e-07,
+        "rain_J": 2020194.0000000042,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 0.0,
+        "shortwave_J": 0.0,
+        "solid_out_J": 0.0,
+        "step": 240,
+        "water_out_J": 118353462.2634691
+      },
+      "max_energy_residual_J": 7.62939453125e-06,
+      "max_final_temperature_change_K": 0.26020675789641246,
+      "max_operator_residual_J": 4.76837158203125e-07,
+      "max_uniform_error_K": 1.9999716124609677,
+      "mid": {
+        "T_max_K": 301.9982151868349,
+        "T_mean_K": 299.9944869780343,
+        "T_min_K": 298.05210195713084,
+        "T_uniform_error_K": 1.9982151868348978,
+        "energy_residual_J": -1.9073486328125e-06,
+        "longwave_in_J": 0.0,
+        "longwave_out_J": 0.0,
+        "max_operator_residual_J": 0.0,
+        "rain_J": 1346796.0000000014,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 0.0,
+        "shortwave_J": 0.0,
+        "solid_out_J": 0.0,
+        "step": 120,
+        "water_out_J": 62339239.18480891
+      },
+      "snapshots": {
+        "final": {
+          "hydro_owner_sha": "65b0bb019d7aeb4b809c513a3a40ae2b8ddf3e11688a47d1599272b041d2da16",
+          "owner_sha": "a743daebc0b5d3855b15a4a7c28a7e6fc365d57016212010a8b007121e98851a",
+          "sha256": "ca484937e2e0b1bcc88bf1c29fc1a171afe548e7f7ad72845ecd24077159d277"
+        },
+        "initial": {
+          "hydro_owner_sha": "cb9f04a29eea8b8d7a71ca22a2fb6ea06a8b5956b3c44e0aaacc6aef6ff828c5",
+          "owner_sha": "d642a50d49b637a3af81e932b5bc168a68dfcf6c5026074dc5f2189e529efb60",
+          "sha256": "958c02e7023a018385cc932d09096c2786f7cda2461be3e665b49f53a515a4c7"
+        },
+        "mid": {
+          "hydro_owner_sha": "c88cac4d06a2aaef1ebe74863e52e8a509aa6d6931cf59ab876c9d8f9cd7fcca",
+          "owner_sha": "fa315cf93ea0043216a1b5bc93f687982d9c742d10f3fbed1a5027c224fed641",
+          "sha256": "a1dbf3d5aa98f3a163d4847f13bec4d7d71e131188d032e4ea46a8088a4b1e44"
+        }
+      },
+      "steps": 240
+    },
+    "transport_only": {
+      "last": {
+        "T_max_K": 299.99999999999994,
+        "T_mean_K": 299.9999999999999,
+        "T_min_K": 299.99999999999983,
+        "T_uniform_error_K": 1.7053025658242404e-13,
+        "energy_residual_J": -7.152557373046875e-06,
+        "longwave_in_J": 0.0,
+        "longwave_out_J": 0.0,
+        "max_operator_residual_J": 0.0,
+        "rain_J": 2020194.0000000042,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 0.0,
+        "shortwave_J": 0.0,
+        "solid_out_J": 0.0,
+        "step": 240,
+        "water_out_J": 118190368.40391673
+      },
+      "max_energy_residual_J": 7.62939453125e-06,
+      "max_final_temperature_change_K": 1.7053025658242404e-13,
+      "max_operator_residual_J": 4.76837158203125e-07,
+      "max_uniform_error_K": 1.7053025658242404e-13,
+      "mid": {
+        "T_max_K": 300.0,
+        "T_mean_K": 300.0,
+        "T_min_K": 299.9999999999999,
+        "T_uniform_error_K": 1.1368683772161603e-13,
+        "energy_residual_J": -1.6689300537109375e-06,
+        "longwave_in_J": 0.0,
+        "longwave_out_J": 0.0,
+        "max_operator_residual_J": 2.384185791015625e-07,
+        "rain_J": 1346796.0000000014,
+        "sensible_in_J": 0.0,
+        "sensible_out_J": 0.0,
+        "shortwave_J": 0.0,
+        "solid_out_J": 0.0,
+        "step": 120,
+        "water_out_J": 62027091.73650607
+      },
+      "snapshots": {
+        "final": {
+          "hydro_owner_sha": "65b0bb019d7aeb4b809c513a3a40ae2b8ddf3e11688a47d1599272b041d2da16",
+          "owner_sha": "d0e8150800eb14af03057f4ad3df327edc409bc8cbee1cecdbff50bfd8e7d03b",
+          "sha256": "c1113d758b3af0469392c270efc6d057eb521dbce5e317055524bab62b765722"
+        },
+        "initial": {
+          "hydro_owner_sha": "cb9f04a29eea8b8d7a71ca22a2fb6ea06a8b5956b3c44e0aaacc6aef6ff828c5",
+          "owner_sha": "35f07d2f27da4952d1d331e2e1e00279d9652250dc19c8c71052e4eca180bda9",
+          "sha256": "ca08d673f963f29ecff368f3d63b031d0edad4bace8ed71257db6b53e5a34b3e"
+        },
+        "mid": {
+          "hydro_owner_sha": "c88cac4d06a2aaef1ebe74863e52e8a509aa6d6931cf59ab876c9d8f9cd7fcca",
+          "owner_sha": "0c9ad9293515826ea5bb75fd5f93a4b0b3d05c84dfbed84e762ab465ec10debe",
+          "sha256": "60256cef78d465c2fb7d7215df2da205cb030c9423e2743fdfc6fcb70ba780b2"
+        }
+      },
+      "steps": 240
+    }
+  },
+  "experiment": "P4.1",
+  "failed_preregistered_gates": [],
+  "fixture": {
+    "controls": {
+      "energy_capacity": true,
+      "external_inflow": true,
+      "inactive": true,
+      "nan": true,
+      "overdraw": true
+    },
+    "energy_delta_J": [
+      -12540000.0,
+      4180000.0,
+      0.0
+    ],
+    "export_J": 8360000.0
+  },
+  "outputs": {
+    "dark/final.nc": "e024dc9a2e5d64bdf53d9c0a4a6e901a180b96790a5730d2ef8b01dba59be008",
+    "dark/initial.nc": "93822bf8e5adc6594fc209bf6bde16dbdf78ddf31a837ee879bc29803ef22405",
+    "dark/mid.nc": "0ee12910e9427c361f5970553b6b1f5d45396e0089faa5d3b0d111f7e8c68549",
+    "dark/series.npz": "e0e215400ea407232fa2ac451b491ba1726227be5aba8fd80251e3044bda8783",
+    "fixture.npz": "2da1ac4ad3af7e6ea7453e162e09ae9d1545c134c0e351b63a53d068f64f8055",
+    "forced/final.nc": "9709176aa3b371dd7956b9bad65b2d7d66fdd1cf72ae4ab81de06fbe539aeb25",
+    "forced/initial.nc": "22c7af8c85f8560a6468a41b406e11423e9e0a8f8014ee7bf40c7baddcc7af9a",
+    "forced/mid.nc": "56017bbe244c5ea4715226388feaaa5f480a66c5fe7e67b61c5b8a93413fe528",
+    "forced/series.npz": "a8313e92902534053a2db2518a77c9dfa7b5cd1b2e0ce2cd9e86e61c79ce5776",
+    "heterogeneous/final.nc": "ca484937e2e0b1bcc88bf1c29fc1a171afe548e7f7ad72845ecd24077159d277",
+    "heterogeneous/initial.nc": "958c02e7023a018385cc932d09096c2786f7cda2461be3e665b49f53a515a4c7",
+    "heterogeneous/mid.nc": "a1dbf3d5aa98f3a163d4847f13bec4d7d71e131188d032e4ea46a8088a4b1e44",
+    "heterogeneous/series.npz": "fc21379f5f9c191a3749e52705532a70e8b45727a1ebf54eabee2432fb594dcd",
+    "transport_only/final.nc": "c1113d758b3af0469392c270efc6d057eb521dbce5e317055524bab62b765722",
+    "transport_only/initial.nc": "ca08d673f963f29ecff368f3d63b031d0edad4bace8ed71257db6b53e5a34b3e",
+    "transport_only/mid.nc": "60256cef78d465c2fb7d7215df2da205cb030c9423e2743fdfc6fcb70ba780b2",
+    "transport_only/series.npz": "715a0b88109f0a7ae9749308e317f7f14e742ee662acacc8cc4d2b595b10806b"
+  },
+  "peak_rss_kib": 209036,
+  "source_archive_sha256": "36814182ed6d793d1d0a40a0b2745601605e1171f08b45ace5a47df29bc2c16c",
+  "source_unchanged": true,
+  "wall_seconds": 0.5471430919999989
+}
