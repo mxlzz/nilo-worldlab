@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P6",
   "current_task": "P6.1",
-  "next_action": "P6.1: diseñar y prerregistrar continuidad prolongada del modelo P5.2, forzamiento periódico explícito sin reset, controles/stock/guard y frontera de estabilidad, restart y coste. No cerrar P6 solo por 24s. Después variación territorial, E7/E8 según plan. No integrar atmósfera o 3D por inercia.",
+  "next_action": "Leer CI 45631044420 y WORLD_HORIZON_JSON/RESTART/COMPARE. Verificar horizonte 2400, prefijo P5.2, forzamiento, balance y restart. Si fallo guard, conservar último válido y diagnosticar, no ajustar gates; si costo, distinguir. Archivar antes de dictamen P6.1. P6.2 diversidad territorial solo si viable.",
   "scientific_next": "P6.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
@@ -22,7 +22,7 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "not_started"
+    "P6": "P61_sustained_horizon_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -110,13 +110,14 @@
     "research/P5/P5.2_PROTOCOLO_COMPOSICION_VIVA.md",
     "research/P5/P5.2_RESULTADO.md",
     "evidence/P5/P52/archive_manifest.json",
-    "research/P5/P5_DICTAMEN.md"
+    "research/P5/P5_DICTAMEN.md",
+    "research/P6/P6.1_PROTOCOLO_HORIZONTE.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "8dbbe7524175831c6acddb4bbe5b0be7fdef70cc",
+  "last_confirmed_non_state_write": "a1aad8a8feeb0d3a0ca72572a916e4505addd148",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -139,5 +140,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25"
+  "updated_at": "2026-11-25",
+  "active_run": {
+    "id": 45631044420,
+    "unit": "P6.1",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45631044420",
+    "sha": "a1aad8a8feeb0d3a0ca72572a916e4505addd148"
+  }
 }
