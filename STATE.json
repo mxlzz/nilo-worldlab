@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "ready",
+  "status": "experiment_pending",
   "stage": "P3",
-  "current_task": "P3.1-preregister",
-  "next_action": "P3.1: inspeccionar Landlab 2.11 OverlandFlow/Green-Ampt exactos, definir volumen, q enlaces, frontera y cache/restart; prerregistrar y ejecutar flujo real con borde abierto, lluvia variable y controles, sin repetir H11c cerrado. P3.2 después ruta conservativa sedimento y retorno; no afirmar acople antes de prueba. Seguir ADR-WL-0001 y P2–P7.",
-  "scientific_next": "P3.1-preregister",
+  "current_task": "P3.1",
+  "next_action": "Leer CI 45605745963 y WORLD_WATER_JSON/RESTART/COMPARE; verificar 5 casos, 960 pasos/caso, 480 sufijo, balances de borde independientes, capacidad, controles, observar posible fallo instrumental sin alterar gates. Archivar ZIP/logs y resultados antes de avanzar P3.2 (ruta conservativa sedimento con agua real).",
+  "scientific_next": "P3.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -19,7 +19,7 @@
     "P1_D": "passed_retrospective_functional_audit",
     "P1": "complete_limited_unilateral_environmental_consequence",
     "P2": "complete_documentary_approved_direction",
-    "P3": "not_started_protocol_next"
+    "P3": "water_open_boundary_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -68,13 +68,14 @@
     "research/E7/E7.1b_RESULTADO.md",
     "evidence/E7/E71b/archive_manifest.json",
     "research/P2/ADR-WL-0001_DIRECCION_MULTIESCALA.md",
-    "research/P2/P2_CONSOLIDACION.md"
+    "research/P2/P2_CONSOLIDACION.md",
+    "research/P3/P3.1_PROTOCOLO_AGUA.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "5948ee46932f4382b36cb6497379be0a3224813b",
+  "last_confirmed_non_state_write": "2233d6b1ddef6ed795998bdb48f9724ff328775e",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
@@ -97,5 +98,11 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "P1-B.2a_passed"
   },
-  "updated_at": "2026-11-25"
+  "updated_at": "2026-11-25",
+  "active_run": {
+    "id": 45605745963,
+    "unit": "P3.1",
+    "url": "https://github.com/mxlzz/nilo-worldlab/actions/runs/45605745963",
+    "sha": "2233d6b1ddef6ed795998bdb48f9724ff328775e"
+  }
 }
