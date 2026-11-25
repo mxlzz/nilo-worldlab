@@ -115,3 +115,5 @@
 - P3.2a archivo 45619205788 SUCCESS; 12 outputs SHA/CRC y JSON/log verificados, blob/tamaño releído, gate aprobado limitado. P3.2b prerregistro de remapeo sólido/agua porosa con liberación local, capacidad dinámica y guard GA equivalente; no nueva física ni ajuste de gates.
 
 - P3.2b implementación: 5 casos analíticos, 5 muestras Exner retenidas, 8 controles (incluye dominio GA y K0), operador conservativo con release proporcional a salidas brutas y capacidad derivada, GA nativo solo como tasa equivalente. CI5min; no acople vivo todavía.
+
+- P3.2b CI45619612376 FAILURE: 5 analíticas, 8 controles, 4/5 muestras; error de comparación halo candidato bruto vs stock autoritativo (imposed_export). Corrección prospectiva de comparador core/owner + flujo halo explícito, sin modificar física/umbrales. Archivo pendiente.

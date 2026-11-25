@@ -1,0 +1,48 @@
+name: WorldLab archive P3.2b comparator failure
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/archive-p3-pore-failure.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P3/P32b-failed
+          mkdir -p "$d"
+          gh api repos/${{ github.repository }}/actions/artifacts/15024525090/zip > "$d/15024525090.zip"
+          echo '53f14cf8cbda1b7b97dc7d5c5fbb63e78be4f124ca939dc7940b9162c0852979  '"$d/15024525090.zip" | sha256sum -c -
+          gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/139223940453/logs > "$d/job-139223940453.log"
+          python - <<'PY'
+          import hashlib,json,pathlib,zipfile
+          d=pathlib.Path("evidence/P3/P32b-failed")
+          with zipfile.ZipFile(d/"15024525090.zip") as z:
+              assert z.testzip() is None
+              b=z.read("result.json");a=json.loads(b)
+              assert a["failed_preregistered_gates"]==["imposed_export:ValueError('stock candidate mismatch')","incomplete cases or controls"]
+              assert len(a["analytic"])==5 and len(a["retained"])==4 and len(a["controls"])==8 and all(a["controls"].values())
+              assert len(a["outputs"])==9
+              assert {n for n in z.namelist() if not n.endswith("/")}==set(a["outputs"])|{"result.json"}
+              for n,h in a["outputs"].items():assert hashlib.sha256(z.read(n)).hexdigest()==h
+              (d/"result.json").write_bytes(b)
+          log=(d/"job-139223940453.log").read_text()
+          assert [json.loads(l.split("WORLD_PORE_JSON ",1)[1]) for l in log.splitlines() if "WORLD_PORE_JSON {" in l]==[a]
+          m={"run":45619612376,"job":139223940453,"artifact":15024525090,"files":{p.name:{"sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"bytes":p.stat().st_size} for p in d.iterdir() if p.is_file()}}
+          (d/"archive_manifest.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d"
+          git commit -m 'Archive P3.2b original comparator failure'
+          git pull --rebase origin main
+          git push origin HEAD:main
