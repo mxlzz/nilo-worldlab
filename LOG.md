@@ -113,3 +113,5 @@
 - P3.2a CI 45615897598 SUCCESS: 9 escenarios (6 fixtures/replay y 3 live), gates vacíos, residual sólido max1.066e-15m³, depleted rechazado, export prescrito .00002m³, natural0. Live 120 pasos, RBD compatible. Archivo pendiente.
 
 - P3.2a archivo 45619205788 SUCCESS; 12 outputs SHA/CRC y JSON/log verificados, blob/tamaño releído, gate aprobado limitado. P3.2b prerregistro de remapeo sólido/agua porosa con liberación local, capacidad dinámica y guard GA equivalente; no nueva física ni ajuste de gates.
+
+- P3.2b implementación: 5 casos analíticos, 5 muestras Exner retenidas, 8 controles (incluye dominio GA y K0), operador conservativo con release proporcional a salidas brutas y capacidad derivada, GA nativo solo como tasa equivalente. CI5min; no acople vivo todavía.
