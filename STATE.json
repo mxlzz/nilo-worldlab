@@ -4,9 +4,9 @@
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "running",
   "stage": "P6",
-  "current_task": "ARCH-02A-R",
-  "next_action": "Consultar único retry world-arch02a-hail-retry.yml; verificar archivo original, gates y retención. Delft3D entorno bloqueado. P6.1-R aprobada, P6.2 retenida. No repetir por inercia.",
-  "scientific_next": "ARCH-02A-R",
+  "current_task": "ARCH-02A-R-archive",
+  "next_action": "Verificar archivo world-arch02a-hail-archive.yml, leer tiempos/RSS/hashes y dictaminar ARCH-02/03; no repetir smoke. Considerar ARCH-04 BMI si contrato territorial HAIL no viable.",
+  "scientific_next": "ARCH-02A-R-archive",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -23,7 +23,7 @@
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
     "P6": "P61R_passed_limited_verified_archive_P62_held_for_ARCH",
-    "ARCH": "ARCH02A_instrument_failure_retry_preregistered"
+    "ARCH": "ARCH02AR_smoke_pass_readback_archive_pending"
   },
   "blockers": [],
   "evidence_refs": [
@@ -129,13 +129,15 @@
     "research/ARCH/ARCH-02A_INCIDENCIA_1.md",
     "research/P6/P6.1R_RESULTADO.md",
     "evidence/P6/P61R/archive_manifest.json",
-    "evidence/ARCH/HAIL-first/job-139374014891.log"
+    "evidence/ARCH/HAIL-first/job-139374014891.log",
+    "research/ARCH/ARCH-02AR_READBACK.md",
+    "evidence/ARCH/HAIL-first/archive_manifest.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "711c1fd1d76ec88f3d754ec95897f89a46da0301",
+  "last_confirmed_non_state_write": "e79eb16dde4fe49c0f830c0990ec2e7440da0920",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
