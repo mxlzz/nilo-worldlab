@@ -193,3 +193,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - P6.2A CI45811650794 SUCCESS, 3×480, control seis campos exactos, 3 pares respuesta pasan, 7 corrupciones rechazadas y restart 240 exacto. 43.48s, RSS212256KiB. Artefacto15113821471; archivo durable pendiente. No repetir.
 
 - P6.2A archivo45816684679 SUCCESS, 25 miembros, rutas/reportes/checkpoint verificados. Cierre limitado. GO P6.2B 225 core, 3×240, fork causal y restart 120 reservado, usuario aprobó amplitud territorial. No nueva física.
+
+- P6.2B CI45838934630 SUCCESS, 3×240 en 225 core, fork causal pasa, restart 120 exacto (7 controles, 67 activaciones), concentración erosión 75–77% en quintil incluso control. 23.93s, RSS211836KiB. Artefacto15125444846; archivo durable pendiente. No repetir.

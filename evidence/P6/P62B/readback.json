@@ -1,0 +1,351 @@
+{
+  "WORLD_TERRITORY_JSON": {
+    "cases": {
+      "control": {
+        "erosion_top20_share": 0.7671093096090736,
+        "final": {
+          "elevation_std_m": 0.2172190087298846,
+          "fine_change": 0.04371359087843729,
+          "max_dz_m": 0.053468442136892724,
+          "rms_dz_m": 0.005835599997194836
+        },
+        "initial": {
+          "elevation_std_m": 0.21757450831075473,
+          "fine_change": 0,
+          "max_dz_m": 0,
+          "rms_dz_m": 0
+        },
+        "interior_flow_top20_share": 0.44154280409138014,
+        "last": {
+          "T_max_K": 300.0016863260795,
+          "T_mean_K": 300.00007681340736,
+          "T_min_K": 299.99889452373515,
+          "class_res": 1.4210854715202004e-13,
+          "deposition": 0.5526367583694494,
+          "energy_res": 0.00010387728980276734,
+          "erosion": 0.552636758369449,
+          "evap_local_K": 5.684341886080802e-14,
+          "exner_local": 3.1086278570822273e-16,
+          "flow_local": 2.5804011705155006e-17,
+          "ga_local": 1.1102230246251565e-16,
+          "inc": 0,
+          "infiltration": 0.10314756255272842,
+          "limited_links": 20,
+          "limited_nodes": 7,
+          "longwave_in_J": 7676593.3082886925,
+          "longwave_out_J": 9425155.387347138,
+          "max_dz": 0.053468442136892724,
+          "max_energy_op": 0.0000019073486328125,
+          "max_overdraw_m3": 0,
+          "min_F": 0.0020050381703980644,
+          "min_H_m3": 2.3116191198551107e-59,
+          "min_class_m3": 0.08032320914997283,
+          "out": 2.2007910865621927,
+          "owner_sha": "8677d8ded4d68007cbedf8f0be5abf35ac753cf66f115321b05144b9595ce232",
+          "pore_local": 1.1102230246251565e-16,
+          "proposal_removed_m3": 0.00030058391496327105,
+          "rain": 0.16200000000000042,
+          "rain_J": 18181745.999999978,
+          "release": 0.5416278504590618,
+          "sensible_in_J": 0,
+          "sensible_out_J": 1080537.4067668384,
+          "shortwave_J": 5184000,
+          "solid_out": 0,
+          "solid_out_J": 0,
+          "solid_res": 0,
+          "step": 240,
+          "vapor_kg": 0.9349120789673938,
+          "vapor_latent_J": 2290534.5934701157,
+          "vapor_sensible_J": 104937.80821266481,
+          "water_out_J": 247025692.07256275,
+          "water_res": -1.4210854715202004e-14
+        },
+        "limited_steps": 30,
+        "max_residuals": {
+          "class_res": 2.3447910280083306e-13,
+          "energy_res": 0.00010442252096254379,
+          "max_energy_op": 0.000004303234163671732,
+          "solid_res": 1.4210854715202004e-14,
+          "water_res": 2.842170943040401e-14
+        },
+        "snapshots": {
+          "0": {
+            "owner_sha": "da36b17881e6fbc010ac16cdd917165dc1de42bd4895e910cf19b70088e1c1e2",
+            "sha256": "9ef719fde4218c86972b36acac8e341e1a9bff06d398b32d2241e4fcd0a1bfbb"
+          },
+          "120": {
+            "owner_sha": "3ba2fdb612ba19b558f57848ef7713f011bba69d2b9b477d4daaa600d5aa91e9",
+            "sha256": "4020b41b05d768b2cf9dda7bf6ea4170cc74b7ff5229c876caa9e0d93c578af7"
+          },
+          "240": {
+            "owner_sha": "8677d8ded4d68007cbedf8f0be5abf35ac753cf66f115321b05144b9595ce232",
+            "sha256": "726ebe55649f656b230209f93bc1d78af7a7a0ad38be5524732926492e8d0f17"
+          }
+        },
+        "steps": 240,
+        "wall_seconds": 7.9030357649999985
+      },
+      "seed26061103": {
+        "erosion_top20_share": 0.7570966237621914,
+        "final": {
+          "elevation_std_m": 0.218460554513025,
+          "fine_change": 0.028707771632109746,
+          "max_dz_m": 0.037934018725708896,
+          "rms_dz_m": 0.004541629294351009
+        },
+        "initial": {
+          "elevation_std_m": 0.21883896756388774,
+          "fine_change": 0,
+          "max_dz_m": 0,
+          "rms_dz_m": 0
+        },
+        "interior_flow_top20_share": 0.45892558627494007,
+        "last": {
+          "T_max_K": 300.0016669798107,
+          "T_mean_K": 300.0000776102598,
+          "T_min_K": 299.99896713398755,
+          "class_res": 1.5631940186722204e-13,
+          "deposition": 0.48878219789317834,
+          "energy_res": 0.0001021522912196815,
+          "erosion": 0.488782197893186,
+          "evap_local_K": 5.684341886080802e-14,
+          "exner_local": 2.886586640288985e-16,
+          "flow_local": 1.179069862577986e-17,
+          "ga_local": 1.1102230246251565e-16,
+          "inc": 0,
+          "infiltration": 0.10315304641206932,
+          "limited_links": 0,
+          "limited_nodes": 0,
+          "longwave_in_J": 7676593.3082886925,
+          "longwave_out_J": 9425155.647416206,
+          "max_dz": 0.037934018725708896,
+          "max_energy_op": 0.0000019073486328125,
+          "max_overdraw_m3": 0,
+          "min_F": 0.004404340824390493,
+          "min_H_m3": 0.002021443629868745,
+          "min_class_m3": 0.09360835960069396,
+          "out": 1.6644706124558086,
+          "owner_sha": "62f6a1457815f5e63d115e81338235b34c9d61dca05b5c917b29218055bdcfbe",
+          "pore_local": 2.220446049250313e-16,
+          "proposal_removed_m3": 0,
+          "rain": 0.16200000000000042,
+          "rain_J": 18181745.999999978,
+          "release": 0.5082390910775547,
+          "sensible_in_J": 0,
+          "sensible_out_J": 1080537.8537829176,
+          "shortwave_J": 5184000,
+          "solid_out": 0,
+          "solid_out_J": 0,
+          "solid_res": 0,
+          "step": 240,
+          "vapor_kg": 0.9372200162378531,
+          "vapor_latent_J": 2296189.0397827397,
+          "vapor_sensible_J": 105196.84132946812,
+          "water_out_J": 186826591.68091223,
+          "water_res": 0
+        },
+        "limited_steps": 0,
+        "max_residuals": {
+          "class_res": 2.2026824808563106e-13,
+          "energy_res": 0.00010547760757617652,
+          "max_energy_op": 0.000003814697265625,
+          "solid_res": 2.842170943040401e-14,
+          "water_res": 2.842170943040401e-14
+        },
+        "snapshots": {
+          "0": {
+            "owner_sha": "5c535c1ccba067009a7b2bc3d5ca457ff48906a5b9b39b689df0dae47b6800ad",
+            "sha256": "c1230ed6fb6452b12a688e7d04473322a98371be6aef9b7fddc5af07f244e798"
+          },
+          "120": {
+            "owner_sha": "375c2e9386bd01c33e546f95c6102c9736d512c0c9c7934a8987d9ebb3e6145a",
+            "sha256": "d7eb3da169b1e2de503dbb9e7478852b77021e6c92bfcd26e7107cdf7203b67d"
+          },
+          "240": {
+            "owner_sha": "62f6a1457815f5e63d115e81338235b34c9d61dca05b5c917b29218055bdcfbe",
+            "sha256": "0ed2e09f9f6c7e8e61f9073fd87b6eef3654c9f07e44dd5063d18cf7962d8411"
+          }
+        },
+        "steps": 240,
+        "wall_seconds": 7.962315126000007
+      },
+      "seed26061104": {
+        "erosion_top20_share": 0.7511279485477228,
+        "final": {
+          "elevation_std_m": 0.20854827708173285,
+          "fine_change": 0.04035099977944667,
+          "max_dz_m": 0.05166945185100347,
+          "rms_dz_m": 0.005565058773820086
+        },
+        "initial": {
+          "elevation_std_m": 0.2088799945759382,
+          "fine_change": 0,
+          "max_dz_m": 0,
+          "rms_dz_m": 0
+        },
+        "interior_flow_top20_share": 0.44572270955167975,
+        "last": {
+          "T_max_K": 300.0016176756487,
+          "T_mean_K": 300.0000844849472,
+          "T_min_K": 299.9989382866853,
+          "class_res": 1.5631940186722204e-13,
+          "deposition": 0.5358280766363177,
+          "energy_res": 0.00010450888657942414,
+          "erosion": 0.5358280766363219,
+          "evap_local_K": 5.684341886080802e-14,
+          "exner_local": 3.3306690738754696e-16,
+          "flow_local": 1.4216600986716177e-17,
+          "ga_local": 2.220446049250313e-16,
+          "inc": 0,
+          "infiltration": 0.1028070558224301,
+          "limited_links": 23,
+          "limited_nodes": 8,
+          "longwave_in_J": 7676593.3082886925,
+          "longwave_out_J": 9425155.648140218,
+          "max_dz": 0.05166945185100347,
+          "max_energy_op": 0.0000019073486328125,
+          "max_overdraw_m3": 0,
+          "min_F": 0.0023278380532963383,
+          "min_H_m3": 2.0866732098221737e-61,
+          "min_class_m3": 0.08246751242497458,
+          "out": 2.1383165027475175,
+          "owner_sha": "464a94ac0743261661eca4a50f9c8c3c25cb9375c5351e489018cebed2c717f8",
+          "pore_local": 2.220446049250313e-16,
+          "proposal_removed_m3": 0.0003387952812884898,
+          "rain": 0.16200000000000042,
+          "rain_J": 18181745.999999978,
+          "release": 0.5055394948050806,
+          "sensible_in_J": 0,
+          "sensible_out_J": 1080537.8550341078,
+          "shortwave_J": 5184000,
+          "solid_out": 0,
+          "solid_out_J": 0,
+          "solid_res": -1.4210854715202004e-14,
+          "step": 240,
+          "vapor_kg": 0.9335398914097014,
+          "vapor_latent_J": 2287172.733953765,
+          "vapor_sensible_J": 104783.80548599461,
+          "water_out_J": 240013321.29812047,
+          "water_res": 0
+        },
+        "limited_steps": 67,
+        "max_residuals": {
+          "class_res": 2.2026824808563106e-13,
+          "energy_res": 0.000106126579339616,
+          "max_energy_op": 0.0000057220458984375,
+          "solid_res": 1.4210854715202004e-14,
+          "water_res": 2.842170943040401e-14
+        },
+        "snapshots": {
+          "0": {
+            "owner_sha": "d90ee06a71675a86df2ebfac156a5c985bb6b1a931f0644c510dcb6694b33bd1",
+            "sha256": "ecc9a45b872b020e505c9194a3f9eb7dcda1e829042f58950e420e802e6c4a53"
+          },
+          "120": {
+            "owner_sha": "1199a2bc94e1154f5d4bf416e1ee8b3dd63c9b85d6e1268416794350c7a16dd1",
+            "sha256": "149318be6657095b5cbfbab74f447d4e2af7bb04bed4f796534fcc1fb212e082"
+          },
+          "240": {
+            "owner_sha": "464a94ac0743261661eca4a50f9c8c3c25cb9375c5351e489018cebed2c717f8",
+            "sha256": "2b76f0ca8b855063b765895e4be49d5ba07bbe246f0949cfcfa4c4d876523735"
+          }
+        },
+        "steps": 240,
+        "wall_seconds": 8.009285294000009
+      }
+    },
+    "experiment": "P6.2B",
+    "failed_preregistered_gates": [],
+    "fork": {
+      "h_diff": 0.00022114252527434541,
+      "owner_sha": "1199a2bc94e1154f5d4bf416e1ee8b3dd63c9b85d6e1268416794350c7a16dd1",
+      "q_diff": 0.002124485462249401,
+      "real_exact": true
+    },
+    "outputs": {
+      "control/maps.npz": "777568c0d93af688bd799b87ceae04947e90b44300738cecbe44a467c1783954",
+      "control/series.npz": "a6f4c03a0282cd443742922de25a5baf29f65d5a9b5bc598694aa6eb3e7356d9",
+      "control/step0000.nc": "9ef719fde4218c86972b36acac8e341e1a9bff06d398b32d2241e4fcd0a1bfbb",
+      "control/step0120.nc": "4020b41b05d768b2cf9dda7bf6ea4170cc74b7ff5229c876caa9e0d93c578af7",
+      "control/step0240.nc": "726ebe55649f656b230209f93bc1d78af7a7a0ad38be5524732926492e8d0f17",
+      "seed26061103/maps.npz": "b4f4a2b2993dcd0497bcd9e75f4a0302b2d12e2fe5895048b31fe66be4a0b790",
+      "seed26061103/series.npz": "58f25c6d29539cbaa9dbdda84b329463e8c0c8e28b574ca539bb72dd64af5bc1",
+      "seed26061103/step0000.nc": "c1230ed6fb6452b12a688e7d04473322a98371be6aef9b7fddc5af07f244e798",
+      "seed26061103/step0120.nc": "d7eb3da169b1e2de503dbb9e7478852b77021e6c92bfcd26e7107cdf7203b67d",
+      "seed26061103/step0240.nc": "0ed2e09f9f6c7e8e61f9073fd87b6eef3654c9f07e44dd5063d18cf7962d8411",
+      "seed26061104/fork.npz": "9c30c650a4d6ceb2d2dcf770803461c6d53fa9a4d056201a65a9a33d70270a07",
+      "seed26061104/maps.npz": "3c188f79b4a3c6aaa518880a7c05bd7fc9f4e26dd31cd3a1a3b994368c4983ba",
+      "seed26061104/series.npz": "f63ae75b8440438ea9d4dcf76cf73bce34ba02689b9e12b9b7ee739dbd3ad48f",
+      "seed26061104/step0000.nc": "ecc9a45b872b020e505c9194a3f9eb7dcda1e829042f58950e420e802e6c4a53",
+      "seed26061104/step0120.nc": "149318be6657095b5cbfbab74f447d4e2af7bb04bed4f796534fcc1fb212e082",
+      "seed26061104/step0240.nc": "2b76f0ca8b855063b765895e4be49d5ba07bbe246f0949cfcfa4c4d876523735",
+      "source_archive_manifest.json": "e15758cb3f4b980791e3c2eabd816c8ddcc2d23ff8c0d5ef4ada7fe437f95769",
+      "source_manifest.json": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f",
+      "upstream_license.md": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0"
+    },
+    "pairs": {
+      "control:seed26061103": {
+        "initial_z_max_diff_m": 0.040000000000000036,
+        "response_max_diff_m": 0.015534423411183829
+      },
+      "control:seed26061104": {
+        "initial_z_max_diff_m": 0.040000000000000036,
+        "response_max_diff_m": 0.0030881592964411286
+      },
+      "seed26061103:seed26061104": {
+        "initial_z_max_diff_m": 0.046002793542277765,
+        "response_max_diff_m": 0.013735433125294572
+      }
+    },
+    "peak_rss_kib": 211836,
+    "wall_seconds": 23.927054515000002
+  },
+  "WORLD_HORIZON_R_RESTART_JSON": {
+    "controls": {
+      "E": true,
+      "capacity": true,
+      "clock": true,
+      "duplicate": true,
+      "file": true,
+      "negative_class": true,
+      "q": true
+    },
+    "final": {
+      "owner_sha": "464a94ac0743261661eca4a50f9c8c3c25cb9375c5351e489018cebed2c717f8",
+      "sha256": "0e2c4820a8a58d664f90bc5a8f7198de07d09ca9a3dc5e9e69954a0a6fa843d4"
+    },
+    "first_step": 121,
+    "input_owner_sha": "1199a2bc94e1154f5d4bf416e1ee8b3dd63c9b85d6e1268416794350c7a16dd1",
+    "outputs": {
+      "series.npz": "1b6a33be9fe09bf4c4659c2571e1bf9a7c165e31bc39b5f1b33aaf9681bea009",
+      "source_archive_manifest.json": "e15758cb3f4b980791e3c2eabd816c8ddcc2d23ff8c0d5ef4ada7fe437f95769",
+      "source_manifest.json": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f",
+      "step0240.nc": "0e2c4820a8a58d664f90bc5a8f7198de07d09ca9a3dc5e9e69954a0a6fa843d4",
+      "upstream_license.md": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0"
+    },
+    "snapshots": {
+      "240": {
+        "owner_sha": "464a94ac0743261661eca4a50f9c8c3c25cb9375c5351e489018cebed2c717f8",
+        "sha256": "0e2c4820a8a58d664f90bc5a8f7198de07d09ca9a3dc5e9e69954a0a6fa843d4"
+      }
+    },
+    "steps": 120
+  },
+  "WORLD_HORIZON_R_COMPARE_JSON": {
+    "seed26061104": {
+      "controls": {
+        "E": true,
+        "capacity": true,
+        "clock": true,
+        "duplicate": true,
+        "file": true,
+        "negative_class": true,
+        "q": true
+      },
+      "limited_steps": 67,
+      "owner_sha": "464a94ac0743261661eca4a50f9c8c3c25cb9375c5351e489018cebed2c717f8",
+      "steps": 120,
+      "suffix_exact": true
+    }
+  }
+}

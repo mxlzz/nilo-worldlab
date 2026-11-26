@@ -1,0 +1,29 @@
+name: WorldLab archive P6.2B territory
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-archive-p62b.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive and verify
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/P6/P62B
+          mkdir -p "$d"
+          gh api repos/"$GITHUB_REPOSITORY"/actions/artifacts/15125444846/zip > "$d/p62-territory.zip"
+          python experiments/archive_p62b.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$d/p62-territory.zip" "$d/archive_manifest.json"
+          git commit -m "evidence: retain verified P6.2B territory"
+          git pull --rebase origin main
+          git push origin HEAD:main

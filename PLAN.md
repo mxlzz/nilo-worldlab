@@ -51,3 +51,5 @@ ARCH dictamen provisional 2026-11-26: ARCH-04A inconclusa sin runner, ARCH-03 di
 P6.2A [prerregistro](research/P6/P6.2A_PROTOCOLO_DIVERSIDAD.md): tres condiciones iniciales, misma materia y leyes, 480 pasos, checkpoint reservado; no confundir distribución inicial con formación granular 3D.
 
 P6.2A [aprobada y archivada](research/P6/P6.2A_RESULTADO.md). P6.2B [prerregistro](research/P6/P6.2B_PROTOCOLO_TERRITORIO.md): ampliar a 225 core, territorio coherente y evolución bajo leyes existentes, sin granular/voxel salvo necesidad. Después evaluar P7 o brecha concreta.
+
+P6.2B [readback positivo](research/P6/P6.2B_READBACK.md), archivo pendiente. Tras cierre limitado P6, P7.1 diseñar evaluación funcional frente a pendiente/outlet y relieve congelado; mapas previos descriptivos, semillas nuevas/reservadas y gates prospectivos. No afirmar cauces emergentes ni repetir granular.
