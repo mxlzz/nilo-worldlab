@@ -4,9 +4,9 @@
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "running",
   "stage": "P6",
-  "current_task": "P6.2A",
-  "next_action": "Consultar workflow worldlab-p62a-diversity.yml; cotejar gates, conservar resultado y archivo, no duplicar. P6.1-R y ARCH intactos.",
-  "scientific_next": "P6.2A",
+  "current_task": "P6.2A-archive",
+  "next_action": "Consultar worldlab-archive-p62a.yml; cotejar ZIP/manifest, cerrar P6.2A y decidir P6.2B según valor marginal. No repetir P6.2A.",
+  "scientific_next": "P6.2A-archive",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -22,7 +22,7 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "P62A_diversity_preregistered",
+    "P6": "P62A_ci_pass_readback_archive_pending",
     "ARCH": "provisional_retain_A_ARCH03_deferred_BMI_inconclusive_no_jobs"
   },
   "blockers": [],
@@ -140,13 +140,15 @@
     "research/ARCH/ARCH-04A_RESULTADO.md",
     "research/ARCH/ARCH_DICTAMEN_PROVISIONAL.md",
     "evidence/ARCH/BMI-retry/runs.json",
-    "research/P6/P6.2A_PROTOCOLO_DIVERSIDAD.md"
+    "research/P6/P6.2A_PROTOCOLO_DIVERSIDAD.md",
+    "research/P6/P6.2A_READBACK.md",
+    "evidence/P6/P62A/readback.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "85d21b913b96b0a3a317cb723c4409e986d13afc",
+  "last_confirmed_non_state_write": "784747eb283e9e43bfdbb6c7e5559c0514fcd84b",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
