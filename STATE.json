@@ -3,13 +3,13 @@
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
   "status": "running",
-  "stage": "P6",
-  "current_task": "P6.2B-archive",
-  "next_action": "Consultar worldlab-archive-p62b.yml; cotejar ZIP/manifest y cerrar P6 limitado. Diseñar P7.1 función territorial frente a controles, no declarar E7 aprobada. No repetir P6.2B.",
-  "scientific_next": "P6.2B-archive",
+  "stage": "P7",
+  "current_task": "P7.1",
+  "next_action": "Consultar worldlab-p71-function.yml; cotejar integridad/restart y gates funcionales por separado, archivar todos resultados incluso negativo. No repetir P6 ni granular. E8 pendiente.",
+  "scientific_next": "P7.1",
   "scientific_state": {
     "E0_E6": "provisional_limited",
-    "E7": "open_E71b_negative_deferred_until_P7",
+    "E7": "open_E71b_negative_P71_function_preregistered",
     "E8": "not_started",
     "P0": "complete_limited",
     "P1_A": "failed_instrument",
@@ -22,7 +22,7 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "P62B_ci_pass_readback_archive_pending",
+    "P6": "complete_limited_integrated_territorial_archive_verified",
     "ARCH": "provisional_retain_A_ARCH03_deferred_BMI_inconclusive_no_jobs"
   },
   "blockers": [],
@@ -148,13 +148,16 @@
     "research/P6/P6.2B_PROTOCOLO_TERRITORIO.md",
     "research/P6/P6.2B_READBACK.md",
     "evidence/P6/P62B/readback.json",
-    "research/P2/IDEA_WL_001_COLUMNAS_SEGMENTADAS.md"
+    "research/P2/IDEA_WL_001_COLUMNAS_SEGMENTADAS.md",
+    "research/P6/P6_DICTAMEN.md",
+    "evidence/P6/P62B/archive_manifest.json",
+    "research/P7/P7.1_PROTOCOLO_ORGANIZACION_TERRITORIAL.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "dd99a1ea69e1bb1133c63e0e994fd931434a39c0",
+  "last_confirmed_non_state_write": "73df72a5eb1a2a8b47ecfe0cac60d5656bea5f00",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
