@@ -277,3 +277,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - ARCH-04A incidencia sin runner: no resultado físico ni aprobación. Preservar workflow y metadata; retry único prospectivo, no ajustar gates.
 
 - ARCH dictamen autoverificado: HAIL smoke positivo no restart/inventario, Delft entorno bloqueado, B3 reserva, BMI inconclusa por infraestructura, no superioridad experimental ni ahorro. Cerrar inversión comparativa por ahora; P6.2 GO diseño prospectivo. Sin auditor independiente.
+
+- P6.2A diseño prospectivo: reutilización P6.1-R y SciPy, sin nueva física ni afirmar emergencia; H29/H26/P0-D antecedentes y escalas distintos. Costo <=5min; autoverificación. BMI disparos automáticos adicionales sin investigación nueva.

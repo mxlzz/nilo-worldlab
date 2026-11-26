@@ -47,3 +47,5 @@ ARCH actualización 2026-11-26: P6.1-R aprobada limitada y archivada ([dictamen]
 ARCH-02 técnica cerrada HAIL smoke positivo archivado, Delft entorno bloqueado, ARCH-03 diferida por precondición de inventario/restart, B3 reserva. [Dictamen](research/ARCH/ARCH-02_DICTAMEN.md). GO [ARCH-04A BMI](research/ARCH/ARCH-04A_PROTOCOLO_BMI.md), luego dictamen provisional y P6.2.
 
 ARCH dictamen provisional 2026-11-26: ARCH-04A inconclusa sin runner, ARCH-03 diferida; retener A y reanudar P6.2 sin adopción definitiva. [Dictamen](research/ARCH/ARCH_DICTAMEN_PROVISIONAL.md). Reabrir alternativas sólo ante brecha concreta o evidencia nueva.
+
+P6.2A [prerregistro](research/P6/P6.2A_PROTOCOLO_DIVERSIDAD.md): tres condiciones iniciales, misma materia y leyes, 480 pasos, checkpoint reservado; no confundir distribución inicial con formación granular 3D.
