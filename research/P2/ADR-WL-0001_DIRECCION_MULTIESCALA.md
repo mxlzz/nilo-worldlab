@@ -14,3 +14,6 @@ P2 consolidación: retener negativos, identificar contratos reutilizables, resol
  
 ## Método
 Cada unidad nueva debe adquirir capacidad del mundo, explicitar relación y costo, comparar alternativas existentes, preregistrar controles y límites, ejecutar el mínimo y auditar. Evitar bloques de infraestructura sin necesidad física. La exactitud binaria interhost no es objetivo por sí misma; conservar perfil y distinguir continuidad y portabilidad. Detener por gasto pago, decisión de arquitectura definitiva, licencias, merge o cambios sustantivos. Autoverificación y límite explícito; preferir auditor separado cuando disponible. No modificar origen ni otros labs. 
+
+## Idea diferida (2026-11-26)
+[IDEA-WL-001 — Columnas segmentadas y soporte mecánico lateral](IDEA_WL_001_COLUMNAS_SEGMENTADAS.md). Evaluar cuando haya necesidad física de cavidades/estabilidad, comparar alternativas existentes, sin sustituir representación actual ni alterar secuencia P6/P7. No decisión arquitectónica.

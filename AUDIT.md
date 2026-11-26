@@ -285,3 +285,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - P6.2A archivo durable verificado mediante CI, blob/tamaño en árbol; no rehash postpush. P6.2B prospectivo, prioridad territorio frente a granular, escala 9x sin cambiar leyes/gates de conservación, no emergencia; control plano y fork local. Presupuesto 5min. Autoverificación.
 
 - P6.2B autoverificación logs: todos gates, diversidad y retroacción positivas, conservación y restart limitado. Concentración no distingue control, no E7. Min H casi seco y limitador activo; no horizonte largo ni momento. Cierre P6 condicionado a archivo; P7.1 debe evaluar función con nulos adecuados, no incrementar escala por inercia.
+
+- IDEA-WL-001 registro documental: hipótesis diferida, fricción sola insuficiente, referencia a representación híbrida y antecedentes, no gates ni afirmación experimental. Sin ejecución ni cambio de alcance. Autoverificación.

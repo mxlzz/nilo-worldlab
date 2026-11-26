@@ -53,3 +53,6 @@ P6.2A [prerregistro](research/P6/P6.2A_PROTOCOLO_DIVERSIDAD.md): tres condicione
 P6.2A [aprobada y archivada](research/P6/P6.2A_RESULTADO.md). P6.2B [prerregistro](research/P6/P6.2B_PROTOCOLO_TERRITORIO.md): ampliar a 225 core, territorio coherente y evolución bajo leyes existentes, sin granular/voxel salvo necesidad. Después evaluar P7 o brecha concreta.
 
 P6.2B [readback positivo](research/P6/P6.2B_READBACK.md), archivo pendiente. Tras cierre limitado P6, P7.1 diseñar evaluación funcional frente a pendiente/outlet y relieve congelado; mapas previos descriptivos, semillas nuevas/reservadas y gates prospectivos. No afirmar cauces emergentes ni repetir granular.
+
+## Ideas diferidas — no tareas activas
+[IDEA-WL-001](research/P2/IDEA_WL_001_COLUMNAS_SEGMENTADAS.md): columnas con segmentos sólidos/vacíos y soporte lateral derivado de propiedades mecánicas. Evaluar tras P7 o ante brecha física justificada, no por inercia. Sin adopción ni ejecución.
