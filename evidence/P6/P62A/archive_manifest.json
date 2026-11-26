@@ -1,0 +1,111 @@
+{
+  "artifact_id": 15113821471,
+  "checkpoint_verified": true,
+  "members": {
+    "checkpoint/seed26061102/manifest.json": {
+      "bytes": 197,
+      "sha256": "4631d0ab6357630f776ae4ccac01f4cabdda3c13c91d7e61042290706171d136"
+    },
+    "checkpoint/seed26061102/owner.nc": {
+      "bytes": 9124,
+      "sha256": "98d3b43771037a9f6171fdbf8160346534bd3e810d9c5cb668fadf04de5adf71"
+    },
+    "compare.json": {
+      "bytes": 358,
+      "sha256": "07162865d6f6d72b3217e5e5e8b12e0cd7140406227a768db08cc24f82d326b0"
+    },
+    "consumer/seed26061102/result.json": {
+      "bytes": 1171,
+      "sha256": "de97357297a646a75e307d004f57c609902c3f48ac25fd02107fdafc646e93f9"
+    },
+    "consumer/seed26061102/series.npz": {
+      "bytes": 58570,
+      "sha256": "3de0afa4e11df95ff94c86ad20da8a96c0a456a3f52194fb4f5108674c8d450c"
+    },
+    "consumer/seed26061102/source_archive_manifest.json": {
+      "bytes": 1752,
+      "sha256": "e15758cb3f4b980791e3c2eabd816c8ddcc2d23ff8c0d5ef4ada7fe437f95769"
+    },
+    "consumer/seed26061102/source_manifest.json": {
+      "bytes": 1914,
+      "sha256": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f"
+    },
+    "consumer/seed26061102/step0480.nc": {
+      "bytes": 9124,
+      "sha256": "9616f6fd886ee109ae013e03de6f25b2afba74f155dadcc1a58bdba74d4c521d"
+    },
+    "consumer/seed26061102/upstream_license.md": {
+      "bytes": 1089,
+      "sha256": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0"
+    },
+    "reference/control/series.npz": {
+      "bytes": 105894,
+      "sha256": "3d69074aa5984b8ae57541b1f27186202c5c209936b0b856eb2309bb96d76f3b"
+    },
+    "reference/control/step0000.nc": {
+      "bytes": 9120,
+      "sha256": "0067c3f99c00b2fa3f884aeb4936e41a89b81f469ca96f881ddd03dfefe37eae"
+    },
+    "reference/control/step0240.nc": {
+      "bytes": 9120,
+      "sha256": "ee038e103afbe5372ea69c6f732fcc3bcc4bf25cb861aa2dfc9a1f9bb01872a0"
+    },
+    "reference/control/step0480.nc": {
+      "bytes": 9120,
+      "sha256": "dd400db7ceea91298c7893368843014e593b2ced564d48a68a1116d43d4e0bea"
+    },
+    "reference/result.json": {
+      "bytes": 11372,
+      "sha256": "77d7b8925e0eaf13056e63cc8e5b847a7bef886a98e1b7b7dfd6889601f359b7"
+    },
+    "reference/seed26061101/series.npz": {
+      "bytes": 105769,
+      "sha256": "5f9964e801865afd33455364af03eb4b824ed4b2edc9a7305f8705707fb57763"
+    },
+    "reference/seed26061101/step0000.nc": {
+      "bytes": 9124,
+      "sha256": "6eae31c8eae5375c992b8bbd36a0dbb81a5aa2c001662521175e502c5abfde1f"
+    },
+    "reference/seed26061101/step0240.nc": {
+      "bytes": 9124,
+      "sha256": "7576594c589fc01792a9fe33049a426bab0e49afa91f75fa6d0e76900ba304c3"
+    },
+    "reference/seed26061101/step0480.nc": {
+      "bytes": 9124,
+      "sha256": "bc1600e18837d5a9367b0fb6ecb60b1a8f2e19f66d5ca474005a7a6cedb9070f"
+    },
+    "reference/seed26061102/series.npz": {
+      "bytes": 105989,
+      "sha256": "351f64323f3858d3084ca6935997ba7827c2f78c7f1dc78502632a3977f49dcc"
+    },
+    "reference/seed26061102/step0000.nc": {
+      "bytes": 9124,
+      "sha256": "debf90cba49b7fbe1f9d457e186ca333d8550dcfc88a7dbcdc7799d5b3bf7595"
+    },
+    "reference/seed26061102/step0240.nc": {
+      "bytes": 9124,
+      "sha256": "98d3b43771037a9f6171fdbf8160346534bd3e810d9c5cb668fadf04de5adf71"
+    },
+    "reference/seed26061102/step0480.nc": {
+      "bytes": 9124,
+      "sha256": "5b228119d9788a17a84f569fd4f601c4094ee2722e3c07c8856f8c436e1eeae5"
+    },
+    "reference/source_archive_manifest.json": {
+      "bytes": 1752,
+      "sha256": "e15758cb3f4b980791e3c2eabd816c8ddcc2d23ff8c0d5ef4ada7fe437f95769"
+    },
+    "reference/source_manifest.json": {
+      "bytes": 1914,
+      "sha256": "3fcbffe5ae899b183cf97a6bddda11796596da895c4bc13cfd1e574fc1a10d7f"
+    },
+    "reference/upstream_license.md": {
+      "bytes": 1089,
+      "sha256": "c9583c11b4c5130b9a7ce5f9432b3a8881ffff0507afaba40b0fd758759196f0"
+    }
+  },
+  "output_paths_verified": true,
+  "reports_equal": true,
+  "run_id": 45811650794,
+  "zip_bytes": 407544,
+  "zip_sha256": "04dcd2a0b0fdec23ce3bd4037473b271b53969715094cb4b17ba2b9ef572ec22"
+}
