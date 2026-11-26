@@ -185,3 +185,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - ARCH-02 cierre: archivo45809880170 232 miembros, 109 archivos exactos por corrida y MATCH original, 144.67/144.54s. ARCH-03 diferida, HAIL no contrato causal, Delft entorno bloqueado. GO ARCH-04A sobre P3.1 sin cambiar física.
 
 - ARCH-04A run45810627410 FAILURE sin jobs, no física, causa exacta no recuperada. Único retry instrumental con workflow simplificado y comparación separada, gates intactos.
+
+- ARCH-04A-R sin jobs, run45810719723, original disparado también sin jobs45810718111. Sin física ni equivalencia; detener retry. Dictamen provisional retener A y reanudar P6.2; no arquitectura definitiva.

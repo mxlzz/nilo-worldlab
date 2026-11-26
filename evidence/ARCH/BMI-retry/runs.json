@@ -1,0 +1,18 @@
+[
+  {
+    "id": 45810719723,
+    "head_sha": "a4a9140f1de345bc55942490d1c09239c08993b7",
+    "status": "completed",
+    "conclusion": "failure",
+    "check_suite_id": 123942251295,
+    "jobs": []
+  },
+  {
+    "id": 45810718111,
+    "head_sha": "a4a9140f1de345bc55942490d1c09239c08993b7",
+    "status": "completed",
+    "conclusion": "failure",
+    "check_suite_id": 123942247124,
+    "jobs": []
+  }
+]

@@ -275,3 +275,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - ARCH-02 autoverificación archivo y logs, límites explícitos, no sustitución. ARCH-04A prerregistro exactitud y restart, beneficio no supuesto. B3 reserva por valor marginal, no descartado.
 
 - ARCH-04A incidencia sin runner: no resultado físico ni aprobación. Preservar workflow y metadata; retry único prospectivo, no ajustar gates.
+
+- ARCH dictamen autoverificado: HAIL smoke positivo no restart/inventario, Delft entorno bloqueado, B3 reserva, BMI inconclusa por infraestructura, no superioridad experimental ni ahorro. Cerrar inversión comparativa por ahora; P6.2 GO diseño prospectivo. Sin auditor independiente.
