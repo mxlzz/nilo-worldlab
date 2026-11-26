@@ -287,3 +287,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - P6.2B autoverificación logs: todos gates, diversidad y retroacción positivas, conservación y restart limitado. Concentración no distingue control, no E7. Min H casi seco y limitador activo; no horizonte largo ni momento. Cierre P6 condicionado a archivo; P7.1 debe evaluar función con nulos adecuados, no incrementar escala por inercia.
 
 - IDEA-WL-001 registro documental: hipótesis diferida, fricción sola insuficiente, referencia a representación híbrida y antecedentes, no gates ni afirmación experimental. Sin ejecución ni cambio de alcance. Autoverificación.
+
+- Extensión IDEA-WL-001: registrar hipótesis de resolución adaptativa sin asumir superioridad; conservar estado e interfaces, controlar intercambio entre resoluciones y comparar alternativas antes de implementar. Autoverificación documental, ningún gate experimental ni cambio de objetivo.

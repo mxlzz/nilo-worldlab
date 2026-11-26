@@ -17,3 +17,5 @@ Cada unidad nueva debe adquirir capacidad del mundo, explicitar relación y cost
 
 ## Idea diferida (2026-11-26)
 [IDEA-WL-001 — Columnas segmentadas y soporte mecánico lateral](IDEA_WL_001_COLUMNAS_SEGMENTADAS.md). Evaluar cuando haya necesidad física de cavidades/estabilidad, comparar alternativas existentes, sin sustituir representación actual ni alterar secuencia P6/P7. No decisión arquitectónica.
+
+Extensión IDEA-WL-001: resolución vertical adaptativa, mayor detalle junto a interfaces activas y menor en regiones inactivas; evaluar refinamiento conservativo y desprendimiento de materia móvil sin mover la grilla. Diferida, no adopción.

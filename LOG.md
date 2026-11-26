@@ -197,3 +197,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - P6.2B CI45838934630 SUCCESS, 3×240 en 225 core, fork causal pasa, restart 120 exacto (7 controles, 67 activaciones), concentración erosión 75–77% en quintil incluso control. 23.93s, RSS211836KiB. Artefacto15125444846; archivo durable pendiente. No repetir.
 
 - 2026-11-26: usuario solicita registrar IDEA-WL-001, columnas segmentadas y soporte mecánico lateral, para evaluación futura; sin cambiar prioridad ni estado experimental.
+
+- 2026-11-26: usuario aprueba registrar extensión de IDEA-WL-001, refinamiento vertical hacia superficie/interfaces activas, núcleo grueso cuando posible, materia desprendible con grilla fija. Sin ejecución ni cambio de prioridad.

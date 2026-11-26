@@ -56,3 +56,5 @@ P6.2B [readback positivo](research/P6/P6.2B_READBACK.md), archivo pendiente. Tra
 
 ## Ideas diferidas — no tareas activas
 [IDEA-WL-001](research/P2/IDEA_WL_001_COLUMNAS_SEGMENTADAS.md): columnas con segmentos sólidos/vacíos y soporte lateral derivado de propiedades mecánicas. Evaluar tras P7 o ante brecha física justificada, no por inercia. Sin adopción ni ejecución.
+
+Extensión IDEA-WL-001 (2026-11-26): resolución vertical no uniforme/adaptativa por necesidad física, interacción entre segmentos de distinto tamaño y eventual transferencia de material a cuerpos móviles. Evaluación diferida, sin cambio de secuencia.
