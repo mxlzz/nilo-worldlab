@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-worldlab",
   "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
-  "status": "running",
+  "status": "ready",
   "stage": "P6",
-  "current_task": "ARCH-04A-R",
-  "next_action": "Consultar world-arch04a-bmi-retry.yml; no duplicar. Cotejar gates y archivo si ejecuta; si falla, dictaminar sin más retry. P6.2 retenida.",
-  "scientific_next": "ARCH-04A-R",
+  "current_task": "P6.2",
+  "next_action": "Prerregistrar P6.2 diversidad territorial/generación inicial sobre P6.1-R; semillas reservadas, mismos contratos, controles y costo. No repetir ARCH ni P6.1-R sin brecha nueva.",
+  "scientific_next": "P6.2",
   "scientific_state": {
     "E0_E6": "provisional_limited",
     "E7": "open_E71b_negative_deferred_until_P7",
@@ -22,8 +22,8 @@
     "P3": "complete_limited_reciprocal_hydromorphodynamics",
     "P4": "complete_limited_live_energy_evaporation_external_atmosphere",
     "P5": "complete_limited_grain_class_live_feedback",
-    "P6": "P61R_passed_limited_verified_archive_P62_held_for_ARCH",
-    "ARCH": "ARCH04A_no_jobs_instrument_retry_preregistered"
+    "P6": "P61R_passed_limited_verified_archive_P62_ready",
+    "ARCH": "provisional_retain_A_ARCH03_deferred_BMI_inconclusive_no_jobs"
   },
   "blockers": [],
   "evidence_refs": [
@@ -136,13 +136,16 @@
     "research/ARCH/ARCH-04A_PROTOCOLO_BMI.md",
     "evidence/ARCH/HAIL-retry/archive_manifest.json",
     "research/ARCH/ARCH-04A_INCIDENCIA_1.md",
-    "evidence/ARCH/BMI-first/run.json"
+    "evidence/ARCH/BMI-first/run.json",
+    "research/ARCH/ARCH-04A_RESULTADO.md",
+    "research/ARCH/ARCH_DICTAMEN_PROVISIONAL.md",
+    "evidence/ARCH/BMI-retry/runs.json"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "5a6b8e7d7065199180bba053e0c23b079e5a5425",
+  "last_confirmed_non_state_write": "b6f6ff61cfe34b759557995af5ad9977129851e5",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
