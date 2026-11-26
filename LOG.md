@@ -189,3 +189,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - ARCH-04A-R sin jobs, run45810719723, original disparado también sin jobs45810718111. Sin física ni equivalencia; detener retry. Dictamen provisional retener A y reanudar P6.2; no arquitectura definitiva.
 
 - P6.2A prerregistro diversidad material conservativa, dos semillas y control P6.1-R, 480 pasos y restart; mismo solver/gates. BMI nuevos runs automáticos45810812162/45810810317 fallidos, no física ni reapertura.
+
+- P6.2A CI45811650794 SUCCESS, 3×480, control seis campos exactos, 3 pares respuesta pasan, 7 corrupciones rechazadas y restart 240 exacto. 43.48s, RSS212256KiB. Artefacto15113821471; archivo durable pendiente. No repetir.
