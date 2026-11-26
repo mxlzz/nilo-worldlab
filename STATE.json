@@ -154,7 +154,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "e2755e28db209dd9947fb1e42e5d87669f36a603",
+  "last_confirmed_non_state_write": "dd99a1ea69e1bb1133c63e0e994fd931434a39c0",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
