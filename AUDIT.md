@@ -273,3 +273,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - ARCH-02A-R autoverificación de logs: gate técnico positivo, no física comparada ni restart; falta archivo durable. Original preservado. No repetir.
 
 - ARCH-02 autoverificación archivo y logs, límites explícitos, no sustitución. ARCH-04A prerregistro exactitud y restart, beneficio no supuesto. B3 reserva por valor marginal, no descartado.
+
+- ARCH-04A incidencia sin runner: no resultado físico ni aprobación. Preservar workflow y metadata; retry único prospectivo, no ajustar gates.

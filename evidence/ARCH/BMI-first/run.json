@@ -1,0 +1,9 @@
+{
+  "id": 45810627410,
+  "name": ".github/workflows/world-arch04a-bmi.yml",
+  "head_sha": "89ec40da0616ca87fbb5d90e170c465e9ab5e19e",
+  "status": "completed",
+  "conclusion": "failure",
+  "check_suite_id": 123942004613,
+  "jobs": []
+}

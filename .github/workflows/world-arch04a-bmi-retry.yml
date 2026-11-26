@@ -1,0 +1,44 @@
+name: WorldLab BMI retry
+on:
+  push:
+    paths:
+      - '.github/workflows/world-arch04a-bmi-retry.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.18'
+      - run: python -m pip install --only-binary=:all: numpy==2.5.5 scipy==1.18.1 xarray==2026.9.0 landlab==2.11.0 bmipy==2.0.1
+      - name: Produce and consume independently
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p arch04-out
+          { lscpu; python --version; pip freeze; } > arch04-out/environment.txt
+          PYTHONPATH=experiments python experiments/ARCH/bmi_compare.py arch04-out/producer | tee arch04-out/producer.log
+          cp arch04-out/producer/checkpoint.nc "$RUNNER_TEMP/checkpoint.nc"
+          mkdir -p "$RUNNER_TEMP/bmi-consumer"
+          cd "$RUNNER_TEMP/bmi-consumer"
+          PYTHONPATH="$GITHUB_WORKSPACE/experiments" python "$GITHUB_WORKSPACE/experiments/ARCH/bmi_compare.py" consumer "$RUNNER_TEMP/checkpoint.nc" | tee "$GITHUB_WORKSPACE/arch04-out/consumer.log"
+          cp -r consumer "$GITHUB_WORKSPACE/arch04-out/"
+          cd "$GITHUB_WORKSPACE"
+          python experiments/ARCH/bmi_compare_suffix.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arch04a-bmi-retry
+          path: arch04-out/
+          if-no-files-found: warn
+          retention-days: 7
