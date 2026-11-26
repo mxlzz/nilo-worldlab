@@ -43,3 +43,5 @@ Cada fase fija presupuesto y criterios previos; si valor marginal bajo, cerrar l
 
 
 ARCH actualización 2026-11-26: P6.1-R aprobada limitada y archivada ([dictamen](research/P6/P6.1R_RESULTADO.md)); P6.2 habilitada pero retenida por ARCH. ARCH-02A primer smoke HAIL terminó una ejecución, fallo de instrumento por formato Grainz; único retry tras archivo y confirmación ([incidencia](research/ARCH/ARCH-02A_INCIDENCIA_1.md)).
+
+ARCH-02 técnica cerrada HAIL smoke positivo archivado, Delft entorno bloqueado, ARCH-03 diferida por precondición de inventario/restart, B3 reserva. [Dictamen](research/ARCH/ARCH-02_DICTAMEN.md). GO [ARCH-04A BMI](research/ARCH/ARCH-04A_PROTOCOLO_BMI.md), luego dictamen provisional y P6.2.

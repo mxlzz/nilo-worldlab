@@ -181,3 +181,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - ARCH-02A CI45662003426: build y primera simulación completos, KeyError nrows en validador antes de control. Artefacto15044938432. Diagnóstico Grainz tabla no raster; único retry prospectivo sin cambiar física, archivar original primero.
 
 - ARCH-02A-R CI45756683979 SUCCESS, primer intento archivado 117 miembros, dos corridas limpias y hashes iguales. Retención retry pendiente; no ARCH-03 sin inventario/restart. [Readback](research/ARCH/ARCH-02AR_READBACK.md).
+
+- ARCH-02 cierre: archivo45809880170 232 miembros, 109 archivos exactos por corrida y MATCH original, 144.67/144.54s. ARCH-03 diferida, HAIL no contrato causal, Delft entorno bloqueado. GO ARCH-04A sobre P3.1 sin cambiar física.
