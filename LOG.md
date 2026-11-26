@@ -179,3 +179,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 
 - P6.1-R archivo45662193044 éxito, 50 miembros, hash/CRC/log outputs/compare cotejados, ZIP en main 28a8307. Gate aprobado limitado; P6.2 retenida por ARCH.
 - ARCH-02A CI45662003426: build y primera simulación completos, KeyError nrows en validador antes de control. Artefacto15044938432. Diagnóstico Grainz tabla no raster; único retry prospectivo sin cambiar física, archivar original primero.
+
+- ARCH-02A-R CI45756683979 SUCCESS, primer intento archivado 117 miembros, dos corridas limpias y hashes iguales. Retención retry pendiente; no ARCH-03 sin inventario/restart. [Readback](research/ARCH/ARCH-02AR_READBACK.md).

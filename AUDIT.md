@@ -269,3 +269,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 
 
 - P6.1-R autoverificación: archivo durable, cotejo 50 miembros, gates y negativo intactos; P6.2 habilitada pero retenida. ARCH-02A fallo instrumental, preservar log/ZIP, corregir sólo clasificación de tabla Grainz con verificación previa sobre original y repetir dentro de presupuesto; no aprobar ni inferir física fallida.
+
+- ARCH-02A-R autoverificación de logs: gate técnico positivo, no física comparada ni restart; falta archivo durable. Original preservado. No repetir.
