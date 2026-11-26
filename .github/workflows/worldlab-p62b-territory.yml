@@ -1,0 +1,59 @@
+name: WorldLab P6.2B larger territory
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-p62b-territory.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+jobs:
+  horizon:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/p62_territory.py
+            /experiments/p6_horizon.py
+            /experiments/p6_horizon_r.py
+            /experiments/p6_limiter.py
+            /experiments/p6_dry_diagnostic.py
+            /evidence/P6/P61/15031640270.zip
+            /evidence/P5/P52/15030611016.zip
+            /experiments/p5_grain.py
+            /experiments/p4_evap.py
+            /experiments/p4_energy.py
+            /experiments/p3_reciprocal.py
+            /experiments/p3_water.py
+            /experiments/p3_pore.py
+            /experiments/p3_exner.py
+            /research/P3/RBD_SOURCE_MANIFEST.json
+            /evidence/P3/RBD_SOURCE/source.zip
+            /evidence/P3/RBD_SOURCE/archive_manifest.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.5.5 scipy==1.18.1 xarray==2026.9.0 landlab==2.11.0
+          python -m pip freeze
+          lscpu
+          mkdir p62-territory
+          python experiments/p62_territory.py produce p62-territory/reference p62-territory/checkpoint
+      - run: |
+          mv rbd-upstream rbd-producer
+          mkdir p62-territory/consumer
+          python experiments/p62_territory.py consume p62-territory/checkpoint/seed26061104 p62-territory/consumer/seed26061104
+      - run: python experiments/p62_territory.py compare p62-territory/reference p62-territory/consumer p62-territory/compare.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p62-territory
+          path: p62-territory
+          retention-days: 30

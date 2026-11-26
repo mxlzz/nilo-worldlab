@@ -191,3 +191,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - P6.2A prerregistro diversidad material conservativa, dos semillas y control P6.1-R, 480 pasos y restart; mismo solver/gates. BMI nuevos runs automáticos45810812162/45810810317 fallidos, no física ni reapertura.
 
 - P6.2A CI45811650794 SUCCESS, 3×480, control seis campos exactos, 3 pares respuesta pasan, 7 corrupciones rechazadas y restart 240 exacto. 43.48s, RSS212256KiB. Artefacto15113821471; archivo durable pendiente. No repetir.
+
+- P6.2A archivo45816684679 SUCCESS, 25 miembros, rutas/reportes/checkpoint verificados. Cierre limitado. GO P6.2B 225 core, 3×240, fork causal y restart 120 reservado, usuario aprobó amplitud territorial. No nueva física.

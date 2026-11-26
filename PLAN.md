@@ -49,3 +49,5 @@ ARCH-02 técnica cerrada HAIL smoke positivo archivado, Delft entorno bloqueado,
 ARCH dictamen provisional 2026-11-26: ARCH-04A inconclusa sin runner, ARCH-03 diferida; retener A y reanudar P6.2 sin adopción definitiva. [Dictamen](research/ARCH/ARCH_DICTAMEN_PROVISIONAL.md). Reabrir alternativas sólo ante brecha concreta o evidencia nueva.
 
 P6.2A [prerregistro](research/P6/P6.2A_PROTOCOLO_DIVERSIDAD.md): tres condiciones iniciales, misma materia y leyes, 480 pasos, checkpoint reservado; no confundir distribución inicial con formación granular 3D.
+
+P6.2A [aprobada y archivada](research/P6/P6.2A_RESULTADO.md). P6.2B [prerregistro](research/P6/P6.2B_PROTOCOLO_TERRITORIO.md): ampliar a 225 core, territorio coherente y evolución bajo leyes existentes, sin granular/voxel salvo necesidad. Después evaluar P7 o brecha concreta.

@@ -281,3 +281,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - P6.2A diseño prospectivo: reutilización P6.1-R y SciPy, sin nueva física ni afirmar emergencia; H29/H26/P0-D antecedentes y escalas distintos. Costo <=5min; autoverificación. BMI disparos automáticos adicionales sin investigación nueva.
 
 - P6.2A autoverificación logs: gates vacíos, diferencias de respuesta y conservación positivas, continuidad exacta mismo host. No inferir emergencia, horizonte largo ni formación granular. Cierre condicionado al archivo durable.
+
+- P6.2A archivo durable verificado mediante CI, blob/tamaño en árbol; no rehash postpush. P6.2B prospectivo, prioridad territorio frente a granular, escala 9x sin cambiar leyes/gates de conservación, no emergencia; control plano y fork local. Presupuesto 5min. Autoverificación.
