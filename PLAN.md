@@ -58,3 +58,5 @@ P6.2B [readback positivo](research/P6/P6.2B_READBACK.md), archivo pendiente. Tra
 [IDEA-WL-001](research/P2/IDEA_WL_001_COLUMNAS_SEGMENTADAS.md): columnas con segmentos sólidos/vacíos y soporte lateral derivado de propiedades mecánicas. Evaluar tras P7 o ante brecha física justificada, no por inercia. Sin adopción ni ejecución.
 
 Extensión IDEA-WL-001 (2026-11-26): resolución vertical no uniforme/adaptativa por necesidad física, interacción entre segmentos de distinto tamaño y eventual transferencia de material a cuerpos móviles. Evaluación diferida, sin cambio de secuencia.
+
+P6 [cerrada limitada](research/P6/P6_DICTAMEN.md), P6.2B evidencia durable. P7.1 [prerregistro](research/P7/P7.1_PROTOCOLO_ORGANIZACION_TERRITORIAL.md): 3 pares live/frozen, nuevas semillas, selección espacial prospectiva al240 y función en dos ventanas posteriores, 480 pasos y restart reservado. E7 abierta, E8 pendiente; IDEA-WL-001 diferida.

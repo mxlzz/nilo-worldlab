@@ -289,3 +289,5 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 - IDEA-WL-001 registro documental: hipótesis diferida, fricción sola insuficiente, referencia a representación híbrida y antecedentes, no gates ni afirmación experimental. Sin ejecución ni cambio de alcance. Autoverificación.
 
 - Extensión IDEA-WL-001: registrar hipótesis de resolución adaptativa sin asumir superioridad; conservar estado e interfaces, controlar intercambio entre resoluciones y comparar alternativas antes de implementar. Autoverificación documental, ningún gate experimental ni cambio de objetivo.
+
+- P6 cierre autoverificado: archivo P6.2B confirmado, horizonte limitado y E7/E8 no cerradas. P7.1 preregistro con nulo hidráulico congelado, semilla reservada, gates estructural/funcional independientes de integridad, plano diagnóstico no negativo obligatorio; no inferir cauce ni significancia estadística. Presupuesto 5min; idea adaptativa diferida. Sin auditor independiente.

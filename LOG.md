@@ -199,3 +199,5 @@ CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos hori
 - 2026-11-26: usuario solicita registrar IDEA-WL-001, columnas segmentadas y soporte mecánico lateral, para evaluación futura; sin cambiar prioridad ni estado experimental.
 
 - 2026-11-26: usuario aprueba registrar extensión de IDEA-WL-001, refinamiento vertical hacia superficie/interfaces activas, núcleo grueso cuando posible, materia desprendible con grilla fija. Sin ejecución ni cambio de prioridad.
+
+- P6.2B archivo45887104430 SUCCESS, 29 miembros/rutas/reportes/checkpoint verificados. P6 cierre limitado; GO P7.1, 3 pares live/frozen, 480 pasos, función sostenida en máscara erosionada seleccionada antes de ventana confirmatoria. Sin granular/voxel, sin cambiar leyes productivas.

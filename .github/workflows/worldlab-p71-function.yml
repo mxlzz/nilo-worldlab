@@ -1,0 +1,60 @@
+name: WorldLab P7.1 territorial function
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/worldlab-p71-function.yml]
+permissions:
+  contents: read
+env:
+  NPY_DISABLE_CPU_FEATURES: X86_V3,X86_V4,AVX512_ICL,AVX512_SPR
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+jobs:
+  horizon:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/p71_function.py
+            /experiments/p62_territory.py
+            /experiments/p6_horizon.py
+            /experiments/p6_horizon_r.py
+            /experiments/p6_limiter.py
+            /experiments/p6_dry_diagnostic.py
+            /evidence/P6/P61/15031640270.zip
+            /evidence/P5/P52/15030611016.zip
+            /experiments/p5_grain.py
+            /experiments/p4_evap.py
+            /experiments/p4_energy.py
+            /experiments/p3_reciprocal.py
+            /experiments/p3_water.py
+            /experiments/p3_pore.py
+            /experiments/p3_exner.py
+            /research/P3/RBD_SOURCE_MANIFEST.json
+            /evidence/P3/RBD_SOURCE/source.zip
+            /evidence/P3/RBD_SOURCE/archive_manifest.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.18'
+      - run: |
+          python -m pip install --only-binary=:all: numpy==2.5.5 scipy==1.18.1 xarray==2026.9.0 landlab==2.11.0
+          python -m pip freeze
+          lscpu
+          mkdir p71-function
+          python experiments/p71_function.py produce p71-function/reference p71-function/checkpoint
+      - run: |
+          mv rbd-upstream rbd-producer
+          mkdir p71-function/consumer
+          python experiments/p71_function.py consume p71-function/checkpoint/seed26061106_live p71-function/consumer/seed26061106_live
+      - run: python experiments/p71_function.py compare p71-function/reference p71-function/consumer p71-function/compare.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p71-function
+          path: p71-function
+          retention-days: 30
