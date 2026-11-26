@@ -40,3 +40,6 @@ Cada fase fija presupuesto y criterios previos; si valor marginal bajo, cerrar l
 
 ## ARCH — Evaluación de arquitectura autorizada 2026-11-25
 [ARCH-01 filtro y secuencia](research/ARCH/ARCH-01_EVALUACION_DOCUMENTAL.md). Pausa reversible de P6.1-R (prerregistro y evidencia intactos) para ARCH-02 viabilidad headless B/B2, ARCH-03 comparación experimental condicionada, ARCH-04 contrato BMI si aporta. A referencia; C/D2/B3 reservas justificadas. No sustituir motor ni licencia sin decisión explícita. Si no hay candidato viable, retornar a P6.1-R. No tocar gates anteriores.
+
+
+ARCH actualización 2026-11-26: P6.1-R aprobada limitada y archivada ([dictamen](research/P6/P6.1R_RESULTADO.md)); P6.2 habilitada pero retenida por ARCH. ARCH-02A primer smoke HAIL terminó una ejecución, fallo de instrumento por formato Grainz; único retry tras archivo y confirmación ([incidencia](research/ARCH/ARCH-02A_INCIDENCIA_1.md)).

@@ -266,3 +266,6 @@ Forced T media 300→300.0072448708K a12s→300.0044255013K a24s. Dark final299.
 
 
 - Reconciliación P6.1-R: detectado estado desactualizado; log y JSON leídos, no inferir archivo durable. Autoverificación, no auditor separado. Preservar negativo P6.1 y ARCH-02A en curso.
+
+
+- P6.1-R autoverificación: archivo durable, cotejo 50 miembros, gates y negativo intactos; P6.2 habilitada pero retenida. ARCH-02A fallo instrumental, preservar log/ZIP, corregir sólo clasificación de tabla Grainz con verificación previa sobre original y repetir dentro de presupuesto; no aprobar ni inferir física fallida.

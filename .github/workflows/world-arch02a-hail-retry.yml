@@ -1,0 +1,68 @@
+name: WorldLab ARCH-02A HAIL instrument retry
+on:
+  push:
+    paths:
+      - '.github/workflows/world-arch02a-hail-retry.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive-and-retry:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      OMP_NUM_THREADS: '1'
+      HAIL_PIN: '5913d54b9bf5cf97a417ae30c98b39e624bac013'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive and diagnose original
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          d=evidence/ARCH/HAIL-first
+          mkdir -p "$d"
+          gh api repos/"$GITHUB_REPOSITORY"/actions/artifacts/15044938432/zip > "$d/original.zip"
+          echo "8e54f03cd932b696f0ba6033958a4d17a399157a7fd8742960f652b6ca2d16b0  $d/original.zip" | sha256sum -c
+          python experiments/ARCH/archive_hail_first.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$d/original.zip" "$d/archive_manifest.json"
+          git commit -m "evidence: archive original HAIL smoke"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          python experiments/ARCH/validate_hail_smoke_retry.py "$RUNNER_TEMP/hail-original/run1" > "$RUNNER_TEMP/original-hashes.json"
+      - name: Build and run official case twice
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/arch02a-out"
+          out="$GITHUB_WORKSPACE/arch02a-out"
+          cp "$RUNNER_TEMP/original-hashes.json" "$out/original-hashes.json"
+          { uname -a; lscpu; g++ --version; } > "$out/environment.txt"
+          git clone --no-checkout https://github.com/dvalters/HAIL-CAESAR.git "$RUNNER_TEMP/hail" 2>&1 | tee "$out/clone.log"
+          cd "$RUNNER_TEMP/hail"
+          git checkout "$HAIL_PIN" 2>&1 | tee -a "$out/clone.log"
+          git rev-parse HEAD | tee "$out/source.txt"
+          test "$(git rev-parse HEAD)" = "$HAIL_PIN"
+          /usr/bin/time -v -o "$out/build.time" make -j2 > "$out/build.log" 2>&1
+          cd test
+          for i in 1 2; do
+            rm -rf results/boscastle50m_72_u
+            mkdir -p results/boscastle50m_72_u
+            /usr/bin/time -v -o "$out/run$i.time" ../bin/HAIL-CAESAR.exe ./input_data/boscastle/boscastle_input_data/ boscastle_test_72hr_50m_u.params > "$out/run$i.log" 2>&1
+            grep -F 'THE SIMULATION IS FINISHED!' "$out/run$i.log"
+            cp -r results/boscastle50m_72_u "$out/run$i"
+            python "$GITHUB_WORKSPACE/experiments/ARCH/validate_hail_smoke_retry.py" "$out/run$i" > "$out/hash$i.json"
+          done
+          cmp "$out/hash1.json" "$out/hash2.json"
+          if cmp -s "$out/hash1.json" "$out/original-hashes.json"; then echo MATCH; else echo DIFFERENT_HOST_OR_OUTPUT; fi > "$out/original-comparison.txt"
+          echo PASS > "$out/gate.txt"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arch02a-hail-retry
+          path: arch02a-out/
+          if-no-files-found: warn
+          retention-days: 7

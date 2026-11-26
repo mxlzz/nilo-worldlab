@@ -175,3 +175,7 @@ Delft3D acceso restringido/compilación no acotada; HAIL restart integral no ide
 
 # P6.1-R — Reconciliación de CI omitida
 CI45633814018 SUCCESS ya concluida antes de ARCH; log/JSON recuperados. Dos horizontes y dos restart exactos, gates vacíos. Pendiente archivo durable con workflow dedicado. No repetir P6.1-R ni cerrar hasta cotejo. ARCH-02A smoke run45662003426 activo.
+
+
+- P6.1-R archivo45662193044 éxito, 50 miembros, hash/CRC/log outputs/compare cotejados, ZIP en main 28a8307. Gate aprobado limitado; P6.2 retenida por ARCH.
+- ARCH-02A CI45662003426: build y primera simulación completos, KeyError nrows en validador antes de control. Artefacto15044938432. Diagnóstico Grainz tabla no raster; único retry prospectivo sin cambiar física, archivar original primero.

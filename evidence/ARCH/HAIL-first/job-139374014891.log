@@ -1,0 +1,206 @@
+﻿2026-11-25T17:11:05.2924671Z Current runner version: '2.338.2'
+2026-11-25T17:11:05.2940691Z ##[group]Runner Image Provisioner
+2026-11-25T17:11:05.2941388Z Hosted Compute Agent
+2026-11-25T17:11:05.2941803Z Version: 20261111.635
+2026-11-25T17:11:05.2942313Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-25T17:11:05.2942831Z Build Date: 2026-11-11T01:49:01Z
+2026-11-25T17:11:05.2943328Z Worker ID: {d0b62105-b53c-43ef-a6f6-403cab21e7cd}
+2026-11-25T17:11:05.2944121Z Region: us-west-2
+2026-11-25T17:11:05.2944511Z Cloud: AWS
+2026-11-25T17:11:05.2944903Z ##[endgroup]
+2026-11-25T17:11:05.2945850Z ##[group]Operating System
+2026-11-25T17:11:05.2946280Z Ubuntu
+2026-11-25T17:11:05.2946652Z 24.04.5
+2026-11-25T17:11:05.2946999Z LTS
+2026-11-25T17:11:05.2947399Z ##[endgroup]
+2026-11-25T17:11:05.2947786Z ##[group]Runner Image
+2026-11-25T17:11:05.2948196Z Image: ubuntu-24.04
+2026-11-25T17:11:05.2948595Z Version: 20261116.133.1
+2026-11-25T17:11:05.2949550Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-25T17:11:05.2950650Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+2026-11-25T17:11:05.2951328Z ##[endgroup]
+2026-11-25T17:11:05.2952335Z ##[group]GITHUB_TOKEN Permissions
+2026-11-25T17:11:05.2954104Z Contents: read
+2026-11-25T17:11:05.2954534Z Metadata: read
+2026-11-25T17:11:05.2954970Z ##[endgroup]
+2026-11-25T17:11:05.2956607Z Secret source: Actions
+2026-11-25T17:11:05.2957317Z Cache mode: write
+2026-11-25T17:11:05.2957835Z Prepare workflow directory
+2026-11-25T17:11:05.3213709Z Prepare all required actions
+2026-11-25T17:11:05.3249191Z Getting action download info
+2026-11-25T17:11:05.6962018Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-25T17:11:07.0776615Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-25T17:11:07.3373270Z Complete job name: smoke
+2026-11-25T17:11:07.3949209Z ##[group]Run actions/checkout@v4
+2026-11-25T17:11:07.3949897Z with:
+2026-11-25T17:11:07.3950397Z   repository: mxlzz/nilo-worldlab
+2026-11-25T17:11:07.3953763Z   token: ***
+2026-11-25T17:11:07.3954220Z   ssh-strict: true
+2026-11-25T17:11:07.3954643Z   ssh-user: git
+2026-11-25T17:11:07.3955059Z   persist-credentials: true
+2026-11-25T17:11:07.3955535Z   clean: true
+2026-11-25T17:11:07.3955978Z   sparse-checkout-cone-mode: true
+2026-11-25T17:11:07.3956504Z   fetch-depth: 1
+2026-11-25T17:11:07.3956916Z   fetch-tags: false
+2026-11-25T17:11:07.3957325Z   show-progress: true
+2026-11-25T17:11:07.3957771Z   lfs: false
+2026-11-25T17:11:07.3958196Z   submodules: false
+2026-11-25T17:11:07.3958692Z   set-safe-directory: true
+2026-11-25T17:11:07.3959177Z   allow-unsafe-pr-checkout: false
+2026-11-25T17:11:07.3959823Z env:
+2026-11-25T17:11:07.3960225Z   OMP_NUM_THREADS: 1
+2026-11-25T17:11:07.3960729Z   HAIL_PIN: 5913d54b9bf5cf97a417ae30c98b39e624bac013
+2026-11-25T17:11:07.3961305Z ##[endgroup]
+2026-11-25T17:11:10.7338697Z Syncing repository: mxlzz/nilo-worldlab
+2026-11-25T17:11:10.7339987Z ##[group]Getting Git version info
+2026-11-25T17:11:10.7340415Z Working directory is '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T17:11:10.7341069Z [command]/usr/bin/git version
+2026-11-25T17:11:11.0918872Z git version 2.56.1
+2026-11-25T17:11:11.0935878Z ##[endgroup]
+2026-11-25T17:11:11.0945181Z Temporarily overriding HOME='/home/runner/work/_temp/6f89fcf4-23c7-4f23-9d25-eed2532223ee' before making global git config changes
+2026-11-25T17:11:11.0946123Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T17:11:11.0948532Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T17:11:11.0994338Z Deleting the contents of '/home/runner/work/nilo-worldlab/nilo-worldlab'
+2026-11-25T17:11:11.0997300Z ##[group]Initializing the repository
+2026-11-25T17:11:11.1000367Z [command]/usr/bin/git init /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T17:11:11.1913702Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-25T17:11:11.1914246Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-25T17:11:11.1914915Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-25T17:11:11.1915281Z hint: call:
+2026-11-25T17:11:11.1915481Z hint:
+2026-11-25T17:11:11.1915804Z hint: 	git config --global init.defaultBranch <name>
+2026-11-25T17:11:11.1916091Z hint:
+2026-11-25T17:11:11.1916379Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-25T17:11:11.1916796Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-25T17:11:11.1917118Z hint:
+2026-11-25T17:11:11.1917356Z hint: 	git branch -m <name>
+2026-11-25T17:11:11.1917616Z hint:
+2026-11-25T17:11:11.1917905Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-25T17:11:11.1921727Z Initialized empty Git repository in /home/runner/work/nilo-worldlab/nilo-worldlab/.git/
+2026-11-25T17:11:11.1929128Z [command]/usr/bin/git remote add origin https://github.com/mxlzz/nilo-worldlab
+2026-11-25T17:11:11.1975824Z ##[endgroup]
+2026-11-25T17:11:11.1976398Z ##[group]Disabling automatic garbage collection
+2026-11-25T17:11:11.1978022Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-25T17:11:11.1998654Z ##[endgroup]
+2026-11-25T17:11:11.1999145Z ##[group]Setting up auth
+2026-11-25T17:11:11.2003000Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T17:11:11.2029252Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T17:11:11.5825580Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T17:11:11.5848934Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T17:11:11.6022903Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T17:11:11.6047660Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T17:11:11.6191998Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-25T17:11:11.6216591Z ##[endgroup]
+2026-11-25T17:11:11.6217151Z ##[group]Fetching the repository
+2026-11-25T17:11:11.6229511Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +11a42fd3d9071620389acb1c8ab2936c0c4ebe1f:refs/remotes/origin/main
+2026-11-25T17:11:14.1066045Z From https://github.com/mxlzz/nilo-worldlab
+2026-11-25T17:11:14.1066582Z  * [new ref]         11a42fd3d9071620389acb1c8ab2936c0c4ebe1f -> origin/main
+2026-11-25T17:11:14.1069718Z ##[endgroup]
+2026-11-25T17:11:14.1070342Z ##[group]Determining the checkout info
+2026-11-25T17:11:14.1079818Z ##[endgroup]
+2026-11-25T17:11:14.1080238Z [command]/usr/bin/git sparse-checkout disable
+2026-11-25T17:11:14.1164801Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-25T17:11:14.1185172Z ##[group]Checking out the ref
+2026-11-25T17:11:14.1187468Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-25T17:11:14.2651369Z Switched to a new branch 'main'
+2026-11-25T17:11:14.2657627Z branch 'main' set up to track 'origin/main'.
+2026-11-25T17:11:14.2667593Z ##[endgroup]
+2026-11-25T17:11:14.2700656Z [command]/usr/bin/git log -1 --format=%H
+2026-11-25T17:11:14.2717498Z 11a42fd3d9071620389acb1c8ab2936c0c4ebe1f
+2026-11-25T17:11:14.2877719Z ##[group]Run set -euo pipefail
+2026-11-25T17:11:14.2878099Z [36;1mset -euo pipefail[0m
+2026-11-25T17:11:14.2878473Z [36;1mmkdir -p "$GITHUB_WORKSPACE/arch02a-out"[0m
+2026-11-25T17:11:14.2878779Z [36;1mout="$GITHUB_WORKSPACE/arch02a-out"[0m
+2026-11-25T17:11:14.2879240Z [36;1m{ uname -a; lscpu; g++ --version; } > "$out/environment.txt"[0m
+2026-11-25T17:11:14.2879791Z [36;1mgit clone --no-checkout https://github.com/dvalters/HAIL-CAESAR.git "$RUNNER_TEMP/hail" 2>&1 | tee "$out/clone.log"[0m
+2026-11-25T17:11:14.2880239Z [36;1mcd "$RUNNER_TEMP/hail"[0m
+2026-11-25T17:11:14.2880567Z [36;1mgit checkout "$HAIL_PIN" 2>&1 | tee -a "$out/clone.log"[0m
+2026-11-25T17:11:14.2880994Z [36;1mgit rev-parse HEAD | tee "$out/source.txt"[0m
+2026-11-25T17:11:14.2881289Z [36;1mtest "$(git rev-parse HEAD)" = "$HAIL_PIN"[0m
+2026-11-25T17:11:14.2881659Z [36;1m/usr/bin/time -v -o "$out/build.time" make -j2 > "$out/build.log" 2>&1[0m
+2026-11-25T17:11:14.2881992Z [36;1mcd test[0m
+2026-11-25T17:11:14.2882322Z [36;1mfor i in 1 2; do[0m
+2026-11-25T17:11:14.2882578Z [36;1m  rm -rf results/boscastle50m_72_u[0m
+2026-11-25T17:11:14.2882862Z [36;1m  mkdir -p results/boscastle50m_72_u[0m
+2026-11-25T17:11:14.2883623Z [36;1m  /usr/bin/time -v -o "$out/run$i.time" ../bin/HAIL-CAESAR.exe ./input_data/boscastle/boscastle_input_data/ boscastle_test_72hr_50m_u.params > "$out/run$i.log" 2>&1[0m
+2026-11-25T17:11:14.2884244Z [36;1m  grep -F 'THE SIMULATION IS FINISHED!' "$out/run$i.log"[0m
+2026-11-25T17:11:14.2884626Z [36;1m  cp -r results/boscastle50m_72_u "$out/run$i"[0m
+2026-11-25T17:11:14.2885065Z [36;1m  python "$GITHUB_WORKSPACE/experiments/ARCH/validate_hail_smoke.py" "$out/run$i" > "$out/hash$i.json"[0m
+2026-11-25T17:11:14.2885472Z [36;1mdone[0m
+2026-11-25T17:11:14.2885722Z [36;1mcmp "$out/hash1.json" "$out/hash2.json"[0m
+2026-11-25T17:11:14.2886021Z [36;1mecho PASS > "$out/gate.txt"[0m
+2026-11-25T17:11:14.6174498Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-25T17:11:14.6174844Z env:
+2026-11-25T17:11:14.6175181Z   OMP_NUM_THREADS: 1
+2026-11-25T17:11:14.6175475Z   HAIL_PIN: 5913d54b9bf5cf97a417ae30c98b39e624bac013
+2026-11-25T17:11:14.6175770Z ##[endgroup]
+2026-11-25T17:11:14.7856577Z Cloning into '/home/runner/work/_temp/hail'...
+2026-11-25T17:11:16.8953804Z Note: switching to '5913d54b9bf5cf97a417ae30c98b39e624bac013'.
+2026-11-25T17:11:16.8954149Z 
+2026-11-25T17:11:16.8954415Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-25T17:11:16.8954857Z changes and commit them, and you can discard any commits you make in this
+2026-11-25T17:11:16.8955316Z state without impacting any branches by switching back to a branch.
+2026-11-25T17:11:16.8955579Z 
+2026-11-25T17:11:16.8955737Z If you want to create a new branch to retain commits you create, you may
+2026-11-25T17:11:16.8956119Z do so (now or later) by using -c with the switch command. Example:
+2026-11-25T17:11:16.8956393Z 
+2026-11-25T17:11:16.8956523Z   git switch -c <new-branch-name>
+2026-11-25T17:11:16.8956718Z 
+2026-11-25T17:11:16.8956836Z Or undo this operation with:
+2026-11-25T17:11:16.8956991Z 
+2026-11-25T17:11:16.8957156Z   git switch -
+2026-11-25T17:11:16.8957264Z 
+2026-11-25T17:11:16.8957468Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-25T17:11:16.8957740Z 
+2026-11-25T17:11:16.8957932Z HEAD is now at 5913d54 Merge pull request #58 from jsta/jsta-patch-1
+2026-11-25T17:11:16.8979600Z 5913d54b9bf5cf97a417ae30c98b39e624bac013
+2026-11-25T17:13:19.1965484Z THE SIMULATION IS FINISHED!
+2026-11-25T17:13:19.4258144Z Traceback (most recent call last):
+2026-11-25T17:13:19.4259199Z   File "/home/runner/work/nilo-worldlab/nilo-worldlab/experiments/ARCH/validate_hail_smoke.py", line 11, in <module>
+2026-11-25T17:13:19.4260047Z     assert len(vals)==int(hdr["nrows"]*hdr["ncols"]), str(p)
+2026-11-25T17:13:19.4260420Z                           ~~~^^^^^^^^^
+2026-11-25T17:13:19.4260812Z KeyError: 'nrows'
+2026-11-25T17:13:19.4424757Z ##[error]Process completed with exit code 1.
+2026-11-25T17:13:19.4487315Z ##[group]Run actions/upload-artifact@v4
+2026-11-25T17:13:19.4487642Z with:
+2026-11-25T17:13:19.4487864Z   name: arch02a-hail-smoke
+2026-11-25T17:13:19.4488128Z   path: arch02a-out/
+2026-11-25T17:13:19.4488508Z   if-no-files-found: error
+2026-11-25T17:13:19.4488756Z   retention-days: 7
+2026-11-25T17:13:19.4488988Z   compression-level: 6
+2026-11-25T17:13:19.4489205Z   overwrite: false
+2026-11-25T17:13:19.4489414Z   include-hidden-files: false
+2026-11-25T17:13:19.4489669Z env:
+2026-11-25T17:13:19.4489927Z   OMP_NUM_THREADS: 1
+2026-11-25T17:13:19.4490175Z   HAIL_PIN: 5913d54b9bf5cf97a417ae30c98b39e624bac013
+2026-11-25T17:13:19.4490457Z ##[endgroup]
+2026-11-25T17:13:19.5734815Z (node:2368) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-25T17:13:19.5735467Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-25T17:13:19.5842509Z With the provided path, there will be 117 files uploaded
+2026-11-25T17:13:19.5843356Z Artifact name is valid!
+2026-11-25T17:13:19.5843928Z Root directory input is valid!
+2026-11-25T17:13:20.2515769Z Beginning upload of artifact content to blob storage
+2026-11-25T17:13:20.3947658Z (node:2368) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-25T17:13:21.1519997Z Uploaded bytes 724943
+2026-11-25T17:13:21.2430172Z Finished uploading artifact content to blob storage!
+2026-11-25T17:13:21.2430765Z SHA256 digest of uploaded artifact zip is 8e54f03cd932b696f0ba6033958a4d17a399157a7fd8742960f652b6ca2d16b0
+2026-11-25T17:13:21.2431968Z Finalizing artifact upload
+2026-11-25T17:13:21.6754382Z Artifact arch02a-hail-smoke.zip successfully finalized. Artifact ID 15044938432
+2026-11-25T17:13:21.6755247Z Artifact arch02a-hail-smoke has been successfully uploaded! Final size is 724943 bytes. Artifact ID is 15044938432
+2026-11-25T17:13:21.6758685Z Artifact download URL: https://github.com/mxlzz/nilo-worldlab/actions/runs/45662003426/artifacts/15044938432
+2026-11-25T17:13:21.6937471Z Post job cleanup.
+2026-11-25T17:13:21.7571933Z [command]/usr/bin/git version
+2026-11-25T17:13:21.7599451Z git version 2.56.1
+2026-11-25T17:13:21.7623659Z Temporarily overriding HOME='/home/runner/work/_temp/b1016426-42c7-47ce-8a6d-0cff06ba784a' before making global git config changes
+2026-11-25T17:13:21.7624675Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-25T17:13:21.7626406Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilo-worldlab/nilo-worldlab
+2026-11-25T17:13:21.7653795Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-25T17:13:21.7676603Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-25T17:13:21.7829715Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-25T17:13:21.7848505Z http.https://github.com/.extraheader
+2026-11-25T17:13:21.7854662Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-25T17:13:21.7876108Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-25T17:13:21.8024044Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-25T17:13:21.8045816Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-25T17:13:21.8312379Z Cleaning up orphan processes
+2026-11-25T17:13:21.8546772Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
