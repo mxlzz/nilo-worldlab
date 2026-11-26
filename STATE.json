@@ -147,13 +147,14 @@
     "evidence/P6/P62A/archive_manifest.json",
     "research/P6/P6.2B_PROTOCOLO_TERRITORIO.md",
     "research/P6/P6.2B_READBACK.md",
-    "evidence/P6/P62B/readback.json"
+    "evidence/P6/P62B/readback.json",
+    "research/P2/IDEA_WL_001_COLUMNAS_SEGMENTADAS.md"
   ],
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "56f67f4d700627599d54e04f87567aa7a7a108f0",
+  "last_confirmed_non_state_write": "e2755e28db209dd9947fb1e42e5d87669f36a603",
   "migration": {
     "status": "verified",
     "source_commit": "0448ea6e5e02d77142cec270ea99ac0773493fc1",
